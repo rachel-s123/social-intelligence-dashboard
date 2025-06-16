@@ -1,0 +1,55 @@
+/* BMW Typography System using System Fonts */
+:root {
+  --font-bmw-motorrad: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-bmw-type-next: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* BMW Motorrad Font Family Fallback */
+.bmw-motorrad {
+  font-family: var(--font-bmw-motorrad);
+}
+
+.bmw-motorrad-light {
+  font-family: var(--font-bmw-motorrad);
+  font-weight: 300;
+}
+
+.bmw-motorrad-regular {
+  font-family: var(--font-bmw-motorrad);
+  font-weight: 400;
+}
+
+.bmw-motorrad-bold {
+  font-family: var(--font-bmw-motorrad);
+  font-weight: 700;
+}
+
+.bmw-motorrad-heavy {
+  font-family: var(--font-bmw-motorrad);
+  font-weight: 800;
+}
+
+/* BMW Type Next Font Family Fallback */
+.bmw-type-next {
+  font-family: var(--font-bmw-type-next);
+}
+
+.bmw-type-next-light {
+  font-family: var(--font-bmw-type-next);
+  font-weight: 300;
+}
+
+.bmw-type-next-regular {
+  font-family: var(--font-bmw-type-next);
+  font-weight: 400;
+}
+
+.bmw-type-next-bold {
+  font-family: var(--font-bmw-type-next);
+  font-weight: 700;
+}
+
+.bmw-type-next-heavy {
+  font-family: var(--font-bmw-type-next);
+  font-weight: 900;
+} 
