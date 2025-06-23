@@ -1,22 +1,22 @@
 # Executive Summary: Netherlands
 
 ## Attribute Resonance
-- Technology & Features leads with highest WRI score (95.8), followed by Overall Comfort (94.0) and Innovation & Future-proofing (94.0)
-- Value for Money shows high resonance (90.5) despite negative sentiment, indicating critical importance in purchase decisions
-- Design & Aesthetics generates significant discussion (89.0) but remains polarizing with mixed reactions
+- Long-Distance Touring Capability is the highest priority (WRI: 93.5), driven by consumer intentions for extensive European tours
+- Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R80 G/S
+- Manageability/Weight is critical (WRI: 85.0), with recurring concerns about "top-heavy" motorcycles and preference for manageable bikes
 
 ## Market Insights
-- R1300RT captured 35% share of voice in touring segment during launch period, well ahead of competitors
-- Overall sentiment moderately positive at 50-55%, with technology and comfort driving enthusiasm
-- Price and design complexity represent main barriers to purchase consideration
+- Limited legal off-road opportunities in Netherlands mean "adventure" appeal translates to European touring versatility rather than extreme capability
+- Significant portion of adventure bike owners "just like the style" even without extensive off-road riding, creating style-first segment opportunity
+- Consumer profile characterized as "practical adventurer" seeking reliable, comfortable, and versatile machines for diverse European riding
 
 ## Competitor Analysis
-- BMW R1300RT leads in technology but faces pricing challenges versus Honda NT1100 (half the price)
-- Honda Gold Wing maintains ultra-comfort position but lacks modern tech features
-- Gap exists for medium-weight touring option around €20,000 price point
+- Yamaha Ténéré 700 leads share of voice (18%) with strong off-road reputation and cult following
+- BMW GS Series maintains strong position (17%) as benchmark for adventure segment despite size/weight concerns
+- Market gap exists for heritage-positioned, manageable adventure bikes between mainstream middleweights and large touring-focused models
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Technology leader offering unmatched blend of comfort, innovation, and performance
-- **Content & Messaging:** Emphasize tangible benefits of advanced features while justifying premium pricing
-- **Audience Targeting:** Focus on R1250RT upgraders and riders from discontinued models (FJR1300, ST1300)
-- **Key Opportunity:** Address medium-weight touring gap and enhance customer experience through community engagement
+- **Strategic Positioning:** Position R 12 G/S as authentic heritage adventure bike connecting riders to BMW's adventure legacy with manageable "dirt-ready retro" capability
+- **Content & Messaging:** Lead with heritage story and R80 G/S connection while emphasizing European touring versatility and manageable adventure performance
+- **Audience Targeting:** Focus on practical adventurers and style-first riders seeking distinctive heritage appeal with reliable BMW quality
+- **Key Opportunity:** Leverage unique heritage positioning and early positive dealer sentiment to capture underserved manageable adventure segment

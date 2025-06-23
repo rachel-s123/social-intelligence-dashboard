@@ -1,22 +1,22 @@
 # Executive Summary: Slovenia
 
 ## Attribute Resonance
-- Comfort dominates purchase decisions with Overall Comfort (WRI: 93.5) and Passenger Comfort (WRI: 91.5) as top drivers
-- Safety Features rank equally high (WRI: 93.5) with radar ACC and collision warnings being widely lauded
-- Performance attributes score strongly with Engine Performance and Reliability both at WRI: 88.5
+- Off-road performance dominates consumer priorities (WRI: 95.0) with 30% of all discussions focusing on authentic capability
+- Dual-sport versatility drives 60% of market expansion (WRI: 93.5) with 80% considering adventure bikes their first choice for multi-terrain exploration
+- Weight management critical concern with 50% of riders struggling with heavy models (WRI: 88.0) creating opportunity for lighter alternatives
 
 ## Market Insights
-- R1300RT captured 30% share of voice in touring segment discussions, indicating strong market interest
-- Overall sentiment skews positive (55%) but with significant negative sentiment (30%) driven by price and styling concerns
-- Adventure bikes continue to draw attention from traditional touring segment, representing internal competition
+- Slovenia shows market resilience with 2.7% motor vehicle sales growth contrasting 16.6% European motorcycle decline
+- Heritage styling demonstrates strong appetite with "notable appetite for heritage styling in adventure bikes" and pre-launch anticipation for R 12 G/S
+- Technology integration expected by 95% of new adventure motorcycles but must enhance rather than complicate riding experience
 
 ## Competitor Analysis
-- Honda Gold Wing remains comfort benchmark at 25% share of voice but criticized for extreme weight (~380kg)
-- Honda NT1100 represents value threat at half the price of R1300RT, appealing to price-sensitive buyers
-- BMW's own K1600 series could cannibalize sales with superior engine refinement for luxury-focused buyers
+- BMW GS Series leads premium segment (27.5% SOV) but faces pricing challenges with models "well over 20 [thousand]" limiting accessibility
+- KTM 890 Adventure R dominates off-road narrative (22.5% SOV) as "king of mid-weight adventure" setting performance benchmark
+- Market fragmentation creates opportunity for distinctive positioning combining heritage authenticity with genuine capability
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position R1300RT as the "no compromise" touring solution - lighter than Gold Wing, more capable than budget sport-tourers
-- **Content & Messaging:** Lead with comfort and safety benefits while actively addressing value concerns through comprehensive feature communication
-- **Audience Targeting:** Focus on 40+ experienced tourers while creating pathways for younger riders upgrading from mid-size bikes
-- **Key Opportunity:** Leverage post-COVID touring renaissance and Slovenia's central location for European touring routes
+- **Strategic Positioning:** Position R 12 G/S as authentic heritage leader combining R 80 G/S legacy with modern off-road capability and manageable weight advantage
+- **Content & Messaging:** Emphasize authentic off-road prowess, highlight 229kg weight advantage, showcase Dakar Rally heritage connection, demonstrate dual-sport versatility
+- **Audience Targeting:** Focus on heritage enthusiasts, capability-focused riders, weight-conscious adventurers, and versatility seekers wanting single motorcycle solution
+- **Key Opportunity:** Leverage Slovenia's market resilience and strong heritage appetite while addressing widespread weight management concerns through R 12 G/S's lighter 1200cc boxer design

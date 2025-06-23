@@ -6,10 +6,10 @@
 
 The Weighted Resonance Index (WRI) measures how strongly different product attributes resonate with consumers in each market. This comprehensive score analyzes 20 key attributes across four dimensions:
 
-- **Social Discussion Importance (40%)**: Volume and sentiment of social media conversations and online forums
-- **Sales & Market Factor Importance (30%)**: Impact on purchase decisions and market performance
-- **Consumer Review Focus (20%)**: Frequency and emphasis in customer reviews and feedback
-- **Expert Analysis Emphasis (10%)**: Prominence in professional reviews and industry analysis
+- **Social Discussion Importance (30%)**: Volume and sentiment of social media conversations and online forums
+- **Sales & Market Factor Importance (25%)**: Impact on purchase decisions and market performance
+- **Consumer Review Focus (25%)**: Frequency and emphasis in customer reviews and feedback
+- **Expert Analysis Emphasis (20%)**: Prominence in professional reviews and industry analysis
 
 Each attribute receives a score from 0-100, with higher scores indicating stronger market resonance. This analysis helps identify which product features and characteristics are most important to consumers in different markets, enabling targeted product development and marketing strategies.
 
@@ -30,122 +30,122 @@ This comparative analysis helps identify unique market characteristics and oppor
 ## WRI Scores
 
 ### Attribute Scores
-Overall Comfort: 93.5
-Engine Performance: 93.5
-Technology & Features: 93.5
-Safety Features: 90.0
-Handling & Stability: 89.0
-Wind Protection: 89.0
-Luggage Capacity: 83.5
-Reliability & Durability: 83.5
-Value for Money: 82.5
-Brand Image & Reputation: 81.5
-Passenger Comfort: 79.5
-Weight Management: 79.5
-Innovation & Future-proofing: 73.5
-Low-Speed Maneuverability: 73.5
-Seat Height & Ergonomics: 73.5
-Range & Fuel Efficiency: 73.0
-Dealer & Service Network: 70.0
-Design & Aesthetics: 69.0
-Resale Value: 61.0
-Engine Character & Sound: 59.0
+Versatility (Dual-Purpose Capability): 93.6
+Off-Road Performance: 88.8
+Engine Size & Performance: 88.7
+Comfort & Ergonomics: 88.6
+Manageability/Weight: 88.2
+Brand Reliability: 88.1
+Long-Distance Touring Capability: 86.5
+Suspension Quality: 83.8
+Value for Money: 82.2
+Price Range: 82.2
+Seat Height & Accessibility: 81.3
+Technology & Features: 80.5
+Heritage/Retro Styling: 79.8
+Aesthetic Appeal/Character: 79.8
+Rider Aids & Safety Systems: 77.9
+Connected Features (TFT, Smartphone Integration): 74.6
+Build Quality & Finish: 71.7
+Fuel Range & Efficiency: 63.5
+Aftermarket Support & Customizability: 58.8
+Dealer Network & Service Availability: 50.3
 
 ## WRI Insights
 
 ### Attribute Insights
-Overall Comfort:
-- Insight: Comfort consistently emerges as the paramount purchase driver for touring riders, with the R1300RT's improved rider triangle and adjustable seating directly addressing this core need
-- Recommendation: Continue emphasizing comfort credentials in marketing, showcase ergonomic improvements through test rides, and highlight all-day comfort capabilities
+Versatility (Dual-Purpose Capability):
+- Insight: This attribute consistently emerges as a "Tier 1 - Critical" priority, reflecting the fundamental consumer desire for a "do-it-all" machine capable across diverse terrains. Its high ranking across all WRI factors underscores its foundational role in successful models.
+- Recommendation: Any new launch must unequivocally demonstrate excellence in versatility as a deficiency here would be a critical misstep. Focus on seamless transition between on-road comfort and genuine off-road capability.
 
-Engine Performance:
-- Insight: The 1300cc boxer engine's 145hp and 149Nm torque represents a substantial performance hike that ensures confident acceleration even when fully loaded
-- Recommendation: Market the engine's smooth power delivery and effortless passing capability, emphasizing refined performance over raw speed
+Off-Road Performance:
+- Insight: As a top discussion theme accounting for 25% of all conversations, genuine off-road capability is a significant driver of consumer interest and a key strength for market leaders like KTM 890 Adventure R and Yamaha Ténéré 700.
+- Recommendation: Emphasize genuine off-road prowess including capable suspension and ample ground clearance as a fundamental expectation. This is non-negotiable for serious adventure riders.
 
-Technology & Features:
-- Insight: Swedish riders exhibit renewed interest in high-tech motorcycles, viewing features like Adaptive Cruise Control and semi-automatic transmission as essential rather than optional
-- Recommendation: Position technology as future-proofing investment, provide comprehensive training on tech features, and emphasize alignment with Sweden's safety culture
+Engine Size & Performance:
+- Insight: Classified as "Tier 1 - Critical" attribute, consistently cited as strength for high-performing models. Consumers prioritize confidence-inspiring power delivery that is both robust and smooth across varying conditions.
+- Recommendation: Focus on robust, smooth, and usable power delivery for both highway cruising and controlled off-road maneuvers rather than just peak horsepower figures.
 
-Safety Features:
-- Insight: Sweden's safety-conscious culture and Vision Zero initiatives make advanced safety features particularly resonant, with radar-based systems highly valued
-- Recommendation: Lead marketing with safety technology, partner with Swedish road safety organizations, and demonstrate safety features at demo events
+Comfort & Ergonomics:
+- Insight: Another "Tier 1 - Critical" attribute garnering 18% of discussions, serving as key differentiator for models like Honda Africa Twin and traditional BMW GS series for long-distance touring and rider enjoyment.
+- Recommendation: Prioritize comfortable and adaptable riding position, effective wind protection, and plush ride quality essential for extended journeys and various riding styles.
 
-Handling & Stability:
-- Insight: Despite substantial size, touring riders demand predictable handling, with BMW's Telelever suspension and adaptive chassis particularly appreciated
-- Recommendation: Emphasize the dual personality of comfort and dynamic modes, showcase handling confidence through mountain route demos
+Manageability/Weight:
+- Insight: While "Weight" is listed as Tier 4, "Accessibility/Manageability" constitutes significant discussion theme (9%). Persistent perception of larger BMW GS models as "heavy beasts" creates latent demand for more manageable premium options.
+- Recommendation: Position motorcycles as highly capable off-roaders that are also accessible and confidence-inspiring, particularly for new or less experienced riders seeking premium performance in approachable package.
 
-Wind Protection:
-- Insight: Effective weather protection is indispensable for Swedish riders facing unpredictable conditions, with the RT's adjustable screen highly valued
-- Recommendation: Highlight the customizable wind protection system and demonstrate effectiveness in various weather conditions
+Brand Reliability:
+- Insight: Essential for adventure riding especially in remote areas, explicitly stated as "Tier 1 - Critical" attribute. Success of models like Yamaha Ténéré 700 partly attributed to reputation for ruggedness and reliability.
+- Recommendation: Emphasize proven durability and dependable components to ensure peace of mind for challenging or remote journeys.
 
-Luggage Capacity:
-- Insight: The innovative collapsible side cases (16L to 33L) directly address the need for versatility in storage, resonating strongly with practical touring needs
-- Recommendation: Showcase the expandable luggage system prominently, emphasize one-key convenience and weatherproofing
+Long-Distance Touring Capability:
+- Insight: Highly correlated with "Comfort & Ergonomics" and "Versatility" as critical factors. Market leadership of Honda Africa Twin and traditional BMW GS signifies high importance for substantial segment of adventure riders.
+- Recommendation: Focus on ability to comfortably cover vast distances with effective wind protection and integrated luggage solutions as core expectation for adventure touring.
 
-Reliability & Durability:
-- Insight: BMW's RT series has a long-standing reputation as a touring staple, with the 3-year warranty enhancing consumer confidence
-- Recommendation: Leverage heritage messaging, share high-mileage owner testimonials, and emphasize warranty coverage
+Suspension Quality:
+- Insight: Key component of "Off-Road Capability" that is highly valued discussion theme. High-quality, adjustable suspension systems are significant differentiator for performance-oriented models like KTM and Ducati.
+- Recommendation: Invest in advanced and adjustable suspension systems that effectively handle challenging terrains, providing enhanced control, comfort, and confidence off-road.
 
 Value for Money:
-- Insight: While price is a frequent discussion point, riders actively debate whether advanced features justify the premium, with radar technology helping rationalize cost
-- Recommendation: Create value comparison charts against competitors, offer attractive financing, and communicate total ownership value
+- Insight: "Tier 2 - Highly Important" attribute with "Value & Pricing" constituting 10% of discussion themes. Strong demand for motorcycles in "$10,000-$20,000" price range highlights consumer desire for compelling balance.
+- Recommendation: Ensure compelling price-to-feature ratio positioning within growing mid-range segment that delivers on core adventure capabilities without being perceived as overpriced.
 
-Brand Image & Reputation:
-- Insight: BMW benefits from unparalleled heritage and premium status, with dominant share of voice reflecting strong brand mindshare
-- Recommendation: Reinforce premium positioning while remaining approachable, leverage owner community testimonials
+Price Range:
+- Insight: Directly tied to "Value for Money" and market segmentation strategies. Projected significant growth in mid-range segment ($10,000-$20,000) underscores how price point critically influences purchase decisions.
+- Recommendation: Strategic positioning within premium mid-range serves as critical filter for consumers actively seeking options within specific budget ranges while delivering core capabilities.
 
-Passenger Comfort:
-- Insight: Features like increased legroom and optional heated seats are significant enhancements, with "content pillion means happier tour" philosophy
-- Recommendation: Include passenger perspective in marketing materials, offer passenger comfort accessories prominently
+Seat Height & Accessibility:
+- Insight: Although "Tier 3 - Important" attribute, relevance amplified by "Accessibility/Manageability" discussion theme (9%) and persistent concerns about height of larger GS models, particularly for new or shorter riders.
+- Recommendation: Focus on ability to confidently manage motorcycle at standstill and low speeds through accessible seat height as significant confidence-building factor.
 
-Weight Management:
-- Insight: At 281kg, the RT is relatively light for a full tourer and vastly lighter than the K1600GT, a key competitive advantage
-- Recommendation: Emphasize weight advantage over competitors, demonstrate low-speed handling capability
+Technology & Features:
+- Insight: Represents 16% of discussion themes and classified as "Tier 2 - Highly Important" attribute. While appreciated, market also exhibits subtle preference for simpler experiences preventing higher ranking than core performance.
+- Recommendation: Provide modern rider aids, safety systems, and intuitive connectivity features that enhance safety and control without being overly complex or overwhelming.
 
-Innovation & Future-proofing:
-- Insight: Swedish riders value brands at the forefront of innovation, with BMW recognized for challenging the status quo
-- Recommendation: Position as technology leader in touring segment, preview future developments to maintain excitement
+Heritage/Retro Styling:
+- Insight: "Tier 2 - Highly Important" attribute and notable discussion theme (10%). "Retro-modern" trend explicitly identified as aligning with market positioning and serves as powerful differentiator.
+- Recommendation: Leverage growing segment valuing motorcycles with distinct character, classic aesthetics fused with modern performance, and strong historical narrative fostering emotional connection.
 
-Low-Speed Maneuverability:
-- Insight: Ease of handling in confined spaces is crucial for confidence, especially for shorter riders or urban navigation
-- Recommendation: Offer low-speed handling clinics, emphasize adjustable ergonomics for different rider sizes
+Aesthetic Appeal/Character:
+- Insight: Directly linked to "Heritage/Retro Styling" with observations that "design and character appeal are powerful drivers of positive sentiment, sometimes outweighing minor practical drawbacks."
+- Recommendation: Focus on visual appeal and unique character contributing to deeper emotional connection and self-image for rider, extending beyond pure functionality.
 
-Seat Height & Ergonomics:
-- Insight: Adjustable seat height (780-860mm range) makes the bike more approachable for diverse riders
-- Recommendation: Maintain multiple seat options in dealerships for test rides, highlight accessibility features
+Rider Aids & Safety Systems:
+- Insight: Falls under "Technology (Functional & Intuitive)" as Tier 2 attribute. While crucial for safety and control, emphasis is on functional and intuitive systems rather than abundance of features.
+- Recommendation: Ensure essential safety features like ABS and traction control are expected baseline, with advanced rider aids appreciated if they genuinely enhance riding experience without unnecessary complexity.
 
-Range & Fuel Efficiency:
-- Insight: The 24-liter tank and 300+ mile range are appreciated for Nordic touring, minimizing refueling inconvenience
-- Recommendation: Communicate real-world range figures, emphasize efficiency despite increased power
+Connected Features (TFT, Smartphone Integration):
+- Insight: Component of broader "Technology" attribute but receives lower WRI as enhancement rather than core functional priority. Market expresses desire for "simpler" experiences potentially de-emphasizing excessive screen time.
+- Recommendation: Position digital integration and modern displays as valuable conveniences enhancing overall experience, but secondary to core performance and reliability priorities.
 
-Dealer & Service Network:
-- Insight: Quality dealer support is crucial for touring riders, though limited network coverage in rural areas remains a concern
-- Recommendation: Enhance dealer training on new features, consider mobile service options for remote areas
+Build Quality & Finish:
+- Insight: Classified as "Tier 3 - Important" attribute. While contributing to perception of premium product, less frequently primary discussion driver compared to performance or comfort.
+- Recommendation: Maintain high standard of materials and assembly as expected baseline contributing to perception of premium and durable motorcycle rather than unique differentiator.
 
-Design & Aesthetics:
-- Insight: The polarizing styling generates significant discussion, with modern angular design dividing traditional and progressive riders
-- Recommendation: Acknowledge design boldness while focusing on functional benefits, offer subtle color options
+Fuel Range & Efficiency:
+- Insight: "Tier 3 - Important" attribute that while "highly practical" for adventure touring, is not primary purchase driver or major discussion theme compared to core performance and comfort attributes.
+- Recommendation: Ensure practical consideration for covering long distances on single tank meets expectations, but prioritize below core performance, comfort, and reliability attributes.
 
-Resale Value:
-- Insight: While not a primary driver, resale value lurks in background of buying decisions, with BMW traditionally maintaining decent values
-- Recommendation: Communicate historical resale strength, offer guaranteed buyback programs
+Aftermarket Support & Customizability:
+- Insight: "Tier 3 - Important" attribute appreciated for personalization and enhancing touring capabilities, but not primary driver of initial purchase decisions as fundamental capabilities take precedence.
+- Recommendation: Provide availability of parts and options for personalization and touring capability enhancement as secondary consideration after fundamental attributes are met.
 
-Engine Character & Sound:
-- Insight: Lowest priority as touring riders prioritize smoothness and refinement over distinctive sound to reduce fatigue
-- Recommendation: Emphasize refined engine note and minimal vibration rather than emotional sound
+Dealer Network & Service Availability:
+- Insight: Classified as "Tier 4 - Supporting" attribute. While providing "peace of mind," it represents lowest-ranked attribute indicating expectation rather than significant purchase driver in pre-launch phase.
+- Recommendation: Maintain accessibility of dealerships for maintenance and support as practical consideration contributing to ownership satisfaction, but not primary competitive differentiator focus.
 
 ### Strategic Recommendations
-- Amplify messaging around top three attributes (Comfort, Performance, Technology) as primary purchase drivers
-- Address price concerns through value communication and attractive financing packages
-- Proactively manage navigation system criticism through software updates and user education
-- Leverage Sweden's safety culture by partnering with Vision Zero initiatives
-- Target three key segments: existing RT owners, adventure riders seeking comfort, and safety-conscious returners
-- Strengthen dealer preparation with comprehensive training on new technology features
+- Focus primary messaging and development on top 5 attributes: Versatility, Off-Road Performance, Engine Performance, Comfort & Ergonomics, and Manageability/Weight
+- Position heritage and character appeal as powerful emotional differentiators once core functional needs are met
+- Address accessibility gap in premium adventure segment through manageable yet capable offerings
+- Leverage "retro-modern" trend while ensuring functional simplicity over excessive complexity
+- Target premium mid-range pricing ($10,000-$20,000) for optimal market positioning
+- Emphasize authentic adventure experience over tech-laden alternatives
 
 Priorities:
-- Immediate: Address navigation concerns and communicate value proposition
-- Short-term: Maximize test ride opportunities showcasing comfort and technology
-- Medium-term: Build community engagement through owner events and tours
-- Long-term: Maintain technology leadership through continuous innovation
-- Ongoing: Monitor competitor developments and adjust positioning accordingly
-- Critical: Ensure exceptional dealer experience to convert interest into sales
+- Demonstrate excellence in versatility as fundamental "do-it-all" capability
+- Prove genuine off-road prowess with capable suspension and ground clearance
+- Deliver confidence-inspiring engine performance across varying conditions
+- Ensure comfortable ergonomics for extended journeys and various riding styles
+- Create manageable premium adventure option expanding market accessibility
+- Leverage heritage positioning for emotional connection and market differentiation

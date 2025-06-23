@@ -1,22 +1,22 @@
 # Executive Summary: Bulgaria
 
 ## Attribute Resonance
-- Overall Comfort dominates purchase decisions with highest resonance (WRI: 93.5), driven by touring riders' paramount need for ergonomics and weather protection
-- Brand Image & Reputation shows exceptional strength (WRI: 92.0) leveraging BMW's heritage and police/authority usage credentials
-- Technology cluster (Innovation, Technology & Features, Engine Performance) all score 88.5+ WRI, indicating strong appetite for advanced features and performance
+- Off-Road Performance is paramount (WRI: 66.0) with consumers prioritizing fundamental capability to handle diverse off-road conditions as core adventure bike function
+- Technology & Features rank highly (WRI: 62.0) as expected baseline requirements, with failure to deliver being major detractor but meeting expectations insufficient for differentiation
+- Engine Size & Performance critical (WRI: 61.7) directly impacting bike capability and rider satisfaction through power, torque, and characterful delivery
 
 ## Market Insights
-- Bulgaria's motorcycle market grew 13.5% in 2024 to ~3,500 units, with BMW Motorrad achieving record 298 sales (+16% growth)
-- R1300RT launch generated significant buzz and dominated touring segment share of voice (40%) over Honda Gold Wing (25%)
-- Positive sentiment overwhelmingly strong (65%) focusing on comfort improvements, technology advances, and engine performance gains
+- Market demonstrates "utility-first" mindset prioritizing core functional attributes over aesthetic considerations with pragmatic consumer base valuing capability and reliability
+- Heritage appeal emerging as valuable differentiator (WRI: 45.5) but success contingent on delivering strong performance and comfort attributes rather than replacing essential functionalities
+- Significant passive interest in BMW R 12 G/S evidenced by 19,177 forum views with minimal active discussion, presenting opportunity to shape post-launch narrative without contending with extensive pre-existing discourse
 
 ## Competitor Analysis
-- BMW R1300RT leads competitive positioning with balanced agility-comfort proposition and cutting-edge technology integration
-- Honda Gold Wing remains primary competitor with luxury focus but suffers from weight disadvantage (~380kg vs 281kg)
-- Internal competition from GS adventure bikes creates conversion opportunity for riders seeking superior on-road touring comfort
+- Honda maintains market leadership with 114 Q1 2025 registrations attributed to reliability reputation and robust distribution network while BMW follows with 70 units
+- BMW R 12 G/S offers authentic heritage connection to Dakar Rally legacy providing "authenticity premium" that general retro inspiration from competitors like Ducati DesertX cannot match
+- Critical "comfort conundrum" exists where R 12 G/S heritage-inspired minimalist design compromises high-priority comfort expectations requiring proactive management through accessory strategy
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as premium comfort and technology leader with proven heritage and reliability credentials
-- **Content & Messaging:** Lead with comfort superiority, emphasize technological innovation, and leverage brand heritage as trust builders
-- **Audience Targeting:** Focus on experienced tourers 40+, adventure bike crossover prospects, and two-up touring couples
-- **Key Opportunity:** Address Value for Money challenge (lowest WRI: 11.5) through strategic financing, bundled packages, and long-term value communication
+- **Strategic Positioning:** Position as authentic heritage leader with genuine Dakar Rally legacy enhancing modern adventure capability while offering dual-strategy approach with R 1300 GS for comprehensive touring and R 12 G/S for focused heritage experience
+- **Content & Messaging:** Emphasize "heritage meets modern performance" narrative linking authentic historical connection to demonstrable contemporary off-road capabilities while proactively managing comfort expectations through accessory customization options
+- **Audience Targeting:** Focus on "purist" adventure riders valuing authenticity and connection to motorcycling history, performance-focused enthusiasts prioritizing capability over luxury, and heritage-conscious consumers seeking genuine connections rather than superficial retro styling
+- **Key Opportunity:** Convert high passive pre-launch interest into active advocacy through experiential marketing, targeted online engagement, and comprehensive accessory ecosystem addressing comfort while maintaining heritage character

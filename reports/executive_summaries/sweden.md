@@ -1,22 +1,22 @@
 # Executive Summary: Sweden
 
 ## Attribute Resonance
-- Comfort, Performance & Technology achieve highest WRI scores (93.5) as primary purchase drivers
-- Safety Features (90.0) and Wind Protection (89.0) particularly important in Swedish market
-- Navigation system criticism and price concerns represent main friction points despite high attribute scores
+- Versatility (Dual-Purpose Capability) is the top priority with highest resonance (WRI: 93.6)
+- Off-Road Performance and Engine Size & Performance are critical capabilities (WRI: 88.8/88.7)
+- Manageability/Weight represents significant opportunity addressing "heavy beasts" perception (WRI: 88.2)
 
 ## Market Insights
-- BMW achieved 50-60% share of voice in touring segment conversations (Jan-May 2025)
-- 60% positive sentiment driven by technology innovation and performance improvements
-- Swedish riders value safety features aligned with national Vision Zero initiatives
+- Swedish adventure motorcycle market demonstrates robust expansion driven by increasing interest in adventure tourism and digital nomad culture
+- Strong preference for mid-weight adventure motorcycles (500-1000cc) offering balanced combination of power, comfort, and maneuverability
+- Latent demand exists for more manageable, yet still capable, premium adventure options as alternative to intimidating larger bikes
 
 ## Competitor Analysis
-- BMW R1300RT leads in technology and power-to-weight ratio versus all competitors
-- Honda Gold Wing remains luxury benchmark but significantly heavier (365kg vs 281kg)
-- Japanese sport-tourers compete on price but lack comfort and features
+- KTM 890 Adventure R (18% SOV) leads with off-road prowess and powerful engine performance
+- Yamaha Ténéré 700 (17% SOV) strong contender valued for ruggedness, reliability, and accessibility
+- BMW GS Series (15% SOV) recognized for technology and comfort but faces "heavy beasts" perception
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Technology and safety leader in premium touring segment
-- **Content & Messaging:** Emphasize comfort-performance-technology trinity with safety focus
-- **Audience Targeting:** Three core segments - upgrading RT owners, converting adventure riders, safety-conscious returners
-- **Key Opportunity:** Consolidate market leadership as Japanese manufacturers exit full touring segment
+- **Strategic Positioning:** Position R 12 G/S as accessible premium off-roader offering BMW heritage in manageable, off-road-focused package addressing intimidation factor of larger GS models
+- **Content & Messaging:** Emphasize authentic adventure experience through functional simplicity, heritage connection to R 80 G/S legacy, and versatility as fundamental "do-it-all" capability
+- **Audience Targeting:** Focus on heritage enthusiasts, off-road purists, experience-seekers prioritizing engaging riding experiences, and accessible premium adventure riders seeking confidence-inspiring BMW quality
+- **Key Opportunity:** Fill "Authentic Adventure" niche for premium motorcycles prioritizing engaging experience over excessive complexity while serving as gateway into BMW adventure ecosystem

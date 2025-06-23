@@ -1,22 +1,22 @@
 # Executive Summary: Hungary
 
 ## Attribute Resonance
-- Brand Image & Reputation is the ultimate differentiator with BMW and Honda's strong brand images generating immense loyalty (WRI: 97.5)
-- Overall Comfort defines the touring segment as the primary purchase motivation with BMW RT and Honda Gold Wing as benchmarks (WRI: 95.8)
-- Wind Protection receives significant emphasis as critical differentiator with BMW R1300RT's adjustable screen highly praised (WRI: 92.5)
+- Technology & Features dominates with highest priority (WRI: 97.5) - 25% of consumer discussions focused on advanced integration, DCT adoption rates, and rider aids
+- Off-Road Performance ranks fourth (WRI: 79.0) - 20% of conversations centered on authentic capability, suspension performance, and genuine dirt-bike feel
+- Heritage/Retro Styling ranks lower (WRI: 40.0) - 10% of discussions on design and character appeal, indicating niche rather than broad market driver
 
 ## Market Insights
-- Hungarian touring motorcycle market shows dynamic growth with 55% positive sentiment driven by comfort and technology enthusiasm
-- BMW leads share of voice at 30% followed by Honda at 25%, reflecting strong early 2025 momentum with R1300RT launch
-- Comfort is the dominant theme in 30% of discussions, with riders explicitly choosing touring bikes for fatigue-free long-distance capability
+- Hungarian market experienced post-Euro 5 transition with strategic stock clearing affecting year-over-year comparisons but underlying adventure demand remained robust
+- Motorkiállítás 2025 served as crucial platform for brand visibility and consumer engagement, with Honda establishing substantial presence
+- Adventure tourers and naked bikes emerged as most popular categories, confirming sustained consumer preference for adventure motorcycles
 
 ## Competitor Analysis
-- BMW dominates sport-touring segment with R1300RT setting technological benchmark but faces pricing and design polarization challenges
-- Honda maintains strong position with broadest lineup from luxury Gold Wing to mid-range NT1100 offering reliability reputation
-- Market opportunities exist from competitor departures (Yamaha FJR1300, Kawasaki 1400GTR discontinuation) creating customer capture potential
+- BMW Motorrad maintains 25% share of voice with R 1300 GS as most popular new motorcycle and multiple "Motorcycle of the Year" wins
+- Honda leads overall market (20% SOV) with strong adventure lineup including Africa Twin's 71% DCT adoption rate and Transalp's third-place sales ranking
+- Key competitors include Yamaha Ténéré 700 (facing reliability concerns), KTM 890 Adventure R (off-road focused), and rising CFMoto presence
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Maintain technological leadership while emphasizing comfort superiority and engineering excellence to justify premium positioning
-- **Content & Messaging:** Address value perception through inclusive pricing strategies while highlighting long-term ownership benefits and resale value
-- **Audience Targeting:** Focus on affluent experienced touring enthusiasts and growing middle-class riders seeking premium European touring capabilities
-- **Key Opportunity:** Capture orphaned customers from discontinued competitor models while leveraging Hungary's strategic Central European touring location advantages
+- **Strategic Positioning:** Position as premium technology leader leveraging R 1300 GS success while differentiating R 12 G/S through heritage and authentic off-road capability
+- **Content & Messaging:** Emphasize advanced rider aids and technology integration (highest consumer priority) while highlighting R 12 G/S's purist design and genuine off-road spirit
+- **Audience Targeting:** Focus on technology-focused riders seeking advanced features and purist enthusiasts valuing heritage, authenticity, and taller-rider ergonomics
+- **Key Opportunity:** Leverage R 12 G/S heritage positioning as modern R 80 G/S tribute to create emotional connection while emphasizing functional off-road capabilities and ergonomic advantages

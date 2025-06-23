@@ -1,25 +1,22 @@
 # Executive Summary: Romania
 
 ## Attribute Resonance
-- Comfort reigns supreme with 93.5 WRI score - appearing in 70% of touring discussions
-- Technology drives purchase decisions (WRI: 87.5) but navigation interface needs improvement
-- Brand prestige reinforced by police use creates powerful trust signal (WRI: 88.5)
-- Value sensitivity remains high (WRI: 86.5) despite rising incomes - buyers compare against robust used market
+- Suspension Quality and Off-Road Performance dominate consumer priorities (WRI: 59.8/59.0) with 85% of owners prioritizing advanced suspension systems
+- Heritage/Retro Styling emerges as powerful differentiator (WRI: 55.5) driven by neo-retro trend and R 1300 GS styling challenges
+- Value, Price, and Reliability form critical cluster (WRI: 51.5 each) with 65% finding high-end bikes too expensive
 
 ## Market Insights
-- Romania's motorcycle market grew 53% in 2024 with 10,199 units - touring remains niche but high-value
-- R1300RT dominates social conversation with 40% share of voice, generating 60% positive sentiment
-- Tech adoption accelerating - Honda sold more DCT automatics than manuals in certain 2024 models
-- Touring tourism boom driven by scenic routes (Transfăgărășan) creates functional need for comfort
+- Romanian motorcycle market showed consistent Q1 2025 growth with registrations increasing from 577 units in January to 1156 in February
+- Adventure segment expanding driven by outdoor activity demand and Romania's diverse challenging landscapes like Transfăgărășan and Transalpina
+- Shift towards "sensible and more affordable" motorcycles impacting larger adventure models, creating opportunity for mid-capacity premium options
 
 ## Competitor Analysis
-- BMW R1300RT leads mindshare with new model excitement and innovation perception
-- Honda Gold Wing maintains comfort benchmark but seen as heavy "cruise ship" for Romanian roads
-- Yamaha FJR1300 effectively exited with no Euro5 model - creates opportunity gap
-- Harley tourers serve different niche with lifestyle appeal but lack performance for serious touring
+- Yamaha Ténéré 700 (18.0% SOV) and Honda Africa Twin (17.0% SOV) lead discussion share with strong versatility and reliability positioning
+- KTM maintains aggressive off-road focus (15.0% SOV) but faces reliability perception challenges
+- CF Moto emerges as value-oriented disruptor offering "much better value" in mid-capacity segment
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as the lighter, more agile premium tourer that's "sporty yet comfortable" for Romania's varied roads
-- **Content & Messaging:** Lead with comfort innovations and 145hp performance while addressing value through warranty/service packages
-- **Audience Targeting:** Focus on upgrading touring riders 40+, younger professionals stepping up, and tech-savvy two-up couples
-- **Key Opportunity:** Convert current market excitement into sales through test rides while fixing navigation to eliminate Gold Wing advantage
+- **Strategic Positioning:** Position R 12 G/S as heritage-inspired alternative to complex flagships, targeting "anti-flagship" sentiment with authentic R 80 G/S connection
+- **Content & Messaging:** Emphasize manageable weight advantage (229kg vs 237kg), genuine off-road capability through 21-inch wheel setup, and distinctive boxer engine character
+- **Audience Targeting:** Focus on heritage enthusiasts, experienced riders seeking manageability, and BMW loyalists desiring simpler yet capable alternative to R 1300 GS
+- **Key Opportunity:** Leverage burgeoning neo-retro trend and market gap for premium yet simpler adventure motorcycles, capitalizing on R 1300 GS's controversial styling reception

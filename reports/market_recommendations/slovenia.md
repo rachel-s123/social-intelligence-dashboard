@@ -4,28 +4,28 @@ Strategic insights and recommendations for Slovenia based on comprehensive marke
 
 ## Strategic Positioning
 Based on comprehensive market analysis, BMW should position itself as:
-- The touring benchmark that balances comfort, performance, and technology without compromise
-- The intelligent choice for experienced riders who value safety and reliability over mere prestige
-- A surprisingly agile and modern alternative to both heavyweight luxury tourers and basic sport-tourers
-- The enabler of effortless long-distance journeys backed by police-proven reliability and maneuverability
+- Authentic heritage leader combining R 80 G/S legacy with modern off-road capability
+- Premium yet accessible adventure motorcycle focused on manageable weight and genuine dual-sport versatility
+- Technology integrator that enhances rather than complicates the puristic off-road experience
+- Pioneer of the adventure category with proven reliability and engineering excellence for challenging environments
 
 ## Content & Messaging
 Key messaging priorities based on conversation analysis and attribute resonance:
-- "Tour in first-class comfort" - emphasize class-leading comfort features for 500+ km daily rides
-- "The safest way to tour" - highlight radar ACC, collision warning, and ABS Pro as confidence builders
-- "Power when you need it" - frame 143hp as usable performance for safe overtaking and mountain passes
-- "You get what you pay for" - justify premium pricing through comprehensive value proposition and standard features
+- Emphasize authentic off-road prowess with 21-inch front wheel, long suspension travel, and Enduro/Enduro Pro ride modes
+- Highlight "relatively light" 229kg weight advantage addressing the 50% of riders who struggle with heavy models
+- Showcase heritage authenticity connecting R 12 G/S directly to pioneering R 80 G/S Dakar Rally legacy
+- Demonstrate dual-sport versatility for seamless transition between paved roads and challenging off-road trails
 
 ## Audience Targeting
 Focus on these key segments based on conversation insights and attribute analysis:
-- Primary: 40-60 year old experienced touring riders who value comfort and often ride with passengers
-- Secondary: 30-40 year old riders upgrading from adventure/naked bikes seeking more touring comfort
-- Tertiary: Current BMW owners (especially GS riders) looking for dedicated touring capability
-- Opportunity: Female riders and shorter riders through emphasis on adjustable ergonomics and accessibility
+- Heritage enthusiasts seeking authentic connection to BMW's pioneering adventure motorcycle history
+- Capability-focused riders prioritizing genuine off-road performance over touring luxury features
+- Weight-conscious adventurers looking for manageable yet capable machines for confidence-inspiring riding
+- Versatility seekers wanting single motorcycle solution for both daily riding and weekend adventure exploration
 
 ## Opportunities
 Key opportunities identified through comprehensive market analysis:
-- Post-pandemic touring renaissance with Slovenia as central European touring hub
-- Safety technology leadership appealing to riders and families concerned about touring risks
-- Community building through BMW touring events and police-style riding workshops
-- Value packaging solutions with bundled options to address price sensitivity in Slovenian market
+- Slovenia's resilient motor vehicle market showing 2.7% growth while broader European motorcycle sales declined 16.6%
+- Strong appetite for heritage styling with consumers "eagerly waiting" for retro-inspired models like R 12 G/S
+- Gap in market for authentic off-road capability combined with manageable weight addressing widespread handling concerns
+- Partnership potential with local adventure communities like TET Slovenia and Alkemist Adventures for terrain-specific demonstrations

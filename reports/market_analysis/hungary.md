@@ -3,161 +3,164 @@
 # Topics Analysis
 
 ## Theme Data
-*Note: Include percentage distribution data from the long form report for each theme (e.g., "Theme 1: 25%")*
-- Comfort is King – Ergonomics & Wind Protection: 30%
-- Technology & Innovation: 20%
-- Performance vs. Practicality: 15%
-- Brand Loyalty & Rivalry: 10%
-- Market and Regulatory Buzz: 10%
-- Design & Aesthetics: 8%
-- Price and Value: 5%
-- Weight & Manageability: 2%
+- Off-Road Performance: 20%
+- Technology & Features: 25%
+- Comfort & Ergonomics: 15%
+- Reliability Concerns: 10%
+- Value & Pricing: 15%
+- Design & Character Appeal: 10%
+- Any other key themes: 5%
 
 ## Theme Insights
-- **Comfort is King – Ergonomics & Wind Protection**
-  - Quote: "a kényelem miatt váltottam [sport]ról túramotorra" ("I switched from a sportbike to a tourer because of the comfort")
-  - Explanation: Comfort was the most prevalent theme, with riders obsessing over seat comfort, windshields, riding position, and passenger accommodations. The ability to cover long distances without fatigue is the primary motivation for choosing touring bikes.
-  - Source: Hegylakók forum discussions
-- **Technology & Innovation**
-  - Quote: "aki télen is szokott motorozni, az most felsóhajt: ez kell" ("anyone who rides in winter will sigh with relief, I need this [feature]")
-  - Explanation: Riders showed excitement for cutting-edge tech like adaptive cruise control, advanced ABS/traction systems, electronic suspension, and smartphone connectivity. BMW's adoption of radar on the R1300RT drew significant positive comments.
-  - Source: Totalbike.hu reviewer comments
-- **Performance vs. Practicality**
-  - Quote: "nyomatékát… megyen" ("torquey… it just goes")
-  - Explanation: Many discussions revolved around balancing sporty performance with touring practicality. Riders compared specs but often tempered with real-world needs, noting that adequate power delivery and bike weight are more important than peak horsepower.
-  - Source: Totalbike.hu technical discussions
-- **Brand Loyalty & Rivalry**
-  - Quote: "ha túrázni akarsz kompromisszumok nélkül: vegyél egy RT-t" ("if you want to tour with no compromises: get an RT")
-  - Explanation: BMW and Honda have the most vocal fanbases in the touring segment, with threads sometimes veering into friendly rivalry. Experienced tourers frequently advise newcomers, creating strong word-of-mouth influence.
-  - Source: Népítélet forum discussions
-- **Market and Regulatory Buzz**
-  - Quote: "nyolcezerig meg sem állunk" ("we won't stop until eight thousand [new bikes]")
-  - Explanation: Discussions included market trends, Euro 5+ emissions rules, supply issues, and local events. Riders showed awareness of industry context, including the record 2024 sales year and forecasts for 2025.
-  - Source: SportMotor.hu market analysis
-- **Design & Aesthetics**
-  - Quote: "Az RT megjelenése megosztó" ("the RT's appearance is divisive")
-  - Explanation: The new BMW R1300RT's styling proved highly polarizing, with approximately half of the comments on its launch focusing solely on looks. Design debates generated high engagement both positive and negative.
-  - Source: 1000ps.com expert reviews
-- **Price and Value**
-  - Quote: "If $23k is too much, then $30k is ridiculous. Pretty bike, though"
-  - Explanation: BMW's premium pricing drew the most criticism, with the R1300RT's base price of 9.395 million HUF (~€23.5k) seen as prohibitive. Riders complained about expensive optional packages and questioned value for money.
-  - Source: Reddit r/Motorrad discussions
-- **Weight & Manageability**
-  - Quote: "aztaqrva, mekkora dög ez" ("damn, what a beast this is")
-  - Explanation: While generally accepted as inherent to big tourers, the weight of these machines (280-400 kg) attracted negative commentary, especially from less experienced riders concerned about low-speed handling and parking lot maneuvers.
-  - Source: Népítélet owner testimonials
+- **Off-Road Performance**
+  - Quote: "Discussions frequently centered on engine power, handling characteristics, and suspension performance, specifically in off-road contexts"
+  - Explanation: Consumer conversations prioritized authentic off-road capability, with models like the KTM 890 Adventure R being lauded for off-road excellence and the Aprilia Tuareg 660 Rally described as an "uncompromising adventure" motorcycle
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Technology & Features**
+  - Quote: "The integration of advanced technologies was a significant point of discussion. This included Honda's Dual Clutch Transmission (DCT), various electronic rider aids such as ABS Pro, Motorcycle Traction Control (MTC), and multiple riding modes"
+  - Explanation: Advanced technology integration dominated consumer discussions, with Honda's DCT achieving a 71% adoption rate among Adventure Sports buyers, highlighting the importance of modern conveniences
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Comfort & Ergonomics**
+  - Quote: "The practical aspects of riding comfort were a recurring theme. This included discussions on seat height, particularly for models like the Honda X-ADV, Honda NX500, Ducati DesertX, BMW R 12 G/S, and Triumph Tiger 900 GT Pro A2"
+  - Explanation: Seat height accessibility and overall ergonomic design were key considerations, with the Honda NX500's manageable 83cm seat height being praised while the Ducati DesertX's 875mm seat height was seen as a barrier
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Reliability Concerns**
+  - Quote: "User experiences with reliability and durability were shared, notably concerning the Yamaha Ténéré 700's reported clutch problems and a software bug affecting the MPG display"
+  - Explanation: Long-term dependability concerns were actively discussed, with specific issues like the Yamaha Ténéré 700's clutch problems and the Voge 900 DSX's traction control issues being noted
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Value & Pricing**
+  - Quote: "Consumers actively evaluated the balance between a motorcycle's features and its price point. Brands like CFMoto and Royal Enfield Himalayan were highlighted for offering competitive pricing relative to their extensive feature sets"
+  - Explanation: Value proposition was a key consideration, with brands like CFMoto being praised for competitive pricing while the Yamaha Ténéré 700 was noted as no longer being a "bargain"
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Design & Character Appeal**
+  - Quote: "The aesthetic and historical lineage of motorcycles generated considerable interest. This was evident in discussions surrounding the BMW R 12 G/S, which draws inspiration from the R 80 G/S"
+  - Explanation: Heritage and design aesthetics contributed to consumer interest, with the BMW R 12 G/S's connection to the R 80 G/S generating discussion, though opinions on designs like the BMW R 1300 GS Adventure were mixed
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- **Any other key themes**
+  - Quote: "This category includes broader market trends, the impact of major events like Motorkiállítás 2025, brand positioning, and general riding experiences"
+  - Explanation: Market events and broader industry trends influenced consumer conversations, with Motorkiállítás 2025 serving as a crucial platform for brand visibility and consumer engagement
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive: 55%
-- Neutral: 25%
-- Negative: 20%
+- Positive Sentiment: 60%
+- Neutral Sentiment: 25%
+- Negative Sentiment: 15%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "ilyen kényelmes gyári ülésekkel még nem is találkoztam" ("I've never encountered such comfortable stock seats")
-  - Explanation: Riders repeatedly praised the comfort and long-distance capabilities of touring bikes, particularly BMW RT and Honda Gold Wing models for their ergonomic excellence and all-day riding comfort.
-  - Source: Népítélet user reviews
-- Quote 2: "a fékkarra meg csak rálehelek, és mintha ezer horgonyt dobtam volna ki" ("I just breathe on the brake lever and it's like dropping a thousand anchors")
-  - Explanation: Strong performance impressions regarding braking power, handling stability, and highway capability contributed to positive perceptions that touring bikes can be both comfortable and capable.
-  - Source: Hegylakók rider testimonials
-- Quote 3: "még nem romlott el rajta semmi" ("nothing has broken on it so far")
-  - Explanation: Build quality and reliability consistently earned praise, with owners citing German precision and dependable operation even after tens of thousands of kilometers, fostering trust in BMW and Honda brands.
-  - Source: Népítélet reliability discussions
+- Quote 1: "BMW's strong market leadership and its numerous 'Motorcycle of the Year' wins for models like the R 1300 GS and F 900 GS/Adventure"
+  - Explanation: BMW's market dominance and award recognition drove positive sentiment, with the R 1300 GS being identified as the most popular new motorcycle in Hungary
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 2: "Honda's overall market dominance and the favorable reception of its Africa Twin (particularly its DCT and asphalt-focused updates) and Transalp (praised for its updates and value proposition)"
+  - Explanation: Honda maintained strong positive sentiment through market leadership and well-received model updates, particularly the Africa Twin's DCT technology
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 3: "The KTM 890 Adventure R's off-road prowess and advanced features were met with enthusiasm"
+  - Explanation: KTM's adventure offerings generated enthusiasm for their off-road capabilities and advanced rider aid systems
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
 
 ### Neutral Sentiment
-- Quote 1: "robogókon kívül… a túraendurók viszik a prímet" ("aside from scooters, adventure bikes are leading the sales")
-  - Explanation: Factual observations about market trends and competitive positioning, including the rise of adventure-touring bikes as alternatives to traditional touring motorcycles.
-  - Source: SportMotor.hu market analysis
-- Quote 2: "Európa legnagyobb példányszámban eladott túrasportmotorja" ("Europe's best-selling sport-touring motorcycle")
-  - Explanation: Neutral reporting on sales figures and market performance, such as Honda NT1100's success achieving 12,000 units sold in its first couple of years.
-  - Source: Hegylakók market data
-- Quote 3: "második hazánkban az ezer köbcenti feletti túramotorok között" ("second in Hungary among touring bikes over 1000cc")
-  - Explanation: Statistical information about market positioning and sales rankings, particularly BMW's performance relative to competitors in the Hungarian market.
-  - Source: SportMotor.hu sales data
+- Quote 1: "A notable portion of the discourse maintained a neutral tone, focusing on factual information, comparisons, and technical specifications without explicit positive or negative framing"
+  - Explanation: Market reports and technical discussions maintained objectivity, focusing on specifications and market data rather than emotional responses
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 2: "This included general market reports on sales figures, where decreases were attributed to the previous year's Euro 5 stock-clearing rather than an inherently negative market health"
+  - Explanation: Sales decreases were explained contextually due to previous year's regulatory stock clearing, maintaining neutral market assessment
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 3: "Debates on design aesthetics, such as the 'Lego looks' attributed to the BMW R 1300 GS Adventure, also fell into this category, reflecting subjective preferences rather than performance critiques"
+  - Explanation: Design discussions were subjective and neutral, focusing on aesthetic preferences rather than functional criticism
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
 
 ### Negative Sentiment
-- Quote 1: "This has to be the ugliest BMW of the modern era"
-  - Explanation: The new BMW R1300RT's styling proved highly polarizing, with harsh criticism from some riders who disliked the streamlined design compared to previous generations.
-  - Source: K1600 Forum international discussions
-- Quote 2: "you don't get much in the base model and everything comes in packs so it adds up like crazy"
-  - Explanation: Frustration over BMW's pricing strategy and expensive optional packages, with riders feeling the base model lacks essential features that should be standard on a premium touring bike.
-  - Source: Reddit r/Motorrad pricing discussions
-- Quote 3: "Fekete leves… oldaldoboz kapacitás… csökkent" ("Here comes the bitter pill: side-case capacity has indeed decreased")
-  - Explanation: Specific complaints about the R1300RT's reduced standard pannier capacity (from 35L to 27L), viewed as a step backward in touring functionality requiring expensive optional larger cases.
-  - Source: Totalbike.hu technical analysis
+- Quote 1: "The Yamaha Ténéré 700, despite its popularity, faced criticism for reported clutch problems and a software bug affecting its MPG display, as well as the absence of cruise control"
+  - Explanation: Specific reliability issues with the Yamaha Ténéré 700 generated negative sentiment, particularly regarding clutch problems and software bugs
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 2: "The Honda X-ADV drew some negative comments regarding seat discomfort for certain riders and challenges with mounting the bike due to its high ground clearance"
+  - Explanation: Honda X-ADV faced criticism for ergonomic issues affecting rider comfort and accessibility
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
+- Quote 3: "The Harley-Davidson brand faced concerns over potential EU tariffs, which could negatively impact its market position"
+  - Explanation: External factors like potential EU tariffs created negative sentiment around Harley-Davidson's market competitiveness
+  - Source: Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW: 30%
-- Honda: 25%
+- BMW Motorrad: 25%
+- Honda: 20%
 - Yamaha: 15%
-- Kawasaki: 10%
-- Harley-Davidson: 10%
-- Others: 10%
+- KTM: 10%
+- Ducati: 8%
+- Triumph: 7%
+- CFMoto: 6%
+- Harley-Davidson: 3%
+- Aprilia: 3%
+- Moto Guzzi: 2%
+- Benelli: 1%
+- Can-Am: <1%
+- Others: <1%
 
 ## Competitor Details
 
 ### BMW Motorrad
 **Strengths**
-- Market leader in sport-touring with the R1250/R1300RT setting the benchmark for the category
-- Advanced technology leadership including adaptive cruise control, Telelever suspension, and cutting-edge rider aids
-- Strong brand prestige and active community engagement through BMW Motorrad Days and local clubs
+- Market leadership with R 1300 GS as most popular new motorcycle in Hungary for January-February 2025
+- Multiple "Motorcycle of the Year" wins across different categories
+- Strong premium positioning with advanced features like Automated Shift Assist (ASA) and ConnectedRide Control
+- R 12 G/S heritage positioning as modern tribute to legendary 1980 R 80 G/S with authentic off-road spirit and "purist design"
 
 **Weaknesses**
-- Very high price point (R1300RT base price 9.395 million HUF) limiting buyer pool significantly
-- Polarizing new design of R1300RT with reduced standard luggage capacity causing customer dissatisfaction
-- Heavy weight (281kg) and complexity leading to high maintenance costs and intimidation for less experienced riders
+- Mixed reactions to R 1300 GS Adventure design with terms like "Lego looks" or "Microwave on wheels"
+- R 12 G/S had limited pre-launch discussion due to April 2025 official introduction timing
+- Higher price points may limit accessibility for budget-conscious consumers
 
-### Honda Motor Co.
+### Honda
 **Strengths**
-- Broadest touring lineup from luxury Gold Wing to mid-range NT1100, covering multiple price points effectively
-- Unmatched engine smoothness and reliability reputation with "bulletproof" engines and innovative DCT technology
-- Strong dealer network and service support with consistent brand reputation for long-term durability
+- Overall market leader in Hungarian motorcycle market with diverse adventure lineup
+- Africa Twin's high DCT adoption rate (71%) among Adventure Sports buyers
+- XL750 Transalp achieved third spot in overall new motorcycle sales with good value proposition
+- Strong presence at Motorkiállítás 2025 with comprehensive model showcase
 
 **Weaknesses**
-- Lower share of voice compared to BMW despite overall market leadership position
-- Some criticism of recent generic dashboard designs across model range affecting brand perception
-- Gold Wing's high price point similar to BMW but without same level of recent technological advancement
+- Some users reported "many issues after going to the shop" for 2025 Adventure Sport
+- Absence of cruise control on popular models like Transalp noted as drawback
+- X-ADV 750 faced criticism for seat discomfort and mounting challenges due to high ground clearance
 
 ### Yamaha
 **Strengths**
-- Strong engine character with the CP3 triple offering distinctive sound and performance personality
-- Competitive pricing with Tracer 9 GT significantly cheaper than RT or Gold Wing while offering advanced features
-- Historical goodwill from discontinued FJR1300 model still influencing brand perception positively
+- Ténéré 700 ranked 2nd in "Enduros-Supermotos" category in "Motorcycle of the Year" voting
+- Considered industry standard since 2019 introduction with reliable engine and robust build
+- Strong reputation for genuine off-road capability
 
 **Weaknesses**
-- Limited current touring offerings after FJR1300 discontinuation leaving gap in classic sport-touring segment
-- Smaller market presence in touring-specific discussions compared to BMW and Honda
-- Lack of direct successor to popular police-spec FJR1300 causing some customer migration to competitors
+- Reported clutch problems and software bug affecting MPG display on 2025 models
+- Absence of cruise control noted as area of concern
+- Price perception shifted from "bargain" status affecting value proposition
 
-### Kawasaki
+### KTM
 **Strengths**
-- Price-performance positioning with Versys 1000 SE offering affordable liter-class touring capability
-- Smooth inline-4 engine providing sportier feel compared to boxer twins or V-configurations
-- Recent innovation with adaptive cruise control on 2024 Versys 1000 SE showing commitment to technology
+- 890 Adventure R positioned as "Ultimate Mid-Weight Adventure Bike" with strong off-road focus
+- Advanced rider aids including Motorcycle Traction Control (MTC) and Cornering ABS
+- Sophisticated 6D Inertial Measurement Unit (IMU) for enhanced control and safety
 
 **Weaknesses**
-- Lack of dedicated luxury tourer following 1400GTR discontinuation limiting reach in premium segment
-- Smaller brand presence in Hungarian touring community compared to established players
-- ADV-style positioning may not appeal to traditional touring riders seeking maximum weather protection
+- Limited presence in mass market segments compared to Honda and BMW
+- Smaller market share relative to leading competitors
+- Focus on specific off-road niche may limit broader appeal
 
 ## Market Opportunities
 
-- **Growing Middle Class Riders**
-  Opportunity Description: The overall expansion of the motorcycle market indicates increasing numbers taking up motorcycling as a hobby, including older car drivers transitioning to bikes, representing prime opportunity for mid-weight touring options
+- **Heritage Differentiation**
+  Opportunity Description: Leverage authentic heritage positioning like BMW R 12 G/S's connection to R 80 G/S to appeal to purist off-road enthusiasts seeking character and simplicity over maximum technology
 
-- **Tourism & Location Advantage**
-  Opportunity Description: Hungary's strategic Central European location provides convenient access to renowned touring routes across Alps, Dolomites, and Balkans, naturally amplifying appeal of comfortable touring motorcycles
+- **Technology Integration**
+  Opportunity Description: Capitalize on high consumer demand for advanced features like DCT, rider aids, and connectivity systems, with 25% of discussions focused on technology and features
 
-- **Replacement Cycle Demand**
-  Opportunity Description: Substantial numbers of older touring motorcycles (ST1100/1300, R1150RT) remain in active use, creating significant replacement demand as these machines age and owners seek upgrades
+- **Value Positioning**
+  Opportunity Description: Address consumer focus on value-for-money propositions, particularly in mid-market segments where brands like CFMoto are gaining traction with competitive pricing
 
-- **Market Void from Competitors**
-  Opportunity Description: Discontinuation of several dedicated touring models (Yamaha FJR1300, Kawasaki 1400GTR) has created void in classic sport-touring segment, presenting opportunity to capture orphaned customers
+- **Ergonomic Solutions**
+  Opportunity Description: Develop models addressing specific ergonomic needs, such as seat height accessibility, given 15% of discussions focused on comfort and ergonomics
 
-- **Technology Leadership Position**
-  Opportunity Description: Continuing to leverage advanced technology can attract tech-savvy riders, with potential for pioneering electric touring bikes as market evolves toward sustainable mobility solutions
+- **Authentic Off-Road Capability**
+  Opportunity Description: Emphasize genuine off-road performance capabilities, as 20% of consumer discussions centered on off-road performance, handling, and suspension characteristics

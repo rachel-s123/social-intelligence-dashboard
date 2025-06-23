@@ -1,22 +1,22 @@
 # Executive Summary: Switzerland
 
 ## Attribute Resonance
-- Overall Comfort and Value for Money are the highest resonating attributes (WRI: 93.5/92.0), reflecting Swiss consumers' focus on premium experiences and investment justification
-- Technology & Features and Wind Protection show strong resonance (WRI: 89.0/88.5), indicating appetite for innovation balanced with practical touring benefits
-- Passenger Comfort and Brand Image are highly valued (WRI: 88.5/88.0), emphasizing two-up touring culture and BMW's strong Swiss market position
+- Off-Road Performance is the paramount priority (WRI: 94.3), with consumers expecting genuine dirt-ready capability rather than aesthetic appeal
+- Brand Reliability is a non-negotiable foundation (WRI: 90.5), particularly critical for adventure riders venturing into remote areas
+- Heritage/Retro Styling shows strong emerging resonance (WRI: 79.9), but must be authentically linked to functional performance capabilities
 
 ## Market Insights
-- BMW R 1300 RT dominates conversation with 45% share of voice, significantly outpacing Honda Gold Wing (20%) and other competitors
-- Sentiment is sharply divided (40% positive, 40% negative, 20% neutral) with praise for technology and performance balanced by concerns over design and pricing
-- Swiss market shows preference for proven reliability and mature technology, with concerns about first-year model complexity and potential issues
+- Notable appetite for "dirt-ready retro" motorcycles that combine classic aesthetics with modern, uncompromising off-road performance
+- Consumer conversations are predominantly positive (65% positive sentiment) but focused on functional capability over superficial features
+- Switzerland's diverse terrain of alpine roads and off-road trails creates ideal conditions for versatile adventure motorcycles
 
 ## Competitor Analysis
-- Honda Gold Wing maintains comfort leadership but struggles with excessive weight (380kg vs 281kg for RT) and reduced agility on Alpine roads
-- Harley-Davidson touring models offer strong emotional appeal and brand loyalty but lag significantly in advanced technology and performance
-- Yamaha FJR1300's discontinuation leaves BMW with reduced competition in the sport-touring segment, creating market consolidation opportunity
+- KTM and Yamaha faced significant supply-side challenges including production halts and delivery delays during Q1 2025, creating market opportunities
+- BMW GS Series maintains position as adventure class benchmark but at premium price points that may limit accessibility
+- Market leaders each maintain distinct positioning with clear functional value propositions rather than purely aesthetic differentiation
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as the ultimate all-around touring machine combining BMW's engineering excellence with cutting-edge technology and comfort
-- **Content & Messaging:** Emphasize experiential benefits through "#RideAndBelieve" campaigns and focus on seamless technology integration rather than feature complexity
-- **Audience Targeting:** Focus on affluent 40-70 age demographic, BMW loyalists upgrading, and Gold Wing owners seeking lighter alternatives
-- **Key Opportunity:** Leverage market leadership position through Swiss Edition value packages and comprehensive dealer experience programs to address price sensitivity while reinforcing premium positioning
+- **Strategic Positioning:** Position R 12 G/S as the authentic "dirt-ready retro" that uniquely bridges heritage aesthetics with genuine off-road capability, filling the gap between overly complex modern bikes and less capable retro-styled motorcycles
+- **Content & Messaging:** Lead with off-road prowess validation, reinforce BMW's reliability reputation, and frame heritage as authentic capability rather than superficial styling
+- **Audience Targeting:** Focus on adventure riders seeking genuine capability, heritage enthusiasts valuing authentic connections, and Swiss alpine adventurers needing versatile performance
+- **Key Opportunity:** Capitalize on competitor supply disruptions through robust availability while establishing the "dirt-ready retro" niche in the Swiss market with its cultural appreciation for alpine touring heritage

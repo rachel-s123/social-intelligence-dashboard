@@ -3,159 +3,156 @@
 # Topics Analysis
 
 ## Theme Data
-- Comfort & Ergonomics: 25%
-- Technology & Safety Features: 20%
-- Engine Performance & Handling: 18%
-- Design & Aesthetics: 12%
-- Cost & Value Proposition: 10%
-- Weather Protection: 8%
-- Luggage Capacity & Storage: 4%
-- Reliability & Build Quality: 3%
+- O-Road Performance: 26.0%
+- Design & Character Appeal: 21.0%
+- Technology & Features: 17.0%
+- Comfort & Ergonomics: 14.0%
+- Reliability Concerns: 10.0%
+- Value & Pricing: 7.0%
+- Any other key themes (e.g., Weight, Fuel Range, Aftermarket): 5.0%
 
 ## Theme Insights
+- **O-Road Performance**
+  - Quote: "Engineered for off-road excellence"
+  - Explanation: Consumers fundamentally prioritize a bike's genuine capability to perform effectively off-road, viewing it as a core aspect of the "adventure" experience. Over 85% of adventure motorcycle owners prioritize features such as advanced suspension, off-road tires, and high ground clearance.
+  - Source: KTM 890 Adventure R discussions, Consumer survey data
+- **Design & Character Appeal**
+  - Quote: "Pays homage to the legendary BMW R 80 G/S of 1980"
+  - Explanation: The appeal of heritage styling reflects a deeper consumer desire for authenticity, a connection to motorcycling history, and a blend of classic aesthetics with modern performance. The 'Modern Classic' segment showed only a 9.8% decline compared to 29% for the broader adventure category.
+  - Source: BMW R 12 G/S pre-launch discussions, Market performance data
+- **Technology & Features**
+  - Quote: "YCC-T electronic throttle, Sport and Explorer ride modes"
+  - Explanation: Consumers value modern technological advancements that enhance the riding experience, safety, and convenience, provided they are reliable and genuinely useful for adventure riding.
+  - Source: Yamaha Ténéré 700 discussions
 - **Comfort & Ergonomics**
-  - Quote: "The pillion gets more legroom too… seat height is lower, that's handy"
-  - Explanation: The R1300RT's revised ergonomics with lower seat height and improved pillion accommodations sparked significant debate, with some welcoming the changes while others worried about long-haul comfort for the 60+ demographic
-  - Source: MotoGold UK
-- **Technology & Safety Features**
-  - Quote: "Almost Tesla-like we think"
-  - Explanation: BMW's integration of cutting-edge technology including adaptive cruise control, blind-spot monitoring, and the 10.25" TFT display positioned the R1300RT as the tech leader in the touring segment
-  - Source: MotoGold UK
-- **Engine Performance & Handling**
-  - Quote: "give sportsbikes the hurry-up"
-  - Explanation: The new 1300cc boxer engine with 143hp generated excitement among riders who value strong acceleration and torque for effortless overtaking, especially when riding two-up with luggage
-  - Source: Motorcycle News (MCN)
-- **Design & Aesthetics**
-  - Quote: "Not my cup of tea"
-  - Explanation: The R1300RT's sharper, more angular styling divided opinions, with traditionalists finding it too aggressive or "KTM-like" while others appreciated the modern look
-  - Source: 1200RT Forum
-- **Cost & Value Proposition**
-  - Quote: "you REALLY have to want a 1300 boxer… to pay > $30k for this new RT"
-  - Explanation: At £18,900 base price (£21k+ for LE model), pricing concerns were persistent, though some noted it's "half the price of a Gold Wing"
-  - Source: Reddit r/Motorrad
-- **Weather Protection**
-  - Quote: "shields the rider from unwanted windblast"
-  - Explanation: The RT's adjustable windscreen and aerodynamic improvements were praised, though some taller riders noted they might need the accessory screen
-  - Source: Motorcycle News (MCN)
-- **Luggage Capacity & Storage**
-  - Quote: "27L+ per side (expandable to 33L) and up to 54L topcase"
-  - Explanation: BMW's expandable panniers with central locking and integrated convenience features were well-received by touring riders who prioritize packing capacity
-  - Source: Motorcycle News (MCN)
-- **Reliability & Build Quality**
-  - Quote: "first-year model gremlins"
-  - Explanation: Some skepticism existed about BMW's complex electronics based on past RT models' issues with TFT screens and corrosion, contrasting with Honda's "bulletproof" reputation
-  - Source: UK Forums
+  - Quote: "Superb bike. Light & agile; and at my age most importantly comfortable!"
+  - Explanation: For longer rides and varied conditions, physical comfort is crucial. This includes seating, riding position, and vibration management, directly impacting rider endurance and enjoyment.
+  - Source: Triumph Tiger 900 GT Pro owner feedback
+- **Reliability Concerns**
+  - Quote: "Clutch problems within a few hundred miles"
+  - Explanation: A foundational expectation; consumers demand a dependable motorcycle that will not suffer from mechanical or software failures, as reliability directly impacts safety, enjoyment, and long-term ownership.
+  - Source: Yamaha Ténéré 700 user reports
+- **Value & Pricing**
+  - Quote: "Over 65% of potential buyers finding them too expensive"
+  - Explanation: The high cost of adventure motorcycles, particularly models above 1000cc, is a significant deterrent. Consumers assess the overall proposition of a motorcycle, balancing its price against its perceived capabilities.
+  - Source: Market research data
+- **Weight, Fuel Range, Aftermarket**
+  - Quote: "Lightweight...229kg...Oh FFS"
+  - Explanation: Ease of handling and practical considerations like fuel capacity become critical factors, especially when they don't align with consumer expectations for adventure utility.
+  - Source: BMW R 12 G/S pre-launch forum discussions
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive Sentiment: 58%
-- Neutral Sentiment: 30%
-- Negative Sentiment: 12%
+- Positive Sentiment: 55.0%
+- Neutral Sentiment: 25.0%
+- Negative Sentiment: 20.0%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "The new R1300RT: engineered for all-day comfort, all-weather protection, and agile performance"
-  - Explanation: BMW R1300RT received praise for its comprehensive improvements in technology, comfort, and performance, setting a new benchmark for touring
-  - Source: BMW Press Release via MCN
-- Quote 2: "offers a riding experience that meets the highest demands… in dynamics, comfort and travel capability"
-  - Explanation: The touring community celebrated the R1300RT's blend of sport-touring dynamics with traditional touring comfort
-  - Source: Motorcycle News (MCN)
-- Quote 3: "pretty excited to trade up from my 1250RT, mainly for the active ride height"
-  - Explanation: Existing BMW RT owners showed enthusiasm for upgrading, particularly for new features like active ride height adjustment
-  - Source: Reddit r/Motorrad
+- Quote 1: "Loving the 2025 Tenere"
+  - Explanation: Yamaha Ténéré 700 users expressing satisfaction with new features and capabilities despite some reported issues.
+  - Source: Reddit Ténéré 700 discussions
+- Quote 2: "Considerably better in every way, and even more reliable"
+  - Explanation: Ducati DesertX owners praising the bike's versatility and reliability across different riding scenarios.
+  - Source: Reddit DesertX discussions
+- Quote 3: "King of mid-weight adventure"
+  - Explanation: KTM 890 Adventure R consistently positioned as the leader in its segment, with high appreciation for off-road prowess.
+  - Source: KTM 890 Adventure R discussions
 
 ### Neutral Sentiment
-- Quote 1: "They've tipped the rider forward… is that going to suit the mainly 60-plus age group buying the RT? Hmm, maybe…"
-  - Explanation: Questions arose about whether the sportier riding position would suit the traditional touring demographic
-  - Source: MotoGold UK
-- Quote 2: "It's got all the latest kit and still a telelever – which is great – but I want to see it in real life"
-  - Explanation: Many riders adopted a wait-and-see attitude, wanting to test ride before forming strong opinions
-  - Source: UKGSer Forum
-- Quote 3: "the slow take up [of tourers] is more economics than lack of interest"
-  - Explanation: Economic factors and high pricing were acknowledged as barriers to segment growth rather than lack of desire
-  - Source: UKGSer Forum
+- Quote 1: "The bike's agility, despite its 253 kg wet weight"
+  - Explanation: Honda Africa Twin reviews noting performance characteristics without strong positive or negative sentiment.
+  - Source: Honda Africa Twin reviews
+- Quote 2: "17410 Euro?"
+  - Explanation: BMW R 12 G/S price discussions showing factual consideration without strong emotional response.
+  - Source: BMW R 12 G/S pre-launch forum discussions
+- Quote 3: "Tried and true reliable stuff"
+  - Explanation: Ducati DesertX engine and electronics assessment showing practical acceptance.
+  - Source: Reddit DesertX discussions
 
 ### Negative Sentiment
-- Quote 1: "Man, the spy shots… look ugly IMO"
-  - Explanation: The R1300RT's angular design drew criticism from traditionalists who preferred the classic RT aesthetic
-  - Source: Reddit r/Motorrad
-- Quote 2: "electronic and corrosion issues"
-  - Explanation: Past BMW reliability concerns, particularly with electronics and build quality, created skepticism about the new model
-  - Source: MCN Owner Reviews
-- Quote 3: "too sporty" or "KTM-like"
-  - Explanation: Some riders felt the new design direction departed too far from the traditional touring motorcycle appearance
-  - Source: UK Forums
+- Quote 1: "The most disappointing spec is the 15l tank, which is a joke for this motor"
+  - Explanation: BMW R 12 G/S fuel tank capacity generating significant disappointment and concern about range for adventure touring.
+  - Source: BMW R 12 G/S pre-launch forum discussions
+- Quote 2: "Extreme vibration on the hands"
+  - Explanation: Honda Africa Twin post-repair quality issues causing user frustration with dealer service standards.
+  - Source: Reddit Honda Africa Twin discussions
+- Quote 3: "Dashboard MPG just keeps on rising! Ours is currently doing over 200mpg!"
+  - Explanation: Yamaha Ténéré 700 software bugs creating user frustration despite overall positive reception.
+  - Source: Reddit Ténéré 700 discussions
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW R1300RT: 40%
-- Honda Gold Wing: 25%
-- BMW K1600 Series: 15%
-- Other Tourers: 15%
-- BMW R1250RT (discussions): 5%
+- BMW GS Series (traditional): 22.5%
+- Yamaha Ténéré 700: 17.5%
+- Honda Africa Twin: 16.5%
+- KTM 890 Adventure R: 15.5%
+- Ducati DesertX: 11.5%
+- Triumph Tiger 900: 9.5%
+- Others: 7.0%
 
 ## Competitor Details
 
-### BMW R1300RT
+### BMW GS Series (traditional)
 **Strengths**
-- Technological leadership with radar-assisted safety features
-- Class-leading handling for a touring bike ("handles like a smaller bike")
-- Strong brand heritage and police force endorsement in UK
+- Strong brand loyalty and market share gain in declining market
+- R1300GSA positioned as top-selling big adventure bike
+- Renowned build quality and engineering precision
 
 **Weaknesses**
-- Polarizing new design aesthetic
-- High purchase price (£18,900 base)
-- Reliability perception concerns based on past models
+- High weight (R1300GS around 260kg) concerns for some riders
+- Premium pricing potentially limiting market accessibility
+- Pre-launch skepticism about R 12 G/S fuel tank capacity and weight claims
 
-### Honda Gold Wing
+### Yamaha Ténéré 700
 **Strengths**
-- "Bulletproof" reliability reputation with excellent build quality
-- Supreme comfort with "armchair-like seating"
-- Smooth flat-six engine with DCT option
+- Heritage-inspired design with desert racer aesthetic
+- Strong owner satisfaction with capabilities
+- Adjustable suspension and off-road focused components
 
 **Weaknesses**
-- Significantly heavier than competitors (380kg+)
-- Very high price point (£28k+ for Tour DCT)
-- Less agile handling compared to BMW RT
+- Clutch problems within a few hundred miles on new 2025 models
+- Dashboard MPG bug displaying incorrect consumption readings
+- Low RPM fueling issues potentially requiring remap
 
-### BMW K1600 GT/GTL
+### Honda Africa Twin
 **Strengths**
-- Smooth six-cylinder engine character
-- Maximum power and two-up capacity
-- Part of BMW's comprehensive touring lineup
+- Versatile with sublime 1098cc engine and excellent sound
+- Intuitive Dual Clutch Transmission (DCT) system
+- Agile despite weight, suitable for mountainous adventures
 
 **Weaknesses**
-- Sales have diminished with R1300RT launch
-- Heavier and more expensive than R1300RT
-- Seen as overshadowed by the new RT
+- Post-repair quality issues including extreme vibration and misaligned components
+- Dealer service quality concerns affecting brand perception
+- Heavy weight at 253kg wet may challenge some riders
 
-### Other Tourers (Harley/Indian)
+### Ducati DesertX
 **Strengths**
-- Strong brand heritage and customization options
-- V-twin character appeals to specific demographic
-- Extensive infotainment systems
+- Robust off-road capabilities with 21"/18" wheels and 250mm ground clearance
+- Retro design inspired by 1980s Cagiva Explorer
+- Reliable Testastretta engine and electronics
 
 **Weaknesses**
-- Extremely heavy (400kg+) and less agile
-- Very expensive in UK due to tariffs (£35k+)
-- Limited market appeal beyond cruiser enthusiasts
+- Wind noise issues with OEM screen setup
+- Wheel limitations for hardcore off-road use
+- Suspension could be better despite being adequate
 
 ## Market Opportunities
 
-- **Adventure Bike Converts**
-  Opportunity Description: Target aging GS riders seeking more comfort and lower seat height for road-focused touring
+- **Heritage-Styled Adventure Segment**
+  Opportunity Description: The 'Modern Classic' segment showed remarkable resilience with only 9.8% decline compared to 29% for broader adventure category, indicating strong consumer appetite for retro-styled motorcycles.
 
-- **Technology-Driven Growth**
-  Opportunity Description: Leverage advanced safety features and connectivity to attract tech-savvy riders and enhance segment appeal
+- **Lightweight Adventure Alternatives**
+  Opportunity Description: Over 50% of adventure riders report difficulty handling heavy models, creating demand for more manageable alternatives that maintain capability.
 
-- **Community Building**
-  Opportunity Description: Strengthen owner loyalty through exclusive touring events, rallies, and partnerships with tour companies
+- **Quality Control Differentiation**
+  Opportunity Description: Competitor quality issues (Yamaha clutch problems, Honda post-repair issues) create opportunity for brands emphasizing reliability and build quality.
 
-- **Mid-Weight Touring Expansion**
-  Opportunity Description: Potential to introduce lighter touring model (rumored R800RT) to attract riders finding R1300RT too heavy or expensive
+- **Puristic Off-Road Focus**
+  Opportunity Description: Market tension between desire for advanced features and concerns about excessive weight/complexity creates niche for "back-to-basics" premium adventure options.
 
-- **Effortless Touring Positioning**
-  Opportunity Description: Market the R1300RT as facilitating stress-free, extended touring for aging demographic seeking reduced physical demands
+- **Aftermarket Ecosystem Development**
+  Opportunity Description: Strong trend of aftermarket modifications among competitor owners indicates opportunity for official accessory packages and customization options.

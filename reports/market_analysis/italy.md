@@ -3,154 +3,153 @@
 # Topics Analysis
 
 ## Theme Data
-- Comfort & Touring Experience: 25%
-- Technology & Innovation: 20%
-- Brand Comparisons & Cross-Shopping: 18%
-- Adventure vs Touring Debate: 15%
-- Pricing & Value: 10%
-- Weight & Handling: 8%
-- Reliability & Maintenance: 4%
+- Off-Road Performance: 25.0%
+- Comfort & Ergonomics: 20.0%
+- Technology & Features: 20.0%
+- Reliability Concerns: 10.0%
+- Value & Pricing: 10.0%
+- Design & Character Appeal: 10.0%
+- Any other key themes: 5.0%
 
 ## Theme Insights
-- **Comfort & Touring Experience**
-  - Quote: "500 km as if sitting on the couch at home"
-  - Explanation: Italian riders consistently prioritize comfort as the defining criterion for touring bikes, emphasizing wind protection, seat comfort, and fatigue-free riding
-  - Source: moto.it
-- **Technology & Innovation**
-  - Quote: "ha portato l'iconica RT a un livello completamente nuovo… più accessibile e dinamica, grazie a motore, ciclistica e aerodinamica completamente rinnovati"
-  - Explanation: Modern tech features like radar adaptive cruise control, TFT displays, and connectivity are actively discussed and compared among riders
-  - Source: moto.it
-- **Brand Comparisons & Cross-Shopping**
-  - Quote: "Meglio RT o Multistrada per turismo?"
-  - Explanation: Italian riders frequently compare bikes, revealing cross-shopping patterns between BMW RT, Honda Gold Wing, and Ducati Multistrada
-  - Source: Forum discussions
-- **Adventure vs Touring Debate**
-  - Quote: "modern adventure bikes offer 80% of the comfort plus more versatility"
-  - Explanation: There's ongoing discussion about whether adventure-touring bikes have overtaken pure tourers in popularity and practicality
-  - Source: Forum discussions
-- **Pricing & Value**
-  - Quote: "prezzi salati"
-  - Explanation: While riders acknowledge the steep prices of premium tourers, they debate whether the luxury features justify the investment
-  - Source: insella.it
-- **Weight & Handling**
-  - Quote: "Pur se pesante, una volta in movimento diventa facile"
-  - Explanation: Weight is acknowledged as a necessary trade-off, tolerated but not loved, especially problematic during low-speed maneuvers
-  - Source: moto.it
-- **Reliability & Maintenance**
-  - Quote: "ogni sistema elettronico in più… è qualcosa in più che si può rompere in viaggio"
-  - Explanation: Veteran tourers express wariness about too many electronics, emphasizing the importance of reliability for long trips
-  - Source: giri-in-moto.it
+- **Off-Road Performance**
+  - Quote: "Viaggio avventura, non sapendo quindi che strade andrai a percorrere, o 'solo' asfalto? Sembra una banalità ma non lo è per la corretta scelta di una moto 'Adventure'"
+  - Explanation: This theme consistently emerges, with riders expressing interest in bikes capable of tackling diverse terrains, focusing on features like knobby tires, suspension travel, and overall off-road prowess.
+  - Source: Italian motorcycle forums and discussions
+- **Comfort & Ergonomics**
+  - Quote: "BMW R 1300 GS is frequently praised for its 'pazzesco' (amazing) front-end feel, smooth gas management, and comfort on long rides, with minimal vibrations and good aerodynamic protection"
+  - Explanation: Riders frequently discuss the importance of comfort for long-distance touring, including seat height, seat comfort, and effective aerodynamic protection.
+  - Source: Social listening analysis of Italian forums
+- **Technology & Features**
+  - Quote: "Advanced electronics and features are highly valued, including ABS Pro, Dynamic Traction Control (DTC), Dual Clutch Transmission (DCT), electronic suspensions, ride modes, TFT displays, quickshifters, and smartphone connectivity"
+  - Explanation: Advanced electronics and features are highly valued for enhancing safety, control, and the overall riding experience.
+  - Source: Consumer discussions and reviews
+- **Reliability Concerns**
+  - Quote: "Elenco dei problemi" (List of problems) thread for KTM 890 Adventure
+  - Explanation: While not a dominant negative theme across all brands, specific discussions highlight reliability issues, with general reliability valued as an attribute for touring.
+  - Source: Brand-specific forums
+- **Value & Pricing**
+  - Quote: "Pricing is a consistent discussion point, with riders weighing initial cost against features, performance, and perceived value. The impact of Euro 5+ regulations and discounted Euro 5 models also influenced purchasing decisions"
+  - Explanation: Pricing discussions focus on the balance between cost and features, with Euro 5+ regulations creating market dynamics around discounted models.
+  - Source: Market analysis and consumer discussions
+- **Design & Character Appeal**
+  - Quote: "riportare gli appassionati alle origini ma con tecnologie moderne e un design che omaggia la storia BMW" (bring enthusiasts back to the origins but with modern technologies and a design that pays homage to BMW history)
+  - Explanation: The aesthetic and "character" of a motorcycle are important, with discussions on unique looks, classic enduro designs, and the appeal of heritage styling.
+  - Source: BMW R 12 G/S anticipation discussions
+- **Heritage Interest**
+  - Quote: "Retro and vintage remain popular" in motorcycle fashion and design with "Timeless designs reminiscent of the golden era of motorcycling"
+  - Explanation: Broader discussions on maintenance and ownership, travel and touring experiences, and the impact of regulatory changes on the market.
+  - Source: Market trend analysis
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive Sentiment: 70%
-- Neutral Sentiment: 20%
-- Negative Sentiment: 10%
+- Positive Sentiment: 70.0%
+- Neutral Sentiment: 15.0%
+- Negative Sentiment: 15.0%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "moto semplicemente perfetta per i viaggi"
-  - Explanation: BMW RT owners express overwhelming satisfaction with touring capabilities and comfort
-  - Source: moto.it (BMW RT owner)
-- Quote 2: "poltrona a due ruote… ti consente di viaggiare con la massima comodità"
-  - Explanation: Honda Gold Wing riders celebrate unparalleled comfort for long-distance touring
-  - Source: moto.it (Gold Wing owner)
-- Quote 3: "insospettabilmente maneggevole"
-  - Explanation: Riders are pleasantly surprised by the RT's agility despite its size
-  - Source: insella.it (BMW RT review)
+- Quote 1: "BMW R 1300 GS is frequently praised for its 'pazzesco' (amazing) front-end feel, smooth gas management, and comfort on long rides"
+  - Explanation: Strong enthusiasm for BMW's adventure motorcycles, particularly praising comfort and handling characteristics.
+  - Source: Italian motorcycle forums (BMW-focused)
+- Quote 2: "The Ducati Multistrada 2025 is described as a 'conferma,' impressing and pleasing riders with its agility and suspension"
+  - Explanation: Positive reception of Ducati's adventure offerings, highlighting performance and suspension quality.
+  - Source: Italian motorcycle reviews (Ducati-focused)
+- Quote 3: "The KTM 690 Enduro R receives high praise for its 'fantastico' (fantastic) engine, exceptional suspension, and strong off-road performance, often described as a 'bomba' (bomb) or 'perfetta' (perfect) for dual-sport use"
+  - Explanation: High praise for KTM's off-road capabilities and engine performance in the adventure segment.
+  - Source: KTM-specific forums (KTM-focused)
 
 ### Neutral Sentiment
-- Quote 1: "Ho comprato una NT1100 DCT… e la prossima sarà una GoldWing"
-  - Explanation: Discussions about upgrade paths from mid-range to premium tourers
-  - Source: quellidellelica.com
-- Quote 2: "C'ho girato l'Europa. Mai un problema"
-  - Explanation: Matter-of-fact statements about reliability and touring experiences
-  - Source: moto.it (Yamaha FJR owner)
-- Quote 3: "one of the best GT bikes around that offers everything a tourer could desire"
-  - Explanation: Objective assessments of touring bike capabilities
-  - Source: insella.it
+- Quote 1: "while the BMW R 1300 GS is highly regarded, a minor point was raised about the 'panino' button on the multi-function controller, which some found to slightly reduce execution speed for commands"
+  - Explanation: Balanced perspective on BMW offering constructive feedback on specific interface elements.
+  - Source: BMW user discussions (BMW-focused)
+- Quote 2: "The engine's fluidity at lower RPMs (2000-4000 rpm) was also noted to have 'perso un littino di fluidità' (lost a little fluidity)"
+  - Explanation: Nuanced technical assessment of BMW engine characteristics across different RPM ranges.
+  - Source: Technical reviews (BMW-focused)
+- Quote 3: "Some comments reflect a more balanced or nuanced perspective on adventure bikes' versatility for both on-road and off-road adventures"
+  - Explanation: Measured discussion of overall segment capabilities and limitations.
+  - Source: General adventure segment discussions (Segment general)
 
 ### Negative Sentiment
-- Quote 1: "nelle manovre da fermo il peso si sente"
-  - Explanation: Weight management issues during low-speed maneuvers are a common complaint for the segment
-  - Source: insella.it (BMW RT)
-- Quote 2: "elegante e classica finché vuoi, ma simile ad uno scooter… o ad un camper 3/4 posteriore"
-  - Explanation: Polarizing views on the R1300RT's styling, with some finding it bulky
-  - Source: quellidellelica.com (BMW RT)
-- Quote 3: "motore troppo rumoroso… nei lunghi viaggi dà fastidio"
-  - Explanation: Some RT users complain about engine noise on long trips
-  - Source: moto.it (BMW RT owner)
+- Quote 1: "For the KTM 890 R, some users found its design 'fugly' and its engine 'characterless'"
+  - Explanation: Critical assessment of KTM's design and engine character by some users.
+  - Source: KTM discussions (KTM-focused)
+- Quote 2: "Tutti questi controlli elettronici mi fanno venire l'orticaria" (All these electronic controls give me hives) and expressing apprehension about KTM's assistance"
+  - Explanation: Concerns about complexity of electronic controls and manufacturer support quality.
+  - Source: KTM 1390 Super Adventure discussions (KTM-focused)
+- Quote 3: "The stiffness of some seats, especially in colder weather, and the 'rubbery' feel of certain tires were also mentioned as drawbacks"
+  - Explanation: Specific comfort and performance issues identified across various models.
+  - Source: General user experiences (Segment general)
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW (RT Series): 40%
-- Honda (Gold Wing/NT1100): 25%
-- Ducati (Multistrada): 15%
-- Yamaha (FJR1300): 10%
-- Others: 10%
+- BMW GS Series: 31.8%
+- Honda Africa Twin: 14.5%
+- Ducati Multistrada V4 / V4 S: 10.5%
+- Other Adventure Bikes: 43.2%
 
 ## Competitor Details
 
-### BMW R 1300 RT
+### BMW GS Series
 **Strengths**
-- Class-leading technology with radar ACC, 10.25" TFT display, and automated clutch
-- Excellent balance of comfort and dynamic performance
-- Strong brand heritage and reputation as "regina delle gran turismo"
+- Dominant position in premium adventure segment with R 1300 GS models being top sellers
+- Strong brand reputation for quality, performance, and capability confirmed by consistent high ranking despite premium pricing
+- Praised for "pazzesco" front-end feel, smooth gas management, comfort on long rides with minimal vibrations and good aerodynamic protection
 
 **Weaknesses**
-- High price point at €24,300 base
-- Still heavy at ~280 kg despite weight reduction efforts
-- Polarizing styling with some finding it bulky
+- Minor interface issues with "panino" button on multi-function controller reducing execution speed for commands
+- Engine fluidity at lower RPMs (2000-4000 rpm) noted to have "lost a little fluidity"
+- Premium pricing may limit accessibility to broader market segments
 
-### Honda Gold Wing
+### Honda Africa Twin
 **Strengths**
-- Unmatched comfort with "armchair on two wheels" reputation
-- Legendary smooth 1.8L six-cylinder engine
-- Comprehensive features including DCT, Apple CarPlay, and electric reverse
+- Led Q1 2025 sales with 1,127 units, positioning as highly balanced and versatile option
+- Appreciated for overall equilibrium and availability of DCT transmission feature
+- Appeals to broad range of riders due to blend of on-road comfort and off-road capability
 
 **Weaknesses**
-- Extreme weight at 380+ kg limiting agility
-- Very high price at €35-40k
-- Less sporty handling compared to competitors
+- Limited specific weakness data available in social listening analysis
+- Faces intense competition from premium German brands in high-end segment
+- May lack the heritage appeal that some consumers seek in adventure motorcycles
 
-### Ducati Multistrada V4
+### Ducati Multistrada V4 / V4 S
 **Strengths**
-- Most powerful with 170 hp V4 engine
-- Excellent handling "fantastica da guidare tra le curve"
-- Cutting-edge technology including radar ACC and semi-active suspension
+- Emphasizes high power (167 HP) from V4 Granturismo engine while meeting Euro 5+ standards
+- Described as "conferma" impressing riders with agility and suspension performance
+- Integrates complex DVO system with 70 sensors for fine-tuning various functionalities
 
 **Weaknesses**
-- Less wind protection than dedicated tourers
-- Chain drive requires more maintenance than shaft drive
-- Slightly compromised passenger comfort compared to pure tourers
+- High complexity of electronic systems may concern riders seeking simpler operation
+- Premium pricing positions it in competitive high-end segment
+- May appeal more to performance-oriented riders than traditional adventure touring enthusiasts
 
-### Yamaha FJR1300
+### BMW R 12 G/S (Pre-Launch)
 **Strengths**
-- Bulletproof reliability - "mai un problema… la moto più affidabile"
-- Well-balanced sport-touring performance
-- Strong value proposition when available
+- Explicitly anticipated to "bring enthusiasts back to the origins but with modern technologies and a design that pays homage to BMW history"
+- Expected to complete BMW's Heritage range with design inspired by legendary R 80 G/S from 1980
+- Positioned to capture "spirit of off-road enduro with boxer engine" combining tradition and innovation
 
 **Weaknesses**
-- Discontinued due to Euro5 compliance issues
-- Dated technology lacking modern electronics
-- Limited availability as only used models remain
+- As pre-launch model, lacks proven market performance and real-world user feedback
+- Heritage positioning may limit appeal to riders seeking cutting-edge modern design
+- Needs to balance nostalgic appeal with competitive modern performance expectations
 
 ## Market Opportunities
 
-- **Capture FJR1300 Loyalists**
-  Opportunity Description: With Yamaha's FJR1300 phased out due to Euro5 regulations, a loyal customer base needs a new sport-touring option that offers reliability and performance
+- **Heritage-Focused Positioning**
+  Opportunity Description: Strong appetite for heritage styling with "Retro and vintage remain popular" trend, allowing models like R 12 G/S to leverage BMW's iconic GS lineage and capture riders appreciating timeless design without compromising modern capabilities.
 
-- **Adventure-to-Touring Migration**
-  Opportunity Description: Target GS and adventure bike owners who primarily tour on asphalt and may be ready for superior comfort and dedicated touring features
+- **Authentic Off-Road Capability Gap**
+  Opportunity Description: Market demand for genuine off-road readiness beyond just styling, with consumers seeking "true adventure readiness" and capability to handle diverse terrains from paved roads to challenging dirt trails.
 
-- **Mid-Size Tourer Upgrade Path**
-  Opportunity Description: Cultivate NT1100 and other mid-size tourer owners as future RT customers through aspirational marketing and trade-in programs
+- **Comfort-Technology Balance**
+  Opportunity Description: Consumer desire for advanced technology that enhances safety and performance while avoiding perceived over-complexity, creating opportunity for intuitive systems that improve riding experience without overwhelming users.
 
-- **Technology Leadership Position**
-  Opportunity Description: Leverage BMW's first-to-market features like radar ACC and automated clutch to attract tech-savvy riders seeking the latest innovations
+- **Versatility Market Growth**
+  Opportunity Description: Growing recreational riding trend among younger Italian demographics (30% of motorcyclists) driving demand for versatile machines capable of urban commuting, long-distance touring, and light off-road exploration.
 
-- **Growing Mototurismo Trend**
-  Opportunity Description: Capitalize on Italy's expanding motorcycle tourism culture through partnerships with tour operators and destination marketing
+- **Premium Value Positioning**
+  Opportunity Description: Despite market contraction, premium adventure bikes maintained strong performance, indicating opportunity for well-positioned heritage models to command premium pricing while delivering authentic adventure capability and emotional connection.

@@ -30,122 +30,122 @@ This comparative analysis helps identify unique market characteristics and oppor
 ## WRI Scores
 
 ### Attribute Scores
-Brand Image & Reputation: 97.5
-Overall Comfort: 95.8
-Wind Protection: 92.5
-Technology & Features: 90.8
-Engine Performance: 89.4
-Innovation & Future-proofing: 89.3
-Handling & Stability: 86.8
-Safety Features: 86.8
-Value for Money: 86.0
-Reliability & Durability: 83.5
-Engine Character & Sound: 71.0
-Design & Aesthetics: 70.5
-Luggage Capacity: 67.0
-Passenger Comfort: 67.0
-Seat Height & Ergonomics: 66.5
-Weight Management: 62.5
-Dealer & Service Network: 57.5
-Low-Speed Maneuverability: 55.5
-Range & Fuel Efficiency: 48.5
-Resale Value: 45.0
+Technology & Features: 97.5
+Connected Features (TFT, Smartphone Integration): 89.5
+Rider Aids & Safety Systems: 88.0
+Off-Road Performance: 79.0
+Engine Size & Performance: 75.5
+Suspension Quality: 67.5
+Value for Money: 66.0
+Comfort & Ergonomics: 63.5
+Seat Height & Accessibility: 63.5
+Long-Distance Touring Capability: 62.5
+Versatility (Dual-Purpose Capability): 55.5
+Brand Reliability: 50.0
+Price Range: 48.5
+Fuel Range & Efficiency: 46.5
+Heritage/Retro Styling: 40.0
+Aesthetic Appeal/Character: 39.5
+Build Quality & Finish: 39.0
+Manageability/Weight: 37.0
+Aftermarket Support & Customizability: 20.5
+Dealer Network & Service Availability: 14.0
 
 ## WRI Insights
 
 ### Attribute Insights
-Brand Image & Reputation:
-- Insight: Brand image is the paramount differentiator, deeply embedded in consumer perception. BMW and Honda's strong brand images generate immense goodwill and foster profound loyalty. The "BMW-effect" and Honda's reputation for "bulletproof" engines are lived experiences that significantly influence purchase decisions.
-- Recommendation: Continue positioning BMW as the technological leader while leveraging established community strength. Enhance brand prestige through exclusive touring club initiatives and maintain engineering excellence reputation.
-
-Overall Comfort:
-- Insight: Comfort is unequivocally the defining attribute of touring motorcycles, consistently highlighted as the primary motivation for purchase. Riders explicitly state they switch to touring bikes "because of the comfort" with BMW's RT and Honda's Gold Wing cited as benchmarks.
-- Recommendation: Keep comfort non-negotiable as BMW's core strength. Ensure RT's seat and ergonomics remain best-in-class while continuing to fine-tune wind protection and consider adjustable footpeg positions for different rider heights.
-
-Wind Protection:
-- Insight: Closely intertwined with overall comfort, wind protection receives significant emphasis as a critical differentiator for dedicated touring machines. The BMW R1300RT's large, electrically adjustable screen and full fairing are recognized as major selling points.
-- Recommendation: Market the RT's superior wind protection aggressively as a clear advantage over adventure bikes. Explore adding memory functions to windscreen positions or better side deflectors while never sacrificing wind protection for style.
-
 Technology & Features:
-- Insight: Modern touring riders highly value advanced technological features with significant enthusiasm for cutting-edge electronics. BMW's integration of radar on the R1300RT and adaptive cornering lights are consistently praised for enhancing safety and comfort.
-- Recommendation: Keep the RT as the tech flagship with features like adaptive LED headlight and hill start assist as standard. Ensure user experience is smooth and consider software updates that add features over time to build loyalty.
+- Insight: This attribute consistently registered as the highest priority, dominating consumer discussions with 25% of all conversations. Key technological aspects, such as Honda's Dual Clutch Transmission (DCT), which saw a remarkable 71% adoption rate among Africa Twin Adventure Sports buyers, were significant points of discussion and clearly influenced purchase decisions.
+- Recommendation: Pre-launch adventure consumers were highly attuned to and valued advanced technological integration. They perceived technology as a critical differentiator for enhancing safety, convenience, and the overall riding experience.
 
-Engine Performance:
-- Insight: The engine is considered the heart of a touring motorcycle with riders valuing both raw power for passing and overall character. The R1300RT's increased output provides performance credibility while maintaining the distinctive boxer twin character.
-- Recommendation: Emphasize improvements in the new 1300cc engine including slightly more power, responsive midrange, and refined fueling. Consider engine modes that cater to touring with an "ultra-smooth" mode for highway cruising.
+Connected Features (TFT, Smartphone Integration):
+- Insight: As a sub-component of "Technology & Features," connected features garnered significant discussion, contributing substantially to the overall technology theme. The utility of TFT displays and seamless smartphone integration, including specific systems like BMW's ConnectedRide Control, Honda RoadSync, and My Triumph Connectivity System, were frequently debated and highlighted as important considerations for consumers.
+- Recommendation: Modern adventure riders increasingly prioritize connectivity and digital integration. They value the convenience and enhanced experience offered by features that allow them to stay connected, navigate, and access information directly from their motorcycle's display.
 
-Innovation & Future-proofing:
-- Insight: Reflects consumers' desire for manufacturers to push boundaries and ensure products remain relevant. BMW's positioning as a "technological leader" is directly linked to commitment to innovation including adaptive cruise control introduction.
-- Recommendation: Continue innovation leadership including potential for electric touring bikes as strategic opportunity. Demonstrate forward-looking approach embracing new technologies to enhance long-term value and relevance.
+Rider Aids & Safety Systems:
+- Insight: Closely linked to the dominant "Technology & Features" theme, rider aids and safety systems were a significant point of discussion and a clear consumer priority. The KTM 890 Adventure R, for instance, explicitly emphasizes its advanced rider aids, including Motorcycle Traction Control (MTC) and Cornering ABS, facilitated by a sophisticated 6D Inertial Measurement Unit (IMU) for enhanced control and safety.
+- Recommendation: Safety and enhanced control are paramount for adventure riders, particularly given the diverse and often challenging terrains they navigate. Consumers actively seek motorcycles equipped with advanced rider aids that provide confidence, mitigate risks, and improve handling across various riding conditions.
 
-Handling & Stability:
-- Insight: Riders highly value touring motorcycles offering surprising agility while maintaining unwavering stability. The BMW RT is renowned for handling "like a smaller bike" attributed to its Telelever suspension and low center of gravity.
-- Recommendation: Maintain the handling advantage by communicating chassis improvements clearly. Ensure Telelever EVO gives better front-end feedback and offer high-quality touring tires as stock to maximize handling confidence.
+Off-Road Performance:
+- Insight: This attribute holds a significant share of consumer discussions, accounting for 20% of conversations. Discussions frequently centered on engine power, handling characteristics, and suspension performance specifically in off-road contexts. Models like the KTM 890 Adventure R, lauded for its emphasis on off-road excellence, the Aprilia Tuareg 660 Rally, described as an "uncompromising adventure" motorcycle, and the Yamaha Ténéré 700, praised for its genuine off-road capability, are prominent examples of this consumer focus.
+- Recommendation: A core segment of adventure riders prioritizes authentic and capable off-road performance. This is a foundational expectation for the segment, reflecting a desire for motorcycles that can confidently handle challenging terrains beyond paved roads.
 
-Safety Features:
-- Insight: Safety is a critical purchase driver especially for touring riders who tend to be older demographic prioritizing peace of mind. Features like ABS, traction control, tire pressure monitors, and radar-based systems are highly valued.
-- Recommendation: Never skimp on safety features for this segment, making them standard if possible. Continue innovation with potential blind spot warning LEDs and emphasize safety benefits in marketing for peace-of-mind positioning.
+Engine Size & Performance:
+- Insight: While not a standalone theme, discussions on engine power were frequent, particularly within the context of off-road performance and overall riding experience. The new 1300cc boxer engine of the BMW R 1300 GS Adventure received commendation for its power, contributing to its premium positioning. The BMW R 12 G/S is also described as having a "boxer-twin engine that oozes character and a mean punch."
+- Recommendation: Consumers value robust engine performance, which contributes to both thrilling on-road acceleration and capable off-road traction. The "punch" and "character" of an engine are important, suggesting that riders seek a dynamic and engaging power delivery that enhances the overall riding experience.
+
+Suspension Quality:
+- Insight: Suspension performance was a recurring topic, especially within discussions about off-road capability and comfort. The Honda Africa Twin Adventure Sports features a revised Showa EERA suspension, and the Honda XL750 Transalp received updates including a stiffened rear shock, indicating manufacturer responses to consumer feedback on suspension.
+- Recommendation: High-quality suspension is a significant priority for adventure riders, underpinning both comfort on long rides and capability in challenging off-road conditions. Consumers understand that effective suspension directly impacts ride quality, handling, and the ability to absorb varied terrain.
 
 Value for Money:
-- Insight: Despite being primary source of negative sentiment due to high price points, the high WRI score underscores its critical importance as purchase driver. Economic pressures limit buyer pool for new luxury models significantly.
-- Recommendation: Improve value perception by communicating long-term benefits and strong resale value. Consider inclusive pricing strategies like "Launch Edition" packages bundling popular options at slight discount to signal customer feedback response.
+- Insight: This attribute accounted for 15% of consumer discussions, indicating an active evaluation of a motorcycle's features against its price point. The Honda XL750 Transalp was praised for its "good value," while brands like CFMoto and Triumph were highlighted for offering "competitive pricing relative to their extensive feature sets." Conversely, the perception that the Yamaha Ténéré 700's price was "no longer a bargain" was noted.
+- Recommendation: Pre-launch consumers are highly sensitive to the overall value proposition, actively seeking a strong feature-to-price ratio. "Value" implies an optimal balance of capabilities, quality, and cost, rather than simply the lowest price.
 
-Reliability & Durability:
-- Insight: For touring motorcycles, reliability is paramount with bikes that "must run like clockwork" for long journeys. Quality craftsmanship and trouble-free operation foster significant trust in BMW and Honda brands.
-- Recommendation: Continue rigorous quality control and address any known issues promptly. Consider extending warranty or offering service packages to reassure buyers, highlighting any reliability accolades achieved.
+Comfort & Ergonomics:
+- Insight: This theme represented 15% of consumer discussions, indicating its importance for practical riding aspects. Recurring topics included seat height, wind protection, and the availability of comfort features such as heated grips and heated seats. The BMW R 1300 GS Adventure's focus on "optimized ergonomics" and the R 12 G/S being described as "perfect for taller riders" further highlight its significance.
+- Recommendation: Riders prioritize physical comfort for both daily commutes and extended tours. The discussions around wind protection, heated features, and overall ergonomic design indicate a desire for a motorcycle that minimizes fatigue and enhances enjoyment over long distances.
 
-Engine Character & Sound:
-- Insight: Beyond raw power figures, emotional connection to engine character and sound is significant purchase driver. The "soulful feel" of BMW's boxer twin differentiates the riding experience and enhances brand identity.
-- Recommendation: Maintain the distinctive boxer twin character while ensuring refinement at low RPM. Continue to leverage the unique engine personality as key differentiator in marketing and customer communications.
+Seat Height & Accessibility:
+- Insight: As a significant component of "Comfort & Ergonomics," seat height was a recurring and critical discussion point. The Honda NX500 was commended for its "manageable 83cm seat height," making it "accessible to a broader range of riders." In contrast, the Ducati DesertX's "very high, non-adjustable seat height of 875mm" was identified as a "potential barrier for some riders."
+- Recommendation: Accessibility, particularly influenced by seat height, is a significant consideration for a broad range of potential buyers, directly impacting rider confidence and the fundamental ability to manage and mount the motorcycle.
 
-Design & Aesthetics:
-- Insight: While touring motorcycles prioritize utility, visual appeal plays crucial role in purchase decisions. The R1300RT's styling proved highly polarizing with significant negative reactions potentially impacting consumer acceptance.
-- Recommendation: Engage more with customer feedback on design choices. Consider offering more appealing color options or factory customization programs to allow personalization and mitigate aesthetic complaints.
+Long-Distance Touring Capability:
+- Insight: This attribute is evident in the design and discussion around premium adventure models. The BMW R 1300 GS Adventure, with its 30-liter tank and focus on "optimized ergonomics and extended range," clearly targets the premium, long-distance touring segment. The Honda X-ADV 750 also appeals to riders seeking a hybrid solution for weekend touring.
+- Recommendation: A substantial segment of adventure riders values the ability to undertake extended journeys comfortably and efficiently. Attributes like fuel range, ergonomic optimization for long hours, and luggage capacity are important, enabling riders to explore vast distances without frequent stops or discomfort.
 
-Luggage Capacity:
-- Insight: Ability to carry sufficient gear is fundamental expectation for touring riders. The R1300RT's reduction in standard pannier capacity generated immediate negative reactions as perceived compromise of function over form.
-- Recommendation: Consider including larger panniers or expansion mechanism as standard in price-sensitive markets. Ensure dealers package smartly and emphasize overall storage potential with topcase options.
+Versatility (Dual-Purpose Capability):
+- Insight: The market demonstrates a clear demand for motorcycles capable of performing across different environments. The Honda X-ADV 750 is uniquely positioned as an "adventure scooter" or "SUV on two wheels," effectively blending adventure motorcycle versatility with the high utility of a large scooter. Similarly, the Honda NX500 was commended for its suitability across city, highway, and light off-road conditions.
+- Recommendation: Riders in the adventure segment often seek a single motorcycle that can competently handle a variety of riding scenarios, from daily commuting and highway travel to light off-road exploration. This desire for a truly dual-purpose machine reflects a practical need for adaptability and broad utility from their investment.
 
-Passenger Comfort:
-- Insight: For many touring riders, the pillion experience is critical factor as they frequently travel with significant others. Features enhancing passenger comfort like backrests and ample legroom are highly valued.
-- Recommendation: Market how passenger-friendly the RT is through testimonials from couples. Continue offering heated passenger seats and that heated backrest topcase while including passenger accessories in demonstrations.
+Brand Reliability:
+- Insight: Reliability concerns accounted for 10% of discussions, indicating that user experiences with dependability are actively shared and considered. Notably, the Yamaha Ténéré 700 faced criticism for reported clutch problems and a software bug, and the Voge 900 DSX had reported traction control issues. Conversely, BMW's strong market leadership and "Motorcycle of the Year" wins, along with Honda's overall market dominance, implicitly benefit from a strong perception of reliability and dependability.
+- Recommendation: Long-term dependability, durability, and minimal post-purchase issues are critical for adventure riders. These consumers often rely on their motorcycles for extended journeys and challenging conditions where breakdowns are highly undesirable.
 
-Seat Height & Ergonomics:
-- Insight: While overall comfort is paramount, practical aspects of seat height and ability to confidently place feet on ground are crucial, especially for shorter riders including women and those under 170cm height.
-- Recommendation: Continue offering low seat/suspension options and better communicate availability. Have demo bikes in both standard and low setups while emphasizing the RT is narrower making ground reach easier.
+Price Range:
+- Insight: While "Value & Pricing" was a significant discussion theme (15%), specific discussions about raw "Price Range" were less prominent, often subsumed within the broader value assessment. However, general observations about "high prices within the adventure segment" contributed to some negative sentiment, and potential EU tariff issues for Harley-Davidson highlighted how pricing dynamics can impact competitiveness.
+- Recommendation: Consumers are aware of the general price points within the adventure segment and are sensitive to factors that might artificially inflate costs. While not the primary driver in isolation, the absolute price plays a role in the overall value calculation.
 
-Weight Management:
-- Insight: Inherent weight of large touring motorcycles frequently discussed with complaints, though generally accepted as trade-off. Desire for lighter, more manageable bikes especially for low-speed maneuvers is evident.
-- Recommendation: Any weight reduction achievable is valuable. Focus on weight distribution and low center of gravity benefits while exploring features like electric reverse or hill-hold to mitigate weight issues in daily use.
+Fuel Range & Efficiency:
+- Insight: This attribute was discussed in the context of specific models. The Honda XL750 Transalp was praised for its "low fuel consumption," which contributed to its positive reception and value proposition. Conversely, a software bug affecting the MPG display on the Yamaha Ténéré 700 was a reported issue, indicating that consumers monitor and value accurate fuel efficiency information.
+- Recommendation: Fuel range and efficiency are practical considerations for adventure riders, particularly those undertaking long journeys where fuel stops might be infrequent. Low fuel consumption contributes to lower running costs and greater convenience.
 
-Dealer & Service Network:
-- Insight: Quality and accessibility of dealer support are significant especially for touring riders covering extensive mileage requiring reliable assistance. Strength of service network influences purchase decisions regarding parts availability and support.
-- Recommendation: Improve perceived support by training dealers in "touring concierge" level service with quick turnarounds for travelers. Consider extending dealer network or authorized service points in more Hungarian regions.
+Heritage/Retro Styling:
+- Insight: This attribute, part of the "Design & Character Appeal" theme (10% of discussions), generated interest through the aesthetic and historical lineage of motorcycles. The BMW R 12 G/S is explicitly positioned as a modern tribute to the legendary 1980 R 80 G/S, with design elements directly referencing its iconic predecessor. The classic cruiser styling of the BMW R 12 and the rally heritage of the KTM 890 Adventure R also contributed to this theme.
+- Recommendation: While not a dominant priority compared to performance or technology, a segment of consumers values the historical lineage and classic aesthetics of a motorcycle. This appeal is driven by nostalgia, a desire for unique character, and a connection to the roots of motorcycling.
 
-Low-Speed Maneuverability:
-- Insight: Recurring negative theme directly related to inherent weight and bulk of large touring motorcycles. Riders express that maneuvering at parking lot speeds can be "challenging" and "intimidating" for less experienced individuals.
-- Recommendation: Focus on mitigating challenges through design improvements and technological aids rather than attempting radical weight reductions. Features like hill start assist and electric reverse address these concerns effectively.
+Aesthetic Appeal/Character:
+- Insight: This attribute is closely related to "Heritage/Retro Styling" and falls under the "Design & Character Appeal" theme (10% of discussions). Discussions included mixed reactions to the design of the BMW R 1300 GS Adventure (e.g., "Lego looks" or "Microwave on wheels"), indicating that aesthetics are subjective but actively debated. The BMW R 12 G/S's emphasis on a "purist design" and a "simple, stripped down feel-good bike with a boxer-twin engine that oozes character" highlights the importance of aesthetic and intrinsic character.
+- Recommendation: Beyond pure functionality, the visual appeal and unique character of a motorcycle contribute to its desirability. Consumers engage in subjective evaluations of design, seeking a bike that resonates with their personal style and offers a distinct personality.
 
-Range & Fuel Efficiency:
-- Insight: While not primary purchase driver, fuel range and efficiency are practical considerations for touring riders, particularly given rising fuel prices. Most premium touring bikes already offer adequate range over 400km.
-- Recommendation: Preserve decent fuel economy of boxer engine and possibly improve it further. Highlight range advantage over competitors like Multistrada V4 and position efficiency as selling point in fuel-expensive markets.
+Build Quality & Finish:
+- Insight: While not a standalone theme in consumer discussions, specific models received mentions related to their build. The Yamaha Ténéré 700 was lauded for its "robust build," and the Voge 900 DSX received praise for its aesthetics, which often implies a good finish. For premium brands like BMW, high build quality and finish are often implicit expectations that contribute to their market leadership.
+- Recommendation: Consumers expect a certain level of quality and durability in their motorcycles, particularly in the adventure segment where bikes are subjected to varied conditions. While not always explicitly discussed, a robust build and high-quality finish contribute to the overall perception of value and long-term satisfaction.
 
-Resale Value:
-- Insight: Exhibits lowest resonance as direct purchase driver with little frequent discussion among consumers. However, strong resale value of premium touring bikes indirectly supports notion of long-term value retention.
-- Recommendation: Integrate long-term value retention into marketing narrative when addressing high initial cost. Transform this latent benefit into more active purchase driver by communicating total cost of ownership advantages.
+Manageability/Weight:
+- Insight: This attribute was indirectly referenced through discussions on accessibility and ease of use. The Honda NX500 was commended for its suitability across city, highway, and light off-road conditions, implying good manageability for a broad range of riders. The BMW R 12 G/S's emphasis on "simplicity" and "character" can appeal to riders seeking a more raw, connected, and less electronically-assisted riding experience, which often correlates with lighter, more manageable bikes.
+- Recommendation: While not a top-tier explicit priority, manageability and weight contribute to a rider's confidence and ease of handling, especially in diverse riding conditions or for less experienced riders. A motorcycle that feels manageable and predictable across various scenarios enhances the overall riding experience.
+
+Aftermarket Support & Customizability:
+- Insight: The report notes that this attribute was "not explicitly detailed as a consumer priority in Jan-Mar 2025 discussions." Mentions were limited to specific models offering customization options, such as the Honda X-ADV 750 with its "various optional packages" and the Triumph Tiger 900 GT Pro A2 offering "over 50 accessories and four accessory kits."
+- Recommendation: While customization options are available and utilized by some, the pre-launch consumer discourse did not highlight aftermarket support or customizability as a primary driver for purchase decisions. This suggests that while riders may appreciate the option to personalize their bikes post-purchase, it was not a significant factor influencing their initial buying choice.
+
+Dealer Network & Service Availability:
+- Insight: This attribute registered the lowest WRI score, as it was "not explicitly detailed as a consumer priority in Jan-Mar 2025 discussions." The only indirect reference was regarding the Honda Africa Twin Adventure Sport (2025), where some users reported "many issues after going to the shop," hinting at potential post-purchase service challenges.
+- Recommendation: In the pre-launch period, explicit consumer discussions did not prioritize dealer network and service availability as a primary driver for purchase decisions. While these aspects are undoubtedly important for long-term ownership satisfaction, they did not emerge as a significant factor influencing initial buying choices or pre-launch market resonance.
 
 ### Strategic Recommendations
-- Lean into core strengths of comfort, technology, and brand prestige to justify premium positioning
-- Address price perception through inclusive pricing strategies and value communication initiatives
-- Continue improving practicality with focus on details that enhance daily usability and long-term satisfaction
-- Educate market on advantages of dedicated touring machines versus adventure bike alternatives
-- Leverage community engagement through VIP touring clubs and exclusive events for brand loyalty
-- Respond to design feedback through color options and customization programs to mitigate aesthetic concerns
+- Prioritize authentic off-road capability in messaging by prominently featuring long-travel suspension, 21-inch front wheel, and optional Enduro Package Pro to appeal to riders seeking genuine "dirt bike" feel
+- Articulate "value" through character and simplicity by positioning the R 12 G/S's heritage and authentic riding experience as inherent value for riders seeking less electronically-assisted experiences
+- Leverage heritage as a differentiator by using the R 80 G/S tribute and Dakar Rally legacy to create emotional connection while complementing functional capability communication
+- Emphasize ergonomic suitability for taller riders as a clear demographic advantage addressing an underserved market segment
+- Engage experientially through targeted test rides, presence at key motorcycle events, and collaborative content creation with enthusiast communities
+- Monitor competitive movements from key rivals like Honda, Yamaha, and KTM to maintain distinct value proposition in dynamic market
 
 Priorities:
-- Maintain comfort leadership as non-negotiable core strength and primary differentiator
-- Enhance value proposition through packaging and communication to counter price sensitivity
-- Continue technology innovation to maintain flagship status and attract tech-savvy riders
-- Address practical concerns like luggage capacity and weight management through design solutions
-- Strengthen dealer support network to match premium product expectations
-- Develop community engagement initiatives to foster emotional brand connection and loyalty
+- Technology integration and advanced rider aids to meet highest consumer priority expectations
+- Authentic off-road performance capabilities as core segment differentiator
+- Clear value proposition articulation balancing heritage appeal with functional benefits
+- Ergonomic advantages for specific rider demographics
+- Experiential marketing to build awareness and demonstrate unique attributes
+- Competitive intelligence to maintain strategic positioning

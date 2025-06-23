@@ -30,122 +30,122 @@ This comparative analysis helps identify unique market characteristics and oppor
 ## WRI Scores
 
 ### Attribute Scores
-Overall Comfort: 94.1
-Value for Money: 92.5
-Technology & Features: 91.0
-Safety Features: 87.8
-Engine Performance: 87.3
-Reliability & Durability: 86.9
-Handling & Stability: 85.9
-Brand Image & Reputation: 84.3
-Luggage Capacity: 77.9
-Dealer & Service Network: 75.4
-Seat Height & Ergonomics: 74.7
-Innovation & Future-proofing: 72.8
-Design & Aesthetics: 67.5
-Passenger Comfort: 67.1
-Low-Speed Maneuverability: 63.1
-Range & Fuel Efficiency: 61.4
-Weight Management: 53.1
-Engine Character & Sound: 38.5
-Resale Value: 32.5
-Wind Protection: 88.5
+Off-Road Performance: 63.0
+Comfort & Ergonomics: 56.5
+Engine Size & Performance: 56.0
+Suspension Quality: 53.5
+Versatility (Dual-Purpose Capability): 52.0
+Long-Distance Touring Capability: 52.0
+Build Quality & Finish: 49.5
+Brand Reliability: 49.0
+Rider Aids & Safety Systems: 47.0
+Technology & Features: 46.25
+Connected Features (TFT, Smartphone Integration): 45.5
+Value for Money: 40.0
+Price Range: 40.0
+Fuel Range & Efficiency: 34.5
+Manageability/Weight: 33.0
+Dealer Network & Service Availability: 19.0
+Heritage/Retro Styling: 17.0
+Seat Height & Accessibility: 14.5
+Aesthetic Appeal/Character: 11.0
+Aftermarket Support & Customizability: 11.0
 
 ## WRI Insights
 
 ### Attribute Insights
-Overall Comfort:
-- Insight: Consistently identified as the paramount priority for Austrian touring riders, representing not merely a desirable feature but a foundational expectation. BMW's specific improvements like adjustable deflectors and enhanced passenger space have elevated comfort from a hygiene factor to a competitive differentiator.
-- Recommendation: Continue prioritizing comfort in every product development decision and leverage testimonials highlighting specific comfort benefits to maintain market leadership.
+Off-Road Performance:
+- Insight: Achieved the highest WRI score, driven by its dominant presence in social discussions (30% of themes) and the significant 70% market share held by the off-road segment within the adventure category. For adventure riders, the ability to confidently navigate diverse terrains, including rocky trails, gravel, sand dunes, and forest tracks, is fundamental to the segment's core identity.
+- Recommendation: Any motorcycle entering this segment must first and foremost deliver on genuine off-road capability, or it risks being perceived as merely an "adventure-styled" bike rather than a true adventure machine.
 
-Value for Money:
-- Insight: Despite negative sentiment around BMW's pricing, this remains a critical purchase driver with consumers highly scrutinizing whether features justify the significant cost. The high WRI indicates price sensitivity is a major market concern, not irrelevance.
-- Recommendation: Implement strategic bundling of popular features, enhance perceived value communication, and offer competitive financing to address sticker shock while maintaining premium positioning.
+Comfort & Ergonomics:
+- Insight: Ranking second, comfort and ergonomics featured prominently in consumer discussions (25% of themes) and were consistently identified as a top priority. Adventure riding frequently involves extended periods in the saddle, making ergonomic comfort paramount for rider well-being and reducing fatigue over long journeys.
+- Recommendation: Maintain comfort and ergonomics expected of a BMW adventure touring machine, as this is a consistent strength of the brand and a high consumer priority.
+
+Engine Size & Performance:
+- Insight: Secured a high ranking, reflecting a strong consumer expectation for robust engine power and torque delivery across the rev range, suitable for both on-road and off-road scenarios. Market data indicates that over 75% of European riders opt for mid-to-high displacement models, which account for over 85% of total market sales.
+- Recommendation: Ensure robust power delivery suitable for diverse situations including climbing steep inclines, managing heavy loads, and maintaining comfortable highway speeds.
+
+Suspension Quality:
+- Insight: Directly linked to both off-road performance and rider comfort, high-quality and often electronically adjustable suspension systems are a key consumer expectation. Acts as a critical enabler, directly influencing top-ranked "Off-Road Performance" and second-ranked "Comfort & Ergonomics."
+- Recommendation: Prioritize advanced suspension systems that deliver both off-road capability and touring comfort, as this is a foundational element supporting other key attributes.
+
+Versatility (Dual-Purpose Capability):
+- Insight: Consumers expressed a strong desire for motorcycles capable of seamlessly transitioning between on-road touring, commuting, and off-road exploration, including the ability to comfortably carry passengers and luggage. This is precisely where the BMW R 12 G/S's "Gelände / Straße" heritage can resonate profoundly.
+- Recommendation: Emphasize the dual-purpose nature of the motorcycle, highlighting its ability to excel across diverse environments as a holistic adventure solution.
+
+Long-Distance Touring Capability:
+- Insight: Strongly implied by the high value placed on comfort and fuel range, aligning with BMW GS's traditional positioning as a benchmark for adventure touring. The ability to embark on multi-day or multi-week journeys with ease is a significant draw for the adventure segment.
+- Recommendation: Leverage BMW's established reputation for touring capabilities while ensuring the R 12 G/S maintains this strength alongside enhanced off-road prowess.
+
+Build Quality & Finish:
+- Insight: Importance strongly implied by consumer concerns about reliability and positive remarks about brands known for their construction. Consumers expect a premium adventure motorcycle to be robust and meticulously constructed, ensuring longevity and resilience.
+- Recommendation: Emphasize BMW's engineering reputation and build quality to counter any tech-related anxieties and establish trust in long-term dependability.
+
+Brand Reliability:
+- Insight: Reliability is a fundamental expectation for adventure riders, with concerns emerging regarding increasing technological complexity. The peace of mind that a motorcycle will not break down, especially in remote areas, is a critical factor influencing purchase decisions.
+- Recommendation: Demonstrate that advanced technology enhances reliability rather than compromising it, addressing consumer apprehension about "excess of techy things."
+
+Rider Aids & Safety Systems:
+- Insight: Over 65% of adventure motorcycles sold in Europe feature advanced rider assistance systems. Demonstrates that consumers perceive technology as a crucial enabler of safer and more confident riding, particularly in challenging adventure scenarios.
+- Recommendation: Focus on essential, performance-enhancing technology like safety aids that directly contribute to adventure capability and rider confidence.
 
 Technology & Features:
-- Insight: Austrian riders are tech-savvy and appreciate innovations like ASA and radar systems as "game-changers," but skepticism exists about complexity and reliability. Technology drives initial interest but sustained acceptance depends on proven reliability.
-- Recommendation: Focus marketing on practical benefits of technology rather than specifications, provide extensive demos, and ensure rigorous quality control with comprehensive dealer training to address reliability concerns.
+- Insight: Strong showing alongside "Rider Aids" and "Connected Features" confirms broad consumer appetite for technology. However, qualitative data suggests implementation of technology is as important as its presence, with concerns about complexity.
+- Recommendation: Offer useful, intuitive, and reliable technology that genuinely enhances the adventure without creating frustration or reliability concerns.
 
-Safety Features:
-- Insight: Austrian riders are safety-conscious and highly value advanced features like adaptive cruise control and blind-spot monitoring that reduce fatigue and enhance touring safety. These are seen as practical necessities rather than luxury additions.
-- Recommendation: Position safety technology as essential touring equipment that provides peace of mind and practical benefits for long-distance travel, emphasizing fatigue reduction and risk mitigation.
+Connected Features (TFT, Smartphone Integration):
+- Insight: Strong resonance indicates that even within the rugged adventure segment, riders expect modern conveniences. This is about enhancing the core adventure experience with tools that facilitate navigation, communication, and information access.
+- Recommendation: Integrate connectivity features that serve practical adventure needs rather than adding complexity for its own sake.
 
-Engine Performance:
-- Insight: Touring riders seek confident, accessible power for mountain passes and two-up riding. The R1300RT's 145hp and superior power-to-weight ratio addresses practical needs like easier overtaking and comfortable passenger carrying rather than pure performance metrics.
-- Recommendation: Market engine performance in context of practical touring benefits - effortless climbing, safe overtaking, and spirited riding capability that transforms journeys from endurance tests to enjoyable adventures.
+Value for Money:
+- Insight: Despite the adventure segment often featuring premium price points, consumers actively weigh features and performance against price point, seeking compelling balance. Even affluent buyers are discerning and seek clear justification for higher costs.
+- Recommendation: For the R 12 G/S positioned in the "exclusive segment," the value proposition must be exceptionally clear, emphasizing unique blend of heritage, capability, and BMW quality.
 
-Reliability & Durability:
-- Insight: While reliability doesn't generate discussion when functioning correctly, it fundamentally underpins purchase confidence for long-distance touring. Past BMW transmission issues create legacy concerns that could be reactivated by new problems.
-- Recommendation: Proactively communicate reliability testing, leverage the 3-year warranty, and ensure any new technology undergoes rigorous validation to maintain the trust foundation essential for premium positioning.
+Price Range:
+- Insight: Directly related to value for money, with projected growth in the mid-range segment. Consumers perform direct cost-benefit analysis, where higher price point must correlate with perceived higher value.
+- Recommendation: Ensure premium pricing is directly justified through demonstrable performance, features, and brand trust advantages.
 
-Handling & Stability:
-- Insight: Austrian riders navigating alpine routes prioritize confident, predictable handling that combines touring comfort with dynamic capability. The Telelever system and new chassis improvements directly address these dual requirements.
-- Recommendation: Highlight the balance between comfort and agility, demonstrating how the R1300RT maintains sporting capability while delivering touring comfort, particularly for challenging alpine terrain.
+Fuel Range & Efficiency:
+- Insight: Represents a practical, functional priority for adventure riders about enabling uninterrupted experience of long-distance travel and off-road exploration. A motorcycle that constantly requires refueling detracts from the sense of freedom and adventure.
+- Recommendation: Ensure adequate fuel capacity and efficiency to support extended touring without frequent refueling stops.
 
-Brand Image & Reputation:
-- Insight: BMW's market leadership and heritage provide significant confidence and community belonging for touring riders. The RT's iconic status and global dealer network support create valuable intangible benefits beyond the motorcycle itself.
-- Recommendation: Leverage brand equity through community engagement, organized tours, and emphasis on the BMW ecosystem to reinforce premium positioning and foster long-term loyalty.
+Manageability/Weight:
+- Insight: A balanced and manageable weight is crucial for stability at speed and ease of handling, particularly in challenging off-road conditions or during tight maneuvers. Directly impacts rider confidence and control.
+- Recommendation: Optimize weight distribution and overall mass to enhance rider confidence and control across diverse riding scenarios.
 
-Luggage Capacity:
-- Insight: Practical touring capability depends on generous, well-designed luggage systems. The electric Variocases and expanded storage options directly support the fundamental purpose of touring motorcycles.
-- Recommendation: Continue innovation in luggage systems and practical storage solutions while ensuring reliability of new powered features to maintain touring functionality leadership.
+Dealer Network & Service Availability:
+- Insight: Functions more as a hygiene factor than a primary driver for initial purchase decision. Consumers expect good support from established brands, but it doesn't motivate purchase as much as performance or comfort.
+- Recommendation: Leverage BMW's established network as a reassurance factor while focusing marketing efforts on performance attributes.
 
-Dealer & Service Network:
-- Insight: Comprehensive dealer support provides essential peace of mind for long-distance touring, particularly for international travel where service availability becomes critical for trip success.
-- Recommendation: Maintain and strengthen dealer network capabilities, ensure service consistency across regions, and communicate network advantages as part of the total ownership value proposition.
+Heritage/Retro Styling:
+- Insight: Low WRI score in isolation, juxtaposed with strong consumer interest in "dirt-ready retro" with capability, reveals consumers are not interested in superficial retro styling but demand authentic legacy that translates into modern, tangible performance.
+- Recommendation: Shift emphasis from marketing "heritage as nostalgia" to marketing "heritage as performance credibility," connecting G/S legacy to functional capability.
 
-Seat Height & Ergonomics:
-- Insight: Manageable ergonomics expand market accessibility, particularly important for shorter riders or those concerned about low-speed handling of heavy touring motorcycles.
-- Recommendation: Continue offering adjustable options and communicate improved accessibility features to broaden market appeal without compromising core touring capability.
+Seat Height & Accessibility:
+- Insight: While important for individual rider confidence and comfort, it is not a universal top-tier purchase driver for the broader adventure market. Represents an ergonomic refinement that can broaden appeal.
+- Recommendation: Include as a valuable feature for specific rider segments but not as a primary marketing focus for general market appeal.
 
-Innovation & Future-proofing:
-- Insight: Austrian riders value forward-thinking technology that keeps their investment relevant and competitive. Innovation drives brand perception and long-term value retention.
-- Recommendation: Maintain technology leadership while ensuring innovations provide clear practical benefits and proven reliability to justify advancement over complexity.
+Aesthetic Appeal/Character:
+- Insight: Low WRI score suggests that for adventure motorcycles, function largely precedes form in consumer priorities. While a motorcycle needs to be visually appealing, looks are secondary to capability, comfort, and reliability.
+- Recommendation: Focus on functional design that naturally creates appealing character rather than prioritizing pure aesthetics over performance.
 
-Design & Aesthetics:
-- Insight: While function typically trumps form in touring, modern aesthetics contribute to pride of ownership and can serve as purchase tiebreakers when functional capabilities are similar.
-- Recommendation: Maintain authoritative, premium design that appeals to conservative tastes while offering customization options for individual expression and market differentiation.
-
-Passenger Comfort:
-- Insight: Two-up touring capability significantly influences purchase decisions for riders who frequently travel with passengers, making pillion comfort a practical necessity rather than luxury consideration.
-- Recommendation: Continue prioritizing passenger amenities and communicate two-up touring advantages to capture the significant market segment that tours with companions.
-
-Low-Speed Maneuverability:
-- Insight: Ease of handling large touring motorcycles in parking and urban situations affects daily usability and rider confidence, particularly important for managing heavy machines.
-- Recommendation: Develop and communicate low-speed handling aids while maintaining the engineering focus on features that reduce perceived weight and improve maneuverability.
-
-Range & Fuel Efficiency:
-- Insight: Generous fuel range reduces stops and enhances touring convenience while fuel efficiency helps manage running costs in Europe's high-fuel-price environment.
-- Recommendation: Communicate real-world fuel economy benefits and range advantages while developing efficiency features that don't compromise performance expectations.
-
-Weight Management:
-- Insight: While not a primary performance driver, weight affects practical handling and accessibility, particularly concerning smaller or aging riders who may find heavy bikes challenging.
-- Recommendation: Continue weight optimization efforts where possible while communicating weight advantages relative to competitors and highlighting features that mitigate weight perception.
-
-Engine Character & Sound:
-- Insight: The distinctive boxer character contributes to brand identity for enthusiasts but isn't a primary purchase driver, especially given increasing noise regulations.
-- Recommendation: Maintain boxer character within regulatory constraints while focusing marketing efforts on more influential purchase drivers like comfort and performance.
-
-Resale Value:
-- Insight: While not an explicit passion point, resale value represents an important financial calculation for high-ticket purchases, often subsumed under broader value considerations.
-- Recommendation: Communicate BMW's strong resale value as part of total cost of ownership discussions to support premium pricing justification.
-
-Wind Protection:
-- Insight: Wind protection is an "undisputed priority" and a "make-or-break factor". The R1300RT's new adjustable deflectors are praised for elevating wind protection "to a new level".
-- Recommendation: Leverage the strong positive sentiment from riders and reviewers by prominently featuring testimonials and expert opinions that highlight the R1300RT's class-leading wind protection in all marketing materials. Use phrases like "undisputed priority" and "make-or-break factor" to underscore its importance to the target audience..
+Aftermarket Support & Customizability:
+- Insight: Factors that enhance the ownership experience rather than driving the initial purchase decision. Consumers prioritize the core capabilities of the motorcycle first, then value personalization options post-purchase.
+- Recommendation: Maintain comprehensive accessory options as expected for BMW adventure bikes, but emphasize core performance capabilities in marketing.
 
 ### Strategic Recommendations
-- Reinforce comfort leadership with tangible, communicable benefits that differentiate BMW from competitors
-- Address value perception through strategic bundling and comprehensive value communication
-- Leverage technology advantages while ensuring reliability and user-friendliness
-- Maintain brand equity through community engagement and premium experience delivery
-- Proactively monitor emerging environmental concerns for future market preparation
-- Focus marketing on practical benefits rather than technical specifications
+- Emphasize Authentic Off-Road Capability: Position the R 12 G/S as genuinely capable off-road, not merely a visual tribute to heritage
+- Balance Technology with Simplicity and Reliability: Focus on core, essential rider aids that enhance adventure capability without overwhelming complexity
+- Leverage G/S Heritage Beyond Aesthetics: Integrate "Gelände / Straße" philosophy into communications as fundamental design for dual-purpose capability
+- Strategic Price Positioning: Clearly communicate value proposition relative to unique blend of heritage, off-road capability, and BMW quality
+- Target the "Authentic Adventure" Segment: Focus on riders seeking alternative to increasingly complex premium adventure bikes
+- Demonstrate Performance Credibility: Connect heritage to proven lineage of capability rather than nostalgic styling
 
 Priorities:
-- Comfort excellence maintenance and communication as fundamental market requirement
-- Value perception improvement through pricing strategy and value communication
-- Technology reliability assurance to support innovation acceptance
-- Brand community strengthening to leverage loyalty and word-of-mouth marketing
-- Long-term environmental preparation for regulatory and social shifts
-- Dealer network excellence to support premium service expectations
+- Off-road performance demonstration and validation
+- Comfort and ergonomics optimization for extended adventure touring
+- Technology integration that enhances rather than complicates the adventure experience
+- Heritage positioning based on functional capability rather than aesthetic appeal
+- Value proposition articulation for premium positioning
+- Reliability assurance to address technology complexity concerns

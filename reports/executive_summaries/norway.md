@@ -1,22 +1,22 @@
 # Executive Summary: Norway
 
 ## Attribute Resonance
-- Overall Comfort leads with highest WRI score (94.5), reinforced by consistent social discussions emphasizing comfort as "paramount" for touring riders
-- Engine Performance ranks second (93.45) driven by excitement over R1300RT's 145hp boxer engine - the most powerful BMW has ever built
-- Technology & Features achieves strong resonance (89.24) with high social interest in radar cruise control and 10.25" TFT display elevating touring to "luxury-car levels"
+- Off-road performance is paramount with WRI 93.5, driven by Norway's extensive gravel roads and mountainous terrain requiring genuine capability
+- Engine character and performance scores WRI 88.5, reflecting strong preference for "soul" and "roar" of petrol engines over electric alternatives
+- Heritage/retro styling achieves WRI 84.0, indicating significant appetite for classic aesthetics combined with modern performance capabilities
 
 ## Market Insights
-- Norwegian touring market shows 16.5% growth in Q1 2025 with BMW maintaining market leadership position despite competitive pressures
-- Adventure-touring trend challenges traditional road tourers, requiring BMW to position R1300RT as both comfortable tourer and dynamic country road motorcycle
-- Strong used motorcycle market (30,000+ units sold in 2024) presents value competition, particularly from previous-generation R1250RT models at significantly lower prices
+- 75% positive sentiment driven by enthusiasm for adventure riding and satisfaction with off-road capabilities in Norway's challenging terrain
+- Strong resistance to electric motorcycles despite government incentives, with only 1.2% of Norway's 200,000-bike fleet being electric
+- Market exhibits dual preference for modern technology and traditional engine character, seeking advanced features that don't detract from raw riding experience
 
 ## Competitor Analysis
-- BMW holds 35% share of voice with R1300RT generating significant discussion, though polarizing styling and premium pricing create challenges
-- Honda's NT1100 success as "Europe's most popular sport-tourer" demonstrates market demand for value-oriented touring solutions
-- Yamaha lacks direct RT competitor after FJR1300 discontinuation, creating opportunity gap in premium touring segment
+- BMW GS Series (traditional) leads with 28.0% share of voice, recognized for touring comfort and advanced technology but perceived as increasingly large for pure off-road use
+- KTM 890 Adventure R holds 22.0% share, praised for aggressive off-road performance and lighter weight but faces reliability concerns
+- Heritage positioning opportunity exists as competitors focus on either pure performance (KTM) or touring luxury (traditional GS) without authentic heritage storytelling
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Premium technology leader delivering unparalleled touring comfort with most powerful boxer twin engine and luxury-car level advanced features
-- **Content & Messaging:** Emphasize comfort supremacy and performance leadership while addressing value proposition through total ownership cost messaging and heritage storytelling
-- **Audience Targeting:** Focus on existing BMW owners for upgrades, tech-savvy enthusiasts seeking advanced features, and safety-conscious Norwegian riders responding to accident awareness
-- **Key Opportunity:** Leverage technology leadership gap and safety focus alignment to differentiate from competitors while bridging adventure-touring appeal through dynamic capability messaging
+- **Strategic Positioning:** Position R 12 G/S as authentic heritage-modern adventure brand offering "puristic off-road fun" with distinctive boxer engine character
+- **Content & Messaging:** Emphasize genuine off-road capability, heritage connection to R 80 G/S, and boxer engine's unique "soul" as core differentiators
+- **Audience Targeting:** Focus on heritage enthusiasts, off-road purists, Norwegian terrain specialists, and petrol engine advocates who resist electric alternatives
+- **Key Opportunity:** Fill heritage-modern positioning gap while specializing in Norwegian terrain demands through genuine off-road capability and distinctive engine character

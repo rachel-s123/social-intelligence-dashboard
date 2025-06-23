@@ -1,22 +1,22 @@
 # Executive Summary: Greece
 
 ## Attribute Resonance
-- Overall Comfort leads with highest resonance (WRI: 93.5) encompassing seat comfort, ergonomics, and wind protection as paramount concerns
-- Technology & Features show strong resonance (WRI: 87.5) with BMW's radar cruise control and connectivity positioning it as "class-leading"
-- Engine Performance resonates highly (WRI: 87.0) with the new 1300cc boxer's 145hp delivering "substantial performance hike" praised by riders
+- Versatility (Dual-Purpose Capability) dominates as foundational expectation with 70%+ riders preferring adventure motorcycles for multi-terrain capabilities (WRI: 92.0)
+- Technology & Features leads discussion themes at 31.8% but complexity causes "teething pains" requiring intuitive integration (WRI: 90.0)
+- Off-Road Performance drives 23.5% of conversations with consumers demanding genuine "dirt-ready" capability rather than just adventure aesthetics (WRI: 85.1)
 
 ## Market Insights
-- BMW R1300RT dominated online discussions with 45-50% share of voice, far outpacing Honda Gold Wing (20%) and other competitors
-- Overall positive sentiment (65%) driven by praise for performance, comfort innovations, and technology leadership despite styling and price concerns
-- Greek touring segment remains niche but strategically important, with adventure bikes gaining popularity as alternatives to traditional tourers
+- Greek market shows resilience with +0.3% growth while broader European market contracts -13.4%, indicating unique local dynamics and robust underlying demand
+- Adventure segment caters to enthusiast-driven demographic (21.8% motorcycle market share) distinct from scooter-dominated commuter market (67.7%)
+- CFMOTO 450MT becoming top-selling model signals significant opportunity in mid-range value segment ($10,000-$20,000 price bracket)
 
 ## Competitor Analysis
-- BMW R1300RT positioned as technology and performance leader but faces affordability challenges with €24,490 base price reaching €30-35k fully loaded
-- Honda Gold Wing offers superior luxury comfort but suffers from excessive weight (380kg) and even higher pricing (€40k+)
-- Yamaha Tracer 9 GT+ provides strong value alternative at €14k but cannot match premium tourer wind protection and two-up spaciousness
+- Traditional premium brands (BMW GS 14.8%, Triumph Tiger 11.1%, Ducati DesertX 11.1%) maintain strong individual presence but collective "Other Adventure Bikes" dominate at 37.0% share of voice
+- Emerging brands like CFMOTO and Voge rapidly gaining market share through value-oriented positioning and competitive features
+- Technology complexity creates differentiation opportunity as competitors struggle with user-friendly integration ("tech teething pains" with Honda, BMW GS ASA complexity)
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Technology-forward premium choice combining comfort leadership with performance excellence and proven touring heritage
-- **Content & Messaging:** Emphasize comfort innovations, substantial engine performance improvements, and technology leadership while addressing value perception through strategic bundling
-- **Audience Targeting:** Tech-savvy experienced riders (40s-60s), long-distance touring enthusiasts, BMW loyalists, and couples who tour together
-- **Key Opportunity:** Capitalize on Yamaha FJR1300 discontinuation while leveraging Greece's growing tourism market and addressing styling concerns through expanded customization options
+- **Strategic Positioning:** Capture "dirt-ready retro" niche combining authentic heritage aesthetics (R 80 G/S styling) with genuine modern off-road capability, positioned at strategic mid-range pricing ($16,395)
+- **Content & Messaging:** Emphasize authentic off-road prowess through dynamic demonstrations, develop heritage-meets-performance narrative, highlight distinctive boxer engine character as emotional differentiator
+- **Audience Targeting:** Focus on heritage enthusiasts seeking authentic capability, value-conscious adventurers, technology appreciators prioritizing intuitive integration, and multi-terrain riders requiring true versatility
+- **Key Opportunity:** Address underserved market intersection of heritage styling and genuine capability while leveraging mid-range pricing to compete with growing value segment without compromising BMW premium appeal

@@ -5,160 +5,138 @@ export const conversationData = {
   "austria": {
     "themeData": [
       {
-        "subject": "Pricing & Value",
-        "value": 25
-      },
-      {
-        "subject": "Design & Aesthetics",
-        "value": 18
-      },
-      {
-        "subject": "Technology & Features",
-        "value": 16
+        "subject": "Off-Road Performance",
+        "value": 30
       },
       {
         "subject": "Comfort & Ergonomics",
-        "value": 15
+        "value": 25
       },
       {
-        "subject": "Performance & Handling",
-        "value": 12
+        "subject": "Technology & Features",
+        "value": 20
       },
       {
-        "subject": "Fuel Range",
-        "value": 6
+        "subject": "Reliability Concerns",
+        "value": 10
       },
       {
-        "subject": "Customization",
-        "value": 4
+        "subject": "Value & Pricing",
+        "value": 10
       },
       {
-        "subject": "Environmental/Legislative Concerns",
-        "value": 4
+        "subject": "Design & Character Appeal",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Pricing & Value": [
+      "Off-Road Performance": [
         {
-          "quote": "If $23k is too much, then $30k is ridiculous. Pretty bike, though.",
-          "context": "Austrian riders are highly price-sensitive, with the R1300RT's base price of €25,890 drawing significant criticism and comparison to competitors offering similar capabilities for thousands less.",
-          "source": "reddit.com"
-        }
-      ],
-      "Design & Aesthetics": [
-        {
-          "quote": "Design-wise…I think it looks great. It's about time BMW got away from the whale-ish/bulbous look….",
-          "context": "The R1300RT's updated styling received mostly positive feedback, with riders appreciating the sleeker, more modern appearance compared to previous generations.",
-          "source": "reddit.com"
-        }
-      ],
-      "Technology & Features": [
-        {
-          "quote": "I had an X-ADV [scooter] and loved the automatic… Today I'd like every bike to have an automatic – and with a foot shift lever as here, it's perfect.",
-          "context": "The ASA automatic transmission feature generated mixed but intense discussion, with long-distance riders appreciating fatigue reduction while traditionalists worried about complexity.",
-          "source": "dicker-boxer.de"
+          "quote": "The 2025 KTM 890 Adventure R continues to dominate the mid-weight adventure motorcycle segment... Drawing inspiration from KTM's Dakar-winning 450 Rally...",
+          "context": "This theme was paramount, reflecting the core identity of adventure motorcycles. Discussions frequently centered on suspension travel, wheel sizes (e.g., 21-inch front wheels), ground clearance, and the ability to handle diverse terrains like rocky trails, gravel, sand dunes, and forest tracks.",
+          "source": "KTM 890 Adventure R review"
         }
       ],
       "Comfort & Ergonomics": [
         {
-          "quote": "adjustable deflectors on the sides raise the wind protection…to a new level",
-          "context": "Comfort features, particularly wind protection and seating improvements, were consistently praised as key differentiators for the R1300RT.",
-          "source": "facebook.com"
+          "quote": "The single-piece seat ensures comfort and mobility, crucial for riders tackling long journeys or technical trails.",
+          "context": "Rider comfort for long journeys was a significant concern. This included discussions on seat design (single-piece, after, thicker foam), adjustable seat heights, wind protection from fairings and windshields, handlebar positioning, and heated grips/seats.",
+          "source": "KTM 890 Adventure R review"
         }
       ],
-      "Performance & Handling": [
+      "Technology & Features": [
         {
-          "quote": "Now only 15 hp down on the K1600's six-cylinder",
-          "context": "The new 1300cc boxer's 145 hp and superior power-to-weight ratio compared to heavier competitors generated positive excitement among performance-minded touring riders.",
-          "source": "bennetts.co.uk"
+          "quote": "One of the standout additions this year is the Connectivity Unit, now standard. Paired with the KTMconnect app, this feature unlocks Bluetooth-enabled Turn-by-Turn+ navigation, music streaming, and call notifications directly on the bike's 5-inch TFT display.",
+          "context": "The integration of advanced technology was a key discussion point. This encompassed TFT displays, smartphone connectivity (Bluetooth, Apple CarPlay/Android Auto), various rider modes (Rain, Road, Sport, Enduro, Rally), switchable ABS and traction control, quickshifters, electronic suspension (DSA, EERA), cruise control, and adaptive features.",
+          "source": "KTM 890 Adventure R review"
         }
       ],
-      "Fuel Range": [
+      "Reliability Concerns": [
         {
-          "quote": "the RT's 24 L tank for ~480+ km range got nods of approval",
-          "context": "The generous fuel range was appreciated by touring riders who value reduced stops and convenience on long journeys.",
-          "source": "bennetts.co.uk"
+          "quote": "This bike is a prime example of an excess of techy things that will leave you stranded and heartbroken in the middle of nowhere.",
+          "context": "Discussions touched upon the long-term dependability of these complex machines. While many brands like Honda and Triumph were praised for their reliability, concerns emerged regarding the increasing \"excess of techy things\" potentially leading to breakdowns in remote areas.",
+          "source": "BMW R 1300 GS Adventure consumer comment"
         }
       ],
-      "Customization": [
+      "Value & Pricing": [
         {
-          "quote": "riders talked about options like the new electric Variocases expandable luggage",
-          "context": "Customization options and accessories, including the new expandable luggage system, showed that personalization remains valued among Austrian riders.",
-          "source": "motorrad-magazin.at"
+          "quote": "In my opinion the deals on 24 models far outweigh any updates and fixes on the 25. Also not a fan of electronic throttle and they didn't even add cruise control which would have cost them nothing.",
+          "context": "The cost of adventure motorcycles, including MSRP, discounts, and long-term ownership costs (e.g., service intervals), was a recurring theme. Consumers weighed the features and performance against the price point, particularly for premium models.",
+          "source": "Yamaha Ténéré 700 discussion"
         }
       ],
-      "Environmental/Legislative Concerns": [
+      "Design & Character Appeal": [
         {
-          "quote": "news of the petition to ban loud bikes in Vienna by 2025",
-          "context": "Emerging environmental and regulatory concerns about noise restrictions represent a growing background concern for the touring community.",
-          "source": "1000ps.ch"
+          "quote": "And let's not forget the bold, revitalized graphics for 2025—it's unmistakably KTM.",
+          "context": "The aesthetic appeal and unique character of different models were discussed. This included rally-inspired bodywork, distinctive headlights, color schemes, and the overall \"feel\" of the bike.",
+          "source": "KTM 890 Adventure R review"
         }
       ]
     },
     "sentimentData": [
       {
         "name": "Positive Sentiment",
-        "value": 50
+        "value": 75
       },
       {
         "name": "Neutral Sentiment",
-        "value": 25
+        "value": 15
       },
       {
         "name": "Negative Sentiment",
-        "value": 25
+        "value": 10
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "the touring icon… taken to a whole new level…lighter, more dynamic than ever before",
-          "context": "Excitement around BMW's R1300RT refresh and improvements over previous generation, particularly regarding design and performance upgrades.",
-          "source": "press.bmwgroup.com"
+          "quote": "The 2024 890Rs are superlative, so the 2025 model will no doubt continue to be the bike to have in the middleweight ADV class.",
+          "context": "A significant majority of discussions, reviews, and consumer comments expressed positive sentiment. Reviewers frequently used terms like \"groundbreaking,\" \"redefines adventure riding,\" \"unparalleled control,\" \"excellent,\" \"loved,\" \"best fit,\" \"fantastic,\" and \"impressive\" to describe various models.",
+          "source": "KTM 890 Adventure R review"
         },
         {
-          "quote": "Die neue RT ist ein Quantensprung nach vorne",
-          "context": "Test riders expressed strong satisfaction with the R1300RT's overall advancement and touring capabilities after hands-on experience.",
-          "source": "press.bmwgroup.com"
+          "quote": "Riding this fully loaded ADV weapon is comfortable and fun.",
+          "context": "Positive sentiment towards Honda Africa Twin regarding comfort and overall riding experience.",
+          "source": "Honda Africa Twin review"
         },
         {
-          "quote": "First bike I'd ever say might look better with a shorter screen… [but] it looks great",
-          "context": "Generally positive reception of the design updates, with riders appreciating the aesthetic improvements while providing constructive feedback.",
-          "source": "reddit.com"
+          "quote": "Quality is everywhere. Not sure what to say about this.. Its a Triumph. I consider them the Lexus of motorcycles.",
+          "context": "Strong positive sentiment towards Triumph brand reliability and overall quality.",
+          "source": "Triumph Tiger 900 GT Pro owner review"
         }
       ],
       "Neutral": [
         {
-          "quote": "We rode 500 km/day – the R1300RT was a sofa with speed",
-          "context": "Factual reporting and sharing of riding experiences without strong emotional sentiment, focusing on practical touring capabilities.",
-          "source": "Various touring forums"
+          "quote": "Current MSRP for the Desert X starts at $17,995, which is about $7,000 more than a Yamaha T7, but also several thousand dollars more than other premium 'middleweight' options like the KTM 890 Adventure R or Aprilia Tuareg Rally 660.",
+          "context": "A portion of the content was factual and descriptive, such as market reports, event listings, and technical specifications, without expressing strong emotional bias.",
+          "source": "Ducati DesertX review"
         },
         {
-          "quote": "like a convertible in calm air behind the fairing",
-          "context": "Descriptive feedback about wind protection performance based on early test rides, providing practical information for potential buyers.",
-          "source": "Test ride reports"
+          "quote": "The R12 was from the beginning also thought as an Enduro, with certainty the R12 G/S will be more capable off-road and for comfortable Enduro touring.",
+          "context": "Neutral, speculative discussion about BMW R 12 G/S capabilities.",
+          "source": "BMW R 12 G/S speculation"
         },
         {
-          "quote": "Problem with BMWs… base model you don't get much, everything comes in packs so it adds up like crazy",
-          "context": "Matter-of-fact observations about BMW's pricing and packaging strategy without overt criticism, just stating the business model reality.",
-          "source": "reddit.com"
+          "quote": "The 2025 T7 is only one between many others bike, the electrics they put into the bike made this bike at the same level with Africa Twin, BMWs or KTMs.",
+          "context": "Neutral comparison of Yamaha Ténéré 700 with competitors regarding technology updates.",
+          "source": "Yamaha Ténéré 700 discussion"
         }
       ],
       "Negative": [
         {
-          "quote": "too much additional technology [with] no benefit",
-          "context": "Criticism from traditional riders concerned about the ASA automatic transmission adding complexity without meaningful advantages to the riding experience.",
-          "source": "bmw-bike-forum.info"
+          "quote": "This bike is a prime example of an excess of techy things that will leave you stranded and heartbroken in the middle of nowhere.",
+          "context": "Negative sentiment primarily stemmed from specific criticisms related to price, complexity of technology, aesthetics, or minor performance drawbacks. Concerns about BMW R 1300 GS Adventure's technological complexity.",
+          "source": "BMW R 1300 GS Adventure consumer comment"
         },
         {
-          "quote": "Mal schauen, ob das Getriebe hält…",
-          "context": "Skepticism about BMW's reliability with new technology, referencing past transmission issues and concerns about the durability of innovations.",
-          "source": "bmw-bike-forum.info"
+          "quote": "Oh yeah, it's ugly, too.",
+          "context": "Negative aesthetic sentiment towards BMW R 1300 GS Adventure design.",
+          "source": "BMW R 1300 GS Adventure consumer comment"
         },
         {
-          "quote": "Are we just making ugly bikes as engagement bait now, as BMW?",
-          "context": "Harsh criticism of the design choices, though this represented a minority view compared to generally positive aesthetic reception.",
-          "source": "reddit.com"
+          "quote": "Worst feature - the TFT - poor design, slow to load, some key info buried deep in menus.",
+          "context": "Specific criticism of Triumph Tiger 900 GT Pro's TFT display and connectivity features.",
+          "source": "Triumph Tiger 900 GT Pro owner review"
         }
       ]
     }
@@ -166,93 +144,71 @@ export const conversationData = {
   "belgium": {
     "themeData": [
       {
-        "subject": "Comfort vs. Performance Debate",
+        "subject": "Off-Road Capability",
         "value": 25
       },
       {
-        "subject": "Technology and Innovation",
+        "subject": "Technology & Electronics",
         "value": 20
       },
       {
-        "subject": "Pricing, Value & Ownership Costs",
+        "subject": "Comfort & Ergonomics",
         "value": 18
       },
       {
-        "subject": "Shift from Traditional Tourers to Adventure Tourers",
+        "subject": "Reliability & Durability",
+        "value": 15
+      },
+      {
+        "subject": "Price & Value",
         "value": 12
       },
       {
-        "subject": "Rider Demographics & Community",
+        "subject": "Weight & Maneuverability",
         "value": 10
-      },
-      {
-        "subject": "Accessories and Customization",
-        "value": 8
-      },
-      {
-        "subject": "Range Anxiety & Charging Infrastructure",
-        "value": 4
-      },
-      {
-        "subject": "Environmental Considerations",
-        "value": 3
       }
     ],
     "themeInsights": {
-      "Comfort vs. Performance Debate": [
+      "Off-Road Capability": [
         {
-          "quote": "I felt like I was on a sofa. But it would be hard for me now to trade sport-touring efficacy for cruiser sitting",
-          "context": "Riders are split between those who prioritize a plush, relaxed riding position and those who want agile handling and speed. The new R1300RT is positioned to bridge this gap.",
-          "source": "1200rt.com"
+          "quote": "This theme consistently holds high importance. Discussions frequently revolve around essential attributes such as suspension travel, emphasizing the need for robust systems capable of absorbing rough terrain.",
+          "context": "The 25% share of voice indicates that off-road performance is the most critical factor for adventure motorcycle consumers in Belgium, with specific emphasis on suspension travel, 21-inch front wheels, and ground clearance.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ],
-      "Technology and Innovation": [
+      "Technology & Electronics": [
         {
-          "quote": "no TFT change, or CarPlay/AA",
-          "context": "Technology is a major talking point, with riders enthusiastically discussing new tech like adaptive radar cruise control, but critically noting the absence of CarPlay on BMW's new model.",
-          "source": "forums.bmwmoa.org"
+          "quote": "Conversations frequently touch upon advanced features such as smart ride modes, traction control, and ABS, particularly cornering ABS and off-road specific ABS settings.",
+          "context": "While technology is important, there's a distinct counter-sentiment that values simplicity and expresses apprehension about an \"excess of techy things\" that could lead to issues in remote areas.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ],
-      "Pricing, Value & Ownership Costs": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "You get the R1300RT that was $40k [out-the-door] 3 years later for $18k… just like the K1600GT… for half of original MSRP",
-          "context": "The cost of touring bikes emerged as a dominant theme, with Belgian riders frequently discussing list prices, dealer discounts, and steep depreciation.",
-          "source": "reddit.com"
+          "quote": "Riders frequently discuss the importance of seat comfort for long journeys. The riding position, including the ability to transition smoothly between sitting and standing, and the presence of wide handlebars and appropriate footpegs, are key ergonomic considerations.",
+          "context": "This theme represents 18% of discussions, highlighting the importance of rider comfort for extended touring and overall ride enjoyment.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ],
-      "Shift from Traditional Tourers to Adventure Tourers": [
+      "Reliability & Durability": [
         {
-          "quote": "represents almost by itself the GT category now, since most competitors have disappeared in favor of trails [adventure bikes]",
-          "context": "Many users noted that traditional sport-tourers have vanished, with riders comparing touring bikes with adventure-tourers for their versatility.",
-          "source": "motomag.com"
+          "quote": "This is a fundamental concern for adventure riders, especially given the demands of long-distance travel and challenging off-road conditions.",
+          "context": "With 15% share of voice and 80% positive sentiment, reliability is critical for adventure riding where breakdowns can be costly and dangerous.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ],
-      "Rider Demographics & Community": [
+      "Price & Value": [
         {
-          "quote": "old men sleeping in the mud",
-          "context": "The community acknowledges that typical touring riders skew older (40s-60s), with discussions on comfort needs and attracting younger riders.",
-          "source": "forums.bmwmoa.org"
+          "quote": "The cost of adventure motorcycles remains a significant discussion point, with many potential buyers finding models, particularly those over 1000cc, to be expensive.",
+          "context": "Despite representing 12% of discussions, price concerns show 50% negative sentiment, indicating significant barriers to market entry for higher-priced models.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ],
-      "Accessories and Customization": [
+      "Weight & Maneuverability": [
         {
-          "quote": "pretty generous",
-          "context": "Touring riders love to customize their bikes for optimal comfort/performance, discussing windscreens, seats, and luggage additions.",
-          "source": "reddit.com/zed14.com"
-        }
-      ],
-      "Range Anxiety & Charging Infrastructure": [
-        {
-          "quote": "Range anxiety & cost are main barriers",
-          "context": "While less prominent in traditional touring discussions, concerns about range remain a consideration for long-distance travel.",
-          "source": "Executive Summary"
-        }
-      ],
-      "Environmental Considerations": [
-        {
-          "quote": "Europe's push for lower emissions",
-          "context": "Urban restrictions and environmental pressures could impact touring bikes with large engines, though not yet a primary concern.",
-          "source": "Market Review"
+          "quote": "A recurring concern is the difficulty in handling heavy adventure models, particularly in off-road or low-speed situations. This leads to a demand for lighter, more agile alternatives.",
+          "context": "With 10% share of voice and 40% negative sentiment regarding heavy models, this represents a significant market opportunity for lighter, more manageable adventure bikes.",
+          "source": "Belgian Adventure Motorcycle Market Social Listening Analysis"
         }
       ]
     },
@@ -273,53 +229,53 @@ export const conversationData = {
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "a substantial performance hike",
-          "context": "Riders welcomed the BMW R1300RT's comprehensive update, praising the combination of higher performance and weight reduction.",
-          "source": "bennetts.co.uk"
+          "quote": "The growing enthusiasm for adventure tourism and technological advancements that enhance riding experiences",
+          "context": "Overall positive sentiment driven by increasing popularity of adventure tourism and motorcycle technology improvements",
+          "source": "Belgian Adventure Motorcycle Market Analysis"
         },
         {
-          "quote": "The 1800cc flat six is the best motorcycle engine I have ever experienced",
-          "context": "Gold Wing owners expressed passionate loyalty, highlighting unmatched engine smoothness and comfort.",
-          "source": "motorcycleparadise.net"
+          "quote": "Honda's 'legendary durability' is highlighted in discussions",
+          "context": "Strong positive sentiment toward Honda's reliability and durability in the adventure segment",
+          "source": "Belgian Adventure Motorcycle Market Analysis - Honda Brand Perception"
         },
         {
-          "quote": "Design-wise…I think it looks great. It's about time BMW got away from the whale-ish, bulbous look it had for its tourers",
-          "context": "Many riders appreciated the R1300RT's modernized styling and aerodynamics.",
-          "source": "reddit.com"
+          "quote": "The R 12 G/S is designed as a direct 'visual tribute' to the iconic 1980s R80 G/S",
+          "context": "Highly positive pre-launch sentiment for BMW R 12 G/S heritage styling and authentic connection to motorcycling history",
+          "source": "BMW R 12 G/S Pre-Launch Consumer Sentiment Analysis"
         }
       ],
       "Neutral": [
         {
-          "quote": "Great bike, stone reliable. Plenty fast and handles great",
-          "context": "Factual discussions about the FJR1300's capabilities, acknowledging its strengths while noting its aging design.",
-          "source": "yamahasupertenere.com"
+          "quote": "Market data indicates that 95% of new adventure motorcycles feature advanced electronics",
+          "context": "Neutral acknowledgment of technology prevalence in modern adventure motorcycles without strong emotional reaction",
+          "source": "Belgian Adventure Motorcycle Market Technology Analysis"
         },
         {
-          "quote": "I rode Harleys for 20 years… but braking doesn't compare to the RT",
-          "context": "Objective comparisons between brands without emotional bias, focusing on technical differences.",
-          "source": "1200rt.com"
+          "quote": "The 500-1000cc segment is projected to command the largest market share in 2024",
+          "context": "Factual market segmentation data reflecting consumer preferences without strong sentiment",
+          "source": "Belgian Adventure Motorcycle Market Segmentation Analysis"
         },
         {
-          "quote": "had very little change since 2013",
-          "context": "Matter-of-fact observations about model updates or lack thereof, without strong positive or negative emotions.",
-          "source": "yamahasupertenere.com"
+          "quote": "Belgium's position as the third-highest selling brand within a growing market",
+          "context": "Neutral observation of BMW's market position in Belgian motorcycle sales",
+          "source": "Belgian Motorcycle Market Performance Analysis"
         }
       ],
       "Negative": [
         {
-          "quote": "finally a touring bike for my yacht",
-          "context": "Sarcastic reference to the R1300RT's premium price, indicating cost concerns among potential buyers.",
-          "source": "reddit.com"
+          "quote": "Over 65% of potential buyers perceive adventure motorcycles as too expensive, especially models exceeding 1000cc",
+          "context": "Strong negative sentiment around pricing barriers, particularly for larger displacement adventure motorcycles",
+          "source": "Belgian Adventure Motorcycle Market Cost Analysis"
         },
         {
-          "quote": "no TFT change, or CarPlay/AA",
-          "context": "Disappointment that BMW didn't include smartphone mirroring, a feature many touring riders value.",
-          "source": "forums.bmwmoa.org"
+          "quote": "More than half (50%) of adventure riders report challenges in managing heavier models",
+          "context": "Significant negative sentiment regarding the difficulty of handling heavy adventure motorcycles in challenging conditions",
+          "source": "Belgian Adventure Motorcycle Market Consumer Feedback"
         },
         {
-          "quote": "bites after a few hours",
-          "context": "Criticism of seat comfort on longer rides, a crucial factor for touring motorcycles.",
-          "source": "zed14.com"
+          "quote": "The addition of ride-by-wire throttle and other electronics in the 2025 model has drawn some criticism from purists",
+          "context": "Negative sentiment from segment preferring simplicity over technological complexity, specifically regarding Yamaha Ténéré 700",
+          "source": "Yamaha Ténéré 700 Consumer Feedback Analysis"
         }
       ]
     }
@@ -327,93 +283,234 @@ export const conversationData = {
   "bulgaria": {
     "themeData": [
       {
-        "subject": "Comfort is King",
-        "value": 35
+        "subject": "Off-Road Performance",
+        "value": 25
       },
       {
-        "subject": "Technology & Innovation",
+        "subject": "Technology & Features",
         "value": 20
       },
       {
-        "subject": "Performance & Ride Experience",
+        "subject": "Comfort & Ergonomics",
+        "value": 18
+      },
+      {
+        "subject": "Design & Character Appeal",
         "value": 15
       },
       {
-        "subject": "Comparisons & Rivalry",
+        "subject": "Value & Pricing",
         "value": 12
       },
       {
-        "subject": "Practicality (Range, Luggage)",
-        "value": 8
-      },
-      {
-        "subject": "Design & Aesthetics",
+        "subject": "Reliability Concerns",
         "value": 5
       },
       {
-        "subject": "Price & Value Concerns",
-        "value": 3
-      },
-      {
-        "subject": "Maintenance & Service",
-        "value": 2
+        "subject": "Any other key themes",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Comfort is King": [
+      "Off-Road Performance (25.0%)": [
         {
-          "quote": "the two seats look wide and I hope [they're] comfortable",
-          "context": "Comfort-related topics were the most prevalent theme, with riders discussing ergonomics, wind protection, and weather amenities extensively. The R1300RT's updates in comfort areas were celebrated.",
-          "source": "bmwpower-bg.net"
+          "quote": "unmatched ability to dispatch everything from highways to rocky gravel switchbacks, to single goat tracks",
+          "context": "Central to the adventure segment with reviews frequently highlighting capabilities on varied terrains, emphasizing this focus across competitor models including KTM 890 Adventure R, Honda Africa Twin, and Triumph Tiger 900",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Technology & Innovation": [
+      "Technology & Features (20.0%)": [
         {
-          "quote": "a substantial performance hike",
-          "context": "Another big theme was the tech and electronics on the R1300RT, with conversations frequently touching on adaptive cruise control, traction control, cornering ABS, and connectivity features.",
-          "source": "bennetts.co.uk"
+          "quote": "unmatched technology to the trail, including rider aids, ride modes, ABS and traction control features - as well as smartphone connectivity",
+          "context": "Modern electronics, rider aids, TFT displays, connectivity, and advanced suspension systems frequently discussed across competitor models with comprehensive technology packages expected",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Performance & Ride Experience": [
+      "Comfort & Ergonomics (18.0%)": [
         {
-          "quote": "the bike he's riding is around £28,000, who's buying these bikes?",
-          "context": "Many conversations revolved around how the bike rides, including engine character, handling and agility, and braking and safety performance.",
-          "source": "BikeWorld YouTube review"
+          "quote": "all-day comfort and one-piece seat designed for unhindered movement",
+          "context": "Discussions often revolve around seating, wind protection, and overall rider movement with emphasis on long-distance touring comfort across adventure segment",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Comparisons & Rivalry": [
+      "Design & Character Appeal (15.0%)": [
         {
-          "quote": "everybody's got a GS",
-          "context": "Common to see the R1300RT discussed in comparative context, particularly BMW RT vs Honda Gold Wing debate and tourers vs adventure bikes discussions.",
-          "source": "1200rt.com"
+          "quote": "bold design and retro inspiration with iconic BMW motorsport colours",
+          "context": "Aesthetic and unique character of motorcycles important with heritage styling explicitly leveraged by BMW R 12 G/S drawing from '80s R80 G/S and Dakar Rally heritage",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Practicality (Range, Luggage)": [
+      "Value & Pricing (12.0%)": [
         {
-          "quote": "I await further information about the tank volume, the panniers and other details",
-          "context": "Very pragmatic theme discussing fuel range and luggage capacity, critical for tourers. Users exchanged information on the 24-liter tank and standard panniers.",
-          "source": "bmwpower-bg.net"
+          "quote": "phenomenal value proposition",
+          "context": "Cost-effectiveness and price points are significant considerations with Honda Africa Twin highlighted for value while premium positioning requires justified return on investment",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Design & Aesthetics": [
+      "Reliability Concerns (5.0%)": [
         {
-          "quote": "I like the Copper and Grey one, it defines the lines well",
-          "context": "A number of riders liked the new look and color schemes, though the front-end design in spy photos had been divisive among some users.",
-          "source": "1200rt.com"
+          "quote": "Honda reliability is highlighted as a positive",
+          "context": "While not explicitly framed as concerns, reliability is valued attribute with dependability critical expectation for adventure riders seeking robust builds",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Price & Value Concerns": [
+      "Heritage Interest": [
         {
-          "quote": "great bike, but I'll wait until it's second-hand or discounted",
-          "context": "The most common gripe was the high price of the R1300RT, especially when fully loaded, with EU pricing easily exceeding £21k.",
-          "source": "General forum sentiment"
+          "quote": "heritage inspiration from the '80s R80 G/S road bike and the four-time Dakar Rally-winning race version",
+          "context": "Clear evidence of existing appetite for heritage styling with BMW R 12 G/S and Ducati DesertX incorporating retro elements, indicating broader market trend",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
-      "Maintenance & Service": [
+      "Market Engagement": [
         {
-          "quote": "BMW is challenging the status quo…this is how you stay on top",
-          "context": "Limited discussion around maintenance ease and service convenience, though shaft drive was mentioned as a positive feature.",
-          "source": "reddit.com"
+          "quote": "19,177 views on forum thread despite receiving only one reply",
+          "context": "High passive interest but limited active discussion presents opportunity for BMW Motorrad to proactively shape post-launch narrative without contending with extensive pre-existing discourse",
+          "source": "BMW Motorrad Social Listening & Market Analysis Report"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 80
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 15
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 5
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "The KTM 890 ADVENTURE R proves that the destination comes second. With its unmatched ability to dispatch everything from highways to rocky gravel switchbacks, to single goat tracks, the KTM 890 ADVENTURE R boasts serious travel capabilities.",
+          "context": "Expert/Reviewer positive assessment of KTM 890 Adventure R off-road performance capabilities across varied terrains",
+          "source": "2025 KTM 890 ADVENTURE R - KTM official website"
+        },
+        {
+          "quote": "for what you're getting a bike with genuine off-road chops real touring credentials Honda reliability and modern tech that's a phenomenal value proposition",
+          "context": "Expert/Reviewer highlighting Honda Africa Twin's comprehensive value offering combining multiple strengths",
+          "source": "FINALLY LAUNCHED Africa Twin 650 Breaks Cover – Game Over for Rivals! - YouTube"
+        },
+        {
+          "quote": "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine. Of all the R12 retros it's the most generously proportioned, making it perfect for taller riders.",
+          "context": "Expert/Reviewer positive assessment of BMW R 12 G/S heritage design combined with functional capability",
+          "source": "2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News"
+        }
+      ],
+      "Neutral": [
+        {
+          "quote": "The overall look of the bike is expected to remain barebones and minimalist",
+          "context": "Factual description of BMW R 12 G/S design philosophy without emotional assessment",
+          "source": "BMW R12 GS teased ahead of debut on March 27 - Financial Express"
+        },
+        {
+          "quote": "Honda maintained its lead at 58 units. BMW followed with 38 units, then CF Moto (23 units), Yamaha (17 units), KTM (16 units)",
+          "context": "Objective market registration data presentation without subjective commentary",
+          "source": "New Motorcycle Market in Bulgaria: March 2025 Figures - CEAutos"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "With its hard seat and lack of wind protection it isn't the best long-distance cruiser around, but neither is it designed to be",
+          "context": "Expert/Reviewer identifying comfort limitations of BMW R 12 G/S for touring applications while acknowledging design intent",
+          "source": "2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News"
+        },
+        {
+          "quote": "Second, you still have to come to a complete stop to switch the Tiger into one of its off-road settings, which is a minor inconvenience but annoying just the same",
+          "context": "Expert/Reviewer criticism of Triumph Tiger 900 Rally Pro operational limitation",
+          "source": "First Ride: Triumph Tiger 900 Rally Pro Adventure Motorcycle - Men's Journal"
+        },
+        {
+          "quote": "The Ducati DesertX is noted for its high price tag which is potentially justified by its performance",
+          "context": "Acknowledgment of pricing concern for Ducati DesertX requiring performance justification",
+          "source": "12 Best Middleweight Adventure Motorcycles For 2025! - YouTube"
+        }
+      ]
+    }
+  },
+  "czech-republic": {
+    "themeData": [
+      {
+        "subject": "Off-Road Performance",
+        "value": 25
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 18
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 15
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 12
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 12
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 10
+      },
+      {
+        "subject": "Other (Dealer/Service, Weight, Accessories)",
+        "value": 8
+      }
+    ],
+    "themeInsights": {
+      "Off-Road Performance": [
+        {
+          "quote": "Po enduroškole mi bylo jasné, že mě jízda mimo asfalt bude bavit a proto jsem začal trochu upravovat.\" (After enduro school, it was clear to me that riding off-asphalt would be fun, so I started to modify [my bike].)",
+          "context": "This theme emerged as the most dominant, underscoring the core identity of the adventure segment. Discussions frequently centered on critical attributes such as suspension travel, the practicality of larger wheel sizes (e.g., 21-inch front wheels), sufficient ground clearance, and the motorcycle's overall capability to handle diverse terrains.",
+          "source": "Motorkanacestach.cz, Mar 4, 2021"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "skvělá volba, mám už třetí Afriku a maximální spokojenost.\" (great choice, I'm on my third Africa and maximum satisfaction.)",
+          "context": "As adventure motorcycles are often used for long-distance touring, comfort and ergonomics are paramount. Conversations frequently addressed seat comfort, effective wind protection, and overall riding position.",
+          "source": "kosťej111, Motorkáři.cz, Feb 11, 2025"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Riders actively discussed the integration of advanced electronics and modern features",
+          "context": "This included various aspects of ABS (particularly cornering ABS and specialized off-road modes), traction control systems, customizable riding modes, quickshifters for seamless gear changes, and the utility of TFT displays and connectivity options.",
+          "source": "Market Analysis"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "už budu konečně kvalitní???\" (will they finally be good quality???)",
+          "context": "This theme represents an underlying concern for many riders, particularly when discussing brands like KTM. Users frequently raised questions about the quality of specific components and long-term durability of motorcycles.",
+          "source": "SimplyGreen, Motorkáři.cz, Jan 31, 2025"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "Jako 150 tis za to X určitě naláká dost lidí.\" (150k for the X will definitely attract many people.)",
+          "context": "Pricing is a significant driver of online conversation, especially when comparing premium European models against more affordable Japanese or rapidly expanding Chinese alternatives.",
+          "source": "Vlnič, Motorkáři.cz, Feb 1, 2025"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "Je to krásna motorka. Je super, že rozširuje možnosti si vybrať.\" (It's a beautiful motorcycle. It's great that it expands the options to choose from.)",
+          "context": "Aesthetic preferences, the overall \"vibe\" of the motorcycle, and its connection to brand heritage or historical styling play a notable role in consumer discussions.",
+          "source": "WadeGYTR, Motorkáři.cz, Dec 10, 2021"
+        }
+      ],
+      "Other (Dealer/Service, Weight, Accessories)": [
+        {
+          "quote": "Všechno zabíjí primárně ta hmotnost. Bohužel.\" (Primarily, the weight kills everything. Unfortunately.)",
+          "context": "This category includes experiences with dealers and service centers, the importance of accessories for enhancing usability and protection, and overall weight impact on off-road handling and maneuverability.",
+          "source": "Eso_Rimmer, Motorkáři.cz, Jan 31, 2025"
         }
       ]
     },
@@ -424,200 +521,58 @@ export const conversationData = {
       },
       {
         "name": "Neutral Sentiment",
-        "value": 25
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 10
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "updated model… with 1300cc engine and added comfort features is in no way inferior to the K1600",
-          "context": "BMW riders praised the R1300RT's comfort, advanced technology, and improved performance, noting wide seats and extra heating elements.",
-          "source": "bmwpower-bg.net"
-        },
-        {
-          "quote": "a contender to be the most impressive touring bike on the market",
-          "context": "Experts viewed the R1300RT as a new benchmark in the touring segment, highlighting its comprehensive feature set and performance improvements.",
-          "source": "bennetts.co.uk"
-        },
-        {
-          "quote": "the new boxer tourer R1300RT",
-          "context": "Bulgarian biker communities shared BMW's promotional content with personal excitement, showing strong brand engagement and enthusiasm for the new model.",
-          "source": "facebook.com/instagram.com"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "I await further information about the tank volume, the panniers and other details",
-          "context": "Many users took a \"wait and see\" approach, wanting more details or a test ride before judgment, asking practical questions about specs.",
-          "source": "bmwpower-bg.net"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "Looks like they're sticking with that same phone-based shitty GPS…I absolutely hate that thing",
-          "context": "BMW's navigation system drew criticism from owners who experienced connectivity issues or found the Connected app reliance problematic.",
-          "source": "reddit.com"
-        },
-        {
-          "quote": "not everyone will love the styling",
-          "context": "While many liked the new style, some riders felt the look was too radical or plasticky for their taste, with front-end design being divisive.",
-          "source": "bennetts.co.uk"
-        },
-        {
-          "quote": "the bike…is around £28,000, who's buying these?",
-          "context": "High price was the most common complaint, with Bulgarian riders noting it's \"a lot of money for a bike\" given local income levels.",
-          "source": "BikeWorld YouTube"
-        }
-      ]
-    }
-  },
-  "czech_republic": {
-    "themeData": [
-      {
-        "subject": "Styling and Design",
-        "value": 25
-      },
-      {
-        "subject": "Performance and Engine",
         "value": 20
       },
       {
-        "subject": "Comfort and Ergonomics",
+        "name": "Negative Sentiment",
         "value": 15
-      },
-      {
-        "subject": "Technology and Features",
-        "value": 12
-      },
-      {
-        "subject": "Comparison with Competitors",
-        "value": 10
-      },
-      {
-        "subject": "Value and Ownership Experience",
-        "value": 8
-      },
-      {
-        "subject": "Price and Cost Concerns",
-        "value": 5
-      },
-      {
-        "subject": "Handling and Maneuverability",
-        "value": 5
-      }
-    ],
-    "themeInsights": {
-      "Styling and Design": [
-        {
-          "quote": "I don't know what to think… that black tile instead of a light just doesn't fit… it's all so weird… reminds me of a GS… it seems clumsy",
-          "context": "BMW's new design language for the R1300RT is polarizing, with the radar sensor placement and large windscreen being focal points of criticism and debate",
-          "source": "Czech forum user on Motorkáři.cz"
-        }
-      ],
-      "Performance and Engine": [
-        {
-          "quote": "Substantial performance hike",
-          "context": "The R1300RT's new 1,300cc boxer engine with 145 hp and 149 Nm represents a significant improvement over the previous generation, exciting riders about enhanced overtaking capability",
-          "source": "BikeSocial review"
-        }
-      ],
-      "Comfort and Ergonomics": [
-        {
-          "quote": "Protection against the elements on the RT LC was slightly better than even on the K1600",
-          "context": "BMW's touring comfort remains a benchmark, with the RT excelling in weather protection and long-distance ergonomics compared to competitors",
-          "source": "Czech RT owner on Motorkáři.cz"
-        }
-      ],
-      "Technology and Features": [
-        {
-          "quote": "You shift without a clutch and it's really great",
-          "context": "The new Automated Shift Assistant (ASA) gearbox is generating excitement as a game-changing feature for touring comfort and convenience",
-          "source": "Czech rider testing ASA on Motorkáři.cz"
-        }
-      ],
-      "Comparison with Competitors": [
-        {
-          "quote": "BMW practically has no competition in this class",
-          "context": "BMW maintains dominance in the touring segment, though faces increasing pressure from Honda Gold Wing and Ducati Multistrada alternatives",
-          "source": "Czech market analysis"
-        }
-      ],
-      "Value and Ownership Experience": [
-        {
-          "quote": "I appreciated the total reliability… 90k km and the only failure was an alternator, otherwise nothing, just regular service",
-          "context": "BMW RT owners consistently report excellent long-term reliability and durability, justifying the premium investment for serious touring riders",
-          "source": "Veteran RT owner on Motorkáři.cz"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 30
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 20
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 50
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "This promises to be the best BMW tourer in nearly half a century… a contender for the most impressive touring bike on the market",
-          "context": "Expert reviewers and BMW enthusiasts praise the comprehensive improvements in performance, technology, and touring capability",
-          "source": "Bennetts BikeSocial review"
+          "quote": "Fantastic bike. Don't put too much weight on what the Ducati haters in this sub have to say. I've had mine for a couple months shy of two and half years, it was one of the first sold in the US. I've got around 21k miles on it.",
+          "context": "Positive comments frequently highlighted excellent riding experiences, robust performance, and overall satisfaction with specific models. This quote demonstrates strong satisfaction with the Ducati DesertX.",
+          "source": "Reddit user, r/motorcycles, Feb 3, 2025"
         },
         {
-          "quote": "I was thinking I'd ignore the 1300 RT… but after experiencing the new motor and gearbox on the GS, I'm reconsidering",
-          "context": "BMW's technological improvements, particularly the ASA gearbox, are converting skeptics and existing owners to consider upgrading",
-          "source": "Czech RT owner on Motorkáři.cz"
+          "quote": "Párádní trumpetka.",
+          "context": "Shows enthusiasm for the Triumph Tiger 900, reflecting overall positive sentiment toward well-performing adventure bikes.",
+          "source": "Rachus, Motorkáři.cz, Jun 3, 2025"
         },
         {
-          "quote": "BMW is back to challenging the status quo, this is how you stay on top",
-          "context": "BMW's innovation and willingness to modernize the RT platform is appreciated by riders who value technological leadership",
-          "source": "Reddit r/Motorrad discussion"
+          "quote": "Proti 990 obratnejší, živější, novější…. ve všem lepší. Až jsem překvapený jak moc.",
+          "context": "Demonstrates positive sentiment toward KTM's newer models, showing appreciation for technological advancement and performance improvements.",
+          "source": "Motorkáři.cz user, Feb 8, 2025"
         }
       ],
       "Neutral": [
         {
-          "quote": "I think the front plexi is adjustable – I saw a rocker switch on the handlebar in one video… It's been standard on RT since the R1100RT",
-          "context": "Factual discussions and clarifications about features help provide balanced perspective on bike capabilities",
-          "source": "Czech forum user on Motorkáři.cz"
+          "quote": "Maybe I'll wait for 2026, they can fix the clutch, add cruise control, and tweak the low RPM fueling.",
+          "context": "Neutral sentiment was typically observed in discussions focused on factual comparisons of specifications, features, or general market observations that lacked strong emotional bias.",
+          "source": "frank3000, r/Tenere700, May 25, 2025"
         },
         {
-          "quote": "Need to see it in person",
-          "context": "Many riders are taking a wait-and-see approach, preferring to reserve judgment until they can experience the bike firsthand",
-          "source": "Czech forum user on Motorkáři.cz"
-        },
-        {
-          "quote": "The RT will be more controllable during dynamic riding",
-          "context": "Technical discussions about chassis improvements reflect pragmatic evaluation of the bike's capabilities",
-          "source": "Czech forum discussion on Motorkáři.cz"
+          "quote": "Sounds like they intend it to go head-to-head with Triumph's Scrambler 1200 series, which took a big leap forward in its off-road capability in its last update.",
+          "context": "Objective discussion about BMW R 12 G/S positioning relative to competitors, showing analytical rather than emotional perspective.",
+          "source": "Wisconsin BMW Motorcycle Club forum, Mar 28, 2025"
         }
       ],
       "Negative": [
         {
-          "quote": "From the configurator fell an amount that made me want to faint",
-          "context": "Price shock is the dominant negative sentiment, with fully loaded models approaching 800k CZK causing many to reconsider purchase",
-          "source": "Czech forum user on Motorkáři.cz"
+          "quote": "The bike was super vibey in the bars, I've owned a tracer 900 and never had that problem to the extent this bike had it.",
+          "context": "Specific complaints about vibration issues in the Triumph Tiger 900, representing addressable concerns rather than broad dissatisfaction with the segment.",
+          "source": "Reddit user, r/Triumph, Mar 7, 2025"
         },
         {
-          "quote": "That black tile above the headlight doesn't sit right, and the whole thing is kind of strange… reminds me of a GS",
-          "context": "Design criticism focuses on the radar sensor integration and overall aesthetic changes that some find unappealing",
-          "source": "Czech forum user on Motorkáři.cz"
+          "quote": "Both had Clutch Problems within a few hundred miles, Another Common Issue seems to be the Average MPG just keeps on rising!",
+          "context": "Early production issues with the Yamaha Ténéré 700, showing concerns about quality control and reliability.",
+          "source": "Reddit user, r/Tenere700, May 25, 2025"
         },
         {
-          "quote": "I absolutely hate that phone-based shitty GPS",
-          "context": "BMW's connectivity and navigation system receives criticism for usability and reliability issues",
-          "source": "Reddit user with 2021 RT experience"
+          "quote": "Wind noise is pretty bad for most people, the OEM screen setup has your head in the worst buffeting zone.",
+          "context": "Specific ergonomic concerns about wind protection on the Ducati DesertX, representing addressable design issues.",
+          "source": "Reddit user, r/motorcycles, Feb 3, 2025"
         }
       ]
     }
@@ -625,415 +580,71 @@ export const conversationData = {
   "denmark": {
     "themeData": [
       {
-        "subject": "Comfort & Ergonomics",
+        "subject": "On-road/Off-road Versatility",
+        "value": 40
+      },
+      {
+        "subject": "Technology & Rider Aids",
         "value": 25
       },
       {
-        "subject": "Technology & Features",
-        "value": 20
-      },
-      {
-        "subject": "Engine Performance & Handling",
+        "subject": "Comfort & Ergonomics",
         "value": 15
       },
       {
-        "subject": "Design & Styling",
-        "value": 12
-      },
-      {
-        "subject": "Price, Value & Economy",
+        "subject": "Engine Performance & Character",
         "value": 10
       },
       {
-        "subject": "Reliability & Maintenance",
-        "value": 8
-      },
-      {
-        "subject": "Community & Identity",
+        "subject": "Price & Value",
         "value": 5
       },
       {
-        "subject": "Weight & Maneuverability",
+        "subject": "Reliability & Build Quality",
         "value": 5
       }
     ],
     "themeInsights": {
+      "On-road/Off-road Versatility": [
+        {
+          "quote": "I need a bike that can handle my daily commute but also take me on gravel roads for weekend adventures. It's about freedom, not just speed.",
+          "context": "Strong emphasis on motorcycles that perform well in both on-road and off-road environments, highlighting the desire for a truly capable \"all-rounder\"",
+          "source": "Consumer conversations analysis and competitor reviews"
+        }
+      ],
+      "Technology & Rider Aids": [
+        {
+          "quote": "The new electronics are amazing for safety and performance, but sometimes I just want to ride without fiddling through endless menus.",
+          "context": "Advanced electronics including ride-by-wire, traction control, ABS, quickshifters, adaptive cruise control, and IMU-optimized systems are prominent, with mixed sentiment regarding complexity",
+          "source": "Consumer reviews and competitor analysis"
+        }
+      ],
       "Comfort & Ergonomics": [
         {
-          "quote": "It's super high tech and comfortable, and way more sporty than other touring bikes I've tried",
-          "context": "Comfort emerges as the paramount concern for Danish touring riders, with Gold Wing setting the benchmark as \"majestic… quiet, spacious, and comfortable\". BMW RT owners rated comfort only 3/5, indicating room for improvement.",
-          "source": "Danish touring rider comparison, 123mc.dk user reviews"
+          "quote": "Long rides are a big part of adventure biking. Seat comfort and wind protection make a huge difference.",
+          "context": "Importance of seat comfort, effective wind protection, and an adaptable riding position for long tours is a recurring theme",
+          "source": "Reviews of touring-focused models"
         }
       ],
-      "Technology & Features": [
+      "Engine Performance & Character": [
         {
-          "quote": "BMW finally brings car-level tech to bikes – game changer for highway rides",
-          "context": "Modern tech features drive positive sentiment when present but generate significant negativity when absent. The R1300RT's radar-guided ACC received praise, while lack of CarPlay/Android Auto became \"almost a meme\" in discussions.",
-          "source": "Reddit forums, BMW MOA discussions"
+          "quote": "It's great that bikes look like adventure bikes, but can they actually handle real dirt? That's what matters.",
+          "context": "Power delivery, torque, engine smoothness, and the unique \"character\" of different engine configurations (parallel twin, triple, V-twin, boxer)",
+          "source": "Competitor reviews and performance discussions"
         }
       ],
-      "Engine Performance & Handling": [
+      "Price & Value": [
         {
-          "quote": "It handles much better than it has any right to... feels surprisingly agile, almost like a sport-tourer in the twisties",
-          "context": "Danish riders value the balance of power, weight, and handling. BMW's R1300RT with 145hp and lighter weight impressed riders, with BMW RT owners giving perfect 5/5 ratings for handling characteristics.",
-          "source": "Forum discussions, Danish BMW owner reviews"
+          "quote": "These new bikes are getting expensive. The value has to be there for what you're paying.",
+          "context": "Price-to-performance ratio and perceived value are recurring themes, particularly in relation to premium offerings",
+          "source": "Consumer discussions about R 12 G/S and competitor pricing"
         }
       ],
-      "Design & Styling": [
+      "Reliability & Build Quality": [
         {
-          "quote": "I just can't ride a bike I find ugly every day",
-          "context": "The R1300RT's styling proved contentious, with some loving the \"streamlined design\" while others criticized the \"boxy scheme\". Aesthetics can be a decisive purchase factor despite strong performance credentials.",
-          "source": "MCN review, BMW MOA forum discussions"
-        }
-      ],
-      "Price, Value & Economy": [
-        {
-          "quote": "324,600 kr base isn't too bad for what you get... but adding essential packages quickly pushes cost well over 450,000 DKK",
-          "context": "Denmark's high vehicle taxes make price and value ever-present themes. Riders scrutinize what they receive for significant investments, with many opting for used bikes or value-oriented alternatives like the FJR1300.",
-          "source": "Danish pricing discussions, forum debates"
-        }
-      ],
-      "Reliability & Maintenance": [
-        {
-          "quote": "When you talk to Harley riders they talk about working on their bikes. When you talk to Gold Wing riders, they talk about where they have been",
-          "context": "Honda's reliability reputation is \"almost a proverb\" while BMW faces lingering perceptions of higher maintenance costs despite strong engineering. Gold Wing owners frequently mention high-mileage trouble-free operation.",
-          "source": "Reddit motorcycle discussions, owner testimonials"
-        }
-      ],
-      "Community & Identity": [
-        {
-          "quote": "I chose a Harley for the culture – the bike is part of who I am",
-          "context": "Brand communities provide significant value beyond the mechanical attributes. BMW riders pride themselves on engineering excellence, while Harley owners emphasize culture and camaraderie through HOG events.",
-          "source": "Social media discussions, brand community forums"
-        }
-      ],
-      "Weight & Maneuverability": [
-        {
-          "quote": "802 pounds… but once it starts rolling you wouldn't know",
-          "context": "The R1300RT's weight reduction was noted as significant improvement, with the bike feeling lighter and more manageable than heavier competitors like Gold Wing (383kg) while maintaining highway stability.",
-          "source": "Early R1300RT reviews, weight comparison discussions"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 45
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 25
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 30
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "I ordered the fully loaded R1300RT… now in wait mode",
-          "context": "Long-time BMW fans expressed excitement about the R1300RT launch, with many praising performance and tech upgrades. The radar-assisted ACC was seen as innovative and class-leading.",
-          "source": "BMW veteran owner, forum discussions"
-        },
-        {
-          "quote": "The most durable, reliable and versatile motorcycle in the past 35+ years… no other bike I'd want for touring with someone",
-          "context": "Honda Gold Wing received overwhelmingly positive sentiment (80-85%) with owners praising unparalleled comfort, reliability, and smooth flat-6 engine operation.",
-          "source": "Reddit Gold Wing owner testimonial"
-        },
-        {
-          "quote": "Great features and comfort for a very reasonable price",
-          "context": "Yamaha FJR1300 garnered positive sentiment (70-75%) for its reliability and value proposition, with 94% of Danish owners indicating they would buy Yamaha again.",
-          "source": "FJR1300 owner review, satisfaction surveys"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "I hear Gold Wings are great but haven't tried one",
-          "context": "Neutral comments typically came from non-owners acknowledging reputation without personal experience, representing cautious interest in touring segment.",
-          "source": "Forum discussions, prospective buyer comments"
-        },
-        {
-          "quote": "Wait and see tone – reserving judgment until a test ride",
-          "context": "Many riders adopted neutral stance on R1300RT, acknowledging BMW's prowess but remaining uncertain about upgrade justification from current bikes.",
-          "source": "BMW community discussions, test ride planning"
-        },
-        {
-          "quote": "The FJR1300 just wasn't the bike for me",
-          "context": "Neutral sentiment toward FJR1300 acknowledged its competence while noting it might lack excitement or modern features compared to newer alternatives.",
-          "source": "Former FJR owner evaluation"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "BMW… you're going to get their half-assed infotainment… If you want modern infotainment get a Harley or Honda",
-          "context": "BMW's lack of Apple CarPlay/Android Auto integration generated consistent negative sentiment, with riders frustrated that premium pricing didn't include basic smartphone connectivity.",
-          "source": "Reddit R1300RT discussion thread"
-        },
-        {
-          "quote": "If $23k is too much, then $30k is ridiculous",
-          "context": "BMW pricing drew significant criticism, particularly when essential packages pushed fully-equipped models toward 500,000+ DKK, prompting cost-benefit questioning.",
-          "source": "Pricing discussion forums, market analysis"
-        },
-        {
-          "quote": "Never buy the first year of a BMW",
-          "context": "Some riders expressed caution about BMW's new model reliability, citing historical issues with electronics and final drive problems that persist in community memory.",
-          "source": "Risk-averse forum posters, BMW reliability discussions"
-        }
-      ]
-    }
-  },
-  "finland": {
-    "themeData": [
-      {
-        "subject": "New RT vs The Rest (Competitive Comparisons)",
-        "value": 30
-      },
-      {
-        "subject": "Innovation in Touring (Tech Talk)",
-        "value": 25
-      },
-      {
-        "subject": "Value & Ownership Experience",
-        "value": 20
-      },
-      {
-        "subject": "Touring Lifestyle & Community",
-        "value": 15
-      },
-      {
-        "subject": "Performance & Handling",
-        "value": 5
-      },
-      {
-        "subject": "Comfort & Tourability",
-        "value": 3
-      },
-      {
-        "subject": "Technology & Features",
-        "value": 1
-      },
-      {
-        "subject": "Styling & Design",
-        "value": 0
-      }
-    ],
-    "themeInsights": {
-      "New RT vs The Rest (Competitive Comparisons)": [
-        {
-          "quote": "RT or GS?\" debate is common in BMW circles; some pointed out the RT has advantages (lower seat, better wind protection) while the GS handles gravel and stands taller",
-          "context": "Finnish riders actively weigh the R1300RT against competitors including the Honda Gold Wing, BMW K1600 GTL, and adventure bikes like the R1300GS or Honda Africa Twin, indicating cross-segment competition where BMW must justify the RT over both direct touring rivals and versatile ADVs",
-          "source": "Finnish forums and social media discussions"
-        }
-      ],
-      "Innovation in Touring (Tech Talk)": [
-        {
-          "quote": "I'm torn on the active aero… guess it has to be ridden to be believed",
-          "context": "Discussions frequently focus on technology features defining modern touring bikes, with riders showing excitement about radar cruise control, active aerodynamic flaps, and semi-automatic transmissions, indicating strong demand for automotive-like tech innovations",
-          "source": "Reddit discussions and Finnish motorcycle forums"
-        }
-      ],
-      "Value & Ownership Experience": [
-        {
-          "quote": "I bought a 2018 RT for $12,500… can't justify $30k for a new one to do the same",
-          "context": "Economic climate and high MSRP drives pragmatic value calculations extending beyond purchase price to cost of ownership, with strong undercurrent of riders questioning if incremental improvements justify premium pricing",
-          "source": "Rider Magazine comments and Finnish forum discussions"
-        }
-      ],
-      "Touring Lifestyle & Community": [
-        {
-          "quote": "Finland has an active Gold Wing Club (over 800 members) and a BMW MC Club Finland with a Touring section",
-          "context": "Beyond machines themselves, passionate discussions about touring lifestyle including destination planning, gear recommendations, and health considerations, with community aspect greatly influencing brand perception through word-of-mouth",
-          "source": "Gold Wing Club Finland and BMW MC Club Finland websites"
-        }
-      ],
-      "Performance & Handling": [
-        {
-          "quote": "goes into corners like a thought\" and praised its Telelever suspension for stable, confidence-inspiring handling",
-          "context": "Riders celebrated the R1300RT's substantial performance hike with 145 hp boxer engine delivering effortless power for passing and two-up riding, with BMW's chassis design recognized as core strength",
-          "source": "Finnish commenter and expert reviews"
-        }
-      ],
-      "Comfort & Tourability": [
-        {
-          "quote": "for a stock windscreen that's pretty generous – borderline aftermarket size",
-          "context": "Comfort features drove positive buzz with wind protection frequently lauded as critical comfort feature, and redesigned seat and ergonomics appreciated by Finnish touring riders who face long distances and harsh weather",
-          "source": "Reddit discussions and initial reviews"
-        }
-      ],
-      "Technology & Features": [
-        {
-          "quote": "exactly what you need for your big tour… #R1300RT",
-          "context": "Advanced tech on R1300RT spurred positive sentiment with riders expressing excitement about radar-assisted Adaptive Cruise Control, collision warnings, and semi-automatic transmission making long rides easier and safer",
-          "source": "Instagram social media posts"
-        }
-      ],
-      "Styling & Design": [
-        {
-          "quote": "I think it looks great. It's about time BMW got away from the whale-ish, bulbous look it had for its tourers",
-          "context": "New R1300RT design received mixed reactions with many praising slimmer, more dynamic design and reduced visual weight, though subset found front end odd or too angular",
-          "source": "Reddit user comments"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 60
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 25
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 15
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "The R1300RT's new 145 hp boxer engine delivers a 'substantial performance hike' over the old model",
-          "context": "BMW R1300RT enthusiasts celebrated improvements in performance with the boxer engine nearly matching K1600 horsepower while being vastly lighter, generating pride for those favoring agility",
-          "source": "Bennetts BikeSocial technical review"
-        },
-        {
-          "quote": "BMW lengthened the seats and revised the handlebar for a more active yet comfortable riding position, explicitly aiming to make the RT 'even more capable and comfortable for long-distance touring'",
-          "context": "BMW R1300RT comfort features drove positive buzz with Finnish touring riders welcoming upgrades including redesigned seat, ergonomics, and extra-large windscreen for weather protection",
-          "source": "Rider Magazine preview and initial reviews"
-        },
-        {
-          "quote": "The bike offers a suite of cutting-edge options: radar-assisted Adaptive Cruise Control, collision warnings, and semi-automatic transmission",
-          "context": "BMW R1300RT advanced technology spurred positive sentiment with riders expressing excitement about features making long rides easier and safer, plus huge TFT display with connectivity seen as plus for tech-savvy riders",
-          "source": "Bennetts BikeSocial and industry reviews"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "Honda on huoleton",
-          "context": "General segment discussions weighed practical factors like Honda's reliability advantage without disparaging BMW, indicating matter-of-fact comparison of different manufacturers' strengths",
-          "source": "Finnish Suomi24 forums"
-        },
-        {
-          "quote": "It'll likely be 10 years before I upgrade my current RT… I have a long way to go",
-          "context": "General touring segment showed contentment with existing bikes and neutral view on immediate adoption, with veteran riders adopting wait-and-see stance on new models and high-mileage expectations",
-          "source": "Reddit owner discussions"
-        },
-        {
-          "quote": "BMW's 3-year warranty and reputed durability were noted, but some veteran riders adopt a 'wait and see' stance on new models",
-          "context": "General segment reliability discussions acknowledged BMW improvements while maintaining pragmatic approach to first-year models, focusing on long-term usage and high mileage expectations",
-          "source": "Expert analysis and forum discussions"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "You cannot buy the base model for $23K… the actual cost is $30–33K",
-          "context": "BMW R1300RT pricing came under heavy scrutiny with Finnish riders facing high vehicle taxes and short riding season being especially sensitive to value, leading to preference for low-mileage used alternatives",
-          "source": "Rider Magazine reader comments"
-        },
-        {
-          "quote": "the main thing to consider is can you lift it at a red light… to me it's not even a motorcycle anymore",
-          "context": "General touring segment criticism centered on physical bulk with less experienced or smaller riders expressing anxiety about handling heavy machines, though BMW RT considered more manageable than competitors",
-          "source": "Finnish Suomi24 forums discussing Gold Wing"
-        },
-        {
-          "quote": "Twin-cylinder engine might not have the prestige of a four or six in this category",
-          "context": "BMW R1300RT engine character received niche criticism from purists lamenting lack of more cylinders, with some veteran riders noting boxer twin's different feel compared to Gold Wing's flat-6 smoothness",
-          "source": "Bennetts BikeSocial review"
-        }
-      ]
-    }
-  },
-  "france": {
-    "themeData": [
-      {
-        "subject": "Comfort",
-        "value": 35
-      },
-      {
-        "subject": "Technology & Modernization",
-        "value": 20
-      },
-      {
-        "subject": "Handling vs. Weight",
-        "value": 15
-      },
-      {
-        "subject": "Engine Performance",
-        "value": 10
-      },
-      {
-        "subject": "Comparisons & Competition",
-        "value": 8
-      },
-      {
-        "subject": "Market Evolution (GT to Trails)",
-        "value": 7
-      },
-      {
-        "subject": "Adventure vs. GT Debate",
-        "value": 3
-      },
-      {
-        "subject": "Quotes and Anecdotes",
-        "value": 2
-      }
-    ],
-    "themeInsights": {
-      "Comfort": [
-        {
-          "quote": "Confort, Confort, Confort",
-          "context": "Comfort is the #1 recurring theme, with riders actively seeking bikes that enable \"avaler les kilomètres sans fatigue\" (devouring kilometers without fatigue)",
-          "source": "French touring motorcycle forums"
-        }
-      ],
-      "Technology & Modernization": [
-        {
-          "quote": "Apple Car Play (une première pour une moto)",
-          "context": "Modern technology is a major positive driver in 2025, with BMW's R1300RT introducing radar-assisted active cruise control and Honda's Gold Wing featuring DCT and Apple CarPlay",
-          "source": "Honda dealer blog"
-        }
-      ],
-      "Handling vs. Weight": [
-        {
-          "quote": "Une fois en mouvement… étonne par une agilité qui la rend accessible à tous les gabarits",
-          "context": "The interplay of weight, center of gravity, and chassis design is often debated, with riders sharing experiences of surprisingly good handling despite mass",
-          "source": "Gold Wing review discussions"
-        }
-      ],
-      "Engine Performance": [
-        {
-          "quote": "145 ch (chevaux) à 7750 tr/min… la RT la plus puissante jamais produite",
-          "context": "French riders value robust, smooth power delivery, especially for two-up riding with luggage",
-          "source": "BMW R1300RT press coverage"
-        }
-      ],
-      "Comparisons & Competition": [
-        {
-          "quote": "la reine des routières",
-          "context": "French riders enjoy friendly debate over which bike is the \"queen\" of touring, with BMW RT and Honda Gold Wing dominating discussions",
-          "source": "Moto Magazine"
-        }
-      ],
-      "Market Evolution (GT to Trails)": [
-        {
-          "quote": "la plupart des concurrentes ont disparu au profit des trails",
-          "context": "Most competitors have disappeared in favor of adventure bikes, leaving only BMW RT, Honda Gold Wing, and Harley in the pure touring class",
-          "source": "MotoMag editor"
-        }
-      ],
-      "Adventure vs. GT Debate": [
-        {
-          "quote": "il ne reste que la RT et la Gold… et les Harley",
-          "context": "Many French riders acknowledge that adventure-touring bikes have overtaken pure GTs in popularity, discussed neutrally as a market trend",
-          "source": "Forum discussions"
-        }
-      ],
-      "Quotes and Anecdotes": [
-        {
-          "quote": "si la Gendarmerie la choisit, c'est que…",
-          "context": "Police anecdotes about the Gendarmerie's adoption of FJR then RT serve as a stamp of approval and quality signal",
-          "source": "Forum discussions"
+          "quote": "For adventure riders embarking on long or remote journeys, reliability is a foundational expectation.",
+          "context": "Durability, trustworthiness for long trips, and consistency of performance are positive attributes for established models",
+          "source": "Industry analysis and brand reputation discussions"
         }
       ]
     },
@@ -1054,136 +665,286 @@ export const conversationData = {
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "Position de conduite reposante, protection intégrale… les plus longs voyages se feront dans le confort pour le pilote comme pour le passager",
-          "context": "Exceptional comfort is the foremost source of praise across all brands in the touring segment",
-          "source": "Moto Magazine regarding Electra Glide"
+          "quote": "The 2025 KTM 890 Adventure R maintains its position as a leading choice in the mid-weight adventure category",
+          "context": "KTM praised for design inspiration from Dakar-winning models and WP XPLOR suspension package emphasizing off-road excellence",
+          "source": "KTM competitor analysis"
         },
         {
-          "quote": "dotation technologique impressionnante: ABS Pro, DTC, régulateur, écran TFT 10,25″ avec navigation… radars avant/arrière, phares adaptatifs LED",
-          "context": "BMW's R1300RT's advanced technology features generated significant excitement among French riders",
-          "source": "BMW R1300RT launch coverage"
+          "quote": "The 2025 Honda Africa Twin Adventure Sports ES DCT is presented as a comprehensively equipped machine",
+          "context": "Honda highly regarded for comfort, advanced technology, and long-distance touring capabilities with 1084cc parallel-twin engine",
+          "source": "Honda competitor review"
         },
         {
-          "quote": "un moteur en béton",
-          "context": "Reliability and durability, particularly Honda's bulletproof reputation, generates strong positive sentiment",
-          "source": "User reviews about Honda and Harley engines"
+          "quote": "The Ducati DesertX was lauded as a well-rounded adventure bike with solid off-road performance and exceptional street manners",
+          "context": "Ducati praised for character-rich V-twin engine and advanced electronics despite 21-inch front wheel",
+          "source": "Ducati competitor analysis"
         }
       ],
       "Neutral": [
         {
-          "quote": "la Gold Wing est lourde mais bien équilibrée",
-          "context": "Neutral comments often highlight pros and cons without strong emotion, acknowledging trade-offs",
-          "source": "YouTube comment on Gold Wing vs. BMW K1600 video"
+          "quote": "The 2025 Yamaha Ténéré 700 received subtle yet impactful updates including new ride-by-wire throttle",
+          "context": "Yamaha updates acknowledged but noted relative lack of top-end power when carrying luggage and minimal wind protection",
+          "source": "Yamaha competitor review"
         },
         {
-          "quote": "Je roule en Tracer 900, j'hésite à passer sur une R1250RT pour le confort",
-          "context": "Many riders openly weigh the pros (comfort, stability) and cons (cost, bulk) when considering upgrades",
-          "source": "Forum discussion"
+          "quote": "The competitive landscape in Q1 2025 was highly dynamic with major manufacturers actively updating their adventure models",
+          "context": "Market characterized by innovation in electronics, suspension systems, and engine performance across all manufacturers",
+          "source": "Market landscape analysis"
         },
         {
-          "quote": "7 875 € de plus qu'une Triumph Rocket III Touring… à ce point là ?",
-          "context": "Price comparisons are discussed analytically, questioning if premium features justify extra cost",
-          "source": "MotoMag comparison"
+          "quote": "Early public commentary on the R 12 G/S, though limited, indicates questions about its practical off-road utility",
+          "context": "BMW R 12 G/S speculation raises concerns about weight and perceived premium price point for off-road use",
+          "source": "Pre-launch BMW analysis"
         }
       ],
       "Negative": [
         {
-          "quote": "Si vous avez peur du poids, ce n'est pas le moto qu'il vous faut… il faut être à l'aise et en confiance",
-          "context": "Weight and low-speed handling are the primary complaints, especially intimidating for newcomers or smaller riders",
-          "source": "Experienced rider warning about Gold Wing"
+          "quote": "The Ducati DesertX faces criticism for its premium price point and the complexity of navigating its electronic menus",
+          "context": "Ducati criticized despite high capabilities due to elevated price and complex interface design",
+          "source": "Ducati competitor analysis"
         },
         {
-          "quote": "vous le laisserez tomber immédiatement et… aurez du mal à le ramasser",
-          "context": "Hyperbolic warnings highlight the low-speed handling challenge, particularly in city riding",
-          "source": "Forum discussion about heavy touring bikes"
+          "quote": "Some reviews noted the Honda Africa Twin's overall complexity and perceptibly high center of gravity",
+          "context": "Honda criticized for menu complexity and handling characteristics despite advanced features",
+          "source": "Honda competitor review"
         },
         {
-          "quote": "Je n'en reviens pas que Yamaha vende toujours la FJR1300 telle quelle en 2024!!!",
-          "context": "Frustration with outdated models lacking modern electronics, particularly targeting Yamaha for not innovating",
-          "source": "Forum comment about FJR1300"
+          "quote": "Early discussions about the BMW R 12 G/S note it as 'a little on the expensive side'",
+          "context": "BMW facing early price sensitivity concerns that could impact market acceptance",
+          "source": "Pre-launch BMW speculation"
         }
       ]
     }
   },
-  "greece": {
+  "finland": {
     "themeData": [
       {
-        "subject": "New Technology & Features",
-        "value": 45
+        "subject": "Off-Road Performance",
+        "value": 25
       },
       {
-        "subject": "Engine Performance & Ride Dynamics",
+        "subject": "Technology & Features",
         "value": 20
       },
       {
-        "subject": "Comfort and Touring Capability",
+        "subject": "Comfort & Ergonomics",
+        "value": 18
+      },
+      {
+        "subject": "Design & Character Appeal",
         "value": 15
       },
       {
-        "subject": "Design & Styling",
-        "value": 8
+        "subject": "Value & Pricing",
+        "value": 12
       },
       {
-        "subject": "Price & Value Proposition",
-        "value": 7
+        "subject": "Reliability Concerns",
+        "value": 5
       },
       {
-        "subject": "Competitor Comparisons",
-        "value": 3
-      },
-      {
-        "subject": "Reliability & Maintenance",
-        "value": 2
+        "subject": "Pre-launch Speculation & Market Events",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "New Technology & Features": [
+      "Off-Road Performance": [
         {
-          "quote": "Love the new bikes… Hate the stupid AI [CGI in promo] but the tech on the RT is impressive.",
-          "context": "Riders eagerly discussed the R1300RT's radar-guided Adaptive Cruise Control, optional Automated Shift Assistant semi-automatic transmission, and Variable Slipstream Deflectors for airflow control",
-          "source": "Facebook"
+          "quote": "Models like the KTM 890 Adventure R and Ducati DesertX were frequently highlighted for their off-road prowess, suspension travel, and suitability for challenging trails and wilderness exploration",
+          "context": "Discussions heavily emphasized the capability of adventure bikes on diverse terrains, with ability to handle gravel, dirt, and technical sections being a core aspect of conversations",
+          "source": "Social listening analysis"
         }
       ],
-      "Engine Performance & Ride Dynamics": [
+      "Technology & Features": [
         {
-          "quote": "The 143.5 bhp engine is a substantial performance hike over the previous R1250RT",
-          "context": "The new 1300cc boxer twin delivers significant power improvement, putting it only 15 hp shy of six-cylinder tourers while maintaining better power-to-weight ratio",
-          "source": "Bennetts.co.uk"
+          "quote": "The integration of advanced technology was a significant theme including discussions on rider aids (ABS, Traction Control, ride modes), electronic suspension systems, TFT displays, connectivity features",
+          "context": "Balance between technological sophistication and user-friendliness was a recurring sub-theme, with consumers valuing advanced features but wanting intuitive integration",
+          "source": "Market analysis"
         }
       ],
-      "Comfort and Touring Capability": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "Unsurprisingly, comfort is where the R1300RT promises to excel",
-          "context": "BMW's focus on improved ergonomics, heated seats, wider passenger legroom, and enhanced wind protection resonates strongly with Greek touring riders",
-          "source": "Bennetts.co.uk"
+          "quote": "Rider comfort for long-distance touring and varied riding conditions was a prominent topic encompassing discussions on seat design, wind protection, and overall riding posture",
+          "context": "Essential consideration for extended adventures, with adjustable seating and effective wind protection being highly valued features",
+          "source": "Consumer surveys"
         }
       ],
-      "Design & Styling": [
+      "Design & Character Appeal": [
         {
-          "quote": "That much money and you've got to fiddle around with the funny side panel wind deflectors? The front has a visage that only a mother would love… it's merely painfully unattractive.",
-          "context": "The new styling generated polarizing reactions, with some calling it \"Transformers\" or \"robot face\" while others appreciated the modern sporty lines",
-          "source": "1200rt.com"
+          "quote": "Pre-launch discussions around the BMW R 12 G/S heavily centered on its heritage styling, drawing inspiration from the '80s R 80 G/S",
+          "context": "Highlights the emotional connection riders have with their machines beyond pure functionality, with heritage appeal being particularly strong",
+          "source": "Pre-launch analysis"
         }
       ],
-      "Price & Value Proposition": [
+      "Value & Pricing": [
         {
-          "quote": "Finally a touring bike for my yacht.",
-          "context": "Greek riders expressed concern over the high cost (€24,490 base, €30-35k fully loaded), comparing it to buying a car, though some defended it as \"you do get what you pay for\"",
-          "source": "Reddit"
+          "quote": "The cost of new and used adventure motorcycles, including MSRPs and the value proposition relative to features, was a consistent discussion point",
+          "context": "Consumers actively compare costs across new and used markets, evaluating whether features and brand prestige justify price points",
+          "source": "Market data"
         }
       ],
-      "Competitor Comparisons": [
+      "Reliability Concerns": [
         {
-          "quote": "The RT now has better power-to-weight and load capacity than the K1600GT",
-          "context": "Frequent comparisons with Honda Gold Wing, BMW's own K1600 series, and adventure bikes like R1300GS, highlighting the RT's positioning advantages",
-          "source": "Bennetts.co.uk"
+          "quote": "Some discussions around the BMW R 1300 GS Adventure raised concerns about 'excess of techy things that will leave you stranded and heartbroken in the middle of nowhere'",
+          "context": "While technology is desired, reliability concerns emerge when complexity potentially compromises fundamental dependability",
+          "source": "Consumer feedback"
         }
       ],
-      "Reliability & Maintenance": [
+      "Pre-launch Speculation & Market Events": [
         {
-          "quote": "New electronics and complexity potentially affecting reliability",
-          "context": "While BMW's boxer tourers have proven long-distance reliability, some skepticism exists around first-generation new systems and technologies",
-          "source": "Forum discussions"
+          "quote": "The BMW R 12 G/S was a focal point of pre-launch speculation, with discussions about its design, engine, and anticipated launch date",
+          "context": "Strong anticipation for heritage-styled adventure bikes, with significant buzz around the R 12 G/S's classic adventure bike with modern twist positioning",
+          "source": "Industry events"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 65
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 20
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 15
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "Riders and reviewers expressed enthusiasm for the versatility, performance, and comfort offered by modern adventure bikes",
+          "context": "Strong appreciation for the ability of bikes to facilitate diverse riding experiences from long-distance touring to challenging off-road excursions",
+          "source": "General segment analysis"
+        },
+        {
+          "quote": "New model introductions, particularly those with significant technological updates or enhanced capabilities, were met with anticipation and praise",
+          "context": "Market excitement around innovation and advancement in adventure motorcycle capabilities and features",
+          "source": "Product launch analysis"
+        },
+        {
+          "quote": "The BMW GS series consistently emerged as a dominant voice, frequently referenced as the 'benchmark' and 'ultimate device' in the adventure segment",
+          "context": "Strong brand equity and established reputation for high performance and reliability within the adventure niche for BMW",
+          "source": "Brand perception analysis"
+        }
+      ],
+      "Neutral": [
+        {
+          "quote": "A notable portion of the discourse was neutral, focusing on factual descriptions, specifications, and objective comparisons without strong emotional bias",
+          "context": "Objective information sharing and technical discussions that provide informational value without emotional indicators",
+          "source": "Technical discussions"
+        },
+        {
+          "quote": "This included detailed reviews of features, technical analyses, and discussions about market trends or pricing structures",
+          "context": "Factual content focused on specifications and comparative analysis across different models and manufacturers",
+          "source": "Review content"
+        },
+        {
+          "quote": "Market data indicates that Japanese brands and Triumph offer strong value and notes a rise in new middleweight adventure bikes",
+          "context": "Objective market observations about competitive positioning and value propositions across manufacturers",
+          "source": "Market research"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "Common criticisms included wind noise and buffeting on certain models (e.g., Ducati DesertX)",
+          "context": "Specific technical shortcomings that impact rider comfort and experience, particularly regarding aerodynamics",
+          "source": "Ducati feedback"
+        },
+        {
+          "quote": "The complexity of advanced electronic systems (e.g., BMW R 1300 GS Adventure's customization menus or perceived 'excess of tech')",
+          "context": "Consumer concerns about overwhelming technology that may detract from the fundamental riding experience",
+          "source": "BMW feedback"
+        },
+        {
+          "quote": "High pricing relative to perceived value or competition and some models also faced criticism for a lack of top-end power",
+          "context": "Value perception issues where premium pricing is not sufficiently justified by performance or features relative to alternatives",
+          "source": "Pricing analysis"
+        }
+      ]
+    }
+  },
+  "france": {
+    "themeData": [
+      {
+        "subject": "Off-Road Performance",
+        "value": 25
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 20
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 18
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 15
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 12
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 5
+      },
+      {
+        "subject": "Other Key Themes",
+        "value": 5
+      }
+    ],
+    "themeInsights": {
+      "Off-Road Performance": [
+        {
+          "quote": "Real off-road ability thanks to 21-inch front... wire wheels",
+          "context": "Off-road performance is consistently identified as a critical discussion point, featuring long-travel suspension, 21-inch front wheels, high ground clearance, and specialized off-road riding modes. Models like the KTM 890 Adventure R and Yamaha Ténéré 700 are often benchmarked for their off-road prowess.",
+          "source": "BMW R12 G/S (2025) – Technical Review - Bennes Insurance"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "Ultimate comfort and distance abilities",
+          "context": "Central to discussions, encompassing aspects such as seat comfort, adjustable seat height, effective wind protection (especially adjustable windshields), and heated grips/seats. The weight of the motorcycle is often linked to comfort, particularly concerning maneuverability at low speeds.",
+          "source": "Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Advanced rider aids such as switchable and cornering ABS, traction control, multiple riding modes, TFT displays, quickshifters, cruise control, and connectivity options",
+          "context": "Highly valued, with discussions frequently revolving around advanced rider aids, multiple riding modes, TFT displays, quickshifters, and connectivity options. These features are increasingly expected as standard and contribute significantly to a bike's appeal.",
+          "source": "New 2025 BMW R 12 G/S Revealed: Everything You Need To Know - YouTube"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "Competitive price points relative to the features offered, particularly from emerging Chinese brands",
+          "context": "Value and pricing remain a significant consideration for consumers. The competitive price points relative to the features offered, particularly from emerging Chinese brands, are driving discussions around overall value propositions.",
+          "source": "Marché moto en mars 2025 : une chute brutale… mais pas si simple - a2riders.com"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "Retro styling, 'Dakar rallye style,' and a unique 'look' contribute significantly to a bike's appeal",
+          "context": "Design and character appeal play a crucial role, especially for models with a distinct aesthetic or historical connection. Retro styling, \"Dakar rallye style,\" and a unique \"look\" contribute significantly to a bike's appeal.",
+          "source": "Les 10 meilleures motos d'aventure 2025 - MotoActus"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "Honda's 'legendary durability' is frequently cited as a positive benchmark",
+          "context": "While not universally dominant, reliability concerns surface in discussions regarding specific models or brands, often related to perceived build quality or maintenance requirements. Honda's \"legendary durability\" is frequently cited as a positive benchmark.",
+          "source": "2025 Honda Africa Twin 650 | Mid-Weight ADV Game Changer? - YouTube"
+        }
+      ],
+      "Other Key Themes": [
+        {
+          "quote": "Long-distance touring capability (emphasizing fuel range and luggage capacity) and A2 license compatibility for newer riders",
+          "context": "Other themes include long-distance touring capability emphasizing fuel range and luggage capacity, and A2 license compatibility for newer riders entering the adventure market.",
+          "source": "BMW R12 G/S (2025) – Technical Review - Bennes Insurance"
         }
       ]
     },
@@ -1204,53 +965,192 @@ export const conversationData = {
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "I like it! But that price though… you do get what you pay for",
-          "context": "BMW R1300RT received strong approval for performance advances, comfort innovations, and technology leadership despite price concerns",
-          "source": "Reddit"
+          "quote": "Pure happiness",
+          "context": "The Kove 800X Pro elicited comments of \"pure happiness\" from riders, demonstrating enthusiasm for performance and new features in the adventure segment.",
+          "source": "Kove 800X Pro 2025 - Fiche moto, avis, photos - Motoplanete"
         },
         {
-          "quote": "I Love the new design, [it's] so unique!",
-          "context": "BMW's modern styling and innovative features like radar cruise control positioned the R1300RT as \"the new benchmark for touring bikes\"",
-          "source": "Reddit"
+          "quote": "Amusing, mischievous, and controllable",
+          "context": "The Yamaha Ténéré 700 was described as \"amusing, mischievous, and controllable,\" expressing enthusiasm for the joy of riding and the inherent versatility that adventure bikes offer.",
+          "source": "Test de la Yamaha Ténéré 700 : mon avis complet après 1 semaine avec - Motard Adventure"
         },
         {
-          "quote": "My next bike if I can fit on the thing",
-          "context": "BMW's improved ergonomics and rider triangle addressed previous fit issues, generating enthusiasm among taller riders",
-          "source": "Reddit"
+          "quote": "Without competition in its price range",
+          "context": "The Yamaha Ténéré 700 is strategically positioned as a lightweight, agile, and highly capable mid-range adventure motorcycle, often described as \"without competition in its price range.\"",
+          "source": "Les 10 meilleures motos d'aventure 2025 - MotoActus"
         }
       ],
       "Neutral": [
         {
-          "quote": "BMW Motorrad Hellas site announcing the R1300RT's price (starting at €24,490 locally)",
-          "context": "Factual sharing of news, specifications, and pricing information without strong emotional content",
-          "source": "2wo.gr"
+          "quote": "Factual discussions of specifications, comparisons of technical data",
+          "context": "Neutral sentiment typically stems from factual discussions of specifications, comparisons of technical data, or general announcements without strong emotional language across the adventure segment.",
+          "source": "Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025"
         },
         {
-          "quote": "For 2025, the Goldwing upgrades its audio and rider/passenger connectivity… new speakers and improved phone pairing",
-          "context": "Neutral reporting and comparison of competitor updates and technical specifications",
-          "source": "Car & Driver Greece"
+          "quote": "General announcements without strong emotional language",
+          "context": "Many discussions remain neutral when presenting technical specifications or comparing features across different adventure motorcycle models without expressing strong preferences.",
+          "source": "Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025"
         },
         {
-          "quote": "The RT looks good too and the movable aero panels are an interesting addition for a bike like that",
-          "context": "Balanced technical discussion of BMW features without strong advocacy or criticism",
-          "source": "RevZilla"
+          "quote": "Comparative technical analyses",
+          "context": "Neutral discussions often focus on objective comparisons between different adventure motorcycle models, analyzing specifications and features without emotional bias.",
+          "source": "Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025"
         }
       ],
       "Negative": [
         {
-          "quote": "Starts to make a Chinese bike a better choice",
-          "context": "BMW price sensitivity and styling criticism led some to question value proposition compared to alternatives",
-          "source": "1200rt.com"
+          "quote": "Weight concerns for the Rieju Aventura 500",
+          "context": "Negative sentiment is usually localized to specific issues, such as weight concerns for the Rieju Aventura 500, with consumers citing difficulty in lifting it after a fall.",
+          "source": "Rieju Aventura 500 2025 - Fiche moto, avis, photos - Motoplanete"
         },
         {
-          "quote": "The engine is meant to be wonderful but I just don't get the styling… apart from the fact I could never afford it, I don't think I'd want one anyway",
-          "context": "BMW styling polarization and affordability concerns among traditional tourer owners who preferred classic RT aesthetics",
-          "source": "1200rt.com"
+          "quote": "Complaints about the Yamaha Ténéré 700's ABS reset behavior or reported clutch and fuel gauge bugs",
+          "context": "Specific technical issues generate negative sentiment, such as complaints about the Yamaha Ténéré 700's ABS reset behavior or reported clutch and fuel gauge bugs affecting user experience.",
+          "source": "Test de la Yamaha Ténéré 700 : mon avis complet après 1 semaine avec - Motard Adventure"
         },
         {
-          "quote": "Love the bike, hate the sound",
-          "context": "Some BMW enthusiasts expressed disappointment with sound character changes from previous boxer engine iterations",
-          "source": "Reddit"
+          "quote": "Heat and vibrations reported for the Triumph Tiger 900",
+          "context": "Comfort-related issues like heat and vibrations reported for the Triumph Tiger 900, along with the Ducati DesertX receiving mixed reviews due to wind buffeting at high speeds.",
+          "source": "Essai Tiger 900 gt pro - Page 2 - Forum Triumph Tiger800.fr"
+        }
+      ]
+    }
+  },
+  "greece": {
+    "themeData": [
+      {
+        "subject": "Technology & Features",
+        "value": 31
+      },
+      {
+        "subject": "Off-Road Performance",
+        "value": 23
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 17
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 16
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 8
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 2
+      }
+    ],
+    "themeInsights": {
+      "Technology & Features": [
+        {
+          "quote": "While Honda Africa Twin's Dual Clutch Transmission (DCT) is highly praised, its pre-programmed ride modes and suspension settings are noted as 'far from perfect for everyone' and their customization processes 'not the easiest'",
+          "context": "Technology is highly discussed but complexity can lead to user frustration. Consumers want advanced features but prefer intuitive integration.",
+          "source": "Honda Africa Twin reviews"
+        }
+      ],
+      "Off-Road Performance": [
+        {
+          "quote": "All Adventure bikes should be like this\" and \"possibly the best road legal 'big' adventure bike I've ever ridden off-road",
+          "context": "Genuine off-road capability is a primary driver for adventure bike enthusiasts, with consumers seeking authentic terrain-traversing ability.",
+          "source": "Ducati DesertX Rally reviews"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "The new BMW R 12 G/S is met with positive anticipation for being a 'dirt-ready retro' that is 'more than just a visual tribute to its predecessor from 45 years ago'",
+          "context": "Strong appetite for heritage styling when combined with genuine capability, indicating desire for authentic performance wrapped in classic aesthetics.",
+          "source": "BMW R 12 G/S pre-launch discussions"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "BMW R 12 G/S is noted for its 'hard seat and lack of wind protection,' which makes it 'not the best long-distance cruiser around'",
+          "context": "Comfort is essential for long-distance touring and varied riding conditions, with ergonomic issues directly impacting usability.",
+          "source": "BMW R 12 G/S pre-launch feedback"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "KTM 390 Adventure is specifically praised for offering 'great value for money'",
+          "context": "While enthusiasts invest in premium models, value proposition remains key, especially with growing mid-range segment success.",
+          "source": "KTM 390 Adventure reviews"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "Some KTM owners have reported 'minor things' like issues with cruise control fluctuating on inclines/declines or mechanical noises from the engine",
+          "context": "Though low in discussion volume, reliability functions as a hygiene factor - expected but only mentioned when issues arise.",
+          "source": "KTM owner feedback"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 82
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 12
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 4
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "Surfing through the dunes with 136 hp is the ultimate rush!",
+          "context": "Strong enthusiasm for BMW R 1300 GS performance capabilities, highlighting the thrill of adventure riding",
+          "source": "BMW R 1300 GS rider feedback"
+        },
+        {
+          "quote": "Hugely impressed with the performance, comfort, and quality",
+          "context": "KTM 390 Adventure praised for comprehensive package combining performance, comfort and value",
+          "source": "KTM 390 Adventure reviews"
+        },
+        {
+          "quote": "Awesome experience,",
+          "context": "Motorcycle tour experiences in Greece consistently receive high praise, emphasizing quality organization and routes",
+          "source": "Greek motorcycle tour testimonials"
+        }
+      ],
+      "Neutral": [
+        {
+          "quote": "While the Honda Africa Twin's Dual Clutch Transmission (DCT) is highly praised, its pre-programmed ride modes and suspension settings are noted as 'far from perfect for everyone'",
+          "context": "Mixed feelings about technology features - appreciation for capability but recognition of customization complexity",
+          "source": "Honda Africa Twin reviews"
+        },
+        {
+          "quote": "Yamaha Ténéré 700's 2025 updates, including ride-by-wire, are discussed with some users debating whether the added electronics compromise its traditional simplicity",
+          "context": "Cautious stance on technology additions, reflecting concern about maintaining core model appeal",
+          "source": "Yamaha Ténéré 700 2025 discussions"
+        },
+        {
+          "quote": "Ducati DesertX Rally, despite its high praise, acknowledges its 'tall seat' and 'a lot of money' price tag as 'forgivable flaws'",
+          "context": "Recognition of practical limitations balanced against overall performance excellence",
+          "source": "Ducati DesertX Rally reviews"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "BMW R 12 G/S is noted for its 'hard seat and lack of wind protection,' which makes it 'not the best long-distance cruiser around'",
+          "context": "Specific ergonomic concerns about BMW model affecting long-distance touring capability",
+          "source": "BMW R 12 G/S pre-launch feedback"
+        },
+        {
+          "quote": "Honda Africa Twin's connectivity features caused one reviewer 'tech teething pains' and a 'black screen of doom' due to persistent Bluetooth headset prompts",
+          "context": "Technology integration issues leading to user frustration despite advanced features",
+          "source": "Honda Africa Twin connectivity reviews"
+        },
+        {
+          "quote": "Some KTM owners have reported 'minor things' like issues with cruise control fluctuating on inclines/declines or mechanical noises from the engine",
+          "context": "Specific reliability concerns framed as minor issues rather than fundamental flaws",
+          "source": "KTM owner feedback"
         }
       ]
     }
@@ -1258,160 +1158,149 @@ export const conversationData = {
   "hungary": {
     "themeData": [
       {
-        "subject": "Comfort is King – Ergonomics & Wind Protection",
-        "value": 30
-      },
-      {
-        "subject": "Technology & Innovation",
+        "subject": "Off-Road Performance",
         "value": 20
       },
       {
-        "subject": "Performance vs. Practicality",
+        "subject": "Technology & Features",
+        "value": 25
+      },
+      {
+        "subject": "Comfort & Ergonomics",
         "value": 15
       },
       {
-        "subject": "Brand Loyalty & Rivalry",
+        "subject": "Reliability Concerns",
         "value": 10
       },
       {
-        "subject": "Market and Regulatory Buzz",
+        "subject": "Value & Pricing",
+        "value": 15
+      },
+      {
+        "subject": "Design & Character Appeal",
         "value": 10
       },
       {
-        "subject": "Design & Aesthetics",
-        "value": 8
-      },
-      {
-        "subject": "Price and Value",
+        "subject": "Any other key themes",
         "value": 5
-      },
-      {
-        "subject": "Weight & Manageability",
-        "value": 2
       }
     ],
     "themeInsights": {
-      "Comfort is King – Ergonomics & Wind Protection": [
+      "Off-Road Performance": [
         {
-          "quote": "a kényelem miatt váltottam [sport]ról túramotorra\" (\"I switched from a sportbike to a tourer because of the comfort\")",
-          "context": "Comfort was the most prevalent theme, with riders obsessing over seat comfort, windshields, riding position, and passenger accommodations. The ability to cover long distances without fatigue is the primary motivation for choosing touring bikes.",
-          "source": "Hegylakók forum discussions"
+          "quote": "Discussions frequently centered on engine power, handling characteristics, and suspension performance, specifically in off-road contexts",
+          "context": "Consumer conversations prioritized authentic off-road capability, with models like the KTM 890 Adventure R being lauded for off-road excellence and the Aprilia Tuareg 660 Rally described as an \"uncompromising adventure\" motorcycle",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Technology & Innovation": [
+      "Technology & Features": [
         {
-          "quote": "aki télen is szokott motorozni, az most felsóhajt: ez kell\" (\"anyone who rides in winter will sigh with relief, I need this [feature]\")",
-          "context": "Riders showed excitement for cutting-edge tech like adaptive cruise control, advanced ABS/traction systems, electronic suspension, and smartphone connectivity. BMW's adoption of radar on the R1300RT drew significant positive comments.",
-          "source": "Totalbike.hu reviewer comments"
+          "quote": "The integration of advanced technologies was a significant point of discussion. This included Honda's Dual Clutch Transmission (DCT), various electronic rider aids such as ABS Pro, Motorcycle Traction Control (MTC), and multiple riding modes",
+          "context": "Advanced technology integration dominated consumer discussions, with Honda's DCT achieving a 71% adoption rate among Adventure Sports buyers, highlighting the importance of modern conveniences",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Performance vs. Practicality": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "nyomatékát… megyen\" (\"torquey… it just goes\")",
-          "context": "Many discussions revolved around balancing sporty performance with touring practicality. Riders compared specs but often tempered with real-world needs, noting that adequate power delivery and bike weight are more important than peak horsepower.",
-          "source": "Totalbike.hu technical discussions"
+          "quote": "The practical aspects of riding comfort were a recurring theme. This included discussions on seat height, particularly for models like the Honda X-ADV, Honda NX500, Ducati DesertX, BMW R 12 G/S, and Triumph Tiger 900 GT Pro A2",
+          "context": "Seat height accessibility and overall ergonomic design were key considerations, with the Honda NX500's manageable 83cm seat height being praised while the Ducati DesertX's 875mm seat height was seen as a barrier",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Brand Loyalty & Rivalry": [
+      "Reliability Concerns": [
         {
-          "quote": "ha túrázni akarsz kompromisszumok nélkül: vegyél egy RT-t\" (\"if you want to tour with no compromises: get an RT\")",
-          "context": "BMW and Honda have the most vocal fanbases in the touring segment, with threads sometimes veering into friendly rivalry. Experienced tourers frequently advise newcomers, creating strong word-of-mouth influence.",
-          "source": "Népítélet forum discussions"
+          "quote": "User experiences with reliability and durability were shared, notably concerning the Yamaha Ténéré 700's reported clutch problems and a software bug affecting the MPG display",
+          "context": "Long-term dependability concerns were actively discussed, with specific issues like the Yamaha Ténéré 700's clutch problems and the Voge 900 DSX's traction control issues being noted",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Market and Regulatory Buzz": [
+      "Value & Pricing": [
         {
-          "quote": "nyolcezerig meg sem állunk\" (\"we won't stop until eight thousand [new bikes]\")",
-          "context": "Discussions included market trends, Euro 5+ emissions rules, supply issues, and local events. Riders showed awareness of industry context, including the record 2024 sales year and forecasts for 2025.",
-          "source": "SportMotor.hu market analysis"
+          "quote": "Consumers actively evaluated the balance between a motorcycle's features and its price point. Brands like CFMoto and Royal Enfield Himalayan were highlighted for offering competitive pricing relative to their extensive feature sets",
+          "context": "Value proposition was a key consideration, with brands like CFMoto being praised for competitive pricing while the Yamaha Ténéré 700 was noted as no longer being a \"bargain\"",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Design & Aesthetics": [
+      "Design & Character Appeal": [
         {
-          "quote": "Az RT megjelenése megosztó\" (\"the RT's appearance is divisive\")",
-          "context": "The new BMW R1300RT's styling proved highly polarizing, with approximately half of the comments on its launch focusing solely on looks. Design debates generated high engagement both positive and negative.",
-          "source": "1000ps.com expert reviews"
+          "quote": "The aesthetic and historical lineage of motorcycles generated considerable interest. This was evident in discussions surrounding the BMW R 12 G/S, which draws inspiration from the R 80 G/S",
+          "context": "Heritage and design aesthetics contributed to consumer interest, with the BMW R 12 G/S's connection to the R 80 G/S generating discussion, though opinions on designs like the BMW R 1300 GS Adventure were mixed",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
-      "Price and Value": [
+      "Any other key themes": [
         {
-          "quote": "If $23k is too much, then $30k is ridiculous. Pretty bike, though",
-          "context": "BMW's premium pricing drew the most criticism, with the R1300RT's base price of 9.395 million HUF (~€23.5k) seen as prohibitive. Riders complained about expensive optional packages and questioned value for money.",
-          "source": "Reddit r/Motorrad discussions"
-        }
-      ],
-      "Weight & Manageability": [
-        {
-          "quote": "aztaqrva, mekkora dög ez\" (\"damn, what a beast this is\")",
-          "context": "While generally accepted as inherent to big tourers, the weight of these machines (280-400 kg) attracted negative commentary, especially from less experienced riders concerned about low-speed handling and parking lot maneuvers.",
-          "source": "Népítélet owner testimonials"
+          "quote": "This category includes broader market trends, the impact of major events like Motorkiállítás 2025, brand positioning, and general riding experiences",
+          "context": "Market events and broader industry trends influenced consumer conversations, with Motorkiállítás 2025 serving as a crucial platform for brand visibility and consumer engagement",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ]
     },
     "sentimentData": [
       {
-        "name": "Positive",
-        "value": 55
+        "name": "Positive Sentiment",
+        "value": 60
       },
       {
-        "name": "Neutral",
+        "name": "Neutral Sentiment",
         "value": 25
       },
       {
-        "name": "Negative",
-        "value": 20
+        "name": "Negative Sentiment",
+        "value": 15
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "ilyen kényelmes gyári ülésekkel még nem is találkoztam",
-          "context": "Riders repeatedly praised the comfort and long-distance capabilities of touring bikes, particularly BMW RT and Honda Gold Wing models for their ergonomic excellence and all-day riding comfort.",
-          "source": "Népítélet user reviews"
+          "quote": "BMW's strong market leadership and its numerous 'Motorcycle of the Year' wins for models like the R 1300 GS and F 900 GS/Adventure",
+          "context": "BMW's market dominance and award recognition drove positive sentiment, with the R 1300 GS being identified as the most popular new motorcycle in Hungary",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "a fékkarra meg csak rálehelek, és mintha ezer horgonyt dobtam volna ki",
-          "context": "Strong performance impressions regarding braking power, handling stability, and highway capability contributed to positive perceptions that touring bikes can be both comfortable and capable.",
-          "source": "Hegylakók rider testimonials"
+          "quote": "Honda's overall market dominance and the favorable reception of its Africa Twin (particularly its DCT and asphalt-focused updates) and Transalp (praised for its updates and value proposition)",
+          "context": "Honda maintained strong positive sentiment through market leadership and well-received model updates, particularly the Africa Twin's DCT technology",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "még nem romlott el rajta semmi",
-          "context": "Build quality and reliability consistently earned praise, with owners citing German precision and dependable operation even after tens of thousands of kilometers, fostering trust in BMW and Honda brands.",
-          "source": "Népítélet reliability discussions"
+          "quote": "The KTM 890 Adventure R's off-road prowess and advanced features were met with enthusiasm",
+          "context": "KTM's adventure offerings generated enthusiasm for their off-road capabilities and advanced rider aid systems",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
       "Neutral": [
         {
-          "quote": "robogókon kívül… a túraendurók viszik a prímet",
-          "context": "Factual observations about market trends and competitive positioning, including the rise of adventure-touring bikes as alternatives to traditional touring motorcycles.",
-          "source": "SportMotor.hu market analysis"
+          "quote": "A notable portion of the discourse maintained a neutral tone, focusing on factual information, comparisons, and technical specifications without explicit positive or negative framing",
+          "context": "Market reports and technical discussions maintained objectivity, focusing on specifications and market data rather than emotional responses",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "Európa legnagyobb példányszámban eladott túrasportmotorja",
-          "context": "Neutral reporting on sales figures and market performance, such as Honda NT1100's success achieving 12,000 units sold in its first couple of years.",
-          "source": "Hegylakók market data"
+          "quote": "This included general market reports on sales figures, where decreases were attributed to the previous year's Euro 5 stock-clearing rather than an inherently negative market health",
+          "context": "Sales decreases were explained contextually due to previous year's regulatory stock clearing, maintaining neutral market assessment",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "második hazánkban az ezer köbcenti feletti túramotorok között",
-          "context": "Statistical information about market positioning and sales rankings, particularly BMW's performance relative to competitors in the Hungarian market.",
-          "source": "SportMotor.hu sales data"
+          "quote": "Debates on design aesthetics, such as the 'Lego looks' attributed to the BMW R 1300 GS Adventure, also fell into this category, reflecting subjective preferences rather than performance critiques",
+          "context": "Design discussions were subjective and neutral, focusing on aesthetic preferences rather than functional criticism",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ],
       "Negative": [
         {
-          "quote": "This has to be the ugliest BMW of the modern era",
-          "context": "The new BMW R1300RT's styling proved highly polarizing, with harsh criticism from some riders who disliked the streamlined design compared to previous generations.",
-          "source": "K1600 Forum international discussions"
+          "quote": "The Yamaha Ténéré 700, despite its popularity, faced criticism for reported clutch problems and a software bug affecting its MPG display, as well as the absence of cruise control",
+          "context": "Specific reliability issues with the Yamaha Ténéré 700 generated negative sentiment, particularly regarding clutch problems and software bugs",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "you don't get much in the base model and everything comes in packs so it adds up like crazy",
-          "context": "Frustration over BMW's pricing strategy and expensive optional packages, with riders feeling the base model lacks essential features that should be standard on a premium touring bike.",
-          "source": "Reddit r/Motorrad pricing discussions"
+          "quote": "The Honda X-ADV drew some negative comments regarding seat discomfort for certain riders and challenges with mounting the bike due to its high ground clearance",
+          "context": "Honda X-ADV faced criticism for ergonomic issues affecting rider comfort and accessibility",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         },
         {
-          "quote": "Fekete leves… oldaldoboz kapacitás… csökkent",
-          "context": "Specific complaints about the R1300RT's reduced standard pannier capacity (from 35L to 27L), viewed as a step backward in touring functionality requiring expensive optional larger cases.",
-          "source": "Totalbike.hu technical analysis"
+          "quote": "The Harley-Davidson brand faced concerns over potential EU tariffs, which could negatively impact its market position",
+          "context": "External factors like potential EU tariffs created negative sentiment around Harley-Davidson's market competitiveness",
+          "source": "Hungarian Adventure Motorcycle Market Analysis (Jan-Mar 2025)"
         }
       ]
     }
@@ -1419,82 +1308,82 @@ export const conversationData = {
   "italy": {
     "themeData": [
       {
-        "subject": "Comfort & Touring Experience",
+        "subject": "Off-Road Performance",
         "value": 25
       },
       {
-        "subject": "Technology & Innovation",
+        "subject": "Comfort & Ergonomics",
         "value": 20
       },
       {
-        "subject": "Brand Comparisons & Cross-Shopping",
-        "value": 18
+        "subject": "Technology & Features",
+        "value": 20
       },
       {
-        "subject": "Adventure vs Touring Debate",
-        "value": 15
-      },
-      {
-        "subject": "Pricing & Value",
+        "subject": "Reliability Concerns",
         "value": 10
       },
       {
-        "subject": "Weight & Handling",
-        "value": 8
+        "subject": "Value & Pricing",
+        "value": 10
       },
       {
-        "subject": "Reliability & Maintenance",
-        "value": 4
+        "subject": "Design & Character Appeal",
+        "value": 10
+      },
+      {
+        "subject": "Any other key themes",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Comfort & Touring Experience": [
+      "Off-Road Performance": [
         {
-          "quote": "500 km as if sitting on the couch at home",
-          "context": "Italian riders consistently prioritize comfort as the defining criterion for touring bikes, emphasizing wind protection, seat comfort, and fatigue-free riding",
-          "source": "moto.it"
+          "quote": "Viaggio avventura, non sapendo quindi che strade andrai a percorrere, o 'solo' asfalto? Sembra una banalità ma non lo è per la corretta scelta di una moto 'Adventure'",
+          "context": "This theme consistently emerges, with riders expressing interest in bikes capable of tackling diverse terrains, focusing on features like knobby tires, suspension travel, and overall off-road prowess.",
+          "source": "Italian motorcycle forums and discussions"
         }
       ],
-      "Technology & Innovation": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "ha portato l'iconica RT a un livello completamente nuovo… più accessibile e dinamica, grazie a motore, ciclistica e aerodinamica completamente rinnovati",
-          "context": "Modern tech features like radar adaptive cruise control, TFT displays, and connectivity are actively discussed and compared among riders",
-          "source": "moto.it"
+          "quote": "BMW R 1300 GS is frequently praised for its 'pazzesco' (amazing) front-end feel, smooth gas management, and comfort on long rides, with minimal vibrations and good aerodynamic protection",
+          "context": "Riders frequently discuss the importance of comfort for long-distance touring, including seat height, seat comfort, and effective aerodynamic protection.",
+          "source": "Social listening analysis of Italian forums"
         }
       ],
-      "Brand Comparisons & Cross-Shopping": [
+      "Technology & Features": [
         {
-          "quote": "Meglio RT o Multistrada per turismo?",
-          "context": "Italian riders frequently compare bikes, revealing cross-shopping patterns between BMW RT, Honda Gold Wing, and Ducati Multistrada",
-          "source": "Forum discussions"
+          "quote": "Advanced electronics and features are highly valued, including ABS Pro, Dynamic Traction Control (DTC), Dual Clutch Transmission (DCT), electronic suspensions, ride modes, TFT displays, quickshifters, and smartphone connectivity",
+          "context": "Advanced electronics and features are highly valued for enhancing safety, control, and the overall riding experience.",
+          "source": "Consumer discussions and reviews"
         }
       ],
-      "Adventure vs Touring Debate": [
+      "Reliability Concerns": [
         {
-          "quote": "modern adventure bikes offer 80% of the comfort plus more versatility",
-          "context": "There's ongoing discussion about whether adventure-touring bikes have overtaken pure tourers in popularity and practicality",
-          "source": "Forum discussions"
+          "quote": "Elenco dei problemi\" (List of problems) thread for KTM 890 Adventure",
+          "context": "While not a dominant negative theme across all brands, specific discussions highlight reliability issues, with general reliability valued as an attribute for touring.",
+          "source": "Brand-specific forums"
         }
       ],
-      "Pricing & Value": [
+      "Value & Pricing": [
         {
-          "quote": "prezzi salati",
-          "context": "While riders acknowledge the steep prices of premium tourers, they debate whether the luxury features justify the investment",
-          "source": "insella.it"
+          "quote": "Pricing is a consistent discussion point, with riders weighing initial cost against features, performance, and perceived value. The impact of Euro 5+ regulations and discounted Euro 5 models also influenced purchasing decisions",
+          "context": "Pricing discussions focus on the balance between cost and features, with Euro 5+ regulations creating market dynamics around discounted models.",
+          "source": "Market analysis and consumer discussions"
         }
       ],
-      "Weight & Handling": [
+      "Design & Character Appeal": [
         {
-          "quote": "Pur se pesante, una volta in movimento diventa facile",
-          "context": "Weight is acknowledged as a necessary trade-off, tolerated but not loved, especially problematic during low-speed maneuvers",
-          "source": "moto.it"
+          "quote": "riportare gli appassionati alle origini ma con tecnologie moderne e un design che omaggia la storia BMW\" (bring enthusiasts back to the origins but with modern technologies and a design that pays homage to BMW history)",
+          "context": "The aesthetic and \"character\" of a motorcycle are important, with discussions on unique looks, classic enduro designs, and the appeal of heritage styling.",
+          "source": "BMW R 12 G/S anticipation discussions"
         }
       ],
-      "Reliability & Maintenance": [
+      "Heritage Interest": [
         {
-          "quote": "ogni sistema elettronico in più… è qualcosa in più che si può rompere in viaggio",
-          "context": "Veteran tourers express wariness about too many electronics, emphasizing the importance of reliability for long trips",
-          "source": "giri-in-moto.it"
+          "quote": "Retro and vintage remain popular\" in motorcycle fashion and design with \"Timeless designs reminiscent of the golden era of motorcycling",
+          "context": "Broader discussions on maintenance and ownership, travel and touring experiences, and the impact of regulatory changes on the market.",
+          "source": "Market trend analysis"
         }
       ]
     },
@@ -1505,63 +1394,63 @@ export const conversationData = {
       },
       {
         "name": "Neutral Sentiment",
-        "value": 20
+        "value": 15
       },
       {
         "name": "Negative Sentiment",
-        "value": 10
+        "value": 15
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "moto semplicemente perfetta per i viaggi",
-          "context": "BMW RT owners express overwhelming satisfaction with touring capabilities and comfort",
-          "source": "moto.it (BMW RT owner)"
+          "quote": "BMW R 1300 GS is frequently praised for its 'pazzesco' (amazing) front-end feel, smooth gas management, and comfort on long rides",
+          "context": "Strong enthusiasm for BMW's adventure motorcycles, particularly praising comfort and handling characteristics.",
+          "source": "Italian motorcycle forums (BMW-focused)"
         },
         {
-          "quote": "poltrona a due ruote… ti consente di viaggiare con la massima comodità",
-          "context": "Honda Gold Wing riders celebrate unparalleled comfort for long-distance touring",
-          "source": "moto.it (Gold Wing owner)"
+          "quote": "The Ducati Multistrada 2025 is described as a 'conferma,' impressing and pleasing riders with its agility and suspension",
+          "context": "Positive reception of Ducati's adventure offerings, highlighting performance and suspension quality.",
+          "source": "Italian motorcycle reviews (Ducati-focused)"
         },
         {
-          "quote": "insospettabilmente maneggevole",
-          "context": "Riders are pleasantly surprised by the RT's agility despite its size",
-          "source": "insella.it (BMW RT review)"
+          "quote": "The KTM 690 Enduro R receives high praise for its 'fantastico' (fantastic) engine, exceptional suspension, and strong off-road performance, often described as a 'bomba' (bomb) or 'perfetta' (perfect) for dual-sport use",
+          "context": "High praise for KTM's off-road capabilities and engine performance in the adventure segment.",
+          "source": "KTM-specific forums (KTM-focused)"
         }
       ],
       "Neutral": [
         {
-          "quote": "Ho comprato una NT1100 DCT… e la prossima sarà una GoldWing",
-          "context": "Discussions about upgrade paths from mid-range to premium tourers",
-          "source": "quellidellelica.com"
+          "quote": "while the BMW R 1300 GS is highly regarded, a minor point was raised about the 'panino' button on the multi-function controller, which some found to slightly reduce execution speed for commands",
+          "context": "Balanced perspective on BMW offering constructive feedback on specific interface elements.",
+          "source": "BMW user discussions (BMW-focused)"
         },
         {
-          "quote": "C'ho girato l'Europa. Mai un problema",
-          "context": "Matter-of-fact statements about reliability and touring experiences",
-          "source": "moto.it (Yamaha FJR owner)"
+          "quote": "The engine's fluidity at lower RPMs (2000-4000 rpm) was also noted to have 'perso un littino di fluidità' (lost a little fluidity)",
+          "context": "Nuanced technical assessment of BMW engine characteristics across different RPM ranges.",
+          "source": "Technical reviews (BMW-focused)"
         },
         {
-          "quote": "one of the best GT bikes around that offers everything a tourer could desire",
-          "context": "Objective assessments of touring bike capabilities",
-          "source": "insella.it"
+          "quote": "Some comments reflect a more balanced or nuanced perspective on adventure bikes' versatility for both on-road and off-road adventures",
+          "context": "Measured discussion of overall segment capabilities and limitations.",
+          "source": "General adventure segment discussions (Segment general)"
         }
       ],
       "Negative": [
         {
-          "quote": "nelle manovre da fermo il peso si sente",
-          "context": "Weight management issues during low-speed maneuvers are a common complaint for the segment",
-          "source": "insella.it (BMW RT)"
+          "quote": "For the KTM 890 R, some users found its design 'fugly' and its engine 'characterless'",
+          "context": "Critical assessment of KTM's design and engine character by some users.",
+          "source": "KTM discussions (KTM-focused)"
         },
         {
-          "quote": "elegante e classica finché vuoi, ma simile ad uno scooter… o ad un camper 3/4 posteriore",
-          "context": "Polarizing views on the R1300RT's styling, with some finding it bulky",
-          "source": "quellidellelica.com (BMW RT)"
+          "quote": "Tutti questi controlli elettronici mi fanno venire l'orticaria",
+          "context": "Concerns about complexity of electronic controls and manufacturer support quality.",
+          "source": "KTM 1390 Super Adventure discussions (KTM-focused)"
         },
         {
-          "quote": "motore troppo rumoroso… nei lunghi viaggi dà fastidio",
-          "context": "Some RT users complain about engine noise on long trips",
-          "source": "moto.it (BMW RT owner)"
+          "quote": "The stiffness of some seats, especially in colder weather, and the 'rubbery' feel of certain tires were also mentioned as drawbacks",
+          "context": "Specific comfort and performance issues identified across various models.",
+          "source": "General user experiences (Segment general)"
         }
       ]
     }
@@ -1569,148 +1458,156 @@ export const conversationData = {
   "netherlands": {
     "themeData": [
       {
-        "subject": "Technology & Features",
-        "value": 30
-      },
-      {
-        "subject": "Design & Styling",
-        "value": 25
+        "subject": "O-Road Performance",
+        "value": 20
       },
       {
         "subject": "Comfort & Ergonomics",
         "value": 20
       },
       {
-        "subject": "Price & Value",
+        "subject": "Technology & Features",
         "value": 15
       },
       {
-        "subject": "Performance & Engine",
+        "subject": "Reliability Concerns",
+        "value": 15
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 15
+      },
+      {
+        "subject": "Value & Pricing",
         "value": 10
+      },
+      {
+        "subject": "Any other key themes",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Technology & Features": [
+      "O-Road Performance": [
         {
-          "quote": "The new R1300RT is a completely new bike... I called [the R1250RT] the king of all touring motorcycles.",
-          "context": "The R1300RT's advanced technology features including radar-assisted adaptive cruise control, advanced rider aids, and optional semi-automatic transmission are viewed as setting a new benchmark for touring motorcycles. Riders are particularly excited about features like adaptive ride height and collision warning systems.",
-          "source": "YouTube reviewer"
-        }
-      ],
-      "Design & Styling": [
-        {
-          "quote": "Looks like a Transformers [toy]",
-          "context": "The R1300RT's new angular design language proved highly polarizing. BMW departed from traditional flowing lines, creating a sharper, more futuristic aesthetic that some riders found off-putting while others appreciated the modern approach.",
-          "source": "Forum comment"
+          "quote": "I chuckled when i read dirt mountain roads. Never seen a mountain here. Most of the tracks are illegal to ride.",
+          "context": "Despite high discussion volume, practical O-Road opportunities in Netherlands are limited, with most tracks being illegal to ride",
+          "source": "Reddit r/motoretsen"
         }
       ],
       "Comfort & Ergonomics": [
         {
-          "quote": "comfort is where the R1300RT promises to excel",
-          "context": "The new fairing design with adjustable wind deflectors, heated seats and backrest, and improved wind protection are expected to create a \"bubble\" of calm air for long-distance touring comfort.",
-          "source": "Bennetts BikeSocial"
+          "quote": "Reliability (this will be the first vehicle I own), fun, comfort, Resale value after 3–5 years",
+          "context": "Crucial for both daily commutes and extended touring, identified as a key priority for new buyers",
+          "source": "Reddit r/SuggestAMotorcycle"
         }
       ],
-      "Price & Value": [
+      "Technology & Features": [
         {
-          "quote": "The price of admission…will keep me looking and not buying",
-          "context": "With prices starting around €20,000 and easily climbing over €30,000 with options, many riders questioned whether the improvements justify the premium over competitors or remaining R1250RT stock.",
-          "source": "BMW owner forum"
+          "quote": "Consumers desire modern features such as cruise control, clear TFT displays, and seamless smartphone connectivity, including navigation",
+          "context": "Modern features are desired but with preference for intuitive implementation over complexity",
+          "source": "Market Analysis"
         }
       ],
-      "Performance & Engine": [
+      "Reliability Concerns": [
         {
-          "quote": "substantial performance hike",
-          "context": "The new 1,300cc boxer engine outputting ~145 hp (up ~9 hp from R1250RT) and ~150 Nm torque promises sportier performance, with riders noting it could make the RT \"the most impressive touring bike on the market\".",
-          "source": "Industry review"
+          "quote": "I just can't get past my concerns around reliability, servicing, parts etc. Resale could be the worst of the 4.",
+          "context": "Paramount concern for consumers, especially first-time owners seeking minimal dealership visits",
+          "source": "Reddit r/SuggestAMotorcycle"
         }
       ],
-      "Luggage Capacity": [
+      "Design & Character Appeal": [
         {
-          "quote": "Collapsible Luggage was an unexpected theme",
-          "context": "Leaked information suggested the side cases could expand from 16L to 33L, addressing the age-old \"city width vs. tour capacity\" dilemma for riders who alternate between commuting and long tours.",
-          "source": "Forum discussions"
+          "quote": "You see quite a few ADV motorcycles but not every rider is going oroad. A lot just like the style.",
+          "context": "Significant portion of adventure bike owners purchase for aesthetic appeal rather than extreme off-road use",
+          "source": "Reddit r/motoretsen"
         }
       ],
-      "Reliability & Build Quality": [
+      "Value & Pricing": [
         {
-          "quote": "I hope all that new stuff works as advertised, not like the TFT issues we had",
-          "context": "While BMW has generally good engineering, some riders expressed concern that the abundance of electronics could compromise reliability or user-friendliness, referencing past issues with the R1250RT's TFT interface.",
-          "source": "MOA forum user"
+          "quote": "Cost of ownership (I incline towards value for money)",
+          "context": "Balance between purchase price, maintenance costs, and fuel efficiency remains important consideration",
+          "source": "Reddit r/SuggestAMotorcycle"
         }
       ],
-      "Dealer Support & Service": [
+      "Heritage Interest": [
         {
-          "quote": "nothing about fixing…the TFT and its quirks and lack of configurability",
-          "context": "A couple of threads mentioned long wait times for new bikes or parts, and disappointment that BMW hadn't improved the user interface/connected features in the new model.",
-          "source": "User forum"
+          "quote": "the new BMW R 12 G/S is much more than just a visual tribute to its predecessor from 45 years ago",
+          "context": "Notable interest in heritage styling, with R 12 G/S generating significant pre-launch discussion for retro appeal",
+          "source": "Wisconsin BMW Club Forum"
+        }
+      ],
+      "Manageability Concerns": [
+        {
+          "quote": "It carries its weight well enough to be lithe, manageable and fun on and off-road, too especially compared to big capacity, top-heavy adventure bike",
+          "context": "Recurring theme about motorcycle weight and handling, particularly for less experienced riders",
+          "source": "Motorcycle News"
         }
       ]
     },
     "sentimentData": [
       {
         "name": "Positive Sentiment",
-        "value": 50
+        "value": 60
       },
       {
         "name": "Neutral Sentiment",
-        "value": 15
+        "value": 30
       },
       {
         "name": "Negative Sentiment",
-        "value": 25
+        "value": 10
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "I was pretty excited to trade up… mainly for the active ride height",
-          "context": "The adaptive ride height feature that automatically lowers at stops addresses a major pain point for riders, making the heavy touring bike more manageable at traffic lights and parking.",
-          "source": "Reddit user"
+          "quote": "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine.",
+          "context": "Strong positive reception for BMW R 12 G/S pre-launch, highlighting both heritage appeal and capability",
+          "source": "Motorcycle News"
         },
         {
-          "quote": "Heated backrest for the passenger – finally! My wife will approve.",
-          "context": "The introduction of heated pillion backrest and seats was met with approval by long-distance two-up riders, showing BMW's attention to passenger comfort.",
-          "source": "Facebook comment (translated from Dutch)"
+          "quote": "The local BMW dealer expects to get these bikes later this summer and have indicated a lot of customer interest.",
+          "context": "BMW dealers reporting significant customer interest for R 12 G/S launch",
+          "source": "BMW MOA Forums"
         },
         {
-          "quote": "better power-to-weight ratio and more load capacity than the K1600",
-          "context": "Riders compared the RT's power-to-weight favorably against BMW's own K1600GT, making the six-cylinder seem almost redundant unless one really wants 6-cylinder smoothness.",
-          "source": "Bennetts review"
+          "quote": "For a true 50/50 and true offroad I'd think the tenere fits better",
+          "context": "Positive sentiment toward Yamaha Ténéré 700 for genuine off-road capability",
+          "source": "Reddit r/africatwin"
         }
       ],
       "Neutral": [
         {
-          "quote": "BMW announced the R1300RT…",
-          "context": "Many initial posts were factual news-sharing without opinion, simply informing the community about the new model announcement.",
-          "source": "Forum posts"
+          "quote": "If more power would mean less economy and more pollution, then you'd be wrong.",
+          "context": "Balanced discussion about power versus efficiency trade-offs in adventure bikes",
+          "source": "Adventure Bike Rider"
         },
         {
-          "quote": "it definitely presents better in person… it's grown on me a lot",
-          "context": "Riders who saw the bike at dealer events provided nuanced takes, suggesting initial shock at the styling could soften after seeing the bike up close.",
-          "source": "Rider at Barber Motorsports Park"
+          "quote": "Africa o-road requires a very good level of this type of terrain. If it's just on paths, no problem.",
+          "context": "Neutral assessment of Honda Africa Twin's off-road capabilities relative to terrain demands",
+          "source": "Reddit r/africatwin"
         },
         {
-          "quote": "it's not for me, I'm still a 1250 devotee",
-          "context": "Some riders acknowledged the improvements while personally preferring to stick with their current models, showing balanced perspective.",
-          "source": "Forum user"
+          "quote": "Most of the tracks are illegal to ride",
+          "context": "Matter-of-fact observation about limited legal off-road opportunities in Netherlands",
+          "source": "Reddit r/motoretsen"
         }
       ],
       "Negative": [
         {
-          "quote": "the RT looks strange",
-          "context": "The styling proved to be the most divisive aspect, with traditionalists finding the new angular aesthetic off-putting compared to previous RT models.",
-          "source": "forums.bmwmoa.org"
+          "quote": "It's just at higher speeds when you get buffeted by that wind. then when you come to a stop and you got to stretch to get your legs. down. that's when it's not so much fun",
+          "context": "Criticism of Ducati DesertX for wind buffeting issues and seat height accessibility",
+          "source": "YouTube Review"
         },
         {
-          "quote": "Even more technology does nothing for me… I'll stick with the old gal",
-          "context": "A subset of riders felt the abundance of electronics was \"too much\" and that simpler might be better, reflecting concerns about complexity.",
-          "source": "MOA forum skeptic"
+          "quote": "I just can't get past my concerns around reliability, servicing, parts etc.",
+          "context": "Consumer concerns about reliability and service support, particularly for certain brands",
+          "source": "Reddit r/SuggestAMotorcycle"
         },
         {
-          "quote": "It's too cramped for me…36",
-          "context": "Very tall riders (196 cm/6'5\") found the ergonomics challenging, wishing for lower pegs or more legroom options.",
-          "source": "Reddit user"
+          "quote": "No adventure roads in NL. Maybe some dirt tracks but they are far from adventurous.",
+          "context": "Negative sentiment about limited adventure riding opportunities in Netherlands",
+          "source": "Reddit r/motoretsen"
         }
       ]
     }
@@ -1718,160 +1615,149 @@ export const conversationData = {
   "norway": {
     "themeData": [
       {
-        "subject": "Technological Innovation & Features",
+        "subject": "Off-Road Performance",
         "value": 25
       },
       {
-        "subject": "Comfort and Touring Capability",
+        "subject": "Comfort & Ergonomics",
         "value": 20
       },
       {
-        "subject": "Performance and Engine Character",
+        "subject": "Technology & Features",
         "value": 18
       },
       {
-        "subject": "Value and Alternatives",
-        "value": 15
+        "subject": "Reliability Concerns",
+        "value": 12
       },
       {
-        "subject": "Styling and Design",
-        "value": 8
+        "subject": "Value & Pricing",
+        "value": 10
       },
       {
-        "subject": "Weight and Maneuverability",
-        "value": 6
+        "subject": "Design & Character Appeal",
+        "value": 10
       },
       {
-        "subject": "Safety Features",
-        "value": 4
-      },
-      {
-        "subject": "Brand Heritage and Reputation",
-        "value": 4
+        "subject": "Travel Logistics & Community",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Technological Innovation & Features": [
+      "Off-Road Performance": [
         {
-          "quote": "Features like the Adaptive Cruise Control (radar), Automatic Shift Assistant (semi-automatic transmission), and the giant 10.25″ TFT display are frequently discussed. Many see these as elevating the touring experience to luxury-car levels",
-          "context": "Riders are highly interested in the R1300RT's new technologies, with features like radar cruise control and semi-automatic transmission generating significant discussion and curiosity about their practical benefits",
-          "source": "Social media forums and review discussions"
+          "quote": "Even if the GS is good, the 890 is just so much better. And, not the least, lighter. Fuel economy and range is superior to most in its class.",
+          "context": "Discussions frequently revolve around a motorcycle's capability on unpaved roads, gravel, and more challenging terrains. This is a paramount concern for Norwegian riders, given the country's extensive network of gravel roads and mountainous landscapes.",
+          "source": "Consumer on KTM 890 Adventure R"
         }
       ],
-      "Comfort and Touring Capability": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "Comfort is paramount in this segment, and discussions reflect that. Riders talk about wind protection, seating and ergonomics at length",
-          "context": "Long-distance comfort remains the most critical factor for touring motorcycle buyers, with extensive discussions about wind protection, seating quality, and ergonomic design",
-          "source": "Enthusiast forums and rider testimonials"
+          "quote": "Honda's Africa Twin line is a tough group to criticize. They are big-bore world-travel-capable machines with impressive technology and great performance. They are easy to ride, easy to trust, and easy to purchase.",
+          "context": "For long-distance touring and multi-day adventures common in Norway, rider comfort is a significant factor. This includes discussions on seat comfort, riding position (both seated and standing), and wind protection.",
+          "source": "Expert Review on Honda Africa Twin"
         }
       ],
-      "Performance and Engine Character": [
+      "Technology & Features": [
         {
-          "quote": "The R1300RT shares the newly designed engine from the R1300GS, and on paper it offers 145 hp and 149 Nm of torque – making it 'the most powerful boxer twin BMW has ever built'",
-          "context": "The significant power increase in the new 1300cc boxer engine has generated excitement among enthusiasts, particularly the substantial improvement over the previous 1250cc generation",
-          "source": "Technical reviews and manufacturer specifications"
+          "quote": "The 2025 Triumph Tiger 900 is an incredible adventure bike that continues to set the bar for versatility. and performance with its powerful engine lightweight design advanced technology and rugged styling it's a bike that's ready for any adventure.",
+          "context": "Modern adventure riders value integrated electronic aids and advanced features including traction control, ABS, ride modes, cruise control, and connectivity features like TFT displays and smartphone integration.",
+          "source": "Expert Review on Triumph Tiger 900"
         }
       ],
-      "Value and Alternatives": [
+      "Reliability Concerns": [
         {
-          "quote": "for the price of a new R1300RT, you could get a low-mileage used R1250RT or even a K1600 with similar amenities",
-          "context": "Price sensitivity is a major concern, with riders frequently comparing the R1300RT's cost against used alternatives and competing models like Honda's NT1100",
-          "source": "Forum discussions and price comparison reviews"
+          "quote": "The handlebar switchgear that cracked open... wasn't malfunctioning. Nor did it fall off, or needed to be duct taped. I rode the motorcycle in pissing rain, and that did not cause any switches to stop working.",
+          "context": "Given the remote nature of many adventure rides, reliability is a critical attribute. Discussions include long-term ownership experiences and potential issues.",
+          "source": "Consumer on KTM 890 Adventure R"
         }
       ],
-      "Styling and Design": [
+      "Value & Pricing": [
         {
-          "quote": "Design-wise…I think it looks great. It's about time BMW got away from the whale-ish/bulbous look it's had for its tourers",
-          "context": "The R1300RT's new design has polarized opinions, with some praising the departure from previous styling while others express strong negative reactions to the changes",
-          "source": "Social media comments and forum discussions"
+          "quote": "In my opinion the deals on 24 models far outweigh any updates and fixes on the 25. Also not a fan of electronic throttle and they didn't even add cruise control which would have cost them nothing.",
+          "context": "The cost of motorcycles and related travel in Norway is a recurring theme. Discussions touch upon the initial purchase price, the value offered for the price point, and the overall cost of ownership.",
+          "source": "Consumer on Yamaha Ténéré 700"
         }
       ],
-      "Weight and Maneuverability": [
+      "Design & Character Appeal": [
         {
-          "quote": "At ~280+ kg, it's heavier than some rivals (e.g. Yamaha's Tracer 9 GT is ~220 kg, Honda NT1100 ~248 kg), which can make low-speed handling and everyday use daunting for some riders",
-          "context": "The R1300RT's weight gain over its predecessor and compared to competitors is a practical concern for riders, particularly regarding low-speed handling and parking",
-          "source": "Technical specifications and rider feedback"
+          "quote": "The issue is bikers' love for petrol's soul, not logistics or price... Norway's 1.2% and the UK's sub-1% scream riders want fire, not wires.",
+          "context": "Beyond pure performance, the aesthetic and \"feel\" of a motorcycle are important. This includes discussions about styling, the \"soul\" of the engine, and the overall riding experience.",
+          "source": "Industry Commentator on EV adoption"
         }
       ],
-      "Safety Features": [
+      "Travel Logistics & Community": [
         {
-          "quote": "2025 unfortunately saw a spike in motorcycle fatalities (many involving high-powered bikes). This has led to discussion about rider training and perhaps a tilt by some riders towards bikes with better safety tech",
-          "context": "Increased focus on safety technology due to rising accident statistics in Norway, making advanced safety features more relevant to purchase decisions",
-          "source": "Industry reports and safety statistics"
-        }
-      ],
-      "Brand Heritage and Reputation": [
-        {
-          "quote": "BMW's boxer RT models have been setting touring standards since the 1970s, and consumers recognize this long legacy of quality",
-          "context": "BMW's long-established reputation in the touring segment provides significant brand equity and consumer confidence in the R1300RT",
-          "source": "Industry analysis and brand heritage documentation"
+          "quote": "With the new BMW R 12 G/S, BMW Motorrad is offering a classic enduro for puristic off-road fun. The abbreviation borrowed from the legendary R 80 G/S stands for 'Gelände / Straße' (Off-road / Street) and signals that the new member of the BMW R 12 family, masters both equally.",
+          "context": "Broader discussions encompass practical aspects of motorcycle travel in Norway, such as preparing for unpredictable weather, long distances, limited fuel stops, wildlife awareness, and ferry crossings.",
+          "source": "Markus Lederer, Head of Boxer Series, BMW Motorrad"
         }
       ]
     },
     "sentimentData": [
       {
         "name": "Positive Sentiment",
-        "value": 60
+        "value": 75
       },
       {
         "name": "Neutral Sentiment",
-        "value": 25
+        "value": 15
       },
       {
         "name": "Negative Sentiment",
-        "value": 15
+        "value": 10
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "Overall, it's an evolution to what? …the engine is wonderful but I just don't get the styling… Apart from the fact I could never afford it, I don't think I'd want one anyway.",
-          "context": "Despite some reservations about styling and price, riders acknowledge the engine's excellence and the bike's overall evolution in touring capabilities",
-          "source": "BMW RT forum discussions"
+          "quote": "The KTM 890 ADVENTURE R provides improved riding comfort, combined with excellent overall suspension performance. This, on top of already boasting the absolute best suspension currently offered on any adventure bike, means riders can tackle the harshest terrain with complete confidence.",
+          "context": "The majority of conversations express satisfaction and excitement about adventure motorcycles and riding experiences in Norway. Riders frequently share positive experiences related to off-road capability, comfort, and the exhilarating nature of their bikes.",
+          "source": "Expert Review on KTM 890 Adventure R"
         },
         {
-          "quote": "Reviewers have even speculated the R1300RT could set 'the new benchmark for touring bikes'",
-          "context": "Professional reviewers express strong confidence in the R1300RT's potential to lead the touring segment with its advanced features and performance",
-          "source": "Bennetts motorcycle review"
+          "quote": "Sometimes it just feels damn good to twist the throttle, hear a roar and feel a push that KTMs are known for. It's exhilarating and rejuvenating.",
+          "context": "The stunning scenery and unique travel experiences in Norway contribute significantly to positive sentiment. The \"love for petrol's soul\" also contributes to a positive emotional connection with traditional bikes.",
+          "source": "Consumer on KTM 890 Adventure R"
         },
         {
-          "quote": "I also like the design direction taken here as well as with the new RS. The GS looks good to me too…",
-          "context": "Enthusiasts appreciate BMW's new design language across the entire model range, indicating broader acceptance of the styling evolution",
-          "source": "Reddit motorcycle discussions"
+          "quote": "As a friendly, fun off-roading adventure machine the Ténéré is still one of the best, and with a slightly nicer weight distribution and a bit more support on the suspension, it feels not only more accomplished than ever, but more accessible too.",
+          "context": "Positive discussions about various models' capabilities and improvements, particularly regarding off-road performance and accessibility.",
+          "source": "Expert Review on Yamaha Ténéré 700"
         }
       ],
       "Neutral": [
         {
-          "quote": "There are so many pre-owned R1250RT and K1600GT… it makes no sense… to entertain this as an option",
-          "context": "Some riders view the used market as offering better value proposition than the new R1300RT, reflecting pragmatic purchasing considerations",
-          "source": "Reddit motorcycle forums"
+          "quote": "In my opinion the deals on 24 models far outweigh any updates and fixes on the 25. Also not a fan of electronic throttle and they didn't even add cruise control which would have cost them nothing... I'll be honest if today I had to choose a bike I'll look for a used T7 or maybe something else like an Africa Twin, the 2025 T7 lost its key features and uniqueness imho.",
+          "context": "Neutral sentiment often arises in discussions comparing specific features, weighing pros and cons, or seeking advice without expressing strong positive or negative opinions.",
+          "source": "Consumer on Yamaha Ténéré 700"
         },
         {
-          "quote": "I'm torn on the active aero… guess it will have to be ridden to be believed",
-          "context": "Cautious optimism about new technologies, with riders wanting real-world experience before forming definitive opinions",
-          "source": "Reddit technical discussions"
+          "quote": "The ride-by-wire throttle is smooth and easy (even in the more aggressive, road riding mode) and makes the Yamaha super friendly at slow speeds - the motor is great fun in terms of its torquey punch on tighter, twistier roads, and still feels fun, and current in its delivery of power.",
+          "context": "Discussions about general travel logistics or technical specifications that provide balanced perspectives without strong emotional leanings.",
+          "source": "Expert Review on Yamaha Ténéré 700"
         },
         {
-          "quote": "BMW has some really good sport tourers and in my eyes are at the top when it comes to comfort, but these are insanely expensive",
-          "context": "Recognition of BMW's segment leadership balanced against concerns about premium pricing in the Norwegian market",
-          "source": "Norwegian MCsiden forum"
+          "quote": "The 2025 Harley-Davidson® CVO™ Road Glide® ST represents a combination of heritage and innovation that appeals to those who treasure the past while embracing modern advances.",
+          "context": "Neutral discussions about heritage trends and market positioning that present factual observations without strong advocacy.",
+          "source": "Industry Publication on Heritage Trends"
         }
       ],
       "Negative": [
         {
-          "quote": "The front has a visage that only a mother would love…painfully unattractive",
-          "context": "Strong negative reaction to the R1300RT's new front-end design from longtime BMW RT owners who prefer the previous styling",
-          "source": "BMW R1200RT forum"
+          "quote": "I've had mine for a couple months shy of two and half years, it was one of the first sold in the US. I've got around 21k miles on it... Someone else mentioned wind noise and buffeting, and they're right, it's bad. How bad depends on your height, and your helmet can make a difference too.",
+          "context": "Negative sentiment typically focuses on specific drawbacks or concerns rather than overall dissatisfaction with the segment. Common points of critique include wind noise/buffeting, minor reliability issues, or high costs.",
+          "source": "Consumer on Ducati DesertX"
         },
         {
-          "quote": "starting at $23,190 and ballooning quickly to over $30k",
-          "context": "Significant concern about the R1300RT's high base price and the rapid cost escalation with optional equipment",
-          "source": "Reddit pricing discussions"
+          "quote": "The cruise control I didn't like. It fluctuates tremendously. all depending on whether you ride uphill or downhill.",
+          "context": "Specific technical issues and reliability concerns that affect the overall riding experience, particularly regarding electronic systems.",
+          "source": "Consumer on KTM 890 Adventure R"
         },
         {
-          "quote": "BMW makes top-tier touring bikes with comfort at the top, but these are grisedyre (pig expensive)",
-          "context": "Norwegian riders acknowledge BMW's quality leadership but express frustration with the premium pricing in their market",
-          "source": "Norwegian MCsiden forum"
+          "quote": "I have had a grid on my face pretty much for all the ride. it's just at higher speeds when you get buffeted by that wind. then when you come to a stop and you got to stretch to get your legs down. that's when it's not so much fun on sweepy roads like this in the sunshine. ah it's joyous.",
+          "context": "Mixed experiences highlighting both positive and negative aspects, particularly comfort and ergonomic challenges at speed.",
+          "source": "Expert Review on Ducati DesertX"
         }
       ]
     }
@@ -1879,93 +1765,89 @@ export const conversationData = {
   "poland": {
     "themeData": [
       {
-        "subject": "Comfort & Touring Experience",
-        "value": 35
+        "subject": "Off-Road Performance",
+        "value": 25
       },
       {
-        "subject": "Technology & Features",
+        "subject": "Comfort & Ergonomics",
         "value": 20
       },
       {
-        "subject": "Performance & Dynamics",
+        "subject": "Technology & Features",
         "value": 18
       },
       {
-        "subject": "Design & Aesthetics",
+        "subject": "Reliability Concerns",
+        "value": 12
+      },
+      {
+        "subject": "Value & Pricing",
         "value": 10
       },
       {
-        "subject": "Reliability & Maintenance",
-        "value": 8
+        "subject": "Design & Character Appeal",
+        "value": 10
       },
       {
-        "subject": "Price & Value",
+        "subject": "Any other key themes",
         "value": 5
-      },
-      {
-        "subject": "Brand Heritage",
-        "value": 2
-      },
-      {
-        "subject": "Safety Features",
-        "value": 2
       }
     ],
     "themeInsights": {
-      "Comfort & Touring Experience": [
+      "Off-Road Performance": [
         {
-          "quote": "Pozycję, miękkość kanapy... dobrano tak, żebyśmy odczuwali komfort przez wiele kilometrów",
-          "context": "Comfort remains the defining theme of touring bike discussions, with riders obsessing over seating, wind protection, and long-distance ergonomics",
-          "source": "motoryzacja.interia.pl"
+          "quote": "KTM 890 Adventure R and Yamaha Tenere 700 Rally were lauded for their genuine off-road capabilities and ability to handle challenging terrain, while larger adventure bikes such as the BMW R 1300 GS were criticized for their perceived limitations in serious off-road conditions",
+          "context": "Polish adventure riders differentiate between aesthetic \"adventure\" appeal and actual hardcore off-road prowess, with models being evaluated on their genuine capability in challenging terrain",
+          "source": "Poland market report, competitor analysis"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "BMW GS models were consistently praised for their high comfort, soft heated seats, and excellent wind protection",
+          "context": "Rider comfort is essential for extended riding sessions, with detailed discussions focusing on seat ergonomics, wind protection, and suspension performance as critical differentiators",
+          "source": "Poland market report, consumer conversations analysis"
         }
       ],
       "Technology & Features": [
         {
-          "quote": "radar-based adaptive cruise control, blind spot detection, and forward/rear collision warning",
-          "context": "Polish consumers are highly tech-savvy and enthusiastically discuss new features, with BMW R1300RT's launch bringing unprecedented tech attention",
-          "source": "bikewale.com"
+          "quote": "Consumers expected sophisticated rider aids for safety, performance, and convenience. Features such as ABS, traction control, various riding modes, TFT displays, quickshifters, and adaptive cruise control were frequently mentioned across brands",
+          "context": "Advanced electronics are significant value drivers and differentiators in the premium segment, with consumers expecting comprehensive rider aid systems",
+          "source": "Poland market report, discussion themes analysis"
         }
       ],
-      "Performance & Dynamics": [
+      "Reliability Concerns": [
         {
-          "quote": "substantial performance hike",
-          "context": "Unlike in past years where touring bikes were seen purely as comfort machines, performance is now front and center in consumer discourse",
-          "source": "bennetts.co.uk"
+          "quote": "The Yamaha Tenere 700, despite its 'legendary reliability,' saw reports of clutch problems and unusual fuel consumption for its 2025 models. Similarly, a 2025 Honda Africa Twin faced multiple post-repair issues",
+          "context": "Reliability issues, even if isolated, can disproportionately amplify negative sentiment online as they challenge core brand promises for adventure motorcycles",
+          "source": "Poland market report, sentiment analysis"
         }
       ],
-      "Design & Aesthetics": [
+      "Value & Pricing": [
         {
-          "quote": "RT wygląda... jak jakiś bagger bez kufra centralnego",
-          "context": "The R1300RT's redesign received mixed reactions initially, with some conservative BMW fans needing time to warm up to it",
-          "source": "forum.vstromclub.pl"
+          "quote": "The market also observed the rise of competitively priced Chinese brands like KOVE and CF Moto, offering modern features at attractive price points",
+          "context": "Pricing discussions encompass not just initial purchase price but perceived value for money, long-term maintenance costs, and availability of affordable alternatives",
+          "source": "Poland market report, competitive landscape"
         }
       ],
-      "Reliability & Maintenance": [
+      "Design & Character Appeal": [
         {
-          "quote": "powinny być od [Japończyków] bardziej niezawodne. A nie są",
-          "context": "While not as loudly discussed as other themes, reliability emerged as a concern, especially in comparative context with Japanese bikes",
-          "source": "forum.vstromclub.pl"
+          "quote": "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance",
+          "context": "Aesthetic appeal, character, and heritage styling are significant drivers of consumer conversation, contributing to emotional connection with motorcycles",
+          "source": "Poland market report, consumer preferences"
         }
       ],
-      "Price & Value": [
+      "Heritage/Retro Styling": [
         {
-          "quote": "jedynie co będzie zaporowe to cena",
-          "context": "Some riders fear that the R1300RT's high-tech upgrades will come with a hefty price tag, representing a barrier to purchase",
-          "source": "forum.vstromclub.pl"
+          "quote": "Strong positive reception for retro-inspired designs indicated a market appetite for bikes that offered a blend of classic looks and modern capabilities, fostering a unique emotional connection with the machine",
+          "context": "Growing appreciation for nostalgia and classic aesthetic appeal when combined with modern capabilities represents an emerging market trend",
+          "source": "Poland market report, heritage positioning analysis"
         }
       ],
-      "Brand Heritage": [
+      "Versatility": [
         {
-          "quote": "Wybrałem Harleya… nie chodzi mi o wygodę jazdy, a o przeżycia… żadne [inne] nie mają takiej historii i charakteru",
-          "context": "Harley-Davidson touring bikes garnered affection rooted in brand loyalty and emotional appeal rather than specs",
-          "source": "swiatmotocykli.pl"
-        }
-      ],
-      "Safety Features": [
-        {
-          "quote": "comprehensive electronics suite",
-          "context": "Modern touring bikes are increasingly evaluated on their safety technology packages, with BMW leading in this area",
-          "source": "bikewale.com"
+          "quote": "The ability to perform effectively across both on-road and off-road conditions is fundamental for Polish adventure riders, though with a clear distinction between light trail capability and hardcore off-road performance",
+          "context": "Consumers seek motorcycles capable of seamlessly transitioning between diverse terrains while understanding the spectrum of dual-purpose capability",
+          "source": "Poland market report, consumer priorities"
         }
       ]
     },
@@ -1986,43 +1868,53 @@ export const conversationData = {
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "sztos",
-          "context": "Enthusiasts hailed the BMW R1300RT as a worthy new flagship, celebrating BMW's innovation",
-          "source": "forum.vstromclub.pl"
+          "quote": "Reviews of most models, including KTM, Yamaha, Honda, Triumph, and BMW GS, highlighted strengths in performance, comfort, and reliability",
+          "context": "General satisfaction with existing offerings and the aspirational nature of adventure riding contributed to predominantly positive discourse",
+          "source": "Poland market report, segment overview"
         },
         {
-          "quote": "Widać, że beemka nie zasypia gruszek w popiele i cały czas ucieka konkurencji",
-          "context": "Positive sentiment toward BMW specifically, noting that BMW isn't resting on its laurels and keeps running ahead of the competition",
-          "source": "forum.vstromclub.pl"
+          "quote": "The market's overall growth trend further contributed to this optimistic outlook",
+          "context": "Rising motorcycle registrations and expanding adventure segment created positive market momentum",
+          "source": "Poland market report, market trends"
         },
         {
-          "quote": "aksamitnie posłuszny",
-          "context": "Honda Gold Wing received positive mentions for its unmatched comfort and smooth riding experience",
-          "source": "motoryzacja.interia.pl"
+          "quote": "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R80 G/S",
+          "context": "Strong anticipation for new models, particularly heritage-focused designs, generated enthusiasm in the community",
+          "source": "Poland market report, BMW positioning"
         }
       ],
       "Neutral": [
         {
-          "quote": "RT wygląda... jak jakiś bagger bez kufra centralnego",
-          "context": "Some conservative BMW fans needed time to warm up to the new R1300RT design, expressing neutral curiosity about styling changes",
-          "source": "forum.vstromclub.pl"
+          "quote": "A substantial volume of conversations fell into the neutral category, comprising informational exchanges, technical specifications discussions, and comparative analyses without strong emotional language",
+          "context": "Technical discussions and factual comparisons represent a significant portion of online discourse without emotional bias",
+          "source": "Poland market report, sentiment analysis"
         },
         {
-          "quote": "promises to be…the most impressive touring bike on the market",
-          "context": "Cautious optimism about BMW R1300RT's potential in the touring segment",
-          "source": "bennetts.co.uk"
+          "quote": "Forum posts seeking advice on modifications, maintenance, or general riding tips often contributed to this segment",
+          "context": "Practical, educational content maintains neutral tone while providing valuable community information",
+          "source": "Poland market report, community discussions"
+        },
+        {
+          "quote": "Comparative analyses without strong emotional language represented informational exchanges",
+          "context": "Objective product comparisons and specification discussions maintain neutral sentiment while informing purchase decisions",
+          "source": "Poland market report, discussion patterns"
         }
       ],
       "Negative": [
         {
-          "quote": "jedynie co będzie zaporowe to cena",
-          "context": "Negative sentiment toward BMW specifically, with some riders fearing that the R1300RT's high-tech upgrades will come with a hefty price tag",
-          "source": "forum.vstromclub.pl"
+          "quote": "Reports of clutch problems and unusual fuel consumption for the 2025 Yamaha Tenere 700 generated concern",
+          "context": "Specific reliability issues with competitor models created negative sentiment despite overall positive brand perception",
+          "source": "Poland market report, Yamaha analysis"
         },
         {
-          "quote": "powinny być od [Japończyków] bardziej niezawodne. A nie są",
-          "context": "Skepticism about BMW's reliability record specifically, especially compared to Japanese competitors",
-          "source": "forum.vstromclub.pl"
+          "quote": "The BMW R 1300 GS received criticism for its actual off-road performance, contrasting with its marketing",
+          "context": "BMW's larger GS models faced criticism regarding gap between marketed and actual off-road capabilities",
+          "source": "Poland market report, BMW challenges"
+        },
+        {
+          "quote": "Some users found the Ducati DesertX 'too stiff' or 'less agile' off-road, leading to fatigue",
+          "context": "Specific performance limitations in off-road conditions generated negative feedback for certain models",
+          "source": "Poland market report, Ducati analysis"
         }
       ]
     }
@@ -2030,107 +1922,149 @@ export const conversationData = {
   "portugal": {
     "themeData": [
       {
-        "subject": "Technology and Innovation",
-        "value": 35
-      },
-      {
-        "subject": "Comfort and Touring Capability",
+        "subject": "Off-Road Performance",
         "value": 25
       },
       {
-        "subject": "Performance and Dynamics",
+        "subject": "Technology & Features",
+        "value": 20
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 18
+      },
+      {
+        "subject": "Versatility",
         "value": 15
       },
       {
-        "subject": "Styling and Design",
+        "subject": "Value & Pricing",
         "value": 10
       },
       {
-        "subject": "Competitor Comparisons",
-        "value": 8
+        "subject": "Design & Character Appeal",
+        "value": 7
       },
       {
-        "subject": "Market/Availability Concerns",
-        "value": 4
-      },
-      {
-        "subject": "Price and Value",
-        "value": 3
+        "subject": "Reliability Concerns",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Technology and Innovation": [
+      "Off-Road Performance": [
         {
-          "quote": "Radar tech comes to the RT",
-          "context": "The R1300RT's technology suite, especially Adaptive Cruise Control, dominated discussions as riders see BMW leading in tech among tourers",
-          "source": "Rev"
+          "quote": "Off-road excellence and next-level capability have made it the go-to machine for hardcore Adventure riders.",
+          "context": "This theme dominated discussions, with consumers emphasizing the need for authentic off-road prowess as a fundamental expectation for true adventure bikes. KTM's positioning as the \"King of Mid-Weight Adventurers\" exemplifies this priority.",
+          "source": "KTM 890 Adventure R review"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Advanced ABS, various ride modes, modern TFT displays, and connectivity options were frequently mentioned as desirable attributes.",
+          "context": "Modern technological enhancements are expected features that contribute to both safety and an enriched riding experience, with riders prioritizing advanced electronics and connectivity.",
+          "source": "Multiple manufacturer reviews"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "designed to cover many kilometers in total comfort",
+          "context": "Despite the rugged nature of adventure bikes, rider comfort for extended journeys is a high priority, with features like ergonomic seats and adjustable windscreens being crucial.",
+          "source": "Mi GT-K review"
+        }
+      ],
+      "Versatility": [
+        {
+          "quote": "this is a true adventure bike this bike checks all the boxes... I could see this excelling off-road.",
+          "context": "Consumers value motorcycles that perform well across various environments, from city commuting to highway cruising and challenging off-road trails.",
+          "source": "Honda Africa Twin review"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "The estimated price for the Mi GT-K in Portugal should be below €12,000.",
+          "context": "Price considerations are important for consumers evaluating whether a motorcycle's cost aligns with its features and performance within its segment.",
+          "source": "Mi GT-K review"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "The MV Agusta Enduro Veloce... enters the market with its unique design, engine, and concept.",
+          "context": "While not as dominant as performance features, distinctive aesthetics and unique character contribute to overall desirability and emotional connection.",
+          "source": "MV Agusta Enduro Veloce review"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "legendary durability... don't want to worry about frequent maintenance or hard to diagnose tech failures",
+          "context": "While not a dominant negative theme, reliability is valued as it provides peace of mind to adventure riders during demanding conditions.",
+          "source": "Honda Africa Twin review"
         }
       ]
     },
     "sentimentData": [
       {
         "name": "Positive Sentiment",
-        "value": 60
+        "value": 75
       },
       {
         "name": "Neutral Sentiment",
-        "value": 25
+        "value": 15
       },
       {
         "name": "Negative Sentiment",
-        "value": 15
+        "value": 10
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "taken the touring icon to a whole new level… lighter, more accessible and more dynamic than ever",
-          "context": "Enthusiasm for BMW RT's enhancements in power, technology, and versatility drove positive sentiment",
-          "source": "BMW Group Press Release"
+          "quote": "THE 2025 KTM 890 ADVENTURE R KEEPS ITS SEAT AS THE KING OF MID-WEIGHT ADVENTURERS.",
+          "context": "Strong positive sentiment toward KTM's positioning and capabilities in the adventure segment, highlighting market leadership.",
+          "source": "KTM 890 Adventure R review"
         },
         {
-          "quote": "I think it looks great…about time BMW got away from the whale-ish look",
-          "context": "After official reveal, many riders appreciated the modern, sleeker design of the BMW RT",
-          "source": "Reddit"
+          "quote": "this is a true adventure bike this bike checks all the boxes... I could see this excelling off-road.",
+          "context": "Enthusiastic endorsement of Honda Africa Twin's versatility and genuine adventure capabilities across multiple riding scenarios.",
+          "source": "Honda Africa Twin review"
         },
         {
-          "quote": "packs a lot of features and tech, possibly more than any competitor",
-          "context": "BMW RT's cutting-edge features like radar cruise control were seen as game-changers",
-          "source": "RevZilla"
+          "quote": "an incredible adventure bike that continues to set the bar for versatility and performance",
+          "context": "High praise for Triumph Tiger 900's balanced approach to adventure riding, emphasizing both versatility and performance excellence.",
+          "source": "Triumph Tiger 900 review"
         }
       ],
       "Neutral": [
         {
-          "quote": "If it's a long-held dream, I'd wait for the test drive. But expect a longer wait time when ordering",
-          "context": "Practical discussions about BMW delivery timelines and purchasing decisions",
-          "source": "Reddit"
+          "quote": "2026 R 12 G/S.",
+          "context": "Factual reference to future BMW model year designation without subjective commentary, representing informational discourse.",
+          "source": "BMW Motorrad heritage line information"
         },
         {
-          "quote": "the RT has 143 hp vs 136 hp of the 1250",
-          "context": "Factual spec comparisons between BMW models without strong sentiment",
-          "source": "Forum discussions"
+          "quote": "BMW Motorrad presents the new BMW R 12 G/S.",
+          "context": "Factual news announcement of the launch event without explicit positive or negative framing, purely informative content.",
+          "source": "BMW Group PressClub"
         },
         {
-          "quote": "Any word on when test rides will be available?",
-          "context": "Information-seeking queries about BMW RT availability",
-          "source": "Forum discussions"
+          "quote": "Vintage motorcycles only – ideal for those who appreciate classic machines",
+          "context": "Neutral description of vintage tour offerings, highlighting interest in classic motorcycles without evaluative judgment.",
+          "source": "Reddit discussion on vintage tours"
         }
       ],
       "Negative": [
         {
-          "quote": "this has to be the ugliest bike by far from BMW… I would not even test ride [it] if this image is correct",
-          "context": "Strong negative reactions to BMW RT's leaked design images from traditionalists",
-          "source": "Reddit"
+          "quote": "turn signals were a little more obvious",
+          "context": "Minor criticism of Honda Africa Twin's turn signal visibility, representing constructive feedback rather than fundamental flaws.",
+          "source": "Honda Africa Twin review"
         },
         {
-          "quote": "you REALLY have to want a 1300 boxer… to pay > $30k for this new RT",
-          "context": "Price concerns about BMW RT with many finding it expensive relative to alternatives",
-          "source": "Reddit"
+          "quote": "suspension was considered 'too soft'",
+          "context": "Specific criticism of Ducati DesertX suspension tuning, indicating subjective preference rather than major deficiency.",
+          "source": "Ducati DesertX review"
         },
         {
-          "quote": "there's a lot of tech that could go wrong out on a long tour",
-          "context": "Concerns about BMW RT's complexity and potential reliability issues with electronics",
-          "source": "Reddit"
+          "quote": "while no bike is perfect, overall satisfaction with new adventure models was high",
+          "context": "Acknowledgment that minor criticisms exist but are overshadowed by generally positive reception of new models.",
+          "source": "General market analysis"
         }
       ]
     }
@@ -2138,65 +2072,82 @@ export const conversationData = {
   "romania": {
     "themeData": [
       {
+        "subject": "Off-Road Performance",
+        "value": 25
+      },
+      {
         "subject": "Comfort & Ergonomics",
-        "value": 70
+        "value": 20
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 20
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 10
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 10
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 10
+      },
+      {
+        "subject": "Any other key themes",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Comfort & Ergonomics": [
+      "Off-Road Performance": [
         {
-          "quote": "Comfort is king",
-          "context": "Riders obsess over wind protection, seat comfort, and long-distance ergonomics. The R1300RT earned massive points for its vast windshield and newly adjustable side trim to channel airflow.",
-          "source": "Romanian social media discussions"
+          "quote": "pin-sharp offroad handling\" and \"serious travel capabilities",
+          "context": "This theme consistently emerged as a primary focus with riders frequently discussing the capabilities of models like the KTM 890 Adventure R. The CF Moto 450 MT garnered attention for its \"IMPECCABLE\" standing riding position and its 21/18-inch wheels and long travel suspension, which are considered crucial for true adventure riding.",
+          "source": "KTM 890 Adventure R discussions, CF Moto 450 MT reviews"
         }
       ],
-      "Performance & Engine": [
+      "Comfort & Ergonomics": [
         {
-          "quote": "finally enough power to not envy a K1600",
-          "context": "The new RT's boxer engine got people talking with 145hp widely celebrated as a substantial performance hike. Sportier riders might actually consider an RT now that it got away from the whale-ish look and presumably handles better.",
-          "source": "Reddit r/Motorrad"
+          "quote": "all-day comfort\" and \"Super comfortable",
+          "context": "Discussions frequently highlighted the importance of rider comfort, particularly for long journeys. The KTM 890 Adventure R was recognized for its comfort, while the Honda Africa Twin with its DCT was described as \"Super comfortable\" for city and on-road riding.",
+          "source": "KTM and Honda Africa Twin user feedback"
         }
       ],
       "Technology & Features": [
         {
-          "quote": "Romanians have shown appetite for automatics – in 2024, Honda sold more DCT bikes than manual for certain models",
-          "context": "Modern touring bikes are tech-heavy, and Romanian riders are increasingly tech-savvy. The R1300RT's radar-assisted Adaptive Cruise Control option attracted significant attention as a game-changer for highway cruising.",
-          "source": "motoRoute.ro"
+          "quote": "More technology than previous generations",
+          "context": "Modern adventure bikes are expected to be equipped with advanced technology. The Yamaha Ténéré 700 was highlighted for having more technology than previous generations, while KTM models were noted for their \"rider aids,\" \"6D Inertial Measurement Unit,\" and \"Cornering ABS.\"",
+          "source": "Yamaha Ténéré 700 and KTM model reviews"
         }
       ],
-      "Price & Value": [
+      "Reliability Concerns": [
         {
-          "quote": "a fully-loaded R1300RT will easily cross €30k… at that price, one could buy a car or two decent bikes",
-          "context": "Given Romania's economic context, cost was a prevalent theme. Many discussions evaluated whether the high prices of these tourers are justified, with real concerns about value for money.",
-          "source": "Reddit discussions"
+          "quote": "very well tested\" and \"even more reliable",
+          "context": "Reliability is a critical factor for adventure riders. The Ducati DesertX's Testastretta motor was described as \"very well tested\" and the bike itself as \"even more reliable.\" Conversely, a general perception of reliability concerns was noted for KTM.",
+          "source": "Ducati DesertX reviews and KTM brand perception"
         }
       ],
-      "Styling & Design": [
+      "Value & Pricing": [
         {
-          "quote": "futuristic and visually lighter",
-          "context": "The R1300RT's new design language (more angular, with slimmer profile) received mixed reactions. A majority liked the fresh aesthetic saying it shakes off the old man image, while others felt it lost some classic RT identity.",
-          "source": "BMW Press Release"
+          "quote": "much better value\" and \"High Cost of Adventure Motorcycles",
+          "context": "The cost of adventure motorcycles and their perceived value were recurring topics. The CF Moto 450 MT was explicitly lauded as offering \"much better value\" compared to used bikes, reflecting a broader market trend towards \"more affordable motorcycle\" options.",
+          "source": "CF Moto 450 MT and general market analysis"
         }
       ],
-      "Community & Touring Lifestyle": [
+      "Design & Character Appeal": [
         {
-          "quote": "RT vs GoldWing for a Balkan tour – which would you trust?",
-          "context": "A meaningful portion discussed touring as a passion, sharing ride photos, discussing upcoming tour events, and offering tips. These discussions illustrate the emotional connection riders have with their touring motorcycles.",
-          "source": "Motociclism.ro forum"
+          "quote": "classic enduro design inspired by the legendary BMW R 80 G/S",
+          "context": "Aesthetics and the unique character of a motorcycle contribute significantly to its appeal. The BMW R 12 G/S's design and its \"iconic BMW motorsport colours, spoked wheels, knobby tyres and near-identical silhouette\" were central to its discussion.",
+          "source": "BMW R 12 G/S design discussions"
         }
       ],
-      "Maintenance & After-Sales": [
+      "Any other key themes": [
         {
-          "quote": "costul de întreținere",
-          "context": "BMW's maintenance in Romania is known to be pricey at official dealers. A few posts warned that maintenance cost is something to budget for with the RT.",
-          "source": "Romanian forum discussions"
-        }
-      ],
-      "Safety Features": [
-        {
-          "quote": "if you brake hard while leaned in a curve, this bike will help keep you upright",
-          "context": "The RT's advanced ABS Pro (cornering ABS) is well-regarded. Many conversations focused on the LED adaptive headlight for illuminating corners at night, which is a big win for Romanian rural roads.",
-          "source": "Bennetts BikeSocial review"
+          "quote": "Bit heavy for a 'middleweight'",
+          "context": "Other discussions included specific attributes such as weight, luggage capacity, and engine sound. The Ducati DesertX was noted as \"Bit heavy for a 'middleweight'\" and the Honda Africa Twin's DCT added about 25 pounds to the bike.",
+          "source": "Ducati DesertX and Honda Africa Twin weight discussions"
         }
       ]
     },
@@ -2217,53 +2168,53 @@ export const conversationData = {
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "BMW is back to challenging the status quo…this is how you stay on top",
-          "context": "Excitement in enthusiast circles about the new R1300RT, reflecting BMW's innovation and market leadership.",
-          "source": "Reddit r/Motorrad"
+          "quote": "confidence-inspiring beast",
+          "context": "The Yamaha Ténéré 700 was described as a \"confidence-inspiring beast\" off-road, demonstrating positive sentiment towards its capabilities and performance in challenging terrain.",
+          "source": "Yamaha Ténéré 700 user reviews"
         },
         {
-          "quote": "a contender to be the most impressive touring bike on the market, full stop",
-          "context": "Expert reviewers setting industry-level context for the R1300RT's capabilities and positioning.",
-          "source": "Bennetts BikeSocial"
+          "quote": "fell in love with the BMW",
+          "context": "A rider's positive experience with the BMW F 850 GS, expressing emotional connection and satisfaction with the brand and model performance.",
+          "source": "BMW F 850 GS user testimonial"
         },
         {
-          "quote": "It's basically a luxury car on two wheels, I can ride 500 km and feel fresh",
-          "context": "Gold Wing owners frequently described their bike as the perfect touring machine, citing unmatched comfort.",
-          "source": "Gold Wing Romania Riders group"
+          "quote": "hugely capable",
+          "context": "The BMW R 12 G/S was described as a \"hugely capable\" machine, indicating positive anticipation and confidence in its performance capabilities.",
+          "source": "BMW R 12 G/S pre-launch discussions"
         }
       ],
       "Neutral": [
         {
-          "quote": "noul R1300RT",
-          "context": "Informational posts sharing specs or news without strong opinion, such as local dealerships announcing test ride availability.",
-          "source": "Motociclism.ro Facebook group"
+          "quote": "with a bigger tank",
+          "context": "Factual description of the Africa Twin Adventure Sports coming \"with a bigger tank\" without explicit positive or negative framing, representing neutral informational content.",
+          "source": "Honda Africa Twin Adventure Sports specifications"
         },
         {
-          "quote": "the weight…low-speed maneuvers take getting used to, like a cruise ship",
-          "context": "Factual observations about the Gold Wing's handling characteristics without positive or negative judgment.",
-          "source": "Reddit r/motorcycles"
+          "quote": "More technology than previous generations",
+          "context": "Neutral statement about the Ténéré 700 having \"More technology than previous generations\" without immediate judgment on its impact or value.",
+          "source": "Yamaha Ténéré 700 technical comparison"
         },
         {
-          "quote": "Yamaha hasn't updated the FJR in years, so it's being overtaken by tech-rich bikes",
-          "context": "Matter-of-fact commentary on the FJR1300's aging technology compared to newer models.",
-          "source": "PeMotoare Facebook post"
+          "quote": "all new boxer twin adds 9bhp",
+          "context": "Factual statement about the R 1300 GS technical specifications without immediate positive or negative assessment of the improvement.",
+          "source": "BMW R 1300 GS technical specifications"
         }
       ],
       "Negative": [
         {
-          "quote": "over $30k with options, you really have to want that 1300 boxer",
-          "context": "Price was the most common gripe about the BMW R1300RT, with many noting cheaper pre-owned alternatives.",
-          "source": "Reddit discussion"
+          "quote": "hard seat and lack of wind protection",
+          "context": "Specific criticism of the BMW R 12 G/S's comfort features, suggesting it might not be ideal for long-distance cruising and highlighting areas for potential improvement.",
+          "source": "BMW R 12 G/S user feedback"
         },
         {
-          "quote": "Looks like they're sticking with that same phone-based shitty GPS…I have a 2021 RT and I absolutely hate that thing",
-          "context": "Current R1250RT owner criticized BMW's TFT navigation system, highlighting frustration with the user interface.",
-          "source": "Reddit r/Motorrad"
+          "quote": "wind noise... pretty bad",
+          "context": "Criticism of the Ducati DesertX regarding wind noise issues, indicating a specific area where the model falls short of expectations.",
+          "source": "Ducati DesertX user reviews"
         },
         {
-          "quote": "Harley touring bikes are great… as long as the hotel isn't too far!",
-          "context": "Skepticism among non-Harley riders about the practicality of H-D tourers for long-distance touring.",
-          "source": "Romanian social media"
+          "quote": "controversially styled",
+          "context": "Negative reception of the BMW R 1300 GS's styling, indicating that design choices were not universally accepted by the target market.",
+          "source": "BMW R 1300 GS market reception"
         }
       ]
     }
@@ -2271,160 +2222,149 @@ export const conversationData = {
   "slovakia": {
     "themeData": [
       {
-        "subject": "Performance & Engine",
-        "value": 30
+        "subject": "Off-Road Performance",
+        "value": 25
       },
       {
-        "subject": "Design & Styling",
-        "value": 25
+        "subject": "Comfort & Ergonomics",
+        "value": 20
       },
       {
         "subject": "Technology & Features",
         "value": 20
       },
       {
-        "subject": "Comfort & Ergonomics",
-        "value": 15
-      },
-      {
-        "subject": "Price & Value",
+        "subject": "Reliability Concerns",
         "value": 10
       },
       {
-        "subject": "Competitive Comparisons",
-        "value": 0
+        "subject": "Value & Pricing",
+        "value": 10
       },
       {
-        "subject": "Weather Protection",
-        "value": 0
+        "subject": "Design & Character Appeal",
+        "value": 10
       },
       {
-        "subject": "Luggage Capacity",
-        "value": 0
+        "subject": "Any other key themes (e.g., Sustainability/Electric)",
+        "value": 5
       }
     ],
     "themeInsights": {
-      "Performance & Engine": [
+      "Off-Road Performance": [
         {
-          "quote": "motor je super, převodovka… opravdu super a rychle bych si na to zvyknul",
-          "context": "Riders praised the R1300RT's 145 hp boxer engine and its 110 Nm torque boost, with many welcoming the performance hike over the R1250RT",
-          "source": "Motorkari.cz forum"
-        }
-      ],
-      "Design & Styling": [
-        {
-          "quote": "Ta černá dlaždička místo světla… je to celé takové zvláštní",
-          "context": "The R1300RT's new design language was the most polarizing theme, with the front face and radar sensor garnering significant debate",
-          "source": "Motorkari.cz forum"
-        }
-      ],
-      "Technology & Features": [
-        {
-          "quote": "promises to be…a contender to be the most impressive touring bike on the market",
-          "context": "The R1300RT's radar-based Adaptive Cruise Control, ASA semi-automatic gearbox, and 10.25\" TFT dashboard elevated the touring experience",
-          "source": "Bennetts.co.uk"
+          "quote": "The best middleweight adventure bike that remains on top of the list is none other than the Yamaha Ténéré 700. It is not only the best-selling bike in this category but also a very practical one. This bike is termed as one of the most perfect adventure bikes because it delivers the best off-road performance.",
+          "context": "Off-road performance consistently emerges as a critical aspect of adventure riding, with consumers prioritizing advanced suspension, off-road tires, and high ground clearance.",
+          "source": "Market analysis and consumer discussions"
         }
       ],
       "Comfort & Ergonomics": [
         {
-          "quote": "proti nepřízni počasí… lepší než u K1600",
-          "context": "Long-distance comfort and wind protection are paramount, with the R1300RT's extensive fairing and adjustable panels drawing interest",
-          "source": "Motorkari.cz"
+          "quote": "KTM 1290 Super Adventure... in maximum comfort... will transport me to a long weekend somewhere by the sea.",
+          "context": "For adventure riders who often undertake long journeys, comfort is a paramount concern with features like comfortable riding position and good wind protection being crucial.",
+          "source": "Consumer reviews and forum discussions"
         }
       ],
-      "Price & Value": [
+      "Technology & Features": [
         {
-          "quote": "vypadla taková částka, že bych💸…",
-          "context": "The R1300RT's price (€27-30k fully loaded) became a major discussion point, with many experiencing sticker shock",
-          "source": "Motorkari.cz"
+          "quote": "KTM 2025 1390 Super Adventure S Evo may be the most technical serial motorcycle ever.",
+          "context": "Technological advancements are a significant market trend, with modern motorcycles becoming increasingly connected and tech-savvy with features like automated transmissions and radar-assisted systems.",
+          "source": "Product reviews and market analysis"
         }
       ],
-      "Competitive Comparisons": [
+      "Reliability Concerns": [
         {
-          "quote": "are certainly more comfortable…they're really big steamships",
-          "context": "Many conversations compared the RT to Gold Wing and K1600, with riders debating comfort versus agility trade-offs",
-          "source": "Motorkari.cz"
+          "quote": "The Yamaha Ténéré 700... a lightweight, no compromise adventure bike with outstanding reliability...",
+          "context": "While not always the most frequently discussed topic, reliability is a foundational expectation for adventure riders who often venture far from civilization.",
+          "source": "Consumer reviews and expert analysis"
         }
       ],
-      "Weather Protection": [
+      "Value & Pricing": [
         {
-          "quote": "lepší než u K1600",
-          "context": "The R1300RT traditionally excelled in weather protection, with riders noting it was even better than larger touring bikes",
-          "source": "Motorkari.cz"
+          "quote": "The '< $10,000' segment held the largest market share, capturing over 35% of the Adventure Motorcycle Market revenue. This segment is driven by the increasing popularity of budget-friendly adventure motorcycles.",
+          "context": "Price remains a significant consideration for consumers, particularly for entry-level riders, though premium segments are showing growth.",
+          "source": "Market research reports"
         }
       ],
-      "Luggage Capacity": [
+      "Design & Character Appeal": [
         {
-          "quote": "Nechápu příplatek za možnost rozšíření kufrů – u RT!!!!!",
-          "context": "Riders criticized BMW for charging extra for expandable panniers on a flagship tourer",
-          "source": "Motorkari.cz"
+          "quote": "The new BMW R 12 G/S skillfully captures the spirit of the original R 80 G/S boxer-engine enduro in terms of design while transferring it into the present day with modern technology.",
+          "context": "Beyond functional attributes, the aesthetic appeal and character of a motorcycle play a considerable role in consumer choice, with heritage styling being particularly valued.",
+          "source": "Product announcements and reviews"
+        }
+      ],
+      "Any other key themes (e.g., Sustainability/Electric)": [
+        {
+          "quote": "70% of riders express interest in long-range electric motorcycles, with over 60% of adventure riders willing to switch if battery life exceeds 250 km per charge.",
+          "context": "The rise of electric motorcycles is identified as a major trend, driven by global pushes for lower emissions and environmental consciousness.",
+          "source": "Consumer surveys and market trends"
         }
       ]
     },
     "sentimentData": [
       {
         "name": "Positive Sentiment",
-        "value": 45
+        "value": 65
       },
       {
         "name": "Neutral Sentiment",
-        "value": 30
+        "value": 25
       },
       {
         "name": "Negative Sentiment",
-        "value": 25
+        "value": 10
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "Design-wise…I think it looks great. It's about time BMW got away from the whale-ish/bulbous look it's had for its tourers",
-          "context": "BMW R1300RT - Some riders embraced the new design direction as modern and appealing",
-          "source": "Reddit.com"
+          "quote": "If you have that motorcycle adventure in your heart, then the Honda Africa Twin is for you. With 'Africa' you'll have a lot of fun and you'll travel all types of roads, even around the world.",
+          "context": "Reviews of adventure models are generally favorable, highlighting their performance, versatility, and rider enjoyment.",
+          "source": "Honda Africa Twin review"
         },
         {
-          "quote": "motor je super, převodovka… opravdu super a rychle bych si na to zvyknul",
-          "context": "BMW R1300RT - Veteran RT owner was thrilled with the new engine and semi-automatic transmission",
-          "source": "Motorkari.cz"
+          "quote": "KTM adventure bikes are known to be the most fun bikes for adventures. Whether tarmac or gravel, KTM adventure bikes prove to be the best in both worlds.",
+          "context": "KTM's offerings are praised for providing adventure capabilities across different terrains.",
+          "source": "KTM product discussions"
         },
         {
-          "quote": "I dare say I rode the best touring bike of today",
-          "context": "Harley-Davidson - Local dealership reviewer praised the 2024 Street Glide",
-          "source": "harley-davidson-presov.sk"
+          "quote": "The Adventure Motorcycle Market is expected to grow... The Adventure Motorcycle Market CAGR... is expected to be around 5.04% during the forecast period (2025 - 2034).",
+          "context": "The broader market is driven by rising popularity of adventure tourism and growing disposable income, reflecting positive consumer outlook.",
+          "source": "Market research analysis"
         }
       ],
       "Neutral": [
         {
-          "quote": "Není tak ošklivý, chce to asi vidět naživo a svézt se",
-          "context": "BMW R1300RT - Many riders reserved judgment until they could see and test the bike in person",
-          "source": "Motorkari.cz"
+          "quote": "Interesting as a styling exercise, showpiece etc. It's the sort of thing you'd see as a possible prototype of an electric bike, which eventually comes out looking v different.",
+          "context": "A portion of discourse maintains an objective tone when comparing features or discussing technical specifications.",
+          "source": "Custom bike design discussion"
         },
         {
-          "quote": "rather buy a nearly-new 1250 RT… The 1300, I see one drawback: the non-adjustable windshield…we'll see",
-          "context": "BMW comparison - Riders weighed pros and cons between new and previous generation models",
-          "source": "Motorkari.cz"
+          "quote": "Many may have learned that in addition to the R1300 line of GS bikes, BMW is building a retro R1200 G/S bike with styling options that bring to mind the R80 G/S.",
+          "context": "Discussions about unreleased models are often framed neutrally, acknowledging features without strong emotional bias.",
+          "source": "BMW MOA Forum"
         },
         {
-          "quote": "právom etalónom vo svojej triede",
-          "context": "Honda Gold Wing - Recognized as the benchmark in its class for comfort",
-          "source": "Automagazin.sk"
+          "quote": "Reliability is perhaps the most important factor when choosing the best adventure motorcycle. ADV bikes often venture far from civilization, making reliability essential.",
+          "context": "Technical discussions about motorcycle attributes are presented objectively as factual considerations.",
+          "source": "Adventure motorcycle analysis"
         }
       ],
       "Negative": [
         {
-          "quote": "hnusný jezdící kanystr",
-          "context": "BMW R1300RT - Harsh criticism likening the bike to an \"ugly riding jerrycan\"",
-          "source": "Motorkari.cz"
+          "quote": "Wouldn't want to actually ride it though*, the ergos look terrible.",
+          "context": "Negative sentiment typically surfaces in specific contexts, such as criticisms of particular design choices or ergonomic concerns.",
+          "source": "Custom bike forum discussion"
         },
         {
-          "quote": "Designers: So…how big should the RT windscreen be? BMW: Yes.",
-          "context": "BMW R1300RT - Tongue-in-cheek criticism of the oversized windscreen",
-          "source": "Reddit.com"
+          "quote": "KTM has been suffering from a severe financial crisis for a long time now. These top KTM models have also faced consequences. We can only hope that KTM doesn't shut down...",
+          "context": "Concerns about brand financial stability and company viability are noted as potential deterrents.",
+          "source": "Consumer concern discussions"
         },
         {
-          "quote": "a touring bike for my yacht",
-          "context": "BMW R1300RT - Sarcastic humor about the RT's premium pricing",
-          "source": "Reddit.com"
+          "quote": "More than 50% of adventure riders report difficulty in handling heavy models, leading to increased focus on lightweight alternatives.",
+          "context": "Challenges such as difficulty handling heavy models and high costs are acknowledged as potential barriers to adoption.",
+          "source": "Consumer survey data"
         }
       ]
     }
@@ -2432,93 +2372,672 @@ export const conversationData = {
   "slovenia": {
     "themeData": [
       {
-        "subject": "Performance & Engine",
-        "value": 35
-      },
-      {
-        "subject": "Comfort & Ergonomics",
-        "value": 40
-      },
-      {
-        "subject": "Technology & Features",
-        "value": 25
-      },
-      {
-        "subject": "Price & Value",
+        "subject": "Off-Road Performance",
         "value": 30
       },
       {
-        "subject": "Competitor Benchmarks",
+        "subject": "Comfort & Ergonomics",
         "value": 20
       },
       {
-        "subject": "BMW Brand & Heritage",
-        "value": 15
-      },
-      {
-        "subject": "Electric/Future Tourers",
-        "value": 5
-      },
-      {
-        "subject": "Styling & Design",
+        "subject": "Technology & Features",
         "value": 20
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 10
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 10
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 8
+      },
+      {
+        "subject": "Any other key themes (e.g., Touring Capability, Versatility)",
+        "value": 2
       }
     ],
     "themeInsights": {
-      "Performance & Engine": [
+      "Off-Road Performance": [
         {
-          "quote": "the grunt it deserved",
-          "context": "Many riders welcomed the boost from 136hp to 143hp, noting it makes two-up riding with luggage easier for overtakes",
-          "source": "Bennetts BikeSocial"
+          "quote": "The 2025 KTM 890 ADVENTURE R retains its title as the king of mid-weight adventure, with an all-new look inspired by KTM's rally heritage. Engineered for riders who crave off-road excellence, this machine combines proven WP XPLOR suspension with rally-style bodywork and an all-new graphics package.",
+          "context": "This theme consistently appeared as a primary driver of discussion within the adventure segment. Riders frequently emphasized the need for robust, long-travel suspension, high ground clearance, and off-road specific tires for tackling unpredictable terrain.",
+          "source": "KTM promotional content"
         }
       ],
       "Comfort & Ergonomics": [
         {
-          "quote": "Common praise centered on its... comfort features",
-          "context": "The R1300RT's comfort enhancements resonated with those for whom long-distance comfort is paramount",
-          "source": "Forum discussions"
+          "quote": "As a friendly, fun off-roading adventure machine the Ténéré is still one of the best, and with a slightly nicer weight distribution and a bit more support on the suspension, it feels not only more accomplished than ever, but more accessible too.",
+          "context": "Long-distance touring is a core application for adventure bikes, making comfort a crucial discussion point. Riders value adjustable windscreens, comfortable seats, and relaxed rider ergonomics.",
+          "source": "Yamaha Ténéré 700 review"
         }
       ],
       "Technology & Features": [
         {
-          "quote": "The tech features... are a major theme and a bragging right for many",
-          "context": "The R1300RT's new 10.25\" screen and connectivity features were heavily discussed and appreciated",
-          "source": "Social listening analysis"
+          "quote": "Honda's Africa Twin line is a tough group to criticize. They are big-bore world-travel-capable machines with impressive technology and great performance. They are easy to ride, easy to trust, and easy to purchase.",
+          "context": "Advanced technology is a significant draw. Discussions revolved around smart ride modes, traction control, connectivity options, and adaptive suspension systems.",
+          "source": "Honda Africa Twin review"
         }
       ],
-      "Price & Value": [
+      "Reliability Concerns": [
         {
-          "quote": "34,000€ c'est vraiment hors de prix",
-          "context": "By far the most dominant negative driver was price/cost, with many questioning if it's €10k better than cheaper tourers",
-          "source": "Facebook comment"
+          "quote": "Honda's legendary reliability and global support network were noted as significant advantages.",
+          "context": "Reliability and durability are paramount, especially for bikes venturing far from civilization. Honda's reputation and global support network were specifically highlighted.",
+          "source": "General market analysis"
         }
       ],
-      "Competitor Benchmarks": [
+      "Value & Pricing": [
         {
-          "quote": "For that money I get a Gold Wing with DCT",
-          "context": "Honda Gold Wing was frequently mentioned as the comfort benchmark, usually as \"sofa on wheels\"",
-          "source": "Forum discussions"
+          "quote": "The only major sticking point for me is always going to be the price which is always going to be the case on a well-spec premium bike like this from one of the major manufacturers. and so even a model without all the bells. and whistles like this is starting at just under 19 grand whereas this one well it's well over 20 which puts it out of reach for the majority of bikers.",
+          "context": "While premium models are sought after, the cost remains a discussion point. Economic factors like inflation and financing constraints impacted 35% of potential buyers.",
+          "source": "BMW R 1300 GS Adventure review"
         }
       ],
-      "BMW Brand & Heritage": [
+      "Design & Character Appeal": [
         {
-          "quote": "BMW's RT series essentially invented the modern sport-touring genre",
-          "context": "There is a background theme of brand loyalty and image, with BMW's heritage lending credibility",
-          "source": "Bennetts BikeSocial"
+          "quote": "The DesertX Rally truly does take adventure bikes to the next level, with its unrivalled nature off-road.",
+          "context": "The aesthetic and unique character of a bike also influenced discussions. The Ducati DesertX's \"neo-retro design\" was \"almost universally appreciated\".",
+          "source": "Ducati DesertX Rally review"
         }
       ],
-      "Electric/Future Tourers": [
+      "Touring Capability & Versatility": [
         {
-          "quote": "Will BMW make an electric RT?",
-          "context": "A few forward-looking conversations emerged about the future, though not dominant in Jan-May 2025",
-          "source": "Forum discussions"
+          "quote": "To wrap things up the 2025 Triumph Tiger 900 is an incredible adventure bike that continues to set the bar for versatility. and performance with its powerful engine lightweight design advanced technology and rugged styling it's a bike that's ready for any adventure.",
+          "context": "Versatility (ability to perform well both on and off-road) and touring capability (long-range fuel tanks, luggage capacity) were consistently valued across discussions.",
+          "source": "Triumph Tiger 900 review"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 75
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 20
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 5
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "With only a 2-lb weight gain, loads more power and torque, sharper handling, and endless rider-friendly standard features and options, the bike's size is much more manageable, and the intimidation factor is all but gone. The BMW R 1300 GSA is highly configurable to meet the needs of different riders.",
+          "context": "BMW's R 1300 GS Adventure was praised for its manageable size, improved power delivery, and configurability despite its premium positioning.",
+          "source": "BMW R 1300 GS Adventure review"
+        },
+        {
+          "quote": "The DX is a true swiss army for me. Plenty of longer trips with all day comfort. Lots of fun in the twisties and a blast off road. Everything from 150+ km/h cruising to catching air at a motocross track.",
+          "context": "Ducati DesertX was celebrated for its versatility across different riding scenarios, from long-distance comfort to aggressive off-road performance.",
+          "source": "Ducati DesertX user review"
+        },
+        {
+          "quote": "As a friendly, fun off-roading adventure machine the Ténéré is still one of the best, and with a slightly nicer weight distribution and a bit more support on the suspension, it feels not only more accomplished than ever, but more accessible too.",
+          "context": "Yamaha Ténéré 700 was praised for its approachable off-road capabilities and improved refinement in the latest model.",
+          "source": "Yamaha Ténéré 700 review"
         }
       ],
-      "Styling & Design": [
+      "Neutral": [
         {
-          "quote": "ta černá dlaždička místo světla mi tam nepasuje… připadá takové neohrabané",
-          "context": "The new angular front with radar box received mixed reactions, with the \"black tile\" being controversial",
-          "source": "Motorkari.cz forum"
+          "quote": "The 2025 model does have a touch more refinement to its slow speed capabilities; although the weight is still held up high it's noticeably easier to manage under 10mph than before, with a seat shape that also allows for an easy reach to the 'bars, too.",
+          "context": "Acknowledges improvements in the latest model while noting that previous versions had issues, representing a balanced assessment.",
+          "source": "Yamaha Ténéré 700 review"
+        },
+        {
+          "quote": "Honda's pre-programmed Ride Modes and suspension settings are good. But far from perfect for everyone, every time, on every road. And while the system gives you ample access to customize your own modes to your liking, and comes with a very cool touchscreen display, the processes are not the easiest.",
+          "context": "Recognizes benefits of Honda's technology but points out usability friction, showing measured evaluation.",
+          "source": "Honda Africa Twin review"
+        },
+        {
+          "quote": "The R 12 G/S is expected to be relatively light for a 1200cc boxer enduro (preliminary weight 229 kg), which could appeal to the over 50% of riders who find heavy models difficult to handle.",
+          "context": "Neutral assessment of BMW R 12 G/S's expected weight advantage, based on preliminary specifications.",
+          "source": "BMW R 12 G/S preview analysis"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "On the subject of which, the brakes are still the same in terms of hardware and aren't the sharpest where stopping power is concerned.",
+          "context": "Criticism of braking performance on Yamaha Ténéré 700, indicating a specific area needing improvement.",
+          "source": "Yamaha Ténéré 700 review"
+        },
+        {
+          "quote": "I gave the D, or fully automatic mode, several tries throughout this test attempting to get used to its operation, but I found it disappointing overall. D upshifts too soon for a motorcycle, shifting more like a modern economy car, and both upshifts and downshifts could be abrupt and jerky on our test bike.",
+          "context": "Criticism of BMW's automatic transmission mode, highlighting user dissatisfaction with performance characteristics.",
+          "source": "BMW R 1300 GS Adventure review"
+        },
+        {
+          "quote": "I'm just saying that for me there are too many things about it that I don't like. so sorry Ducati this one...source it's joyous.",
+          "context": "General criticism expressing dissatisfaction with Ducati DesertX, though specifics were not detailed in the quote.",
+          "source": "Ducati DesertX review"
+        }
+      ]
+    }
+  },
+  "spain": {
+    "themeData": [
+      {
+        "subject": "Off-Road Performance",
+        "value": 25
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 20
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 20
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 10
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 5
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 5
+      },
+      {
+        "subject": "Aftermarket",
+        "value": 0
+      },
+      {
+        "subject": "Other themes",
+        "value": 0
+      }
+    ],
+    "themeInsights": {
+      "Off-Road Performance": [
+        {
+          "quote": "This theme encompasses discussions around a motorcycle's capabilities on dirt roads, trails, and its handling in rough terrain. Key aspects include suspension travel, ground clearance, and the importance of specific wheel sizes (a 21-inch front wheel is often preferred for its off-road prowess).",
+          "context": "Off-road capability is a foundational expectation for the adventure segment, with consumers focusing on suspension travel, ground clearance, and appropriate wheel sizes for terrain handling.",
+          "source": "Social listening analysis of Spanish adventure segment discussions"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "Riders frequently discuss seating comfort, particularly for long journeys, the overall riding position, the effectiveness of wind protection (including screen design and potential buffeting), and the ease of managing the bike at low speeds or stops.",
+          "context": "Comfort features are paramount for long-distance touring, which is a significant use case for adventure bikes, including ergonomic design and wind protection.",
+          "source": "Consumer discussions and reviews analysis"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Advanced electronic rider aids are highly valued and frequently discussed. These include ABS (especially cornering ABS and systems with off-road modes), traction control, multiple riding modes, cruise control, modern TFT displays, smartphone connectivity.",
+          "context": "There is a clear and growing expectation for advanced electronics and rider aids that enhance safety, control, and the overall riding experience.",
+          "source": "Social listening analysis across various platforms"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "Discussions sometimes delve into mechanical issues, warranty coverage, and the origin of components, such as the 'Made in Asia' engines for some BMW F-GS models.",
+          "context": "Reliability and durability are fundamental expectations for adventure riders, who often venture into remote areas where dependability is critical.",
+          "source": "Forum discussions and consumer reviews"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "The initial purchase price, the cost of optional extras, and the perceived overall value for money are frequently debated. This is particularly pronounced with the entry of aggressively priced Chinese models into the market.",
+          "context": "With increasing competition, particularly from new entrants, consumers are highly conscious of the value proposition and meticulously compare features and pricing.",
+          "source": "Market analysis and consumer discussions"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "The aesthetics of the motorcycle, including its 'retro charm,' 'Dakarian touch,' and overall visual appeal, are important factors that often polarize opinions among consumers.",
+          "context": "Heritage styling and design character play a crucial role in consumer preference, with strong appetite for heritage-styled adventure bikes.",
+          "source": "Consumer preference analysis and social listening"
+        }
+      ],
+      "Aftermarket": [
+        {
+          "quote": "The availability of official and aftermarket parts for personalization and enhanced functionality contributes significantly to the ownership experience.",
+          "context": "Customization options enhance the ownership experience and allow riders to tailor their bike to specific needs and preferences.",
+          "source": "Consumer reviews and forum discussions"
+        }
+      ],
+      "Other themes": [
+        {
+          "quote": "Any other key themes (e.g., Accessories, Aftermarket)",
+          "context": "Additional minor themes that contribute to overall market discourse but represent smaller discussion volumes.",
+          "source": "Comprehensive social listening analysis"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 60
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 20
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 5
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "Reviews frequently express enjoyment, describing rides as 'fun,' 'thrilling,' and 'joyous,' and highlighting satisfaction with performance, handling, and comfort.",
+          "context": "Overall positive sentiment in the adventure segment is fueled by enthusiasm for new models and the inherent joy of riding.",
+          "source": "General adventure segment reviews and discussions"
+        },
+        {
+          "quote": "The success of models like the Yamaha Ténéré 700, whose appeal is 'significantly tied to its iconic 'Dakarian' styling,' underscores this preference for heritage aesthetics.",
+          "context": "Strong positive reception for heritage-styled designs that connect to adventure riding history and proven capability.",
+          "source": "Market analysis of successful heritage models"
+        },
+        {
+          "quote": "BMW's flagship adventure models, the R 1300 GS and R 1300 GS Adventure, demonstrated strong performance in April 2025, securing top sales positions.",
+          "context": "Continued strong performance and brand loyalty for established premium adventure offerings.",
+          "source": "Sales data and market performance analysis"
+        }
+      ],
+      "Neutral": [
+        {
+          "quote": "The market currently exhibits a compelling tension: consumers appreciate the authenticity and proven capability associated with heritage styling, yet they also increasingly demand advanced electronics and power.",
+          "context": "Balanced consumer expectations seeking both traditional appeal and modern functionality without clear preference dominance.",
+          "source": "Market dynamics analysis"
+        },
+        {
+          "quote": "The adventure segment remains highly competitive and dynamic, characterized by a growing influx of feature-rich, aggressively priced models from Chinese manufacturers.",
+          "context": "Neutral acknowledgment of changing competitive dynamics without clear positive or negative sentiment.",
+          "source": "Market overview and competitive landscape analysis"
+        },
+        {
+          "quote": "Established players like BMW, Yamaha, KTM, Honda, and Triumph continue to hold significant market presence.",
+          "context": "Stable market positioning acknowledgment for traditional brands amid changing dynamics.",
+          "source": "Market positioning analysis"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "The lack of tubeless tires on the Honda Transalp 2025 drew strong negative reactions, with users expressing 'total disappointment' and calling it a 'disaster'.",
+          "context": "Strong negative sentiment toward Honda regarding perceived feature omissions that consumers consider basic requirements.",
+          "source": "Motos.net forum discussions"
+        },
+        {
+          "quote": "Users of the Honda X-ADV 2025 expressed 'disappointment' due to a perceived lack of significant power or feature upgrades.",
+          "context": "Consumer disappointment with Honda for insufficient innovation and updates in new model releases.",
+          "source": "Consumer reviews and opinions"
+        },
+        {
+          "quote": "The new BMW R 1300 GS/A design, while generating considerable discussion, was described by some as 'not amazing-looking,' 'ugly,' or even 'spawn of Delsey and Samsonite'.",
+          "context": "Polarizing design opinions toward BMW's new flagship model, with some consumers expressing strong aesthetic criticism.",
+          "source": "Online discussions and reviews"
+        }
+      ]
+    }
+  },
+  "sweden": {
+    "themeData": [
+      {
+        "subject": "Off-Road Performance",
+        "value": 25
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 18
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 16
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 12
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 10
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 10
+      },
+      {
+        "subject": "Accessibility/Manageability",
+        "value": 9
+      }
+    ],
+    "themeInsights": {
+      "Off-Road Performance": [
+        {
+          "quote": "Class leader, off-road prowess, powerful engine, advanced tech",
+          "context": "Off-road capability is the primary discussion point, with models like KTM 890 Adventure R and Yamaha Ténéré 700 being highly valued for their performance in challenging terrains",
+          "source": "KTM 890 Adventure R discussions"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "Road-focused comfort, comprehensive electronics, mile-muncher",
+          "context": "Consumers consistently express desire for motorcycles that perform well both on-road and off-road, striking a balance between comfort for long distances and capability for challenging terrains",
+          "source": "Honda Africa Twin discussions"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Superb electronic controls\" and \"seamless integration",
+          "context": "Modern rider aids and advanced electronics are valued, though there's a subtle preference for functional technology over excessive complexity",
+          "source": "KTM 890 Adventure R and Honda Africa Twin discussions"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "Rugged, reliable, easy to use, off-road capable, fuel-efficient",
+          "context": "Proven engines and durable components are highly valued, as reliability is essential for adventure riding, especially in remote areas",
+          "source": "Yamaha Ténéré 700 discussions"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "Accessible price point\" and \"balance of performance and affordability",
+          "context": "Strong demand for bikes in the $10,000-$20,000 range indicates consumers seek compelling balance of features and affordability",
+          "source": "Mid-weight adventure bike market analysis"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "Neo-retro design\" and \"classic enduro design inspired by the legendary BMW R 80 G/S",
+          "context": "Growing trend toward \"retro-modern\" and \"heritage\" design across the motorcycle market, with consumers appreciating classic elements fused with modern performance",
+          "source": "Ducati DesertX and BMW R 12 G/S discussions"
+        }
+      ],
+      "Accessibility/Manageability": [
+        {
+          "quote": "Less intimidating, easier to handle\" and \"more manageable, yet still capable, premium adventure options",
+          "context": "Significant segment of riders seek motorcycles that are easier to manage, particularly at low speeds or when stopped, creating latent demand for more accessible premium options",
+          "source": "BMW GS series discussions and market analysis"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 70
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 20
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 10
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "Strong off-road capability, engine character, versatility, freedom of adventure",
+          "context": "Strong enthusiasm for adventure riding and capabilities of modern ADV motorcycles, particularly praising versatility and off-road performance",
+          "source": "Yamaha Ténéré 700 segment discussions"
+        },
+        {
+          "quote": "Top-selling, road-focused comfort, DCT, comprehensive electronics",
+          "context": "Positive reception for new 2025 models indicates manufacturers are generally meeting core consumer expectations",
+          "source": "Honda Africa Twin discussions"
+        },
+        {
+          "quote": "King of Mid-Weight returns",
+          "context": "High regard for serious off-road capabilities and advanced features in mid-weight adventure segment",
+          "source": "KTM 890 Adventure R discussions"
+        }
+      ],
+      "Neutral": [
+        {
+          "quote": "Balanced pros/cons",
+          "context": "Informational reviews and balanced assessments of different models, focusing on objective comparisons of features and capabilities",
+          "source": "General adventure motorcycle reviews"
+        },
+        {
+          "quote": "Technology, comfort, touring, but concerns about weight/height",
+          "context": "Balanced perspective on BMW GS series acknowledging strengths while noting accessibility concerns",
+          "source": "BMW GS series discussions"
+        },
+        {
+          "quote": "Road-biased touring comfort and advanced features",
+          "context": "Neutral assessment of Honda Africa Twin's positioning as touring-focused rather than pure adventure",
+          "source": "Honda Africa Twin market positioning"
+        }
+      ],
+      "Negative": [
+        {
+          "quote": "Wind buffeting",
+          "context": "Specific criticisms focusing on practical drawbacks and pricing concerns rather than fundamental design shortcomings",
+          "source": "Ducati DesertX discussions"
+        },
+        {
+          "quote": "Heavy beasts",
+          "context": "Persistent concerns about size and weight of larger adventure bikes creating barriers for new or less experienced riders",
+          "source": "BMW R 1300 GS discussions"
+        },
+        {
+          "quote": "Fickle touchscreen",
+          "context": "Granular criticisms focusing on specific interface issues and value perceptions",
+          "source": "Honda Africa Twin discussions"
+        }
+      ]
+    }
+  },
+  "switzerland": {
+    "themeData": [
+      {
+        "subject": "Off-Road Performance",
+        "value": 30
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 20
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 15
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 10
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 10
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 10
+      },
+      {
+        "subject": "Any other key themes",
+        "value": 5
+      }
+    ],
+    "themeInsights": {
+      "Off-Road Performance": [
+        {
+          "quote": "the KTM890 Adventure R continues to stand out as the bike that blurs the line between true off-road machine and everyday ride",
+          "context": "Off-road performance consistently emerges as the most dominant theme, accounting for an estimated 30.0% of discussions. This is evident in the praise for various models' off-road capabilities and the explicit expectation for the BMW R 12 G/S to be \"a lot better-suited for the dirt than its predecessor\"",
+          "source": "Expert review of KTM 890 Adventure R"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "The GS really is all-day comfortable. Natural ergonomics, a sumptuous seat... a superb electronically adjustable screen, heated grips...",
+          "context": "Comfort & Ergonomics constitute approximately 20.0% of discussions, reflecting their importance for long-distance touring. The BMW GS series is consistently praised for its supreme comfort, and even off-road focused bikes address rider comfort",
+          "source": "Expert review of BMW R1300GS"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "Advanced Tech Arsenal\" including ABS, traction control, ride modes, smartphone connectivity, optional quickshifter/cruise control",
+          "context": "Technology & Features account for an estimated 15.0% of conversations. While advanced technology is prevalent in premium models, there is a \"nuanced preference\" among consumers who seek technology that enhances the riding experience without becoming overwhelming",
+          "source": "KTM 890 Adventure R specifications"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "legendary Honda reliability",
+          "context": "Reliability Concerns represent approximately 10.0% of discussions. Honda's legendary reliability is a significant positive point, while some competitors face specific reliability issues such as oil leaks and vibrations",
+          "source": "Honda Africa Twin reviews"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "phenomenal value proposition",
+          "context": "Value & Pricing contribute around 10.0% to the discussion. The Honda Africa Twin is praised for its value proposition, while conversations also touch on the high cost of fully-specced BMW GS models",
+          "source": "Honda Africa Twin pricing discussions"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "dirt-ready retro\" aesthetic",
+          "context": "Design & Character Appeal makes up an estimated 10.0% of conversations. This includes rally-styled bodywork, Dakarian flavor, and the dirt-ready retro aesthetic of the BMW R 12 G/S, which is positioned as a \"visual tribute\" to its predecessor",
+          "source": "BMW R 12 G/S marketing materials"
+        }
+      ],
+      "Any other key themes": [
+        {
+          "quote": "delivery delays in Central Europe",
+          "context": "Other key themes such as availability, delivery delays, and broader touring/travel discussions account for approximately 5.0% of conversations. Noteworthy examples include Yamaha Ténéré 700 delivery delays and KTM production halts",
+          "source": "Consumer discussions on delivery issues"
+        }
+      ]
+    },
+    "sentimentData": [
+      {
+        "name": "Positive Sentiment",
+        "value": 65
+      },
+      {
+        "name": "Neutral Sentiment",
+        "value": 25
+      },
+      {
+        "name": "Negative Sentiment",
+        "value": 10
+      }
+    ],
+    "sentimentInsights": {
+      "Positive": [
+        {
+          "quote": "King of Mid-Weight Adventurers",
+          "context": "The KTM 890 Adventure R is frequently lauded with positive descriptions emphasizing its off-road capabilities and versatility",
+          "source": "KTM 890 Adventure R reviews"
+        },
+        {
+          "quote": "friendly, fun off-roading adventure machine",
+          "context": "The Yamaha Ténéré 700 receives consistent positive sentiment for its approachable off-road characteristics and user-friendly nature",
+          "source": "Yamaha Ténéré 700 reviews"
+        },
+        {
+          "quote": "game changer",
+          "context": "The Honda Africa Twin is hailed positively for its comprehensive capabilities and strong value proposition in the adventure segment",
+          "source": "Honda Africa Twin reviews"
+        }
+      ],
+      "Neutral": [],
+      "Negative": [
+        {
+          "quote": "delivery delays in Central Europe, including Switzerland",
+          "context": "The Yamaha Ténéré 700 experienced delivery delays which generated frustration among consumers waiting for their motorcycles",
+          "source": "Consumer complaints about Yamaha delivery issues"
+        },
+        {
+          "quote": "terrible vibration",
+          "context": "The Triumph Tiger 900 faced specific negative sentiment regarding vibrations and oil leak issues reported by actual riders",
+          "source": "Consumer experience reports on Triumph Tiger 900"
+        }
+      ]
+    }
+  },
+  "uk": {
+    "themeData": [
+      {
+        "subject": "O-Road Performance",
+        "value": 26
+      },
+      {
+        "subject": "Design & Character Appeal",
+        "value": 21
+      },
+      {
+        "subject": "Technology & Features",
+        "value": 17
+      },
+      {
+        "subject": "Comfort & Ergonomics",
+        "value": 14
+      },
+      {
+        "subject": "Reliability Concerns",
+        "value": 10
+      },
+      {
+        "subject": "Value & Pricing",
+        "value": 7
+      },
+      {
+        "subject": "Any other key themes (e.g., Weight, Fuel Range, Aftermarket)",
+        "value": 5
+      }
+    ],
+    "themeInsights": {
+      "O-Road Performance": [
+        {
+          "quote": "Engineered for off-road excellence",
+          "context": "Consumers fundamentally prioritize a bike's genuine capability to perform effectively off-road, viewing it as a core aspect of the \"adventure\" experience. Over 85% of adventure motorcycle owners prioritize features such as advanced suspension, off-road tires, and high ground clearance.",
+          "source": "KTM 890 Adventure R discussions, Consumer survey data"
+        }
+      ],
+      "Design & Character Appeal": [
+        {
+          "quote": "Pays homage to the legendary BMW R 80 G/S of 1980",
+          "context": "The appeal of heritage styling reflects a deeper consumer desire for authenticity, a connection to motorcycling history, and a blend of classic aesthetics with modern performance. The 'Modern Classic' segment showed only a 9.8% decline compared to 29% for the broader adventure category.",
+          "source": "BMW R 12 G/S pre-launch discussions, Market performance data"
+        }
+      ],
+      "Technology & Features": [
+        {
+          "quote": "YCC-T electronic throttle, Sport and Explorer ride modes",
+          "context": "Consumers value modern technological advancements that enhance the riding experience, safety, and convenience, provided they are reliable and genuinely useful for adventure riding.",
+          "source": "Yamaha Ténéré 700 discussions"
+        }
+      ],
+      "Comfort & Ergonomics": [
+        {
+          "quote": "Superb bike. Light & agile; and at my age most importantly comfortable!",
+          "context": "For longer rides and varied conditions, physical comfort is crucial. This includes seating, riding position, and vibration management, directly impacting rider endurance and enjoyment.",
+          "source": "Triumph Tiger 900 GT Pro owner feedback"
+        }
+      ],
+      "Reliability Concerns": [
+        {
+          "quote": "Clutch problems within a few hundred miles",
+          "context": "A foundational expectation; consumers demand a dependable motorcycle that will not suffer from mechanical or software failures, as reliability directly impacts safety, enjoyment, and long-term ownership.",
+          "source": "Yamaha Ténéré 700 user reports"
+        }
+      ],
+      "Value & Pricing": [
+        {
+          "quote": "Over 65% of potential buyers finding them too expensive",
+          "context": "The high cost of adventure motorcycles, particularly models above 1000cc, is a significant deterrent. Consumers assess the overall proposition of a motorcycle, balancing its price against its perceived capabilities.",
+          "source": "Market research data"
+        }
+      ],
+      "Weight, Fuel Range, Aftermarket": [
+        {
+          "quote": "Lightweight...229kg...Oh FFS",
+          "context": "Ease of handling and practical considerations like fuel capacity become critical factors, especially when they don't align with consumer expectations for adventure utility.",
+          "source": "BMW R 12 G/S pre-launch forum discussions"
         }
       ]
     },
@@ -2529,707 +3048,63 @@ export const conversationData = {
       },
       {
         "name": "Neutral Sentiment",
-        "value": 15
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 30
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "not just the best BMW tourer… but possibly the best touring bike full stop",
-          "context": "Expert reviews praised the R1300RT's improvements, particularly performance, technology, and heritage",
-          "source": "Bennetts BikeSocial"
-        },
-        {
-          "quote": "With the new R1300RT, we've taken the touring icon to a whole new level… lighter, more accessible and more dynamic than ever",
-          "context": "BMW's own messaging resonated with fans who trust the brand to deliver quality tourers",
-          "source": "BMW PressClub Slovenia"
-        },
-        {
-          "quote": "why do you think the police use them – because of how easy they handle",
-          "context": "Police use of BMW RTs was mentioned as proof of their maneuverability and durability",
-          "source": "Motorkari.cz forum"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "When is it coming to Slovenia?",
-          "context": "Many posts were informational or Q&A about availability without strong emotion",
-          "source": "Social media monitoring"
-        },
-        {
-          "quote": "dokler ne preizkusim",
-          "context": "Some riders adopted a \"wait and see\" approach, withholding judgment until they try it",
-          "source": "Forum discussions"
-        },
-        {
-          "quote": "Není tak ošklivý, chce to asi vidět naživo a svézt se",
-          "context": "Even critics acknowledged they need to see it in person and ride it before final judgment",
-          "source": "Motorkari.cz forum"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "Z konfigurátoru na mě vypadla taková částka, že bych…😱",
-          "context": "Riders frequently complained that a nicely equipped R1300RT would cost over €30k, expressing shock at fully-loaded price",
-          "source": "Motorkari.cz forum"
-        },
-        {
-          "quote": "Je to celé takové zvláštní, připomíná furt GS… nějak mi to připadá neohrabané",
-          "context": "The styling/design was the second major source of negativity, with the new angular front being divisive",
-          "source": "Motorkari.cz forum"
-        },
-        {
-          "quote": "Zklamání. Sehnat 1250RT, nebo úplně změnit kategorii",
-          "context": "Some were so disappointed by price and looks they'd rather buy a used 1250RT or change bike category entirely",
-          "source": "Motorkari.cz forum"
-        }
-      ]
-    }
-  },
-  "spain": {
-    "themeData": [
-      {
-        "subject": "Design & Styling Debate",
-        "value": 30
-      },
-      {
-        "subject": "Technology & Features",
         "value": 25
       },
       {
-        "subject": "Performance & Riding Experience",
-        "value": 15
-      },
-      {
-        "subject": "Touring Comfort & Purpose",
-        "value": 10
-      },
-      {
-        "subject": "Competitive Comparisons",
-        "value": 8
-      },
-      {
-        "subject": "Price & Value",
-        "value": 7
-      },
-      {
-        "subject": "Reliability Concerns",
-        "value": 3
-      },
-      {
-        "subject": "Community & Brand Experience",
-        "value": 2
-      }
-    ],
-    "themeInsights": {
-      "Design & Styling Debate": [
-        {
-          "quote": "Es horrible… la última RT rutera y elegante se fue con la R1250RT. Esto es otra cosa…",
-          "context": "Many longtime BMW enthusiasts lamented the loss of the classic RT aesthetic, feeling the new design is too sporty and angular",
-          "source": "BMWMotos.com Forum"
-        }
-      ],
-      "Technology & Features": [
-        {
-          "quote": "Para mí ASA… es imprescindible",
-          "context": "Spanish riders discussed the RT's tech arsenal including Adaptive Cruise Control, 10.25\" TFT with Connectivity Hub, radar sensors, and especially the clutchless transmission (ASA)",
-          "source": "BMWMotos.com Forum"
-        }
-      ],
-      "Performance & Riding Experience": [
-        {
-          "quote": "más compacta y ligera… pensada para quienes disfrutan de tramos revirados sin renunciar al confort",
-          "context": "With a new 1300cc boxer making 145 hp, lighter wheels and chassis, Spanish riders expect the RT to handle more like a sport-tourer",
-          "source": "Spanish press release"
-        }
-      ],
-      "Touring Comfort & Purpose": [
-        {
-          "quote": "posición de conducción más adelantada que mejora la maniobrabilidad y el confort, especialmente en viajes largos",
-          "context": "Many discussions reaffirmed the core purpose of these bikes – long-distance comfort with improved fairing and wind deflectors",
-          "source": "Motofichas.com"
-        }
-      ],
-      "Competitive Comparisons": [
-        {
-          "quote": "en pleno 2025 solamente BMW y Honda apuestan todavía por [este tipo de moto]",
-          "context": "Discussion of competitors was limited since few remain, but important comparisons were made with Honda's Gold Wing and other BMW models",
-          "source": "Fernando Magdaleno YouTube"
-        }
-      ],
-      "Price & Value": [
-        {
-          "quote": "venderán [esta moto] por el Select",
-          "context": "At €24,680 base in Spain (about €3k higher than the outgoing model), some commenters felt it was \"infumable\" unless BMW convinces them of its worth",
-          "source": "BMWMotos.com Forum"
-        }
-      ],
-      "Reliability Concerns": [
-        {
-          "quote": "Fiabilidad comprometida seguro… el contagio ha llegado a las motos",
-          "context": "Some riders feared that added technology might hurt reliability, comparing to BMW cars' complexity",
-          "source": "BMW Motorrad España Facebook"
-        }
-      ],
-      "Community & Brand Experience": [
-        {
-          "quote": "Ya sabéis cómo caza la perrilla",
-          "context": "Brand trust underpins sentiment – some negative comments referenced BMW \"losing its essence\" by over-techifying",
-          "source": "BMWMotos.com Forum"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
         "name": "Negative Sentiment",
-        "value": 50
-      },
-      {
-        "name": "Positive Sentiment",
-        "value": 30
-      },
-      {
-        "name": "Neutral Sentiment",
         "value": 20
       }
     ],
     "sentimentInsights": {
       "Positive": [
         {
-          "quote": "En marcha tiene que ir del copón… el motor este peta… cambios en la amortiguación, altura… Casi nada",
-          "context": "Riders praised the modern features, performance, and engineering improvements of the BMW R 1300 RT",
-          "source": "BMWMotos.com Forum"
+          "quote": "Loving the 2025 Tenere",
+          "context": "Yamaha Ténéré 700 users expressing satisfaction with new features and capabilities despite some reported issues.",
+          "source": "Reddit Ténéré 700 discussions"
         },
         {
-          "quote": "Me encanta, moderna y atractiva, es un paso adelante brutal en estética (para mi gusto)",
-          "context": "A minority liked the new looks of the BMW R 1300 RT, showing the design did resonate with some",
-          "source": "BMWMotos.com Forum"
+          "quote": "Considerably better in every way, and even more reliable",
+          "context": "Ducati DesertX owners praising the bike's versatility and reliability across different riding scenarios.",
+          "source": "Reddit DesertX discussions"
         },
         {
-          "quote": "al modelo anterior lo envía a la prehistoria",
-          "context": "If the BMW R 1300 RT rides like the new GS, handling and power were expected to be top-notch",
-          "source": "BMWMotos.com Forum"
+          "quote": "King of mid-weight adventure",
+          "context": "KTM 890 Adventure R consistently positioned as the leader in its segment, with high appreciation for off-road prowess.",
+          "source": "KTM 890 Adventure R discussions"
         }
       ],
       "Neutral": [
         {
-          "quote": "tengo el corasón partío… las maletas angulosas me gustan más que antes. El frontal, no tanto",
-          "context": "Mixed sentiments combined excitement for the BMW R 1300 RT's capabilities with reservations about its appearance or cost",
-          "source": "BMWMotos.com Forum"
+          "quote": "The bike's agility, despite its 253 kg wet weight",
+          "context": "Honda Africa Twin reviews noting performance characteristics without strong positive or negative sentiment.",
+          "source": "Honda Africa Twin reviews"
         },
         {
-          "quote": "hay que verla cara a cara",
-          "context": "Many users suggested initial aesthetic shock may fade once people see the BMW R 1300 RT in person",
-          "source": "BMWMotos.com Forum"
+          "quote": "17410 Euro?",
+          "context": "BMW R 12 G/S price discussions showing factual consideration without strong emotional response.",
+          "source": "BMW R 12 G/S pre-launch forum discussions"
         },
         {
-          "quote": "Lo mismo me parecía la última Goldwing y cada vez me gusta más",
-          "context": "Some forum users suggested initial dislike can soften over time, which bodes well for the BMW RT",
-          "source": "BMWMotos.com Forum"
+          "quote": "Tried and true reliable stuff",
+          "context": "Ducati DesertX engine and electronics assessment showing practical acceptance.",
+          "source": "Reddit DesertX discussions"
         }
       ],
       "Negative": [
         {
-          "quote": "Es horrible, sin más… La última RT… elegante… se fue con la R1250RT",
-          "context": "Many BMW loyalists found the new look too sporty or angular, lamenting the loss of the traditional RT identity",
-          "source": "BMWMotos.com Forum"
+          "quote": "The most disappointing spec is the 15l tank, which is a joke for this motor",
+          "context": "BMW R 12 G/S fuel tank capacity generating significant disappointment and concern about range for adventure touring.",
+          "source": "BMW R 12 G/S pre-launch forum discussions"
         },
         {
-          "quote": "lo mínimo es que entre por los ojos",
-          "context": "With options the BMW RT could exceed €30–35k, and users felt a bike so expensive should at least look good",
-          "source": "BMWMotos.com Forum"
+          "quote": "Extreme vibration on the hands",
+          "context": "Honda Africa Twin post-repair quality issues causing user frustration with dealer service standards.",
+          "source": "Reddit Honda Africa Twin discussions"
         },
         {
-          "quote": "si no se estropea, que esa es otra",
-          "context": "Some feared that added technology on the BMW might hurt reliability",
-          "source": "BMWMotos.com Forum"
-        }
-      ]
-    }
-  },
-  "sweden": {
-    "themeData": [
-      {
-        "subject": "New Features & Technology",
-        "value": 35
-      },
-      {
-        "subject": "Performance and Ride Experience",
-        "value": 25
-      },
-      {
-        "subject": "Comfort & Touring Capability",
-        "value": 20
-      },
-      {
-        "subject": "Pricing and Value Proposition",
-        "value": 10
-      },
-      {
-        "subject": "Comparisons and Alternatives",
-        "value": 5
-      },
-      {
-        "subject": "Design & Aesthetics",
-        "value": 3
-      },
-      {
-        "subject": "Dealer & Service Network",
-        "value": 1
-      },
-      {
-        "subject": "Other",
-        "value": 1
-      }
-    ],
-    "themeInsights": {
-      "New Features & Technology": [
-        {
-          "quote": "a huge range of options includes semi-auto transmission and radar-assisted adaptive cruise",
-          "context": "BMW R1300RT's advanced technology features including radar-based Adaptive Cruise Control, blind-spot monitoring, and Dynamic Chassis Adaptation are generating significant excitement among riders",
-          "source": "bennetts.co.uk"
-        }
-      ],
-      "Performance and Ride Experience": [
-        {
-          "quote": "means a substantial performance hike",
-          "context": "The new 1300cc boxer engine delivering 145 hp and 149 Nm torque represents a significant upgrade that riders appreciate for dynamic touring",
-          "source": "bennetts.co.uk"
-        }
-      ],
-      "Comfort & Touring Capability": [
-        {
-          "quote": "your shortcut to the ultimate touring experience",
-          "context": "BMW's enhanced wind protection, adjustable ergonomics, and collapsible luggage system directly address core touring needs",
-          "source": "bmwmotorcycles.com"
-        }
-      ],
-      "Pricing and Value Proposition": [
-        {
-          "quote": "the folks who will buy the R1300RT will just be trading their R1250RT… and signing on yet another loan",
-          "context": "High pricing remains a barrier, with fully loaded models exceeding 340,000 SEK, limiting accessibility to affluent existing owners",
-          "source": "reddit.com"
-        }
-      ],
-      "Comparisons and Alternatives": [
-        {
-          "quote": "Really curious where the K1600GT will fit in with the existence of a R1300RT",
-          "context": "The R1300RT's improved capabilities blur the lines between BMW's touring families, questioning the need for the heavier K1600",
-          "source": "reddit.com"
-        }
-      ],
-      "Design & Aesthetics": [
-        {
-          "quote": "This is atrocious… no human would think 'that's beautiful'",
-          "context": "The R1300RT's angular, futuristic design has become polarizing, with opinions ranging from praise for modernity to harsh criticism",
-          "source": "reddit.com"
-        }
-      ],
-      "Dealer & Service Network": [
-        {
-          "quote": "my local BMW dealer was very helpful checking the VIN for me",
-          "context": "Positive dealer experiences contribute to brand loyalty, though limited network coverage in rural Sweden remains a concern",
-          "source": "reddit.com"
-        }
-      ],
-      "Other": [
-        {
-          "quote": "BMW R1300RT är din genväg till den ultimata touringupplevelsen",
-          "context": "BMW's Swedish marketing messaging emphasizes the ultimate touring experience, resonating with local audience",
-          "source": "instagram.com"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 60
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 30
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 10
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "Love the quirkiness of these new designs. BMW is back to challenging the status quo – this is how you stay on top.",
-          "context": "Riders appreciate BMW's innovative approach and willingness to push boundaries in design and technology",
-          "source": "reddit.com"
-        },
-        {
-          "quote": "I want one!",
-          "context": "Simple but powerful expression of aspirational interest in the new R1300RT",
-          "source": "reddit.com"
-        },
-        {
-          "quote": "cutting-edge technology with unmatched performance",
-          "context": "Swedish riders at dealer events praised the combination of advanced features and enhanced performance",
-          "source": "instagram.com"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "R1300RT will begin retail sales in June... Full redesign. The bags are now collapsible…16L capacity collapsed, 33L expanded... Adaptive chassis control...",
-          "context": "Factual sharing of specifications and features without strong opinion, helping fellow enthusiasts stay informed",
-          "source": "reddit.com"
-        },
-        {
-          "quote": "With UK pricing from £18,900 (and easily over £20k+ with options)",
-          "context": "Objective price discussions helping riders understand market positioning",
-          "source": "bennetts.co.uk"
-        },
-        {
-          "quote": "BMW achieved a very high Share of Voice (SOV) in the touring segment's online chatter – an estimated 50–60%",
-          "context": "Market analysis showing BMW's dominance in touring segment conversations",
-          "source": "Market Report"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "Looks like they're going to stick with that same phone-based shitty GPS system… I have a 2021 RT and I absolutely hate that thing.",
-          "context": "Strong dissatisfaction with BMW's smartphone-based navigation system from current owners",
-          "source": "reddit.com"
-        },
-        {
-          "quote": "Easy to push the price through the roof when you start ticking options boxes",
-          "context": "Criticism of BMW's pricing strategy and expensive add-ons limiting accessibility",
-          "source": "bennetts.co.uk"
-        },
-        {
-          "quote": "Optimus Prime… had sex with a Lego set",
-          "context": "Colorful criticism of the R1300RT's angular, boxy design aesthetic",
-          "source": "reddit.com"
-        }
-      ]
-    }
-  },
-  "switzerland": {
-    "themeData": [
-      {
-        "subject": "Comfort and Ergonomics",
-        "value": 35
-      },
-      {
-        "subject": "Features & Technology",
-        "value": 25
-      },
-      {
-        "subject": "Performance and Ride Quality",
-        "value": 15
-      },
-      {
-        "subject": "Price and Value",
-        "value": 10
-      },
-      {
-        "subject": "Reliability & Durability",
-        "value": 8
-      },
-      {
-        "subject": "Design and Styling",
-        "value": 4
-      },
-      {
-        "subject": "Community and Use-Case Discussions",
-        "value": 2
-      },
-      {
-        "subject": "Weather Protection & Climate Management",
-        "value": 1
-      }
-    ],
-    "themeInsights": {
-      "Comfort and Ergonomics": [
-        {
-          "quote": "It's too cramped for me. I'm 196 cm tall… the pegs are just too high. I wish it had a peg lowering kit",
-          "context": "Comfort remains the paramount theme for touring motorcycles, with discussions focusing on seat comfort, wind protection, and passenger accommodations. The R 1300 RT's heated passenger backrest was widely praised for enhancing two-up riding comfort.",
-          "source": "Reddit"
-        }
-      ],
-      "Features & Technology": [
-        {
-          "quote": "The radar unit is not ugly",
-          "context": "The touring segment serves as a showcase for high-tech features, with the R 1300 RT's radar-assisted adaptive cruise control, Dynamic ESA, and 10.25-inch TFT display generating significant buzz. However, concerns about excessive electronics and complexity also emerged.",
-          "source": "BMW MOA Forum"
-        }
-      ],
-      "Performance and Ride Quality": [
-        {
-          "quote": "I have no interest in the K16s or Gold Wings… [The RT] is the only class of touring bike I'd care to own",
-          "context": "The R 1300 RT's increased power (145 hp) and lighter handling were frequently noted, with riders praising its better power-to-weight ratio and agility in mountain curves compared to heavier competitors.",
-          "source": "BMW SportTouring Forum"
-        }
-      ],
-      "Price and Value": [
-        {
-          "quote": "You REALLY have to want a 1300 boxer in your sport tourer to pay > $30k for this new RT",
-          "context": "The high price was a major negative driver, with the base price around CHF 21-22k easily soaring above CHF 30k with options. Consumers questioned the value proposition compared to pre-owned alternatives.",
-          "source": "Reddit"
-        }
-      ],
-      "Reliability & Durability": [
-        {
-          "quote": "According to the GS Europe forum, the 1300 is really problematic. Still, after more than a year since its release… The 1250 is finished and mature and up to €10k cheaper",
-          "context": "This theme gained prominence due to reports of first-year issues with the R 1300 GS sharing the same engine platform. Consumers expressed preference for proven models over unproven new releases.",
-          "source": "Reddit"
-        }
-      ],
-      "Design and Styling": [
-        {
-          "quote": "BMW [is] literally [messing] around now seeing how ugly they can make a bike that still sells",
-          "context": "The R 1300 RT's new styling was polarizing, with the front end drawing heavy criticism and comparisons to a \"robot bull\" or \"Judge Dredd's bike,\" especially among older RT fans who preferred classic aesthetics.",
-          "source": "Reddit"
-        }
-      ],
-      "Community and Use-Case Discussions": [
-        {
-          "quote": "I'm 78 years old and locked into the older designs",
-          "context": "Conversations touched upon how these bikes are used and the aging demographic of touring riders, highlighting the challenge of attracting younger generations who might prefer more versatile bikes.",
-          "source": "BMW MOA Forum"
-        }
-      ],
-      "Weather Protection & Climate Management": [
-        {
-          "quote": "The movable panels on the side are pretty interesting… keeps feet dry",
-          "context": "Weather protection includes wind protection and climate management features like heated grips/seats and adjustable aerodynamic panels that help keep riders dry and comfortable.",
-          "source": "BMW MOA Forum"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 40
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 20
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 40
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "Design-wise… I think it looks great. It's about time BMW got away from the whale-ish/bulbous look it's had for its tourers",
-          "context": "Much of the positive sentiment centered on the R 1300 RT's advanced features and enhanced performance, with riders welcoming the increase in power and cutting-edge technology.",
-          "source": "Reddit"
-        },
-        {
-          "quote": "The movable panels on the side are pretty interesting. The heated passenger backrest, seat and grips are a nice addition",
-          "context": "Positive reactions focused on comfort and safety enhancements like active aerodynamics and heating features, with appreciation for BMW's engineering innovations.",
-          "source": "BMW MOA Forum"
-        },
-        {
-          "quote": "a big enough step forward over its predecessor to contend with any [tourer]…makes a case that it's still the benchmark",
-          "context": "Many positive posts highlighted brand loyalty and the RT's continued benchmark status in touring motorcycles, praising its technological advancement.",
-          "source": "Bennetts"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "It looks strange… need to see still pictures or see it in person",
-          "context": "Many riders reserved judgment on styling until they could see the bike in person, adopting a \"wait and see\" approach to form balanced opinions.",
-          "source": "BMW MOA Forum"
-        },
-        {
-          "quote": "I'd actually test ride both to make a reliable decision… then decide which suits you better",
-          "context": "Neutral sentiment often came from pragmatic buyers comparing options without emotional attachment, prioritizing direct experience over speculation.",
-          "source": "Reddit"
-        },
-        {
-          "quote": "guess it will have to be ridden to be believed",
-          "context": "Professional test rides published in May began to temper some initial fears by providing positive first impressions, leading to more balanced viewpoints.",
-          "source": "Reddit"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "...this has to be the ugliest bike by far from BMW and I have owned one or more of every body style of the RT since '96",
-          "context": "The polarizing design was a significant point of contention, especially among loyal RT owners who expressed strong disapproval of the new styling.",
-          "source": "Reddit"
-        },
-        {
-          "quote": "I'd gladly swap my old RT for a great new 1300, but these new features just creep me out… I'm sure I wouldn't figure out the menu toggling",
-          "context": "The increasing complexity of new technology fueled skepticism, with riders expressing preference for simpler machines and concerns about reliability and usability.",
-          "source": "Motor-Talk"
-        },
-        {
-          "quote": "so many pre-owned R1250 RT and K1600 GT [are] available with similar amenities",
-          "context": "High pricing was a major deterrent, with consumers noting that used alternatives offered similar features for significantly less money.",
-          "source": "Reddit"
-        }
-      ]
-    }
-  },
-  "uk": {
-    "themeData": [
-      {
-        "subject": "Comfort & Ergonomics",
-        "value": 25
-      },
-      {
-        "subject": "Technology & Safety Features",
-        "value": 20
-      },
-      {
-        "subject": "Engine Performance & Handling",
-        "value": 18
-      },
-      {
-        "subject": "Design & Aesthetics",
-        "value": 12
-      },
-      {
-        "subject": "Cost & Value Proposition",
-        "value": 10
-      },
-      {
-        "subject": "Weather Protection",
-        "value": 8
-      },
-      {
-        "subject": "Luggage Capacity & Storage",
-        "value": 4
-      },
-      {
-        "subject": "Reliability & Build Quality",
-        "value": 3
-      }
-    ],
-    "themeInsights": {
-      "Comfort & Ergonomics": [
-        {
-          "quote": "The pillion gets more legroom too… seat height is lower, that's handy",
-          "context": "The R1300RT's revised ergonomics with lower seat height and improved pillion accommodations sparked significant debate, with some welcoming the changes while others worried about long-haul comfort for the 60+ demographic",
-          "source": "MotoGold UK"
-        }
-      ],
-      "Technology & Safety Features": [
-        {
-          "quote": "Almost Tesla-like we think",
-          "context": "BMW's integration of cutting-edge technology including adaptive cruise control, blind-spot monitoring, and the 10.25\" TFT display positioned the R1300RT as the tech leader in the touring segment",
-          "source": "MotoGold UK"
-        }
-      ],
-      "Engine Performance & Handling": [
-        {
-          "quote": "give sportsbikes the hurry-up",
-          "context": "The new 1300cc boxer engine with 143hp generated excitement among riders who value strong acceleration and torque for effortless overtaking, especially when riding two-up with luggage",
-          "source": "Motorcycle News (MCN)"
-        }
-      ],
-      "Design & Aesthetics": [
-        {
-          "quote": "Not my cup of tea",
-          "context": "The R1300RT's sharper, more angular styling divided opinions, with traditionalists finding it too aggressive or \"KTM-like\" while others appreciated the modern look",
-          "source": "1200RT Forum"
-        }
-      ],
-      "Cost & Value Proposition": [
-        {
-          "quote": "you REALLY have to want a 1300 boxer… to pay > $30k for this new RT",
-          "context": "At £18,900 base price (£21k+ for LE model), pricing concerns were persistent, though some noted it's \"half the price of a Gold Wing\"",
-          "source": "Reddit r/Motorrad"
-        }
-      ],
-      "Weather Protection": [
-        {
-          "quote": "shields the rider from unwanted windblast",
-          "context": "The RT's adjustable windscreen and aerodynamic improvements were praised, though some taller riders noted they might need the accessory screen",
-          "source": "Motorcycle News (MCN)"
-        }
-      ],
-      "Luggage Capacity & Storage": [
-        {
-          "quote": "27L+ per side (expandable to 33L) and up to 54L topcase",
-          "context": "BMW's expandable panniers with central locking and integrated convenience features were well-received by touring riders who prioritize packing capacity",
-          "source": "Motorcycle News (MCN)"
-        }
-      ],
-      "Reliability & Build Quality": [
-        {
-          "quote": "first-year model gremlins",
-          "context": "Some skepticism existed about BMW's complex electronics based on past RT models' issues with TFT screens and corrosion, contrasting with Honda's \"bulletproof\" reputation",
-          "source": "UK Forums"
-        }
-      ]
-    },
-    "sentimentData": [
-      {
-        "name": "Positive Sentiment",
-        "value": 58
-      },
-      {
-        "name": "Neutral Sentiment",
-        "value": 30
-      },
-      {
-        "name": "Negative Sentiment",
-        "value": 12
-      }
-    ],
-    "sentimentInsights": {
-      "Positive": [
-        {
-          "quote": "The new R1300RT: engineered for all-day comfort, all-weather protection, and agile performance",
-          "context": "BMW R1300RT received praise for its comprehensive improvements in technology, comfort, and performance, setting a new benchmark for touring",
-          "source": "BMW Press Release via MCN"
-        },
-        {
-          "quote": "offers a riding experience that meets the highest demands… in dynamics, comfort and travel capability",
-          "context": "The touring community celebrated the R1300RT's blend of sport-touring dynamics with traditional touring comfort",
-          "source": "Motorcycle News (MCN)"
-        },
-        {
-          "quote": "pretty excited to trade up from my 1250RT, mainly for the active ride height",
-          "context": "Existing BMW RT owners showed enthusiasm for upgrading, particularly for new features like active ride height adjustment",
-          "source": "Reddit r/Motorrad"
-        }
-      ],
-      "Neutral": [
-        {
-          "quote": "They've tipped the rider forward… is that going to suit the mainly 60-plus age group buying the RT? Hmm, maybe…",
-          "context": "Questions arose about whether the sportier riding position would suit the traditional touring demographic",
-          "source": "MotoGold UK"
-        },
-        {
-          "quote": "It's got all the latest kit and still a telelever – which is great – but I want to see it in real life",
-          "context": "Many riders adopted a wait-and-see attitude, wanting to test ride before forming strong opinions",
-          "source": "UKGSer Forum"
-        },
-        {
-          "quote": "the slow take up [of tourers] is more economics than lack of interest",
-          "context": "Economic factors and high pricing were acknowledged as barriers to segment growth rather than lack of desire",
-          "source": "UKGSer Forum"
-        }
-      ],
-      "Negative": [
-        {
-          "quote": "Man, the spy shots… look ugly IMO",
-          "context": "The R1300RT's angular design drew criticism from traditionalists who preferred the classic RT aesthetic",
-          "source": "Reddit r/Motorrad"
-        },
-        {
-          "quote": "electronic and corrosion issues",
-          "context": "Past BMW reliability concerns, particularly with electronics and build quality, created skepticism about the new model",
-          "source": "MCN Owner Reviews"
-        },
-        {
-          "quote": "too sporty",
-          "context": "Some riders felt the new design direction departed too far from the traditional touring motorcycle appearance",
-          "source": "UK Forums"
+          "quote": "Dashboard MPG just keeps on rising! Ours is currently doing over 200mpg!",
+          "context": "Yamaha Ténéré 700 software bugs creating user frustration despite overall positive reception.",
+          "source": "Reddit Ténéré 700 discussions"
         }
       ]
     }

@@ -1,22 +1,22 @@
 # Executive Summary: Spain
 
 ## Attribute Resonance
-- Core comfort attributes dominate purchase decisions (WRI: Overall Comfort 95.0, Wind Protection 93.5, Seat Height & Ergonomics 92.5)
-- Technology and innovation highly valued but tempered by reliability concerns (WRI: Technology & Features 83.5, Reliability & Durability 79.0)
-- Design polarization creates intense debate despite strong performance attributes (WRI: Design & Aesthetics 84.5, Engine Performance 87.0)
+- Heritage/Retro Styling leads with highest resonance (WRI: 86.5), driven by clear market appetite for authentic adventure heritage
+- Value for Money ranks critically high (WRI: 85.5) due to competitive pressure from aggressively priced Chinese brands
+- Off-Road Performance remains foundational expectation (WRI: 85.0) with focus on 21-inch front wheels and suspension capability
 
 ## Market Insights
-- BMW R 1300 RT launch captured 60-70% share of voice in touring segment conversations
-- Sentiment split: 50% negative (design/price), 30% positive (performance/tech), 20% neutral
-- Only BMW and Honda remain committed to full-dress touring motorcycles in 2025
+- Spanish adventure segment shows strong preference for versatile dual-purpose machines over specialized single-use bikes
+- Technology integration is increasingly expected as standard, not luxury, with comprehensive rider aids and connectivity features
+- Heritage positioning offers strategic differentiation opportunity in market saturated with generic new models
 
 ## Competitor Analysis
-- BMW dominates with technological leadership but faces design backlash and price resistance
-- Honda Gold Wing maintains luxury touring position but aging platform (5+ years) limits appeal
-- Sport-tourers (Ninja 1000SX, GSX-S1000GT) offer value alternative but lack touring comfort
+- BMW GS Series maintains 25-30% share of voice but faces design polarization challenges with new R 1300 models
+- Yamaha Ténéré 700 demonstrates successful heritage positioning with "Dakarian" styling driving 20-25% market conversation
+- Chinese brands (Voge, Kove) rapidly gaining market share through aggressive pricing and comprehensive feature packages
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Technology leader balancing innovation with touring heritage
-- **Content & Messaging:** Emphasize comfort/protection while educating on technology benefits
-- **Audience Targeting:** Focus on traditional tourers open to tech and couples who tour together
-- **Key Opportunity:** Capture riders from discontinued models through trade-in programs and demos
+- **Strategic Positioning:** Position R 12 G/S as authentic heritage motorcycle seamlessly integrating modern technology and proven adventure capability
+- **Content & Messaging:** Emphasize retro charm with contemporary functionality, leveraging GS lineage and reliability reputation
+- **Audience Targeting:** Focus on heritage enthusiasts, premium adventure riders, and technology-conscious consumers seeking justified value
+- **Key Opportunity:** Fill market gap for premium heritage adventure bike combining nostalgic appeal with cutting-edge performance and reliability

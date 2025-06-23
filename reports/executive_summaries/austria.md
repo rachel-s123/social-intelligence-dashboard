@@ -1,22 +1,22 @@
 # Executive Summary: Austria
 
 ## Attribute Resonance
-- Overall Comfort leads with WRI 94.1, driven by wind protection and ergonomic improvements that set new touring standards
-- Value for Money scores 92.5 despite negative pricing sentiment, indicating high importance as purchase driver requiring strategic attention
-- Technology & Features achieves 91.0 with ASA automatic transmission and safety systems generating excitement balanced by complexity concerns
+- Off-road performance dominates with highest WRI score (63.0), reflecting segment's core identity and 70% market share of off-road focused adventure bikes
+- Comfort & ergonomics ranks second (WRI: 56.5) as critical for extended adventure touring and long-distance travel
+- Engine size & performance (WRI: 56.0) essential with 75% of European riders preferring mid-to-high displacement models accounting for 85% of sales
 
 ## Market Insights
-- Robust market growth with 3x conversation volume spike during R1300RT launch, giving BMW commanding 45% share of voice
-- Price sensitivity dominates negative sentiment (25% of discussions) with €25,890 base price creating affordability barriers
-- Mixed-positive sentiment overall (50% positive) driven by excitement for innovations offset by cost and complexity concerns
+- Off-road performance and comfort dominate 55% of consumer discussions, establishing dual priorities for capability and touring comfort
+- Technology desired but with significant concerns about "excess of techy things" potentially causing remote breakdowns
+- Strong positive sentiment (75%) but notable negative sentiment (10%) focused on complexity and pricing concerns
 
 ## Competitor Analysis
-- BMW leads with technology advantages but faces value pressure from Honda NT1100 (€13k-14k) and Kawasaki Versys 1000/1100
-- Honda Gold Wing maintains luxury positioning but suffers from extreme weight (380kg) and higher pricing than R1300RT
-- Market bifurcating between premium tourers and budget alternatives, with middle-ground options being phased out due to emissions
+- BMW GS Series leads share of voice (20%) but faces consumer concerns about technological complexity and aesthetic polarization
+- KTM 890 Adventure R (18% SOV) positioned as rally-inspired with strong off-road credentials and Dakar heritage
+- Market fragmented across multiple strong competitors each with distinct positioning strategies from simplicity to premium performance
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Technology leader offering balanced touring experience with superior comfort and dynamic capability
-- **Content & Messaging:** Focus on practical technology benefits and total value proposition rather than specifications and initial pricing
-- **Audience Targeting:** Experienced touring riders, adventure-to-touring converts, safety-conscious riders, and two-up touring couples
-- **Key Opportunity:** Leverage first-mover advantage in automatic transmission and safety technology while addressing value perception through strategic bundling
+- **Strategic Positioning:** Position R 12 G/S as authentic "dirt-ready retro" combining genuine off-road capability with BMW's established adventure touring heritage
+- **Content & Messaging:** Emphasize off-road performance credentials while highlighting balanced technology approach that enhances rather than complicates adventure
+- **Audience Targeting:** Focus on adventure riders seeking heritage authenticity with capability, those fatigued with over-complex premium bikes, and experienced tourists wanting off-road credibility
+- **Key Opportunity:** Fill market gap for heritage-styled bike with serious capability, addressing clear consumer demand for "dirt-ready retro" that delivers performance, not just aesthetics

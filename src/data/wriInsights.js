@@ -2,758 +2,758 @@
 export const marketInsights = {
   "austria": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Consistently identified as the paramount priority for Austrian touring riders, representing not merely a desirable feature but a foundational expectation. BMW's specific improvements like adjustable deflectors and enhanced passenger space have elevated comfort from a hygiene factor to a competitive differentiator.",
-        "recommendation": "Continue prioritizing comfort in every product development decision and leverage testimonials highlighting specific comfort benefits to maintain market leadership."
+      "Off-Road Performance": {
+        "insight": "Achieved the highest WRI score, driven by its dominant presence in social discussions (30% of themes) and the significant 70% market share held by the off-road segment within the adventure category. For adventure riders, the ability to confidently navigate diverse terrains, including rocky trails, gravel, sand dunes, and forest tracks, is fundamental to the segment's core identity.",
+        "recommendation": "Any motorcycle entering this segment must first and foremost deliver on genuine off-road capability, or it risks being perceived as merely an \"adventure-styled\" bike rather than a true adventure machine."
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce comfort leadership with tangible, communicable benefits that differentiate BMW from competitors"
+        "details": "Emphasize Authentic Off-Road Capability: Position the R 12 G/S as genuinely capable off-road, not merely a visual tribute to heritage"
       },
       {
-        "details": "Address value perception through strategic bundling and comprehensive value communication"
+        "details": "Balance Technology with Simplicity and Reliability: Focus on core, essential rider aids that enhance adventure capability without overwhelming complexity"
       },
       {
-        "details": "Leverage technology advantages while ensuring reliability and user-friendliness"
+        "details": "Leverage G/S Heritage Beyond Aesthetics: Integrate \"Gelände / Straße\" philosophy into communications as fundamental design for dual-purpose capability"
       },
       {
-        "details": "Maintain brand equity through community engagement and premium experience delivery"
+        "details": "Strategic Price Positioning: Clearly communicate value proposition relative to unique blend of heritage, off-road capability, and BMW quality"
       },
       {
-        "details": "Proactively monitor emerging environmental concerns for future market preparation"
+        "details": "Target the \"Authentic Adventure\" Segment: Focus on riders seeking alternative to increasingly complex premium adventure bikes"
       },
       {
-        "details": "Focus marketing on practical benefits rather than technical specifications"
+        "details": "Demonstrate Performance Credibility: Connect heritage to proven lineage of capability rather than nostalgic styling"
       }
     ],
     "priorities": [
-      "Comfort excellence maintenance and communication as fundamental market requirement",
-      "Value perception improvement through pricing strategy and value communication",
-      "Technology reliability assurance to support innovation acceptance",
-      "Brand community strengthening to leverage loyalty and word-of-mouth marketing",
-      "Long-term environmental preparation for regulatory and social shifts",
-      "Dealer network excellence to support premium service expectations"
+      "Off-road performance demonstration and validation",
+      "Comfort and ergonomics optimization for extended adventure touring",
+      "Technology integration that enhances rather than complicates the adventure experience",
+      "Heritage positioning based on functional capability rather than aesthetic appeal",
+      "Value proposition articulation for premium positioning",
+      "Reliability assurance to address technology complexity concerns"
     ]
   },
   "belgium": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort is consistently highlighted as the paramount factor for touring riders, with the aging demographic amplifying its importance. Social listening reveals it as \"king\" and \"decisive\" for purchase decisions.",
-        "recommendation": "Continue prioritizing ergonomic excellence and plush seating. Offer multiple seat options and ensure comfort is never compromised in pursuit of sportiness."
+      "Off-Road Performance": {
+        "insight": "This attribute consistently holds the highest importance across all WRI components with a 25% Share of Voice and 75% positive sentiment. Discussions emphasize suspension travel, 21-inch front wheels, and ground clearance as critical elements for multi-terrain exploration.",
+        "recommendation": "Emphasize authentic off-road capability as the primary differentiator, highlighting specific technical features like long-travel suspension and proper wheel sizing that enable genuine adventure riding."
       }
     },
     "recommendations": [
       {
-        "details": "Address the smartphone connectivity gap immediately to eliminate a key criticism"
+        "details": "Prioritize authentic off-road capability and suspension quality as primary differentiators in all marketing and product development efforts"
       },
       {
-        "details": "Leverage the R1300RT's balanced excellence across high-resonance attributes in marketing"
+        "details": "Address price sensitivity through clear value propositions that justify premium positioning with demonstrable long-term benefits"
       },
       {
-        "details": "Enhance value proposition through strategic pricing and bundling to overcome cost concerns"
+        "details": "Leverage heritage positioning as emotional differentiator while maintaining focus on genuine performance capabilities"
       },
       {
-        "details": "Continue innovation in weight management and rider assistance technologies"
+        "details": "Develop technology integration that enhances safety and convenience without overwhelming complexity-averse consumers"
       },
       {
-        "details": "Build stronger community engagement to amplify positive ownership experiences"
+        "details": "Emphasize manageability and accessibility advantages to broaden market appeal beyond traditional adventure demographics"
       },
       {
-        "details": "Position the RT as the \"no compromise\" touring solution for discerning riders"
+        "details": "Position reliability and brand heritage as foundational benefits that support premium market positioning"
       }
     ],
     "priorities": [
-      "Implement Apple CarPlay/Android Auto integration as top priority",
-      "Develop comprehensive value packages to address pricing concerns",
-      "Create targeted marketing emphasizing comfort, safety, and technology leadership",
-      "Establish rider community programs to build brand loyalty",
-      "Innovate in manageability features for aging demographic",
-      "Maintain continuous improvement in all high-resonance attributes"
+      "Establish authentic off-road performance credentials through specific technical capabilities and proven testing",
+      "Develop clear value communication that addresses price concerns with long-term ownership benefits",
+      "Create heritage-based emotional connections while maintaining focus on functional performance advantages",
+      "Implement purposeful technology integration that enhances rather than complicates the riding experience",
+      "Address weight and manageability concerns to expand accessibility without compromising capability",
+      "Build reliability reputation through proven engineering and comprehensive testing validation"
     ]
   },
   "bulgaria": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Consistently cited as the paramount concern for touring riders across social discussions, expert reviews, and market trends. The R1300RT's enhanced comfort features were a major celebratory point, directly addressing a primary buying motivation.",
-        "recommendation": "In marketing, lead with comfort – highlight rider testimonials of doing 500+ km days in total comfort. Ensure demo bikes have comfort seat option fitted to wow potential buyers."
+      "Off-Road Performance": {
+        "insight": "Consistently highlighted as central to the adventure segment, emphasizing capability on varied terrains. High scores across all WRI factors reflect its fundamental importance. Consumers prioritize a motorcycle's ability to confidently handle diverse off-road conditions, viewing it as a core function of an adventure bike.",
+        "recommendation": "Emphasize off-road capabilities in marketing and product development. Showcase real-world performance on varied terrains and highlight technical specifications that contribute to off-road prowess."
       }
     },
     "recommendations": [
       {
-        "details": "Lead marketing campaigns with comfort, technology, and performance strengths that resonate most strongly with touring riders"
+        "details": "Focus marketing and product development on top-tier attributes: Off-Road Performance, Technology & Features, and Engine Size & Performance"
       },
       {
-        "details": "Address price perception through value communication, financing options, and bundled accessory packages"
+        "details": "Position heritage appeal as enhancement to core capabilities rather than replacement for functional attributes"
       },
       {
-        "details": "Leverage BMW's brand heritage and authority use as reliability credentials"
+        "details": "Address comfort expectations proactively, especially for heritage-focused models through accessory offerings"
       },
       {
-        "details": "Develop targeted messaging to convert adventure bike riders to touring applications"
+        "details": "Leverage authentic brand heritage and reliability reputation to differentiate from competitors"
       },
       {
-        "details": "Enhance connectivity and user experience, particularly navigation system usability"
+        "details": "Ensure comprehensive technology and safety systems as baseline requirements for premium positioning"
       },
       {
-        "details": "Continue innovation focus while maintaining core touring attributes that drive purchase decisions"
+        "details": "Develop targeted marketing for \"purist\" adventure riders seeking authentic, capability-focused motorcycles"
       }
     ],
     "priorities": [
-      "Amplify core strengths of comfort, brand reputation, and advanced technology in all marketing efforts",
-      "Address price sensitivity through strategic value communication and financing solutions",
-      "Improve navigation system user experience through software updates or user education",
-      "Target adventure bike riders with RT-specific touring advantages messaging",
-      "Cultivate community through touring events and exceptional after-sales support",
-      "Maintain focus on reliability and durability as foundational brand pillars"
+      "Demonstrate superior off-road capability through real-world testing and validation",
+      "Integrate advanced technology seamlessly without compromising heritage character",
+      "Establish clear value proposition that justifies premium pricing through superior capabilities",
+      "Build comprehensive dealer and service network to support reliability positioning",
+      "Create authentic heritage narrative that enhances rather than replaces modern performance expectations",
+      "Develop accessory ecosystem that allows customization while maintaining core character"
     ]
   },
   "czech republic": {
     "attributeInsights": {
-      "Engine Performance": {
-        "insight": "The R1300RT's new 1,300cc boxer engine boasting 145 hp and 149 Nm was central to enthusiastic discussion. Czech touring riders prioritize robust, effortless power for confident long-distance travel, viewing it as a key differentiator and source of riding pleasure.",
-        "recommendation": "Emphasize the RT's power advantage through demo rides showing effortless mountain pass handling and two-up capability, reinforcing that buyers will never lack power on the R1300RT."
+      "Off-Road Performance": {
+        "insight": "Stands as the undisputed top priority, dominating online discussions by accounting for 25% of all themes. Consumers actively discuss crucial elements like suspension travel, appropriate wheel sizes, and sufficient ground clearance, underscoring their demand for genuine off-road capability.",
+        "recommendation": "Any new model must demonstrate credible off-road prowess to gain market acceptance. Focus on authentic capability rather than aesthetic resemblance to adventure bikes."
       }
     },
     "recommendations": [
       {
-        "details": "Capitalize on R1300RT's buzz through direct community engagement with launch events and demo days to convert interest into sales"
+        "details": "Prioritize Off-Road Capability & Heritage/Character as intrinsically linked attributes for heritage-positioned models"
       },
       {
-        "details": "Emphasize value narrative positioning RT as high-value long-term solution rather than luxury item through durability testimonials and financing options"
+        "details": "Reinforce Reliability & Build Quality as premium brand differentiators, especially given reliability discussions around competitors"
       },
       {
-        "details": "Address sentiment pain points through design education, technology usability support, and transparent pricing communications"
+        "details": "Highlight Balanced Engine Performance & Maneuverability for models targeting authentic adventure capability"
       },
       {
-        "details": "Leverage social proof through positive influencer engagement and community building to amplify word-of-mouth advocacy"
+        "details": "Address Comfort & Ergonomics realistically based on intended use case rather than promising universal touring comfort"
       },
       {
-        "details": "Monitor competition actively and differentiate through superior customer experience and comprehensive after-sales support"
+        "details": "Showcase Functional Technology that enhances riding experience and safety while maintaining simplicity and reliability"
       },
       {
-        "details": "Enhance top-weighted attributes through continued innovation focus and accessory programs allowing owner customization"
+        "details": "Leverage Value Positioning through clear articulation of premium quality and performance benefits"
       }
     ],
     "priorities": [
-      "Performance and technology demonstration through experiential marketing to showcase RT's class-leading capabilities",
-      "Value proposition communication addressing price sensitivity through total cost of ownership and long-term benefits messaging",
-      "Design acceptance building through functional benefit explanation and multiple viewing opportunities to overcome initial reactions",
-      "Community building and social proof leveraging to strengthen brand advocacy and positive word-of-mouth generation",
-      "Customer experience enhancement ensuring smooth technology integration and comprehensive dealer support for ownership journey",
-      "Competitive differentiation maintaining through continued innovation leadership and superior service ecosystem development"
+      "Emphasize genuine off-road prowess through long-travel suspension, appropriate wheel sizes, and specific off-road modes",
+      "Highlight authentic heritage lineage while demonstrating modern capability and reliability",
+      "Communicate balanced performance suitable for diverse riding scenarios with smooth power delivery",
+      "Ensure realistic comfort expectations while optimizing ergonomics for intended use",
+      "Integrate practical technology that enhances safety and control without over-complication",
+      "Position value proposition clearly within competitive landscape while justifying premium positioning"
     ]
   },
   "denmark": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort emerges as the single most critical purchase driver in the Danish touring motorcycle market, with Gold Wing consistently hailed as the \"benchmark\" and described as a \"sofa on wheels\". Market trends show a clear \"push for greater comfort\" as primary enticement for riders.",
-        "recommendation": "BMW must relentlessly pursue improvements in overall comfort, particularly in seat design and vibration damping, to close the gap with the Gold Wing. Marketing efforts should specifically highlight how the R1300RT enhances comfort for long stints, potentially showcasing rider testimonials or offering specialized \"comfort package\" options."
+      "Versatility (Dual-Purpose Capability)": {
+        "insight": "Consistently emerges as the most critical consumer priority with predominant conversations around balancing on-road and off-road performance, emphasizing \"true all-rounder\" capability",
+        "recommendation": "Focus marketing on experiences enabled by this capability rather than technical specifications, highlighting freedom from limitations and diverse experience enablement"
       }
     },
     "recommendations": [
       {
-        "details": "Address Critical Infotainment Gaps by immediately adding Apple CarPlay/Android Auto integration to eliminate major competitive disadvantage"
+        "details": "Emphasize \"Dirt-Ready Retro\" authenticity through compelling visual and experiential marketing that validates genuine off-road capabilities"
       },
       {
-        "details": "Relentlessly Enhance Comfort and Convenience through further seat design improvements and passenger accommodation refinements to match Gold Wing standards"
+        "details": "Highlight balanced versatility and premium value by positioning as optimal balance of on-road comfort and off-road prowess"
       },
       {
-        "details": "Bolster Reliability Perception and Ownership Value through extended warranties, transparent durability testing, and attractive financing packages"
+        "details": "Engage Danish motorcycle community through BMW MC Klub Danmark and adventure tour operators to generate pre-launch excitement"
       },
       {
-        "details": "Leverage Dynamic Performance and Innovation by emphasizing RT as \"the tourer for riders\" and organizing test ride events on winding roads"
+        "details": "Demonstrate genuine off-road capability through high-quality videos and professional reviews showcasing challenging terrain performance"
       },
       {
-        "details": "Cultivate Community and Respond to Feedback through organized events, tours, and feedback loops like BMW Touring Council"
+        "details": "Focus messaging on intuitive technology integration contrasting with competitors perceived as overly complex"
       },
       {
-        "details": "Focus on Weight Reduction and Low-Speed Handling aids like reverse gear to address aging demographic needs"
+        "details": "Leverage heritage positioning through comprehensive narrative connecting R 12 G/S to iconic G/S models and legendary adventures"
       }
     ],
     "priorities": [
-      "Immediate smartphone connectivity integration to address top consumer frustration",
-      "Comfort package development to challenge Gold Wing benchmark status",
-      "Reliability perception campaign through warranties and high-mileage showcases",
-      "Dynamic performance marketing emphasis leveraging RT's handling advantages",
-      "Community building initiatives to strengthen brand loyalty and word-of-mouth",
-      "Value proposition clarification through bundled features and service packages"
+      "Validate \"dirt-ready\" claims through authentic performance demonstrations",
+      "Articulate premium value proposition beyond mere cost considerations",
+      "Engage heritage enthusiast communities for advocacy and word-of-mouth generation",
+      "Differentiate through seamless technology integration and user experience",
+      "Position as ultimate \"all-rounder\" bridging mid-weight agility with premium comfort",
+      "Build emotional resonance through authentic G/S lineage storytelling"
     ]
   },
   "finland": {
     "attributeInsights": {
-      "Value for Money": {
-        "insight": "This is the most critical purchase driver exhibiting highest resonance. R1300RT's high cost around €30k fully equipped is major concern for Finnish riders leading to hesitation in upgrading, with economic climate including high interest rates making consumers particularly sensitive to value proposition of big-ticket leisure purchases.",
-        "recommendation": "Address value head-on by proactively justifying R1300RT's premium cost through articulating comprehensive value proposition, emphasizing advanced safety systems, luxury features, 3-year warranty, and strategic financial solutions like competitive financing offers or guaranteed buyback schemes."
+      "Off-Road Performance": {
+        "insight": "Achieves highest WRI score demonstrating exceptional resonance across all components, with consumers fundamentally prioritizing tangible ability to perform competently in challenging off-road conditions",
+        "recommendation": "Emphasize R 12 G/S's long-travel suspension, 21-inch front wheel, and genuine off-road capability while positioning as \"more off-road-focused\" than R 12 nineT"
       }
     },
     "recommendations": [
       {
-        "details": "Address Value for Money head-on through strategic financial solutions and clear value proposition articulation"
+        "details": "Emphasize authentic heritage and character as primary differentiator leveraging R 80 G/S legacy"
       },
       {
-        "details": "Amplify Technology and Comfort Leadership as R1300RT's strongest resonance points"
+        "details": "Highlight targeted off-road capability with long-travel suspension and 21-inch front wheel"
       },
       {
-        "details": "Leverage Community and Testimonials from active Finnish touring community"
+        "details": "Balance technology with simplicity positioning integrated features as intuitive enhancements"
       },
       {
-        "details": "Differentiate Against Adventure Bikes with purposeful positioning for dedicated road touring"
+        "details": "Justify premium positioning through unique value proposition of heritage, engineering quality, and authentic boxer character"
       },
       {
-        "details": "Strengthen After-Sales Support and Reliability Perception to build trust and peace of mind"
+        "details": "Position as more nimble alternative to larger adventure bikes for accessible yet capable riding experience"
       },
       {
-        "details": "Focus on high-resonance attributes like comfort, technology, and performance while managing price perception"
+        "details": "Leverage brand reliability reputation while addressing complexity concerns"
       }
     ],
     "priorities": [
-      "Value proposition enhancement and financial solution development",
-      "Technology leadership communication and dealer education",
-      "Comfort advantage marketing over adventure bikes",
-      "Community engagement and testimonial programs",
-      "Service network strengthening and reliability demonstration",
-      "Strategic positioning against cross-segment competition"
+      "Heritage positioning as \"classic adventure bike with modern twist\"",
+      "Off-road capability emphasis with \"more off-road-focused\" messaging",
+      "Technology integration that enhances rather than overwhelms",
+      "Manageability and accessibility for broader rider appeal",
+      "Authentic BMW character and engineering quality",
+      "Value justification through unique heritage and capability blend"
     ]
   },
   "france": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Unequivocally the paramount factor, with \"Confort, Confort, Confort\" as the #1 recurring theme. French riders demand all-day comfort for both rider and passenger, viewing it as non-negotiable for any serious touring motorcycle.",
-        "recommendation": "BMW should intensify focus on highlighting the R1300RT's superior comfort features in all communications, using French customer testimonials about fatigue-free long-distance rides."
+      "Off-Road Performance": {
+        "insight": "Consistently identified as a critical discussion point in social listening, a benchmark for models like KTM and Yamaha, and a non-negotiable for segment success by experts. Consumers prioritize genuine capability to handle diverse terrains, viewing it as a defining characteristic of an adventure motorcycle.",
+        "recommendation": "Emphasize authentic off-road capabilities through features like 21-inch front wheels, long-travel suspension, and dedicated off-road riding modes. Marketing should demonstrate real-world off-road performance rather than just aesthetic styling."
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce comfort and protection leadership through customer testimonials and experiential marketing"
+        "details": "Position the BMW R 12 G/S as the authentic heritage adventure bike with genuine off-road capability and manageable weight"
       },
       {
-        "details": "Leverage technological advantages through education and demonstration programs"
+        "details": "Leverage the explicit lineage to R80GS Paris-Dakar and R 90 S for authentic heritage positioning backed by modern performance"
       },
       {
-        "details": "Address weight perception with handling courses and confidence-building initiatives"
+        "details": "Emphasize the lighter R12 platform advantage as a solution to the \"weight conundrum\" while maintaining adventure capabilities"
       },
       {
-        "details": "Execute conquest campaigns targeting orphaned FJR/GTR owners"
+        "details": "Target both experienced adventurers seeking simpler, lighter alternatives and new heritage seekers drawn to retro aesthetics"
       },
       {
-        "details": "Maintain police fleet visibility as quality signal"
+        "details": "Focus marketing on demonstrating real off-road prowess rather than just heritage styling"
       },
       {
-        "details": "Monitor Honda's moves and differentiate strategically without direct comparisons"
+        "details": "Justify premium pricing through superior off-road features, advanced technology, and authentic heritage value"
       }
     ],
     "priorities": [
-      "Double down on core comfort and protection messaging",
-      "Create tech education programs at dealerships",
-      "Develop targeted campaigns for competitor owners",
-      "Ensure flawless launch quality and dealer support",
-      "Build community engagement through touring events",
-      "Consider mid-tier offering to capture broader market"
+      "Demonstrate authentic off-road capability through 21-inch front wheel, long suspension travel, and dedicated Enduro riding modes",
+      "Emphasize manageable weight and agility advantages over heavier maxi-trails",
+      "Showcase heritage authenticity with direct R80GS Paris-Dakar and R 90 S lineage",
+      "Highlight balanced versatility for both serious off-road and comfortable road touring",
+      "Position competitively in upper mid-range with clear value justification",
+      "Leverage BMW's reliability reputation while addressing modern technology expectations"
     ]
   },
   "greece": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Paramount concern for Greek touring riders, encompassing seat comfort, rider ergonomics, and overall ride fatigue. The R1300RT's comfort innovations including adjustable seat height and improved legroom received high praise with social listening showing very high positive sentiment.",
-        "recommendation": "Continue emphasizing comfort leadership through marketing demonstrations and test rides allowing potential buyers to experience tangible comfort improvements firsthand."
+      "Versatility (Dual-Purpose Capability)": {
+        "insight": "Over 70% of riders globally prefer adventure motorcycles for their multi-terrain capabilities, confirming dual-purpose capability as a foundational expectation rather than secondary feature",
+        "recommendation": "Emphasize genuine dual-purpose capability through demonstrations of both on-road touring and off-road challenges, ensuring the R 12 G/S delivers on the promise of true versatility"
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce core strengths in comfort, performance, and technology through marketing demonstrations and test rides allowing firsthand experience"
+        "details": "Emphasize authentic off-road prowess through compelling visual demonstrations of R 12 G/S's dirt-ready capabilities"
       },
       {
-        "details": "Address value perception through strategic bundling of popular options and financing packages for Greek market"
+        "details": "Develop robust heritage-meets-modern-performance narrative linking iconic design to contemporary engineering"
       },
       {
-        "details": "Manage styling perceptions with functional narratives and expanded customization options"
+        "details": "Highlight distinctive boxer engine character as unique emotional differentiator beyond horsepower figures"
       },
       {
-        "details": "Enhance reliability confidence through transparency about testing processes and comprehensive warranty support"
+        "details": "Ensure intuitive technology integration with clear user guides and extensive dealer training"
       },
       {
-        "details": "Leverage community engagement through BMW-backed touring events and authentic user testimonials"
+        "details": "Address comfort concerns by showcasing ergonomic adaptability and available comfort accessories"
       },
       {
-        "details": "Continue technology leadership while ensuring user-friendly implementation and proper dealer training"
+        "details": "Position strategic mid-range pricing as accessibility to BMW quality without compromising capability"
       }
     ],
     "priorities": [
-      "Emphasize comfort leadership as paramount purchase driver for Greek touring riders",
-      "Capitalize on substantial engine performance improvements through real-world demonstration",
-      "Convert technology admiration into sales through proper education and reliable implementation",
-      "Address value perception challenges through creative packaging and financing solutions",
-      "Manage polarizing design through functional benefits communication and customization options",
-      "Strengthen dealer support network capabilities for new technology servicing requirements"
+      "Demonstrate genuine dual-purpose capability as core promise fulfillment",
+      "Integrate technology as adventure enabler, not complexity barrier",
+      "Validate dirt-ready positioning through authentic off-road performance showcase",
+      "Articulate distinctive value proposition in expanding mid-range segment",
+      "Maintain BMW reliability standards as foundational expectation",
+      "Address ergonomic concerns proactively through adaptability emphasis"
     ]
   },
   "hungary": {
     "attributeInsights": {
-      "Brand Image & Reputation": {
-        "insight": "Brand image is the paramount differentiator, deeply embedded in consumer perception. BMW and Honda's strong brand images generate immense goodwill and foster profound loyalty. The \"BMW-effect\" and Honda's reputation for \"bulletproof\" engines are lived experiences that significantly influence purchase decisions.",
-        "recommendation": "Continue positioning BMW as the technological leader while leveraging established community strength. Enhance brand prestige through exclusive touring club initiatives and maintain engineering excellence reputation."
+      "Technology & Features": {
+        "insight": "This attribute consistently registered as the highest priority, dominating consumer discussions with 25% of all conversations. Key technological aspects, such as Honda's Dual Clutch Transmission (DCT), which saw a remarkable 71% adoption rate among Africa Twin Adventure Sports buyers, were significant points of discussion and clearly influenced purchase decisions.",
+        "recommendation": "Pre-launch adventure consumers were highly attuned to and valued advanced technological integration. They perceived technology as a critical differentiator for enhancing safety, convenience, and the overall riding experience."
       }
     },
     "recommendations": [
       {
-        "details": "Lean into core strengths of comfort, technology, and brand prestige to justify premium positioning"
+        "details": "Prioritize authentic off-road capability in messaging by prominently featuring long-travel suspension, 21-inch front wheel, and optional Enduro Package Pro to appeal to riders seeking genuine \"dirt bike\" feel"
       },
       {
-        "details": "Address price perception through inclusive pricing strategies and value communication initiatives"
+        "details": "Articulate \"value\" through character and simplicity by positioning the R 12 G/S's heritage and authentic riding experience as inherent value for riders seeking less electronically-assisted experiences"
       },
       {
-        "details": "Continue improving practicality with focus on details that enhance daily usability and long-term satisfaction"
+        "details": "Leverage heritage as a differentiator by using the R 80 G/S tribute and Dakar Rally legacy to create emotional connection while complementing functional capability communication"
       },
       {
-        "details": "Educate market on advantages of dedicated touring machines versus adventure bike alternatives"
+        "details": "Emphasize ergonomic suitability for taller riders as a clear demographic advantage addressing an underserved market segment"
       },
       {
-        "details": "Leverage community engagement through VIP touring clubs and exclusive events for brand loyalty"
+        "details": "Engage experientially through targeted test rides, presence at key motorcycle events, and collaborative content creation with enthusiast communities"
       },
       {
-        "details": "Respond to design feedback through color options and customization programs to mitigate aesthetic concerns"
+        "details": "Monitor competitive movements from key rivals like Honda, Yamaha, and KTM to maintain distinct value proposition in dynamic market"
       }
     ],
     "priorities": [
-      "Maintain comfort leadership as non-negotiable core strength and primary differentiator",
-      "Enhance value proposition through packaging and communication to counter price sensitivity",
-      "Continue technology innovation to maintain flagship status and attract tech-savvy riders",
-      "Address practical concerns like luggage capacity and weight management through design solutions",
-      "Strengthen dealer support network to match premium product expectations",
-      "Develop community engagement initiatives to foster emotional brand connection and loyalty"
+      "Technology integration and advanced rider aids to meet highest consumer priority expectations",
+      "Authentic off-road performance capabilities as core segment differentiator",
+      "Clear value proposition articulation balancing heritage appeal with functional benefits",
+      "Ergonomic advantages for specific rider demographics",
+      "Experiential marketing to build awareness and demonstrate unique attributes",
+      "Competitive intelligence to maintain strategic positioning"
     ]
   },
   "italy": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Italian riders prioritize comfort above all else, with wind protection, seat comfort, and fatigue-free riding defining the touring experience. \"500 km as if sitting on the couch at home\" encapsulates this priority.",
-        "recommendation": "Lead all marketing with comfort messaging, ensure test rides showcase highway wind protection and suspension comfort, highlight adjustable ergonomics and seat options."
+      "Off-Road Performance": {
+        "insight": "Consistently emerges as dominant theme in social discussions with riders expressing interest in bikes capable of tackling diverse terrains. Even if many riders primarily use bikes on asphalt, robust off-road capability and \"true adventure readiness\" is paramount.",
+        "recommendation": "The R 12 G/S should emphasize authentic off-road credentials through design elements like 21-inch front wheel and long suspension travel, while marketing should vividly illustrate capability across diverse terrains from scenic roads to challenging gravel trails."
       }
     },
     "recommendations": [
       {
-        "details": "Lead all communications with comfort superiority, using authentic Italian rider testimonials"
+        "details": "Emphasize authentic heritage with modern capability by marketing R 12 G/S as genuine successor to R 80 G/S focusing on classic enduro design cues while communicating modern performance and technology"
       },
       {
-        "details": "Position R1300RT as the \"ultimate all-rounder\" - almost as comfortable as Gold Wing, almost as sporty as Multistrada"
+        "details": "Highlight \"Spirit of GS\" in purest form by positioning as return to core \"Gelände/Straße\" philosophy suggesting more direct engaging riding experience"
       },
       {
-        "details": "Create comprehensive test ride programs allowing extended experiences with passengers"
+        "details": "Showcase versatility for true adventure by vividly illustrating capability across diverse terrains from scenic Italian roads to challenging gravel trails"
       },
       {
-        "details": "Address weight concerns proactively through training programs and low seat options"
+        "details": "Balance technology integration with simplicity by incorporating essential modern technologies intuitively without detracting from classic character"
       },
       {
-        "details": "Leverage technology leadership while emphasizing proven reliability"
+        "details": "Leverage community engagement by fostering connections with adventure riding communities and showcasing real-world experiences"
       },
       {
-        "details": "Develop \"upgrade path\" marketing targeting NT1100 and adventure bike owners"
+        "details": "Strategic pricing and package options by positioning competitively within premium heritage segment with distinct packages catering to specific rider needs"
       }
     ],
     "priorities": [
-      "Execute premium positioning strategy emphasizing value through superior attribute delivery",
-      "Implement community engagement programs with existing RT owners as ambassadors",
-      "Partner with Italian tour operators to showcase RT capabilities in real touring scenarios",
-      "Develop confidence-building initiatives for riders concerned about weight/height",
-      "Create educational content about new technology features and their touring benefits",
-      "Establish clear differentiation from adventure-touring segment through comfort focus"
+      "Off-road performance capability and credible adventure credentials through authentic design elements",
+      "Heritage positioning leveraging BMW's iconic GS lineage and R 80 G/S inspiration for emotional connection",
+      "Comfort and ergonomic optimization for long-distance touring without compromising adventure capability",
+      "Engine performance highlighting boxer characteristics and BMW's proven reliability reputation",
+      "Technology integration that enhances safety and performance while maintaining heritage aesthetic and simplicity perception",
+      "Market positioning balancing premium heritage appeal with competitive value proposition"
     ]
   },
   "netherlands": {
     "attributeInsights": {
-      "Technology & Features": {
-        "insight": "This attribute achieved the highest resonance due to overwhelmingly positive social listening sentiment (98), strong market data indicating innovation drives demand (90), consistent praise in consumer reviews (98), and top-tier expert analysis (100). The R1300RT's radar-guided cruise control, adaptive ride height, and advanced rider aids are viewed as setting a new benchmark for touring technology.",
-        "recommendation": "Campaigns should emphasize the tangible benefits these features provide, such as enhanced safety, unparalleled convenience, and reduced rider fatigue over long distances. Utilize customer testimonials and dealer demonstrations to highlight these technologies."
+      "Long-Distance Touring Capability": {
+        "insight": "Consistently emerges as top priority, driven by role as \"primary driver of growth\" in adventure segment and explicit consumer intentions for \"extensive tours across Europe\"",
+        "recommendation": "Emphasize R 12 G/S capability for comfortable multi-day European journeys, positioning as ideal for adventure lifestyle aspirations"
       }
     },
     "recommendations": [
       {
-        "details": "Leverage Core Strengths: Center all marketing and communication efforts on Technology & Features, Overall Comfort, and Innovation & Future-proofing"
+        "details": "Position R 12 G/S as the authentic heritage adventure bike that connects riders to BMW's adventure legacy"
       },
       {
-        "details": "Address Perception Challenges: Control design narrative through real-world showcases and articulate value proposition to justify premium pricing"
+        "details": "Emphasize manageable adventure capability over extreme off-road performance for European touring focus"
       },
       {
-        "details": "Optimize Market Opportunities: Target riders transitioning from discontinued models and explore feasibility of lighter touring model"
+        "details": "Leverage BMW's established reputation for reliability and quality to address core consumer concerns"
       },
       {
-        "details": "Enhance Customer Experience: Ensure exceptional after-sales support and engage touring community through exclusive events and demos"
+        "details": "Highlight distinctive character and design as emotional differentiators in crowded middleweight segment"
       },
       {
-        "details": "Monitor Competitive Response: Prepare for potential technology updates from Honda Gold Wing and maintain advantage through continuous innovation"
+        "details": "Focus on versatility message for diverse European riding conditions rather than specialization"
       },
       {
-        "details": "Product Development Focus: Consider ergonomic options for extreme height riders and ensure infotainment system addresses usability concerns"
+        "details": "Communicate premium value through heritage story and BMW ownership experience"
       }
     ],
     "priorities": [
-      "Immediate: Launch comprehensive demo program highlighting top-resonance attributes",
-      "Short-term: Develop targeted conquest campaigns for FJR1300 and ST1300 owners",
-      "Medium-term: Evaluate market demand for mid-weight touring option",
-      "Long-term: Maintain technology leadership through continuous innovation",
-      "Ongoing: Monitor customer feedback and address pain points proactively",
-      "Critical: Ensure initial quality and reliability to protect brand reputation"
+      "Lead with heritage positioning and authentic BMW adventure legacy connection",
+      "Emphasize long-distance touring capability and European adventure focus",
+      "Highlight manageable and accessible adventure performance",
+      "Reinforce reliability and BMW quality reputation",
+      "Position as distinctive alternative to mainstream middleweight offerings",
+      "Leverage early dealer and customer interest as market validation"
     ]
   },
   "norway": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Achieves the highest WRI due to its consistent and universal importance across all contributing factors. Social discussions overwhelmingly highlight comfort as \"paramount\" for touring riders, with the BMW R1300RT's plush seating and ergonomic adjustability directly addressing this core need.",
-        "recommendation": "Continue to emphasize unparalleled comfort in all marketing communications and product development. Develop targeted campaigns showcasing comfort features through authentic rider testimonials and long-form content."
+      "Off-Road Performance": {
+        "insight": "This attribute consistently garnered the highest discussion volume (25% of social discourse) and was explicitly identified as a paramount concern by consumers and experts alike. Norway's challenging natural topography, characterized by extensive gravel roads and mountainous terrain, directly translates into a deep desire for motorcycles capable of \"puristic off-road fun\" and confidently handling \"harshest terrain\".",
+        "recommendation": "Norwegian riders prioritize a motorcycle's genuine capability to navigate unpaved roads and challenging terrains, viewing it as essential for exploration and adventure in their unique environment. This is a non-negotiable aspect for a true adventure machine in this market."
       }
     },
     "recommendations": [
       {
-        "details": "Amplify comfort and performance messaging as core pillars of touring excellence"
+        "details": "Focus on genuine off-road capability as the paramount consumer demand in Norway, emphasizing 21-inch front wheel, long-travel suspension, and dedicated enduro riding modes"
       },
       {
-        "details": "Highlight technology as key differentiator through interactive demonstrations"
+        "details": "Leverage the distinctive \"soul\" and character of the boxer engine to differentiate from competitors and appeal to the strong preference for petrol engines over electric alternatives"
       },
       {
-        "details": "Reinforce brand trust and reliability through heritage and owner testimonials"
+        "details": "Capitalize on heritage positioning as a key differentiator, with direct lineage to the iconic R 80 G/S appealing to riders who value classic aesthetics combined with modern performance"
       },
       {
-        "details": "Mitigate price concerns through value articulation and financing options"
+        "details": "Ensure superior suspension quality to address the critical need for stability and control on Norway's challenging and varied terrain"
       },
       {
-        "details": "Navigate styling polarization by focusing on functional benefits"
+        "details": "Optimize comfort and ergonomics for extended adventure riding while maintaining focus on off-road capability rather than pure touring comfort"
       },
       {
-        "details": "Address weight management through practical solutions and training"
+        "details": "Reinforce BMW's reputation for reliability to address the fundamental expectation for dependable performance in remote Norwegian conditions"
       }
     ],
     "priorities": [
-      "Maintain leadership in comfort and performance attributes",
-      "Leverage technology advantages for competitive differentiation",
-      "Strengthen value proposition messaging to address price concerns",
-      "Expand safety technology focus aligned with market trends",
-      "Target existing BMW owners for upgrade opportunities",
-      "Bridge versatility gap with adventure-touring appeal"
+      "Off-road performance and capability must be the primary focus for Norwegian market success",
+      "Engine character and heritage positioning as key emotional differentiators",
+      "Reliability and build quality as fundamental expectations rather than differentiators",
+      "Balance of technology that enhances rather than detracts from the riding experience",
+      "Competitive pricing and value proposition in Norway's expensive market environment",
+      "Dealer support and service network to support remote adventure riding needs"
     ]
   },
   "poland": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort consistently emerges as the paramount consideration for touring motorcycle enthusiasts, with discussions overwhelmingly emphasizing the importance of a plush seat, relaxed riding posture, and the ability to minimize fatigue over long distances",
-        "recommendation": "BMW should continue prioritizing seat design and ergonomic adjustability to cater to individual comfort needs, possibly offering different seat heights/foam densities"
+      "Off-Road Performance": {
+        "insight": "Achieved highest WRI score with Polish adventure riders regarding genuine off-road capability as critical purchase driver, representing core identity for significant market portion seeking authentic dirt prowess",
+        "recommendation": "Position R 12 G/S as \"proper off-road alternative\" leveraging Dakar heritage to address perceived limitations of larger GS models and attract segment currently dominated by KTM"
       }
     },
     "recommendations": [
       {
-        "details": "Amplify the Core Touring Experience by aggressively marketing the R1300RT's superior comfort, ergonomics, and wind protection"
+        "details": "Position R 12 G/S as authentic off-road alternative addressing credibility gap in BMW's adventure portfolio"
       },
       {
-        "details": "Showcase Technology as a Practical Advantage by positioning advanced features as safety and convenience enhancers rather than mere gadgets"
+        "details": "Amplify heritage storytelling connecting to Dakar-winning R80 G/S legacy and BMW's off-road roots"
       },
       {
-        "details": "Proactively Address Reliability Perceptions through extended warranties, service packages, and transparent communication about quality improvements"
+        "details": "Highlight \"stripped-down, feel-good\" experience differentiating from complex premium adventure bikes"
       },
       {
-        "details": "Leverage Weight and Agility as a Differentiator by emphasizing the RT's significant weight reduction and enhanced handling compared to heavier rivals"
+        "details": "Demonstrate genuine off-road capability through compelling visuals and testimonials in challenging conditions"
       },
       {
-        "details": "Enhance Value Proposition and Financing Options through strategic bundling of popular options and competitive financing plans"
+        "details": "Emphasize balanced approach to modern technology supporting adventure without unnecessary complexity"
       },
       {
-        "details": "Foster Community and Emotional Connection by cultivating owner communities and sharing authentic touring stories"
+        "details": "Target retro-adventure niche seeking emotional connection combined with functional excellence"
       }
     ],
     "priorities": [
-      "Focus on comfort and ergonomic superiority as primary differentiator",
-      "Address reliability concerns through warranty and service initiatives",
-      "Leverage technology leadership for practical safety and convenience benefits",
-      "Emphasize weight and handling advantages over heavier competitors",
-      "Improve value perception through bundling and financing options",
-      "Build emotional connection through community engagement and authentic stories"
+      "Establish authentic off-road credibility through heritage positioning and capability demonstration",
+      "Communicate unique emotional value proposition bridging classic aesthetics with modern performance",
+      "Address perceived BMW GS limitations in serious off-road conditions",
+      "Differentiate from increasingly complex large adventure motorcycles",
+      "Leverage pre-launch interest to build community engagement and brand advocacy",
+      "Position strategically within BMW family as distinct adventure proposition"
     ]
   },
   "portugal": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort is the cornerstone of touring, with riders consistently demanding comfortable seats, relaxed riding posture, and excellent wind/weather protection. The R1300RT preserves \"the comfort that defines the RT range\" while adding innovative features like adjustable aerodynamic flaps.",
-        "recommendation": "Continue to prioritize all-day comfort in design. Market testimonials from long-distance riders on fatigue-reducing comfort. Emphasize innovations like thermal comfort via adjustable flaps as competitive advantages."
+      "Off-Road Performance": {
+        "insight": "This attribute consistently emerged as the paramount consumer priority across all data sources, accounting for 25.0% of discussions and being essential for a \"true adventure bike\"",
+        "recommendation": "BMW R 12 G/S must demonstrate credible and authentic off-road prowess in marketing, ensuring it is perceived as a serious contender for adventure riding"
       }
     },
     "recommendations": [
       {
-        "details": "Focus R&D on comfort, reliability, and technology as top purchase drivers"
+        "details": "Emphasize authentic off-road capabilities and robust engine performance as core competencies"
       },
       {
-        "details": "Address price perception through value communication and financing options"
+        "details": "Integrate modern technology seamlessly without detracting from heritage design appeal"
       },
       {
-        "details": "Leverage technology leadership to attract younger, tech-savvy riders"
+        "details": "Position heritage as unique differentiator while proving modern adventure capabilities"
       },
       {
-        "details": "Continue weight reduction and handling improvements for broader appeal"
+        "details": "Focus on touring comfort and ergonomics as key advantages for long-distance adventure riding"
       },
       {
-        "details": "Ensure new technology reliability to build trust with conservative buyers"
+        "details": "Leverage BMW's reputation for reliability and build quality as fundamental expectations"
       },
       {
-        "details": "Expand service network and maintain premium after-sales support"
+        "details": "Create emotional connection through heritage narrative while meeting pragmatic performance needs"
       }
     ],
     "priorities": [
-      "Maintain comfort supremacy through continuous innovation",
-      "Prove reliability of new technologies through rigorous testing",
-      "Articulate value proposition clearly against high price point",
-      "Market dual nature: comfortable tourer AND dynamic motorcycle",
-      "Target both traditional touring demographic and younger riders",
-      "Capitalize on reduced competition by becoming default premium choice"
+      "Establish credible off-road performance credentials as primary market requirement",
+      "Demonstrate compelling engine character and power delivery competitive within class",
+      "Seamlessly integrate advanced technology and safety systems as baseline expectations",
+      "Highlight superior touring comfort and ergonomics for long-distance adventure capability",
+      "Position heritage design as unique aesthetic differentiator in crowded modern market",
+      "Maintain BMW's reputation for reliability and premium build quality as brand cornerstones"
     ]
   },
   "romania": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Online discussions overwhelmingly indicate that \"comfort is king\" for touring riders, appearing in approximately 70% of conversations. The Honda Gold Wing sets a high standard for unparalleled comfort, a benchmark the R1300RT is perceived as approaching or even surpassing with its plush, adjustable seat, increased passenger legroom, and expansive windshield.",
-        "recommendation": "BMW should market the RT's comfort innovations heavily through testimonials of riders doing 500km days comfortably. Ensure dealers emphasize test ride comfort and offer accompanied test rides on highway stretches to feel the wind protection."
+      "Suspension Quality": {
+        "insight": "Emerged as the highest-priority attribute with strong consensus across all data sources. Over 85% of adventure motorcycle owners prioritize advanced suspension, and discussions frequently highlight \"advanced suspension\" and \"long travel suspension\" for leading models.",
+        "recommendation": "Focus on quality, adjustable, and confidence-inspiring suspension systems. Emphasize how superior suspension directly impacts control, comfort, and ability to navigate challenging terrains in Romania's diverse landscapes."
       }
     },
     "recommendations": [
       {
-        "details": "Capitalize on the R1300RT's superior comfort, performance, and handling as primary differentiators through targeted marketing showcasing Romanian riding conditions"
+        "details": "Emphasize authentic heritage and off-road capability as core differentiators"
       },
       {
-        "details": "Address value concerns proactively with extended warranties, service packages, and attractive financing to counter \"too expensive\" narrative and reduce used market appeal"
+        "details": "Target \"anti-flagship\" segment seeking premium yet simpler adventure experience"
       },
       {
-        "details": "Refine technology experience through comprehensive tutorials and software updates, strongly considering smartphone mirroring integration to match competitor offerings"
+        "details": "Highlight value proposition through reliability, manageability, and character"
       },
       {
-        "details": "Build community and brand advocacy through exclusive touring events, rider training, and encouraging early adopter testimonials to strengthen brand loyalty"
+        "details": "Position as heritage-inspired alternative to complex flagship models"
       },
       {
-        "details": "Clearly differentiate against Gold Wing's luxury with RT's agility and modern tech, and against adventure bikes with superior on-road comfort and specialized touring capabilities"
+        "details": "Focus on genuine multi-terrain capability within realistic usage context"
       },
       {
-        "details": "Monitor and adapt to evolving market trends, competitive moves, and social sentiment to maintain trust and market leadership position"
+        "details": "Leverage BMW's established reputation for quality and dealer support"
       }
     ],
     "priorities": [
-      "Make comfort king through aggressive promotion and demonstration of comfort features",
-      "Bolster reliability perception and support with extended warranties and service packages",
-      "Smooth the technology experience with better user training and interface improvements",
-      "Enhance value proposition through strategic bundling and promotional packages",
-      "Engage rider communities through sponsorships, events, and feedback sessions",
-      "Leverage current market enthusiasm to convert interest into immediate sales"
+      "Showcase superior suspension quality and off-road performance credentials",
+      "Emphasize heritage design elements as authentic connection to R 80 G/S legacy",
+      "Communicate manageable weight advantage and approachable character",
+      "Justify premium pricing through reliability and long-term value proposition",
+      "Present technology as purposeful simplicity rather than feature complexity",
+      "Address comfort expectations through accessory offerings and clear positioning"
     ]
   },
   "slovakia": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Universally cited as \"comfort is king\" by touring enthusiasts, encompassing seat comfort, riding posture, and ability to endure long hours without fatigue",
-        "recommendation": "Ensure the R1300RT delivers top-tier touring comfort through premium seat options and communicate weather protection superiority"
+      "Off-Road Performance": {
+        "insight": "Consistently emerges as paramount consumer priority, dominating discussions and accounting for 25% of online themes. Market analysis indicates off-road segment projected to experience highest growth rate driven by versatility across diverse terrains.",
+        "recommendation": "Focus marketing efforts on demonstrating R 12 G/S potential in challenging scenarios, showcasing capabilities in rugged Slovakian terrains to resonate with aspirational desire for genuine off-road prowess."
       }
     },
     "recommendations": [
       {
-        "details": "Double down on comfort and convenience through premium standard features"
+        "details": "Emphasize authentic heritage positioning through direct link to legendary R 80 G/S and Dakar Rally legacy as unique selling proposition"
       },
       {
-        "details": "Promote technological differentiators through education and demonstration"
+        "details": "Showcase balanced on-road/off-road performance with particular emphasis on off-road prowess while reassuring consumers of comfort and competence on paved roads"
       },
       {
-        "details": "Address price narrative with value packages and long-term cost benefits"
+        "details": "Highlight seamless integration of cutting-edge technology for safety, control, and convenience without detracting from classic feel"
       },
       {
-        "details": "Leverage reliability reputation and comprehensive dealer support"
+        "details": "Consistently reinforce BMW's established reputation for quality and long-term performance as foundational expectation"
       },
       {
-        "details": "Encourage test rides to overcome design hesitations"
+        "details": "Proactively address consumer concern about heavy bikes by emphasizing R 12 G/S agility and ease of handling for its class"
       },
       {
-        "details": "Monitor feedback continuously and respond to community concerns"
+        "details": "Position as premium investment justified by unique combination of authentic heritage, robust performance, and advanced technology"
       }
     ],
     "priorities": [
-      "Comfort enhancement and communication",
-      "Technology education and user experience",
-      "Value perception management",
-      "Experiential marketing initiatives",
-      "Community engagement and feedback response",
-      "Strategic positioning versus adventure bikes"
+      "Demonstrate genuine multi-terrain capabilities through challenging terrain showcases",
+      "Leverage formidable Dakar Rally heritage as powerful and authentic narrative differentiator",
+      "Integrate modern technology as adventure enablers rather than mere convenience features",
+      "Address manageability concerns through agile large-displacement bike positioning",
+      "Reinforce premium value proposition through authentic heritage and performance combination",
+      "Focus on experienced, premium buyer segment willing to invest in quality and distinctive character"
     ]
   },
   "slovenia": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort is king in touring - riders prioritize ability to undertake 500+ km days with minimal fatigue. The R1300RT's adjustable seat height/tilt and new wind management directly address this need.",
-        "recommendation": "Continue to highlight comfort features in marketing. Never compromise comfort for minor weight or cost savings - touring buyers gladly accept extra weight for better comfort."
+      "Off-Road Performance": {
+        "insight": "This attribute consistently emerges as the primary driver of discussion within the adventure segment, accounting for 30% of all conversations. Riders frequently emphasize the critical need for robust, long-travel suspension, high ground clearance, and off-road specific tires to effectively navigate unpredictable terrains. Over 85% of adventure motorcycle owners explicitly state these features as essential.",
+        "recommendation": "Emphasize authentic off-road capability with demonstrable performance. For BMW R 12 G/S, highlight its 21-inch front wheel, long suspension travel (8.2 inches front, 7.8 inches rear), and off-road specific ride modes (Enduro, Enduro Pro) as core differentiators."
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce core strengths by doubling down on comfort, safety, and performance messaging - these attributes show highest market resonance"
+        "details": "Prioritize authentic off-road capability as primary differentiator with demonstrable performance credentials"
       },
       {
-        "details": "Address price concerns through clear value articulation and consider attractive promotional packages specifically for Slovenian market"
+        "details": "Emphasize dual-sport versatility as core value proposition for adventure segment"
       },
       {
-        "details": "Leverage brand heritage and police endorsement while building strong R1300RT owner community through events and group rides"
+        "details": "Highlight weight management and agility as key competitive advantages"
       },
       {
-        "details": "Address design polarization by framing styling in functional terms and offering customization options"
+        "details": "Integrate technology that enhances rather than complicates the riding experience"
       },
       {
-        "details": "Continuously gather feedback to guide future updates, especially for controversial elements like fixed windscreen"
+        "details": "Leverage heritage positioning for emotional connection and premium positioning"
       },
       {
-        "details": "Target both traditional touring demographic and younger upgraders from mid-size bikes by emphasizing different benefits"
+        "details": "Focus on rider confidence enablers through manageable weight and advanced safety systems"
       }
     ],
     "priorities": [
-      "Maintain class-leading comfort without compromise - it's the fundamental touring requirement",
-      "Justify premium pricing through comprehensive value communication and bundling strategies",
-      "Build engaged owner community to create organic advocacy in small but passionate market",
-      "Stay ahead in technology and safety features to differentiate from growing competition",
-      "Address accessibility concerns to broaden market reach beyond traditional demographics",
-      "Monitor and respond to feedback on polarizing design elements through accessories or future updates"
+      "Demonstrate genuine off-road prowess through technical specifications and real-world testing",
+      "Position as versatile platform suitable for both daily riding and adventure exploration",
+      "Emphasize manageable weight as accessibility and confidence factor",
+      "Showcase heritage authenticity while proving modern capability",
+      "Highlight technology integration that supports rather than dominates the riding experience",
+      "Build trust through reliability reputation and proven engineering excellence"
     ]
   },
   "spain": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "The single most important purchase driver, consistently emphasized as the primary expectation for a touring motorcycle. Spanish riders expect an upright, all-day riding position, plush seating, and relaxed ergonomics for rider and passenger.",
-        "recommendation": "Continue to prioritize ergonomic design with adjustable seat heights, spacious legroom, and back support. Offer comfort seats or footpeg lowering kits as accessories. This is an area where the RT is traditionally strong and must remain so."
+      "Heritage/Retro Styling": {
+        "insight": "This attribute demonstrates exceptionally high resonance, driven by strong evidence across all data points. Social listening reveals a \"clear and growing appetite for heritage-styled adventure bikes,\" with the success of models like the Yamaha Ténéré 700 whose appeal is \"significantly tied to its iconic 'Dakarian' styling.\" Consumers deeply value a connection to historical roots of adventure riding, signifying authenticity and proven capability.",
+        "recommendation": "Leverage heritage positioning as a strategic differentiator, emphasizing connection to proven GS lineage and authentic adventure heritage while ensuring seamless integration with modern functionality."
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce Core Comfort and Protection as Non-Negotiables: Continue to prioritize Overall Comfort, Wind Protection, and Seat Height & Ergonomics in all product development and marketing as fundamental drivers"
+        "details": "Leverage heritage positioning as primary differentiator while ensuring modern functionality integration"
       },
       {
-        "details": "Leverage Useful Technology with Comprehensive Education: Position the R 1300 RT as a technological flagship, but couple with robust educational initiatives that demystify complex features"
+        "details": "Clearly articulate value proposition to justify premium pricing against aggressive competition"
       },
       {
-        "details": "Address Design Perception Constructively: Acknowledge polarizing reactions to new aesthetics, offering solutions that cater to diverse preferences without undermining modern identity"
+        "details": "Ensure genuine off-road capability with appropriate technical specifications"
       },
       {
-        "details": "Communicate Value and Assure Reliability to Build Trust: Proactively reinforce Value for Money and Reliability through extended warranties, clear value propositions, and success stories"
+        "details": "Position as versatile machine excelling in diverse riding scenarios"
       },
       {
-        "details": "Maintain Handling Excellence: Continue refining the balance between touring comfort and agile handling that differentiates BMW from heavier competitors"
+        "details": "Implement comprehensive technology and safety systems as standard expectations"
       },
       {
-        "details": "Strengthen Community and Brand Experience: Leverage BMW's strong brand heritage and dealer network to create exclusive owner experiences and events"
+        "details": "Prioritize long-distance touring comfort and ergonomic design"
       }
     ],
     "priorities": [
-      "Monitor real customer feedback post-launch in Spain's varied climate and be ready with immediate tweaks or accessories",
-      "Invest in clear, accessible training and demonstration programs for technology features in Spanish",
-      "Organize showroom open days and test ride events across Spain for in-person experience",
-      "Develop accessory options that can soften the new aesthetic for traditionalists",
-      "Emphasize rigorous testing protocols and improvements to critical components in communications",
-      "Create marketing materials showcasing high-mileage, trouble-free RT ownership stories from Spanish riders"
+      "Heritage authenticity combined with modern performance",
+      "Clear value communication and premium justification",
+      "Robust off-road credibility and capability demonstration",
+      "Versatile dual-purpose positioning for varied use cases",
+      "Advanced technology integration for safety and convenience",
+      "Superior touring comfort and ergonomic excellence"
     ]
   },
   "sweden": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Comfort consistently emerges as the paramount purchase driver for touring riders, with the R1300RT's improved rider triangle and adjustable seating directly addressing this core need",
-        "recommendation": "Continue emphasizing comfort credentials in marketing, showcase ergonomic improvements through test rides, and highlight all-day comfort capabilities"
+      "Versatility (Dual-Purpose Capability)": {
+        "insight": "This attribute consistently emerges as a \"Tier 1 - Critical\" priority, reflecting the fundamental consumer desire for a \"do-it-all\" machine capable across diverse terrains. Its high ranking across all WRI factors underscores its foundational role in successful models.",
+        "recommendation": "Any new launch must unequivocally demonstrate excellence in versatility as a deficiency here would be a critical misstep. Focus on seamless transition between on-road comfort and genuine off-road capability."
       }
     },
     "recommendations": [
       {
-        "details": "Amplify messaging around top three attributes (Comfort, Performance, Technology) as primary purchase drivers"
+        "details": "Focus primary messaging and development on top 5 attributes: Versatility, Off-Road Performance, Engine Performance, Comfort & Ergonomics, and Manageability/Weight"
       },
       {
-        "details": "Address price concerns through value communication and attractive financing packages"
+        "details": "Position heritage and character appeal as powerful emotional differentiators once core functional needs are met"
       },
       {
-        "details": "Proactively manage navigation system criticism through software updates and user education"
+        "details": "Address accessibility gap in premium adventure segment through manageable yet capable offerings"
       },
       {
-        "details": "Leverage Sweden's safety culture by partnering with Vision Zero initiatives"
+        "details": "Leverage \"retro-modern\" trend while ensuring functional simplicity over excessive complexity"
       },
       {
-        "details": "Target three key segments: existing RT owners, adventure riders seeking comfort, and safety-conscious returners"
+        "details": "Target premium mid-range pricing ($10,000-$20,000) for optimal market positioning"
       },
       {
-        "details": "Strengthen dealer preparation with comprehensive training on new technology features"
+        "details": "Emphasize authentic adventure experience over tech-laden alternatives"
       }
     ],
     "priorities": [
-      "Immediate: Address navigation concerns and communicate value proposition",
-      "Short-term: Maximize test ride opportunities showcasing comfort and technology",
-      "Medium-term: Build community engagement through owner events and tours",
-      "Long-term: Maintain technology leadership through continuous innovation",
-      "Ongoing: Monitor competitor developments and adjust positioning accordingly",
-      "Critical: Ensure exceptional dealer experience to convert interest into sales"
+      "Demonstrate excellence in versatility as fundamental \"do-it-all\" capability",
+      "Prove genuine off-road prowess with capable suspension and ground clearance",
+      "Deliver confidence-inspiring engine performance across varying conditions",
+      "Ensure comfortable ergonomics for extended journeys and various riding styles",
+      "Create manageable premium adventure option expanding market accessibility",
+      "Leverage heritage positioning for emotional connection and market differentiation"
     ]
   },
   "switzerland": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Paramount for long rides, encompassing seat comfort, riding position, and general ease. The R 1300 RT's ability to pamper riders is a key differentiator, with features like heated seats and superior wind protection.",
-        "recommendation": "Continue offering various ergonomic adjustments and tout the RT's superior wind tunnel-tested fairing that keeps riders fresh over hundreds of kilometers."
+      "Off-Road Performance": {
+        "insight": "This attribute stands as the paramount priority for adventure motorcycle consumers, consistently emerging as the most dominant discussion theme, accounting for an estimated 30% of consumer conversations. Consumers and experts alike consider it a \"paramount expectation\" with pre-launch discussions surrounding the BMW R 12 G/S explicitly indicating strong consumer expectation for it to be \"a lot better-suited for the dirt than its predecessor\"",
+        "recommendation": "For the R 12 G/S, success hinges on delivering tangible off-road improvements that validate its \"dirt-ready\" claim. The \"retro\" aesthetic must convey a return to rugged, capable roots, distinguishing it from a purely superficial styling exercise"
       }
     },
     "recommendations": [
       {
-        "details": "Reinforce core strengths in comfort and performance through experiential marketing campaigns like extended test rides"
+        "details": "Emphasize authentic off-road prowess as the primary value proposition, ensuring tangible performance improvements validate the \"dirt-ready\" claim"
       },
       {
-        "details": "Proactively address price and value perception through strategic pricing initiatives and value-add packages"
+        "details": "Leverage BMW's established reputation for reliability and comfort as foundational brand advantages in the adventure segment"
       },
       {
-        "details": "Manage technology narrative by emphasizing practical benefits over gadgetry and ensuring seamless user experience"
+        "details": "Position heritage styling as authentic capability rather than superficial aesthetics, connecting to BMW's pioneering GS legacy"
       },
       {
-        "details": "Address design polarization through strategic visuals, in-person demonstrations, and future design input gathering"
+        "details": "Target the \"dirt-ready retro\" niche by combining genuine off-road performance with heritage appeal"
       },
       {
-        "details": "Enhance dealer and service network to provide VIP touring experience with dedicated support programs"
+        "details": "Capitalize on competitor supply chain disruptions through robust product availability and stable delivery timelines"
       },
       {
-        "details": "Leverage innovation leadership while ensuring reliability and user-friendliness of new technologies"
+        "details": "Balance modern technology integration thoughtfully to enhance riding experience without overwhelming the heritage aesthetic"
       }
     ],
     "priorities": [
-      "Overall comfort enhancement and marketing as primary differentiator",
-      "Value proposition improvement through pricing strategy and package optimization",
-      "Technology user experience refinement and reliability assurance",
-      "Design perception management through strategic presentation and customer engagement",
-      "Service network strengthening for premium touring experience",
-      "Strategic positioning as the ultimate all-around touring machine"
+      "Deliver genuine off-road capability that substantiates marketing claims",
+      "Maintain BMW's reputation for reliability and supreme comfort",
+      "Create authentic emotional connection through heritage positioning",
+      "Ensure robust market availability to capitalize on competitive opportunities",
+      "Position at premium price point justified by unique value proposition",
+      "Engage directly with Swiss adventure riding community and alpine touring culture"
     ]
   },
   "uk": {
     "attributeInsights": {
-      "Overall Comfort": {
-        "insight": "Unanimously identified as \"king\" of touring attributes, with virtually every online discussion touching upon it as non-negotiable. The R1300RT's lower seat height and improved legroom for pillions are key discussion points.",
-        "recommendation": "Commit to continuous innovation in seating ergonomics and suspension tuning. Offer comfort-focused accessories as standard or attractive upgrades at point of purchase."
+      "Off-Road Performance": {
+        "insight": "Consumers fundamentally prioritize a bike's genuine capability to perform effectively off-road, viewing it as a core aspect of the \"adventure\" experience. Over 85% of adventure motorcycle owners prioritize features such as advanced suspension, off-road tires, and high ground clearance.",
+        "recommendation": "Emphasize genuine off-road capabilities including 21-inch front wheel and substantial suspension travel. Focus marketing on real-world off-road scenarios rather than just aesthetic adventure appeal."
       }
     },
     "recommendations": [
       {
-        "details": "Double down on comfort and protection leadership through continuous innovation"
+        "details": "Position products around core functional capabilities (off-road performance, versatility, manageability) rather than secondary features"
       },
       {
-        "details": "Position technology as enhancing safety and reducing fatigue for older riders"
+        "details": "Leverage authentic heritage stories and genuine historical connections as key differentiators"
       },
       {
-        "details": "Address reliability perceptions proactively with warranties and testimonials"
+        "details": "Address practical concerns proactively, particularly around weight context and fuel range through optional accessories"
       },
       {
-        "details": "Leverage RT's dynamic touring blend to attract adventure bike converts"
+        "details": "Emphasize reliability and build quality as foundational expectations, using competitor quality issues as subtle differentiation"
       },
       {
-        "details": "Mitigate cost concerns through finance packages and value communication"
+        "details": "Develop comprehensive accessory ecosystem to support customization desires post-purchase"
       },
       {
-        "details": "Strengthen community engagement through exclusive events and partnerships"
+        "details": "Ensure dealer network preparedness for product-specific positioning and customer concerns"
       }
     ],
     "priorities": [
-      "Reinforce \"effortless touring\" narrative combining comfort, tech, and ease",
-      "Maximize demo opportunities to overcome styling concerns",
-      "Target aging adventure riders seeking road-focused comfort",
-      "Communicate total ownership value beyond initial purchase price",
-      "Build confidence through reliability assurance programs",
-      "Maintain technological leadership while ensuring user-friendly implementation"
+      "Demonstrate genuine off-road capability through technical specifications and real-world testing",
+      "Develop authentic heritage narrative connecting historical significance to modern performance",
+      "Create optional accessory packages addressing practical touring and comfort needs",
+      "Emphasize reliability and quality as core brand differentiators",
+      "Prepare comprehensive dealer training for product positioning and customer education",
+      "Balance capability communication with manageability and accessibility messaging"
     ]
   }
 };

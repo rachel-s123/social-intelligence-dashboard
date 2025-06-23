@@ -4,449 +4,443 @@
 export const executiveSummaries = {
   "austria": {
     "attributeResonance": [
-      "Overall Comfort leads with WRI 94.1, driven by wind protection and ergonomic improvements that set new touring standards",
-      "Value for Money scores 92.5 despite negative pricing sentiment, indicating high importance as purchase driver requiring strategic attention",
-      "Technology & Features achieves 91.0 with ASA automatic transmission and safety systems generating excitement balanced by complexity concerns"
+      "Off-road performance dominates with highest WRI score (63.0), reflecting segment's core identity and 70% market share of off-road focused adventure bikes",
+      "Comfort & ergonomics ranks second (WRI: 56.5) as critical for extended adventure touring and long-distance travel",
+      "Engine size & performance (WRI: 56.0) essential with 75% of European riders preferring mid-to-high displacement models accounting for 85% of sales"
     ],
     "marketInsights": [
-      "Robust market growth with 3x conversation volume spike during R1300RT launch, giving BMW commanding 45% share of voice",
-      "Price sensitivity dominates negative sentiment (25% of discussions) with €25,890 base price creating affordability barriers",
-      "Mixed-positive sentiment overall (50% positive) driven by excitement for innovations offset by cost and complexity concerns"
+      "Off-road performance and comfort dominate 55% of consumer discussions, establishing dual priorities for capability and touring comfort",
+      "Technology desired but with significant concerns about \"excess of techy things\" potentially causing remote breakdowns",
+      "Strong positive sentiment (75%) but notable negative sentiment (10%) focused on complexity and pricing concerns"
     ],
     "competitorAnalysis": [
-      "BMW leads with technology advantages but faces value pressure from Honda NT1100 (€13k-14k) and Kawasaki Versys 1000/1100",
-      "Honda Gold Wing maintains luxury positioning but suffers from extreme weight (380kg) and higher pricing than R1300RT",
-      "Market bifurcating between premium tourers and budget alternatives, with middle-ground options being phased out due to emissions"
+      "BMW GS Series leads share of voice (20%) but faces consumer concerns about technological complexity and aesthetic polarization",
+      "KTM 890 Adventure R (18% SOV) positioned as rally-inspired with strong off-road credentials and Dakar heritage",
+      "Market fragmented across multiple strong competitors each with distinct positioning strategies from simplicity to premium performance"
     ],
-    "strategicPositioning": "Technology leader offering balanced touring experience with superior comfort and dynamic capability",
-    "contentMessaging": "Focus on practical technology benefits and total value proposition rather than specifications and initial pricing",
-    "audienceTargeting": "Experienced touring riders, adventure-to-touring converts, safety-conscious riders, and two-up touring couples",
-    "keyOpportunity": "Leverage first-mover advantage in automatic transmission and safety technology while addressing value perception through strategic bundling"
+    "strategicPositioning": "Position R 12 G/S as authentic \"dirt-ready retro\" combining genuine off-road capability with BMW's established adventure touring heritage",
+    "contentMessaging": "Emphasize off-road performance credentials while highlighting balanced technology approach that enhances rather than complicates adventure",
+    "audienceTargeting": "Focus on adventure riders seeking heritage authenticity with capability, those fatigued with over-complex premium bikes, and experienced tourists wanting off-road credibility",
+    "keyOpportunity": "Fill market gap for heritage-styled bike with serious capability, addressing clear consumer demand for \"dirt-ready retro\" that delivers performance, not just aesthetics"
   },
   "belgium": {
     "attributeResonance": [
-      "Comfort reigns supreme as the top purchase driver (WRI: 93.0), with aging demographics amplifying its importance",
-      "Safety features and reliability score exceptionally high (WRI: 88.3/88.0), reflecting touring riders' need for trustworthy machines",
-      "Technology and innovation strongly resonate (WRI: 86.3) but smartphone connectivity gap creates friction"
+      "Off-Road Performance dominates consumer priorities (WRI: 95.9/25% Share of Voice) with emphasis on suspension travel, 21-inch front wheels, and ground clearance",
+      "Manageability/Weight represents critical concern (WRI: 87.5) with 50% of riders reporting challenges handling heavy models in off-road/low-speed situations",
+      "Value for Money and Price Range equally important (WRI: 89.0) despite 50% negative sentiment, with 65% perceiving adventure motorcycles as too expensive"
     ],
     "marketInsights": [
-      "R1300RT launch captured 40% share of voice, reinvigorating touring segment conversation despite niche status",
-      "Traditional touring segment shrinking as riders migrate to adventure-tourers, but latent demand remains for dedicated tourers",
-      "\"Buzz factor\" vs sales reality: BMW's online dominance doesn't match Honda's sales leadership, indicating conversion challenges"
+      "Belgian motorcycle market experienced 11.7% growth in 2024 but faces temporary correction in early 2025 due to Euro5+ emissions standards",
+      "Consumer preferences bifurcated between technology appreciation and simplicity preference, creating distinct market segments with different priorities",
+      "Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R80 G/S connection"
     ],
     "competitorAnalysis": [
-      "BMW leads in technology and performance but faces criticism on price and missing CarPlay",
-      "Honda Gold Wing maintains loyal following with superior comfort and DCT transmission",
-      "Harley-Davidson leverages brand mystique despite performance limitations"
+      "BMW Motorrad holds 25% share of voice and third position in Belgian sales with 3,322 registrations, indicating strong established presence",
+      "KTM leads competitor discussion (20% SOV) with unmatched off-road capability but faces high price barriers",
+      "Honda and Yamaha maintain strong positions through legendary durability and simplicity focus respectively"
     ],
-    "strategicPositioning": "Position as the \"no compromise\" grand tourer balancing comfort, technology, and performance",
-    "contentMessaging": "Emphasize core strengths in comfort, safety, and innovation while addressing value concerns",
-    "audienceTargeting": "Focus on upgrading touring riders and adventure-touring considerers",
-    "keyOpportunity": "Address smartphone connectivity gap and enhance value proposition to convert market buzz into sales leadership"
+    "strategicPositioning": "Establish R 12 G/S as premier \"retro-off-road\" adventure bike leveraging authentic heritage while addressing manageability concerns",
+    "contentMessaging": "Emphasize \"dirt-ready\" capability and R80 G/S legacy as emotional differentiators, highlighting lighter weight advantages",
+    "audienceTargeting": "Focus on heritage enthusiasts and performance-oriented riders seeking simplicity, plus value-conscious consumers in mid-range segment",
+    "keyOpportunity": "Fill market gap between complex technological solutions and simplicity preference through purposeful electronic integration approach"
   },
   "bulgaria": {
     "attributeResonance": [
-      "Overall Comfort dominates purchase decisions with highest resonance (WRI: 93.5), driven by touring riders' paramount need for ergonomics and weather protection",
-      "Brand Image & Reputation shows exceptional strength (WRI: 92.0) leveraging BMW's heritage and police/authority usage credentials",
-      "Technology cluster (Innovation, Technology & Features, Engine Performance) all score 88.5+ WRI, indicating strong appetite for advanced features and performance"
+      "Off-Road Performance is paramount (WRI: 66.0) with consumers prioritizing fundamental capability to handle diverse off-road conditions as core adventure bike function",
+      "Technology & Features rank highly (WRI: 62.0) as expected baseline requirements, with failure to deliver being major detractor but meeting expectations insufficient for differentiation",
+      "Engine Size & Performance critical (WRI: 61.7) directly impacting bike capability and rider satisfaction through power, torque, and characterful delivery"
     ],
     "marketInsights": [
-      "Bulgaria's motorcycle market grew 13.5% in 2024 to ~3,500 units, with BMW Motorrad achieving record 298 sales (+16% growth)",
-      "R1300RT launch generated significant buzz and dominated touring segment share of voice (40%) over Honda Gold Wing (25%)",
-      "Positive sentiment overwhelmingly strong (65%) focusing on comfort improvements, technology advances, and engine performance gains"
+      "Market demonstrates \"utility-first\" mindset prioritizing core functional attributes over aesthetic considerations with pragmatic consumer base valuing capability and reliability",
+      "Heritage appeal emerging as valuable differentiator (WRI: 45.5) but success contingent on delivering strong performance and comfort attributes rather than replacing essential functionalities",
+      "Significant passive interest in BMW R 12 G/S evidenced by 19,177 forum views with minimal active discussion, presenting opportunity to shape post-launch narrative without contending with extensive pre-existing discourse"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads competitive positioning with balanced agility-comfort proposition and cutting-edge technology integration",
-      "Honda Gold Wing remains primary competitor with luxury focus but suffers from weight disadvantage (~380kg vs 281kg)",
-      "Internal competition from GS adventure bikes creates conversion opportunity for riders seeking superior on-road touring comfort"
+      "Honda maintains market leadership with 114 Q1 2025 registrations attributed to reliability reputation and robust distribution network while BMW follows with 70 units",
+      "BMW R 12 G/S offers authentic heritage connection to Dakar Rally legacy providing \"authenticity premium\" that general retro inspiration from competitors like Ducati DesertX cannot match",
+      "Critical \"comfort conundrum\" exists where R 12 G/S heritage-inspired minimalist design compromises high-priority comfort expectations requiring proactive management through accessory strategy"
     ],
-    "strategicPositioning": "Position as premium comfort and technology leader with proven heritage and reliability credentials",
-    "contentMessaging": "Lead with comfort superiority, emphasize technological innovation, and leverage brand heritage as trust builders",
-    "audienceTargeting": "Focus on experienced tourers 40+, adventure bike crossover prospects, and two-up touring couples",
-    "keyOpportunity": "Address Value for Money challenge (lowest WRI: 11.5) through strategic financing, bundled packages, and long-term value communication"
+    "strategicPositioning": "Position as authentic heritage leader with genuine Dakar Rally legacy enhancing modern adventure capability while offering dual-strategy approach with R 1300 GS for comprehensive touring and R 12 G/S for focused heritage experience",
+    "contentMessaging": "Emphasize \"heritage meets modern performance\" narrative linking authentic historical connection to demonstrable contemporary off-road capabilities while proactively managing comfort expectations through accessory customization options",
+    "audienceTargeting": "Focus on \"purist\" adventure riders valuing authenticity and connection to motorcycling history, performance-focused enthusiasts prioritizing capability over luxury, and heritage-conscious consumers seeking genuine connections rather than superficial retro styling",
+    "keyOpportunity": "Convert high passive pre-launch interest into active advocacy through experiential marketing, targeted online engagement, and comprehensive accessory ecosystem addressing comfort while maintaining heritage character"
   },
-  "czech_republic": {
+  "czech-republic": {
     "attributeResonance": [
-      "Engine Performance and Technology & Features dominate with identical WRI scores of 92.8, indicating Czech riders value integrated smart performance over raw power alone",
-      "Value for Money scores 92.5 but driven by negative sentiment around 800k CZK pricing, representing critical barrier requiring strategic value proposition communication",
-      "Handling & Stability (89.4) and Brand Image & Reputation (87.2) reinforce BMW's core strengths in touring segment with strong positive resonance from police use validation"
+      "Off-road performance is the undisputed top priority (WRI: 94.0) dominating 25% of all discussions",
+      "Heritage/retro styling ranks highly (WRI: 84.5) with notable appetite for authentic heritage designs evidenced by Ducati DesertX success and R 12 G/S anticipation",
+      "Reliability concerns account for 12% of discussions (WRI: 81.0) with BMW positioned advantageously against competitors facing reliability scrutiny"
     ],
     "marketInsights": [
-      "BMW commands 60-70% Share of Voice in touring discussions with R1300RT generating nearly 10,000 views and 47 comments on major Czech motorcycle site",
-      "Czech motorcycle market growing 14% in 2024 with premiumization trend favoring higher-capacity bikes, creating favorable conditions for premium touring sales",
-      "Mixed sentiment split: 30% positive (performance/technology praise), 50% negative (price/design criticism), 20% neutral (wait-and-see approach)"
+      "Czech motorcycle market experienced robust 14% growth reaching 30,330 units with BMW leading over 800cc segment",
+      "Adventure segment shows predominantly positive sentiment (65%) driven by enthusiasm for new models and riding experiences",
+      "Heritage styling trend clearly evident with consumers seeking authentic character and emotional connection beyond purely functional designs"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing offers superior luxury comfort but significantly heavier and less maneuverable, appealing to different customer segment prioritizing maximum comfort",
-      "Ducati Multistrada V4 RS won Czech \"Touring Motorcycle of the Year\" with 180hp performance focus, targeting sportier demographic but lacking pure touring refinement",
-      "Yamaha and Kawasaki exit from touring segment with FJR1300 and 1400GTR discontinuation creates opportunity vacuum for BMW to capture displaced sport-touring customers"
+      "BMW GS Series commands highest share of voice (28%) followed by Honda Africa Twin (22%) and Yamaha Ténéré 700 (17%)",
+      "Market gap identified for premium, off-road capable adventure bike with strong authentic heritage styling from European brand",
+      "KTM faces ongoing reliability concerns while Honda benefits from strong dependability reputation"
     ],
-    "strategicPositioning": "Position as technological leader combining performance with comfort, leveraging police use as social proof while addressing premium market growth trend",
-    "contentMessaging": "Focus on value proposition justification through durability testimonials and total cost of ownership while educating on design functionality benefits",
-    "audienceTargeting": "Target existing BMW owners upgrading, adventure riders seeking road comfort, professional commuters, and touring couples prioritizing passenger experience",
-    "keyOpportunity": "Exploit competitor vacuum and internal BMW ecosystem for cross-selling while capitalizing on Czech market premiumization through experiential marketing and community engagement"
+    "strategicPositioning": "Position as authentic heritage leader combining iconic R80 G/S lineage with modern off-road capability and premium quality standard",
+    "contentMessaging": "Emphasize genuine off-road prowess, authentic heritage narrative, and BMW's reliability reputation as competitive differentiation",
+    "audienceTargeting": "Focus on heritage enthusiasts, experienced adventure riders prioritizing genuine capability, and premium buyers concerned about competitor reliability",
+    "keyOpportunity": "Capitalize on market gap for heritage-styled adventure bike that bridges classic aesthetics with serious modern off-road capability"
   },
   "denmark": {
     "attributeResonance": [
-      "Overall Comfort dominates as the paramount purchase driver (WRI: 92.5), with Gold Wing setting the benchmark as \"sofa on wheels\" while BMW RT owners rate comfort only 3/5",
-      "Technology & Features create polarized sentiment (WRI: 74.3), with BMW's radar ACC praised but missing CarPlay/Android Auto becoming \"almost a meme\" in discussions",
-      "Handling & Stability represents BMW's core strength (WRI: 86.0), with RT owners giving perfect 5/5 ratings and describing the bike as \"surprisingly agile, almost like a sport-tourer\""
+      "Versatility (Dual-Purpose Capability) emerges as paramount consumer priority (WRI: 93.5), with predominant conversations emphasizing \"true all-rounder\" capability",
+      "Off-Road Performance and Technology & Features tied as critical drivers (WRI: 89.0 each), reflecting demand for genuine capability and seamless integration",
+      "Engine Performance, Comfort, Rider Aids, and Suspension form capability stack (WRI: 84.0-84.5), where weakness in any area undermines perceived value"
     ],
     "marketInsights": [
-      "BMW dominates conversation share of voice (55%) following R1300RT launch, but sentiment is mixed with 50% positive, 30% negative due to design and feature gaps",
-      "Danish market is highly price-sensitive due to extreme vehicle taxes, with fully-equipped R1300RT approaching 500,000 DKK causing value proposition questioning",
-      "Reliability perception remains BMW's challenge with Honda's reputation being \"almost a proverb\" while BMW faces lingering maintenance cost concerns"
+      "Danish adventure motorcycle market demonstrates resilience with projected 6.05% CAGR (2025-2034) despite broader European motorcycle decline of 13.4%",
+      "Consumer tension exists between desire for hardcore off-road performance and need for on-road comfort, creating opportunity for true balanced capability",
+      "Heritage positioning holds strategic significance (WRI: 68.0) when authentically paired with genuine modern performance, tapping into nostalgia and proven lineage"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing enjoys 80-85% positive sentiment and 4.8/5 comfort ratings, setting the benchmark for luxury touring with proven DCT and CarPlay integration",
-      "Harley-Davidson leverages strong brand community and now offers CarPlay, creating polarized 50/50 sentiment split between loyalists and critics",
-      "Yamaha FJR1300 captures value-conscious segment with 94% repurchase intent and \"bulletproof\" reliability reputation despite dated technology"
+      "Honda Africa Twin leads share of voice (25%) through comprehensive equipment and touring capabilities, but criticized for menu complexity and high center of gravity",
+      "Yamaha Ténéré 700 maintains strong presence (20%) with off-road prowess and affordability, yet lacks top-end power for loaded touring",
+      "KTM 890 Adventure R (18%) leverages Dakar heritage and off-road excellence but limited in touring comfort compared to larger displacement competitors"
     ],
-    "strategicPositioning": "Position as \"the premium tourer for riders\" who demand both comfort and dynamic performance, differentiating from Gold Wing's comfort-only focus",
-    "contentMessaging": "Lead with \"Comfort Without Compromise\" and \"Connected Intelligence\" once CarPlay integration addresses primary frustration point",
-    "audienceTargeting": "Focus on upgrading sport-touring riders (40-55 years) and technology-forward enthusiasts who cross-shop with Gold Wing but prefer dynamics",
-    "keyOpportunity": "Immediate Apple CarPlay/Android Auto integration to transform biggest negative sentiment into competitive advantage while enhancing comfort features to challenge Gold Wing benchmark"
+    "strategicPositioning": "Position as authentic \"dirt-ready retro\" combining 45 years G/S heritage with cutting-edge performance, delivering optimal on-road/off-road balance without compromise",
+    "contentMessaging": "Emphasize authentic off-road capability through compelling terrain demonstrations, highlight intuitive technology integration contrasting complex competitor systems",
+    "audienceTargeting": "Focus on heritage enthusiasts through BMW MC Klub Danmark, adventure tourists prioritizing long-distance capability, and premium buyers valuing comprehensive engineering",
+    "keyOpportunity": "Fill unique market gap for motorcycle genuinely combining strong off-road capability with authentic classic styling, leveraging active Danish motorcycle community for engagement"
   },
   "finland": {
     "attributeResonance": [
-      "Value for Money is the strongest purchase driver (WRI: 95.0) with R1300RT's €30k pricing being major concern requiring strategic financial solutions and clear value justification",
-      "Technology & Features rank second highest (WRI: 92.0) with Finnish riders showing strong appetite for radar cruise control, semi-automatic transmission, and advanced TFT displays",
-      "Overall Comfort remains paramount (WRI: 91.5) as cornerstone of touring segment with R1300RT's improved ergonomics and wind protection highly valued for Finnish weather conditions"
+      "Off-Road Performance & Versatility are paramount priorities (WRI: 95.0 each)",
+      "Heritage/Retro Styling shows strong market appetite (WRI: 89.0)",
+      "Suspension Quality critical for adventure capability (WRI: 90.0)"
     ],
     "marketInsights": [
-      "Finland's small motorcycle market (~3,200-3,500 annual units) shows adventure bike dominance with 3 of top 5 models being ADVs, challenging traditional touring segment",
-      "BMW R1300RT commands 40% share of touring conversations despite not ranking in top 10 sales, indicating high interest but price sensitivity barriers",
-      "Used motorcycle market growth of 38% reflects economic pressures with consumers preferring low-mileage alternatives over new premium purchases"
+      "Versatility and off-road capability remain paramount for adventure riders, with notable emerging interest in mid-capacity models",
+      "Growing market appetite for \"modern heritage\" adventure motorcycles that blend classic aesthetics with modern functionality",
+      "Consumer desire for simplicity amidst increasing technological sophistication, with preference for \"less techy\" platforms"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads technological innovation but faces direct competition from Honda Gold Wing's luxury positioning and indirect pressure from adventure bikes",
-      "Honda NT1100 emerges as value alternative at €20k with 5-star Finnish reviews, threatening premium segment with practical touring capabilities",
-      "Cross-segment competition from BMW's own R1300GS and Honda Africa Twin shows touring buyers increasingly prefer versatile \"do-it-all\" motorcycles"
+      "BMW GS series widely perceived as segment benchmark despite Honda's broader market leadership",
+      "KTM 890 Adventure R and Yamaha Ténéré 700 strong contenders with 18.0% and 16.0% SOV respectively",
+      "BMW and Ducati positioned at premium end while Japanese brands and Triumph offer strong value"
     ],
-    "strategicPositioning": "Position as balanced performance tourer offering dynamic handling and supreme comfort without compromise, differentiating from heavy luxury competitors and basic adventure alternatives",
-    "contentMessaging": "Focus on technology leadership, comfort superiority over ADVs, and comprehensive value proposition including safety systems, warranty, and financing solutions",
-    "audienceTargeting": "Target experienced touring riders 40+, tech-savvy motorcyclists, adventure bike owners considering road focus, and current BMW owners seeking upgrades",
-    "keyOpportunity": "Address value perception through strategic financial solutions, community engagement, and clear differentiation against adventure bike competition while leveraging strong technology and comfort advantages"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage adventure bike that returns to fundamental, purist riding experience",
+    "contentMessaging": "Emphasize heritage connection to R 80 G/S, authentic boxer character, and \"stripped down feel-good bike\" experience",
+    "audienceTargeting": "Focus on riders seeking more nimble, less intimidating adventure bikes with character and emotional connection",
+    "keyOpportunity": "Leverage strong heritage appeal (WRI: 89.0) to differentiate from tech-heavy competitors and capture growing \"modern heritage\" segment"
   },
   "france": {
     "attributeResonance": [
-      "Overall comfort (96.8) and wind protection (93.0) are paramount purchase drivers",
-      "Technology features (78.0) have evolved from luxury to necessity for market relevance",
-      "Weight management (63.0) and low-speed handling (58.0) remain key barriers despite engineering improvements"
+      "Off-road performance and comfort & ergonomics dominate consumer priorities (WRI: 92.5/90.5)",
+      "Manageability and weight concerns present significant market opportunity (WRI: 90.0)",
+      "Heritage styling shows strong resonance with growing consumer appetite for authenticity (WRI: 78.5)"
     ],
     "marketInsights": [
-      "BMW RT and Honda Gold Wing dominate 85% of touring segment conversations",
-      "70% positive sentiment driven by comfort, technology, and reliability praise",
-      "Average touring buyer over 50 years old presents long-term demographic challenge"
+      "Q1 2025 market declined 20.4% due to tactical Euro 5+ registrations, not genuine demand reduction",
+      "BMW maintained robust third position with strong GS series performance despite expert criticism",
+      "Consumer conversations reveal strong appetite for lighter, more agile adventure bikes with genuine off-road capability"
     ],
     "competitorAnalysis": [
-      "BMW leads with 50% share of voice, boosted by R1300RT launch excitement",
-      "Honda Gold Wing maintains loyal following with 35% share despite weight concerns",
-      "Yamaha/Kawasaki exit creates significant conquest opportunity for established players"
+      "BMW GS Series leads share of voice (30.0%) but faces weight and \"specialness\" challenges",
+      "Yamaha Ténéré 700 (22.0%) and Honda Africa Twin (18.0%) provide strong value propositions",
+      "Market gap exists for heritage-styled bikes with authentic off-road capability and manageable weight"
     ],
-    "strategicPositioning": "Technology leader offering modern evolution of touring excellence",
-    "contentMessaging": "Emphasize \"Confort Princier\" and police validation",
-    "audienceTargeting": "Focus on orphaned Japanese sport-tourer owners and tech-savvy riders",
-    "keyOpportunity": "Capitalize on competitor exits while defending against adventure bike encroachment"
+    "strategicPositioning": "Position BMW R 12 G/S as the authentic heritage adventure bike that solves the weight conundrum while delivering genuine off-road capability",
+    "contentMessaging": "Emphasize authentic R80GS Paris-Dakar lineage backed by modern performance rather than just heritage styling",
+    "audienceTargeting": "Target experienced adventurers seeking lighter alternatives and heritage seekers demanding modern capability",
+    "keyOpportunity": "Capitalize on the Heritage-Capable sweet spot where consumers desire classic looks backed by genuine off-road performance and manageable weight"
   },
   "greece": {
     "attributeResonance": [
-      "Overall Comfort leads with highest resonance (WRI: 93.5) encompassing seat comfort, ergonomics, and wind protection as paramount concerns",
-      "Technology & Features show strong resonance (WRI: 87.5) with BMW's radar cruise control and connectivity positioning it as \"class-leading\"",
-      "Engine Performance resonates highly (WRI: 87.0) with the new 1300cc boxer's 145hp delivering \"substantial performance hike\" praised by riders"
+      "Versatility (Dual-Purpose Capability) dominates as foundational expectation with 70%+ riders preferring adventure motorcycles for multi-terrain capabilities (WRI: 92.0)",
+      "Technology & Features leads discussion themes at 31.8% but complexity causes \"teething pains\" requiring intuitive integration (WRI: 90.0)",
+      "Off-Road Performance drives 23.5% of conversations with consumers demanding genuine \"dirt-ready\" capability rather than just adventure aesthetics (WRI: 85.1)"
     ],
     "marketInsights": [
-      "BMW R1300RT dominated online discussions with 45-50% share of voice, far outpacing Honda Gold Wing (20%) and other competitors",
-      "Overall positive sentiment (65%) driven by praise for performance, comfort innovations, and technology leadership despite styling and price concerns",
-      "Greek touring segment remains niche but strategically important, with adventure bikes gaining popularity as alternatives to traditional tourers"
+      "Greek market shows resilience with +0.3% growth while broader European market contracts -13.4%, indicating unique local dynamics and robust underlying demand",
+      "Adventure segment caters to enthusiast-driven demographic (21.8% motorcycle market share) distinct from scooter-dominated commuter market (67.7%)",
+      "CFMOTO 450MT becoming top-selling model signals significant opportunity in mid-range value segment ($10,000-$20,000 price bracket)"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT positioned as technology and performance leader but faces affordability challenges with €24,490 base price reaching €30-35k fully loaded",
-      "Honda Gold Wing offers superior luxury comfort but suffers from excessive weight (380kg) and even higher pricing (€40k+)",
-      "Yamaha Tracer 9 GT+ provides strong value alternative at €14k but cannot match premium tourer wind protection and two-up spaciousness"
+      "Traditional premium brands (BMW GS 14.8%, Triumph Tiger 11.1%, Ducati DesertX 11.1%) maintain strong individual presence but collective \"Other Adventure Bikes\" dominate at 37.0% share of voice",
+      "Emerging brands like CFMOTO and Voge rapidly gaining market share through value-oriented positioning and competitive features",
+      "Technology complexity creates differentiation opportunity as competitors struggle with user-friendly integration (\"tech teething pains\" with Honda, BMW GS ASA complexity)"
     ],
-    "strategicPositioning": "Technology-forward premium choice combining comfort leadership with performance excellence and proven touring heritage",
-    "contentMessaging": "Emphasize comfort innovations, substantial engine performance improvements, and technology leadership while addressing value perception through strategic bundling",
-    "audienceTargeting": "Tech-savvy experienced riders (40s-60s), long-distance touring enthusiasts, BMW loyalists, and couples who tour together",
-    "keyOpportunity": "Capitalize on Yamaha FJR1300 discontinuation while leveraging Greece's growing tourism market and addressing styling concerns through expanded customization options"
+    "strategicPositioning": "Capture \"dirt-ready retro\" niche combining authentic heritage aesthetics (R 80 G/S styling) with genuine modern off-road capability, positioned at strategic mid-range pricing ($16,395)",
+    "contentMessaging": "Emphasize authentic off-road prowess through dynamic demonstrations, develop heritage-meets-performance narrative, highlight distinctive boxer engine character as emotional differentiator",
+    "audienceTargeting": "Focus on heritage enthusiasts seeking authentic capability, value-conscious adventurers, technology appreciators prioritizing intuitive integration, and multi-terrain riders requiring true versatility",
+    "keyOpportunity": "Address underserved market intersection of heritage styling and genuine capability while leveraging mid-range pricing to compete with growing value segment without compromising BMW premium appeal"
   },
   "hungary": {
     "attributeResonance": [
-      "Brand Image & Reputation is the ultimate differentiator with BMW and Honda's strong brand images generating immense loyalty (WRI: 97.5)",
-      "Overall Comfort defines the touring segment as the primary purchase motivation with BMW RT and Honda Gold Wing as benchmarks (WRI: 95.8)",
-      "Wind Protection receives significant emphasis as critical differentiator with BMW R1300RT's adjustable screen highly praised (WRI: 92.5)"
+      "Technology & Features dominates with highest priority (WRI: 97.5) - 25% of consumer discussions focused on advanced integration, DCT adoption rates, and rider aids",
+      "Off-Road Performance ranks fourth (WRI: 79.0) - 20% of conversations centered on authentic capability, suspension performance, and genuine dirt-bike feel",
+      "Heritage/Retro Styling ranks lower (WRI: 40.0) - 10% of discussions on design and character appeal, indicating niche rather than broad market driver"
     ],
     "marketInsights": [
-      "Hungarian touring motorcycle market shows dynamic growth with 55% positive sentiment driven by comfort and technology enthusiasm",
-      "BMW leads share of voice at 30% followed by Honda at 25%, reflecting strong early 2025 momentum with R1300RT launch",
-      "Comfort is the dominant theme in 30% of discussions, with riders explicitly choosing touring bikes for fatigue-free long-distance capability"
+      "Hungarian market experienced post-Euro 5 transition with strategic stock clearing affecting year-over-year comparisons but underlying adventure demand remained robust",
+      "Motorkiállítás 2025 served as crucial platform for brand visibility and consumer engagement, with Honda establishing substantial presence",
+      "Adventure tourers and naked bikes emerged as most popular categories, confirming sustained consumer preference for adventure motorcycles"
     ],
     "competitorAnalysis": [
-      "BMW dominates sport-touring segment with R1300RT setting technological benchmark but faces pricing and design polarization challenges",
-      "Honda maintains strong position with broadest lineup from luxury Gold Wing to mid-range NT1100 offering reliability reputation",
-      "Market opportunities exist from competitor departures (Yamaha FJR1300, Kawasaki 1400GTR discontinuation) creating customer capture potential"
+      "BMW Motorrad maintains 25% share of voice with R 1300 GS as most popular new motorcycle and multiple \"Motorcycle of the Year\" wins",
+      "Honda leads overall market (20% SOV) with strong adventure lineup including Africa Twin's 71% DCT adoption rate and Transalp's third-place sales ranking",
+      "Key competitors include Yamaha Ténéré 700 (facing reliability concerns), KTM 890 Adventure R (off-road focused), and rising CFMoto presence"
     ],
-    "strategicPositioning": "Maintain technological leadership while emphasizing comfort superiority and engineering excellence to justify premium positioning",
-    "contentMessaging": "Address value perception through inclusive pricing strategies while highlighting long-term ownership benefits and resale value",
-    "audienceTargeting": "Focus on affluent experienced touring enthusiasts and growing middle-class riders seeking premium European touring capabilities",
-    "keyOpportunity": "Capture orphaned customers from discontinued competitor models while leveraging Hungary's strategic Central European touring location advantages"
+    "strategicPositioning": "Position as premium technology leader leveraging R 1300 GS success while differentiating R 12 G/S through heritage and authentic off-road capability",
+    "contentMessaging": "Emphasize advanced rider aids and technology integration (highest consumer priority) while highlighting R 12 G/S's purist design and genuine off-road spirit",
+    "audienceTargeting": "Focus on technology-focused riders seeking advanced features and purist enthusiasts valuing heritage, authenticity, and taller-rider ergonomics",
+    "keyOpportunity": "Leverage R 12 G/S heritage positioning as modern R 80 G/S tribute to create emotional connection while emphasizing functional off-road capabilities and ergonomic advantages"
   },
   "italy": {
     "attributeResonance": [
-      "Overall comfort and passenger comfort are paramount purchase drivers (WRI: 100/95)",
-      "Technology & features highly valued by tech-savvy Italian consumers (WRI: 95.8)",
-      "Engine performance and handling balance critical for Italy's diverse roads (WRI: 95/90)"
+      "Off-Road Performance emerges as top priority (WRI: 86.5) with riders seeking authentic adventure readiness and capability for diverse terrains",
+      "Heritage/Retro Styling shows exceptional resonance (WRI: 82.5) reflecting significant appetite for classic aesthetics blended with modern technology",
+      "Comfort & Ergonomics, Engine Size & Performance, and Versatility all score highly (WRI: 82.0) indicating desire for capable, comfortable, versatile machines with strong emotional connection"
     ],
     "marketInsights": [
-      "Italian motorcycle market grew 14.5% in 2024 with 166,454 units sold",
-      "Pure touring segment represents 8-10% of market but shows stability",
-      "Adventure bikes dominate but dedicated tourers maintain loyal following"
+      "Italian adventure segment experienced temporary Q1 2025 contraction (-17.7%) due to Euro 5+ regulatory transition, but underlying demand remains robust with projected 6.05% CAGR through 2034",
+      "BMW Motorrad demonstrated resilience with less severe sales decline (8.2-9.3%) compared to overall market, maintaining dominant premium position with R 1300 GS models as top sellers",
+      "Growing recreational riding trend among younger demographics (30% of motorcyclists) drives long-term segment growth potential beyond short-term regulatory impact"
     ],
     "competitorAnalysis": [
-      "BMW commands 40% share of voice in touring discussions",
-      "Honda Gold Wing sets comfort benchmark but criticized for weight",
-      "Ducati Multistrada threatens with sporty appeal and local brand pride"
+      "BMW GS Series leads market share (31.8%) followed by Honda Africa Twin (14.5%) and Ducati Multistrada V4 (10.5%) in premium adventure segment",
+      "Honda Africa Twin topped Q1 sales due to balanced versatility and DCT availability, while Ducati emphasizes high-performance V4 technology",
+      "Competitive landscape shows clear distinction between road-oriented touring models and off-road-focused adventure bikes, with heritage styling emerging as key differentiator"
     ],
-    "strategicPositioning": "Position as the \"ultimate all-rounder\" - combining comfort excellence with dynamic performance",
-    "contentMessaging": "Lead with authentic comfort testimonials while emphasizing proven technology reliability",
-    "audienceTargeting": "Focus on FJR1300 upgraders, on-road GS owners, and aspiring NT1100 riders",
-    "keyOpportunity": "Capitalize on Yamaha FJR1300 exit and growing mototurismo trend with targeted campaigns"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage leader bringing enthusiasts back to origins while delivering modern capability, emphasizing genuine successor status to legendary R 80 G/S",
+    "contentMessaging": "Focus on \"Spirit of GS\" in purest form showcasing true adventure versatility across diverse terrains, highlighting boxer engine heritage and proven reliability",
+    "audienceTargeting": "Target heritage enthusiasts, serious adventure riders, long-distance touring specialists, and premium segment consumers valuing emotional connection and authentic capability",
+    "keyOpportunity": "Leverage strong heritage appetite and off-road capability gaps while market normalizes from regulatory transition, positioning R 12 G/S to capture pent-up demand for authentic adventure motorcycles with distinctive character"
   },
   "netherlands": {
     "attributeResonance": [
-      "Technology & Features leads with highest WRI score (95.8), followed by Overall Comfort (94.0) and Innovation & Future-proofing (94.0)",
-      "Value for Money shows high resonance (90.5) despite negative sentiment, indicating critical importance in purchase decisions",
-      "Design & Aesthetics generates significant discussion (89.0) but remains polarizing with mixed reactions"
+      "Long-Distance Touring Capability is the highest priority (WRI: 93.5), driven by consumer intentions for extensive European tours",
+      "Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R80 G/S",
+      "Manageability/Weight is critical (WRI: 85.0), with recurring concerns about \"top-heavy\" motorcycles and preference for manageable bikes"
     ],
     "marketInsights": [
-      "R1300RT captured 35% share of voice in touring segment during launch period, well ahead of competitors",
-      "Overall sentiment moderately positive at 50-55%, with technology and comfort driving enthusiasm",
-      "Price and design complexity represent main barriers to purchase consideration"
+      "Limited legal off-road opportunities in Netherlands mean \"adventure\" appeal translates to European touring versatility rather than extreme capability",
+      "Significant portion of adventure bike owners \"just like the style\" even without extensive off-road riding, creating style-first segment opportunity",
+      "Consumer profile characterized as \"practical adventurer\" seeking reliable, comfortable, and versatile machines for diverse European riding"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads in technology but faces pricing challenges versus Honda NT1100 (half the price)",
-      "Honda Gold Wing maintains ultra-comfort position but lacks modern tech features",
-      "Gap exists for medium-weight touring option around €20,000 price point"
+      "Yamaha Ténéré 700 leads share of voice (18%) with strong off-road reputation and cult following",
+      "BMW GS Series maintains strong position (17%) as benchmark for adventure segment despite size/weight concerns",
+      "Market gap exists for heritage-positioned, manageable adventure bikes between mainstream middleweights and large touring-focused models"
     ],
-    "strategicPositioning": "Technology leader offering unmatched blend of comfort, innovation, and performance",
-    "contentMessaging": "Emphasize tangible benefits of advanced features while justifying premium pricing",
-    "audienceTargeting": "Focus on R1250RT upgraders and riders from discontinued models (FJR1300, ST1300)",
-    "keyOpportunity": "Address medium-weight touring gap and enhance customer experience through community engagement"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage adventure bike connecting riders to BMW's adventure legacy with manageable \"dirt-ready retro\" capability",
+    "contentMessaging": "Lead with heritage story and R80 G/S connection while emphasizing European touring versatility and manageable adventure performance",
+    "audienceTargeting": "Focus on practical adventurers and style-first riders seeking distinctive heritage appeal with reliable BMW quality",
+    "keyOpportunity": "Leverage unique heritage positioning and early positive dealer sentiment to capture underserved manageable adventure segment"
   },
   "norway": {
     "attributeResonance": [
-      "Overall Comfort leads with highest WRI score (94.5), reinforced by consistent social discussions emphasizing comfort as \"paramount\" for touring riders",
-      "Engine Performance ranks second (93.45) driven by excitement over R1300RT's 145hp boxer engine - the most powerful BMW has ever built",
-      "Technology & Features achieves strong resonance (89.24) with high social interest in radar cruise control and 10.25\" TFT display elevating touring to \"luxury-car levels\""
+      "Off-road performance is paramount with WRI 93.5, driven by Norway's extensive gravel roads and mountainous terrain requiring genuine capability",
+      "Engine character and performance scores WRI 88.5, reflecting strong preference for \"soul\" and \"roar\" of petrol engines over electric alternatives",
+      "Heritage/retro styling achieves WRI 84.0, indicating significant appetite for classic aesthetics combined with modern performance capabilities"
     ],
     "marketInsights": [
-      "Norwegian touring market shows 16.5% growth in Q1 2025 with BMW maintaining market leadership position despite competitive pressures",
-      "Adventure-touring trend challenges traditional road tourers, requiring BMW to position R1300RT as both comfortable tourer and dynamic country road motorcycle",
-      "Strong used motorcycle market (30,000+ units sold in 2024) presents value competition, particularly from previous-generation R1250RT models at significantly lower prices"
+      "75% positive sentiment driven by enthusiasm for adventure riding and satisfaction with off-road capabilities in Norway's challenging terrain",
+      "Strong resistance to electric motorcycles despite government incentives, with only 1.2% of Norway's 200,000-bike fleet being electric",
+      "Market exhibits dual preference for modern technology and traditional engine character, seeking advanced features that don't detract from raw riding experience"
     ],
     "competitorAnalysis": [
-      "BMW holds 35% share of voice with R1300RT generating significant discussion, though polarizing styling and premium pricing create challenges",
-      "Honda's NT1100 success as \"Europe's most popular sport-tourer\" demonstrates market demand for value-oriented touring solutions",
-      "Yamaha lacks direct RT competitor after FJR1300 discontinuation, creating opportunity gap in premium touring segment"
+      "BMW GS Series (traditional) leads with 28.0% share of voice, recognized for touring comfort and advanced technology but perceived as increasingly large for pure off-road use",
+      "KTM 890 Adventure R holds 22.0% share, praised for aggressive off-road performance and lighter weight but faces reliability concerns",
+      "Heritage positioning opportunity exists as competitors focus on either pure performance (KTM) or touring luxury (traditional GS) without authentic heritage storytelling"
     ],
-    "strategicPositioning": "Premium technology leader delivering unparalleled touring comfort with most powerful boxer twin engine and luxury-car level advanced features",
-    "contentMessaging": "Emphasize comfort supremacy and performance leadership while addressing value proposition through total ownership cost messaging and heritage storytelling",
-    "audienceTargeting": "Focus on existing BMW owners for upgrades, tech-savvy enthusiasts seeking advanced features, and safety-conscious Norwegian riders responding to accident awareness",
-    "keyOpportunity": "Leverage technology leadership gap and safety focus alignment to differentiate from competitors while bridging adventure-touring appeal through dynamic capability messaging"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage-modern adventure brand offering \"puristic off-road fun\" with distinctive boxer engine character",
+    "contentMessaging": "Emphasize genuine off-road capability, heritage connection to R 80 G/S, and boxer engine's unique \"soul\" as core differentiators",
+    "audienceTargeting": "Focus on heritage enthusiasts, off-road purists, Norwegian terrain specialists, and petrol engine advocates who resist electric alternatives",
+    "keyOpportunity": "Fill heritage-modern positioning gap while specializing in Norwegian terrain demands through genuine off-road capability and distinctive engine character"
   },
   "poland": {
     "attributeResonance": [
-      "Overall Comfort dominates with highest WRI score of 93.0, emphasizing plush seating and fatigue-free long-distance capability as paramount",
-      "Technology Leadership creates strong differentiation with Innovation & Future-proofing (83.5) and Technology & Features (83.5) scoring highly",
-      "Performance Balance drives modern expectations with Engine Performance (83.5) and Handling & Stability (78.5) showing touring is no longer comfort-only"
+      "Off-road performance is paramount with WRI score of 92.5, representing core identity for Polish adventure riders seeking authentic dirt prowess over aesthetic appeal",
+      "Comfort & ergonomics ranks second (WRI: 85.0) as fundamental requirement for extended riding rather than luxury, directly impacting satisfaction and touring capability",
+      "Heritage/retro styling achieves strong position (WRI: 74.0) outranking traditional functional attributes, indicating powerful emotional driver and market appetite for authentic heritage connection"
     ],
     "marketInsights": [
-      "BMW R1300RT achieved dominant 45% share of voice, significantly outpacing Honda Gold Wing (20%) and competitors through launch excitement",
-      "Positive sentiment reached 70% overall, with BMW specifically praised as \"sztos\" (awesome) and setting new touring benchmarks",
-      "Technology-savvy Polish consumers show unprecedented enthusiasm for radar cruise control and semi-automatic transmission features"
+      "Polish adventure segment shows robust growth with ON/OFF category representing 23.9% of total market, while BMW holds market leadership position",
+      "Clear market segmentation exists between hardcore off-road enthusiasts and versatile touring riders, with distinct preferences for genuine capability versus road-biased adventure aesthetics",
+      "Strong pre-launch interest in BMW R 12 G/S's retro styling demonstrates market receptiveness to heritage-focused adventure motorcycles combining classic aesthetics with modern performance"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing maintains legendary comfort reputation but suffers from excessive weight (380kg) limiting appeal to broader demographics",
-      "Harley-Davidson relies on emotional heritage appeal but lacks modern technology, facing aging customer base challenges",
-      "Yamaha FJR1300 and Kawasaki exits create market opportunity for BMW to capture value-conscious sport-touring customers"
+      "KTM dominates serious off-road niche with 890 Adventure R leading share of voice (20.0%) through superior suspension and terrain capability",
+      "Yamaha Ténéré 700 provides strong value proposition (18.0% SOV) but faces emerging reliability concerns with 2025 model clutch and fuel consumption issues",
+      "BMW's traditional GS series maintains market leadership but faces criticism for perceived limitations in serious off-road conditions despite adventure branding"
     ],
-    "strategicPositioning": "Lead as the technology-forward touring choice that balances comfort with dynamic performance and innovative safety features",
-    "contentMessaging": "Emphasize practical technology benefits and superior comfort while proactively addressing reliability perceptions through warranty extensions",
-    "audienceTargeting": "Focus on tech-savvy touring enthusiasts, FJR/Kawasaki refugees, and adventure riders seeking superior on-road comfort",
-    "keyOpportunity": "Leverage 12kg weight reduction and advanced technology to differentiate from heavier Gold Wing while capturing exiting competitors' customers"
+    "strategicPositioning": "Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R80 G/S legacy",
+    "contentMessaging": "Emphasize genuine off-road capability through compelling terrain demonstrations and heritage storytelling connecting to BMW's rally roots and adventure authenticity",
+    "audienceTargeting": "Focus on hardcore off-road enthusiasts seeking BMW alternative to KTM dominance and heritage-conscious riders valuing emotional connection with classic-modern fusion",
+    "keyOpportunity": "Fill authentic off-road heritage gap and capture growing retro-adventure niche by demonstrating genuine dirt capability through simplified premium experience"
   },
   "portugal": {
     "attributeResonance": [
-      "Comfort and technology tie as top drivers (WRI: 97.1), with riders demanding both innovation and traditional touring comfort",
-      "Value for money concerns prominent (WRI: 92.5) due to €24.4k base price in premium-sensitive market",
-      "Reliability expectations high (WRI: 91.5) with concerns about complex electronics requiring proof of dependability"
+      "Off-Road Performance is paramount with WRI 100.0, dominating 25% of discussions as fundamental expectation for true adventure bikes",
+      "Engine Size & Performance ranks second with WRI 95.0, with consumers demanding powerful and responsive engines for exhilarating riding experiences",
+      "Technology & Features, Rider Aids & Safety Systems, and Connected Features all score WRI 85.5, representing modern baseline expectations for safety and enhanced riding experience"
     ],
     "marketInsights": [
-      "Portuguese motorcycle market grew 3.2% in 2024, with >125cc segment up 8.3%, showing healthy premium demand",
-      "R1300RT dominated touring conversation with 50%+ share of voice during launch period",
-      "Shift toward adventure-touring poses challenge, requiring clear articulation of road-touring advantages"
+      "The Portuguese adventure motorcycle market demonstrated vibrant activity with 75% positive sentiment, driven by new 2025 model introductions and strong consumer engagement",
+      "Mid-weight adventure motorcycles showed particular strength, with competitors like KTM, Triumph, and Honda actively promoting balanced power and maneuverability offerings",
+      "Heritage styling scored lower (WRI 36.2) but represents a \"blue ocean opportunity\" for differentiation in a market dominated by aggressive modern aesthetics"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing remains comfort benchmark but lacks modern tech (no radar ACC) and suffers from weight (380kg)",
-      "BMW K1600 series offers six-cylinder smoothness but R1300RT's lighter weight and newer tech prove more compelling",
-      "Sport-touring alternatives (Ninja 1000SX, GSX-S1000GT) provide value option at half the price but lack touring amenities"
+      "KTM 890 Adventure R commands 25% share of voice, positioned as \"King of Mid-Weight Adventurers\" with strong rally heritage and off-road excellence",
+      "Triumph Tiger 900 holds 20% share with versatility messaging balancing road and off-road performance, while Honda Africa Twin maintains 18% through reliability positioning",
+      "BMW GS Series traditional models show only 10% share, indicating opportunity for the R 12 G/S to reinvigorate BMW's adventure segment presence"
     ],
-    "strategicPositioning": "Position as the most technologically advanced touring motorcycle that doesn't compromise comfort",
-    "contentMessaging": "Address price concerns by articulating comprehensive value proposition including 3-year warranty",
-    "audienceTargeting": "Focus on mature riders seeking cutting-edge safety while attracting younger tech-oriented riders",
-    "keyOpportunity": "Leverage competitor exits and technology leadership to become default premium touring choice"
+    "strategicPositioning": "Position R 12 G/S as \"heritage adventure bike that delivers uncompromising modern capability,\" combining iconic GS legacy with contemporary performance to differentiate from competitors' uniform modern aesthetics",
+    "contentMessaging": "Emphasize authentic off-road capabilities and robust boxer engine performance first, then layer heritage as unique emotional differentiator while showcasing integrated modern technology seamlessly",
+    "audienceTargeting": "Focus on BMW loyalists seeking distinctive character, performance-oriented riders wanting aesthetic alternatives, touring enthusiasts valuing comfort, and affluent riders appreciating premium heritage design",
+    "keyOpportunity": "Leverage heritage positioning as distinctive market differentiator while proving uncompromising adventure capability, addressing the gap in emotional connection and character appeal in current competitive landscape"
   },
   "romania": {
     "attributeResonance": [
-      "Comfort reigns supreme with 93.5 WRI score - appearing in 70% of touring discussions",
-      "Technology drives purchase decisions (WRI: 87.5) but navigation interface needs improvement",
-      "Brand prestige reinforced by police use creates powerful trust signal (WRI: 88.5)",
-      "Value sensitivity remains high (WRI: 86.5) despite rising incomes - buyers compare against robust used market"
+      "Suspension Quality and Off-Road Performance dominate consumer priorities (WRI: 59.8/59.0) with 85% of owners prioritizing advanced suspension systems",
+      "Heritage/Retro Styling emerges as powerful differentiator (WRI: 55.5) driven by neo-retro trend and R 1300 GS styling challenges",
+      "Value, Price, and Reliability form critical cluster (WRI: 51.5 each) with 65% finding high-end bikes too expensive"
     ],
     "marketInsights": [
-      "Romania's motorcycle market grew 53% in 2024 with 10,199 units - touring remains niche but high-value",
-      "R1300RT dominates social conversation with 40% share of voice, generating 60% positive sentiment",
-      "Tech adoption accelerating - Honda sold more DCT automatics than manuals in certain 2024 models",
-      "Touring tourism boom driven by scenic routes (Transfăgărășan) creates functional need for comfort"
+      "Romanian motorcycle market showed consistent Q1 2025 growth with registrations increasing from 577 units in January to 1156 in February",
+      "Adventure segment expanding driven by outdoor activity demand and Romania's diverse challenging landscapes like Transfăgărășan and Transalpina",
+      "Shift towards \"sensible and more affordable\" motorcycles impacting larger adventure models, creating opportunity for mid-capacity premium options"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads mindshare with new model excitement and innovation perception",
-      "Honda Gold Wing maintains comfort benchmark but seen as heavy \"cruise ship\" for Romanian roads",
-      "Yamaha FJR1300 effectively exited with no Euro5 model - creates opportunity gap",
-      "Harley tourers serve different niche with lifestyle appeal but lack performance for serious touring"
+      "Yamaha Ténéré 700 (18.0% SOV) and Honda Africa Twin (17.0% SOV) lead discussion share with strong versatility and reliability positioning",
+      "KTM maintains aggressive off-road focus (15.0% SOV) but faces reliability perception challenges",
+      "CF Moto emerges as value-oriented disruptor offering \"much better value\" in mid-capacity segment"
     ],
-    "strategicPositioning": "Position as the lighter, more agile premium tourer that's \"sporty yet comfortable\" for Romania's varied roads",
-    "contentMessaging": "Lead with comfort innovations and 145hp performance while addressing value through warranty/service packages",
-    "audienceTargeting": "Focus on upgrading touring riders 40+, younger professionals stepping up, and tech-savvy two-up couples",
-    "keyOpportunity": "Convert current market excitement into sales through test rides while fixing navigation to eliminate Gold Wing advantage"
+    "strategicPositioning": "Position R 12 G/S as heritage-inspired alternative to complex flagships, targeting \"anti-flagship\" sentiment with authentic R 80 G/S connection",
+    "contentMessaging": "Emphasize manageable weight advantage (229kg vs 237kg), genuine off-road capability through 21-inch wheel setup, and distinctive boxer engine character",
+    "audienceTargeting": "Focus on heritage enthusiasts, experienced riders seeking manageability, and BMW loyalists desiring simpler yet capable alternative to R 1300 GS",
+    "keyOpportunity": "Leverage burgeoning neo-retro trend and market gap for premium yet simpler adventure motorcycles, capitalizing on R 1300 GS's controversial styling reception"
   },
   "slovakia": {
     "attributeResonance": [
-      "Overall Comfort and Technology & Features top purchase drivers (WRI: 93.0)",
-      "Value for Money critical decision factor despite luxury segment (WRI: 92.0)",
-      "Performance attributes (Engine, Handling, Innovation) cluster at 88.0",
-      "Design polarization creates strong emotional response (WRI: 81.0)"
+      "Off-road performance dominates consumer priorities as the paramount concern (WRI: 100.0/95.0 for versatility)",
+      "Heritage/retro styling shows strong resonance (WRI: 81.0) indicating authentic lineage appeal over generic aesthetics",
+      "Advanced technology and rider aids highly valued (WRI: 86.0/85.0) as expected differentiators in premium segment"
     ],
     "marketInsights": [
-      "R1300RT launch dominated share of voice (35%) in Jan-May 2025",
-      "Mixed-positive sentiment: 45% positive, 30% neutral, 25% negative",
-      "Adventure bikes increasingly cannibalizing traditional touring segment",
-      "Slovak market small but passionate (~10-11k total motorcycle sales/year)"
+      "Off-road performance, comfort, and technology account for 65% of consumer discussions, defining core purchase priorities",
+      "Positive sentiment dominates at 65% driven by rising adventure tourism popularity and enthusiastic rider engagement",
+      "Consumer preference shift toward dual-sport versatility with over 80% considering adventure motorcycles first choice for multi-terrain exploration"
     ],
     "competitorAnalysis": [
-      "BMW achieved largest conversation share with R1300RT launch",
-      "Honda Gold Wing maintains comfort benchmark reputation",
-      "Harley-Davidson tourers appeal to emotional/heritage buyers",
-      "Yamaha FJR1300 exit creates conquest opportunity"
+      "KTM leads share of voice (20.0%) followed by Yamaha Ténéré 700 (18.0%) and Honda Africa Twin (17.0%) in highly competitive landscape",
+      "BMW GS Series maintains 15.0% share but faces sales declines (-18.8% France, -13.0% Europe) creating opportunity for heritage differentiation",
+      "Market gap exists for authentic heritage combined with modern adventure capability as most competitors focus on pure performance or generic retro styling"
     ],
-    "strategicPositioning": "Position as all-rounder champion delivering balanced excellence across comfort, technology, and performance",
-    "contentMessaging": "Emphasize comfort parity with Gold Wing while highlighting superior agility and cutting-edge technology",
-    "audienceTargeting": "Focus on tech-savvy riders 30-60, existing RT owners for upgrade, and orphaned FJR1300 owners",
-    "keyOpportunity": "Leverage technology leadership (radar cruise, ASA transmission) to justify premium pricing and attract younger demographic"
+    "strategicPositioning": "Position R 12 G/S as definitive \"modern classic adventure bike\" leveraging authentic R 80 G/S lineage and Dakar Rally heritage to differentiate from generic retro offerings",
+    "contentMessaging": "Emphasize genuine multi-terrain capabilities through challenging terrain demonstrations while highlighting seamless technology integration as adventure enablers rather than mere convenience features",
+    "audienceTargeting": "Focus on experienced premium buyers in expanding Above 1000cc segment and heritage-conscious adventure tourism enthusiasts seeking emotional connection with authentic brand legacy",
+    "keyOpportunity": "Capture underserved segment valuing authentic adventure heritage with modern performance, addressing over 50% of riders' manageability concerns through agile large-displacement positioning"
   },
   "slovenia": {
     "attributeResonance": [
-      "Comfort dominates purchase decisions with Overall Comfort (WRI: 93.5) and Passenger Comfort (WRI: 91.5) as top drivers",
-      "Safety Features rank equally high (WRI: 93.5) with radar ACC and collision warnings being widely lauded",
-      "Performance attributes score strongly with Engine Performance and Reliability both at WRI: 88.5"
+      "Off-road performance dominates consumer priorities (WRI: 95.0) with 30% of all discussions focusing on authentic capability",
+      "Dual-sport versatility drives 60% of market expansion (WRI: 93.5) with 80% considering adventure bikes their first choice for multi-terrain exploration",
+      "Weight management critical concern with 50% of riders struggling with heavy models (WRI: 88.0) creating opportunity for lighter alternatives"
     ],
     "marketInsights": [
-      "R1300RT captured 30% share of voice in touring segment discussions, indicating strong market interest",
-      "Overall sentiment skews positive (55%) but with significant negative sentiment (30%) driven by price and styling concerns",
-      "Adventure bikes continue to draw attention from traditional touring segment, representing internal competition"
+      "Slovenia shows market resilience with 2.7% motor vehicle sales growth contrasting 16.6% European motorcycle decline",
+      "Heritage styling demonstrates strong appetite with \"notable appetite for heritage styling in adventure bikes\" and pre-launch anticipation for R 12 G/S",
+      "Technology integration expected by 95% of new adventure motorcycles but must enhance rather than complicate riding experience"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing remains comfort benchmark at 25% share of voice but criticized for extreme weight (~380kg)",
-      "Honda NT1100 represents value threat at half the price of R1300RT, appealing to price-sensitive buyers",
-      "BMW's own K1600 series could cannibalize sales with superior engine refinement for luxury-focused buyers"
+      "BMW GS Series leads premium segment (27.5% SOV) but faces pricing challenges with models \"well over 20 [thousand]\" limiting accessibility",
+      "KTM 890 Adventure R dominates off-road narrative (22.5% SOV) as \"king of mid-weight adventure\" setting performance benchmark",
+      "Market fragmentation creates opportunity for distinctive positioning combining heritage authenticity with genuine capability"
     ],
-    "strategicPositioning": "Position R1300RT as the \"no compromise\" touring solution - lighter than Gold Wing, more capable than budget sport-tourers",
-    "contentMessaging": "Lead with comfort and safety benefits while actively addressing value concerns through comprehensive feature communication",
-    "audienceTargeting": "Focus on 40+ experienced tourers while creating pathways for younger riders upgrading from mid-size bikes",
-    "keyOpportunity": "Leverage post-COVID touring renaissance and Slovenia's central location for European touring routes"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage leader combining R 80 G/S legacy with modern off-road capability and manageable weight advantage",
+    "contentMessaging": "Emphasize authentic off-road prowess, highlight 229kg weight advantage, showcase Dakar Rally heritage connection, demonstrate dual-sport versatility",
+    "audienceTargeting": "Focus on heritage enthusiasts, capability-focused riders, weight-conscious adventurers, and versatility seekers wanting single motorcycle solution",
+    "keyOpportunity": "Leverage Slovenia's market resilience and strong heritage appetite while addressing widespread weight management concerns through R 12 G/S's lighter 1200cc boxer design"
   },
   "spain": {
     "attributeResonance": [
-      "Core comfort attributes dominate purchase decisions (WRI: Overall Comfort 95.0, Wind Protection 93.5, Seat Height & Ergonomics 92.5)",
-      "Technology and innovation highly valued but tempered by reliability concerns (WRI: Technology & Features 83.5, Reliability & Durability 79.0)",
-      "Design polarization creates intense debate despite strong performance attributes (WRI: Design & Aesthetics 84.5, Engine Performance 87.0)"
+      "Heritage/Retro Styling leads with highest resonance (WRI: 86.5), driven by clear market appetite for authentic adventure heritage",
+      "Value for Money ranks critically high (WRI: 85.5) due to competitive pressure from aggressively priced Chinese brands",
+      "Off-Road Performance remains foundational expectation (WRI: 85.0) with focus on 21-inch front wheels and suspension capability"
     ],
     "marketInsights": [
-      "BMW R 1300 RT launch captured 60-70% share of voice in touring segment conversations",
-      "Sentiment split: 50% negative (design/price), 30% positive (performance/tech), 20% neutral",
-      "Only BMW and Honda remain committed to full-dress touring motorcycles in 2025"
+      "Spanish adventure segment shows strong preference for versatile dual-purpose machines over specialized single-use bikes",
+      "Technology integration is increasingly expected as standard, not luxury, with comprehensive rider aids and connectivity features",
+      "Heritage positioning offers strategic differentiation opportunity in market saturated with generic new models"
     ],
     "competitorAnalysis": [
-      "BMW dominates with technological leadership but faces design backlash and price resistance",
-      "Honda Gold Wing maintains luxury touring position but aging platform (5+ years) limits appeal",
-      "Sport-tourers (Ninja 1000SX, GSX-S1000GT) offer value alternative but lack touring comfort"
+      "BMW GS Series maintains 25-30% share of voice but faces design polarization challenges with new R 1300 models",
+      "Yamaha Ténéré 700 demonstrates successful heritage positioning with \"Dakarian\" styling driving 20-25% market conversation",
+      "Chinese brands (Voge, Kove) rapidly gaining market share through aggressive pricing and comprehensive feature packages"
     ],
-    "strategicPositioning": "Technology leader balancing innovation with touring heritage",
-    "contentMessaging": "Emphasize comfort/protection while educating on technology benefits",
-    "audienceTargeting": "Focus on traditional tourers open to tech and couples who tour together",
-    "keyOpportunity": "Capture riders from discontinued models through trade-in programs and demos"
+    "strategicPositioning": "Position R 12 G/S as authentic heritage motorcycle seamlessly integrating modern technology and proven adventure capability",
+    "contentMessaging": "Emphasize retro charm with contemporary functionality, leveraging GS lineage and reliability reputation",
+    "audienceTargeting": "Focus on heritage enthusiasts, premium adventure riders, and technology-conscious consumers seeking justified value",
+    "keyOpportunity": "Fill market gap for premium heritage adventure bike combining nostalgic appeal with cutting-edge performance and reliability"
   },
   "sweden": {
     "attributeResonance": [
-      "Comfort, Performance & Technology achieve highest WRI scores (93.5) as primary purchase drivers",
-      "Safety Features (90.0) and Wind Protection (89.0) particularly important in Swedish market",
-      "Navigation system criticism and price concerns represent main friction points despite high attribute scores"
+      "Versatility (Dual-Purpose Capability) is the top priority with highest resonance (WRI: 93.6)",
+      "Off-Road Performance and Engine Size & Performance are critical capabilities (WRI: 88.8/88.7)",
+      "Manageability/Weight represents significant opportunity addressing \"heavy beasts\" perception (WRI: 88.2)"
     ],
     "marketInsights": [
-      "BMW achieved 50-60% share of voice in touring segment conversations (Jan-May 2025)",
-      "60% positive sentiment driven by technology innovation and performance improvements",
-      "Swedish riders value safety features aligned with national Vision Zero initiatives"
+      "Swedish adventure motorcycle market demonstrates robust expansion driven by increasing interest in adventure tourism and digital nomad culture",
+      "Strong preference for mid-weight adventure motorcycles (500-1000cc) offering balanced combination of power, comfort, and maneuverability",
+      "Latent demand exists for more manageable, yet still capable, premium adventure options as alternative to intimidating larger bikes"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads in technology and power-to-weight ratio versus all competitors",
-      "Honda Gold Wing remains luxury benchmark but significantly heavier (365kg vs 281kg)",
-      "Japanese sport-tourers compete on price but lack comfort and features"
+      "KTM 890 Adventure R (18% SOV) leads with off-road prowess and powerful engine performance",
+      "Yamaha Ténéré 700 (17% SOV) strong contender valued for ruggedness, reliability, and accessibility",
+      "BMW GS Series (15% SOV) recognized for technology and comfort but faces \"heavy beasts\" perception"
     ],
-    "strategicPositioning": "Technology and safety leader in premium touring segment",
-    "contentMessaging": "Emphasize comfort-performance-technology trinity with safety focus",
-    "audienceTargeting": "Three core segments - upgrading RT owners, converting adventure riders, safety-conscious returners",
-    "keyOpportunity": "Consolidate market leadership as Japanese manufacturers exit full touring segment"
+    "strategicPositioning": "Position R 12 G/S as accessible premium off-roader offering BMW heritage in manageable, off-road-focused package addressing intimidation factor of larger GS models",
+    "contentMessaging": "Emphasize authentic adventure experience through functional simplicity, heritage connection to R 80 G/S legacy, and versatility as fundamental \"do-it-all\" capability",
+    "audienceTargeting": "Focus on heritage enthusiasts, off-road purists, experience-seekers prioritizing engaging riding experiences, and accessible premium adventure riders seeking confidence-inspiring BMW quality",
+    "keyOpportunity": "Fill \"Authentic Adventure\" niche for premium motorcycles prioritizing engaging experience over excessive complexity while serving as gateway into BMW adventure ecosystem"
   },
   "switzerland": {
     "attributeResonance": [
-      "Overall Comfort and Value for Money are the highest resonating attributes (WRI: 93.5/92.0), reflecting Swiss consumers' focus on premium experiences and investment justification",
-      "Technology & Features and Wind Protection show strong resonance (WRI: 89.0/88.5), indicating appetite for innovation balanced with practical touring benefits",
-      "Passenger Comfort and Brand Image are highly valued (WRI: 88.5/88.0), emphasizing two-up touring culture and BMW's strong Swiss market position"
+      "Off-Road Performance is the paramount priority (WRI: 94.3), with consumers expecting genuine dirt-ready capability rather than aesthetic appeal",
+      "Brand Reliability is a non-negotiable foundation (WRI: 90.5), particularly critical for adventure riders venturing into remote areas",
+      "Heritage/Retro Styling shows strong emerging resonance (WRI: 79.9), but must be authentically linked to functional performance capabilities"
     ],
     "marketInsights": [
-      "BMW R 1300 RT dominates conversation with 45% share of voice, significantly outpacing Honda Gold Wing (20%) and other competitors",
-      "Sentiment is sharply divided (40% positive, 40% negative, 20% neutral) with praise for technology and performance balanced by concerns over design and pricing",
-      "Swiss market shows preference for proven reliability and mature technology, with concerns about first-year model complexity and potential issues"
+      "Notable appetite for \"dirt-ready retro\" motorcycles that combine classic aesthetics with modern, uncompromising off-road performance",
+      "Consumer conversations are predominantly positive (65% positive sentiment) but focused on functional capability over superficial features",
+      "Switzerland's diverse terrain of alpine roads and off-road trails creates ideal conditions for versatile adventure motorcycles"
     ],
     "competitorAnalysis": [
-      "Honda Gold Wing maintains comfort leadership but struggles with excessive weight (380kg vs 281kg for RT) and reduced agility on Alpine roads",
-      "Harley-Davidson touring models offer strong emotional appeal and brand loyalty but lag significantly in advanced technology and performance",
-      "Yamaha FJR1300's discontinuation leaves BMW with reduced competition in the sport-touring segment, creating market consolidation opportunity"
+      "KTM and Yamaha faced significant supply-side challenges including production halts and delivery delays during Q1 2025, creating market opportunities",
+      "BMW GS Series maintains position as adventure class benchmark but at premium price points that may limit accessibility",
+      "Market leaders each maintain distinct positioning with clear functional value propositions rather than purely aesthetic differentiation"
     ],
-    "strategicPositioning": "Position as the ultimate all-around touring machine combining BMW's engineering excellence with cutting-edge technology and comfort",
-    "contentMessaging": "Emphasize experiential benefits through \"#RideAndBelieve\" campaigns and focus on seamless technology integration rather than feature complexity",
-    "audienceTargeting": "Focus on affluent 40-70 age demographic, BMW loyalists upgrading, and Gold Wing owners seeking lighter alternatives",
-    "keyOpportunity": "Leverage market leadership position through Swiss Edition value packages and comprehensive dealer experience programs to address price sensitivity while reinforcing premium positioning"
+    "strategicPositioning": "Position R 12 G/S as the authentic \"dirt-ready retro\" that uniquely bridges heritage aesthetics with genuine off-road capability, filling the gap between overly complex modern bikes and less capable retro-styled motorcycles",
+    "contentMessaging": "Lead with off-road prowess validation, reinforce BMW's reliability reputation, and frame heritage as authentic capability rather than superficial styling",
+    "audienceTargeting": "Focus on adventure riders seeking genuine capability, heritage enthusiasts valuing authentic connections, and Swiss alpine adventurers needing versatile performance",
+    "keyOpportunity": "Capitalize on competitor supply disruptions through robust availability while establishing the \"dirt-ready retro\" niche in the Swiss market with its cultural appreciation for alpine touring heritage"
   },
   "uk": {
     "attributeResonance": [
-      "Overall comfort (WRI: 98.5) and wind protection (WRI: 94.0) are paramount purchase drivers",
-      "Technology & features (WRI: 81.5) position BMW as segment leader with radar-assisted safety",
-      "Reliability concerns (WRI: 79.0) persist based on past electronic issues vs Honda's \"bulletproof\" reputation"
+      "Off-Road Performance is paramount (WRI: 89.5) with consumers fundamentally prioritizing genuine capability over aesthetic adventure appeal",
+      "Heritage/Retro Styling shows strong resonance (WRI: 83.0) driven by 'Modern Classic' segment resilience and authentic design connections",
+      "Manageability/Weight critical concern (WRI: 82.0) with over 50% of riders reporting difficulty handling heavy models"
     ],
     "marketInsights": [
-      "UK touring segment is niche but resilient, dominated by BMW RT and Honda Gold Wing",
-      "R1300RT commands 40% share of voice, demonstrating strong market presence and launch buzz",
-      "58% positive sentiment driven by tech and performance, 12% negative mainly on styling and price"
+      "UK adventure market experienced 29% decline in Q1 2025, largely artificial correction due to Euro 5+ pre-registration surge",
+      "'Modern Classic' segment demonstrated remarkable resilience with only 9.8% decline, indicating strong consumer appetite for heritage-styled motorcycles",
+      "BMW gained market share despite overall decline, moving up two positions to secure second place in manufacturer sales"
     ],
     "competitorAnalysis": [
-      "BMW R1300RT leads with technology and handling but faces styling polarization",
-      "Honda Gold Wing maintains comfort and reliability advantages but at higher price (£28k+)",
-      "BMW K1600 series sees diminished relevance with R1300RT offering similar capability for less"
+      "BMW GS Series leads share of voice (22.5%) but faces pre-launch skepticism about R 12 G/S weight and fuel capacity",
+      "Competitors leveraging heritage themes: Yamaha Ténéré 700 Rally, KTM 890 Adventure R, Ducati DesertX all emphasizing rally/retro aesthetics",
+      "Quality control issues among competitors (Yamaha clutch problems, Honda post-repair issues) create differentiation opportunity for BMW"
     ],
-    "strategicPositioning": "Market as \"effortless touring\" combining comfort, safety tech, and dynamic handling",
-    "contentMessaging": "Emphasize all-weather protection and fatigue reduction for UK conditions",
-    "audienceTargeting": "Focus on aging adventure riders and tech-savvy touring enthusiasts",
-    "keyOpportunity": "Convert GS owners seeking road-focused comfort while building owner community"
+    "strategicPositioning": "Position R 12 G/S as premium heritage enduro with authentic R 80 G/S lineage, emphasizing puristic off-road fun over long-distance touring",
+    "contentMessaging": "Proactively address fuel range concerns with optional larger tank, contextualize weight within agility benefits, leverage authentic heritage narrative",
+    "audienceTargeting": "Focus on heritage enthusiasts, technical off-road riders, and premium buyers seeking quality differentiation from competitor reliability issues",
+    "keyOpportunity": "Capitalize on resilient heritage segment growth while addressing manageability concerns through focused positioning and optional accessories"
   }
 };

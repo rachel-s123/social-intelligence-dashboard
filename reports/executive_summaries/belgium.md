@@ -1,22 +1,22 @@
 # Executive Summary: Belgium
 
 ## Attribute Resonance
-- Comfort reigns supreme as the top purchase driver (WRI: 93.0), with aging demographics amplifying its importance
-- Safety features and reliability score exceptionally high (WRI: 88.3/88.0), reflecting touring riders' need for trustworthy machines
-- Technology and innovation strongly resonate (WRI: 86.3) but smartphone connectivity gap creates friction
+- Off-Road Performance dominates consumer priorities (WRI: 95.9/25% Share of Voice) with emphasis on suspension travel, 21-inch front wheels, and ground clearance
+- Manageability/Weight represents critical concern (WRI: 87.5) with 50% of riders reporting challenges handling heavy models in off-road/low-speed situations
+- Value for Money and Price Range equally important (WRI: 89.0) despite 50% negative sentiment, with 65% perceiving adventure motorcycles as too expensive
 
 ## Market Insights
-- R1300RT launch captured 40% share of voice, reinvigorating touring segment conversation despite niche status
-- Traditional touring segment shrinking as riders migrate to adventure-tourers, but latent demand remains for dedicated tourers
-- "Buzz factor" vs sales reality: BMW's online dominance doesn't match Honda's sales leadership, indicating conversion challenges
+- Belgian motorcycle market experienced 11.7% growth in 2024 but faces temporary correction in early 2025 due to Euro5+ emissions standards
+- Consumer preferences bifurcated between technology appreciation and simplicity preference, creating distinct market segments with different priorities
+- Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R80 G/S connection
 
 ## Competitor Analysis
-- BMW leads in technology and performance but faces criticism on price and missing CarPlay
-- Honda Gold Wing maintains loyal following with superior comfort and DCT transmission
-- Harley-Davidson leverages brand mystique despite performance limitations
+- BMW Motorrad holds 25% share of voice and third position in Belgian sales with 3,322 registrations, indicating strong established presence
+- KTM leads competitor discussion (20% SOV) with unmatched off-road capability but faces high price barriers
+- Honda and Yamaha maintain strong positions through legendary durability and simplicity focus respectively
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as the "no compromise" grand tourer balancing comfort, technology, and performance
-- **Content & Messaging:** Emphasize core strengths in comfort, safety, and innovation while addressing value concerns
-- **Audience Targeting:** Focus on upgrading touring riders and adventure-touring considerers
-- **Key Opportunity:** Address smartphone connectivity gap and enhance value proposition to convert market buzz into sales leadership
+- **Strategic Positioning:** Establish R 12 G/S as premier "retro-off-road" adventure bike leveraging authentic heritage while addressing manageability concerns
+- **Content & Messaging:** Emphasize "dirt-ready" capability and R80 G/S legacy as emotional differentiators, highlighting lighter weight advantages
+- **Audience Targeting:** Focus on heritage enthusiasts and performance-oriented riders seeking simplicity, plus value-conscious consumers in mid-range segment
+- **Key Opportunity:** Fill market gap between complex technological solutions and simplicity preference through purposeful electronic integration approach

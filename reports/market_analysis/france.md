@@ -3,159 +3,156 @@
 # Topics Analysis
 
 ## Theme Data
-*Note: Include percentage distribution data from the long form report for each theme (e.g., "Theme 1: 25%")*
-- Comfort: 35%
-- Technology & Modernization: 20%
-- Handling vs. Weight: 15%
-- Engine Performance: 10%
-- Comparisons & Competition: 8%
-- Market Evolution (GT to Trails): 7%
-- Adventure vs. GT Debate: 3%
-- Quotes and Anecdotes: 2%
+- Off-Road Performance: 25.0%
+- Comfort & Ergonomics: 20.0%
+- Technology & Features: 18.0%
+- Value & Pricing: 15.0%
+- Design & Character Appeal: 12.0%
+- Reliability Concerns: 5.0%
+- Other Key Themes: 5.0%
 
 ## Theme Insights
-- **Comfort**
-  - Quote: "Confort, Confort, Confort"
-  - Explanation: Comfort is the #1 recurring theme, with riders actively seeking bikes that enable "avaler les kilomètres sans fatigue" (devouring kilometers without fatigue)
-  - Source: French touring motorcycle forums
-- **Technology & Modernization**
-  - Quote: "Apple Car Play (une première pour une moto)"
-  - Explanation: Modern technology is a major positive driver in 2025, with BMW's R1300RT introducing radar-assisted active cruise control and Honda's Gold Wing featuring DCT and Apple CarPlay
-  - Source: Honda dealer blog
-- **Handling vs. Weight**
-  - Quote: "Une fois en mouvement… étonne par une agilité qui la rend accessible à tous les gabarits"
-  - Explanation: The interplay of weight, center of gravity, and chassis design is often debated, with riders sharing experiences of surprisingly good handling despite mass
-  - Source: Gold Wing review discussions
-- **Engine Performance**
-  - Quote: "145 ch (chevaux) à 7750 tr/min… la RT la plus puissante jamais produite"
-  - Explanation: French riders value robust, smooth power delivery, especially for two-up riding with luggage
-  - Source: BMW R1300RT press coverage
-- **Comparisons & Competition**
-  - Quote: "la reine des routières"
-  - Explanation: French riders enjoy friendly debate over which bike is the "queen" of touring, with BMW RT and Honda Gold Wing dominating discussions
-  - Source: Moto Magazine
-- **Market Evolution (GT to Trails)**
-  - Quote: "la plupart des concurrentes ont disparu au profit des trails"
-  - Explanation: Most competitors have disappeared in favor of adventure bikes, leaving only BMW RT, Honda Gold Wing, and Harley in the pure touring class
-  - Source: MotoMag editor
-- **Adventure vs. GT Debate**
-  - Quote: "il ne reste que la RT et la Gold… et les Harley"
-  - Explanation: Many French riders acknowledge that adventure-touring bikes have overtaken pure GTs in popularity, discussed neutrally as a market trend
-  - Source: Forum discussions
-- **Quotes and Anecdotes**
-  - Quote: "si la Gendarmerie la choisit, c'est que…"
-  - Explanation: Police anecdotes about the Gendarmerie's adoption of FJR then RT serve as a stamp of approval and quality signal
-  - Source: Forum discussions
+- **Off-Road Performance**
+  - Quote: "Real off-road ability thanks to 21-inch front... wire wheels"
+  - Explanation: Off-road performance is consistently identified as a critical discussion point, featuring long-travel suspension, 21-inch front wheels, high ground clearance, and specialized off-road riding modes. Models like the KTM 890 Adventure R and Yamaha Ténéré 700 are often benchmarked for their off-road prowess.
+  - Source: BMW R12 G/S (2025) – Technical Review - Bennes Insurance
+- **Comfort & Ergonomics**
+  - Quote: "Ultimate comfort and distance abilities"
+  - Explanation: Central to discussions, encompassing aspects such as seat comfort, adjustable seat height, effective wind protection (especially adjustable windshields), and heated grips/seats. The weight of the motorcycle is often linked to comfort, particularly concerning maneuverability at low speeds.
+  - Source: Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube
+- **Technology & Features**
+  - Quote: "Advanced rider aids such as switchable and cornering ABS, traction control, multiple riding modes, TFT displays, quickshifters, cruise control, and connectivity options"
+  - Explanation: Highly valued, with discussions frequently revolving around advanced rider aids, multiple riding modes, TFT displays, quickshifters, and connectivity options. These features are increasingly expected as standard and contribute significantly to a bike's appeal.
+  - Source: New 2025 BMW R 12 G/S Revealed: Everything You Need To Know - YouTube
+- **Value & Pricing**
+  - Quote: "Competitive price points relative to the features offered, particularly from emerging Chinese brands"
+  - Explanation: Value and pricing remain a significant consideration for consumers. The competitive price points relative to the features offered, particularly from emerging Chinese brands, are driving discussions around overall value propositions.
+  - Source: Marché moto en mars 2025 : une chute brutale… mais pas si simple - a2riders.com
+- **Design & Character Appeal**
+  - Quote: "Retro styling, 'Dakar rallye style,' and a unique 'look' contribute significantly to a bike's appeal"
+  - Explanation: Design and character appeal play a crucial role, especially for models with a distinct aesthetic or historical connection. Retro styling, "Dakar rallye style," and a unique "look" contribute significantly to a bike's appeal.
+  - Source: Les 10 meilleures motos d'aventure 2025 - MotoActus
+- **Reliability Concerns**
+  - Quote: "Honda's 'legendary durability' is frequently cited as a positive benchmark"
+  - Explanation: While not universally dominant, reliability concerns surface in discussions regarding specific models or brands, often related to perceived build quality or maintenance requirements. Honda's "legendary durability" is frequently cited as a positive benchmark.
+  - Source: 2025 Honda Africa Twin 650 | Mid-Weight ADV Game Changer? - YouTube
+- **Other Key Themes**
+  - Quote: "Long-distance touring capability (emphasizing fuel range and luggage capacity) and A2 license compatibility for newer riders"
+  - Explanation: Other themes include long-distance touring capability emphasizing fuel range and luggage capacity, and A2 license compatibility for newer riders entering the adventure market.
+  - Source: BMW R12 G/S (2025) – Technical Review - Bennes Insurance
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive Sentiment: 70%
-- Neutral Sentiment: 20%
-- Negative Sentiment: 10%
+- Positive Sentiment: 65.0%
+- Neutral Sentiment: 25.0%
+- Negative Sentiment: 10.0%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "Position de conduite reposante, protection intégrale… les plus longs voyages se feront dans le confort pour le pilote comme pour le passager"
-  - Explanation: Exceptional comfort is the foremost source of praise across all brands in the touring segment
-  - Source: Moto Magazine regarding Electra Glide
-- Quote 2: "dotation technologique impressionnante: ABS Pro, DTC, régulateur, écran TFT 10,25″ avec navigation… radars avant/arrière, phares adaptatifs LED"
-  - Explanation: BMW's R1300RT's advanced technology features generated significant excitement among French riders
-  - Source: BMW R1300RT launch coverage
-- Quote 3: "un moteur en béton"
-  - Explanation: Reliability and durability, particularly Honda's bulletproof reputation, generates strong positive sentiment
-  - Source: User reviews about Honda and Harley engines
+- Quote 1: "Pure happiness"
+  - Explanation: The Kove 800X Pro elicited comments of "pure happiness" from riders, demonstrating enthusiasm for performance and new features in the adventure segment.
+  - Source: Kove 800X Pro 2025 - Fiche moto, avis, photos - Motoplanete
+- Quote 2: "Amusing, mischievous, and controllable"
+  - Explanation: The Yamaha Ténéré 700 was described as "amusing, mischievous, and controllable," expressing enthusiasm for the joy of riding and the inherent versatility that adventure bikes offer.
+  - Source: Test de la Yamaha Ténéré 700 : mon avis complet après 1 semaine avec - Motard Adventure
+- Quote 3: "Without competition in its price range"
+  - Explanation: The Yamaha Ténéré 700 is strategically positioned as a lightweight, agile, and highly capable mid-range adventure motorcycle, often described as "without competition in its price range."
+  - Source: Les 10 meilleures motos d'aventure 2025 - MotoActus
 
 ### Neutral Sentiment
-- Quote 1: "la Gold Wing est lourde mais bien équilibrée"
-  - Explanation: Neutral comments often highlight pros and cons without strong emotion, acknowledging trade-offs
-  - Source: YouTube comment on Gold Wing vs. BMW K1600 video
-- Quote 2: "Je roule en Tracer 900, j'hésite à passer sur une R1250RT pour le confort"
-  - Explanation: Many riders openly weigh the pros (comfort, stability) and cons (cost, bulk) when considering upgrades
-  - Source: Forum discussion
-- Quote 3: "7 875 € de plus qu'une Triumph Rocket III Touring… à ce point là ?"
-  - Explanation: Price comparisons are discussed analytically, questioning if premium features justify extra cost
-  - Source: MotoMag comparison
+- Quote 1: "Factual discussions of specifications, comparisons of technical data"
+  - Explanation: Neutral sentiment typically stems from factual discussions of specifications, comparisons of technical data, or general announcements without strong emotional language across the adventure segment.
+  - Source: Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025
+- Quote 2: "General announcements without strong emotional language"
+  - Explanation: Many discussions remain neutral when presenting technical specifications or comparing features across different adventure motorcycle models without expressing strong preferences.
+  - Source: Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025
+- Quote 3: "Comparative technical analyses"
+  - Explanation: Neutral discussions often focus on objective comparisons between different adventure motorcycle models, analyzing specifications and features without emotional bias.
+  - Source: Market Intelligence Report: French Adventure Motorcycle Segment - Q1 2025
 
 ### Negative Sentiment
-- Quote 1: "Si vous avez peur du poids, ce n'est pas le moto qu'il vous faut… il faut être à l'aise et en confiance"
-  - Explanation: Weight and low-speed handling are the primary complaints, especially intimidating for newcomers or smaller riders
-  - Source: Experienced rider warning about Gold Wing
-- Quote 2: "vous le laisserez tomber immédiatement et… aurez du mal à le ramasser"
-  - Explanation: Hyperbolic warnings highlight the low-speed handling challenge, particularly in city riding
-  - Source: Forum discussion about heavy touring bikes
-- Quote 3: "Je n'en reviens pas que Yamaha vende toujours la FJR1300 telle quelle en 2024!!!"
-  - Explanation: Frustration with outdated models lacking modern electronics, particularly targeting Yamaha for not innovating
-  - Source: Forum comment about FJR1300
+- Quote 1: "Weight concerns for the Rieju Aventura 500"
+  - Explanation: Negative sentiment is usually localized to specific issues, such as weight concerns for the Rieju Aventura 500, with consumers citing difficulty in lifting it after a fall.
+  - Source: Rieju Aventura 500 2025 - Fiche moto, avis, photos - Motoplanete
+- Quote 2: "Complaints about the Yamaha Ténéré 700's ABS reset behavior or reported clutch and fuel gauge bugs"
+  - Explanation: Specific technical issues generate negative sentiment, such as complaints about the Yamaha Ténéré 700's ABS reset behavior or reported clutch and fuel gauge bugs affecting user experience.
+  - Source: Test de la Yamaha Ténéré 700 : mon avis complet après 1 semaine avec - Motard Adventure
+- Quote 3: "Heat and vibrations reported for the Triumph Tiger 900"
+  - Explanation: Comfort-related issues like heat and vibrations reported for the Triumph Tiger 900, along with the Ducati DesertX receiving mixed reviews due to wind buffeting at high speeds.
+  - Source: Essai Tiger 900 gt pro - Page 2 - Forum Triumph Tiger800.fr
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW (RT series): 50%
-- Honda (Gold Wing): 35%
-- Harley-Davidson Touring: 10%
-- Others (Yamaha, Kawasaki): 5%
+- BMW GS Series (traditional): 30.0%
+- Yamaha Ténéré 700: 22.0%
+- Honda Africa Twin: 18.0%
+- KTM 890 Adventure R: 12.0%
+- Triumph Tiger 900: 8.0%
+- Ducati DesertX: 5.0%
+- Others: 5.0%
 
 ## Competitor Details
 
-### BMW R1300RT
+### BMW GS Series (traditional)
 **Strengths**
-- Most powerful RT ever produced (145 hp), appealing to performance-oriented riders
-- Advanced technology including radar-assisted cruise control and adaptive LED headlights
-- 17kg weight reduction compared to predecessor, improving maneuverability
+- Exceptional comfort and advanced electronics for long-distance touring capabilities
+- Strong, established brand image with deep-rooted customer loyalty
+- Consistent sales performance despite some expert criticism, with R 1300 GS Adventure ranking as seventh best-selling model in January 2025
 
 **Weaknesses**
-- High cost of entry (base price ~€24,400, commonly €28-30k with options)
-- Still heavy at ~280kg, daunting for shorter riders despite low seat options
-- Perception as "old man's bike" among younger riders
+- Some expert observations describe the R 1300 GS Adventure as "not surprising or special"
+- Substantial weight creates challenges for some riders, particularly for off-road excursions
+- Perceived lack of "surprise" or "specialness" compared to more distinctive alternatives
 
-### Honda Gold Wing
+### Yamaha Ténéré 700
 **Strengths**
-- Unparalleled comfort described as "Rolls-Royce" of bikes with silky flat-6 engine
-- Top-tier features including DCT automatic gearbox, airbag option, and Apple CarPlay
-- Honda's bulletproof reliability reputation with bikes running 200,000+ km
+- Lightweight, agile, and highly capable mid-range adventure motorcycle with excellent value for money
+- Strong rally-raid inspired design with "Dakar rallye style" praised by consumers
+- Often described as "without competition in its price range" for its balanced capabilities
 
 **Weaknesses**
-- Extremely heavy at ~380kg, limiting agility in tight turns
-- Very expensive (starts ~€30k, up to €38k for Airbag version)
-- Limited ground clearance causing peg scraping in spirited riding
+- ABS reset behavior issues and reported clutch problems affecting user experience
+- Fuel gauge bugs and technical reliability concerns reported by some users
+- Limited premium features compared to higher-end competitors
 
-### Harley-Davidson Electra Glide
+### Honda Africa Twin
 **Strengths**
-- Immense V-twin torque with distinct "American" riding experience
-- Strong resale value - "tenir mieux la côte à la revente" than competitors
-- Powerful brand loyalty and heritage appeal
+- Legendary reliability and durability, frequently cited as a positive benchmark
+- Balanced on-road and off-road capabilities with user-friendly Dual Clutch Transmission (DCT)
+- Adventure Sports variant offers versatility for different riding preferences
 
 **Weaknesses**
-- Very heavy (400kg+) with limited agility - "une demie tonne ne se stoppe pas comme ça"
-- Most expensive option (CVO versions can reach €45k)
-- Limited ground clearance - "les repose-pieds frottent très vite" when ridden hard
+- Adventure Sports variant is generally considered more road-biased than true off-road focused
+- Less distinctive character compared to models with stronger heritage or rally-inspired styling
+- Price positioning may be challenging against more value-oriented competitors
 
-### Yamaha FJR1300 (Legacy)
+### KTM 890 Adventure R
 **Strengths**
-- Proven 1298cc inline-4 with excellent balance of performance (146hp) and durability
-- Bulletproof reliability over huge mileages with minimal maintenance
-- Was more affordable than competitors (~€20k when new)
+- Highly off-road focused machine with aggressive performance and long-travel WP XPLOR suspension
+- Rally-inspired ergonomics and design appealing to serious off-road enthusiasts
+- Strong reputation among off-road riding community for genuine capability
 
 **Weaknesses**
-- Discontinued due to Euro5 non-compliance, only available used
-- Technologically dated - "tableau de bord désuet, absence d'aides au pilotage"
-- No factory GPS or modern electronics compared to current offerings
+- More specialized focus may limit appeal to riders seeking balanced road/off-road capability
+- Aggressive positioning may intimidate less experienced adventure riders
+- Higher maintenance requirements typical of performance-oriented KTM models
 
 ## Market Opportunities
 
-- **Conquest of Orphaned Customers**
-  Opportunity Description: With Yamaha FJR and Kawasaki GTR discontinued, their loyal riders need new touring options. BMW can target these owners with trade-in bonuses and test-ride events.
+- **Heritage-Capable Sweet Spot**
+  Opportunity Description: Consumers are not merely seeking retro aesthetics; they desire classic looks backed by modern, genuine capability, particularly in off-road performance. The BMW R 12 G/S's explicit homage to the iconic R80GS Paris-Dakar positions it to capitalize on this growing demand for heritage-styled adventure bikes with authentic capabilities.
 
-- **Technology Leadership Marketing**
-  Opportunity Description: BMW's current technological advantage with radar cruise control and advanced features can be leveraged through education and demonstration to justify premium pricing.
+- **Weight Conundrum Solution**
+  Opportunity Description: The universal pain point of weight management across various brands creates opportunity for lighter, more agile adventure bikes. Consumers actively seek solutions that reduce the "intimidation factor" while maintaining capability, particularly for off-road excursions or riders with smaller stature.
 
-- **Adventure Bike Defense Strategy**
-  Opportunity Description: Pure Grand Tourers must articulate their superior value for dedicated road touring versus increasingly capable adventure bikes that threaten the segment.
+- **Value-Conscious Segment Growth**
+  Opportunity Description: The strong performance of Chinese brands highlights a significant portion of the market that is price-sensitive but still expects a good feature set. This indicates opportunity for competitive pricing strategies and value-oriented feature packages.
 
-- **Younger Rider Attraction**
-  Opportunity Description: With average touring buyer over 50, manufacturers must add technology and improve accessibility to attract younger, tech-savvy riders for long-term segment viability.
+- **A2 License Market Expansion**
+  Opportunity Description: The increasing availability of A2-compatible versions of popular adventure bikes indicates a growing segment of newer riders entering the adventure market, seeking accessible yet capable options for their first adventure motorcycle experience.
 
-- **Premium Touring Tourism Growth**
-  Opportunity Description: Post-pandemic domestic moto-tourism trend in France creates opportunity to partner with tour agencies and organize BMW-branded touring experiences.
+- **Technology Integration Enhancement**
+  Opportunity Description: While advanced technology is increasingly expected, consumers express desire for improved usability of existing technology, such as more accurate fuel gauges or seamless smartphone integration, indicating opportunities for refined user experience design.

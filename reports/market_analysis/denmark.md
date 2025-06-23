@@ -3,160 +3,150 @@
 # Topics Analysis
 
 ## Theme Data
-*Note: Include percentage distribution data from the long form report for each theme (e.g., "Theme 1: 25%")*
-- Comfort & Ergonomics: 25%
-- Technology & Features: 20%
-- Engine Performance & Handling: 15%
-- Design & Styling: 12%
-- Price, Value & Economy: 10%
-- Reliability & Maintenance: 8%
-- Community & Identity: 5%
-- Weight & Maneuverability: 5%
+- On-road/Off-road Versatility: 40%
+- Technology & Rider Aids: 25%
+- Comfort & Ergonomics: 15%
+- Engine Performance & Character: 10%
+- Price & Value: 5%
+- Reliability & Build Quality: 5%
 
 ## Theme Insights
+- **On-road/Off-road Versatility**
+  - Quote: "I need a bike that can handle my daily commute but also take me on gravel roads for weekend adventures. It's about freedom, not just speed."
+  - Explanation: Strong emphasis on motorcycles that perform well in both on-road and off-road environments, highlighting the desire for a truly capable "all-rounder"
+  - Source: Consumer conversations analysis and competitor reviews
+- **Technology & Rider Aids**
+  - Quote: "The new electronics are amazing for safety and performance, but sometimes I just want to ride without fiddling through endless menus."
+  - Explanation: Advanced electronics including ride-by-wire, traction control, ABS, quickshifters, adaptive cruise control, and IMU-optimized systems are prominent, with mixed sentiment regarding complexity
+  - Source: Consumer reviews and competitor analysis
 - **Comfort & Ergonomics**
-  - Quote: "It's super high tech and comfortable, and way more sporty than other touring bikes I've tried"
-  - Explanation: Comfort emerges as the paramount concern for Danish touring riders, with Gold Wing setting the benchmark as "majestic… quiet, spacious, and comfortable". BMW RT owners rated comfort only 3/5, indicating room for improvement.
-  - Source: Danish touring rider comparison, 123mc.dk user reviews
-- **Technology & Features**
-  - Quote: "BMW finally brings car-level tech to bikes – game changer for highway rides"
-  - Explanation: Modern tech features drive positive sentiment when present but generate significant negativity when absent. The R1300RT's radar-guided ACC received praise, while lack of CarPlay/Android Auto became "almost a meme" in discussions.
-  - Source: Reddit forums, BMW MOA discussions
-- **Engine Performance & Handling**
-  - Quote: "It handles much better than it has any right to... feels surprisingly agile, almost like a sport-tourer in the twisties"
-  - Explanation: Danish riders value the balance of power, weight, and handling. BMW's R1300RT with 145hp and lighter weight impressed riders, with BMW RT owners giving perfect 5/5 ratings for handling characteristics.
-  - Source: Forum discussions, Danish BMW owner reviews
-- **Design & Styling**
-  - Quote: "I just can't ride a bike I find ugly every day"
-  - Explanation: The R1300RT's styling proved contentious, with some loving the "streamlined design" while others criticized the "boxy scheme". Aesthetics can be a decisive purchase factor despite strong performance credentials.
-  - Source: MCN review, BMW MOA forum discussions
-- **Price, Value & Economy**
-  - Quote: "324,600 kr base isn't too bad for what you get... but adding essential packages quickly pushes cost well over 450,000 DKK"
-  - Explanation: Denmark's high vehicle taxes make price and value ever-present themes. Riders scrutinize what they receive for significant investments, with many opting for used bikes or value-oriented alternatives like the FJR1300.
-  - Source: Danish pricing discussions, forum debates
-- **Reliability & Maintenance**
-  - Quote: "When you talk to Harley riders they talk about working on their bikes. When you talk to Gold Wing riders, they talk about where they have been"
-  - Explanation: Honda's reliability reputation is "almost a proverb" while BMW faces lingering perceptions of higher maintenance costs despite strong engineering. Gold Wing owners frequently mention high-mileage trouble-free operation.
-  - Source: Reddit motorcycle discussions, owner testimonials
-- **Community & Identity**
-  - Quote: "I chose a Harley for the culture – the bike is part of who I am"
-  - Explanation: Brand communities provide significant value beyond the mechanical attributes. BMW riders pride themselves on engineering excellence, while Harley owners emphasize culture and camaraderie through HOG events.
-  - Source: Social media discussions, brand community forums
-- **Weight & Maneuverability**
-  - Quote: "802 pounds… but once it starts rolling you wouldn't know"
-  - Explanation: The R1300RT's weight reduction was noted as significant improvement, with the bike feeling lighter and more manageable than heavier competitors like Gold Wing (383kg) while maintaining highway stability.
-  - Source: Early R1300RT reviews, weight comparison discussions
+  - Quote: "Long rides are a big part of adventure biking. Seat comfort and wind protection make a huge difference."
+  - Explanation: Importance of seat comfort, effective wind protection, and an adaptable riding position for long tours is a recurring theme
+  - Source: Reviews of touring-focused models
+- **Engine Performance & Character**
+  - Quote: "It's great that bikes look like adventure bikes, but can they actually handle real dirt? That's what matters."
+  - Explanation: Power delivery, torque, engine smoothness, and the unique "character" of different engine configurations (parallel twin, triple, V-twin, boxer)
+  - Source: Competitor reviews and performance discussions
+- **Price & Value**
+  - Quote: "These new bikes are getting expensive. The value has to be there for what you're paying."
+  - Explanation: Price-to-performance ratio and perceived value are recurring themes, particularly in relation to premium offerings
+  - Source: Consumer discussions about R 12 G/S and competitor pricing
+- **Reliability & Build Quality**
+  - Quote: "For adventure riders embarking on long or remote journeys, reliability is a foundational expectation."
+  - Explanation: Durability, trustworthiness for long trips, and consistency of performance are positive attributes for established models
+  - Source: Industry analysis and brand reputation discussions
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive Sentiment: 45%
-- Neutral Sentiment: 25%
-- Negative Sentiment: 30%
+- Positive Sentiment: 70%
+- Neutral Sentiment: 20%
+- Negative Sentiment: 10%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "I ordered the fully loaded R1300RT… now in wait mode"
-  - Explanation: Long-time BMW fans expressed excitement about the R1300RT launch, with many praising performance and tech upgrades. The radar-assisted ACC was seen as innovative and class-leading.
-  - Source: BMW veteran owner, forum discussions
-- Quote 2: "The most durable, reliable and versatile motorcycle in the past 35+ years… no other bike I'd want for touring with someone"
-  - Explanation: Honda Gold Wing received overwhelmingly positive sentiment (80-85%) with owners praising unparalleled comfort, reliability, and smooth flat-6 engine operation.
-  - Source: Reddit Gold Wing owner testimonial
-- Quote 3: "Great features and comfort for a very reasonable price"
-  - Explanation: Yamaha FJR1300 garnered positive sentiment (70-75%) for its reliability and value proposition, with 94% of Danish owners indicating they would buy Yamaha again.
-  - Source: FJR1300 owner review, satisfaction surveys
+- Quote 1: "The 2025 KTM 890 Adventure R maintains its position as a leading choice in the mid-weight adventure category"
+  - Explanation: KTM praised for design inspiration from Dakar-winning models and WP XPLOR suspension package emphasizing off-road excellence
+  - Source: KTM competitor analysis
+- Quote 2: "The 2025 Honda Africa Twin Adventure Sports ES DCT is presented as a comprehensively equipped machine"
+  - Explanation: Honda highly regarded for comfort, advanced technology, and long-distance touring capabilities with 1084cc parallel-twin engine
+  - Source: Honda competitor review
+- Quote 3: "The Ducati DesertX was lauded as a well-rounded adventure bike with solid off-road performance and exceptional street manners"
+  - Explanation: Ducati praised for character-rich V-twin engine and advanced electronics despite 21-inch front wheel
+  - Source: Ducati competitor analysis
 
 ### Neutral Sentiment
-- Quote 1: "I hear Gold Wings are great but haven't tried one"
-  - Explanation: Neutral comments typically came from non-owners acknowledging reputation without personal experience, representing cautious interest in touring segment.
-  - Source: Forum discussions, prospective buyer comments
-- Quote 2: "Wait and see tone – reserving judgment until a test ride"
-  - Explanation: Many riders adopted neutral stance on R1300RT, acknowledging BMW's prowess but remaining uncertain about upgrade justification from current bikes.
-  - Source: BMW community discussions, test ride planning
-- Quote 3: "The FJR1300 just wasn't the bike for me"
-  - Explanation: Neutral sentiment toward FJR1300 acknowledged its competence while noting it might lack excitement or modern features compared to newer alternatives.
-  - Source: Former FJR owner evaluation
+- Quote 1: "The 2025 Yamaha Ténéré 700 received subtle yet impactful updates including new ride-by-wire throttle"
+  - Explanation: Yamaha updates acknowledged but noted relative lack of top-end power when carrying luggage and minimal wind protection
+  - Source: Yamaha competitor review
+- Quote 2: "The competitive landscape in Q1 2025 was highly dynamic with major manufacturers actively updating their adventure models"
+  - Explanation: Market characterized by innovation in electronics, suspension systems, and engine performance across all manufacturers
+  - Source: Market landscape analysis
+- Quote 3: "Early public commentary on the R 12 G/S, though limited, indicates questions about its practical off-road utility"
+  - Explanation: BMW R 12 G/S speculation raises concerns about weight and perceived premium price point for off-road use
+  - Source: Pre-launch BMW analysis
 
 ### Negative Sentiment
-- Quote 1: "BMW… you're going to get their half-assed infotainment… If you want modern infotainment get a Harley or Honda"
-  - Explanation: BMW's lack of Apple CarPlay/Android Auto integration generated consistent negative sentiment, with riders frustrated that premium pricing didn't include basic smartphone connectivity.
-  - Source: Reddit R1300RT discussion thread
-- Quote 2: "If $23k is too much, then $30k is ridiculous"
-  - Explanation: BMW pricing drew significant criticism, particularly when essential packages pushed fully-equipped models toward 500,000+ DKK, prompting cost-benefit questioning.
-  - Source: Pricing discussion forums, market analysis
-- Quote 3: "Never buy the first year of a BMW"
-  - Explanation: Some riders expressed caution about BMW's new model reliability, citing historical issues with electronics and final drive problems that persist in community memory.
-  - Source: Risk-averse forum posters, BMW reliability discussions
+- Quote 1: "The Ducati DesertX faces criticism for its premium price point and the complexity of navigating its electronic menus"
+  - Explanation: Ducati criticized despite high capabilities due to elevated price and complex interface design
+  - Source: Ducati competitor analysis
+- Quote 2: "Some reviews noted the Honda Africa Twin's overall complexity and perceptibly high center of gravity"
+  - Explanation: Honda criticized for menu complexity and handling characteristics despite advanced features
+  - Source: Honda competitor review
+- Quote 3: "Early discussions about the BMW R 12 G/S note it as 'a little on the expensive side'"
+  - Explanation: BMW facing early price sensitivity concerns that could impact market acceptance
+  - Source: Pre-launch BMW speculation
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW Motorrad: 55%
-- Honda: 22%
-- Harley-Davidson: 15%
-- Yamaha: 6%
-- Others: 2%
+- Honda Africa Twin: 25%
+- Yamaha Ténéré 700: 20%
+- KTM 890 Adventure R: 18%
+- BMW GS Series: 15%
+- Triumph Tiger 900: 12%
+- Others: 10%
 
 ## Competitor Details
 
-### BMW R1300RT
+### Honda Africa Twin
 **Strengths**
-- Dynamic handling and performance (5/5 rating from owners for "Køreegenskaber")
-- Advanced technology leadership with radar-guided ACC and ASA automatic shifting
-- Significant weight reduction and improved power-to-weight ratio (145hp, 281kg)
+- Comprehensive equipment with 1084cc parallel-twin engine and large fuel tank
+- Showa EERA electronic suspension and Honda's Dual Clutch Transmission (DCT)
+- Highly regarded for comfort, advanced technology, and long-distance touring capabilities
 
 **Weaknesses**
-- Missing Apple CarPlay/Android Auto integration despite premium TFT display
-- High pricing with essential options pushing total cost over 450,000 DKK
-- Polarizing design with mixed reactions to new angular styling
+- Overall complexity of menu navigation systems
+- Perceptibly high center of gravity affecting handling
+- Advanced features may overwhelm some riders
 
-### Honda Gold Wing
+### Yamaha Ténéré 700
 **Strengths**
-- Unparalleled comfort with 4.8/5 rating, described as "sofa on wheels"
-- Exceptional reliability with owners reporting 200,000+ km trouble-free operation
-- Superior technology integration including Apple CarPlay and proven DCT automatic transmission
+- Praised for off-road prowess, durability, and simple/affordable build
+- 2025 updates include ride-by-wire throttle and switchable traction control
+- Consistently described as "seriously competent beast" off-road
 
 **Weaknesses**
-- Excessive weight (383kg) making low-speed maneuvering challenging for some riders
-- Very high pricing (~600,000 DKK new) limiting market accessibility
-- Less sporty handling characteristics compared to BMW RT
+- Lacks top-end power when loaded with luggage or carrying pillion
+- Minimal wind protection for long-distance touring
+- Relatively basic feature set compared to premium competitors
 
-### Harley-Davidson Electra Glide/Ultra Limited
+### KTM 890 Adventure R
 **Strengths**
-- Strong brand identity and community culture through HOG membership
-- Distinctive V-twin character and classic American touring styling
-- Modern infotainment with Apple CarPlay integration and improving technology
+- Design inspiration from Dakar-winning KTM 450 RALLY
+- WP XPLOR suspension package emphasizing off-road excellence
+- Maintains position as leading choice in mid-weight adventure category
 
 **Weaknesses**
-- Limited engine performance (~90hp) compared to competitors
-- Reliability perceptions with jokes about "Harley riders talking about working on bikes"
-- High pricing similar to BMW with less advanced performance technology
+- Aesthetic concerns with older model designs
+- Limited touring comfort compared to larger displacement competitors
+- Focused primarily on off-road performance over versatility
 
-### Yamaha FJR1300
+### BMW GS Series (R 1300 GS Adventure)
 **Strengths**
-- Exceptional value proposition with 94% owner satisfaction and repurchase intent
-- Bulletproof reliability reputation ("will outlive you if you take care of it")
-- Strong sport-touring performance with lighter weight and excellent brakes
+- Remarkable off-road handling despite substantial size
+- Extensive suite of rider aids and comfort features
+- Larger 7.9-gallon fuel tank and increased suspension travel
 
 **Weaknesses**
-- Dated design and technology lacking modern features like radar or large TFT displays
-- Uncertain future with potential discontinuation due to Euro5+ compliance issues
-- Less luxurious amenities compared to premium competitors
+- Size requires more rider effort in twisty road sections
+- Substantial weight can be limiting factor in aggressive off-road scenarios
+- Premium pricing may limit market accessibility
 
 ## Market Opportunities
 
-- **Infotainment Integration Gap**
-  Opportunity Description: BMW's omission of smartphone connectivity creates immediate opportunity to eliminate major competitive disadvantage and transform negative sentiment into positive differentiator.
+- **Dirt-Ready Retro Authenticity**
+  Opportunity Description: Gap exists for motorcycle that genuinely combines strong off-road capability with authentic classic styling and modern BMW performance, as current retro models are largely considered "street-friendly"
 
-- **Comfort Enhancement Focus**
-  Opportunity Description: Given comfort's top ranking in consumer priorities, further improvements to seat design, wind protection, and passenger accommodations could challenge Gold Wing's benchmark status.
+- **Seamless Technology Integration**
+  Opportunity Description: Market demand for advanced technology that is intuitive and seamlessly integrated without overwhelming riders with complex menus or detracting from raw riding experience
 
-- **Value-Conscious Segment**
-  Opportunity Description: Market bifurcation between premium new tech buyers and value-oriented consumers presents opportunity for attractive financing packages or included features to improve perceived value.
+- **Balanced Performance Positioning**
+  Opportunity Description: Consumer tension between desire for hardcore off-road performance and need for on-road comfort creates opportunity for true "all-rounder" that doesn't significantly compromise either aspect
 
-- **Community Building Initiative**
-  Opportunity Description: Strengthening BMW touring community through organized events, tours, and owner engagement could increase brand loyalty and generate positive word-of-mouth marketing.
+- **Premium Value Justification**
+  Opportunity Description: While price sensitivity exists, opportunity for premium brands to clearly articulate superior engineering, heritage, and unique riding experience that collectively justify higher investment
 
-- **Reliability Perception Improvement**
-  Opportunity Description: Addressing lingering maintenance cost perceptions through extended warranties, transparent durability testing, or service packages could challenge Honda's reliability throne.
+- **Heritage Community Engagement**
+  Opportunity Description: Active Danish motorcycle community through forums like SVRider.dk and BMW MC Klub Danmark presents opportunity for direct engagement and community building around new models

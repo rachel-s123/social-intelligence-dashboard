@@ -1,22 +1,22 @@
 # Executive Summary: Poland
 
 ## Attribute Resonance
-- Overall Comfort dominates with highest WRI score of 93.0, emphasizing plush seating and fatigue-free long-distance capability as paramount
-- Technology Leadership creates strong differentiation with Innovation & Future-proofing (83.5) and Technology & Features (83.5) scoring highly
-- Performance Balance drives modern expectations with Engine Performance (83.5) and Handling & Stability (78.5) showing touring is no longer comfort-only
+- Off-road performance is paramount with WRI score of 92.5, representing core identity for Polish adventure riders seeking authentic dirt prowess over aesthetic appeal
+- Comfort & ergonomics ranks second (WRI: 85.0) as fundamental requirement for extended riding rather than luxury, directly impacting satisfaction and touring capability
+- Heritage/retro styling achieves strong position (WRI: 74.0) outranking traditional functional attributes, indicating powerful emotional driver and market appetite for authentic heritage connection
 
 ## Market Insights
-- BMW R1300RT achieved dominant 45% share of voice, significantly outpacing Honda Gold Wing (20%) and competitors through launch excitement
-- Positive sentiment reached 70% overall, with BMW specifically praised as "sztos" (awesome) and setting new touring benchmarks
-- Technology-savvy Polish consumers show unprecedented enthusiasm for radar cruise control and semi-automatic transmission features
+- Polish adventure segment shows robust growth with ON/OFF category representing 23.9% of total market, while BMW holds market leadership position
+- Clear market segmentation exists between hardcore off-road enthusiasts and versatile touring riders, with distinct preferences for genuine capability versus road-biased adventure aesthetics
+- Strong pre-launch interest in BMW R 12 G/S's retro styling demonstrates market receptiveness to heritage-focused adventure motorcycles combining classic aesthetics with modern performance
 
 ## Competitor Analysis
-- Honda Gold Wing maintains legendary comfort reputation but suffers from excessive weight (380kg) limiting appeal to broader demographics
-- Harley-Davidson relies on emotional heritage appeal but lacks modern technology, facing aging customer base challenges
-- Yamaha FJR1300 and Kawasaki exits create market opportunity for BMW to capture value-conscious sport-touring customers
+- KTM dominates serious off-road niche with 890 Adventure R leading share of voice (20.0%) through superior suspension and terrain capability
+- Yamaha Ténéré 700 provides strong value proposition (18.0% SOV) but faces emerging reliability concerns with 2025 model clutch and fuel consumption issues
+- BMW's traditional GS series maintains market leadership but faces criticism for perceived limitations in serious off-road conditions despite adventure branding
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Lead as the technology-forward touring choice that balances comfort with dynamic performance and innovative safety features
-- **Content & Messaging:** Emphasize practical technology benefits and superior comfort while proactively addressing reliability perceptions through warranty extensions
-- **Audience Targeting:** Focus on tech-savvy touring enthusiasts, FJR/Kawasaki refugees, and adventure riders seeking superior on-road comfort
-- **Key Opportunity:** Leverage 12kg weight reduction and advanced technology to differentiate from heavier Gold Wing while capturing exiting competitors' customers
+- **Strategic Positioning:** Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R80 G/S legacy
+- **Content & Messaging:** Emphasize genuine off-road capability through compelling terrain demonstrations and heritage storytelling connecting to BMW's rally roots and adventure authenticity
+- **Audience Targeting:** Focus on hardcore off-road enthusiasts seeking BMW alternative to KTM dominance and heritage-conscious riders valuing emotional connection with classic-modern fusion
+- **Key Opportunity:** Fill authentic off-road heritage gap and capture growing retro-adventure niche by demonstrating genuine dirt capability through simplified premium experience

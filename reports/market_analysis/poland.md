@@ -3,160 +3,171 @@
 # Topics Analysis
 
 ## Theme Data
-*Note: Include percentage distribution data from the long form report for each theme (e.g., "Theme 1: 25%")*
-- Comfort & Touring Experience: 35%
-- Technology & Features: 20%
-- Performance & Dynamics: 18%
-- Design & Aesthetics: 10%
-- Reliability & Maintenance: 8%
-- Price & Value: 5%
-- Brand Heritage: 2%
-- Safety Features: 2%
+- Off-Road Performance: 25.0%
+- Comfort & Ergonomics: 20.0%
+- Technology & Features: 18.0%
+- Reliability Concerns: 12.0%
+- Value & Pricing: 10.0%
+- Design & Character Appeal: 10.0%
+- Any other key themes: 5.0%
 
 ## Theme Insights
-- **Comfort & Touring Experience**
-  - Quote: "Pozycję, miękkość kanapy... dobrano tak, żebyśmy odczuwali komfort przez wiele kilometrów"
-  - Explanation: Comfort remains the defining theme of touring bike discussions, with riders obsessing over seating, wind protection, and long-distance ergonomics
-  - Source: motoryzacja.interia.pl
+- **Off-Road Performance**
+  - Quote: "KTM 890 Adventure R and Yamaha Tenere 700 Rally were lauded for their genuine off-road capabilities and ability to handle challenging terrain, while larger adventure bikes such as the BMW R 1300 GS were criticized for their perceived limitations in serious off-road conditions"
+  - Explanation: Polish adventure riders differentiate between aesthetic "adventure" appeal and actual hardcore off-road prowess, with models being evaluated on their genuine capability in challenging terrain
+  - Source: Poland market report, competitor analysis
+- **Comfort & Ergonomics**
+  - Quote: "BMW GS models were consistently praised for their high comfort, soft heated seats, and excellent wind protection"
+  - Explanation: Rider comfort is essential for extended riding sessions, with detailed discussions focusing on seat ergonomics, wind protection, and suspension performance as critical differentiators
+  - Source: Poland market report, consumer conversations analysis
 - **Technology & Features**
-  - Quote: "radar-based adaptive cruise control, blind spot detection, and forward/rear collision warning"
-  - Explanation: Polish consumers are highly tech-savvy and enthusiastically discuss new features, with BMW R1300RT's launch bringing unprecedented tech attention
-  - Source: bikewale.com
-- **Performance & Dynamics**
-  - Quote: "substantial performance hike"
-  - Explanation: Unlike in past years where touring bikes were seen purely as comfort machines, performance is now front and center in consumer discourse
-  - Source: bennetts.co.uk
-- **Design & Aesthetics**
-  - Quote: "RT wygląda... jak jakiś bagger bez kufra centralnego"
-  - Explanation: The R1300RT's redesign received mixed reactions initially, with some conservative BMW fans needing time to warm up to it
-  - Source: forum.vstromclub.pl
-- **Reliability & Maintenance**
-  - Quote: "powinny być od [Japończyków] bardziej niezawodne. A nie są"
-  - Explanation: While not as loudly discussed as other themes, reliability emerged as a concern, especially in comparative context with Japanese bikes
-  - Source: forum.vstromclub.pl
-- **Price & Value**
-  - Quote: "jedynie co będzie zaporowe to cena"
-  - Explanation: Some riders fear that the R1300RT's high-tech upgrades will come with a hefty price tag, representing a barrier to purchase
-  - Source: forum.vstromclub.pl
-- **Brand Heritage**
-  - Quote: "Wybrałem Harleya… nie chodzi mi o wygodę jazdy, a o przeżycia… żadne [inne] nie mają takiej historii i charakteru"
-  - Explanation: Harley-Davidson touring bikes garnered affection rooted in brand loyalty and emotional appeal rather than specs
-  - Source: swiatmotocykli.pl
-- **Safety Features**
-  - Quote: "comprehensive electronics suite"
-  - Explanation: Modern touring bikes are increasingly evaluated on their safety technology packages, with BMW leading in this area
-  - Source: bikewale.com
+  - Quote: "Consumers expected sophisticated rider aids for safety, performance, and convenience. Features such as ABS, traction control, various riding modes, TFT displays, quickshifters, and adaptive cruise control were frequently mentioned across brands"
+  - Explanation: Advanced electronics are significant value drivers and differentiators in the premium segment, with consumers expecting comprehensive rider aid systems
+  - Source: Poland market report, discussion themes analysis
+- **Reliability Concerns**
+  - Quote: "The Yamaha Tenere 700, despite its 'legendary reliability,' saw reports of clutch problems and unusual fuel consumption for its 2025 models. Similarly, a 2025 Honda Africa Twin faced multiple post-repair issues"
+  - Explanation: Reliability issues, even if isolated, can disproportionately amplify negative sentiment online as they challenge core brand promises for adventure motorcycles
+  - Source: Poland market report, sentiment analysis
+- **Value & Pricing**
+  - Quote: "The market also observed the rise of competitively priced Chinese brands like KOVE and CF Moto, offering modern features at attractive price points"
+  - Explanation: Pricing discussions encompass not just initial purchase price but perceived value for money, long-term maintenance costs, and availability of affordable alternatives
+  - Source: Poland market report, competitive landscape
+- **Design & Character Appeal**
+  - Quote: "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance"
+  - Explanation: Aesthetic appeal, character, and heritage styling are significant drivers of consumer conversation, contributing to emotional connection with motorcycles
+  - Source: Poland market report, consumer preferences
+- **Heritage/Retro Styling**
+  - Quote: "Strong positive reception for retro-inspired designs indicated a market appetite for bikes that offered a blend of classic looks and modern capabilities, fostering a unique emotional connection with the machine"
+  - Explanation: Growing appreciation for nostalgia and classic aesthetic appeal when combined with modern capabilities represents an emerging market trend
+  - Source: Poland market report, heritage positioning analysis
+- **Versatility**
+  - Quote: "The ability to perform effectively across both on-road and off-road conditions is fundamental for Polish adventure riders, though with a clear distinction between light trail capability and hardcore off-road performance"
+  - Explanation: Consumers seek motorcycles capable of seamlessly transitioning between diverse terrains while understanding the spectrum of dual-purpose capability
+  - Source: Poland market report, consumer priorities
 
 # Sentiment Analysis
 
 ## Sentiment Data
-- Positive Sentiment: 70%
-- Neutral Sentiment: 20%
-- Negative Sentiment: 10%
+- Positive Sentiment: 70.0%
+- Neutral Sentiment: 20.0%
+- Negative Sentiment: 10.0%
 
 ## Sentiment Insights
 
 ### Positive Sentiment
-- Quote 1: "sztos" (awesome masterpiece)
-  - Explanation: Enthusiasts hailed the BMW R1300RT as a worthy new flagship, celebrating BMW's innovation
-  - Source: forum.vstromclub.pl
-- Quote 2: "Widać, że beemka nie zasypia gruszek w popiele i cały czas ucieka konkurencji"
-  - Explanation: Positive sentiment toward BMW specifically, noting that BMW isn't resting on its laurels and keeps running ahead of the competition
-  - Source: forum.vstromclub.pl
-- Quote 3: "aksamitnie posłuszny"
-  - Explanation: Honda Gold Wing received positive mentions for its unmatched comfort and smooth riding experience
-  - Source: motoryzacja.interia.pl
+- Quote 1: "Reviews of most models, including KTM, Yamaha, Honda, Triumph, and BMW GS, highlighted strengths in performance, comfort, and reliability"
+  - Explanation: General satisfaction with existing offerings and the aspirational nature of adventure riding contributed to predominantly positive discourse
+  - Source: Poland market report, segment overview
+- Quote 2: "The market's overall growth trend further contributed to this optimistic outlook"
+  - Explanation: Rising motorcycle registrations and expanding adventure segment created positive market momentum
+  - Source: Poland market report, market trends
+- Quote 3: "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R80 G/S"
+  - Explanation: Strong anticipation for new models, particularly heritage-focused designs, generated enthusiasm in the community
+  - Source: Poland market report, BMW positioning
 
 ### Neutral Sentiment
-- Quote 1: "RT wygląda... jak jakiś bagger bez kufra centralnego"
-  - Explanation: Some conservative BMW fans needed time to warm up to the new R1300RT design, expressing neutral curiosity about styling changes
-  - Source: forum.vstromclub.pl
-- Quote 2: Technical specification inquiries about transmission type
-  - Explanation: Neutral posts were largely informational, sharing specs, news links, or asking technical questions about BMW features
-  - Source: forum.vstromclub.pl
-- Quote 3: "promises to be…the most impressive touring bike on the market"
-  - Explanation: Cautious optimism about BMW R1300RT's potential in the touring segment
-  - Source: bennetts.co.uk
+- Quote 1: "A substantial volume of conversations fell into the neutral category, comprising informational exchanges, technical specifications discussions, and comparative analyses without strong emotional language"
+  - Explanation: Technical discussions and factual comparisons represent a significant portion of online discourse without emotional bias
+  - Source: Poland market report, sentiment analysis
+- Quote 2: "Forum posts seeking advice on modifications, maintenance, or general riding tips often contributed to this segment"
+  - Explanation: Practical, educational content maintains neutral tone while providing valuable community information
+  - Source: Poland market report, community discussions
+- Quote 3: "Comparative analyses without strong emotional language represented informational exchanges"
+  - Explanation: Objective product comparisons and specification discussions maintain neutral sentiment while informing purchase decisions
+  - Source: Poland market report, discussion patterns
 
 ### Negative Sentiment
-- Quote 1: "jedynie co będzie zaporowe to cena"
-  - Explanation: Negative sentiment toward BMW specifically, with some riders fearing that the R1300RT's high-tech upgrades will come with a hefty price tag
-  - Source: forum.vstromclub.pl
-- Quote 2: "powinny być od [Japończyków] bardziej niezawodne. A nie są"
-  - Explanation: Skepticism about BMW's reliability record specifically, especially compared to Japanese competitors
-  - Source: forum.vstromclub.pl
-- Quote 3: Styling critiques about front fairing resembling Honda NC scooter
-  - Explanation: Minor negative sentiment toward BMW's new design language, though these were minor quibbles amid generally favorable reactions
-  - Source: forum.vstromclub.pl
+- Quote 1: "Reports of clutch problems and unusual fuel consumption for the 2025 Yamaha Tenere 700 generated concern"
+  - Explanation: Specific reliability issues with competitor models created negative sentiment despite overall positive brand perception
+  - Source: Poland market report, Yamaha analysis
+- Quote 2: "The BMW R 1300 GS received criticism for its actual off-road performance, contrasting with its marketing"
+  - Explanation: BMW's larger GS models faced criticism regarding gap between marketed and actual off-road capabilities
+  - Source: Poland market report, BMW challenges
+- Quote 3: "Some users found the Ducati DesertX 'too stiff' or 'less agile' off-road, leading to fatigue"
+  - Explanation: Specific performance limitations in off-road conditions generated negative feedback for certain models
+  - Source: Poland market report, Ducati analysis
 
 # Competitor Analysis
 
 ## Share of Voice
-- BMW R1300RT: 45%
-- Honda Gold Wing: 20%
-- Harley-Davidson Touring: 15%
-- Yamaha FJR1300: 10%
-- Others: 10%
+- KTM 890 Adventure R: 20.0%
+- Yamaha Ténéré 700: 18.0%
+- Honda Africa Twin: 17.0%
+- Triumph Tiger 900: 15.0%
+- BMW GS Series (traditional): 15.0%
+- Ducati DesertX: 8.0%
+- Others: 7.0%
 
 ## Competitor Details
 
-### BMW R1300RT
+### KTM 890 Adventure R
 **Strengths**
-- Innovative Product Leadership with radar cruise control and semi-automatic transmission
-- Balanced Performance Profile offering comfort and dynamic performance
-- Technology & Features package with comprehensive electronics suite
+- Exceptional off-road capabilities and superior WP Xplor suspension
+- Responsive engine and "unmatched ability" on challenging terrains
+- Positioned as benchmark for serious off-road adventure riding
 
 **Weaknesses**
-- High Price Point estimated around 150,000 PLN+ for well-equipped unit
-- Perceived Reliability/Complexity Issues compared to Japanese equivalents
-- Weight and Size concerns despite being lighter than previous model
+- Higher price point limiting accessibility
+- Aggressive positioning may alienate touring-focused riders
+- Complex maintenance requirements for premium performance systems
 
-### Honda Gold Wing
+### Yamaha Ténéré 700
 **Strengths**
-- Ultra-smooth 1833cc flat-six engine delivering turbine-like power
-- Legendary comfort with plush seats and ample features for comfort
-- Rock-solid reputation for reliability and longevity
+- Balanced performance with exceptional affordability
+- Lighter weight and ease of handling for both short and long trips
+- Strong reputation for reliability and versatility across terrains
 
 **Weaknesses**
-- Very heavy at ~380 kg, intimidating for shorter or less muscular riders
-- Limited agility relative to smaller tourers on tight mountain roads
-- High price point on par with BMW RT at ~150k PLN
+- Emerging reports of clutch problems in 2025 models
+- Unusual fuel consumption readings affecting efficiency reputation
+- Limited premium features compared to higher-priced competitors
 
-### Harley-Davidson Touring
+### Honda Africa Twin
 **Strengths**
-- Charismatic engine feel and signature V-twin rumble
-- Strong ownership community and emotional brand appeal
-- Comfortable riding position with sofa-like seats and floorboards
+- Strong recognition for balancing performance, comfort, and versatility
+- Long-standing reputation for durability and reliability
+- Capable design for handling technical sections and varied conditions
 
 **Weaknesses**
-- Limited technology lacking radar aids or semi-active suspension
-- Heavy at 360+ kg and engineered more for straight-line cruising
-- Aging customer base as strategic worry for long-term growth
+- Reports of significant post-repair issues including vibrations and misaligned wheels
+- Not recommended for novice riders due to complexity
+- Higher maintenance costs affecting overall value proposition
 
-### Yamaha FJR1300
+### Ducati DesertX
 **Strengths**
-- Unflappable reliability and strong engine performance reputation
-- Value proposition with far cheaper pricing than premium competitors
-- Stable chassis and powerful 1298cc inline-four engine
+- Distinctive styling with "aggressive design" and premium aesthetics
+- Strong on-road performance and advanced electronics
+- Premium feel and sophisticated technology integration
 
 **Weaknesses**
-- Discontinued in EU by 2021 due to emissions regulations
-- Outdated technology lacking adaptive cruise and modern electronics
-- Available only in used market, no longer competing with new models
+- Perceived as "too stiff" or "less agile" for challenging off-road terrain
+- Most expensive among compared models affecting accessibility
+- More suited for aesthetics and dynamic touring than extreme off-road use
+
+### BMW R 12 G/S (Pre-Launch)
+**Strengths**
+- Strong heritage connection to Dakar-winning R80 G/S providing authentic off-road credibility
+- Retro styling generating considerable pre-launch interest and discussion
+- Positioned as "stripped down feel-good bike" appealing to simplicity-seeking riders
+
+**Weaknesses**
+- Unproven performance in market requiring demonstration of capabilities
+- Potential cannibalization of existing BMW GS models
+- Premium pricing may limit market reach compared to value competitors
 
 ## Market Opportunities
 
-- **Technology Leadership Advantage**
-  Opportunity Description: With Yamaha and Kawasaki pulling back from the segment, BMW can capture their customer base by positioning the R1300RT as the natural upgrade for riders wanting latest technology and emissions compliance
+- **Authentic Off-Road Heritage Gap**
+  Opportunity Description: Address the perceived credibility gap in BMW's portfolio where larger GS models face criticism for limited serious off-road capability, creating opportunity for genuinely capable adventure motorcycle with authentic heritage
 
-- **Growing Touring Culture**
-  Opportunity Description: The touring segment could expand as more Polish riders take up long-distance riding, with BMW positioned to welcome newcomers through fostering touring culture and rider training
+- **Retro-Modern Blend for Adventure**
+  Opportunity Description: Fill the underserved niche for heritage-focused adventure motorcycles that combine classic aesthetics with modern performance, as demonstrated by strong pre-launch interest in R 12 G/S styling
 
-- **After-Sales Service Enhancement**
-  Opportunity Description: Alleviate cost concerns by bundling services through inclusive maintenance plans, extended warranties, or attractive financing packages to sweeten the premium price proposition
+- **"Less is More" Premium Adventure**
+  Opportunity Description: Appeal to riders seeking premium, characterful adventure bikes with more focused, stripped-down experience compared to increasingly complex and heavy large adventure motorcycles
 
-- **Electric/Hybrid Future Positioning**
-  Opportunity Description: Lead in developing alternative propulsion in the touring space, generating excitement and locking in future market share for environmentally conscious riders
+- **Value-Conscious Premium Positioning**
+  Opportunity Description: Capture segment that values premium features and heritage but finds flagship models too expensive, positioning between value competitors and ultra-premium offerings
 
-- **Competitor Customer Conversion**
-  Opportunity Description: Target potential Gold Wing buyers by emphasizing RT's lighter weight and more engaging handling, while targeting Harley intenders with premium German engineering narrative
+- **Community and Experience Focus**
+  Opportunity Description: Leverage the popularity of organized motorcycle trips and expeditions by emphasizing comprehensive travel solutions and community aspect of adventure riding

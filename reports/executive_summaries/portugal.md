@@ -1,22 +1,22 @@
 # Executive Summary: Portugal
 
 ## Attribute Resonance
-- Comfort and technology tie as top drivers (WRI: 97.1), with riders demanding both innovation and traditional touring comfort
-- Value for money concerns prominent (WRI: 92.5) due to €24.4k base price in premium-sensitive market
-- Reliability expectations high (WRI: 91.5) with concerns about complex electronics requiring proof of dependability
+- Off-Road Performance is paramount with WRI 100.0, dominating 25% of discussions as fundamental expectation for true adventure bikes
+- Engine Size & Performance ranks second with WRI 95.0, with consumers demanding powerful and responsive engines for exhilarating riding experiences
+- Technology & Features, Rider Aids & Safety Systems, and Connected Features all score WRI 85.5, representing modern baseline expectations for safety and enhanced riding experience
 
 ## Market Insights
-- Portuguese motorcycle market grew 3.2% in 2024, with >125cc segment up 8.3%, showing healthy premium demand
-- R1300RT dominated touring conversation with 50%+ share of voice during launch period
-- Shift toward adventure-touring poses challenge, requiring clear articulation of road-touring advantages
+- The Portuguese adventure motorcycle market demonstrated vibrant activity with 75% positive sentiment, driven by new 2025 model introductions and strong consumer engagement
+- Mid-weight adventure motorcycles showed particular strength, with competitors like KTM, Triumph, and Honda actively promoting balanced power and maneuverability offerings
+- Heritage styling scored lower (WRI 36.2) but represents a "blue ocean opportunity" for differentiation in a market dominated by aggressive modern aesthetics
 
 ## Competitor Analysis
-- Honda Gold Wing remains comfort benchmark but lacks modern tech (no radar ACC) and suffers from weight (380kg)
-- BMW K1600 series offers six-cylinder smoothness but R1300RT's lighter weight and newer tech prove more compelling
-- Sport-touring alternatives (Ninja 1000SX, GSX-S1000GT) provide value option at half the price but lack touring amenities
+- KTM 890 Adventure R commands 25% share of voice, positioned as "King of Mid-Weight Adventurers" with strong rally heritage and off-road excellence
+- Triumph Tiger 900 holds 20% share with versatility messaging balancing road and off-road performance, while Honda Africa Twin maintains 18% through reliability positioning
+- BMW GS Series traditional models show only 10% share, indicating opportunity for the R 12 G/S to reinvigorate BMW's adventure segment presence
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as the most technologically advanced touring motorcycle that doesn't compromise comfort
-- **Content & Messaging:** Address price concerns by articulating comprehensive value proposition including 3-year warranty
-- **Audience Targeting:** Focus on mature riders seeking cutting-edge safety while attracting younger tech-oriented riders
-- **Key Opportunity:** Leverage competitor exits and technology leadership to become default premium touring choice
+- **Strategic Positioning:** Position R 12 G/S as "heritage adventure bike that delivers uncompromising modern capability," combining iconic GS legacy with contemporary performance to differentiate from competitors' uniform modern aesthetics
+- **Content & Messaging:** Emphasize authentic off-road capabilities and robust boxer engine performance first, then layer heritage as unique emotional differentiator while showcasing integrated modern technology seamlessly
+- **Audience Targeting:** Focus on BMW loyalists seeking distinctive character, performance-oriented riders wanting aesthetic alternatives, touring enthusiasts valuing comfort, and affluent riders appreciating premium heritage design
+- **Key Opportunity:** Leverage heritage positioning as distinctive market differentiator while proving uncompromising adventure capability, addressing the gap in emotional connection and character appeal in current competitive landscape

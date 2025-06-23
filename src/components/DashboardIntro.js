@@ -19,7 +19,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import { getMarketIntroduction } from '../data/marketIntroductions';
+import { getMarketIntroduction, marketIntroductions } from '../data/marketIntroductions';
 import { marketSources } from '../data/marketSources';
 
 // Set up the worker for react-pdf
@@ -99,6 +99,13 @@ const SourceItem = ({ source }) => (
   </Box>
 );
 
+// Helper to extract only the dashboard scope from introduction
+const getScopeText = (intro) => {
+  if (!intro) return '';
+  const split = intro.split('## Dashboard Sections');
+  return split[0].trim();
+};
+
 const DashboardIntro = ({ selectedMarket }) => {
   const [tabValue, setTabValue] = useState(0);
   const [numPages, setNumPages] = useState(null);
@@ -107,10 +114,13 @@ const DashboardIntro = ({ selectedMarket }) => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showControls, setShowControls] = useState(true);
   const containerRef = useRef(null);
-  const marketData = getMarketIntroduction(selectedMarket);
   
   // Updated market key matching logic to handle all formats
   const normalizedMarket = (selectedMarket || '').toLowerCase().replace(/\s+/g, '_');
+  const introMarketKey = Object.keys(marketIntroductions).find(key =>
+    key.toLowerCase().endsWith(normalizedMarket)
+  );
+  const marketData = introMarketKey ? marketIntroductions[introMarketKey] : null;
   const marketKey = Object.keys(marketSources).find(key =>
     key.toLowerCase().endsWith(normalizedMarket)
   );
@@ -212,7 +222,7 @@ const DashboardIntro = ({ selectedMarket }) => {
                   {scopeData[0].title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
-                  {scopeData[0].description}
+                  {marketData ? getScopeText(marketData.introduction) : scopeData[0].description}
                 </Typography>
               </CardContent>
             </Card>
@@ -452,4 +462,4 @@ const DashboardIntro = ({ selectedMarket }) => {
   );
 };
 
-export default DashboardIntro; 
+export default DashboardIntro;

@@ -1,22 +1,22 @@
 # Executive Summary: Finland
 
 ## Attribute Resonance
-- Value for Money is the strongest purchase driver (WRI: 95.0) with R1300RT's €30k pricing being major concern requiring strategic financial solutions and clear value justification
-- Technology & Features rank second highest (WRI: 92.0) with Finnish riders showing strong appetite for radar cruise control, semi-automatic transmission, and advanced TFT displays
-- Overall Comfort remains paramount (WRI: 91.5) as cornerstone of touring segment with R1300RT's improved ergonomics and wind protection highly valued for Finnish weather conditions
+- Off-Road Performance & Versatility are paramount priorities (WRI: 95.0 each)
+- Heritage/Retro Styling shows strong market appetite (WRI: 89.0)
+- Suspension Quality critical for adventure capability (WRI: 90.0)
 
 ## Market Insights
-- Finland's small motorcycle market (~3,200-3,500 annual units) shows adventure bike dominance with 3 of top 5 models being ADVs, challenging traditional touring segment
-- BMW R1300RT commands 40% share of touring conversations despite not ranking in top 10 sales, indicating high interest but price sensitivity barriers
-- Used motorcycle market growth of 38% reflects economic pressures with consumers preferring low-mileage alternatives over new premium purchases
+- Versatility and off-road capability remain paramount for adventure riders, with notable emerging interest in mid-capacity models
+- Growing market appetite for "modern heritage" adventure motorcycles that blend classic aesthetics with modern functionality
+- Consumer desire for simplicity amidst increasing technological sophistication, with preference for "less techy" platforms
 
 ## Competitor Analysis
-- BMW R1300RT leads technological innovation but faces direct competition from Honda Gold Wing's luxury positioning and indirect pressure from adventure bikes
-- Honda NT1100 emerges as value alternative at €20k with 5-star Finnish reviews, threatening premium segment with practical touring capabilities
-- Cross-segment competition from BMW's own R1300GS and Honda Africa Twin shows touring buyers increasingly prefer versatile "do-it-all" motorcycles
+- BMW GS series widely perceived as segment benchmark despite Honda's broader market leadership
+- KTM 890 Adventure R and Yamaha Ténéré 700 strong contenders with 18.0% and 16.0% SOV respectively
+- BMW and Ducati positioned at premium end while Japanese brands and Triumph offer strong value
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as balanced performance tourer offering dynamic handling and supreme comfort without compromise, differentiating from heavy luxury competitors and basic adventure alternatives
-- **Content & Messaging:** Focus on technology leadership, comfort superiority over ADVs, and comprehensive value proposition including safety systems, warranty, and financing solutions
-- **Audience Targeting:** Target experienced touring riders 40+, tech-savvy motorcyclists, adventure bike owners considering road focus, and current BMW owners seeking upgrades
-- **Key Opportunity:** Address value perception through strategic financial solutions, community engagement, and clear differentiation against adventure bike competition while leveraging strong technology and comfort advantages
+- **Strategic Positioning:** Position R 12 G/S as authentic heritage adventure bike that returns to fundamental, purist riding experience
+- **Content & Messaging:** Emphasize heritage connection to R 80 G/S, authentic boxer character, and "stripped down feel-good bike" experience
+- **Audience Targeting:** Focus on riders seeking more nimble, less intimidating adventure bikes with character and emotional connection
+- **Key Opportunity:** Leverage strong heritage appeal (WRI: 89.0) to differentiate from tech-heavy competitors and capture growing "modern heritage" segment
