@@ -108,7 +108,7 @@ export const marketInsights = {
       "Develop accessory ecosystem that allows customization while maintaining core character"
     ]
   },
-  "czech republic": {
+  "czech-republic": {
     "attributeInsights": {
       "Off-Road Performance": {
         "insight": "Stands as the undisputed top priority, dominating online discussions by accounting for 25% of all themes. Consumers actively discuss crucial elements like suspension travel, appropriate wheel sizes, and sufficient ground clearance, underscoring their demand for genuine off-road capability.",
@@ -228,10 +228,10 @@ export const marketInsights = {
         "details": "Position the BMW R 12 G/S as the authentic heritage adventure bike with genuine off-road capability and manageable weight"
       },
       {
-        "details": "Leverage the explicit lineage to R80GS Paris-Dakar and R 90 S for authentic heritage positioning backed by modern performance"
+        "details": "Leverage the explicit lineage to R 80 GS Paris-Dakar and R 90 S for authentic heritage positioning backed by modern performance"
       },
       {
-        "details": "Emphasize the lighter R12 platform advantage as a solution to the \"weight conundrum\" while maintaining adventure capabilities"
+        "details": "Emphasize the lighter R 12 platform advantage as a solution to the \"weight conundrum\" while maintaining adventure capabilities"
       },
       {
         "details": "Target both experienced adventurers seeking simpler, lighter alternatives and new heritage seekers drawn to retro aesthetics"
@@ -246,7 +246,7 @@ export const marketInsights = {
     "priorities": [
       "Demonstrate authentic off-road capability through 21-inch front wheel, long suspension travel, and dedicated Enduro riding modes",
       "Emphasize manageable weight and agility advantages over heavier maxi-trails",
-      "Showcase heritage authenticity with direct R80GS Paris-Dakar and R 90 S lineage",
+      "Showcase heritage authenticity with direct R 80 GS Paris-Dakar and R 90 S lineage",
       "Highlight balanced versatility for both serious off-road and comfortable road touring",
       "Position competitively in upper mid-range with clear value justification",
       "Leverage BMW's reliability reputation while addressing modern technology expectations"
@@ -444,7 +444,7 @@ export const marketInsights = {
         "details": "Position R 12 G/S as authentic off-road alternative addressing credibility gap in BMW's adventure portfolio"
       },
       {
-        "details": "Amplify heritage storytelling connecting to Dakar-winning R80 G/S legacy and BMW's off-road roots"
+        "details": "Amplify heritage storytelling connecting to Dakar-winning R 80 G/S legacy and BMW's off-road roots"
       },
       {
         "details": "Highlight \"stripped-down, feel-good\" experience differentiating from complex premium adventure bikes"

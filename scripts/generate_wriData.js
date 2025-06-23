@@ -10,7 +10,10 @@ function parseMarketMarkdown(mdPath) {
   const content = fs.readFileSync(mdPath, 'utf8');
   const lines = content.split('\n');
   const marketMatch = content.match(/^# WRI Report: (.+)$/m);
-  const market = marketMatch ? marketMatch[1].trim() : path.basename(mdPath, '.md');
+  let market = marketMatch ? marketMatch[1].trim() : path.basename(mdPath, '.md');
+  
+  // Normalize market name to use hyphens instead of spaces for consistency
+  market = market.toLowerCase().replace(/\s+/g, '-');
   
   // Parse scores and insights
   const scores = {};
@@ -154,11 +157,14 @@ function processMarkets() {
       priorities 
     } = parseMarketMarkdown(path.join(marketMdDir, file));
     
-    marketData.markets.push(market);
-    marketScores[market.toLowerCase()] = scores;
+    // Ensure market name is normalized (should already be done in parseMarketMarkdown)
+    const normalizedMarket = market.toLowerCase().replace(/\s+/g, '-');
+    
+    marketData.markets.push(normalizedMarket);
+    marketScores[normalizedMarket] = scores;
     
     // Store insights and recommendations
-    marketData.insights[market.toLowerCase()] = {
+    marketData.insights[normalizedMarket] = {
       attributeInsights,
       recommendations,
       priorities
@@ -184,10 +190,9 @@ function processMarkets() {
     marketData.deviations[attr] = {};
     
     marketData.markets.forEach(market => {
-      const marketKey = market.toLowerCase();
-      const score = marketScores[marketKey]?.[attr] || 0;
-      marketData.scores[attr][marketKey] = score;
-      marketData.deviations[attr][marketKey] = score - meanScores[attr];
+      const score = marketScores[market]?.[attr] || 0;
+      marketData.scores[attr][market] = score;
+      marketData.deviations[attr][market] = score - meanScores[attr];
     });
   });
   

@@ -35,7 +35,7 @@ export const marketSources = {
         },
         {
           "name": "Source 7",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro – General Chatter",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro – General Chatter",
           "type": "Other"
         },
         {
@@ -596,7 +596,7 @@ export const marketSources = {
         },
         {
           "name": "Source 30",
-          "description": "2025 BMW R12 G/S review",
+          "description": "2025 BMW R 12 G/S review",
           "type": "Review"
         },
         {
@@ -606,12 +606,12 @@ export const marketSources = {
         },
         {
           "name": "Source 32",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro",
           "type": "Other"
         },
         {
           "name": "Source 33",
-          "description": "First Look: 2025 BMW R12 G/S",
+          "description": "First Look: 2025 BMW R 12 G/S",
           "type": "Other"
         },
         {
@@ -701,7 +701,7 @@ export const marketSources = {
         },
         {
           "name": "Source 51",
-          "description": "BMW R12 GS teased ahead of debut on March 27",
+          "description": "BMW R 12 GS teased ahead of debut on March 27",
           "type": "Other"
         },
         {
@@ -776,7 +776,7 @@ export const marketSources = {
         },
         {
           "name": "Source 66",
-          "description": "2025 R1200 G/S sort of retro styling - BMW MOA Forum",
+          "description": "2025 R 1200 G/S sort of retro styling - BMW MOA Forum",
           "type": "Forum"
         },
         {
@@ -932,7 +932,7 @@ export const marketSources = {
         },
         {
           "name": "Source 3",
-          "description": "BMW R12 GS teased ahead of debut on March 27 - Bike News | The Financial Express",
+          "description": "BMW R 12 GS teased ahead of debut on March 27 - Bike News | The Financial Express",
           "type": "News"
         },
         {
@@ -942,7 +942,7 @@ export const marketSources = {
         },
         {
           "name": "Source 5",
-          "description": "2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News",
           "type": "News"
         },
         {
@@ -1208,7 +1208,7 @@ export const marketSources = {
         },
         {
           "name": "Source 17",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro",
           "type": "Other"
         },
         {
@@ -1243,7 +1243,7 @@ export const marketSources = {
         },
         {
           "name": "Source 24",
-          "description": "New 2025 BMW R1300GS Adventure First Impressions: 9 Best Features!",
+          "description": "New 2025 BMW R 1300 GS Adventure First Impressions: 9 Best Features!",
           "type": "Other"
         },
         {
@@ -1253,7 +1253,7 @@ export const marketSources = {
         },
         {
           "name": "Source 26",
-          "description": "2025 BMW R12 G/S review",
+          "description": "2025 BMW R 12 G/S review",
           "type": "Review"
         },
         {
@@ -1273,7 +1273,7 @@ export const marketSources = {
         },
         {
           "name": "Source 30",
-          "description": "2025 BMW R12 S, Best Retro Motorcycle, INFO MOTO",
+          "description": "2025 BMW R 12 S, Best Retro Motorcycle, INFO MOTO",
           "type": "Other"
         },
         {
@@ -1473,7 +1473,7 @@ export const marketSources = {
         },
         {
           "name": "Source 70",
-          "description": "The NEW 2025 R1300GS Adventure - BMW MOA Forum",
+          "description": "The NEW 2025 R 1300 GS Adventure - BMW MOA Forum",
           "type": "Forum"
         },
         {
@@ -1679,7 +1679,7 @@ export const marketSources = {
         },
         {
           "name": "Source 28",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro – General Chatter...",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro – General Chatter...",
           "type": "Other"
         },
         {
@@ -1805,7 +1805,7 @@ export const marketSources = {
         },
         {
           "name": "Source 9",
-          "description": "New 2025 BMW R1250 GS Review | The King of Adventure Bikes Just Got Better - YouTube",
+          "description": "New 2025 BMW R 1250 GS Review | The King of Adventure Bikes Just Got Better - YouTube",
           "type": "Review"
         },
         {
@@ -1975,7 +1975,7 @@ export const marketSources = {
         },
         {
           "name": "Source 43",
-          "description": "2025 BMW R12 G/S review - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review - Motorcycle News",
           "type": "News"
         },
         {
@@ -2005,7 +2005,7 @@ export const marketSources = {
         },
         {
           "name": "Source 49",
-          "description": "2025 NEW BMW R12 GS OFFICIALLY ANNOUNCED!! - YouTube",
+          "description": "2025 NEW BMW R 12 GS OFFICIALLY ANNOUNCED!! - YouTube",
           "type": "Press Release"
         },
         {
@@ -2020,7 +2020,7 @@ export const marketSources = {
         },
         {
           "name": "Source 52",
-          "description": "BMW R12 GS breaks cover — All you need to know - Bike News",
+          "description": "BMW R 12 GS breaks cover — All you need to know - Bike News",
           "type": "News"
         },
         {
@@ -2266,7 +2266,7 @@ export const marketSources = {
         },
         {
           "name": "Source 11",
-          "description": "BMW R12 G/S (2025) – Technical Review - Bennes Insurance",
+          "description": "BMW R 12 G/S (2025) – Technical Review - Bennes Insurance",
           "type": "Review"
         },
         {
@@ -2281,7 +2281,7 @@ export const marketSources = {
         },
         {
           "name": "Source 14",
-          "description": "The NEW 2025 R1300GS Adventure - BMW MOA Forum",
+          "description": "The NEW 2025 R 1300 GS Adventure - BMW MOA Forum",
           "type": "Forum"
         },
         {
@@ -2301,7 +2301,7 @@ export const marketSources = {
         },
         {
           "name": "Source 18",
-          "description": "Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube",
+          "description": "Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube",
           "type": "Other"
         },
         {
@@ -2762,12 +2762,12 @@ export const marketSources = {
         },
         {
           "name": "Source 30",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club",
           "type": "Other"
         },
         {
           "name": "Source 31",
-          "description": "2025 BMW R12 G/S review - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review - Motorcycle News",
           "type": "News"
         },
         {
@@ -2908,7 +2908,7 @@ export const marketSources = {
         },
         {
           "name": "Source 8",
-          "description": "Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube",
+          "description": "Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube",
           "type": "Other"
         },
         {
@@ -2923,7 +2923,7 @@ export const marketSources = {
         },
         {
           "name": "Source 11",
-          "description": "The NEW 2025 R1300GS Adventure | BMW MOA Forum",
+          "description": "The NEW 2025 R 1300 GS Adventure | BMW MOA Forum",
           "type": "Forum"
         },
         {
@@ -3078,7 +3078,7 @@ export const marketSources = {
         },
         {
           "name": "Source 42",
-          "description": "2025 BMW R12 G/S review - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review - Motorcycle News",
           "type": "News"
         },
         {
@@ -3093,12 +3093,12 @@ export const marketSources = {
         },
         {
           "name": "Source 45",
-          "description": "BMW R12 G/S 2025 LOADING ON MY TRAILER - YouTube",
+          "description": "BMW R 12 G/S 2025 LOADING ON MY TRAILER - YouTube",
           "type": "Other"
         },
         {
           "name": "Source 46",
-          "description": "2025 BMW R12GS: The ULTIMATE Retro ADV! - YouTube",
+          "description": "2025 BMW R 12 GS: The ULTIMATE Retro ADV! - YouTube",
           "type": "Other"
         },
         {
@@ -3394,12 +3394,12 @@ export const marketSources = {
         },
         {
           "name": "Source 49",
-          "description": "2025 NEW BMW R12 GS OFFICIALLY ANNOUNCED!! - YouTube",
+          "description": "2025 NEW BMW R 12 GS OFFICIALLY ANNOUNCED!! - YouTube",
           "type": "Press Release"
         },
         {
           "name": "Source 50",
-          "description": "BMW R12 GS breaks cover — All you need to know - The Financial Express",
+          "description": "BMW R 12 GS breaks cover — All you need to know - The Financial Express",
           "type": "Other"
         },
         {
@@ -3429,7 +3429,7 @@ export const marketSources = {
         },
         {
           "name": "Source 56",
-          "description": "Nuova BMW in arrivo: è la R12 G/S. Tutto quello che sappiamo - Moto.it",
+          "description": "Nuova BMW in arrivo: è la R 12 G/S. Tutto quello che sappiamo - Moto.it",
           "type": "Other"
         },
         {
@@ -3700,7 +3700,7 @@ export const marketSources = {
         },
         {
           "name": "Source 28",
-          "description": "2025 BMW R12 G/S review: Old school soul, new school calibre",
+          "description": "2025 BMW R 12 G/S review: Old school soul, new school calibre",
           "type": "Review"
         },
         {
@@ -3710,7 +3710,7 @@ export const marketSources = {
         },
         {
           "name": "Source 30",
-          "description": "2025 R1200 G/S sort of retro styling | BMW MOA",
+          "description": "2025 R 1200 G/S sort of retro styling | BMW MOA",
           "type": "Other"
         },
         {
@@ -3800,7 +3800,7 @@ export const marketSources = {
         },
         {
           "name": "Source 48",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club",
           "type": "Other"
         },
         {
@@ -3931,7 +3931,7 @@ export const marketSources = {
         },
         {
           "name": "Source 17",
-          "description": "2025 BMW R12 G/S review - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review - Motorcycle News",
           "type": "News"
         },
         {
@@ -4202,7 +4202,7 @@ export const marketSources = {
         },
         {
           "name": "Source 2",
-          "description": "BMW MOA forums discussion on R12 G/S retro styling",
+          "description": "BMW MOA forums discussion on R 12 G/S retro styling",
           "type": "Forum"
         },
         {
@@ -4212,12 +4212,12 @@ export const marketSources = {
         },
         {
           "name": "Source 4",
-          "description": "Motorcycle News BMW R12 G/S review and analysis",
+          "description": "Motorcycle News BMW R 12 G/S review and analysis",
           "type": "News"
         },
         {
           "name": "Source 5",
-          "description": "YouTube BMW R12 G/S official announcement coverage",
+          "description": "YouTube BMW R 12 G/S official announcement coverage",
           "type": "News"
         },
         {
@@ -4277,7 +4277,7 @@ export const marketSources = {
         },
         {
           "name": "Source 17",
-          "description": "MotoTrips BMW R1300 GS opinion and off-road performance assessment",
+          "description": "MotoTrips BMW R 1300 GS opinion and off-road performance assessment",
           "type": "Other"
         },
         {
@@ -4342,17 +4342,17 @@ export const marketSources = {
         },
         {
           "name": "Source 30",
-          "description": "YouTube BMW R12 G/S reveal and technical details",
+          "description": "YouTube BMW R 12 G/S reveal and technical details",
           "type": "Product Information"
         },
         {
           "name": "Source 31",
-          "description": "RSWasserboxer BMW forum R1300RS launch discussion",
+          "description": "RSWasserboxer BMW forum R 1300 RS launch discussion",
           "type": "Forum"
         },
         {
           "name": "Source 32",
-          "description": "YouTube BMW R12 G/S Dakar heritage analysis",
+          "description": "YouTube BMW R 12 G/S Dakar heritage analysis",
           "type": "Review"
         },
         {
@@ -4367,7 +4367,7 @@ export const marketSources = {
         },
         {
           "name": "Source 35",
-          "description": "Forum Suzuki V-strom BMW R1250 GS Adventure discussion",
+          "description": "Forum Suzuki V-strom BMW R 1250 GS Adventure discussion",
           "type": "Forum"
         },
         {
@@ -4583,7 +4583,7 @@ export const marketSources = {
         },
         {
           "name": "Source 27",
-          "description": "BMW F900 GS 2025 full Review – Power, Style & Performance ... - YouTube",
+          "description": "BMW F 900 GS 2025 full Review – Power, Style & Performance ... - YouTube",
           "type": "Review"
         },
         {
@@ -4879,7 +4879,7 @@ export const marketSources = {
         },
         {
           "name": "Source 10",
-          "description": "New R12 G/S Launched! : r/bmwmotorrad - Reddit",
+          "description": "New R 12 G/S Launched! : r/bmwmotorrad - Reddit",
           "type": "Other"
         },
         {
@@ -4959,7 +4959,7 @@ export const marketSources = {
         },
         {
           "name": "Source 26",
-          "description": "2025 BMW R12 G/S review - Motorcycle News",
+          "description": "2025 BMW R 12 G/S review - Motorcycle News",
           "type": "News"
         },
         {
@@ -5520,12 +5520,12 @@ export const marketSources = {
         },
         {
           "name": "Source 10",
-          "description": "2025 R1200 G/S sort of retro styling - BMW MOA Forum",
+          "description": "2025 R 1200 G/S sort of retro styling - BMW MOA Forum",
           "type": "Forum"
         },
         {
           "name": "Source 11",
-          "description": "2026 BMW R12 G/S Stokes an Icon's Enduring Spirit - Car and Driver",
+          "description": "2026 BMW R 12 G/S Stokes an Icon's Enduring Spirit - Car and Driver",
           "type": "Other"
         },
         {
@@ -5770,7 +5770,7 @@ export const marketSources = {
         },
         {
           "name": "Source 60",
-          "description": "New 2025 BMW R12 G/S Walkaround: Everything You Need To Know! - YouTube",
+          "description": "New 2025 BMW R 12 G/S Walkaround: Everything You Need To Know! - YouTube",
           "type": "Other"
         },
         {
@@ -5841,7 +5841,7 @@ export const marketSources = {
         },
         {
           "name": "Source 8",
-          "description": "Is this the new 2025 R1200 G/S ? - UKGSer",
+          "description": "Is this the new 2025 R 1200 G/S ? - UKGSer",
           "type": "Other"
         },
         {
@@ -5881,7 +5881,7 @@ export const marketSources = {
         },
         {
           "name": "Source 16",
-          "description": "New 2025 BMW R1300GS Adventure First Impressions: 9 Best Features! - YouTube",
+          "description": "New 2025 BMW R 1300 GS Adventure First Impressions: 9 Best Features! - YouTube",
           "type": "Other"
         },
         {
@@ -5976,7 +5976,7 @@ export const marketSources = {
         },
         {
           "name": "Source 35",
-          "description": "2026 BMW R12 G/S Stokes an Icon's Enduring Spirit - Car and Driver",
+          "description": "2026 BMW R 12 G/S Stokes an Icon's Enduring Spirit - Car and Driver",
           "type": "Other"
         },
         {
@@ -6192,12 +6192,12 @@ export const marketSources = {
         },
         {
           "name": "Source 14",
-          "description": "BMW R1300GS Adventure 2025 vs. R1250GS Adventure - YouTube",
+          "description": "BMW R 1300 GS Adventure 2025 vs. R 1250 GS Adventure - YouTube",
           "type": "Other"
         },
         {
           "name": "Source 15",
-          "description": "CERRADO - Nueva R1300RT - BMWMOTOS.COM",
+          "description": "CERRADO - Nueva R 1300 RT - BMWMOTOS.COM",
           "type": "Other"
         },
         {
@@ -6447,7 +6447,7 @@ export const marketSources = {
         },
         {
           "name": "Source 65",
-          "description": "3500 Mile Review of R1300GSA ASA - UKGSer",
+          "description": "3500 Mile Review of R 1300 GSA ASA - UKGSer",
           "type": "Review"
         },
         {
@@ -6613,7 +6613,7 @@ export const marketSources = {
         },
         {
           "name": "Source 9",
-          "description": "2025 BMW F800 GS Motorcycle Review - Driving.ca",
+          "description": "2025 BMW F 800 GS Motorcycle Review - Driving.ca",
           "type": "Review"
         },
         {
@@ -6658,7 +6658,7 @@ export const marketSources = {
         },
         {
           "name": "Source 18",
-          "description": "BMW R12 GS breaks cover — All you need to know - The Financial Express",
+          "description": "BMW R 12 GS breaks cover — All you need to know - The Financial Express",
           "type": "Other"
         },
         {
@@ -6868,7 +6868,7 @@ export const marketSources = {
         },
         {
           "name": "Source 60",
-          "description": "Turbo R1100 GS on Advrider - the Pelican Parts Forum!",
+          "description": "Turbo R 1100 GS on Advrider - the Pelican Parts Forum!",
           "type": "Forum"
         },
         {
@@ -6933,7 +6933,7 @@ export const marketSources = {
         },
         {
           "name": "Source 73",
-          "description": "BMW MC Klubben • Visa tråd - R1300RS och RT presenteras 29 april",
+          "description": "BMW MC Klubben • Visa tråd - R 1300 RS och RT presenteras 29 april",
           "type": "Other"
         },
         {
@@ -6948,7 +6948,7 @@ export const marketSources = {
         },
         {
           "name": "Source 76",
-          "description": "BMW F900 GS 2025 / new bmw gs 900f 2025 - YouTube",
+          "description": "BMW F 900 GS 2025 / new bmw gs 900f 2025 - YouTube",
           "type": "Other"
         },
         {
@@ -6983,12 +6983,12 @@ export const marketSources = {
         },
         {
           "name": "Source 83",
-          "description": "The NEW 2025 R1300GS Adventure | Page 6 - BMW MOA Forum",
+          "description": "The NEW 2025 R 1300 GS Adventure | Page 6 - BMW MOA Forum",
           "type": "Forum"
         },
         {
           "name": "Source 84",
-          "description": "BMW R1200RS / R1250RS Forum Community - The 2025 R1300GS Adventure (R1300GSA) - RSWasserboxer",
+          "description": "BMW R 1200 RS / R 1250 RS Forum Community - The 2025 R 1300 GS Adventure (R 1300 GSA) - RSWasserboxer",
           "type": "Forum"
         },
         {
@@ -7033,7 +7033,7 @@ export const marketSources = {
         },
         {
           "name": "Source 93",
-          "description": "BMW R12 GS to be Launched Today! - BikeWale",
+          "description": "BMW R 12 GS to be Launched Today! - BikeWale",
           "type": "Other"
         },
         {
@@ -7069,7 +7069,7 @@ export const marketSources = {
         },
         {
           "name": "Source 5",
-          "description": "New For 2025 BMW R12 G/S: A Dirt-Ready Retro – General Chatter",
+          "description": "New For 2025 BMW R 12 G/S: A Dirt-Ready Retro – General Chatter",
           "type": "Other"
         },
         {
@@ -7104,12 +7104,12 @@ export const marketSources = {
         },
         {
           "name": "Source 12",
-          "description": "BMW R12 GS teased ahead of debut on March 27 - Bike News | The Financial Express",
+          "description": "BMW R 12 GS teased ahead of debut on March 27 - Bike News | The Financial Express",
           "type": "News"
         },
         {
           "name": "Source 13",
-          "description": "2023-on BMW R1300GS Review: Raising the adventure bar - Motorcycle News",
+          "description": "2023-on BMW R 1300 GS Review: Raising the adventure bar - Motorcycle News",
           "type": "News"
         },
         {
@@ -7450,7 +7450,7 @@ export const marketSources = {
         },
         {
           "name": "Source 5",
-          "description": "2025 R1200 G/S sort of retro styling - BMW MOA Forum",
+          "description": "2025 R 1200 G/S sort of retro styling - BMW MOA Forum",
           "type": "Forum"
         },
         {
@@ -7465,7 +7465,7 @@ export const marketSources = {
         },
         {
           "name": "Source 8",
-          "description": "Is this the new 2025 R1200 G/S ? | UKGSer",
+          "description": "Is this the new 2025 R 1200 G/S ? | UKGSer",
           "type": "Other"
         },
         {

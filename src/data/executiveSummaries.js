@@ -32,7 +32,7 @@ export const executiveSummaries = {
     "marketInsights": [
       "Belgian motorcycle market experienced 11.7% growth in 2024 but faces temporary correction in early 2025 due to Euro5+ emissions standards",
       "Consumer preferences bifurcated between technology appreciation and simplicity preference, creating distinct market segments with different priorities",
-      "Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R80 G/S connection"
+      "Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R 80 G/S connection"
     ],
     "competitorAnalysis": [
       "BMW Motorrad holds 25% share of voice and third position in Belgian sales with 3,322 registrations, indicating strong established presence",
@@ -40,7 +40,7 @@ export const executiveSummaries = {
       "Honda and Yamaha maintain strong positions through legendary durability and simplicity focus respectively"
     ],
     "strategicPositioning": "Establish R 12 G/S as premier \"retro-off-road\" adventure bike leveraging authentic heritage while addressing manageability concerns",
-    "contentMessaging": "Emphasize \"dirt-ready\" capability and R80 G/S legacy as emotional differentiators, highlighting lighter weight advantages",
+    "contentMessaging": "Emphasize \"dirt-ready\" capability and R 80 G/S legacy as emotional differentiators, highlighting lighter weight advantages",
     "audienceTargeting": "Focus on heritage enthusiasts and performance-oriented riders seeking simplicity, plus value-conscious consumers in mid-range segment",
     "keyOpportunity": "Fill market gap between complex technological solutions and simplicity preference through purposeful electronic integration approach"
   },
@@ -81,7 +81,7 @@ export const executiveSummaries = {
       "Market gap identified for premium, off-road capable adventure bike with strong authentic heritage styling from European brand",
       "KTM faces ongoing reliability concerns while Honda benefits from strong dependability reputation"
     ],
-    "strategicPositioning": "Position as authentic heritage leader combining iconic R80 G/S lineage with modern off-road capability and premium quality standard",
+    "strategicPositioning": "Position as authentic heritage leader combining iconic R 80 G/S lineage with modern off-road capability and premium quality standard",
     "contentMessaging": "Emphasize genuine off-road prowess, authentic heritage narrative, and BMW's reliability reputation as competitive differentiation",
     "audienceTargeting": "Focus on heritage enthusiasts, experienced adventure riders prioritizing genuine capability, and premium buyers concerned about competitor reliability",
     "keyOpportunity": "Capitalize on market gap for heritage-styled adventure bike that bridges classic aesthetics with serious modern off-road capability"
@@ -145,7 +145,7 @@ export const executiveSummaries = {
       "Market gap exists for heritage-styled bikes with authentic off-road capability and manageable weight"
     ],
     "strategicPositioning": "Position BMW R 12 G/S as the authentic heritage adventure bike that solves the weight conundrum while delivering genuine off-road capability",
-    "contentMessaging": "Emphasize authentic R80GS Paris-Dakar lineage backed by modern performance rather than just heritage styling",
+    "contentMessaging": "Emphasize authentic R 80 GS Paris-Dakar lineage backed by modern performance rather than just heritage styling",
     "audienceTargeting": "Target experienced adventurers seeking lighter alternatives and heritage seekers demanding modern capability",
     "keyOpportunity": "Capitalize on the Heritage-Capable sweet spot where consumers desire classic looks backed by genuine off-road performance and manageable weight"
   },
@@ -215,7 +215,7 @@ export const executiveSummaries = {
   "netherlands": {
     "attributeResonance": [
       "Long-Distance Touring Capability is the highest priority (WRI: 93.5), driven by consumer intentions for extensive European tours",
-      "Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R80 G/S",
+      "Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R 80 G/S",
       "Manageability/Weight is critical (WRI: 85.0), with recurring concerns about \"top-heavy\" motorcycles and preference for manageable bikes"
     ],
     "marketInsights": [
@@ -229,7 +229,7 @@ export const executiveSummaries = {
       "Market gap exists for heritage-positioned, manageable adventure bikes between mainstream middleweights and large touring-focused models"
     ],
     "strategicPositioning": "Position R 12 G/S as authentic heritage adventure bike connecting riders to BMW's adventure legacy with manageable \"dirt-ready retro\" capability",
-    "contentMessaging": "Lead with heritage story and R80 G/S connection while emphasizing European touring versatility and manageable adventure performance",
+    "contentMessaging": "Lead with heritage story and R 80 G/S connection while emphasizing European touring versatility and manageable adventure performance",
     "audienceTargeting": "Focus on practical adventurers and style-first riders seeking distinctive heritage appeal with reliable BMW quality",
     "keyOpportunity": "Leverage unique heritage positioning and early positive dealer sentiment to capture underserved manageable adventure segment"
   },
@@ -270,7 +270,7 @@ export const executiveSummaries = {
       "Yamaha Ténéré 700 provides strong value proposition (18.0% SOV) but faces emerging reliability concerns with 2025 model clutch and fuel consumption issues",
       "BMW's traditional GS series maintains market leadership but faces criticism for perceived limitations in serious off-road conditions despite adventure branding"
     ],
-    "strategicPositioning": "Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R80 G/S legacy",
+    "strategicPositioning": "Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R 80 G/S legacy",
     "contentMessaging": "Emphasize genuine off-road capability through compelling terrain demonstrations and heritage storytelling connecting to BMW's rally roots and adventure authenticity",
     "audienceTargeting": "Focus on hardcore off-road enthusiasts seeking BMW alternative to KTM dominance and heritage-conscious riders valuing emotional connection with classic-modern fusion",
     "keyOpportunity": "Fill authentic off-road heritage gap and capture growing retro-adventure niche by demonstrating genuine dirt capability through simplified premium experience"

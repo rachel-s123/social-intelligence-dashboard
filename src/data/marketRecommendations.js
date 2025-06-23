@@ -30,19 +30,19 @@ export const marketRecommendations = {
   },
   "belgium": {
     "strategicPositioning": [
-      "Premier \"retro-off-road\" adventure bike leveraging authentic R80 G/S lineage and BMW's established adventure credibility",
+      "Premier \"retro-off-road\" adventure bike leveraging authentic R 80 G/S lineage and BMW's established adventure credibility",
       "Highly capable \"dirt-ready\" adventure bike offering genuine off-road performance without perceived complexity or bulk of larger models",
       "Accessible capability solution that combines performance with user-friendliness, broadening appeal beyond traditional adventure demographics",
       "Heritage-focused alternative that provides unique historical depth and emotional differentiation in increasingly saturated technological market"
     ],
     "contentMessaging": [
       "Emphasize authentic off-road capability as primary differentiator, highlighting specific technical features like long-travel suspension and 21-inch front wheels",
-      "Leverage \"Soulfuel\" concept and R80 G/S heritage connection to create emotional differentiation through historical significance and proven legacy",
+      "Leverage \"Soulfuel\" concept and R 80 G/S heritage connection to create emotional differentiation through historical significance and proven legacy",
       "Address manageability advantages and lighter weight (229kg) as key accessibility features that inspire confidence without compromising capability",
       "Position \"integrated and purposeful electronic aids\" that enhance safety without overwhelming complexity-averse consumers"
     ],
     "audienceTargeting": [
-      "Heritage enthusiasts seeking authentic connection to motorcycling history with R80 G/S legacy and Dakar Rally success narrative",
+      "Heritage enthusiasts seeking authentic connection to motorcycling history with R 80 G/S legacy and Dakar Rally success narrative",
       "Performance-oriented riders preferring simplicity over technological complexity who value essential off-road capability with reliable technology",
       "Adventure riders concerned about weight and maneuverability who need confidence-inspiring machines for challenging off-road conditions",
       "Value-conscious consumers in $10,000-$20,000 segment seeking balance of performance and affordability with clear long-term ownership benefits"
@@ -82,14 +82,14 @@ export const marketRecommendations = {
   },
   "czech-republic": {
     "strategicPositioning": [
-      "Authentic heritage leader combining iconic R80 G/S lineage with modern off-road capability",
+      "Authentic heritage leader combining iconic R 80 G/S lineage with modern off-road capability",
       "Premium quality and reliability standard-bearer in market concerned about competitor dependability issues",
       "Genuine adventure capability provider delivering \"dirt-ready retro\" performance rather than aesthetic resemblance",
       "Emotional connection creator through distinctive character and authentic G/S spirit of simplicity, ruggedness, and adventure readiness"
     ],
     "contentMessaging": [
       "Emphasize genuine off-road prowess through suspension travel, wheel sizes, and ground clearance specifications",
-      "Highlight authentic heritage narrative connecting R 12 G/S directly to legendary R80 G/S while demonstrating modern capability",
+      "Highlight authentic heritage narrative connecting R 12 G/S directly to legendary R 80 G/S while demonstrating modern capability",
       "Communicate balanced engine performance suitable for diverse riding scenarios with smooth, tractable power delivery",
       "Reinforce BMW's established reputation for reliability and quality as competitive differentiation against reliability-concerned competitors"
     ],
@@ -160,14 +160,14 @@ export const marketRecommendations = {
   },
   "france": {
     "strategicPositioning": [
-      "The authentic heritage adventure brand with genuine off-road capability, leveraging the explicit R80GS Paris-Dakar and R 90 S lineage",
+      "The authentic heritage adventure brand with genuine off-road capability, leveraging the explicit R 80 GS Paris-Dakar and R 90 S lineage",
       "The solution to the \"weight conundrum\" by offering lighter, more manageable adventure bikes without compromising capability",
       "The premium alternative that bridges the gap between heavy maxi-trails and pure off-road machines",
       "The technology leader that combines advanced rider aids with proven reliability and build quality heritage"
     ],
     "contentMessaging": [
       "Emphasize \"real off-road ability\" backed by modern performance credentials rather than just heritage styling",
-      "Highlight the lighter R12 platform advantage as enabling greater agility and confidence for off-road excursions",
+      "Highlight the lighter R 12 platform advantage as enabling greater agility and confidence for off-road excursions",
       "Showcase the authentic connection to legendary Paris-Dakar heritage while demonstrating contemporary capabilities",
       "Position advanced technology and rider aids as enhancing rather than complicating the adventure riding experience"
     ],
@@ -179,7 +179,7 @@ export const marketRecommendations = {
     ],
     "opportunities": [
       "Heritage-Capable sweet spot where consumers desire classic looks backed by modern, genuine off-road performance capability",
-      "Weight management solution addressing the universal pain point of heavy adventure bikes through the lighter R12 platform",
+      "Weight management solution addressing the universal pain point of heavy adventure bikes through the lighter R 12 platform",
       "Premium value positioning that justifies higher pricing through superior off-road features, advanced technology, and authentic heritage",
       "Market expansion into the growing A2 license segment and accessibility-focused riders seeking manageable adventure motorcycles"
     ]
@@ -264,13 +264,13 @@ export const marketRecommendations = {
   },
   "netherlands": {
     "strategicPositioning": [
-      "The authentic heritage adventure brand that connects riders to BMW's rich adventure legacy through the iconic R80 G/S lineage",
+      "The authentic heritage adventure brand that connects riders to BMW's rich adventure legacy through the iconic R 80 G/S lineage",
       "The manageable adventure specialist offering \"dirt-ready retro\" capability without the intimidation factor of larger adventure bikes",
       "The practical adventurer's choice, balancing reliable European touring capability with distinctive character and accessible off-road performance",
       "The premium heritage alternative to mainstream middleweight offerings, justified by unique BMW quality, character, and adventure authenticity"
     ],
     "contentMessaging": [
-      "Lead with heritage story and authentic BMW adventure legacy, emphasizing direct connection to iconic R80 G/S and \"blast-from-the-past\" character",
+      "Lead with heritage story and authentic BMW adventure legacy, emphasizing direct connection to iconic R 80 G/S and \"blast-from-the-past\" character",
       "Emphasize long-distance European touring capability and versatility for diverse riding conditions including light off-road excursions",
       "Highlight manageable and accessible adventure performance, positioning as \"lithe, manageable and fun on and off-road\" compared to larger GS models",
       "Reinforce BMW reliability and quality reputation to address core \"practical adventurer\" concerns about dependable ownership experience"
@@ -316,14 +316,14 @@ export const marketRecommendations = {
   },
   "poland": {
     "strategicPositioning": [
-      "Authentic off-road heritage brand reclaiming its Dakar legacy through the R 12 G/S's direct connection to the four-time Dakar-winning R80 G/S",
+      "Authentic off-road heritage brand reclaiming its Dakar legacy through the R 12 G/S's direct connection to the four-time Dakar-winning R 80 G/S",
       "Premium \"stripped-down, feel-good\" adventure alternative appealing to riders seeking focused, agile, and characterful experience over complex heavy motorcycles",
       "Heritage-modern fusion leader combining timeless design with contemporary performance and reliability for emotionally-driven adventure enthusiasts",
       "Genuine \"Gelände und Strasse\" capability provider addressing the perceived credibility gap in serious off-road performance of larger modern GS models"
     ],
     "contentMessaging": [
       "Emphasize authentic off-road capability through compelling demonstrations in challenging terrain, directly addressing \"proper off-road alternative\" positioning",
-      "Leverage heritage storytelling connecting R 12 G/S to BMW's rich rally history and Dakar-winning R80 G/S legacy for emotional connection",
+      "Leverage heritage storytelling connecting R 12 G/S to BMW's rich rally history and Dakar-winning R 80 G/S legacy for emotional connection",
       "Highlight \"less is more\" philosophy offering premium adventure experience without unnecessary complexity or overwhelming weight",
       "Communicate balanced technology approach providing essential modern features while maintaining intuitive, focused riding experience"
     ],

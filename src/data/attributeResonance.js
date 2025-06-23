@@ -132,7 +132,7 @@ export const attributeResonance = {
       },
       "Heritage/Retro Styling": {
         "score": 82,
-        "insight": "Strong positive pre-launch resonance for R 12 G/S with discussions highlighting \"retro styling\" and \"visual tribute\" to R80 G/S. This provides unique historical depth and emotional differentiation.",
+        "insight": "Strong positive pre-launch resonance for R 12 G/S with discussions highlighting \"retro styling\" and \"visual tribute\" to R 80 G/S. This provides unique historical depth and emotional differentiation.",
         "recommendation": "Leverage authentic heritage connections as powerful emotional differentiators, emphasizing historical significance and proven legacy rather than superficial retro styling trends."
       },
       "Brand Reliability": {
@@ -295,7 +295,7 @@ export const attributeResonance = {
       },
       "Heritage/Retro Styling": {
         "score": 84.5,
-        "insight": "Notable appetite for heritage styling is evident, with models like Ducati DesertX generating substantial discussion due to distinctive retro-modern design. Pre-launch anticipation surrounding BMW R 12 G/S generated considerable interest due to explicit homage to iconic R80 G/S.",
+        "insight": "Notable appetite for heritage styling is evident, with models like Ducati DesertX generating substantial discussion due to distinctive retro-modern design. Pre-launch anticipation surrounding BMW R 12 G/S generated considerable interest due to explicit homage to iconic R 80 G/S.",
         "recommendation": "Leverage authentic heritage narratives and classic aesthetics combined with modern performance to create compelling emotional connection and unique market differentiation."
       },
       "Engine Size & Performance": {
@@ -578,7 +578,7 @@ export const attributeResonance = {
       "Manageability/Weight": {
         "score": 90,
         "insight": "A prominent desire in consumer conversations, particularly concerning low-speed handling and off-road excursions. Experts identify it as a significant pain point for larger bikes and a competitive advantage for lighter alternatives. Strong preference for motorcycles that are easier to handle.",
-        "recommendation": "Leverage the lighter R12 platform advantage and emphasize agility benefits. Position as a more manageable alternative to heavier maxi-trails while maintaining adventure capabilities."
+        "recommendation": "Leverage the lighter R 12 platform advantage and emphasize agility benefits. Position as a more manageable alternative to heavier maxi-trails while maintaining adventure capabilities."
       },
       "Engine Size & Performance": {
         "score": 84,
@@ -613,7 +613,7 @@ export const attributeResonance = {
       "Heritage/Retro Styling": {
         "score": 78.5,
         "insight": "Compelling evidence of growing consumer interest, with explicit positioning of new models and praise for \"Dakar rallye style\" in popular models. Consumers are drawn to authenticity, nostalgia, and connection to historical narratives of adventure motorcycling.",
-        "recommendation": "Strongly emphasize authentic connection to R80GS Paris-Dakar legacy and R 90 S heritage while demonstrating how classic design elements are integrated with modern performance capabilities."
+        "recommendation": "Strongly emphasize authentic connection to R 80 GS Paris-Dakar legacy and R 90 S heritage while demonstrating how classic design elements are integrated with modern performance capabilities."
       },
       "Seat Height & Accessibility": {
         "score": 77,
@@ -948,8 +948,8 @@ export const attributeResonance = {
       },
       "Heritage/Retro Styling": {
         "score": 85.5,
-        "insight": "Notable interest and clear opportunity for heritage positioning, with pre-launch R 12 G/S discussions highlighting \"retro styling\" evoking R80 G/S",
-        "recommendation": "Heavily emphasize heritage aspect, highlighting direct link to iconic R80 G/S and adventurous spirit embedded in BMW's past"
+        "insight": "Notable interest and clear opportunity for heritage positioning, with pre-launch R 12 G/S discussions highlighting \"retro styling\" evoking R 80 G/S",
+        "recommendation": "Heavily emphasize heritage aspect, highlighting direct link to iconic R 80 G/S and adventurous spirit embedded in BMW's past"
       },
       "Brand Reliability": {
         "score": 85,
@@ -1052,7 +1052,7 @@ export const attributeResonance = {
       },
       "Suspension Quality": {
         "score": 83.5,
-        "insight": "Superior suspension is frequently discussed in relation to aggressive off-road performance and handling challenging terrains. Competitors like KTM are lauded for their suspension, and the R12 G/S's long-travel suspension is a key feature, indicating its importance for stability and comfort on varied surfaces.",
+        "insight": "Superior suspension is frequently discussed in relation to aggressive off-road performance and handling challenging terrains. Competitors like KTM are lauded for their suspension, and the R 12 G/S's long-travel suspension is a key feature, indicating its importance for stability and comfort on varied surfaces.",
         "recommendation": "Riders prioritize high-quality suspension for its direct impact on off-road capability, comfort over rough terrain, and overall riding confidence. It is seen as crucial for maintaining control and stability in demanding Norwegian landscapes."
       },
       "Comfort & Ergonomics": {
@@ -1072,7 +1072,7 @@ export const attributeResonance = {
       },
       "Manageability/Weight": {
         "score": 73.5,
-        "insight": "There is an unmet demand for lighter, more nimble machines that are less focused on long-distance touring and more on raw adventure. The KTM 890 Adventure R is often cited for its lighter weight, and the R1300 GS is noted for its improved manageability, highlighting the importance of ease of handling both on and off-road.",
+        "insight": "There is an unmet demand for lighter, more nimble machines that are less focused on long-distance touring and more on raw adventure. The KTM 890 Adventure R is often cited for its lighter weight, and the R 1300 GS is noted for its improved manageability, highlighting the importance of ease of handling both on and off-road.",
         "recommendation": "Riders increasingly prioritize a motorcycle that is easy to handle, especially in challenging off-road scenarios. Lighter weight contributes significantly to agility, maneuverability, and overall rider confidence when tackling technical terrain."
       },
       "Technology & Features": {

@@ -112,7 +112,7 @@ export const conversationData = {
           "source": "Ducati DesertX review"
         },
         {
-          "quote": "The R12 was from the beginning also thought as an Enduro, with certainty the R12 G/S will be more capable off-road and for comfortable Enduro touring.",
+          "quote": "The R 12 was from the beginning also thought as an Enduro, with certainty the R 12 G/S will be more capable off-road and for comfortable Enduro touring.",
           "context": "Neutral, speculative discussion about BMW R 12 G/S capabilities.",
           "source": "BMW R 12 G/S speculation"
         },
@@ -239,7 +239,7 @@ export const conversationData = {
           "source": "Belgian Adventure Motorcycle Market Analysis - Honda Brand Perception"
         },
         {
-          "quote": "The R 12 G/S is designed as a direct 'visual tribute' to the iconic 1980s R80 G/S",
+          "quote": "The R 12 G/S is designed as a direct 'visual tribute' to the iconic 1980s R 80 G/S",
           "context": "Highly positive pre-launch sentiment for BMW R 12 G/S heritage styling and authentic connection to motorcycling history",
           "source": "BMW R 12 G/S Pre-Launch Consumer Sentiment Analysis"
         }
@@ -336,7 +336,7 @@ export const conversationData = {
       "Design & Character Appeal (15.0%)": [
         {
           "quote": "bold design and retro inspiration with iconic BMW motorsport colours",
-          "context": "Aesthetic and unique character of motorcycles important with heritage styling explicitly leveraged by BMW R 12 G/S drawing from '80s R80 G/S and Dakar Rally heritage",
+          "context": "Aesthetic and unique character of motorcycles important with heritage styling explicitly leveraged by BMW R 12 G/S drawing from '80s R 80 G/S and Dakar Rally heritage",
           "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
       ],
@@ -356,7 +356,7 @@ export const conversationData = {
       ],
       "Heritage Interest": [
         {
-          "quote": "heritage inspiration from the '80s R80 G/S road bike and the four-time Dakar Rally-winning race version",
+          "quote": "heritage inspiration from the '80s R 80 G/S road bike and the four-time Dakar Rally-winning race version",
           "context": "Clear evidence of existing appetite for heritage styling with BMW R 12 G/S and Ducati DesertX incorporating retro elements, indicating broader market trend",
           "source": "BMW Motorrad Social Listening & Market Analysis Report"
         }
@@ -396,16 +396,16 @@ export const conversationData = {
           "source": "FINALLY LAUNCHED Africa Twin 650 Breaks Cover – Game Over for Rivals! - YouTube"
         },
         {
-          "quote": "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine. Of all the R12 retros it's the most generously proportioned, making it perfect for taller riders.",
+          "quote": "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine. Of all the R 12 retros it's the most generously proportioned, making it perfect for taller riders.",
           "context": "Expert/Reviewer positive assessment of BMW R 12 G/S heritage design combined with functional capability",
-          "source": "2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News"
+          "source": "2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News"
         }
       ],
       "Neutral": [
         {
           "quote": "The overall look of the bike is expected to remain barebones and minimalist",
           "context": "Factual description of BMW R 12 G/S design philosophy without emotional assessment",
-          "source": "BMW R12 GS teased ahead of debut on March 27 - Financial Express"
+          "source": "BMW R 12 GS teased ahead of debut on March 27 - Financial Express"
         },
         {
           "quote": "Honda maintained its lead at 58 units. BMW followed with 38 units, then CF Moto (23 units), Yamaha (17 units), KTM (16 units)",
@@ -417,7 +417,7 @@ export const conversationData = {
         {
           "quote": "With its hard seat and lack of wind protection it isn't the best long-distance cruiser around, but neither is it designed to be",
           "context": "Expert/Reviewer identifying comfort limitations of BMW R 12 G/S for touring applications while acknowledging design intent",
-          "source": "2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News"
+          "source": "2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News"
         },
         {
           "quote": "Second, you still have to come to a complete stop to switch the Tiger into one of its off-road settings, which is a minor inconvenience but annoying just the same",
@@ -902,14 +902,14 @@ export const conversationData = {
         {
           "quote": "Real off-road ability thanks to 21-inch front... wire wheels",
           "context": "Off-road performance is consistently identified as a critical discussion point, featuring long-travel suspension, 21-inch front wheels, high ground clearance, and specialized off-road riding modes. Models like the KTM 890 Adventure R and Yamaha Ténéré 700 are often benchmarked for their off-road prowess.",
-          "source": "BMW R12 G/S (2025) – Technical Review - Bennes Insurance"
+          "source": "BMW R 12 G/S (2025) – Technical Review - Bennes Insurance"
         }
       ],
       "Comfort & Ergonomics": [
         {
           "quote": "Ultimate comfort and distance abilities",
           "context": "Central to discussions, encompassing aspects such as seat comfort, adjustable seat height, effective wind protection (especially adjustable windshields), and heated grips/seats. The weight of the motorcycle is often linked to comfort, particularly concerning maneuverability at low speeds.",
-          "source": "Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube"
+          "source": "Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube"
         }
       ],
       "Technology & Features": [
@@ -944,7 +944,7 @@ export const conversationData = {
         {
           "quote": "Long-distance touring capability (emphasizing fuel range and luggage capacity) and A2 license compatibility for newer riders",
           "context": "Other themes include long-distance touring capability emphasizing fuel range and luggage capacity, and A2 license compatibility for newer riders entering the adventure market.",
-          "source": "BMW R12 G/S (2025) – Technical Review - Bennes Insurance"
+          "source": "BMW R 12 G/S (2025) – Technical Review - Bennes Insurance"
         }
       ]
     },
@@ -1831,7 +1831,7 @@ export const conversationData = {
       ],
       "Design & Character Appeal": [
         {
-          "quote": "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance",
+          "quote": "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R 80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance",
           "context": "Aesthetic appeal, character, and heritage styling are significant drivers of consumer conversation, contributing to emotional connection with motorcycles",
           "source": "Poland market report, consumer preferences"
         }
@@ -1878,7 +1878,7 @@ export const conversationData = {
           "source": "Poland market report, market trends"
         },
         {
-          "quote": "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R80 G/S",
+          "quote": "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R 80 G/S",
           "context": "Strong anticipation for new models, particularly heritage-focused designs, generated enthusiasm in the community",
           "source": "Poland market report, BMW positioning"
         }
@@ -2340,7 +2340,7 @@ export const conversationData = {
           "source": "Custom bike design discussion"
         },
         {
-          "quote": "Many may have learned that in addition to the R1300 line of GS bikes, BMW is building a retro R1200 G/S bike with styling options that bring to mind the R80 G/S.",
+          "quote": "Many may have learned that in addition to the R 1300 line of GS bikes, BMW is building a retro R 1200 G/S bike with styling options that bring to mind the R 80 G/S.",
           "context": "Discussions about unreleased models are often framed neutrally, acknowledging features without strong emotional bias.",
           "source": "BMW MOA Forum"
         },
@@ -2873,7 +2873,7 @@ export const conversationData = {
         {
           "quote": "The GS really is all-day comfortable. Natural ergonomics, a sumptuous seat... a superb electronically adjustable screen, heated grips...",
           "context": "Comfort & Ergonomics constitute approximately 20.0% of discussions, reflecting their importance for long-distance touring. The BMW GS series is consistently praised for its supreme comfort, and even off-road focused bikes address rider comfort",
-          "source": "Expert review of BMW R1300GS"
+          "source": "Expert review of BMW R 1300 GS"
         }
       ],
       "Technology & Features": [
