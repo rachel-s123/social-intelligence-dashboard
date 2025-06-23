@@ -10,6 +10,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import SentimentNeutralIcon from '@mui/icons-material/SentimentNeutral';
 import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
+import { getMarketDisplayName } from '../utils/marketUtils';
 
 const SENTIMENT_COLORS = {
   Positive: '#48b83c',
@@ -64,8 +65,10 @@ const ConversationInsights = ({ selectedMarket }) => {
   }, [selectedMarket]);
 
   if (!data) {
-    return <Typography>No insights available for this market.</Typography>;
+    return <Typography>No insights available for {getMarketDisplayName(selectedMarket)}.</Typography>;
   }
+
+  const displayMarketName = getMarketDisplayName(selectedMarket);
 
   const handleThemeClick = (theme) => {
     if (!theme) {
@@ -199,7 +202,14 @@ const ConversationInsights = ({ selectedMarket }) => {
   };
 
   return (
-    <Box sx={{ maxWidth: 1200, mx: 'auto', px: { xs: 1, md: 2 } }}>
+    <Box sx={{ p: { xs: 1, md: 3 }, maxWidth: 1200, mx: 'auto' }}>
+      <Typography variant="h4" fontWeight={700} gutterBottom color="primary.main">
+        Conversation Insights
+      </Typography>
+      <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 4 }}>
+        Analysis of consumer conversations and sentiment for {displayMarketName}
+      </Typography>
+
       {/* Theme Data Section */}
       <Paper sx={{ p: { xs: 3, md: 4 }, mb: 3, borderRadius: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>

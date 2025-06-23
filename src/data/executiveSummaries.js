@@ -444,3 +444,28 @@ export const executiveSummaries = {
     "keyOpportunity": "Capitalize on resilient heritage segment growth while addressing manageability concerns through focused positioning and optional accessories"
   }
 };
+
+// Proper case market names for display
+export const marketNames = {
+  "austria": "Austria",
+  "belgium": "Belgium",
+  "bulgaria": "Bulgaria",
+  "czech-republic": "Czech Republic",
+  "denmark": "Denmark",
+  "finland": "Finland",
+  "france": "France",
+  "greece": "Greece",
+  "hungary": "Hungary",
+  "italy": "Italy",
+  "netherlands": "Netherlands",
+  "norway": "Norway",
+  "poland": "Poland",
+  "portugal": "Portugal",
+  "romania": "Romania",
+  "slovakia": "Slovakia",
+  "slovenia": "Slovenia",
+  "spain": "Spain",
+  "sweden": "Sweden",
+  "switzerland": "Switzerland",
+  "uk": "UK"
+};

@@ -327,7 +327,14 @@ const AttributeHeatmap = ({ selectedMarket }) => {
   };
 
   return (
-    <Box>
+    <Box sx={{ p: { xs: 1, md: 3 }, maxWidth: 1400, mx: 'auto' }}>
+      <Typography variant="h4" fontWeight={700} gutterBottom color="primary.main">
+        Attribute Resonance Analysis
+      </Typography>
+      <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 4 }}>
+        Detailed analysis of attribute resonance for {getMarketDisplayName(selectedMarket)} compared to European markets
+      </Typography>
+
       <Stack 
         direction="row" 
         justifyContent="space-between" 
@@ -388,6 +395,7 @@ const AttributeHeatmap = ({ selectedMarket }) => {
                     }
                   }}
                 >
+                  {getMarketDisplayName(market)}
                   {getMarketDisplayName(market)}
                 </MenuItem>
               ))}

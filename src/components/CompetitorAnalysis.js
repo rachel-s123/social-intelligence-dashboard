@@ -19,7 +19,7 @@ const ICONS = [
 ];
 
 const SOV_CONTEXT = (market) =>
-  `Share of Voice is based on the proportion of online conversations mentioning each brand in 2025 for ${market}.`;
+  `Share of Voice is based on the proportion of online conversations mentioning each brand in 2025 for ${getMarketDisplayName(market)}.`;
 
 // Custom label for pie slices
 const renderPieLabel = ({ cx, cy, midAngle, outerRadius, percent }) => {
@@ -124,6 +124,8 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
     return null;
   }
 
+  const displayMarketName = getMarketDisplayName(selectedMarket);
+
   return (
     <Box sx={{ p: { xs: 1, md: 3 }, maxWidth: 1200, mx: 'auto' }}>
       <Paper elevation={2} sx={{ mb: 4, p: 3, background: '#f8fafc' }}>
@@ -139,57 +141,33 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
             </MuiTooltip>
           )}
         </Box>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
-          {/* Pie Chart */}
-          <Grid item xs={12} md={7}>
-            <Box sx={{ 
-              width: '100%', 
-              maxWidth: 1000, 
-              height: 325,
-              mx: 'auto',
-              position: 'relative',
-              left: '-10%'
-            }}>
-              <ResponsiveContainer width="100%" height="100%">
-                <PieChart>
-                  <Pie
-                    data={data.shareOfVoice}
-                    dataKey="value"
-                    nameKey="name"
-                    cx="50%"
-                    cy="50%"
-                    outerRadius={100}
-                    innerRadius={50}
-                    label={renderPieLabel}
-                    isAnimationActive={true}
-                    paddingAngle={2}
-                  >
-                    {data.shareOfVoice.map((entry, index) => (
-                      <Cell 
-                        key={`cell-${index}`} 
-                        fill={getCompetitorColor(entry.name)}
-                        stroke="#fff"
-                        strokeWidth={2}
-                      />
-                    ))}
-                  </Pie>
-                  <Tooltip content={<CustomTooltip />} />
-                </PieChart>
-              </ResponsiveContainer>
-            </Box>
-          </Grid>
-          {/* Legend */}
-          <Grid item xs={12} md={5}>
-            <CustomLegend payload={data.shareOfVoice.map((entry) => ({ 
-              value: entry.name, 
-              color: getCompetitorColor(entry.name)
-            }))} />
-          </Grid>
-        </Grid>
+        <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
+          Market share of voice for {displayMarketName} based on online conversations and brand mentions.
+        </Typography>
+        <Box sx={{ height: 300, width: '100%' }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <PieChart>
+              <Pie
+                data={data.shareOfVoice}
+                cx="50%"
+                cy="50%"
+                labelLine={false}
+                label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                outerRadius={80}
+                fill="#8884d8"
+                dataKey="value"
+              >
+                {data.shareOfVoice.map((entry, index) => (
+                  <Cell key={`cell-${index}`} fill={getCompetitorColor(entry.name)} />
+                ))}
+              </Pie>
+              <Tooltip />
+            </PieChart>
+          </ResponsiveContainer>
+        </Box>
       </Paper>
 
-      {/* Competitor cards */}
-      <Typography variant="h4" fontWeight={700} gutterBottom color="primary.main">
+      <Typography variant="h5" fontWeight={700} gutterBottom color="primary.main">
         Competitor Analysis
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 3 }}>
@@ -217,49 +195,25 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
                     </Typography>
                   ))}
                 </Box>
-                {data.competitorWeaknesses[competitor] && data.competitorWeaknesses[competitor].length > 0 && (
-                  <Box mb={2}>
-                    <Typography variant="subtitle2" fontWeight={600} gutterBottom color="error.main" display="flex" alignItems="center">
-                      <WarningIcon fontSize="small" sx={{ mr: 1 }} />Weaknesses
+                <Box>
+                  <Typography variant="subtitle2" fontWeight={600} gutterBottom color="error.main" display="flex" alignItems="center">
+                    <WarningIcon fontSize="small" sx={{ mr: 1 }} />Weaknesses
+                  </Typography>
+                  {data.competitorWeaknesses[competitor]?.map((w, i) => (
+                    <Typography key={i} variant="body2" sx={{ mb: 0.5, pl: 3 }}>
+                      {w}
                     </Typography>
-                    {data.competitorWeaknesses[competitor].map((w, i) => (
-                      <Typography key={i} variant="body2" sx={{ mb: 0.5, pl: 3 }}>
-                        {w}
-                      </Typography>
-                    ))}
-                  </Box>
-                )}
+                  )) || (
+                    <Typography variant="body2" sx={{ mb: 0.5, pl: 3, fontStyle: 'italic' }}>
+                      No specific weaknesses identified
+                    </Typography>
+                  )}
+                </Box>
               </CardContent>
             </Card>
           </Grid>
         ))}
       </Grid>
-      {data.gapsToExploit && data.gapsToExploit.length > 0 && (
-        <Box sx={{ mt: 5 }}>
-          <Typography variant="h5" fontWeight={700} gutterBottom color="primary.main">
-            Market Opportunities
-          </Typography>
-          <Grid container spacing={3}>
-            {data.gapsToExploit.map((gap, idx) => (
-              <Grid item xs={12} md={6} key={gap.title}>
-                <Card elevation={1} sx={{ borderLeft: '6px solid #1c69d4' }}>
-                  <CardContent>
-                    <Box display="flex" alignItems="center" mb={1}>
-                      <LightbulbIcon color="primary" sx={{ mr: 1 }} />
-                      <Typography variant="subtitle1" fontWeight={600} color="primary.main">
-                        {gap.title}
-                      </Typography>
-                    </Box>
-                    <Typography variant="body2" color="text.secondary">
-                      {gap.description}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-      )}
     </Box>
   );
 };

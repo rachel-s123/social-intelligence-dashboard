@@ -61,15 +61,30 @@ function parseExecutiveSummary(markdown) {
 function main() {
   const files = fs.readdirSync(inputDir).filter(f => f.endsWith('.md'));
   const out = {};
+  const marketNames = {}; // Store proper case names
 
   files.forEach(file => {
     const market = path.basename(file, '.md').toLowerCase();
     const mdContent = fs.readFileSync(path.join(inputDir, file), 'utf8');
-    const { summary } = parseExecutiveSummary(mdContent);
+    const { marketName, summary } = parseExecutiveSummary(mdContent);
+    
+    // Store data with lowercase key
     out[market] = summary;
+    
+    // Store proper case name for display
+    if (marketName) {
+      marketNames[market] = marketName;
+    }
   });
 
-  const js = `// This file is auto-generated. Do not edit directly.\n// Run 'npm run generate-executive-summaries' to update.\n\nexport const executiveSummaries = ${JSON.stringify(out, null, 2)};\n`;
+  const js = `// This file is auto-generated. Do not edit directly.
+// Run 'npm run generate-executive-summaries' to update.
+
+export const executiveSummaries = ${JSON.stringify(out, null, 2)};
+
+// Proper case market names for display
+export const marketNames = ${JSON.stringify(marketNames, null, 2)};
+`;
 
   fs.writeFileSync(outputFile, js);
   console.log('Generated executive summaries data file:', outputFile);

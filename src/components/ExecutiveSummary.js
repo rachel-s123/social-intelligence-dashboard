@@ -47,6 +47,7 @@ const ExecutiveSummary = ({ selectedMarket }) => {
   const theme = useTheme();
   const normalizedMarket = selectedMarket?.toLowerCase();
   const summary = normalizedMarket && executiveSummaries[normalizedMarket];
+  const displayMarketName = getMarketDisplayName(selectedMarket);
 
   if (!normalizedMarket || !summary) {
     return (
@@ -92,24 +93,44 @@ const ExecutiveSummary = ({ selectedMarket }) => {
           />
         </Grid>
       </Grid>
-      <Box sx={{ mt: 5 }}>
-        <Card sx={{ boxShadow: 3, borderRadius: 3, p: 0, background: theme.palette.background.paper }}>
-          <CardContent sx={{ p: 3 }}>
-            <Box display="flex" alignItems="center" mb={2}>
-              <RecommendIcon sx={{ mr: 1, color: theme.palette.secondary.main, fontSize: 36 }} />
-              <Typography variant="h6" fontWeight={700} color={theme.palette.secondary.main}>
-                Strategic Recommendations
-              </Typography>
-            </Box>
-            <Divider sx={{ mb: 2 }} />
-            <ul style={{ margin: 0, paddingLeft: 20 }}>
-              <li><strong>Strategic Positioning:</strong> {summary.strategicPositioning || 'N/A'}</li>
-              <li><strong>Content & Messaging:</strong> {summary.contentMessaging || 'N/A'}</li>
-              <li><strong>Audience Targeting:</strong> {summary.audienceTargeting || 'N/A'}</li>
-              <li><strong>Key Opportunity:</strong> {summary.keyOpportunity || 'N/A'}</li>
-            </ul>
-          </CardContent>
-        </Card>
+      <Box sx={{ mt: 6 }}>
+        <Typography variant="h4" fontWeight={700} gutterBottom color="primary.main" sx={{ mb: 4 }}>
+          Strategic Recommendations for {displayMarketName}
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6}>
+            <InsightCard
+              title="Strategic Positioning"
+              icon={TrendingUpIcon}
+              color={theme.palette.primary.main}
+              summaryPoints={[summary.strategicPositioning]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <InsightCard
+              title="Content & Messaging"
+              icon={BarChartIcon}
+              color={theme.palette.info.main}
+              summaryPoints={[summary.contentMessaging]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <InsightCard
+              title="Audience Targeting"
+              icon={GroupsIcon}
+              color={theme.palette.success.main}
+              summaryPoints={[summary.audienceTargeting]}
+            />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <InsightCard
+              title="Key Opportunity"
+              icon={TrendingUpIcon}
+              color={theme.palette.warning.main}
+              summaryPoints={[summary.keyOpportunity]}
+            />
+          </Grid>
+        </Grid>
       </Box>
     </Box>
   );

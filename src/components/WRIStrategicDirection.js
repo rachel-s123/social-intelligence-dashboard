@@ -83,12 +83,14 @@ const StrategicDirection = ({ selectedMarket }) => {
       <Paper elevation={3} sx={{ p: 3, mb: 4 }}>
         <Typography variant="h5" gutterBottom>
           No strategic data available for {getMarketDisplayName(selectedMarket)}
+          No strategic data available for {getMarketDisplayName(selectedMarket)}
         </Typography>
       </Paper>
     );
   }
 
   const { recommendations, priorities } = marketData;
+  const displayMarketName = getMarketDisplayName(selectedMarket);
 
   return (
     <Paper 

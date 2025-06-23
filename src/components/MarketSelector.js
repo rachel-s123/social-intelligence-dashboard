@@ -22,6 +22,7 @@ const MarketSelector = ({ selectedMarket, onMarketChange }) => {
               sx={{ fontFamily: 'BMW Motorrad' }}
             >
               {getMarketDisplayName(market)}
+              {getMarketDisplayName(market)}
             </MenuItem>
           ))}
         </Select>

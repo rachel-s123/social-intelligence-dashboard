@@ -126,6 +126,7 @@ const DashboardIntro = ({ selectedMarket }) => {
     key.toLowerCase().endsWith(normalizedMarket)
   );
   const sources = marketKey && marketSources[marketKey]?.sources?.[''] || [];
+  const displayMarketName = getMarketDisplayName(selectedMarket);
 
   // Handle fullscreen changes
   useEffect(() => {
