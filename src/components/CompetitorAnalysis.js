@@ -114,15 +114,12 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
 
   useEffect(() => {
     if (selectedMarket) {
-      console.log('Loading data for market:', selectedMarket);
       const competitorData = getCompetitorData(selectedMarket);
-      console.log('Loaded data:', competitorData);
       setData(competitorData);
     }
   }, [selectedMarket]);
 
   if (!data) {
-    console.log('No data available');
     return null;
   }
 
