@@ -45,14 +45,16 @@ function parseCompetitorDetails(content) {
       strengths[competitor] = strengthsMatch[1]
         .split('\n')
         .filter(line => line.trim().startsWith('-'))
-        .map(line => line.replace('-', '').trim());
+        .map(line => line.replace('-', '').trim())
+        .filter(text => text.length > 0);
     }
 
     if (weaknessesMatch) {
       weaknesses[competitor] = weaknessesMatch[1]
         .split('\n')
         .filter(line => line.trim().startsWith('-'))
-        .map(line => line.replace('-', '').trim());
+        .map(line => line.replace('-', '').trim())
+        .filter(text => text.length > 0);
     }
   });
 
