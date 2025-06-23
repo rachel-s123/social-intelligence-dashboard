@@ -22,7 +22,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const VECTOR_STORE_ID = process.env.VS_STORE_ID;
+// Prefer VS_STORE_ID but fall back to REACT_APP_VS_STORE_ID for client and server environments
+const VECTOR_STORE_ID =
+  process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
 
 // Test chat endpoint (simple, no vector store)
 app.post("/api/test-chat", async (req, res) => {
@@ -76,6 +78,10 @@ app.post("/api/chat", async (req, res) => {
 
     if (!messages || !Array.isArray(messages)) {
       return res.status(400).json({ error: "Messages array is required" });
+    }
+
+    if (!VECTOR_STORE_ID) {
+      throw new Error("VECTOR_STORE_ID is not configured");
     }
 
     // Set headers for streaming
