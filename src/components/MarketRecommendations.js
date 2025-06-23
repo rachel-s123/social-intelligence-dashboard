@@ -13,6 +13,7 @@ import CampaignIcon from '@mui/icons-material/Campaign';
 import GroupsIcon from '@mui/icons-material/Groups';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import { marketRecommendations } from '../data/marketRecommendations';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const RecommendationCard = ({ title, content, icon: Icon }) => {
   return (
@@ -68,7 +69,7 @@ const MarketRecommendations = ({ selectedMarket }) => {
         Market Recommendations
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 4 }}>
-        Strategic insights and recommendations for {selectedMarket} based on comprehensive market analysis.
+        Strategic insights and recommendations for {getMarketDisplayName(selectedMarket)} based on comprehensive market analysis.
       </Typography>
 
       <Grid container spacing={3}>

@@ -15,6 +15,7 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import GroupsIcon from '@mui/icons-material/Groups';
 import RecommendIcon from '@mui/icons-material/Recommend';
 import { executiveSummaries } from '../data/executiveSummaries';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const AccentBar = ({ color }) => (
   <Box sx={{ height: 6, width: '100%', bgcolor: color, borderRadius: 2, mb: 2 }} />
@@ -63,7 +64,7 @@ const ExecutiveSummary = ({ selectedMarket }) => {
         Executive Summary
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 5, fontSize: 18 }}>
-        Comprehensive market analysis and strategic insights for {selectedMarket}
+        Comprehensive market analysis and strategic insights for {getMarketDisplayName(selectedMarket)}
       </Typography>
       <Grid container spacing={4} alignItems="stretch">
         <Grid item xs={12} md={4}>

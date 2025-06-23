@@ -27,6 +27,7 @@ import {
 } from '@mui/material';
 import { marketData } from '../data/wriData';
 import { attributeResonance } from '../data/attributeResonance';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -77,7 +78,7 @@ const AttributeCommentary = ({ attribute, selectedMarket, onClose }) => {
           </IconButton>
           
           <Typography variant="h6" gutterBottom className="bmw-motorrad-bold" sx={{ mb: 3 }}>
-            {attribute} Analysis for {selectedMarket}
+            {attribute} Analysis for {getMarketDisplayName(selectedMarket)}
           </Typography>
           
           <Typography variant="body1" className="bmw-motorrad-regular">
@@ -111,7 +112,7 @@ const AttributeCommentary = ({ attribute, selectedMarket, onClose }) => {
         </IconButton>
         
         <Typography variant="h6" gutterBottom className="bmw-motorrad-bold" sx={{ mb: 3 }}>
-          {attribute} Analysis for {selectedMarket}
+          {attribute} Analysis for {getMarketDisplayName(selectedMarket)}
         </Typography>
 
         <Grid container spacing={2}>
@@ -277,7 +278,7 @@ const AttributeHeatmap = ({ selectedMarket }) => {
     return (
       <Box sx={{ p: 1 }}>
         <Typography variant="body2" className="bmw-motorrad-bold">
-          {market} - {attribute}
+          {getMarketDisplayName(market)} - {attribute}
         </Typography>
         <Typography variant="body2" className="bmw-motorrad-regular">
           WRI Score: {wriScore.toFixed(1)}
@@ -347,13 +348,13 @@ const AttributeHeatmap = ({ selectedMarket }) => {
               renderValue={(selected) => (
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
                   {selected.map((value) => (
-                    <Chip 
-                      key={value} 
-                      label={value}
-                      sx={{ 
+                    <Chip
+                      key={value}
+                      label={getMarketDisplayName(value)}
+                      sx={{
                         fontFamily: 'BMW Motorrad',
-                        backgroundColor: value === selectedMarket ? 
-                          theme.palette.primary.main : 
+                        backgroundColor: value === selectedMarket ?
+                          theme.palette.primary.main :
                           theme.palette.primary.light,
                         color: value === selectedMarket ? 
                           theme.palette.primary.contrastText : 
@@ -371,14 +372,14 @@ const AttributeHeatmap = ({ selectedMarket }) => {
               }}
             >
               {marketData.markets.map((market) => (
-                <MenuItem 
-                  key={market} 
+                <MenuItem
+                  key={market}
                   value={market}
                   disabled={market === selectedMarket}
-                  sx={{ 
+                  sx={{
                     fontFamily: 'BMW Motorrad',
-                    backgroundColor: market === selectedMarket ? 
-                      `${theme.palette.primary.main}15` : 
+                    backgroundColor: market === selectedMarket ?
+                      `${theme.palette.primary.main}15` :
                       'inherit',
                     '&.Mui-disabled': {
                       opacity: 1,
@@ -387,7 +388,7 @@ const AttributeHeatmap = ({ selectedMarket }) => {
                     }
                   }}
                 >
-                  {market}
+                  {getMarketDisplayName(market)}
                 </MenuItem>
               ))}
             </Select>
@@ -537,7 +538,7 @@ const AttributeHeatmap = ({ selectedMarket }) => {
                 Attribute
               </TableCell>
               {orderedMarkets.map(market => (
-                <TableCell 
+                <TableCell
                   key={market}
                   align="center"
                   sx={{ 
@@ -550,7 +551,7 @@ const AttributeHeatmap = ({ selectedMarket }) => {
                       theme.palette.background.default
                   }}
                 >
-                  {market}
+                  {getMarketDisplayName(market)}
                 </TableCell>
               ))}
             </TableRow>

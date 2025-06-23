@@ -43,7 +43,7 @@ function TabPanel(props) {
 }
 
 function App() {
-  const [selectedMarket, setSelectedMarket] = useState("France");
+  const [selectedMarket, setSelectedMarket] = useState("france");
   const [currentTab, setCurrentTab] = useState(0);
   const [loggedIn, setLoggedIn] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FormControl, InputLabel, Select, MenuItem, Box } from '@mui/material';
 import { marketData } from '../data/wriData';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const MarketSelector = ({ selectedMarket, onMarketChange }) => {
   return (
@@ -15,15 +16,12 @@ const MarketSelector = ({ selectedMarket, onMarketChange }) => {
           onChange={(e) => onMarketChange(e.target.value)}
         >
           {marketData.markets.map((market) => (
-            <MenuItem 
-              key={market} 
+            <MenuItem
+              key={market}
               value={market}
-              sx={{ 
-                fontFamily: 'BMW Motorrad',
-                textTransform: market === 'CS' ? 'none' : 'capitalize'
-              }}
+              sx={{ fontFamily: 'BMW Motorrad' }}
             >
-              {market === 'CS' ? 'Central & Southern Europe' : market}
+              {getMarketDisplayName(market)}
             </MenuItem>
           ))}
         </Select>
