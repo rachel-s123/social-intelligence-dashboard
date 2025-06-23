@@ -16,12 +16,11 @@ const MarketSelector = ({ selectedMarket, onMarketChange }) => {
           onChange={(e) => onMarketChange(e.target.value)}
         >
           {marketData.markets.map((market) => (
-            <MenuItem
-              key={market}
+            <MenuItem 
+              key={market} 
               value={market}
-              sx={{ fontFamily: 'BMW Motorrad' }}
+              sx={{ fontFamily: 'BMW Motorrad', textTransform: 'none' }}
             >
-              {getMarketDisplayName(market)}
               {getMarketDisplayName(market)}
             </MenuItem>
           ))}

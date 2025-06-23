@@ -10,7 +10,7 @@ import MessageIcon from '@mui/icons-material/Message';
 import SentimentSatisfiedAltIcon from '@mui/icons-material/SentimentSatisfiedAlt';
 import SentimentNeutralIcon from '@mui/icons-material/SentimentNeutral';
 import SentimentDissatisfiedIcon from '@mui/icons-material/SentimentDissatisfied';
-import { getMarketDisplayName } from '../utils/marketUtils';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const SENTIMENT_COLORS = {
   Positive: '#48b83c',

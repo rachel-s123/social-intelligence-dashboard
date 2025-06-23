@@ -75,6 +75,15 @@ const Login = ({ onLogin }) => {
           </Box>
 
           <Typography 
+            variant="h4"
+            fontWeight={800}
+            color="primary.main"
+            sx={{ mb: 2, textAlign: 'center', letterSpacing: -1 }}
+          >
+            Adventure Segment Insights: Pre-Launch R 12 G/S
+          </Typography>
+
+          <Typography 
             component="h1" 
             variant="h5" 
             className="bmw-motorrad-bold"

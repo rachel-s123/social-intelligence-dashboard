@@ -124,7 +124,7 @@ function App() {
                       mb: 0.5,
                     }}
                   >
-                    Segment Insights
+                    Adventure Segment Insights: Pre-Launch R 12 G/S
                   </Typography>
                   <Typography
                     variant="subtitle1"
