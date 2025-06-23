@@ -104,7 +104,7 @@ Engine Size & Performance:
 
 ### Strategic Recommendations
 - Position R 12 G/S as authentic off-road alternative addressing credibility gap in BMW's adventure portfolio
-- Amplify heritage storytelling connecting to Dakar-winning R80 G/S legacy and BMW's off-road roots
+- Amplify heritage storytelling connecting to Dakar-winning R 80 G/S legacy and BMW's off-road roots
 - Highlight "stripped-down, feel-good" experience differentiating from complex premium adventure bikes
 - Demonstrate genuine off-road capability through compelling visuals and testimonials in challenging conditions
 - Emphasize balanced approach to modern technology supporting adventure without unnecessary complexity

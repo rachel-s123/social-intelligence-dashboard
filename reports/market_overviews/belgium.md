@@ -63,10 +63,10 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 27]: 2025-on Yamaha Ténéré 700 review
 - [Source 28]: 2024 Ducati DesertX Rally First Ride Review
 - [Source 29]: 2025 KTM 390 ADVENTURE R
-- [Source 30]: 2025 BMW R12 G/S review
+- [Source 30]: 2025 BMW R 12 G/S review
 - [Source 31]: Thoughts on the desert x? Reddit Discussion
-- [Source 32]: New For 2025 BMW R12 G/S: A Dirt-Ready Retro
-- [Source 33]: First Look: 2025 BMW R12 G/S
+- [Source 32]: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro
+- [Source 33]: First Look: 2025 BMW R 12 G/S
 - [Source 34]: REVIEW Honda Africa Twin - CRF1100 Adventure Sports ES
 - [Source 35]: 2025 BMW R 1300 GS Adventure First Ride
 - [Source 36]: 2025 Honda Africa Twin 650 Full Review
@@ -84,7 +84,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 48]: 2025 Triumph Tiger 900 GT Pro - Revisited
 - [Source 49]: Tiger 900 Models - Triumph Motorcycles
 - [Source 50]: 2025 Triumph Tiger 900 GT pro Fuel Gas Petrol Tank Reservoir
-- [Source 51]: BMW R12 GS teased ahead of debut on March 27
+- [Source 51]: BMW R 12 GS teased ahead of debut on March 27
 - [Source 52]: The new 2026 BMW R 12 G/S German Car Forum
 - [Source 53]: R 12 G/S BMW Motorrad UK
 - [Source 54]: New KTM 390 Adventure R and 390 Adventure X on their way for 2025
@@ -99,7 +99,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 63]: Ranking the Best & Worst Motorcycle Youtubers
 - [Source 64]: The Best of Holland and Belgium - Boat Bike Tours
 - [Source 65]: Belgium: On-road motorcycles Market Analysis
-- [Source 66]: 2025 R1200 G/S sort of retro styling - BMW MOA Forum
+- [Source 66]: 2025 R 1200 G/S sort of retro styling - BMW MOA Forum
 - [Source 67]: BMW Group Careers Belux
 - [Source 68]: Make Life a Ride - BMW Motorrad
 - [Source 69]: Dicar Motorhomes

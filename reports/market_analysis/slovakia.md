@@ -65,7 +65,7 @@
 - Quote 1: "Interesting as a styling exercise, showpiece etc. It's the sort of thing you'd see as a possible prototype of an electric bike, which eventually comes out looking v different."
   - Explanation: A portion of discourse maintains an objective tone when comparing features or discussing technical specifications.
   - Source: Custom bike design discussion
-- Quote 2: "Many may have learned that in addition to the R1300 line of GS bikes, BMW is building a retro R1200 G/S bike with styling options that bring to mind the R80 G/S."
+- Quote 2: "Many may have learned that in addition to the R 1300 line of GS bikes, BMW is building a retro R 1200 G/S bike with styling options that bring to mind the R 80 G/S."
   - Explanation: Discussions about unreleased models are often framed neutrally, acknowledging features without strong emotional bias.
   - Source: BMW MOA Forum
 - Quote 3: "Reliability is perhaps the most important factor when choosing the best adventure motorcycle. ADV bikes often venture far from civilization, making reliability essential."

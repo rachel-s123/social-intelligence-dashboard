@@ -67,7 +67,7 @@ Comfort & Ergonomics:
 - Recommendation: Ensure ergonomic design facilitates extended riding without fatigue, with particular attention to seat comfort and wind protection systems.
 
 Heritage/Retro Styling:
-- Insight: Notable appetite for heritage styling is evident, with models like Ducati DesertX generating substantial discussion due to distinctive retro-modern design. Pre-launch anticipation surrounding BMW R 12 G/S generated considerable interest due to explicit homage to iconic R80 G/S.
+- Insight: Notable appetite for heritage styling is evident, with models like Ducati DesertX generating substantial discussion due to distinctive retro-modern design. Pre-launch anticipation surrounding BMW R 12 G/S generated considerable interest due to explicit homage to iconic R 80 G/S.
 - Recommendation: Leverage authentic heritage narratives and classic aesthetics combined with modern performance to create compelling emotional connection and unique market differentiation.
 
 Engine Size & Performance:

@@ -42,7 +42,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 6]: 10 Adventure Bikes Worth Buying In 2025 - Top Speed
 - [Source 7]: 2020-on Honda Africa Twin Adventure Sports review: Full spec - Motorcycle News
 - [Source 8]: REVIEW | Honda Africa Twin - CRF1100 Adventure Sports ES - Driven.site
-- [Source 9]: 2025 BMW F800 GS Motorcycle Review - Driving.ca
+- [Source 9]: 2025 BMW F 800 GS Motorcycle Review - Driving.ca
 - [Source 10]: Is it unrealistic to buy a 2025 R 1300 GS as your first bike? - Reddit
 - [Source 11]: Unleashing the Beast 2025 Yamaha Tenere 700 Review - YouTube
 - [Source 12]: 2025 Yamaha Tenere 700 Review The Perfect Dual-Sport Motorcycle? - YouTube
@@ -51,7 +51,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 15]: The Rise of Custom Motorcycles & What's Trending in 2025 - Team Full Throttle Houston
 - [Source 16]: BMW Motorrad Announces New BMW R 12 G/S - BimmerLife
 - [Source 17]: BMW Revives Adventure Heritage with the All-New R 12 G/S Enduro - stupidDOPE
-- [Source 18]: BMW R12 GS breaks cover — All you need to know - The Financial Express
+- [Source 18]: BMW R 12 GS breaks cover — All you need to know - The Financial Express
 - [Source 19]: BMW R 12 GS Teased Ahead Of March Unveil - NDTV
 - [Source 20]: Adventure Country Tracks e.V. – European Adventure Motorcycle Foundation
 - [Source 21]: Hojen.nu - mc-forum
@@ -93,7 +93,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 57]: Two Wheeler Market Report 2025-2030: A $165.38 Billion - GlobeNewswire
 - [Source 58]: Get Revved Up: Catch The Hottest Motorcycle News Updates - 30th March 2025 - YouTube
 - [Source 59]: 2025 BMW Superbike Concept Teased! | Is This "The Speed of Light"?? - YouTube
-- [Source 60]: Turbo R1100 GS on Advrider - the Pelican Parts Forum!
+- [Source 60]: Turbo R 1100 GS on Advrider - the Pelican Parts Forum!
 - [Source 61]: Thumper rally - Adventure Bike Rider Forum
 - [Source 62]: thumpertalk - Reddit Dirtbikes
 - [Source 63]: The Brand New TET SWEDEN - Very first ride of the 2025 Season - YouTube
@@ -106,18 +106,18 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 70]: Ämne: Ni som har Triumph Tiger 800 XC - är ni nöjda? - Hojen.nu
 - [Source 71]: BMW MC Klubben • Visa kategori - R boxermodeller
 - [Source 72]: BMW MC Klubben • Visa kategori - Säljes
-- [Source 73]: BMW MC Klubben • Visa tråd - R1300RS och RT presenteras 29 april
+- [Source 73]: BMW MC Klubben • Visa tråd - R 1300 RS och RT presenteras 29 april
 - [Source 74]: Bästa MC Scooter 2025 (Bäst i test) - Scooter Motorcykel - Testbäst.se
 - [Source 75]: 2025 Triumph Speed Triple 1200 RS Review – First Ride | Motorcycle.com
-- [Source 76]: BMW F900 GS 2025 / new bmw gs 900f 2025 - YouTube
+- [Source 76]: BMW F 900 GS 2025 / new bmw gs 900f 2025 - YouTube
 - [Source 77]: Ducati DesertX Review: Adventure Bike Perfection? - YouTube
 - [Source 78]: Nu öppnar anmälan till FIM Motocamp 2025 - Sveriges MotorCyklister
 - [Source 79]: Overland Adventure Expo
 - [Source 80]: Best Racing Gravel Bike 2025 - Equipment - TrainerRoad
 - [Source 81]: Interim Report January – March 2025 | Mips AB
 - [Source 82]: Europe Motorcycle Market- Industry Analysis and Forecast (2025-2032) - StellarMR
-- [Source 83]: The NEW 2025 R1300GS Adventure | Page 6 - BMW MOA Forum
-- [Source 84]: BMW R1200RS / R1250RS Forum Community - The 2025 R1300GS Adventure (R1300GSA) - RSWasserboxer
+- [Source 83]: The NEW 2025 R 1300 GS Adventure | Page 6 - BMW MOA Forum
+- [Source 84]: BMW R 1200 RS / R 1250 RS Forum Community - The 2025 R 1300 GS Adventure (R 1300 GSA) - RSWasserboxer
 - [Source 85]: World Motorcycles Market Reached 15 Million Sales (+3.0%) in Q1 2025 - MotorcyclesData
 - [Source 86]: VIKTIGT! Nya EU-regler för mc från och med 2025! - Sherco
 - [Source 87]: mars 2025 – Allt om MC
@@ -126,7 +126,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 90]: Om mig - Explorista
 - [Source 91]: Kalender.se - Sveriges Kalender
 - [Source 92]: BMW Sveriges officiella webbplats: premiumbilar för unika upplevelser
-- [Source 93]: BMW R12 GS to be Launched Today! - BikeWale
+- [Source 93]: BMW R 12 GS to be Launched Today! - BikeWale
 - [Source 94]: 2026 BMW R 12 G/S First Look | Motorcycle.com
 
 ---

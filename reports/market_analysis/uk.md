@@ -99,11 +99,11 @@
 ### BMW GS Series (traditional)
 **Strengths**
 - Strong brand loyalty and market share gain in declining market
-- R1300GSA positioned as top-selling big adventure bike
+- R 1300 GSA positioned as top-selling big adventure bike
 - Renowned build quality and engineering precision
 
 **Weaknesses**
-- High weight (R1300GS around 260kg) concerns for some riders
+- High weight (R 1300 GS around 260kg) concerns for some riders
 - Premium pricing potentially limiting market accessibility
 - Pre-launch skepticism about R 12 G/S fuel tank capacity and weight claims
 

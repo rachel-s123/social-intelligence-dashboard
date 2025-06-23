@@ -67,7 +67,7 @@ Heritage/Retro Styling:
 - Recommendation: A significant segment of the market values motorcycles that evoke a sense of history and authenticity, blending timeless aesthetics with contemporary performance. This appeal is driven by an emotional connection to motorcycling's legacy, indicating a desire for bikes with a strong narrative and distinctive character.
 
 Suspension Quality:
-- Insight: Superior suspension is frequently discussed in relation to aggressive off-road performance and handling challenging terrains. Competitors like KTM are lauded for their suspension, and the R12 G/S's long-travel suspension is a key feature, indicating its importance for stability and comfort on varied surfaces.
+- Insight: Superior suspension is frequently discussed in relation to aggressive off-road performance and handling challenging terrains. Competitors like KTM are lauded for their suspension, and the R 12 G/S's long-travel suspension is a key feature, indicating its importance for stability and comfort on varied surfaces.
 - Recommendation: Riders prioritize high-quality suspension for its direct impact on off-road capability, comfort over rough terrain, and overall riding confidence. It is seen as crucial for maintaining control and stability in demanding Norwegian landscapes.
 
 Comfort & Ergonomics:
@@ -83,7 +83,7 @@ Long-Distance Touring Capability:
 - Recommendation: The capacity for extended journeys, often across continents or vast landscapes, is a key draw for adventure riders. This encompasses factors like comfort, fuel range, and the overall robustness required for multi-day and multi-week expeditions.
 
 Manageability/Weight:
-- Insight: There is an unmet demand for lighter, more nimble machines that are less focused on long-distance touring and more on raw adventure. The KTM 890 Adventure R is often cited for its lighter weight, and the R1300 GS is noted for its improved manageability, highlighting the importance of ease of handling both on and off-road.
+- Insight: There is an unmet demand for lighter, more nimble machines that are less focused on long-distance touring and more on raw adventure. The KTM 890 Adventure R is often cited for its lighter weight, and the R 1300 GS is noted for its improved manageability, highlighting the importance of ease of handling both on and off-road.
 - Recommendation: Riders increasingly prioritize a motorcycle that is easy to handle, especially in challenging off-road scenarios. Lighter weight contributes significantly to agility, maneuverability, and overall rider confidence when tackling technical terrain.
 
 Technology & Features:

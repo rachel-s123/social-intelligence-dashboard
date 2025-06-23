@@ -63,8 +63,8 @@ Versatility (Dual-Purpose Capability):
 - Recommendation: Position R 12 G/S as seamlessly transitioning between paved roads and light unpaved surfaces, enabling varied touring experiences
 
 Heritage/Retro Styling:
-- Insight: Notable interest and clear opportunity for heritage positioning, with pre-launch R 12 G/S discussions highlighting "retro styling" evoking R80 G/S
-- Recommendation: Heavily emphasize heritage aspect, highlighting direct link to iconic R80 G/S and adventurous spirit embedded in BMW's past
+- Insight: Notable interest and clear opportunity for heritage positioning, with pre-launch R 12 G/S discussions highlighting "retro styling" evoking R 80 G/S
+- Recommendation: Heavily emphasize heritage aspect, highlighting direct link to iconic R 80 G/S and adventurous spirit embedded in BMW's past
 
 Brand Reliability:
 - Insight: Paramount concern for consumers, particularly first-time owners seeking minimal dealership visits and predictable ownership experience

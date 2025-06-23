@@ -180,7 +180,7 @@
 ## Market Opportunities
 
 - **Heritage Positioning Gap**
-  Opportunity Description: Limited authentic heritage-focused adventure bikes in market, with R 12 G/S uniquely positioned to leverage BMW's adventure legacy and iconic R80 G/S connection
+  Opportunity Description: Limited authentic heritage-focused adventure bikes in market, with R 12 G/S uniquely positioned to leverage BMW's adventure legacy and iconic R 80 G/S connection
 
 - **Manageable Adventure Segment**
   Opportunity Description: Gap between intimidating large adventure bikes and basic middleweight offerings for riders seeking capable but approachable off-road performance

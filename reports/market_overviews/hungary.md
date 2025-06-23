@@ -41,10 +41,10 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 5]: A Honda mindenféle újdonsága kint lesz a Motorkiállításon - Totalbike
 - [Source 6]: Lezajlott az „Év Motorkerékpárja 2025" szavazás – íme, a győztesek
 - [Source 7]: BMW Motorrad USA 2025 Model Year Update. - GERMAN CAR FORUM
-- [Source 8]: Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube
+- [Source 8]: Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube
 - [Source 9]: BMW R 1300 RS & RT – Minden amit tudnod kell! - YouTube
 - [Source 10]: BMW R 1300 GS Adventure teszt - 1000PS.com
-- [Source 11]: The NEW 2025 R1300GS Adventure | BMW MOA Forum
+- [Source 11]: The NEW 2025 R 1300 GS Adventure | BMW MOA Forum
 - [Source 12]: Adventure | BMW Motorrad Hungary
 - [Source 13]: R 1300 GS - BMW Motorrad Hungary
 - [Source 14]: A vevő az úr! – Honda Africa Twin Adventure Sports menetpróba
@@ -75,11 +75,11 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 39]: BMW Címkék - Csajokamotoron.hu Motoros Magazin
 - [Source 40]: R 12 G/S - BMW Motorrad
 - [Source 41]: R 12 - BMW Motorrad
-- [Source 42]: 2025 BMW R12 G/S review - Motorcycle News
+- [Source 42]: 2025 BMW R 12 G/S review - Motorcycle News
 - [Source 43]: The new 2026 BMW R 12 G/S. - GERMAN CAR FORUM
 - [Source 44]: 2025 NEW BMW R 12 G/S OFFICIALLY UNVEILED!! - YouTube
-- [Source 45]: BMW R12 G/S 2025 LOADING ON MY TRAILER - YouTube
-- [Source 46]: 2025 BMW R12GS: The ULTIMATE Retro ADV! - YouTube
+- [Source 45]: BMW R 12 G/S 2025 LOADING ON MY TRAILER - YouTube
+- [Source 46]: 2025 BMW R 12 GS: The ULTIMATE Retro ADV! - YouTube
 - [Source 47]: Motorkerékpárok | 2025 | Választék - Honda Hungary
 - [Source 48]: Ducati Multistrada V2 S 2025 vs Ducati DesertX 2023 - 1000PS.com
 - [Source 49]: 2025 Honda Africa Twin Adventure Sports ES DCT Ride Review - Cycle News - YouTube

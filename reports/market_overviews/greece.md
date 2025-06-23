@@ -63,8 +63,8 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 27]: DesertX - Ducati
 - [Source 28]: Δοκιμή: Ducati DesertX RR22 - NewsAuto.gr - NEWSMOTO
 - [Source 29]: The new 2026 BMW R 12 G/S. | GERMAN CAR FORUM
-- [Source 30]: New For 2025 BMW R12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club
-- [Source 31]: 2025 BMW R12 G/S review - Motorcycle News
+- [Source 30]: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club
+- [Source 31]: 2025 BMW R 12 G/S review - Motorcycle News
 - [Source 32]: What we saw at the Dragster Races in Serres racing circuit Greece 2025 - revtothelimit
 - [Source 33]: UKGSer Community Forum
 - [Source 34]: News from the Media - Honda Adventure Riders Forum

@@ -50,20 +50,20 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 14]: MOTOVLOG: BMW R 1300 GS - španělský off-road test
 - [Source 15]: Visit the Czech Republic - Adventure Bike Rider Forum
 - [Source 16]: Adventure Rider Magazine - The Ultimate ADV Platform
-- [Source 17]: New For 2025 BMW R12 G/S: A Dirt-Ready Retro
+- [Source 17]: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro
 - [Source 18]: 2025 Yamaha Tenere 700 a long term test MADTV
 - [Source 19]: 2025 Triumph Tiger 900 GT Pro - Revisited
 - [Source 20]: Triumph Tiger 900 GT Pro Review 2025: Specs, Features & Ride Impressions
 - [Source 21]: Adventure Motorcycle 2025
 - [Source 22]: Moto Morini 3 ½, Rumble, Corsaro 750 GT, Corsaro
 - [Source 23]: 2025 Ducati Desert X Review - First Ride
-- [Source 24]: New 2025 BMW R1300GS Adventure First Impressions: 9 Best Features!
+- [Source 24]: New 2025 BMW R 1300 GS Adventure First Impressions: 9 Best Features!
 - [Source 25]: 14 Best Adventure Motorcycles For 2025!
-- [Source 26]: 2025 BMW R12 G/S review
+- [Source 26]: 2025 BMW R 12 G/S review
 - [Source 27]: 2025-on Yamaha Ténéré 700 Rally review: A proper off-roader!
 - [Source 28]: Thoughts on the desert x? : r/motorcycles
 - [Source 29]: 20 Best New Modern Classic / Retro Motorcycles Of 2025
-- [Source 30]: 2025 BMW R12 S, Best Retro Motorcycle, INFO MOTO
+- [Source 30]: 2025 BMW R 12 S, Best Retro Motorcycle, INFO MOTO
 - [Source 31]: 10 nejlepších Adventure motorek pro začátečníky
 - [Source 32]: Yamaha Tenere 700 2025 - technická data, ceny, recenze
 - [Source 33]: Ducati DesertX Discover 2025: dobrodružné mistrovské dílo pro dobrodruhy
@@ -103,7 +103,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 67]: Grand European Motorcycle Tour | AMT - Adriatic Moto Tours
 - [Source 68]: Bohemian Rhapsody - Motorcycle tour across Europe
 - [Source 69]: BMW Motorrad na výstavě Motocykl 2025 s exkluzivními novinkami
-- [Source 70]: The NEW 2025 R1300GS Adventure - BMW MOA Forum
+- [Source 70]: The NEW 2025 R 1300 GS Adventure - BMW MOA Forum
 - [Source 71]: Adventure motoškola - Automotodrom Brno
 - [Source 72]: Motocykly – Honda CZ
 - [Source 73]: Kluby a sdružení - Lokální - Plzeňský kraj

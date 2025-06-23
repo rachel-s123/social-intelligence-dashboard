@@ -2,7 +2,7 @@
 
 ## Attribute Resonance
 - Long-Distance Touring Capability is the highest priority (WRI: 93.5), driven by consumer intentions for extensive European tours
-- Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R80 G/S
+- Heritage/Retro Styling ranks remarkably high (WRI: 85.5), with notable interest in R 12 G/S's retro styling evoking the R 80 G/S
 - Manageability/Weight is critical (WRI: 85.0), with recurring concerns about "top-heavy" motorcycles and preference for manageable bikes
 
 ## Market Insights
@@ -17,6 +17,6 @@
 
 ## Strategic Recommendations
 - **Strategic Positioning:** Position R 12 G/S as authentic heritage adventure bike connecting riders to BMW's adventure legacy with manageable "dirt-ready retro" capability
-- **Content & Messaging:** Lead with heritage story and R80 G/S connection while emphasizing European touring versatility and manageable adventure performance
+- **Content & Messaging:** Lead with heritage story and R 80 G/S connection while emphasizing European touring versatility and manageable adventure performance
 - **Audience Targeting:** Focus on practical adventurers and style-first riders seeking distinctive heritage appeal with reliable BMW quality
 - **Key Opportunity:** Leverage unique heritage positioning and early positive dealer sentiment to capture underserved manageable adventure segment

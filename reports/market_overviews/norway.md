@@ -50,7 +50,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 14]: 2025 Honda Africa Twin Adventure Sports ES DCT Ride Review - YouTube
 - [Source 15]: 2025 Triumph Tiger 900 Review: Ultimate Adventure Bike - YouTube
 - [Source 16]: 2025 Triumph Tiger 900 GT Pro - Revisited review - YouTube
-- [Source 17]: 2025 BMW R12 G/S review - Motorcycle News
+- [Source 17]: 2025 BMW R 12 G/S review - Motorcycle News
 - [Source 18]: 2025 BMW R 1300 GS Adventure Review - Rider Magazine
 - [Source 19]: Reddit motorcycles community discussions on Ducati DesertX
 - [Source 20]: 2025 Ducati Desert X Review - First Ride - YouTube

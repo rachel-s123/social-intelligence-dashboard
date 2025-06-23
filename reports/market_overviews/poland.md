@@ -35,10 +35,10 @@ The insights provided in this dashboard can be leveraged to support key business
 ## Data Sources
 
 - [Source 1]: PZPM motorcycle registration data Q1-Q2 2025
-- [Source 2]: BMW MOA forums discussion on R12 G/S retro styling
+- [Source 2]: BMW MOA forums discussion on R 12 G/S retro styling
 - [Source 3]: KTM Poland official 890 Adventure R specifications and features
-- [Source 4]: Motorcycle News BMW R12 G/S review and analysis
-- [Source 5]: YouTube BMW R12 G/S official announcement coverage
+- [Source 4]: Motorcycle News BMW R 12 G/S review and analysis
+- [Source 5]: YouTube BMW R 12 G/S official announcement coverage
 - [Source 6]: DataReportal Poland digital 2025 social media penetration statistics
 - [Source 7]: LoveForRide comparative analysis Tenere vs Tuareg vs 890R vs Desert X
 - [Source 8]: Moto46 KTM 890 Adventure R comprehensive review
@@ -50,7 +50,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 14]: Triumph Forum Tiger 900 Rally Pro discussion
 - [Source 15]: Świat Motocykli Triumph Tiger 900 Rally Pro/GT Pro 2024 comprehensive test
 - [Source 16]: Galicja Express BMW GS 1200 Adventure reliability analysis
-- [Source 17]: MotoTrips BMW R1300 GS opinion and off-road performance assessment
+- [Source 17]: MotoTrips BMW R 1300 GS opinion and off-road performance assessment
 - [Source 18]: YouTube Ducati DesertX 2025 performance review
 - [Source 19]: Świat Motocykli Ducati DesertX comprehensive test and data
 - [Source 20]: Scigacz Ducati DesertX terrain and road test analysis
@@ -63,12 +63,12 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 27]: Triumph Motorcycles Tiger 900 GT Pro official information
 - [Source 28]: Otomoto BMW Adventure and GS pricing data 2025
 - [Source 29]: CFMOTO Poland 700 MT 2025 specifications and pricing
-- [Source 30]: YouTube BMW R12 G/S reveal and technical details
-- [Source 31]: RSWasserboxer BMW forum R1300RS launch discussion
-- [Source 32]: YouTube BMW R12 G/S Dakar heritage analysis
+- [Source 30]: YouTube BMW R 12 G/S reveal and technical details
+- [Source 31]: RSWasserboxer BMW forum R 1300 RS launch discussion
+- [Source 32]: YouTube BMW R 12 G/S Dakar heritage analysis
 - [Source 33]: HEED Tiger 900 accessories and equipment
 - [Source 34]: ADV Poland general travel conditions and requirements
-- [Source 35]: Forum Suzuki V-strom BMW R1250 GS Adventure discussion
+- [Source 35]: Forum Suzuki V-strom BMW R 1250 GS Adventure discussion
 - [Source 36]: Forum Śląskich Motocyklistów community discussions
 - [Source 37]: Moto-Opinie forum motorcycle equipment and assistance discussions
 - [Source 38]: Otomoto various adventure motorcycle pricing and availability

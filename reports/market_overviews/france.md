@@ -44,14 +44,14 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 8: Les 10 meilleures motos d'aventure 2025 - MotoActus
 - Source 9: The new 2025 BMW R 12 S - BMW Group Press
 - Source 10: New 2025 BMW R 12 G/S Revealed: Everything You Need To Know - YouTube
-- Source 11: BMW R12 G/S (2025) – Technical Review - Bennes Insurance
+- Source 11: BMW R 12 G/S (2025) – Technical Review - Bennes Insurance
 - Source 12: TERRE et BITUME
 - Source 13: Essais Panigale v2 2025 - DUCATI-MANIA forum francophone dédié à DUCATI
-- Source 14: The NEW 2025 R1300GS Adventure - BMW MOA Forum
+- Source 14: The NEW 2025 R 1300 GS Adventure - BMW MOA Forum
 - Source 15: Forum des Voyageurs à moto - Les Apprentis Voyageurs
 - Source 16: FORUM DES VOYAGEURS A MOTO - Trail Attitude
 - Source 17: Trail Adventure Days 2025 : 10ème édition
-- Source 18: Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube
+- Source 18: Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube
 - Source 19: LE NOSTRE PROVE MOTO 2025 - YouTube
 - Source 20: 2025 X-TRIAL CAHORS (France) - YouTube
 - Source 21: 2025 Triumph Tiger 900 GT Pro - Revisited - YouTube

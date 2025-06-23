@@ -29,7 +29,7 @@
   - Source: BMW Motorrad Social Listening & Market Analysis Report
 - **Design & Character Appeal (15.0%)**
   - Quote: "bold design and retro inspiration with iconic BMW motorsport colours"
-  - Explanation: Aesthetic and unique character of motorcycles important with heritage styling explicitly leveraged by BMW R 12 G/S drawing from '80s R80 G/S and Dakar Rally heritage
+  - Explanation: Aesthetic and unique character of motorcycles important with heritage styling explicitly leveraged by BMW R 12 G/S drawing from '80s R 80 G/S and Dakar Rally heritage
   - Source: BMW Motorrad Social Listening & Market Analysis Report
 - **Value & Pricing (12.0%)**
   - Quote: "phenomenal value proposition"
@@ -40,7 +40,7 @@
   - Explanation: While not explicitly framed as concerns, reliability is valued attribute with dependability critical expectation for adventure riders seeking robust builds
   - Source: BMW Motorrad Social Listening & Market Analysis Report
 - **Heritage Interest**
-  - Quote: "heritage inspiration from the '80s R80 G/S road bike and the four-time Dakar Rally-winning race version"
+  - Quote: "heritage inspiration from the '80s R 80 G/S road bike and the four-time Dakar Rally-winning race version"
   - Explanation: Clear evidence of existing appetite for heritage styling with BMW R 12 G/S and Ducati DesertX incorporating retro elements, indicating broader market trend
   - Source: BMW Motorrad Social Listening & Market Analysis Report
 - **Market Engagement**
@@ -64,14 +64,14 @@
 - Quote 2: "for what you're getting a bike with genuine off-road chops real touring credentials Honda reliability and modern tech that's a phenomenal value proposition"
   - Explanation: Expert/Reviewer highlighting Honda Africa Twin's comprehensive value offering combining multiple strengths
   - Source: FINALLY LAUNCHED Africa Twin 650 Breaks Cover – Game Over for Rivals! - YouTube
-- Quote 3: "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine. Of all the R12 retros it's the most generously proportioned, making it perfect for taller riders."
+- Quote 3: "It's more than just a visual homage to the past, it's a hugely capable and enjoyable machine. Of all the R 12 retros it's the most generously proportioned, making it perfect for taller riders."
   - Explanation: Expert/Reviewer positive assessment of BMW R 12 G/S heritage design combined with functional capability
-  - Source: 2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News
+  - Source: 2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News
 
 ### Neutral Sentiment
 - Quote 1: "The overall look of the bike is expected to remain barebones and minimalist"
   - Explanation: Factual description of BMW R 12 G/S design philosophy without emotional assessment
-  - Source: BMW R12 GS teased ahead of debut on March 27 - Financial Express
+  - Source: BMW R 12 GS teased ahead of debut on March 27 - Financial Express
 - Quote 2: "Honda maintained its lead at 58 units. BMW followed with 38 units, then CF Moto (23 units), Yamaha (17 units), KTM (16 units)"
   - Explanation: Objective market registration data presentation without subjective commentary
   - Source: New Motorcycle Market in Bulgaria: March 2025 Figures - CEAutos
@@ -79,7 +79,7 @@
 ### Negative Sentiment
 - Quote 1: "With its hard seat and lack of wind protection it isn't the best long-distance cruiser around, but neither is it designed to be"
   - Explanation: Expert/Reviewer identifying comfort limitations of BMW R 12 G/S for touring applications while acknowledging design intent
-  - Source: 2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News
+  - Source: 2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News
 - Quote 2: "Second, you still have to come to a complete stop to switch the Tiger into one of its off-road settings, which is a minor inconvenience but annoying just the same"
   - Explanation: Expert/Reviewer criticism of Triumph Tiger 900 Rally Pro operational limitation
   - Source: First Ride: Triumph Tiger 900 Rally Pro Adventure Motorcycle - Men's Journal
@@ -116,7 +116,7 @@
 ### BMW
 **Strengths**
 - Strong market position with 70 units registered, frequently second or third place
-- Authentic heritage connection with R 12 G/S linking to iconic '80s R80 G/S and Dakar Rally victories
+- Authentic heritage connection with R 12 G/S linking to iconic '80s R 80 G/S and Dakar Rally victories
 - Well-positioned to address high consumer priority for off-road performance and engine performance
 - "Dual GS strategy" allowing targeting of different adventure market segments simultaneously
 - Strong dealer network and service availability

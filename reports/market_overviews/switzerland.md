@@ -38,15 +38,15 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 2]: Adventure Motorcycles Market Size & Growth [2025-2033]
 - [Source 3]: Motorbike registrations in Switzerland: 2025 early season review - Cruizador
 - [Source 4]: European Motorcycles Sales - Data & Facts 2025 MotorCyclesData
-- [Source 5]: New For 2025 BMW R12 G/S: A Dirt-Ready Retro – General Chatter
+- [Source 5]: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro – General Chatter
 - [Source 6]: A leading European motorcycle group Investor ... - Storyblok
 - [Source 7]: 2025s Delay Central Europe? : r/Tenere700 - Reddit
 - [Source 8]: KTM Production restarts at the end of the summer - MX Vice
 - [Source 9]: Bajaj Saves KTM | Cycle World
 - [Source 10]: Mountain passes on the motorbike 2nd of april 2025 : r/Switzerland - Reddit
 - [Source 11]: Switzerland - revtothelimit - motorbike forum
-- [Source 12]: BMW R12 GS teased ahead of debut on March 27 - Bike News | The Financial Express
-- [Source 13]: 2023-on BMW R1300GS Review: Raising the adventure bar - Motorcycle News
+- [Source 12]: BMW R 12 GS teased ahead of debut on March 27 - Bike News | The Financial Express
+- [Source 13]: 2023-on BMW R 1300 GS Review: Raising the adventure bar - Motorcycle News
 - [Source 14]: 2025 BMW R 1300 GS Adventure Review | Rider Magazine
 - [Source 15]: General Bike – Swiss Alpine Adventure – Forum
 - [Source 16]: DUCATI AND ARUBA.IT TEAM UP FOR MXGP 2025 - Bikesportnz.com

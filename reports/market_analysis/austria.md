@@ -61,7 +61,7 @@
 - Quote 1: "Current MSRP for the Desert X starts at $17,995, which is about $7,000 more than a Yamaha T7, but also several thousand dollars more than other premium 'middleweight' options like the KTM 890 Adventure R or Aprilia Tuareg Rally 660."
   - Explanation: A portion of the content was factual and descriptive, such as market reports, event listings, and technical specifications, without expressing strong emotional bias.
   - Source: Ducati DesertX review
-- Quote 2: "The R12 was from the beginning also thought as an Enduro, with certainty the R12 G/S will be more capable off-road and for comfortable Enduro touring."
+- Quote 2: "The R 12 was from the beginning also thought as an Enduro, with certainty the R 12 G/S will be more capable off-road and for comfortable Enduro touring."
   - Explanation: Neutral, speculative discussion about BMW R 12 G/S capabilities.
   - Source: BMW R 12 G/S speculation
 - Quote 3: "The 2025 T7 is only one between many others bike, the electrics they put into the bike made this bike at the same level with Africa Twin, BMWs or KTMs."

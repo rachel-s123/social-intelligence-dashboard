@@ -61,9 +61,9 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 25]: 2025 Ducati DesertX Rally | GP Bikes
 - [Source 26]: 2025 Ducati Desert X Review - First Ride - YouTube
 - [Source 27]: Best Adventure Motorbike (2025) - Bennes Insurance
-- [Source 28]: 2025 BMW R12 G/S review: Old school soul, new school calibre
+- [Source 28]: 2025 BMW R 12 G/S review: Old school soul, new school calibre
 - [Source 29]: 2025 KTM 390 Adventure R SUPREMELY CAPABLE
-- [Source 30]: 2025 R1200 G/S sort of retro styling | BMW MOA
+- [Source 30]: 2025 R 1200 G/S sort of retro styling | BMW MOA
 - [Source 31]: Netherlands Adventure Riding? : r/motoretsen - Reddit
 - [Source 32]: 2025 Harley-Davidson® Adventure Touring Motorcycles
 - [Source 33]: New 2025 Harley-Davidson Heritage Classic White Onyx Pearl
@@ -81,7 +81,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 45]: Our New Motorcycle: The 2025 BMW R 1300 GSA Adventure!
 - [Source 46]: 25 AMAZING! LIGHTWEIGHT ADVENTURE BIKES OF 2025
 - [Source 47]: 2025's Top 7 New & Updated Adventure Bikes Under $10K
-- [Source 48]: New For 2025 BMW R12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club
+- [Source 48]: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro - Wisconsin BMW Motorcycle Club
 - [Source 49]: AJP PR7 Adventure 650 Motorcycle Review - Mad or Nomad
 - [Source 50]: New KTM 390 Adventure R and 390 Adventure X on their way for 2025
 - [Source 51]: Trans Euro Trail: Home

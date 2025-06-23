@@ -40,7 +40,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 4: Who's thinking about getting the 2025 Tenere? And why? : r ... - Reddit
 - Source 5: 2025 Yamaha Tenere 700 First Ride Review: Better Or Worse? - YouTube
 - Source 6: Thoughts on the desert x? : r/motorcycles - Reddit
-- Source 7: New For 2025 BMW R12 G/S: A Dirt-Ready Retro – General Chatter
+- Source 7: New For 2025 BMW R 12 G/S: A Dirt-Ready Retro – General Chatter
 - Source 8: Austria by motorcycle: discover the new 68° - 68 degrees travel diary
 - Source 9: Rolling Daytona 2025 | American Eagle Harley-Davidson®
 - Source 10: Trans Euro Trail: Home

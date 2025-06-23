@@ -33,7 +33,7 @@
   - Explanation: Pricing discussions encompass not just initial purchase price but perceived value for money, long-term maintenance costs, and availability of affordable alternatives
   - Source: Poland market report, competitive landscape
 - **Design & Character Appeal**
-  - Quote: "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance"
+  - Quote: "The upcoming BMW R 12 G/S, with its explicit 'retro styling' inspired by the 1980s R 80 G/S, generated considerable buzz. The Ducati DesertX was lauded for its 'aggressive design' and 'stylish to the core' appearance"
   - Explanation: Aesthetic appeal, character, and heritage styling are significant drivers of consumer conversation, contributing to emotional connection with motorcycles
   - Source: Poland market report, consumer preferences
 - **Heritage/Retro Styling**
@@ -61,7 +61,7 @@
 - Quote 2: "The market's overall growth trend further contributed to this optimistic outlook"
   - Explanation: Rising motorcycle registrations and expanding adventure segment created positive market momentum
   - Source: Poland market report, market trends
-- Quote 3: "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R80 G/S"
+- Quote 3: "Considerable pre-launch interest and discussion surrounding the BMW R 12 G/S, specifically its retro styling inspired by the iconic 1980s R 80 G/S"
   - Explanation: Strong anticipation for new models, particularly heritage-focused designs, generated enthusiasm in the community
   - Source: Poland market report, BMW positioning
 
@@ -146,7 +146,7 @@
 
 ### BMW R 12 G/S (Pre-Launch)
 **Strengths**
-- Strong heritage connection to Dakar-winning R80 G/S providing authentic off-road credibility
+- Strong heritage connection to Dakar-winning R 80 G/S providing authentic off-road credibility
 - Retro styling generating considerable pre-launch interest and discussion
 - Positioned as "stripped down feel-good bike" appealing to simplicity-seeking riders
 

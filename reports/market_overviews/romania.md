@@ -43,7 +43,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 7]: Top 10 Motorcycle Tours in Romania - Tripaneer.com
 - [Source 8]: Romania Motorcycle Tours - BMW Motorrad official Travel Partner
 - [Source 9]: Why 2025 is the year of the 'sensible', more affordable motorcycle - Carole Nash
-- [Source 10]: New R12 G/S Launched! : r/bmwmotorrad - Reddit
+- [Source 10]: New R 12 G/S Launched! : r/bmwmotorrad - Reddit
 - [Source 11]: MOTOCICLISM.ro: Forumuri
 - [Source 12]: Long Way Home - YouTube
 - [Source 13]: Rezumat Expo Moto Bucuresti 2025 - YouTube
@@ -59,7 +59,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 23]: Thoughts on the desert x? - Reddit
 - [Source 24]: 2025 Triumph Tiger 900 GT Pro - Revisited - YouTube
 - [Source 25]: 4000 kms done on the 2024 Tiger 900 GT - Reddit
-- [Source 26]: 2025 BMW R12 G/S review - Motorcycle News
+- [Source 26]: 2025 BMW R 12 G/S review - Motorcycle News
 - [Source 27]: 2025 Honda Africa Twin Adventure Sports ES DCT Review - Cycle News
 - [Source 28]: 2025 Honda Africa Twin Features & Benefits - Honda News
 - [Source 29]: 2025 KTM 890 ADVENTURE R - KTM United States

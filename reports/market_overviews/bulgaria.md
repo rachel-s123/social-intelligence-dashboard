@@ -36,9 +36,9 @@ The insights provided in this dashboard can be leveraged to support key business
 
 - [Source 1]: Motorcycle Market in Bulgaria Grows in 2024, Industry ... - BTA
 - [Source 2]: Number of Bankrupt Companies in Bulgaria Grows by 10% in Q1 of 2025 Y/Y: NSI Data
-- [Source 3]: BMW R12 GS teased ahead of debut on March 27 - Bike News | The Financial Express
+- [Source 3]: BMW R 12 GS teased ahead of debut on March 27 - Bike News | The Financial Express
 - [Source 4]: BMW Club Bulgaria forum - BMW Motorrad discussion thread
-- [Source 5]: 2025 BMW R12 G/S review: Old school soul, new school calibre - Motorcycle News
+- [Source 5]: 2025 BMW R 12 G/S review: Old school soul, new school calibre - Motorcycle News
 - [Source 6]: Moto Expo 2025: World of KAYO MOTO - ClubS1.bg
 - [Source 7]: MOTO EXPO 2025 to Bring Over 65 World Premieres and Thrilling Stunt Shows to Sofia
 - [Source 8]: BMW Motorrad Roadshow 2025 - Investor.bg

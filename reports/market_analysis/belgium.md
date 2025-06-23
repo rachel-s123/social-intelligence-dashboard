@@ -52,7 +52,7 @@
 - Quote 2: "Honda's 'legendary durability' is highlighted in discussions"
   - Explanation: Strong positive sentiment toward Honda's reliability and durability in the adventure segment
   - Source: Belgian Adventure Motorcycle Market Analysis - Honda Brand Perception
-- Quote 3: "The R 12 G/S is designed as a direct 'visual tribute' to the iconic 1980s R80 G/S"
+- Quote 3: "The R 12 G/S is designed as a direct 'visual tribute' to the iconic 1980s R 80 G/S"
   - Explanation: Highly positive pre-launch sentiment for BMW R 12 G/S heritage styling and authentic connection to motorcycling history
   - Source: BMW R 12 G/S Pre-Launch Consumer Sentiment Analysis
 
@@ -94,7 +94,7 @@
 ### BMW Motorrad
 **Strengths**
 - Strong brand presence as third highest-selling brand in Belgium with 3,322 registrations in 2024
-- R 12 G/S positioned as "dirt-ready retro" with authentic R80 G/S heritage and genuine off-road capability
+- R 12 G/S positioned as "dirt-ready retro" with authentic R 80 G/S heritage and genuine off-road capability
 - Lighter weight (229kg) compared to larger adventure bikes addresses maneuverability concerns
 
 **Weaknesses**

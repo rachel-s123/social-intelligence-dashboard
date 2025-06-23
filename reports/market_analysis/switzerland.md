@@ -19,7 +19,7 @@
 - **Comfort & Ergonomics**
   - Quote: "The GS really is all-day comfortable. Natural ergonomics, a sumptuous seat... a superb electronically adjustable screen, heated grips..."
   - Explanation: Comfort & Ergonomics constitute approximately 20.0% of discussions, reflecting their importance for long-distance touring. The BMW GS series is consistently praised for its supreme comfort, and even off-road focused bikes address rider comfort
-  - Source: Expert review of BMW R1300GS
+  - Source: Expert review of BMW R 1300 GS
 - **Technology & Features**
   - Quote: "Advanced Tech Arsenal" including ABS, traction control, ride modes, smartphone connectivity, optional quickshifter/cruise control
   - Explanation: Technology & Features account for an estimated 15.0% of conversations. While advanced technology is prevalent in premium models, there is a "nuanced preference" among consumers who seek technology that enhances the riding experience without becoming overwhelming

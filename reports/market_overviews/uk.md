@@ -38,10 +38,10 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 2: British Motorcycles Market 2025 - Data, Insight | MotorCyclesData  
 - Source 3: NEW MOTORCYCLE MARKET CONTINUES DECLINE IN 2025
 - Source 4: February 2025 Press Statistics - Motorcycle Industry Association
-- Source 5: 2025 R1200 G/S sort of retro styling - BMW MOA Forum
+- Source 5: 2025 R 1200 G/S sort of retro styling - BMW MOA Forum
 - Source 6: BMW's Iconic Boxer Returns: Introducing the New R 12 G/S - BMW Blog
 - Source 7: Top 10 Big Adventure Bikes For 2025 - Lexham Insurance
-- Source 8: Is this the new 2025 R1200 G/S ? | UKGSer
+- Source 8: Is this the new 2025 R 1200 G/S ? | UKGSer
 - Source 9: Yamaha 2025 Tenere 700 Rally - Woodford Motorcycles
 - Source 10: Ténéré 700 | Adventure Motorcycle | 700cc | 2025 | Yamaha Motor
 - Source 11: REVIEW | Honda Africa Twin - CRF1100 Adventure Sports ES
