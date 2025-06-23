@@ -5,7 +5,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-const VECTOR_STORE_ID = process.env.VS_STORE_ID;
+// Prefer VS_STORE_ID but allow fallback to the client-side variable
+const VECTOR_STORE_ID =
+  process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
 
 module.exports = async (req, res) => {
   // Set CORS headers
@@ -32,6 +34,10 @@ module.exports = async (req, res) => {
 
     if (!messages || !Array.isArray(messages)) {
       return res.status(400).json({ error: "Messages array is required" });
+    }
+
+    if (!VECTOR_STORE_ID) {
+      throw new Error("VECTOR_STORE_ID is not configured");
     }
 
     // Set headers for streaming
