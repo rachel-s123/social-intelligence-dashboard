@@ -48,7 +48,7 @@ To get started, simply type your question about the market data or reports. I'll
       };
       setMessages([welcomeMessage]);
     }
-  }, [isOpen]);
+  }, [isOpen, messages.length]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -137,12 +137,12 @@ To get started, simply type your question about the market data or reports. I'll
         const chunk = decoder.decode(value);
         const lines = chunk.split("\n");
 
-        // Process each line outside the loop to avoid the warning
-        const processLine = (line) => {
+        // Process each line
+        for (const line of lines) {
           if (line.startsWith("data: ")) {
             const data = line.slice(6);
             if (data === "[DONE]") {
-              return false; // Signal to break
+              break; // Signal to break
             }
 
             try {
@@ -165,18 +165,7 @@ To get started, simply type your question about the market data or reports. I'll
               // Skip invalid JSON
             }
           }
-          return true; // Continue processing
-        };
-
-        let shouldContinue = true;
-        for (const line of lines) {
-          if (!processLine(line)) {
-            shouldContinue = false;
-            break;
-          }
         }
-
-        if (!shouldContinue) break;
       }
 
       // Mark streaming as complete

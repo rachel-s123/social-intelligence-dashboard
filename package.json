@@ -46,7 +46,7 @@
     "dev": "npm run generate-all && npm start",
     "lint": "eslint src/**/*.{js,jsx}",
     "format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
-    "vercel-build": "CI=false npm run build"
+    "vercel-build": "CI=false GENERATE_SOURCEMAP=false npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,7 +56,8 @@
     "rules": {
       "no-unused-vars": "warn",
       "no-loop-func": "warn",
-      "no-mixed-operators": "warn"
+      "no-mixed-operators": "warn",
+      "react-hooks/exhaustive-deps": "warn"
     }
   },
   "browserslist": {

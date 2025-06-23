@@ -17,7 +17,6 @@ import {
   Grid,
   IconButton,
   Fade,
-  Divider,
   Card,
   Chip,
   FormControl,
@@ -28,7 +27,6 @@ import {
 import { marketData } from '../data/wriData';
 import { attributeResonance } from '../data/attributeResonance';
 import { getMarketDisplayName } from '../utils/marketDisplayName';
-import InfoIcon from '@mui/icons-material/Info';
 import CloseIcon from '@mui/icons-material/Close';
 
 // Utility function to normalize attribute names for matching
@@ -395,7 +393,6 @@ const AttributeHeatmap = ({ selectedMarket }) => {
                     }
                   }}
                 >
-                  {getMarketDisplayName(market)}
                   {getMarketDisplayName(market)}
                 </MenuItem>
               ))}
