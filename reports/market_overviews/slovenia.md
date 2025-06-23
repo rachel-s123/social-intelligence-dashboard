@@ -41,7 +41,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 5]: Slovenian Economic Mirror 1/2025 - UMAR Government Publication
 - [Source 6]: slovenia twistys - FORUM - Adventure Bike Rider
 - [Source 7]: Adventure Bike Rider Forum - FORUM
-- [Source 8]: Is this the new 2025 R1200 G/S ? - UKGSer
+- [Source 8]: Is this the new 2025 R 1200 G/S ? - UKGSer
 - [Source 9]: UKGSer Community Forum
 - [Source 10]: Top 10 Favorite Adventure Motorcycle YouTube Channels (2025) - BMWSportTouring
 - [Source 11]: 100 Motorcycle YouTubers You Must Follow in 2025 - Feedspot
@@ -49,7 +49,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 13]: Alkemist Adventures - Guided Motorcycle Tours
 - [Source 14]: 2025 BMW R 1300 GS Adventure Review - Rider Magazine
 - [Source 15]: 2025 BMW R 1300 GS Adventure First Ride - Cycle World
-- [Source 16]: New 2025 BMW R1300GS Adventure First Impressions: 9 Best Features! - YouTube
+- [Source 16]: New 2025 BMW R 1300 GS Adventure First Impressions: 9 Best Features! - YouTube
 - [Source 17]: 2025 KTM 890 ADVENTURE R – The Ultimate Mid-Weight Adventure Bike - YouTube
 - [Source 18]: THE 2025 KTM 890 ADVENTURE R KEEPS ITS SEAT AS THE ... - KTM Official
 - [Source 19]: 2025 KTM 890 Adventure R Review: The Ultimate Adventure Bike! - YouTube
@@ -68,7 +68,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 32]: Is This the Coolest New BMW Motorcycle Yet? - Motorcyclist
 - [Source 33]: 2025 Ducati DesertX Review: Ultimate Adventure Machine Unleashed! - YouTube
 - [Source 34]: 10 Adventure Bikes Worth Buying In 2025 - Top Speed
-- [Source 35]: 2026 BMW R12 G/S Stokes an Icon's Enduring Spirit - Car and Driver
+- [Source 35]: 2026 BMW R 12 G/S Stokes an Icon's Enduring Spirit - Car and Driver
 - [Source 36]: First look: 2025 KTM 390 Adventure R and X models – sassy saviours of the Austrian manufacturer? - Enduro21
 - [Source 37]: Motorcycle Wholesaling, Retailing & Repair Services in Slovenia - Market Research Report (2014-2029) - IBISWorld
 - [Source 38]: ChopCult | Custom Chopper Motorcycle Forum, Articles and Pictures

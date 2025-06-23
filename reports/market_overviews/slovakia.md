@@ -43,8 +43,8 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 7]: Motocykel.sk: Motocyklový portál
 - [Source 8]: Customs of Slovakia Bratislava - Thunderbike
 - [Source 9]: Adventure Motorcycles Market Size & Growth [2025-2033]
-- [Source 10]: 2025 R1200 G/S sort of retro styling - BMW MOA Forum
-- [Source 11]: 2026 BMW R12 G/S Stokes an Icon's Enduring Spirit - Car and Driver
+- [Source 10]: 2025 R 1200 G/S sort of retro styling - BMW MOA Forum
+- [Source 11]: 2026 BMW R 12 G/S Stokes an Icon's Enduring Spirit - Car and Driver
 - [Source 12]: The new 2026 BMW R 12 G/S
 - [Source 13]: Diskusné fórum: motoride.sk
 - [Source 14]: Dobrodružstvo 4 x inak – test KTM modelová rada Adventure - motocykel.sk
@@ -93,7 +93,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 57]: 2025 H-D® Motorcycles Adventure Touring | Magic City Harley-Davidson®
 - [Source 58]: ARWS Europe - RACES
 - [Source 59]: Boost Your Off-Road Experience with MICTUNING K3 LED Light Pods
-- [Source 60]: New 2025 BMW R12 G/S Walkaround: Everything You Need To Know! - YouTube
+- [Source 60]: New 2025 BMW R 12 G/S Walkaround: Everything You Need To Know! - YouTube
 - [Source 61]: Slovakia Divide 2025 - BIKEPACKING.com
 - [Source 62]: Slovakia: Input VAT deduction limited to 50% on purchase of motor vehicles and motorcycles - KPMG International
 - [Source 63]: Sales Report 2025 Q1: AutoWallis first quarter vehicle sales driven by acquisitions

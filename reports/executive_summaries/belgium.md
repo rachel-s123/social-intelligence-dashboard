@@ -8,7 +8,7 @@
 ## Market Insights
 - Belgian motorcycle market experienced 11.7% growth in 2024 but faces temporary correction in early 2025 due to Euro5+ emissions standards
 - Consumer preferences bifurcated between technology appreciation and simplicity preference, creating distinct market segments with different priorities
-- Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R80 G/S connection
+- Heritage/Retro Styling shows strong resonance (WRI: 82.0) with highly positive pre-launch sentiment for R 12 G/S's authentic R 80 G/S connection
 
 ## Competitor Analysis
 - BMW Motorrad holds 25% share of voice and third position in Belgian sales with 3,322 registrations, indicating strong established presence
@@ -17,6 +17,6 @@
 
 ## Strategic Recommendations
 - **Strategic Positioning:** Establish R 12 G/S as premier "retro-off-road" adventure bike leveraging authentic heritage while addressing manageability concerns
-- **Content & Messaging:** Emphasize "dirt-ready" capability and R80 G/S legacy as emotional differentiators, highlighting lighter weight advantages
+- **Content & Messaging:** Emphasize "dirt-ready" capability and R 80 G/S legacy as emotional differentiators, highlighting lighter weight advantages
 - **Audience Targeting:** Focus on heritage enthusiasts and performance-oriented riders seeking simplicity, plus value-conscious consumers in mid-range segment
 - **Key Opportunity:** Fill market gap between complex technological solutions and simplicity preference through purposeful electronic integration approach

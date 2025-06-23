@@ -17,6 +17,6 @@
 
 ## Strategic Recommendations
 - **Strategic Positioning:** Position BMW R 12 G/S as the authentic heritage adventure bike that solves the weight conundrum while delivering genuine off-road capability
-- **Content & Messaging:** Emphasize authentic R80GS Paris-Dakar lineage backed by modern performance rather than just heritage styling
+- **Content & Messaging:** Emphasize authentic R 80 GS Paris-Dakar lineage backed by modern performance rather than just heritage styling
 - **Audience Targeting:** Target experienced adventurers seeking lighter alternatives and heritage seekers demanding modern capability
 - **Key Opportunity:** Capitalize on the Heritage-Capable sweet spot where consumers desire classic looks backed by genuine off-road performance and manageable weight

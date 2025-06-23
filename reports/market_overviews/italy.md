@@ -82,14 +82,14 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 46: Nuova KTM 1390 Super Adventure 2025 - Quellidellelica Forum BMW
 - Source 47: Le migliori moto da avventura per neofiti : guida all'acquisto - Italiano Enduro
 - Source 48: Moto Avventura nel 2025: Alcune delle migliori opzioni - Motorcycle Sports
-- Source 49: 2025 NEW BMW R12 GS OFFICIALLY ANNOUNCED!! - YouTube
-- Source 50: BMW R12 GS breaks cover — All you need to know - The Financial Express
+- Source 49: 2025 NEW BMW R 12 GS OFFICIALLY ANNOUNCED!! - YouTube
+- Source 50: BMW R 12 GS breaks cover — All you need to know - The Financial Express
 - Source 51: First Ride: 2025 MV Agusta Enduro Veloce | Reviews - Driving.ca
 - Source 52: Best Adventure Motorcycles for Long-Distance Touring 2025 - Naked Racer Moto Co
 - Source 53: Top 10 Middleweight Adventure Bikes 2025 - Lexham Insurance
 - Source 54: 7 Best Middleweight Adventure Motorcycles For 2025 - Viking Bags
 - Source 55: F 800 GS - BMW Motorrad Italia
-- Source 56: Nuova BMW in arrivo: è la R12 G/S. Tutto quello che sappiamo - Moto.it
+- Source 56: Nuova BMW in arrivo: è la R 12 G/S. Tutto quello che sappiamo - Moto.it
 - Source 57: Motorcycle fashion 2025: These trends you can't miss! - Bad and Bold
 - Source 58: Motos da avventura del 2025: Alcune delle migliori opzioni - Motociclismo
 - Source 59: ADVENTURE, ITALIAN-STYLE | Motorcycle Mojo January/February 2025

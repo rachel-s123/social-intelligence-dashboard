@@ -15,11 +15,11 @@
 - **Off-Road Performance**
   - Quote: "Real off-road ability thanks to 21-inch front... wire wheels"
   - Explanation: Off-road performance is consistently identified as a critical discussion point, featuring long-travel suspension, 21-inch front wheels, high ground clearance, and specialized off-road riding modes. Models like the KTM 890 Adventure R and Yamaha Ténéré 700 are often benchmarked for their off-road prowess.
-  - Source: BMW R12 G/S (2025) – Technical Review - Bennes Insurance
+  - Source: BMW R 12 G/S (2025) – Technical Review - Bennes Insurance
 - **Comfort & Ergonomics**
   - Quote: "Ultimate comfort and distance abilities"
   - Explanation: Central to discussions, encompassing aspects such as seat comfort, adjustable seat height, effective wind protection (especially adjustable windshields), and heated grips/seats. The weight of the motorcycle is often linked to comfort, particularly concerning maneuverability at low speeds.
-  - Source: Which BMW GS In 2025? (G310GS vs F900GS vs R1300GS) - YouTube
+  - Source: Which BMW GS In 2025? (G 310 GS vs F 900 GS vs R 1300 GS) - YouTube
 - **Technology & Features**
   - Quote: "Advanced rider aids such as switchable and cornering ABS, traction control, multiple riding modes, TFT displays, quickshifters, cruise control, and connectivity options"
   - Explanation: Highly valued, with discussions frequently revolving around advanced rider aids, multiple riding modes, TFT displays, quickshifters, and connectivity options. These features are increasingly expected as standard and contribute significantly to a bike's appeal.
@@ -39,7 +39,7 @@
 - **Other Key Themes**
   - Quote: "Long-distance touring capability (emphasizing fuel range and luggage capacity) and A2 license compatibility for newer riders"
   - Explanation: Other themes include long-distance touring capability emphasizing fuel range and luggage capacity, and A2 license compatibility for newer riders entering the adventure market.
-  - Source: BMW R12 G/S (2025) – Technical Review - Bennes Insurance
+  - Source: BMW R 12 G/S (2025) – Technical Review - Bennes Insurance
 
 # Sentiment Analysis
 
@@ -143,7 +143,7 @@
 ## Market Opportunities
 
 - **Heritage-Capable Sweet Spot**
-  Opportunity Description: Consumers are not merely seeking retro aesthetics; they desire classic looks backed by modern, genuine capability, particularly in off-road performance. The BMW R 12 G/S's explicit homage to the iconic R80GS Paris-Dakar positions it to capitalize on this growing demand for heritage-styled adventure bikes with authentic capabilities.
+  Opportunity Description: Consumers are not merely seeking retro aesthetics; they desire classic looks backed by modern, genuine capability, particularly in off-road performance. The BMW R 12 G/S's explicit homage to the iconic R 80 GS Paris-Dakar positions it to capitalize on this growing demand for heritage-styled adventure bikes with authentic capabilities.
 
 - **Weight Conundrum Solution**
   Opportunity Description: The universal pain point of weight management across various brands creates opportunity for lighter, more agile adventure bikes. Consumers actively seek solutions that reduce the "intimidation factor" while maintaining capability, particularly for off-road excursions or riders with smaller stature.

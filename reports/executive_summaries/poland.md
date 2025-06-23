@@ -16,7 +16,7 @@
 - BMW's traditional GS series maintains market leadership but faces criticism for perceived limitations in serious off-road conditions despite adventure branding
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R80 G/S legacy
+- **Strategic Positioning:** Position R 12 G/S as authentic off-road heritage alternative addressing credibility gap in BMW's portfolio while leveraging Dakar-winning R 80 G/S legacy
 - **Content & Messaging:** Emphasize genuine off-road capability through compelling terrain demonstrations and heritage storytelling connecting to BMW's rally roots and adventure authenticity
 - **Audience Targeting:** Focus on hardcore off-road enthusiasts seeking BMW alternative to KTM dominance and heritage-conscious riders valuing emotional connection with classic-modern fusion
 - **Key Opportunity:** Fill authentic off-road heritage gap and capture growing retro-adventure niche by demonstrating genuine dirt capability through simplified premium experience

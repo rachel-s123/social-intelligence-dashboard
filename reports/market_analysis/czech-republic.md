@@ -142,7 +142,7 @@
 
 ### BMW R 12 G/S (Pre-launch Speculation)
 **Strengths**
-- Direct heritage lineage to iconic R80 G/S creating strong emotional connection
+- Direct heritage lineage to iconic R 80 G/S creating strong emotional connection
 - Positioned as "dirt-ready retro" combining classic aesthetics with modern off-road capability
 - BMW's established reputation for quality and engineering excellence
 

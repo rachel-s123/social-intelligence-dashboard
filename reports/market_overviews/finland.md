@@ -42,7 +42,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 6]: Yksitoista hyvää syytä, miksi sinun pitäisi hankkia ... - Motouutiset
 - [Source 7]: Two Wheeler Market Report 2025-2030: A $165.38 Billion - GlobeNewswire
 - [Source 8]: Seikkailupyörät - HD Pan America | Overdrive
-- [Source 9]: New 2025 BMW R1250 GS Review | The King of Adventure Bikes Just Got Better - YouTube
+- [Source 9]: New 2025 BMW R 1250 GS Review | The King of Adventure Bikes Just Got Better - YouTube
 - [Source 10]: 2025 BMW R 1300 GS Adventure Review | Rider Magazine
 - [Source 11]: 12 Best Middleweight Adventure Motorcycles For 2025! - YouTube
 - [Source 12]: 2025 KTM 890 ADVENTURE R - ADVENTURE EVERYWHERE | KTM United States
@@ -76,16 +76,16 @@ The insights provided in this dashboard can be leveraged to support key business
 - [Source 40]: New 2025 Triumph Tiger 900 Rally Pro, New Haven VT - Cyclewise Inc.
 - [Source 41]: All New Tiger Sport 800 | For the Ride - Triumph Motorcycles
 - [Source 42]: 2025 Triumph Tiger Sport 660 Carnival Red - Indian Motorcycle® Knoxville
-- [Source 43]: 2025 BMW R12 G/S review - Motorcycle News
+- [Source 43]: 2025 BMW R 12 G/S review - Motorcycle News
 - [Source 44]: Review BMW R 12 GS 2025 – Is This the Coolest Adventure Bike Ever? - YouTube
 - [Source 45]: 2025 Ducati DesertX Buyer's Guide: Specs, Photos, Price | Cycle World
 - [Source 46]: DesertX 2025 | Conquer New Terrain with Ducati Motorcycles
 - [Source 47]: 10 Used Adventure Bikes That Are Worth Buying In 2025 - Top Speed
 - [Source 48]: BMW Motorrad Announces New BMW R 12 G/S - BimmerLife
-- [Source 49]: 2025 NEW BMW R12 GS OFFICIALLY ANNOUNCED!! - YouTube
+- [Source 49]: 2025 NEW BMW R 12 GS OFFICIALLY ANNOUNCED!! - YouTube
 - [Source 50]: 2025 Harley Heritage Classic REVEALED – This Bike Just Changed Everything! - YouTube
 - [Source 51]: Here are my adventure bike & touring plans for 2025… | VLOG - YouTube
-- [Source 52]: BMW R12 GS breaks cover — All you need to know - Bike News
+- [Source 52]: BMW R 12 GS breaks cover — All you need to know - Bike News
 - [Source 53]: finland for motorcycle - MRA Community Forum
 - [Source 54]: Not an ABR just yet - Page 3 - Adventure Bike Rider Forum
 - [Source 55]: Dragon Rally 2025 - Adventure Bike Rider Forum

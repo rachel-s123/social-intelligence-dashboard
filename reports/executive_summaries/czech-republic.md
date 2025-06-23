@@ -16,7 +16,7 @@
 - KTM faces ongoing reliability concerns while Honda benefits from strong dependability reputation
 
 ## Strategic Recommendations
-- **Strategic Positioning:** Position as authentic heritage leader combining iconic R80 G/S lineage with modern off-road capability and premium quality standard
+- **Strategic Positioning:** Position as authentic heritage leader combining iconic R 80 G/S lineage with modern off-road capability and premium quality standard
 - **Content & Messaging:** Emphasize genuine off-road prowess, authentic heritage narrative, and BMW's reliability reputation as competitive differentiation
 - **Audience Targeting:** Focus on heritage enthusiasts, experienced adventure riders prioritizing genuine capability, and premium buyers concerned about competitor reliability
 - **Key Opportunity:** Capitalize on market gap for heritage-styled adventure bike that bridges classic aesthetics with serious modern off-road capability

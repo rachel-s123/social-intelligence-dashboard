@@ -47,8 +47,8 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 11: 2025 NEW BMW R 12 GS OFFICIALLY INTRODUCED!! - YouTube
 - Source 12: Viaje a cabo norte 2025 - BMWMotos.com
 - Source 13: NCX 750 2025 ¿moto para jubilarse o moto para jubilados? - BMWMotos.com
-- Source 14: BMW R1300GS Adventure 2025 vs. R1250GS Adventure - YouTube
-- Source 15: CERRADO - Nueva R1300RT - BMWMOTOS.COM
+- Source 14: BMW R 1300 GS Adventure 2025 vs. R 1250 GS Adventure - YouTube
+- Source 15: CERRADO - Nueva R 1300 RT - BMWMOTOS.COM
 - Source 16: Ktm 390 2025 - BMWMOTOS.COM
 - Source 17: ¿Os compraríais una Triumph? - BMWMOTOS.COM
 - Source 18: BMWMOTOS.COM Forum
@@ -98,7 +98,7 @@ The insights provided in this dashboard can be leveraged to support key business
 - Source 62: Festival "off-road" Motor Aventura 2025 - Diputación Provincial de Teruel
 - Source 63: 900DSX - VOGE MOTOS ESPAÑA
 - Source 64: G Adventures: Adventure Tours & Small Group Trips
-- Source 65: 3500 Mile Review of R1300GSA ASA - UKGSer
+- Source 65: 3500 Mile Review of R 1300 GSA ASA - UKGSer
 - Source 66: Top 12 Open-class ADV Bikes 2025 - Cycle World
 - Source 67: Foros – clubdemotosbmw
 - Source 68: New 1300GS ADV vs 1250GS ADV - UKGSer

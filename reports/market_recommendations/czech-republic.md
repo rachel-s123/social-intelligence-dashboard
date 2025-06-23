@@ -4,7 +4,7 @@ Strategic insights and recommendations for Czech Republic based on comprehensive
 
 ## Strategic Positioning
 Based on comprehensive market analysis, BMW should position itself as:
-- Authentic heritage leader combining iconic R80 G/S lineage with modern off-road capability
+- Authentic heritage leader combining iconic R 80 G/S lineage with modern off-road capability
 - Premium quality and reliability standard-bearer in market concerned about competitor dependability issues
 - Genuine adventure capability provider delivering "dirt-ready retro" performance rather than aesthetic resemblance
 - Emotional connection creator through distinctive character and authentic G/S spirit of simplicity, ruggedness, and adventure readiness
@@ -12,7 +12,7 @@ Based on comprehensive market analysis, BMW should position itself as:
 ## Content & Messaging
 Key messaging priorities based on conversation analysis and attribute resonance:
 - Emphasize genuine off-road prowess through suspension travel, wheel sizes, and ground clearance specifications
-- Highlight authentic heritage narrative connecting R 12 G/S directly to legendary R80 G/S while demonstrating modern capability
+- Highlight authentic heritage narrative connecting R 12 G/S directly to legendary R 80 G/S while demonstrating modern capability
 - Communicate balanced engine performance suitable for diverse riding scenarios with smooth, tractable power delivery
 - Reinforce BMW's established reputation for reliability and quality as competitive differentiation against reliability-concerned competitors
 

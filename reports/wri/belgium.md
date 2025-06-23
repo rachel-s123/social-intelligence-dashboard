@@ -87,7 +87,7 @@ Connected Features (TFT, Smartphone Integration):
 - Recommendation: Implement intuitive connectivity features that enhance the riding experience without creating dependency or complexity, focusing on practical applications like navigation and ride data.
 
 Heritage/Retro Styling:
-- Insight: Strong positive pre-launch resonance for R 12 G/S with discussions highlighting "retro styling" and "visual tribute" to R80 G/S. This provides unique historical depth and emotional differentiation.
+- Insight: Strong positive pre-launch resonance for R 12 G/S with discussions highlighting "retro styling" and "visual tribute" to R 80 G/S. This provides unique historical depth and emotional differentiation.
 - Recommendation: Leverage authentic heritage connections as powerful emotional differentiators, emphasizing historical significance and proven legacy rather than superficial retro styling trends.
 
 Brand Reliability:

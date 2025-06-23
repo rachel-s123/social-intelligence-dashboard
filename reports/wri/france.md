@@ -64,7 +64,7 @@ Comfort & Ergonomics:
 
 Manageability/Weight:
 - Insight: A prominent desire in consumer conversations, particularly concerning low-speed handling and off-road excursions. Experts identify it as a significant pain point for larger bikes and a competitive advantage for lighter alternatives. Strong preference for motorcycles that are easier to handle.
-- Recommendation: Leverage the lighter R12 platform advantage and emphasize agility benefits. Position as a more manageable alternative to heavier maxi-trails while maintaining adventure capabilities.
+- Recommendation: Leverage the lighter R 12 platform advantage and emphasize agility benefits. Position as a more manageable alternative to heavier maxi-trails while maintaining adventure capabilities.
 
 Versatility (Dual-Purpose Capability):
 - Insight: The inherent versatility of adventure bikes is a key appeal, with consumers expecting strong performance across diverse terrains and journey types, from off-road trails to extended road tours. Consumers seek a true "adventure" machine that can transition seamlessly.
@@ -96,7 +96,7 @@ Brand Reliability:
 
 Heritage/Retro Styling:
 - Insight: Compelling evidence of growing consumer interest, with explicit positioning of new models and praise for "Dakar rallye style" in popular models. Consumers are drawn to authenticity, nostalgia, and connection to historical narratives of adventure motorcycling.
-- Recommendation: Strongly emphasize authentic connection to R80GS Paris-Dakar legacy and R 90 S heritage while demonstrating how classic design elements are integrated with modern performance capabilities.
+- Recommendation: Strongly emphasize authentic connection to R 80 GS Paris-Dakar legacy and R 90 S heritage while demonstrating how classic design elements are integrated with modern performance capabilities.
 
 Seat Height & Accessibility:
 - Insight: Linked to manageability and comfort, with consumers expressing concerns about managing weight and accessibility, particularly for riders of smaller stature. Riders value the ability to comfortably manage the motorcycle at standstill and in various conditions.
@@ -136,8 +136,8 @@ Aftermarket Support & Customizability:
 
 ### Strategic Recommendations
 - Position the BMW R 12 G/S as the authentic heritage adventure bike with genuine off-road capability and manageable weight
-- Leverage the explicit lineage to R80GS Paris-Dakar and R 90 S for authentic heritage positioning backed by modern performance
-- Emphasize the lighter R12 platform advantage as a solution to the "weight conundrum" while maintaining adventure capabilities
+- Leverage the explicit lineage to R 80 GS Paris-Dakar and R 90 S for authentic heritage positioning backed by modern performance
+- Emphasize the lighter R 12 platform advantage as a solution to the "weight conundrum" while maintaining adventure capabilities
 - Target both experienced adventurers seeking simpler, lighter alternatives and new heritage seekers drawn to retro aesthetics
 - Focus marketing on demonstrating real off-road prowess rather than just heritage styling
 - Justify premium pricing through superior off-road features, advanced technology, and authentic heritage value
@@ -145,7 +145,7 @@ Aftermarket Support & Customizability:
 Priorities:
 - Demonstrate authentic off-road capability through 21-inch front wheel, long suspension travel, and dedicated Enduro riding modes
 - Emphasize manageable weight and agility advantages over heavier maxi-trails
-- Showcase heritage authenticity with direct R80GS Paris-Dakar and R 90 S lineage
+- Showcase heritage authenticity with direct R 80 GS Paris-Dakar and R 90 S lineage
 - Highlight balanced versatility for both serious off-road and comfortable road touring
 - Position competitively in upper mid-range with clear value justification
 - Leverage BMW's reliability reputation while addressing modern technology expectations
