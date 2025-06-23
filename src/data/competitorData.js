@@ -117,8 +117,7 @@ export const competitorData = {
         "Positioned in \"exclusive segment\" with premium pricing (€19,590 in Austria)",
         "Pre-launch uncertainty about actual performance capabilities",
         "Risk of being perceived as \"visual tribute\" rather than genuine adventure bike",
-        "Market concerns about whether it will deliver authentic off-road prowess",
-        ""
+        "Market concerns about whether it will deliver authentic off-road prowess"
       ]
     },
     "gapsToExploit": [
@@ -216,8 +215,7 @@ export const competitorData = {
       "Ducati DesertX": [
         "Significant wind noise and buffeting issues",
         "High price point limiting accessibility",
-        "Heavy for single track riding and tall gearbox",
-        ""
+        "Heavy for single track riding and tall gearbox"
       ]
     },
     "gapsToExploit": [
@@ -318,8 +316,7 @@ export const competitorData = {
       ],
       "Zero": [
         "Limited specific information provided in source reports",
-        "Analysis focused on traditional internal combustion engine adventure segment",
-        ""
+        "Analysis focused on traditional internal combustion engine adventure segment"
       ]
     },
     "gapsToExploit": [
@@ -427,8 +424,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-launch Speculation)": [
         "Positioned as \"stripped-down feel-good bike\" rather than long-distance touring machine",
         "Limited wind protection compared to larger adventure tourers",
-        "Higher expected price point potentially limiting market accessibility",
-        ""
+        "Higher expected price point potentially limiting market accessibility"
       ]
     },
     "gapsToExploit": [
@@ -522,8 +518,7 @@ export const competitorData = {
       "BMW GS Series (R 1300 GS Adventure)": [
         "Size requires more rider effort in twisty road sections",
         "Substantial weight can be limiting factor in aggressive off-road scenarios",
-        "Premium pricing may limit market accessibility",
-        ""
+        "Premium pricing may limit market accessibility"
       ]
     },
     "gapsToExploit": [
@@ -631,8 +626,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-Launch)": [
         "Premium pricing requires justification against more affordable heritage alternatives",
         "Unproven in market with pre-launch speculation only",
-        "May face challenges balancing heritage appeal with modern performance expectations",
-        ""
+        "May face challenges balancing heritage appeal with modern performance expectations"
       ]
     },
     "gapsToExploit": [
@@ -730,8 +724,7 @@ export const competitorData = {
       "KTM 890 Adventure R": [
         "More specialized focus may limit appeal to riders seeking balanced road/off-road capability",
         "Aggressive positioning may intimidate less experienced adventure riders",
-        "Higher maintenance requirements typical of performance-oriented KTM models",
-        ""
+        "Higher maintenance requirements typical of performance-oriented KTM models"
       ]
     },
     "gapsToExploit": [
@@ -849,8 +842,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-Launch)": [
         "Pre-launch feedback indicates \"hard seat and lack of wind protection\" affecting long-distance comfort",
         "Potential technology integration complexity based on competitor experiences",
-        "Unproven market performance compared to established competitors",
-        ""
+        "Unproven market performance compared to established competitors"
       ]
     },
     "gapsToExploit": [
@@ -966,8 +958,7 @@ export const competitorData = {
       "KTM": [
         "Limited presence in mass market segments compared to Honda and BMW",
         "Smaller market share relative to leading competitors",
-        "Focus on specific off-road niche may limit broader appeal",
-        ""
+        "Focus on specific off-road niche may limit broader appeal"
       ]
     },
     "gapsToExploit": [
@@ -1053,8 +1044,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-Launch)": [
         "As pre-launch model, lacks proven market performance and real-world user feedback",
         "Heritage positioning may limit appeal to riders seeking cutting-edge modern design",
-        "Needs to balance nostalgic appeal with competitive modern performance expectations",
-        ""
+        "Needs to balance nostalgic appeal with competitive modern performance expectations"
       ]
     },
     "gapsToExploit": [
@@ -1182,8 +1172,7 @@ export const competitorData = {
       "Triumph Tiger 900": [
         "May lack distinctive character compared to more specialized alternatives",
         "Limited off-road capability compared to dedicated off-road focused models",
-        "Smaller dealer network compared to major Japanese manufacturers",
-        ""
+        "Smaller dealer network compared to major Japanese manufacturers"
       ]
     },
     "gapsToExploit": [
@@ -1318,8 +1307,7 @@ export const competitorData = {
       "Ducati DesertX": [
         "Significant wind noise and buffeting issues frequently mentioned",
         "High seat height accessibility concerns for some riders",
-        "Premium pricing may limit market appeal in cost-conscious Norwegian market",
-        ""
+        "Premium pricing may limit market appeal in cost-conscious Norwegian market"
       ]
     },
     "gapsToExploit": [
@@ -1427,8 +1415,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-Launch)": [
         "Unproven performance in market requiring demonstration of capabilities",
         "Potential cannibalization of existing BMW GS models",
-        "Premium pricing may limit market reach compared to value competitors",
-        ""
+        "Premium pricing may limit market reach compared to value competitors"
       ]
     },
     "gapsToExploit": [
@@ -1536,8 +1523,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-launch Speculation)": [
         "Heritage focus may be perceived as less capable than modern competitors",
         "Must prove modern adventure capabilities to gain market acceptance",
-        "Higher expected price point requiring strong value proposition justification",
-        ""
+        "Higher expected price point requiring strong value proposition justification"
       ]
     },
     "gapsToExploit": [
@@ -1665,8 +1651,7 @@ export const competitorData = {
       "CF Moto (Other Adventure Bikes)": [
         "Front brake lacks modulation affecting rider confidence",
         "Stock seat uncomfortable for taller riders limiting ergonomic appeal",
-        "Weight considered \"challenging for beginners\" in slow off-road conditions",
-        ""
+        "Weight considered \"challenging for beginners\" in slow off-road conditions"
       ]
     },
     "gapsToExploit": [
@@ -1774,8 +1759,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-launch Speculative Insights)": [
         "Unproven market reception as pre-launch model with no established user base",
         "Potential weight concerns given consumer preference for lighter alternatives (over 50% report difficulty with heavy models)",
-        "Premium pricing may limit accessibility compared to budget-friendly segment leaders",
-        ""
+        "Premium pricing may limit accessibility compared to budget-friendly segment leaders"
       ]
     },
     "gapsToExploit": [
@@ -1873,8 +1857,7 @@ export const competitorData = {
       "Yamaha Ténéré 700": [
         "Lacks cruise control which is desired by many riders",
         "Braking performance noted as not the sharpest in terms of stopping power",
-        "Still uses tube tires while competitors offer tubeless options",
-        ""
+        "Still uses tube tires while competitors offer tubeless options"
       ]
     },
     "gapsToExploit": [
@@ -1976,8 +1959,7 @@ export const competitorData = {
       "Honda Africa Twin": [
         "Some critiques exist regarding specific features",
         "Less distinctive character compared to specialized competitors",
-        "Conservative approach may limit innovation perception",
-        ""
+        "Conservative approach may limit innovation perception"
       ]
     },
     "gapsToExploit": [
@@ -2076,8 +2058,7 @@ export const competitorData = {
       "BMW R 12 G/S (Speculative Pre-Launch)": [
         "Pre-launch speculation limits confirmed performance data",
         "Potential internal competition with existing F-series GS models",
-        "May need to prove capability against established mid-weight competitors",
-        ""
+        "May need to prove capability against established mid-weight competitors"
       ]
     },
     "gapsToExploit": [
@@ -2185,8 +2166,7 @@ export const competitorData = {
       "BMW R 12 G/S (Pre-launch)": [
         "Unproven market performance as pre-launch model",
         "Expected premium pricing may limit market accessibility",
-        "Must deliver on high consumer expectations for authentic off-road performance to justify heritage positioning",
-        ""
+        "Must deliver on high consumer expectations for authentic off-road performance to justify heritage positioning"
       ]
     },
     "gapsToExploit": [
@@ -2284,8 +2264,7 @@ export const competitorData = {
       "Ducati DesertX": [
         "Wind noise issues with OEM screen setup",
         "Wheel limitations for hardcore off-road use",
-        "Suspension could be better despite being adequate",
-        ""
+        "Suspension could be better despite being adequate"
       ]
     },
     "gapsToExploit": [
