@@ -85,16 +85,23 @@ To get started, simply type your question about the market data or reports. I'll
     abortControllerRef.current = new AbortController();
 
     try {
+      // Filter out the welcome message and only send actual conversation messages
+      const conversationMessages = [...messages, userMessage]
+        .filter(msg => msg.role !== "assistant" || !msg.content.includes("Welcome to the BMW Motorrad AI Assistant"))
+        .map((msg) => ({
+          role: msg.role,
+          content: msg.content,
+        }));
+
+      console.log("Sending messages to API:", conversationMessages);
+
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          messages: [...messages, userMessage].map((msg) => ({
-            role: msg.role,
-            content: msg.content,
-          })),
+          messages: conversationMessages,
         }),
         signal: abortControllerRef.current.signal,
       });

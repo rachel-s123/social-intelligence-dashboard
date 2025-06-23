@@ -24,10 +24,55 @@ const openai = new OpenAI({
 
 const VECTOR_STORE_ID = process.env.VS_STORE_ID;
 
+// Test chat endpoint (simple, no vector store)
+app.post("/api/test-chat", async (req, res) => {
+  try {
+    const { messages } = req.body;
+
+    if (!messages || !Array.isArray(messages)) {
+      return res.status(400).json({ error: "Messages array is required" });
+    }
+
+    // Simple test without vector store
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content: "You are a helpful AI assistant for BMW Motorrad market analysis. Keep responses brief and focused."
+        },
+        ...messages
+      ],
+      stream: false,
+      temperature: 0.2,
+      max_tokens: 500,
+    });
+
+    const content = response.choices[0]?.message?.content || "No response generated";
+    
+    res.json({
+      choices: [{
+        message: {
+          content: content
+        }
+      }]
+    });
+
+  } catch (error) {
+    console.error("Test chat API error:", error);
+    res.status(500).json({
+      error: "Failed to get AI response",
+      details: error.message,
+    });
+  }
+});
+
 // Chat API endpoint using Chat Completions with vector store retrieval
 app.post("/api/chat", async (req, res) => {
   try {
     const { messages } = req.body;
+
+    console.log("Received chat request with messages:", messages);
 
     if (!messages || !Array.isArray(messages)) {
       return res.status(400).json({ error: "Messages array is required" });
@@ -42,9 +87,19 @@ app.post("/api/chat", async (req, res) => {
     // Get the latest user message for vector store search
     const latestUserMessage = messages[messages.length - 1];
 
+    console.log("Latest user message:", latestUserMessage.content);
+
     // Search vector store for relevant context
     let contextFromVectorStore = "";
     try {
+      console.log("Starting vector store search with ID:", VECTOR_STORE_ID);
+      
+      // Add timeout to vector store search
+      const searchTimeout = setTimeout(() => {
+        console.log("Vector store search timed out, proceeding without context");
+        throw new Error("Vector store search timeout");
+      }, 15000); // 15 second timeout
+      
       // Create a temporary assistant just for file search
       const searchAssistant = await openai.beta.assistants.create({
         name: "Search Assistant",
@@ -59,6 +114,8 @@ app.post("/api/chat", async (req, res) => {
         },
       });
 
+      console.log("Created search assistant:", searchAssistant.id);
+
       // Create thread and search
       const thread = await openai.beta.threads.create();
       await openai.beta.threads.messages.create(thread.id, {
@@ -66,9 +123,14 @@ app.post("/api/chat", async (req, res) => {
         content: `Search for information relevant to: ${latestUserMessage.content}`,
       });
 
+      console.log("Created thread and message, starting run...");
+
       const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
         assistant_id: searchAssistant.id,
+        poll_interval_ms: 1000, // Poll every second
       });
+
+      console.log("Run completed with status:", run.status);
 
       if (run.status === "completed") {
         const threadMessages = await openai.beta.threads.messages.list(
@@ -79,11 +141,17 @@ app.post("/api/chat", async (req, res) => {
         );
         if (assistantMessage && assistantMessage.content[0]) {
           contextFromVectorStore = assistantMessage.content[0].text.value;
+          console.log("Found context from vector store:", contextFromVectorStore.substring(0, 200) + "...");
         }
+      } else {
+        console.log("Run failed or timed out with status:", run.status);
       }
 
       // Clean up
       await openai.beta.assistants.del(searchAssistant.id);
+      console.log("Cleaned up search assistant");
+      
+      clearTimeout(searchTimeout);
     } catch (searchError) {
       console.log(
         "Vector store search failed, proceeding without context:",
