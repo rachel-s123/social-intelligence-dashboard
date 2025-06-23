@@ -192,15 +192,6 @@ const DashboardIntro = ({ selectedMarket }) => {
       return () => clearTimeout(timeout);
     }
   };
-
-  // Enhanced console logging for debugging
-  console.log('DashboardIntro Debug:');
-  console.log('- Selected Market:', selectedMarket);
-  console.log('- Available Market Keys:', Object.keys(marketSources));
-  console.log('- Found Market Key:', marketKey);
-  console.log('- Sources Array:', sources);
-  console.log('- Tab Value:', tabValue);
-
   return (
     <Paper sx={{ p: 4, background: '#f8fafc' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
