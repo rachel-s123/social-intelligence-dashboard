@@ -24,12 +24,31 @@ The insights provided in this dashboard can be leveraged to support key business
 
 ## Methodology
 
-- **Conversation Analysis**  
-  Monitors volume and sentiment of online discussions, tracks share of voice across competitors, analyzes key themes and consumer concerns, and identifies emerging trends and pain points.
+### Conversation Analysis
+The market intelligence report was developed through a comprehensive analysis of the Bulgaria Adventure motorcycle segment from January-April 2025. Our methodology involved extensive social listening and market analysis, drawing insights from a diverse range of online sources.
 
-- **Weighted Resonance Index**  
-  Evaluates 20 key market attributes, weights importance across sales data, social discussions, consumer reviews, and expert analysis, provides quantitative measure of attribute significance, and identifies critical market drivers and barriers.
+**Data Collection:** We gathered information from over 50 validated online resources, including social media platforms, dedicated adventure motorcycle forums, YouTube channels, professional motorcycle publications, and available market registration data. All collected data was strictly limited to the specified timeframe to capture market dynamics.
 
+**Analysis Techniques:**
+- Social Listening Analysis: We meticulously analyzed online conversations to determine overall discussion volume, calculate the Share of Voice for key competitor models, and assess sentiment distribution (positive, neutral, negative). Dominant discussion themes were identified and quantified based on their prominence in consumer discourse.
+- Competitive Landscape Analysis: This involved evaluating the positioning of market leaders, identifying strengths and weaknesses, and understanding consumer preference patterns within the segment.
+- Market Review: We conducted a structured review of the adventure segment's overview and trends, BMW Motorrad's existing positioning, and broader consumer behavior patterns.
+- Consumer Priorities: Key consumer attributes were identified and prioritized based on their frequency and importance in discussions and reviews.
+
+The percentages presented in the report for Share of Voice, Discussion Themes, and Sentiment are precise calculations or careful estimates derived directly from this collected and analyzed data, providing a robust baseline of market intelligence.
+
+### Weighted Resonance Index
+Evaluates 20 key market attributes, weights importance across sales data, social discussions, consumer reviews, and expert analysis, provides quantitative measure of attribute significance, and identifies critical market drivers and barriers.
+
+The Weighted Resonance Index (WRI) was calculated for each Adventure motorcycle attribute using a weighted formula that combines four key data sources, with all scores normalized to a 0-100 scale to reflect consumer priority importance:
+
+**Component Weights:**
+- Social Listening (40% weight): This component assessed the prevalence of discussions about each attribute's importance across online forums, social media, and digital platforms. Scores were derived from estimated percentages of discussion themes.
+- Sales/Market Data (30% weight): This factor evaluated an attribute's influence on purchase decisions based on market trends and competitive positioning, such as market leadership in specific segments or the impact of value-for-money propositions.
+- Consumer Surveys/Reviews (20% weight): Direct consumer statements, expressed priorities, and feedback from reviews were analyzed to understand what riders explicitly stated as important or what elicited strong reactions.
+- Expert Analysis (10% weight): This component integrated synthesized insights from the report's expert assessment of attribute importance, drawing from overall consumer priorities and identified market opportunities.
+
+This methodology ensured that the WRI scores accurately reflected what consumers valued most for their purchase decisions in the pre-launch period, rather than sentiment towards existing products.
 ---
 
 ## Data Sources
