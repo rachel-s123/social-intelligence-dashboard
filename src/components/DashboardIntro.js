@@ -21,6 +21,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { getMarketIntroduction, marketIntroductions } from '../data/marketIntroductions';
 import { marketSources } from '../data/marketSources';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 // Set up the worker for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -165,7 +166,7 @@ const DashboardIntro = ({ selectedMarket }) => {
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = `/reports/${selectedMarket.toLowerCase()}_report.pdf`;
-    link.download = `${selectedMarket}_report.pdf`;
+    link.download = `${getMarketDisplayName(selectedMarket)}_report.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -295,7 +296,7 @@ const DashboardIntro = ({ selectedMarket }) => {
         {selectedMarket && sources.length > 0 ? (
           <Box>
             <Typography variant="h6" sx={{ mb: 3 }}>
-              Data Sources for {selectedMarket}
+              Data Sources for {getMarketDisplayName(selectedMarket)}
             </Typography>
             {sources.map((source, index) => (
               <SourceItem key={index} source={source} />

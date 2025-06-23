@@ -10,6 +10,7 @@ import {
   useTheme
 } from '@mui/material';
 import { marketInsights } from '../data/wriInsights';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const StrategyCard = ({ content }) => {
   const theme = useTheme();
@@ -81,7 +82,7 @@ const StrategicDirection = ({ selectedMarket }) => {
     return (
       <Paper elevation={3} sx={{ p: 3, mb: 4 }}>
         <Typography variant="h5" gutterBottom>
-          No strategic data available for {selectedMarket}
+          No strategic data available for {getMarketDisplayName(selectedMarket)}
         </Typography>
       </Paper>
     );
@@ -108,7 +109,7 @@ const StrategicDirection = ({ selectedMarket }) => {
           mb: 3
         }}
       >
-        Strategic Recommendations for {selectedMarket}
+        Strategic Recommendations for {getMarketDisplayName(selectedMarket)}
       </Typography>
       <Grid container spacing={3} sx={{ mb: 4 }}>
         {recommendations.map((rec) => (

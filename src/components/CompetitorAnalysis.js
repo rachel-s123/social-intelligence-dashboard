@@ -9,6 +9,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
 import { getCompetitorData } from '../data/competitorData';
+import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const ICONS = [
   <TrendingUpIcon color="primary" />, // 0
@@ -131,7 +132,7 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
             Share of Voice (Q1 2025)
           </Typography>
           {selectedMarket && (
-            <MuiTooltip title={SOV_CONTEXT(selectedMarket)} arrow>
+            <MuiTooltip title={SOV_CONTEXT(getMarketDisplayName(selectedMarket))} arrow>
               <IconButton size="small" sx={{ color: 'primary.main' }}>
                 <InfoOutlinedIcon fontSize="small" />
               </IconButton>
@@ -192,7 +193,7 @@ const CompetitorAnalysis = ({ selectedMarket }) => {
         Competitor Analysis
       </Typography>
       <Typography variant="subtitle1" color="text.secondary" sx={{ mb: 3 }}>
-        Key strengths, weaknesses, and opportunities for each major competitor in {selectedMarket}.
+        Key strengths, weaknesses, and opportunities for each major competitor in {getMarketDisplayName(selectedMarket)}.
       </Typography>
       <Grid container spacing={3}>
         {Object.entries(data.competitorStrengths).map(([competitor, strengths], idx) => (
