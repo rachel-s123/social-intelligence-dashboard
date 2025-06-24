@@ -34,6 +34,11 @@ Place markdown reports in the following directories:
 - `reports/executive_summaries/` - Executive summary reports
 - `reports/market_recommendations/` - Market recommendations
 - `reports/market_overviews/` - Market overview reports
+- `reports/model_analysis/` - Model analysis reports
+
+When creating new model analysis markdown files, copy `templates/model_report_template.md`
+into the `reports/model_analysis/` directory and fill in the sections with your
+model-specific insights.
 
 ## Data Generation
 
@@ -48,6 +53,7 @@ The dashboard requires several data files to be generated from the markdown repo
 - `marketIntroductions.js` - Market introductions
 - `marketSources.js` - Market sources
 - `attributeResonance.js` - Attribute resonance data
+- `modelInsights.js` - Model analysis data
 
 Generate these files by running the following scripts:
 ***REMOVED***
@@ -68,6 +74,9 @@ npm run generate-market-recommendations
 
 # Generate market introductions
 npm run generate-market-introductions
+
+# Generate model insights
+npm run generate-model-insights
 ***REMOVED***
 
 ## PDF Reports
@@ -78,7 +87,9 @@ npm run generate-market-introductions
    ***REMOVED***
    Example: `public/reports/france_report.pdf`
 
-2. Place model PDF reports in the `public/reports/models/` directory:
+2. Place model PDF reports in the `public/reports/models/` directory. Create the
+   `models` subfolder inside `public/reports/` if it does not exist. Name each
+   file after the model:
    ***REMOVED***
    public/reports/models/{model}.pdf
    ***REMOVED***
