@@ -14,6 +14,7 @@ import "./styles/fonts.css";
 import DashboardIntro from "./components/DashboardIntro";
 import AttributeHeatmap from "./components/AttributeHeatmap";
 import MarketSelector from "./components/MarketSelector";
+import ModelSelector from "./components/ModelSelector";
 import ConversationInsights from "./components/ConversationInsights";
 import CompetitorAnalysis from "./components/CompetitorAnalysis";
 import ExecutiveSummary from "./components/ExecutiveSummary";
@@ -21,6 +22,7 @@ import MarketWRIScoreCards from "./components/MarketWRIScoreCards";
 import WRIStrategicDirection from "./components/WRIStrategicDirection";
 import AttributeResonanceDefinition from "./components/AttributeResonanceDefinition";
 import MarketRecommendations from "./components/MarketRecommendations";
+import ModelInsights from "./components/ModelInsights";
 import AIChatPanel from "./components/AIChatPanel";
 import AIFloatingButton from "./components/AIFloatingButton";
 import bmwLogo from "./assets/bmw-black.jpg";
@@ -44,6 +46,7 @@ function TabPanel(props) {
 
 function App() {
   const [selectedMarket, setSelectedMarket] = useState("france");
+  const [selectedModel, setSelectedModel] = useState("R 12 G/S");
   const [currentTab, setCurrentTab] = useState(0);
   const [loggedIn, setLoggedIn] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -143,6 +146,10 @@ function App() {
                 selectedMarket={selectedMarket}
                 onMarketChange={setSelectedMarket}
               />
+              <ModelSelector
+                selectedModel={selectedModel}
+                onModelChange={setSelectedModel}
+              />
             </Box>
 
             <Paper sx={{ mb: 3 }}>
@@ -174,6 +181,7 @@ function App() {
                 <Tab label="Market Insights" />
                 <Tab label="Competitor Analysis" />
                 <Tab label="Recommendations" />
+                <Tab label="Model Insights" />
               </Tabs>
             </Paper>
 
@@ -208,6 +216,10 @@ function App() {
 
             <TabPanel value={currentTab} index={5}>
               <MarketRecommendations selectedMarket={selectedMarket} />
+            </TabPanel>
+
+            <TabPanel value={currentTab} index={6}>
+              <ModelInsights selectedModel={selectedModel} />
             </TabPanel>
 
             <Box
