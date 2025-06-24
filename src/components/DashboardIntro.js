@@ -390,7 +390,7 @@ const DashboardIntro = ({ selectedMarket }) => {
                 position: 'relative'
               }}>
                 <Document
-                  file={`/reports/${selectedMarket.toLowerCase()}_report.pdf`}
+                  file={`/reports/${selectedMarket.toLowerCase()}.pdf`}
                   onLoadSuccess={onDocumentLoadSuccess}
                   loading={
                     <Box sx={{ p: 4, textAlign: 'center' }}>
