@@ -36,10 +36,11 @@ function parseThemeInsights(content) {
     const lines = block.split('\n').map(line => line.trim());
     const themeName = lines[0].replace(/\*\*|\*/g, '').trim();
     
-    // Find quote, explanation, and source
+    // Find quote, explanation, source, and insight
     let quote = '';
     let explanation = '';
     let source = '';
+    let insight = '';
 
     for (let i = 1; i < lines.length; i++) {
       const line = lines[i];
@@ -49,6 +50,8 @@ function parseThemeInsights(content) {
         explanation = line.replace('- Explanation:', '').trim();
       } else if (line.startsWith('- Source:')) {
         source = line.replace('- Source:', '').trim();
+      } else if (line.startsWith('- Insight:')) {
+        insight = line.replace('- Insight:', '').trim();
       }
     }
 
@@ -56,7 +59,12 @@ function parseThemeInsights(content) {
       if (!themeInsights[themeName]) {
         themeInsights[themeName] = [];
       }
-      themeInsights[themeName].push({ quote, context: explanation, source });
+      themeInsights[themeName].push({ 
+        quote, 
+        context: explanation, 
+        source,
+        insight: insight || '' // Include insight if available
+      });
     }
   });
 
@@ -102,6 +110,7 @@ function parseSentimentInsights(content) {
   let currentQuote = null;
   let currentExplanation = null;
   let currentSource = null;
+  let currentInsight = null;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i].trim();
@@ -125,7 +134,8 @@ function parseSentimentInsights(content) {
           insights[currentSentiment].push({
             quote: currentQuote,
             context: currentExplanation,
-            source: currentSource
+            source: currentSource,
+            insight: currentInsight || '' // Include insight if available
           });
         }
 
@@ -133,6 +143,7 @@ function parseSentimentInsights(content) {
         currentQuote = null;
         currentExplanation = null;
         currentSource = null;
+        currentInsight = null;
 
         // Extract sentiment type
         const sentimentMatch = line.match(/### (Positive|Neutral|Negative) Sentiment/);
@@ -150,7 +161,8 @@ function parseSentimentInsights(content) {
           insights[currentSentiment].push({
             quote: currentQuote,
             context: currentExplanation,
-            source: currentSource
+            source: currentSource,
+            insight: currentInsight || '' // Include insight if available
           });
         }
 
@@ -158,6 +170,7 @@ function parseSentimentInsights(content) {
         currentQuote = null;
         currentExplanation = null;
         currentSource = null;
+        currentInsight = null;
 
         // Extract quote
         const quoteMatch = line.match(/- Quote \d+:\s*"([^"]*)"/);
@@ -182,6 +195,13 @@ function parseSentimentInsights(content) {
         continue;
       }
 
+      // Check for insight
+      if (line.startsWith('- Insight:')) {
+        currentInsight = line.replace('- Insight:', '').trim();
+        console.log('Found insight:', currentInsight);
+        continue;
+      }
+
       // If we hit a new section, break out
       if (line.startsWith('## ') || line.startsWith('# ')) {
         break;
@@ -194,7 +214,8 @@ function parseSentimentInsights(content) {
     insights[currentSentiment].push({
       quote: currentQuote,
       context: currentExplanation,
-      source: currentSource
+      source: currentSource,
+      insight: currentInsight || '' // Include insight if available
     });
   }
 

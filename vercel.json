@@ -6,6 +6,11 @@
   "env": {
     "CI": "false"
   },
+  "functions": {
+    "api/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "routes": [
     {
       "src": "/api/(.*)",

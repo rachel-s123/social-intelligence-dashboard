@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import {
   Container,
@@ -27,6 +27,7 @@ import AIChatPanel from "./components/AIChatPanel";
 import AIFloatingButton from "./components/AIFloatingButton";
 import bmwLogo from "./assets/bmw-black.jpg";
 import Login from "./components/Login";
+import { modelInsights } from './data/modelInsights';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,10 +47,22 @@ function TabPanel(props) {
 
 function App() {
   const [selectedMarket, setSelectedMarket] = useState("france");
-  const [selectedModel, setSelectedModel] = useState("R 12 G/S");
+  const [selectedModel, setSelectedModel] = useState("");
   const [currentTab, setCurrentTab] = useState(0);
   const [loggedIn, setLoggedIn] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
+
+  // Get available models for the selected market
+  const availableModels = Object.keys(modelInsights)
+    .filter(key => key.toLowerCase().startsWith(`${selectedMarket.toLowerCase()}-`))
+    .map(key => key.replace(new RegExp(`^${selectedMarket}-`, 'i'), ''));
+
+  // Reset selectedModel if not in availableModels
+  useEffect(() => {
+    if (!availableModels.includes(selectedModel)) {
+      setSelectedModel(availableModels[0] || "");
+    }
+  }, [selectedMarket, availableModels.join(",")]);
 
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
@@ -146,10 +159,6 @@ function App() {
                 selectedMarket={selectedMarket}
                 onMarketChange={setSelectedMarket}
               />
-              <ModelSelector
-                selectedModel={selectedModel}
-                onModelChange={setSelectedModel}
-              />
             </Box>
 
             <Paper sx={{ mb: 3 }}>
@@ -219,7 +228,15 @@ function App() {
             </TabPanel>
 
             <TabPanel value={currentTab} index={6}>
-              <ModelInsights selectedModel={selectedModel} />
+              <ModelSelector
+                selectedMarket={selectedMarket}
+                selectedModel={selectedModel}
+                onModelChange={setSelectedModel}
+              />
+              <ModelInsights 
+                selectedMarket={selectedMarket}
+                selectedModel={selectedModel}
+              />
             </TabPanel>
 
             <Box

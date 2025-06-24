@@ -2,15 +2,11 @@ import React from 'react';
 import { FormControl, InputLabel, Select, MenuItem, Box } from '@mui/material';
 import { modelInsights } from '../data/modelInsights';
 
-const defaultModels = [
-  'R 12 G/S',
-  'R 1300 GS Adventure',
-  'F 900 GS Adventure'
-];
-
-const ModelSelector = ({ selectedModel, onModelChange }) => {
-  const modelsFromData = Object.keys(modelInsights);
-  const models = modelsFromData.length > 0 ? modelsFromData : defaultModels;
+const ModelSelector = ({ selectedMarket, selectedModel, onModelChange }) => {
+  // Only show models that exist for the selected market
+  const models = Object.keys(modelInsights)
+    .filter(key => key.toLowerCase().startsWith(`${selectedMarket.toLowerCase()}-`))
+    .map(key => key.replace(new RegExp(`^${selectedMarket}-`, 'i'), ''));
 
   return (
     <Box sx={{ mb: 4 }}>

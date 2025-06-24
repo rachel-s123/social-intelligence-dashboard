@@ -129,6 +129,11 @@ const ConversationInsights = ({ selectedMarket }) => {
                 <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
                   {insight.context}
                 </Typography>
+                {insight.insight && (
+                  <Typography variant="body2" color="primary.main" sx={{ mt: 0.5, fontWeight: 500 }}>
+                    <strong>Insight:</strong> {insight.insight}
+                  </Typography>
+                )}
                 <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mt: 0.5 }}>
                   Source: {insight.source}
                 </Typography>
@@ -182,6 +187,11 @@ const ConversationInsights = ({ selectedMarket }) => {
                 <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
                   {insight.context}
                 </Typography>
+                {insight.insight && (
+                  <Typography variant="body2" color="primary.main" sx={{ mt: 0.5, fontWeight: 500 }}>
+                    <strong>Insight:</strong> {insight.insight}
+                  </Typography>
+                )}
                 <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mt: 0.5 }}>
                   Source: {insight.source}
                 </Typography>
