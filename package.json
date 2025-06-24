@@ -41,6 +41,7 @@
     "generate-wri-data": "node scripts/generate_wriData.js",
     "generate-attribute-resonance": "node scripts/generate_attributeResonance.js",
     "generate-market-intro": "node scripts/generate_marketIntro.js",
+    "generate-model-insights": "node scripts/generate_modelInsights.js",
     "clean": "rm -rf build && rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
     "dev": "npm run generate-all && npm start",
