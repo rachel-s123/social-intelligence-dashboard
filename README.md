@@ -72,13 +72,19 @@ npm run generate-market-introductions
 
 ## PDF Reports
 
-1. Place your PDF reports in the `public/reports/` directory with the following naming convention:
+1. Place your market PDF reports in the `public/reports/` directory with the following naming convention:
    ***REMOVED***
    public/reports/{country}_report.pdf
    ***REMOVED***
    Example: `public/reports/france_report.pdf`
 
-2. The PDF viewer supports:
+2. Place model PDF reports in the `public/reports/models/` directory:
+   ***REMOVED***
+   public/reports/models/{model}.pdf
+   ***REMOVED***
+   Example: `public/reports/models/r12gs.pdf`
+
+3. The PDF viewer supports:
    - Continuous scrolling
    - Fullscreen mode
    - Zoom controls
