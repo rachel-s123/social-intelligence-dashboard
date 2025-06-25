@@ -35,7 +35,7 @@ The R12GSConsumerAnalysis component has been enhanced with AI-powered insights t
 ### Key Functions
 
 #### Data Processing
-***REMOVED***javascript
+```javascript
 const calculateAverageSentiment = (quotes) => {
   // Converts sentiment to numeric values and calculates average
 }
@@ -47,10 +47,10 @@ const calculateTopTheme = (quotes) => {
 const calculateTimeRange = (quotes) => {
   // Determines the time period covered by filtered data
 }
-***REMOVED***
+```
 
 #### AI Insights Generation
-***REMOVED***javascript
+```javascript
 const handleGenerateInsights = async () => {
   // Converts filters to AI service format and generates insights
 }
@@ -58,7 +58,7 @@ const handleGenerateInsights = async () => {
 const handleToggleInsights = () => {
   // Toggles AI insights visibility and clears previous insights
 }
-***REMOVED***
+```
 
 ### Integration Points
 
@@ -70,7 +70,7 @@ const handleToggleInsights = () => {
 ## Usage
 
 ### Basic Usage
-***REMOVED***
+1. Navigate to the R12GSConsumerAnalysis dashboard
 2. Click "🤖 Show AI Insights" to enable AI analysis
 3. Apply filters using the QuoteExplorer component
 4. AI insights will automatically generate after 1 second
@@ -142,11 +142,11 @@ const handleToggleInsights = () => {
 
 ## Environment Variables
 
-***REMOVED***
+```bash
 REACT_APP_OPENAI_API_KEY=your_openai_api_key_here
 # or
 OPENAI_API_KEY=your_openai_api_key_here
-***REMOVED***
+```
 
 ## Troubleshooting
 

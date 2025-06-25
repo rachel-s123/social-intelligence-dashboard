@@ -93,13 +93,13 @@ The final correct order in R12GSConsumerAnalysis.js:
 
 ## Architecture Overview
 
-***REMOVED***
+```
 AI Service (aiInsightsService.js)
     ↓
 React Hooks (AIInsightsHooks.js)
     ↓
 Components (R12GSConsumerAnalysis.js, MiniAIInsights.js)
-***REMOVED***
+```
 
 ## Testing
 

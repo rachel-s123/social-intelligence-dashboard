@@ -10,20 +10,20 @@ This project contains a React dashboard that displays data generated from markdo
 ## Setup
 
 1. Clone the repository:
-   ***REMOVED***
+   ```bash
    git clone https://github.com/rachel-s123/bmw_touring_segment_q1.git
    cd bmw_touring_segment_q1
-   ***REMOVED***
+   ```
 
 2. Install dependencies:
-   ***REMOVED***
+   ```bash
    npm install
-   ***REMOVED***
+   ```
 
 3. Install additional required packages for PDF viewing:
-   ***REMOVED***
+   ```bash
    npm install react-pdf @react-pdf/renderer
-   ***REMOVED***
+   ```
 
 ## Report Structure
 
@@ -56,7 +56,7 @@ The dashboard requires several data files to be generated from the markdown repo
  - `r12gsConsumerData.js` - R 12 G/S consumer conversation data
 
 Generate these files by running the following scripts:
-***REMOVED***
+```bash
 # Generate WRI data
 npm run generate-wri-data
 
@@ -77,22 +77,22 @@ npm run generate-market-introductions
 
 # Generate R 12 G/S consumer data
 npm run generate-r12gs-consumer-data
-***REMOVED***
+```
 
 ## PDF Reports
 
 1. Place your market PDF reports in the `public/reports/` directory with the following naming convention:
-   ***REMOVED***
+   ```
    public/reports/{country}_report.pdf
-   ***REMOVED***
+   ```
    Example: `public/reports/france_report.pdf`
 
 2. Place model PDF reports in the `public/reports/models/` directory. Create the
    `models` subfolder inside `public/reports/` if it does not exist. Name each
    file after the model:
-   ***REMOVED***
+   ```
    public/reports/models/{model}.pdf
-   ***REMOVED***
+   ```
    Example: `public/reports/models/r12gs.pdf`
 
 3. The PDF viewer supports:
@@ -104,9 +104,9 @@ npm run generate-r12gs-consumer-data
 ## Running the Dashboard
 
 1. Start the development server:
-   ***REMOVED***
+   ```bash
    npm start
-   ***REMOVED***
+   ```
 
 2. Open your browser and navigate to `http://localhost:3000`
 
@@ -178,10 +178,10 @@ This project is proprietary and confidential. All rights reserved.
 ### Search Engine Indexing Prevention
 The application is configured to prevent search engine indexing through meta tags in the HTML head. This ensures that the dashboard and its contents remain private and are not discoverable through search engines. The following meta tags are implemented:
 
-***REMOVED***html
+```html
 <meta name="robots" content="noindex, nofollow" />
 <meta http-equiv="X-Robots-Tag" content="noindex, nofollow" />
-***REMOVED***
+```
 
 These tags instruct search engines to:
 - Not index the page content

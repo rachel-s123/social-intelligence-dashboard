@@ -28,7 +28,7 @@
 
 ## 🏗️ **Final Architecture**
 
-***REMOVED***
+```
 ┌─────────────────────────────────────┐
 │ AI Service (aiInsightsService.js)   │
 │ - OpenAI API integration            │
@@ -50,7 +50,7 @@
 │ - MiniAIInsights.js                │
 │ - Proper initialization order       │
 └─────────────────────────────────────┘
-***REMOVED***
+```
 
 ## 📁 **Files Created/Modified**
 
@@ -104,16 +104,16 @@
 ## 🔧 **Key Technical Solutions**
 
 ### **Dynamic Imports**
-***REMOVED***javascript
+```javascript
 // Instead of static import
 import { aiInsightsService } from '../services/src/services/aiInsightsService';
 
 // Use dynamic import
 const { aiInsightsService } = await import('../services/src/services/aiInsightsService');
-***REMOVED***
+```
 
 ### **Proper Initialization Order**
-***REMOVED***javascript
+```javascript
 // Correct order in component:
 1. State declarations
 2. Data destructuring
@@ -126,10 +126,10 @@ const { aiInsightsService } = await import('../services/src/services/aiInsightsS
 9. Filtered data (useMemo) ← Now works
 10. Effects and handlers
 11. Render logic
-***REMOVED***
+```
 
 ### **Fallback Mechanisms**
-***REMOVED***javascript
+```javascript
 // Graceful degradation when service fails
 const fallbackInsights = {
   summary: "AI analysis temporarily unavailable...",
@@ -137,7 +137,7 @@ const fallbackInsights = {
   recommendations: ["Verify OpenAI API key"],
   dataHighlights: { strongestTheme: "Analysis unavailable" }
 };
-***REMOVED***
+```
 
 ## 🚀 **Ready for Production**
 

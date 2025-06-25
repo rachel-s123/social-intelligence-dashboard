@@ -52,37 +52,37 @@ The AI Chat Assistant is now integrated into the BMW Motorrad Segment Insights d
 
 Make sure your `.env` file contains:
 
-***REMOVED***
+```
 OPENAI_API_KEY=your_openai_api_key_here
 VS_STORE_ID=your_vector_store_id_here
-***REMOVED***
+```
 
 ### Running the Application
 
 #### Development Mode (React only)
 
-***REMOVED***
+```bash
 npm start
-***REMOVED***
+```
 
 _Note: Chat functionality requires the backend server_
 
 #### Production Mode (with AI Chat)
 
-***REMOVED***
+```bash
 # Build the React app
 npm run build
 
 # Start the Express server with AI chat
 npm run server
-***REMOVED***
+```
 
 #### Development with Backend
 
-***REMOVED***
+```bash
 # Build and run with backend
 npm run dev-server
-***REMOVED***
+```
 
 ### Server Configuration
 
