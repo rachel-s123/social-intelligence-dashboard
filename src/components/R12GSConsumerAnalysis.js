@@ -28,13 +28,36 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     consumerConcerns = []
   } = marketData;
 
-  const allThemes = Array.from(new Set(consumerQuotes.map((q) => q.theme)));
-  const allSentiments = Array.from(new Set(consumerQuotes.map((q) => q.sentiment)));
-  const allPlatforms = Array.from(new Set(consumerQuotes.map((q) => q.platform)));
-  const allWeeks = Array.from(new Set(consumerQuotes.map((q) => q.week).filter(Boolean)));
-  const allPurchaseIntents = Array.from(new Set(consumerQuotes.map((q) => q.purchaseIntent)));
-  const allCompetitors = Array.from(
-    new Set(consumerQuotes.map((q) => q.competitorMentioned).filter((c) => c && c !== 'NONE'))
+  const allThemes = useMemo(
+    () => Array.from(new Set(consumerQuotes.map((q) => q.theme))),
+    [consumerQuotes]
+  );
+  const allSentiments = useMemo(
+    () => Array.from(new Set(consumerQuotes.map((q) => q.sentiment))),
+    [consumerQuotes]
+  );
+  const allPlatforms = useMemo(
+    () => Array.from(new Set(consumerQuotes.map((q) => q.platform))),
+    [consumerQuotes]
+  );
+  const allWeeks = useMemo(
+    () => Array.from(new Set(consumerQuotes.map((q) => q.week).filter(Boolean))),
+    [consumerQuotes]
+  );
+  const allPurchaseIntents = useMemo(
+    () => Array.from(new Set(consumerQuotes.map((q) => q.purchaseIntent))),
+    [consumerQuotes]
+  );
+  const allCompetitors = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          consumerQuotes
+            .map((q) => q.competitorMentioned)
+            .filter((c) => c && c !== 'NONE')
+        )
+      ),
+    [consumerQuotes]
   );
 
   const [filters, setFilters] = useState({

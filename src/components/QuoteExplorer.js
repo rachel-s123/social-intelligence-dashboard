@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import {
   Card,
   CardContent,
@@ -9,11 +9,14 @@ import {
   Box,
   Chip
 } from '@mui/material';
+import useDebounce from '../utils/useDebounce';
 
 const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, platforms, weeks, purchaseIntents, competitors }) => {
   const listRef = useRef(null);
   const [scrollTop, setScrollTop] = useState(0);
   const [activeIndex, setActiveIndex] = useState(-1);
+  const [searchTerm, setSearchTerm] = useState('');
+  const debouncedSearch = useDebounce(searchTerm, 300);
   const rowHeight = 80;
   const containerHeight = 300;
 
@@ -30,7 +33,7 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
   const handleKeyDown = (event) => {
     if (event.key === 'ArrowDown') {
       event.preventDefault();
-      setActiveIndex((prev) => Math.min(prev + 1, quotes.length - 1));
+      setActiveIndex((prev) => Math.min(prev + 1, searchedQuotes.length - 1));
     } else if (event.key === 'ArrowUp') {
       event.preventDefault();
       setActiveIndex((prev) => Math.max(prev - 1, 0));
@@ -43,9 +46,19 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
     }
   }, [activeIndex]);
 
+  useEffect(() => {
+    setActiveIndex(-1);
+  }, [debouncedSearch, filters]);
+
+  const searchedQuotes = useMemo(() => {
+    if (!debouncedSearch) return quotes;
+    const lower = debouncedSearch.toLowerCase();
+    return quotes.filter((q) => q.text.toLowerCase().includes(lower));
+  }, [quotes, debouncedSearch]);
+
   const startIndex = Math.floor(scrollTop / rowHeight);
   const visibleCount = Math.ceil(containerHeight / rowHeight) + 1;
-  const visibleQuotes = quotes.slice(startIndex, startIndex + visibleCount);
+  const visibleQuotes = searchedQuotes.slice(startIndex, startIndex + visibleCount);
   const offsetY = startIndex * rowHeight;
 
   return (
@@ -103,6 +116,15 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
               ))}
             </TextField>
           </Grid>
+          <Grid item xs={12} md={4}>
+            <TextField
+              label="Search"
+              fullWidth
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              size="small"
+            />
+          </Grid>
         </Grid>
         <Box
           ref={listRef}
@@ -113,7 +135,7 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
           onKeyDown={handleKeyDown}
           sx={{ maxHeight: { xs: 200, md: 300 }, overflowY: 'auto', outline: 'none' }}
         >
-          <Box sx={{ height: quotes.length * rowHeight, position: 'relative' }}>
+          <Box sx={{ height: searchedQuotes.length * rowHeight, position: 'relative' }}>
             <Box sx={{ position: 'absolute', top: offsetY, left: 0, right: 0 }}>
               {visibleQuotes.map((q, i) => {
                 const actualIndex = startIndex + i;
