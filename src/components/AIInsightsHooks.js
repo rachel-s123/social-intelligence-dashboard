@@ -47,7 +47,7 @@ export const useAIInsights = () => {
       try {
         console.log("🔄 Attempting to load AI Insights Service...");
         const module = await import('../services/src/services/aiInsightsService');
-        service = module.aiInsightsService;
+        service = module.default;
         console.log("✅ AI Insights Service loaded successfully");
       } catch (importError) {
         console.warn('⚠️ Failed to import AI service, using mock:', importError);
