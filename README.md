@@ -34,11 +34,11 @@ Place markdown reports in the following directories:
 - `reports/executive_summaries/` - Executive summary reports
 - `reports/market_recommendations/` - Market recommendations
 - `reports/market_overviews/` - Market overview reports
-- `reports/model_analysis/` - Model analysis reports
+- `reports/r12gs_consumer_analysis/` - R 12 G/S consumer analysis reports
 
-When creating new model analysis markdown files, copy `templates/model_report_template.md`
-into the `reports/model_analysis/` directory and fill in the sections with your
-model-specific insights.
+When creating new R 12 G/S consumer analysis markdown files, copy `templates/model_insights_template.md`
+into the `reports/r12gs_consumer_analysis/` directory and fill in the sections with your
+market-specific insights.
 
 ## Data Generation
 
@@ -52,8 +52,8 @@ The dashboard requires several data files to be generated from the markdown repo
 - `marketRecommendations.js` - Market recommendations
 - `marketIntroductions.js` - Market introductions
 - `marketSources.js` - Market sources
-- `attributeResonance.js` - Attribute resonance data
-- `modelInsights.js` - Model analysis data
+ - `attributeResonance.js` - Attribute resonance data
+ - `r12gsConsumerData.js` - R 12 G/S consumer conversation data
 
 Generate these files by running the following scripts:
 ***REMOVED***
@@ -75,8 +75,8 @@ npm run generate-market-recommendations
 # Generate market introductions
 npm run generate-market-introductions
 
-# Generate model insights
-npm run generate-model-insights
+# Generate R 12 G/S consumer data
+npm run generate-r12gs-consumer-data
 ***REMOVED***
 
 ## PDF Reports
