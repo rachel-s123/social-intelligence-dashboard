@@ -20,6 +20,23 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
   const rowHeight = 80;
   const containerHeight = 300;
 
+  // Color coding for quote tags
+  const getTagColor = (tag) => {
+    const colorMap = {
+      'POSITIVE': '#4caf50',
+      'NEGATIVE': '#f44336',
+      'NEUTRAL': '#ff9800',
+      'YES': '#4caf50',
+      'NO': '#f44336',
+      'CONDITIONAL': '#ff9800',
+      'NONE': '#9e9e9e',
+      'BMW GS Series': '#1976d2',
+      'KTM 890 Adventure': '#ff5722',
+      'BMW Urban G/S': '#2196f3'
+    };
+    return colorMap[tag] || '#757575';
+  };
+
   const handleChange = (field) => (event) => {
     onFilterChange({ ...filters, [field]: event.target.value });
   };
@@ -159,13 +176,39 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
                       "{q.text}"
                     </Typography>
                     <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
-                      <Chip label={q.theme} size="small" />
-                      <Chip label={q.sentiment} size="small" />
-                      <Chip label={q.platform} size="small" />
-                      {q.week && <Chip label={`Week ${q.week}`} size="small" />}
-                      <Chip label={q.purchaseIntent} size="small" />
+                      <Chip 
+                        label={q.theme} 
+                        size="small" 
+                        sx={{ backgroundColor: getTagColor(q.theme), color: 'white' }}
+                      />
+                      <Chip 
+                        label={q.sentiment} 
+                        size="small" 
+                        sx={{ backgroundColor: getTagColor(q.sentiment), color: 'white' }}
+                      />
+                      <Chip 
+                        label={q.platform} 
+                        size="small" 
+                        sx={{ backgroundColor: getTagColor(q.platform), color: 'white' }}
+                      />
+                      {q.week && (
+                        <Chip 
+                          label={`Week ${q.week}`} 
+                          size="small" 
+                          sx={{ backgroundColor: '#1976d2', color: 'white' }}
+                        />
+                      )}
+                      <Chip 
+                        label={q.purchaseIntent} 
+                        size="small" 
+                        sx={{ backgroundColor: getTagColor(q.purchaseIntent), color: 'white' }}
+                      />
                       {q.competitorMentioned !== 'NONE' && (
-                        <Chip label={q.competitorMentioned} size="small" />
+                        <Chip 
+                          label={q.competitorMentioned} 
+                          size="small" 
+                          sx={{ backgroundColor: getTagColor(q.competitorMentioned), color: 'white' }}
+                        />
                       )}
                     </Box>
                   </Box>

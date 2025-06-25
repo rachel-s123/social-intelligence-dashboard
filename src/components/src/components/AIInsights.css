@@ -1,0 +1,276 @@
+/* src/components/AIInsights.css */
+
+.ai-insights-panel {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 2px solid #cbd5e0;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+  }
+  
+  .ai-insights-panel:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+  }
+  
+  .ai-insights-panel.loading {
+    background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+    border-color: #fb923c;
+  }
+  
+  .ai-insights-panel.error {
+    background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+    border-color: #f87171;
+  }
+  
+  .ai-insights-panel.empty {
+    background: linear-gradient(135deg, #f0f9ff 0%, #dbeafe 100%);
+    border-color: #60a5fa;
+    border-style: dashed;
+  }
+  
+  /* Header */
+  .insights-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #e2e8f0;
+  }
+  
+  .insights-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .refresh-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  
+  .refresh-btn:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+  }
+  
+  .refresh-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Loading State */
+  .loading-spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fed7aa;
+    border-top: 4px solid #f97316;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading-spinner p {
+    color: #9a3412;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  /* Content Sections */
+  .insights-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .summary-section,
+  .findings-section,
+  .recommendations-section,
+  .highlights-section {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid #3b82f6;
+  }
+  
+  .summary-section h4,
+  .findings-section h4,
+  .recommendations-section h4,
+  .highlights-section h4 {
+    margin: 0 0 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .summary-section {
+    border-left-color: #10b981;
+  }
+  
+  .findings-section {
+    border-left-color: #3b82f6;
+  }
+  
+  .recommendations-section {
+    border-left-color: #f59e0b;
+  }
+  
+  .highlights-section {
+    border-left-color: #8b5cf6;
+  }
+  
+  .summary-section p {
+    margin: 0;
+    color: #475569;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  
+  .findings-section ul,
+  .recommendations-section ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+  }
+  
+  .findings-section li,
+  .recommendations-section li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+  
+  .findings-section li::marker {
+    color: #3b82f6;
+  }
+  
+  .recommendations-section li::marker {
+    color: #f59e0b;
+  }
+  
+  /* Highlights Grid */
+  .highlights-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  @media (min-width: 768px) {
+    .highlights-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .highlight-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .highlight-item .label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .highlight-item .value {
+    font-size: 0.875rem;
+    color: #1e293b;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ai-insights-panel {
+      padding: 16px;
+      margin: 12px 0;
+    }
+    
+    .insights-header {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    
+    .refresh-btn {
+      align-self: flex-end;
+    }
+    
+    .insights-content {
+      gap: 16px;
+    }
+    
+    .summary-section,
+    .findings-section,
+    .recommendations-section,
+    .highlights-section {
+      padding: 12px;
+    }
+  }
+  
+  /* Animation for content appearance */
+  .insights-content {
+    animation: fadeInUp 0.5s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Error state specific styles */
+  .ai-insights-panel.error p {
+    color: #991b1b;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Empty state specific styles */
+  .ai-insights-panel.empty p {
+    color: #1e40af;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+  }

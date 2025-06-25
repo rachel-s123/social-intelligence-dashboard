@@ -177,7 +177,7 @@ export const competitorData = {
     "competitorStrengths": {
       "BMW Motorrad": [
         "Strong brand presence as third highest-selling brand in Belgium with 3,322 registrations in 2024",
-        "R 12 G/S positioned as \"dirt-ready retro\" with authentic R80 G/S heritage and genuine off-road capability",
+        "R 12 G/S positioned as \"dirt-ready retro\" with authentic R 80 G/S heritage and genuine off-road capability",
         "Lighter weight (229kg) compared to larger adventure bikes addresses maneuverability concerns"
       ],
       "KTM Adventure": [
@@ -282,7 +282,7 @@ export const competitorData = {
       ],
       "BMW": [
         "Strong market position with 70 units registered, frequently second or third place",
-        "Authentic heritage connection with R 12 G/S linking to iconic '80s R80 G/S and Dakar Rally victories",
+        "Authentic heritage connection with R 12 G/S linking to iconic '80s R 80 G/S and Dakar Rally victories",
         "Well-positioned to address high consumer priority for off-road performance and engine performance",
         "\"Dual GS strategy\" allowing targeting of different adventure market segments simultaneously",
         "Strong dealer network and service availability"
@@ -395,7 +395,7 @@ export const competitorData = {
         "\"Ready to Race\" ethos appealing to performance-focused riders"
       ],
       "BMW R 12 G/S (Pre-launch Speculation)": [
-        "Direct heritage lineage to iconic R80 G/S creating strong emotional connection",
+        "Direct heritage lineage to iconic R 80 G/S creating strong emotional connection",
         "Positioned as \"dirt-ready retro\" combining classic aesthetics with modern off-road capability",
         "BMW's established reputation for quality and engineering excellence"
       ]
@@ -730,7 +730,7 @@ export const competitorData = {
     "gapsToExploit": [
       {
         "title": "Heritage-Capable Sweet Spot",
-        "description": "Consumers are not merely seeking retro aesthetics; they desire classic looks backed by modern, genuine capability, particularly in off-road performance. The BMW R 12 G/S's explicit homage to the iconic R80GS Paris-Dakar positions it to capitalize on this growing demand for heritage-styled adventure bikes with authentic capabilities."
+        "description": "Consumers are not merely seeking retro aesthetics; they desire classic looks backed by modern, genuine capability, particularly in off-road performance. The BMW R 12 G/S's explicit homage to the iconic R 80 GS Paris-Dakar positions it to capitalize on this growing demand for heritage-styled adventure bikes with authentic capabilities."
       },
       {
         "title": "Weight Conundrum Solution",
@@ -1178,7 +1178,7 @@ export const competitorData = {
     "gapsToExploit": [
       {
         "title": "Heritage Positioning Gap",
-        "description": "Limited authentic heritage-focused adventure bikes in market, with R 12 G/S uniquely positioned to leverage BMW's adventure legacy and iconic R80 G/S connection"
+        "description": "Limited authentic heritage-focused adventure bikes in market, with R 12 G/S uniquely positioned to leverage BMW's adventure legacy and iconic R 80 G/S connection"
       },
       {
         "title": "Manageable Adventure Segment",
@@ -1386,7 +1386,7 @@ export const competitorData = {
         "Premium feel and sophisticated technology integration"
       ],
       "BMW R 12 G/S (Pre-Launch)": [
-        "Strong heritage connection to Dakar-winning R80 G/S providing authentic off-road credibility",
+        "Strong heritage connection to Dakar-winning R 80 G/S providing authentic off-road credibility",
         "Retro styling generating considerable pre-launch interest and discussion",
         "Positioned as \"stripped down feel-good bike\" appealing to simplicity-seeking riders"
       ]
@@ -2226,7 +2226,7 @@ export const competitorData = {
     "competitorStrengths": {
       "BMW GS Series (traditional)": [
         "Strong brand loyalty and market share gain in declining market",
-        "R1300GSA positioned as top-selling big adventure bike",
+        "R 1300 GSA positioned as top-selling big adventure bike",
         "Renowned build quality and engineering precision"
       ],
       "Yamaha Ténéré 700": [
@@ -2247,7 +2247,7 @@ export const competitorData = {
     },
     "competitorWeaknesses": {
       "BMW GS Series (traditional)": [
-        "High weight (R1300GS around 260kg) concerns for some riders",
+        "High weight (R 1300 GS around 260kg) concerns for some riders",
         "Premium pricing potentially limiting market accessibility",
         "Pre-launch skepticism about R 12 G/S fuel tank capacity and weight claims"
       ],
