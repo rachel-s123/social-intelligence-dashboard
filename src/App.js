@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import {
   Container,
@@ -14,7 +14,6 @@ import "./styles/fonts.css";
 import DashboardIntro from "./components/DashboardIntro";
 import AttributeHeatmap from "./components/AttributeHeatmap";
 import MarketSelector from "./components/MarketSelector";
-import ModelSelector from "./components/ModelSelector";
 import ConversationInsights from "./components/ConversationInsights";
 import CompetitorAnalysis from "./components/CompetitorAnalysis";
 import ExecutiveSummary from "./components/ExecutiveSummary";
@@ -22,12 +21,12 @@ import MarketWRIScoreCards from "./components/MarketWRIScoreCards";
 import WRIStrategicDirection from "./components/WRIStrategicDirection";
 import AttributeResonanceDefinition from "./components/AttributeResonanceDefinition";
 import MarketRecommendations from "./components/MarketRecommendations";
-import ModelInsights from "./components/ModelInsights";
+import R12GSConsumerAnalysis from "./components/R12GSConsumerAnalysis";
 import AIChatPanel from "./components/AIChatPanel";
 import AIFloatingButton from "./components/AIFloatingButton";
 import bmwLogo from "./assets/bmw-black.jpg";
 import Login from "./components/Login";
-import { modelInsights } from './data/modelInsights';
+import { r12gsConsumerData } from './data/r12gsConsumerData';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -47,22 +46,9 @@ function TabPanel(props) {
 
 function App() {
   const [selectedMarket, setSelectedMarket] = useState("france");
-  const [selectedModel, setSelectedModel] = useState("");
   const [currentTab, setCurrentTab] = useState(0);
   const [loggedIn, setLoggedIn] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
-
-  // Get available models for the selected market
-  const availableModels = Object.keys(modelInsights)
-    .filter(key => key.toLowerCase().startsWith(`${selectedMarket.toLowerCase()}-`))
-    .map(key => key.replace(new RegExp(`^${selectedMarket}-`, 'i'), ''));
-
-  // Reset selectedModel if not in availableModels
-  useEffect(() => {
-    if (!availableModels.includes(selectedModel)) {
-      setSelectedModel(availableModels[0] || "");
-    }
-  }, [selectedMarket, availableModels.join(",")]);
 
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
@@ -190,7 +176,7 @@ function App() {
                 <Tab label="Market Insights" />
                 <Tab label="Competitor Analysis" />
                 <Tab label="Recommendations" />
-                <Tab label="Model Insights" />
+                <Tab label="R 12 G/S Consumer Conversations" />
               </Tabs>
             </Paper>
 
@@ -228,14 +214,9 @@ function App() {
             </TabPanel>
 
             <TabPanel value={currentTab} index={6}>
-              <ModelSelector
+              <R12GSConsumerAnalysis
                 selectedMarket={selectedMarket}
-                selectedModel={selectedModel}
-                onModelChange={setSelectedModel}
-              />
-              <ModelInsights 
-                selectedMarket={selectedMarket}
-                selectedModel={selectedModel}
+                data={r12gsConsumerData}
               />
             </TabPanel>
 
