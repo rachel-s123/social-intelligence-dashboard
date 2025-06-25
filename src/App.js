@@ -217,6 +217,7 @@ function App() {
             <TabPanel value={currentTab} index={6}>
               <Suspense fallback={<div>Loading...</div>}>
                 <R12GSConsumerAnalysis
+                  key={selectedMarket}
                   selectedMarket={selectedMarket}
                   data={r12gsConsumerData}
                 />
