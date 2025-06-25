@@ -16,10 +16,10 @@ function parseConsumerMarkdown(content) {
   data.consumerReactionThemes = {};
   const themeSection = content.match(/## Consumer Reaction Themes([\s\S]*?)(?=##|$)/);
   if (themeSection) {
-    const themeMatches = themeSection[1].match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/g);
+    const themeMatches = themeSection[1].match(/\*\*([^*]+):\*\* ([\d.]+)%/g);
     if (themeMatches) {
       themeMatches.forEach(match => {
-        const [, theme, percentage] = match.match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/);
+        const [, theme, percentage] = match.match(/\*\*([^*]+):\*\* ([\d.]+)%/);
         data.consumerReactionThemes[theme] = parseFloat(percentage);
       });
     }
@@ -29,10 +29,10 @@ function parseConsumerMarkdown(content) {
   data.sentimentAnalysis = {};
   const sentimentSection = content.match(/## Sentiment Analysis([\s\S]*?)(?=##|$)/);
   if (sentimentSection) {
-    const sentimentMatches = sentimentSection[1].match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/g);
+    const sentimentMatches = sentimentSection[1].match(/\*\*([^*]+):\*\* ([\d.]+)%/g);
     if (sentimentMatches) {
       sentimentMatches.forEach(match => {
-        const [, sentiment, percentage] = match.match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/);
+        const [, sentiment, percentage] = match.match(/\*\*([^*]+):\*\* ([\d.]+)%/);
         data.sentimentAnalysis[sentiment.toLowerCase()] = parseFloat(percentage);
       });
     }
@@ -42,10 +42,10 @@ function parseConsumerMarkdown(content) {
   data.platformDistribution = {};
   const platformSection = content.match(/## Platform Distribution([\s\S]*?)(?=##|$)/);
   if (platformSection) {
-    const platformMatches = platformSection[1].match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/g);
+    const platformMatches = platformSection[1].match(/\*\*([^*]+):\*\* ([\d.]+)%/g);
     if (platformMatches) {
       platformMatches.forEach(match => {
-        const [, platform, percentage] = match.match(/\*\*([^*]+):\*\* \[([\d.]+)\]%/);
+        const [, platform, percentage] = match.match(/\*\*([^*]+):\*\* ([\d.]+)%/);
         data.platformDistribution[platform] = parseFloat(percentage);
       });
     }
@@ -53,12 +53,15 @@ function parseConsumerMarkdown(content) {
   
   // Parse consumer timeline
   data.consumerTimeline = [];
-  const timelineSection = content.match(/## Consumer Timeline([\s\S]*?)(?=##|$)/);
+  const timelineSection = content.match(/## Consumer Timeline\n([\s\S]*?)(?=\n---\n|\n## [^\n]+\n|$)/);
   if (timelineSection) {
-    const weekMatches = timelineSection[1].match(/### Week (\d+) \(([^)]+)\)([\s\S]*?)(?=###|$)/g);
+    // Match all week blocks that come after the main heading
+    const weekMatches = timelineSection[1].match(/### Week (\d+) \(([^)]+)\)([\s\S]*?)(?=### Week|## |$)/g);
     if (weekMatches) {
       weekMatches.forEach(weekMatch => {
-        const [, weekNum, weekRange, weekContent] = weekMatch.match(/### Week (\d+) \(([^)]+)\)([\s\S]*?)(?=###|$)/);
+        const weekMatchArr = weekMatch.match(/### Week (\d+) \(([^)]+)\)([\s\S]*)/);
+        if (!weekMatchArr) return;
+        const [, weekNum, weekRange, weekContent] = weekMatchArr;
         const eventMatch = weekContent.match(/\*\*Event:\*\* ([^\n]+)/);
         const volumeMatch = weekContent.match(/\*\*Volume:\*\* ([^\n]+)/);
         const sentimentMatch = weekContent.match(/\*\*Sentiment:\*\* ([^\n]+)/);
@@ -78,9 +81,10 @@ function parseConsumerMarkdown(content) {
   
   // Parse consumer quotes
   data.consumerQuotes = [];
-  const quotesSection = content.match(/## Consumer Quotes by Theme([\s\S]*?)(?=##|$)/);
+  const quotesSection = content.match(/## Consumer Quotes by Theme\n([\s\S]*?)(?=\n---\n|\n## [^\n]+\n|$)/);
   if (quotesSection) {
-    const quoteMatches = quotesSection[1].match(/\*\*Quote \d+:\*\*([\s\S]*?)(?=\*\*Quote \d+:\*\*|$)/g);
+    // Match all **Quote n:** blocks that come after theme subheadings
+    const quoteMatches = quotesSection[1].match(/\*\*Quote \d+:\*\*([\s\S]*?)(?=\*\*Quote \d+:\*\*|### |## |$)/g);
     if (quoteMatches) {
       quoteMatches.forEach(quoteMatch => {
         const idMatch = quoteMatch.match(/- \*\*ID:\*\* ([^\n]+)/);
@@ -143,15 +147,16 @@ function parseConsumerMarkdown(content) {
     if (mentionMatches) {
       mentionMatches.forEach(match => {
         const [, competitor, count] = match.match(/\*\*([^*]+):\*\* \[([^\]]+)\] mentions/);
-        data.competitiveMentions[competitor] = count !== 'NUMBER' ? parseInt(count) : '[NOT PROVIDED IN REPORT]';
+        data.competitiveMentions[competitor] = count !== 'NOT PROVIDED IN REPORT' ? parseInt(count) : '[NOT PROVIDED IN REPORT]';
       });
     }
   }
   
   // Parse consumer concerns
   data.consumerConcerns = [];
-  const concernsSection = content.match(/## Consumer Concerns([\s\S]*?)(?=##|$)/);
+  const concernsSection = content.match(/## Consumer Concerns\n([\s\S]*?)(?=\n---\n|\n## [^\n]+\n|$)/);
   if (concernsSection) {
+    // Match all **Concern n:** blocks that come after the "Top 5 Consumer Concerns" subheading
     const concernMatches = concernsSection[1].match(/\*\*Concern \d+:\*\* ([^\n]+)\n- \*\*Frequency:\*\* ([^\n]+)\n- \*\*Example Quote:\*\* \"([^\"]+)\"/g);
     if (concernMatches) {
       concernMatches.forEach(match => {
@@ -167,21 +172,18 @@ function parseConsumerMarkdown(content) {
   
   // Parse key insights
   data.keyInsights = {};
-  const insightsSection = content.match(/## Key Insights([\s\S]*?)(?=##|$)/);
+  const insightsSection = content.match(/## Key Insights\n([\s\S]*?)(?=\n---\n|\n## [^\n]+\n|$)/);
   if (insightsSection) {
-    const heritageMatch = insightsSection[1].match(/### Heritage Positioning Reception\n([^\n]+)/);
-    const priceMatch = insightsSection[1].match(/### Price Sensitivity Analysis\n([^\n]+)/);
-    const featureMatch = insightsSection[1].match(/### Feature Expectations vs Reality\n([^\n]+)/);
-    const adventureMatch = insightsSection[1].match(/### Adventure Community Acceptance\n([^\n]+)/);
-    const purchaseMatch = insightsSection[1].match(/### Purchase Decision Factors\n([^\n]+)/);
-    
-    data.keyInsights = {
-      heritagePositioningReception: heritageMatch ? heritageMatch[1] : '[NOT PROVIDED IN REPORT]',
-      priceSensitivityAnalysis: priceMatch ? priceMatch[1] : '[NOT PROVIDED IN REPORT]',
-      featureExpectations: featureMatch ? featureMatch[1] : '[NOT PROVIDED IN REPORT]',
-      adventureCommunityAcceptance: adventureMatch ? adventureMatch[1] : '[NOT PROVIDED IN REPORT]',
-      purchaseDecisionFactors: purchaseMatch ? purchaseMatch[1] : '[NOT PROVIDED IN REPORT]'
-    };
+    // Match each insight block: ### Title followed by content until next ### or end
+    const insightMatches = insightsSection[1].match(/### ([^\n]+)\n([\s\S]*?)(?=### |$)/g);
+    if (insightMatches) {
+      insightMatches.forEach(insightMatch => {
+        const [, title, content] = insightMatch.match(/### ([^\n]+)\n([\s\S]*?)(?=### |$)/);
+        // Clean up the content by trimming whitespace and newlines
+        const cleanContent = content.trim();
+        data.keyInsights[title] = cleanContent;
+      });
+    }
   }
   
   return data;
