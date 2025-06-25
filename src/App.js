@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { ThemeProvider } from "@mui/material/styles";
 import {
   Container,
@@ -21,12 +21,13 @@ import MarketWRIScoreCards from "./components/MarketWRIScoreCards";
 import WRIStrategicDirection from "./components/WRIStrategicDirection";
 import AttributeResonanceDefinition from "./components/AttributeResonanceDefinition";
 import MarketRecommendations from "./components/MarketRecommendations";
-import R12GSConsumerAnalysis from "./components/R12GSConsumerAnalysis";
 import AIChatPanel from "./components/AIChatPanel";
 import AIFloatingButton from "./components/AIFloatingButton";
 import bmwLogo from "./assets/bmw-black.jpg";
 import Login from "./components/Login";
 import { r12gsConsumerData } from './data/r12gsConsumerData';
+
+const R12GSConsumerAnalysis = lazy(() => import("./components/R12GSConsumerAnalysis"));
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -214,10 +215,12 @@ function App() {
             </TabPanel>
 
             <TabPanel value={currentTab} index={6}>
-              <R12GSConsumerAnalysis
-                selectedMarket={selectedMarket}
-                data={r12gsConsumerData}
-              />
+              <Suspense fallback={<div>Loading...</div>}>
+                <R12GSConsumerAnalysis
+                  selectedMarket={selectedMarket}
+                  data={r12gsConsumerData}
+                />
+              </Suspense>
             </TabPanel>
 
             <Box
