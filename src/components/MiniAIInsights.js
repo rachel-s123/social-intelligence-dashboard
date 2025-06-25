@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useAIInsights } from './AIInsightsHooks';
 import { Box, Typography, CircularProgress } from '@mui/material';
 
 const MiniAIInsights = ({ data, section, filters }) => {
   const { insights, loading, generateInsights } = useAIInsights();
+  const hasGenerated = useRef(false);
   
   useEffect(() => {
-    if (data && filters.length > 0) {
+    // Only generate insights once when component mounts and has valid data
+    if (data && filters && filters.length > 0 && !hasGenerated.current) {
+      hasGenerated.current = true;
       generateInsights(data, filters, section);
     }
   }, [data, filters, section, generateInsights]);

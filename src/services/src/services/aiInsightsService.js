@@ -5,6 +5,7 @@ import OpenAI from "openai";
 // Initialize OpenAI client
 const openai = new OpenAI({
   apiKey: process.env.REACT_APP_OPENAI_API_KEY || process.env.OPENAI_API_KEY,
+  dangerouslyAllowBrowser: true, // Allow browser usage for React app
 });
 
 /**
@@ -91,10 +92,26 @@ class AIInsightsService {
   generateMockInsights(filteredData, activeFilters, section) {
     const filterDescription = this.describeActiveFilters(activeFilters);
     const dataStats = this.generateDataStatistics(filteredData);
-    
+    // Calculate sentiment breakdown from filteredData
+    const quotes = filteredData.quotes || [];
+    const total = quotes.length || 1;
+    const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
+    quotes.forEach(q => {
+      if (q.sentiment && q.sentiment.toLowerCase() === 'positive') sentimentCounts.positive++;
+      else if (q.sentiment && q.sentiment.toLowerCase() === 'neutral') sentimentCounts.neutral++;
+      else sentimentCounts.negative++;
+    });
+    const sentimentBreakdown = {
+      positive: { count: sentimentCounts.positive, percentage: Math.round((sentimentCounts.positive / total) * 100) },
+      neutral: { count: sentimentCounts.neutral, percentage: Math.round((sentimentCounts.neutral / total) * 100) },
+      negative: { count: sentimentCounts.negative, percentage: Math.round((sentimentCounts.negative / total) * 100) },
+      scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
+    };
     // Generate contextual mock insights based on the data
     const mockInsights = {
+      filterContext: `Analysis based on filtered data: ${filterDescription}. This represents a subset of consumer feedback, not the complete dataset.`,
       summary: this.generateMockSummary(filteredData, activeFilters, section),
+      sentimentBreakdown,
       keyFindings: this.generateMockFindings(filteredData, activeFilters, section),
       recommendations: this.generateMockRecommendations(filteredData, activeFilters, section),
       dataHighlights: this.generateMockHighlights(filteredData, activeFilters, section)
@@ -119,7 +136,7 @@ class AIInsightsService {
     }
     
     const filterDesc = activeFilters.map(f => f.value).join(", ");
-    return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${avgSentiment}/5.0 average sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria.`;
+    return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${avgSentiment}/5.0 average sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
   }
 
   /**
@@ -196,35 +213,58 @@ class AIInsightsService {
    * System prompt specifically for filtering insights
    */
   getInsightsSystemPrompt() {
-    return `You are an AI analyst specializing in BMW R 12 G/S consumer insights. Your role is to generate concise, actionable mini-reports based on filtered data.
+    return `You are an AI analyst specializing in BMW R 12 G/S consumer insights. Your role is to generate concise, actionable mini-reports based on FILTERED data.
 
-RESPONSE FORMAT - Always structure your response as JSON:
+CRITICAL CONTEXT:
+- You are analyzing a FILTERED SUBSET of consumer data, not the entire dataset
+- ALWAYS begin your analysis by clearly stating what filters are applied
+- Make it clear that your insights are specific to this filtered view
+- Do not make general statements about "all consumers" unless analyzing unfiltered data
+- If sentiment appears skewed, acknowledge that this is due to the specific filters applied
+
+RESPONSE FORMAT (JSON):
 {
-  "summary": "2-3 sentence overview of key insights from the filtered data",
+  "filterContext": "Clear description of what filters are applied and their impact on the data",
+  "summary": "Brief overview of what this filtered data reveals",
+  "sentimentBreakdown": {
+    "positive": { "count": number, "percentage": number },
+    "neutral": { "count": number, "percentage": number },
+    "negative": { "count": number, "percentage": number },
+    "scoreExplanation": "Explain the sentiment score scale (e.g., 1=very negative, 3=neutral, 5=very positive) and how the average is calculated."
+  },
   "keyFindings": [
-    "Finding 1 - specific insight with percentage or data point",
-    "Finding 2 - trend or pattern identified",
-    "Finding 3 - consumer behavior insight"
+    "Finding 1 - specific to filtered data",
+    "Finding 2 - specific to filtered data",
+    "Finding 3 - specific to filtered data"
   ],
   "recommendations": [
     "Actionable recommendation 1",
-    "Strategic suggestion 2",
+    "Strategic suggestion 2", 
     "Market opportunity 3"
   ],
   "dataHighlights": {
     "strongestTheme": "Most prominent theme in filtered data",
-    "sentimentTrend": "Overall sentiment direction",
-    "criticalQuote": "Most representative consumer quote"
+    "sentimentTrend": "Overall sentiment direction for this filtered subset",
+    "criticalQuote": "Most representative consumer quote from filtered data"
   }
 }
 
 GUIDELINES:
+- ALWAYS start with filter context to set expectations
 - Focus on the specific filtered subset, not general insights
 - Highlight what makes this filtered view unique or significant
 - Include specific percentages, themes, or sentiment scores when available
+- Provide a clear breakdown of positive, neutral, and negative comments (counts and percentages)
+- Explain the sentiment score scale and calculation
 - Keep insights actionable and business-relevant
 - Maintain BMW Motorrad brand perspective
-- Use data-driven language, not speculation`;
+- Use data-driven language, not speculation
+- If analyzing negative sentiment, acknowledge it's filtered data, not overall sentiment
+
+STRICT JSON OUTPUT INSTRUCTIONS:
+- You must return ONLY valid JSON, with no text, commentary, or explanation outside the JSON block.
+- Begin your response with three backticks and the word 'json' (\`\`\`json), then the JSON, then close with three backticks (\`\`\`).
+- If you do not return valid JSON in this format, your answer will not be used.`;
   }
 
   /**
@@ -234,24 +274,34 @@ GUIDELINES:
     const filterDescription = this.describeActiveFilters(activeFilters);
     const dataStats = this.generateDataStatistics(filteredData);
     
-    return `Analyze the following R 12 G/S consumer data subset and generate insights:
+    return `IMPORTANT: You are analyzing FILTERED consumer data, not the complete dataset.
 
-ACTIVE FILTERS: ${filterDescription}
+ACTIVE FILTERS APPLIED: ${filterDescription}
 DASHBOARD SECTION: ${section}
 
-DATA SUMMARY:
+CONTEXT: This analysis is based on a filtered subset of R 12 G/S consumer data. The insights you provide should be specific to this filtered view and should clearly acknowledge the filter context.
+
+FILTERED DATA SUMMARY:
 ${dataStats}
 
-FILTERED CONSUMER QUOTES (sample):
+FILTERED CONSUMER QUOTES (sample from filtered data):
 ${this.formatQuoteSample(filteredData.quotes?.slice(0, 5) || [])}
 
-SENTIMENT BREAKDOWN:
+SENTIMENT BREAKDOWN (for filtered data only):
 ${this.formatSentimentData(filteredData.sentimentData || [])}
 
-THEME DISTRIBUTION:
+THEME DISTRIBUTION (for filtered data only):
 ${this.formatThemeData(filteredData.themeData || [])}
 
-Generate a focused mini-report that explains what this filtered data reveals about R 12 G/S consumer sentiment and provides actionable recommendations.`;
+ALSO INCLUDE:
+- A breakdown of the number and percentage of positive, neutral, and negative comments in the filtered data.
+- The calculation method for the average sentiment score (e.g., 1=very negative, 3=neutral, 5=very positive).
+
+Generate a focused mini-report that:
+1. Clearly states what filters are applied and their impact
+2. Explains what this specific filtered data reveals about R 12 G/S consumer sentiment
+3. Provides actionable recommendations based on this filtered view
+4. Acknowledges that insights are specific to the filtered subset, not overall consumer sentiment`;
   }
 
   /**
@@ -344,9 +394,31 @@ Generate a focused mini-report that explains what this filtered data reveals abo
    * Parse the AI response into structured format
    */
   parseInsightsResponse(content) {
+    // Debug: log the raw AI response
+    console.log("Raw AI response:", content);
+    // Remove Markdown code block if present
+    let jsonString = content.trim();
+    if (jsonString.startsWith('```json')) {
+      jsonString = jsonString.replace(/^```json/, '').replace(/```$/, '').trim();
+    } else if (jsonString.startsWith('```')) {
+      jsonString = jsonString.replace(/^```/, '').replace(/```$/, '').trim();
+    }
     try {
       // Try to parse as JSON first
-      const parsed = JSON.parse(content);
+      const parsed = JSON.parse(jsonString);
+      // Ensure filterContext is present
+      if (!parsed.filterContext) {
+        parsed.filterContext = "Analysis based on filtered data subset. Results are specific to the applied filters.";
+      }
+      // Ensure sentimentBreakdown is present
+      if (!parsed.sentimentBreakdown) {
+        parsed.sentimentBreakdown = {
+          positive: { count: 0, percentage: 0 },
+          neutral: { count: 0, percentage: 0 },
+          negative: { count: 0, percentage: 0 },
+          scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
+        };
+      }
       return {
         success: true,
         insights: parsed
@@ -356,6 +428,13 @@ Generate a focused mini-report that explains what this filtered data reveals abo
       return {
         success: true,
         insights: {
+          filterContext: "Analysis based on filtered data subset. Results are specific to the applied filters.",
+          sentimentBreakdown: {
+            positive: { count: 0, percentage: 0 },
+            neutral: { count: 0, percentage: 0 },
+            negative: { count: 0, percentage: 0 },
+            scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
+          },
           summary: content.split('\n')[0] || "Analysis complete",
           keyFindings: this.extractListItems(content, 'finding'),
           recommendations: this.extractListItems(content, 'recommend'),
@@ -407,3 +486,6 @@ Generate a focused mini-report that explains what this filtered data reveals abo
 
 // Export singleton instance
 export const aiInsightsService = new AIInsightsService();
+
+// Export the class as default for dynamic imports
+export default AIInsightsService;

@@ -1,20 +1,61 @@
 import React, { useState } from 'react';
+import { PieChart, Pie, Cell, Tooltip, Legend as RechartsLegend, ResponsiveContainer } from 'recharts';
+
+// Simple service loader to avoid circular dependencies
+const createMockService = () => ({
+  generateFilteredInsights: async () => ({
+    success: true,
+    insights: {
+      filterContext: "Service unavailable - running in demo mode with filtered data context.",
+      summary: "Demo mode - no API key configured",
+      keyFindings: ["Demo mode active", "Service failed to load"],
+      recommendations: ["Check service configuration", "Contact administrator"],
+      dataHighlights: {
+        strongestTheme: "Demo",
+        sentimentTrend: "Unavailable",
+        criticalQuote: "Service not loaded"
+      }
+    }
+  })
+});
 
 // React Hook for using AI insights
 export const useAIInsights = () => {
   const [insights, setInsights] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [hasGenerated, setHasGenerated] = useState(false);
 
   const generateInsights = async (filteredData, activeFilters, section) => {
+    // Prevent multiple simultaneous generations
+    if (loading) {
+      console.log("🔄 Already generating insights, skipping...");
+      return;
+    }
+    
     setLoading(true);
     setError(null);
     
     try {
-      // Dynamic import to avoid circular dependency
-      const { aiInsightsService } = await import('../services/src/services/aiInsightsService');
+      // Log environment check
+      console.log("🔍 AI Insights - Environment Check:");
+      console.log("REACT_APP_OPENAI_API_KEY:", process.env.REACT_APP_OPENAI_API_KEY ? "✅ Found" : "❌ Not found");
+      console.log("OPENAI_API_KEY:", process.env.OPENAI_API_KEY ? "✅ Found" : "❌ Not found");
       
-      const result = await aiInsightsService.generateFilteredInsights(
+      // Try to load the real service, fall back to mock if it fails
+      let service;
+      try {
+        console.log("🔄 Attempting to load AI Insights Service...");
+        const module = await import('../services/src/services/aiInsightsService');
+        service = module.aiInsightsService;
+        console.log("✅ AI Insights Service loaded successfully");
+      } catch (importError) {
+        console.warn('⚠️ Failed to import AI service, using mock:', importError);
+        service = createMockService();
+      }
+      
+      console.log("🚀 Generating insights with service...");
+      const result = await service.generateFilteredInsights(
         filteredData, 
         activeFilters, 
         section
@@ -22,15 +63,20 @@ export const useAIInsights = () => {
       
       if (result.success) {
         setInsights(result.insights);
+        setHasGenerated(true);
+        console.log("✅ Insights generated successfully");
       } else {
         setError("Failed to generate insights");
         setInsights(result.insights); // Still show error response structure
+        setHasGenerated(true);
+        console.log("❌ Insights generation failed");
       }
     } catch (err) {
       console.error('AI Insights generation error:', err);
       
       // Provide fallback insights if service fails
       const fallbackInsights = {
+        filterContext: "Demo mode - no API key configured. Insights are simulated based on your filtered data.",
         summary: "AI analysis is running in demo mode. No OpenAI API key detected. Insights are generated based on your data patterns.",
         keyFindings: [
           "Demo mode active - insights are simulated",
@@ -51,6 +97,7 @@ export const useAIInsights = () => {
       
       setError("Demo mode - no API key configured");
       setInsights(fallbackInsights);
+      setHasGenerated(true);
     } finally {
       setLoading(false);
     }
@@ -59,12 +106,14 @@ export const useAIInsights = () => {
   const clearInsights = () => {
     setInsights(null);
     setError(null);
+    setHasGenerated(false);
   };
 
   return {
     insights,
     loading,
     error,
+    hasGenerated,
     generateInsights,
     clearInsights
   };
@@ -115,7 +164,6 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         <h3>🤖 AI Insights</h3>
         <button onClick={onRefresh} className="refresh-btn">Refresh</button>
       </div>
-      
       {/* Demo Mode Indicator */}
       {error && error.includes("Demo mode") && (
         <div style={{
@@ -130,8 +178,27 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
           🎭 <strong>Demo Mode:</strong> No OpenAI API key configured. Insights are simulated based on your data.
         </div>
       )}
-      
       <div className="insights-content">
+        {/* Filter Context Section */}
+        {insights.filterContext && (
+          <div className="filter-context-section" style={{
+            backgroundColor: '#e3f2fd',
+            border: '1px solid #2196f3',
+            borderRadius: '4px',
+            padding: '12px 16px',
+            marginBottom: '16px',
+            fontSize: '14px',
+            color: '#1565c0'
+          }}>
+            <h4 style={{ margin: '0 0 8px 0', fontSize: '16px', fontWeight: 'bold' }}>
+              🔍 Filter Context
+            </h4>
+            <p style={{ margin: 0, lineHeight: 1.4 }}>
+              {insights.filterContext}
+            </p>
+          </div>
+        )}
+
         <div className="summary-section">
           <h4>Summary</h4>
           <p>{insights.summary}</p>

@@ -39,7 +39,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import QuoteExplorer from './QuoteExplorer';
 import { useAIInsights, AIInsightsPanel } from './AIInsightsHooks';
-import '../components/src/components/AIInsights.css';
+import './src/components/AIInsights.css';
 import MiniAIInsights from './MiniAIInsights';
 
 const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
@@ -211,41 +211,31 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     };
   };
 
-  // Compute filtered data for AI insights
+  // Prepare filtered data for AI insights
   const filteredData = useMemo(() => {
     if (!filteredQuotes || filteredQuotes.length === 0) return null;
     
-    // Calculate statistics for filtered data
-    const totalQuotes = filteredQuotes.length;
-    const averageSentiment = calculateAverageSentiment(filteredQuotes);
-    const topTheme = calculateTopTheme(filteredQuotes);
-    const timeRange = calculateTimeRange(filteredQuotes);
-    
     return {
-      quotes: filteredQuotes,
-      totalQuotes,
-      averageSentiment,
-      topTheme,
-      timeRange,
+      totalQuotes: filteredQuotes.length,
+      averageSentiment: calculateAverageSentiment(filteredQuotes),
+      topTheme: calculateTopTheme(filteredQuotes),
+      timeRange: calculateTimeRange(filteredQuotes),
+      quotes: filteredQuotes.slice(0, 10), // Sample of quotes
       sentimentData: sentimentData,
       themeData: themeData,
       platformData: platformData
     };
   }, [filteredQuotes, sentimentData, themeData, platformData]);
 
-  // Auto-generate insights when filters change (with debounce)
-  useEffect(() => {
-    if (showInsights && filteredData && Object.values(filters).some(f => f !== 'All')) {
-      const timer = setTimeout(() => {
-        handleGenerateInsights();
-      }, 1000); // 1 second debounce
-      
-      return () => clearTimeout(timer);
-    }
-  }, [filteredData, filters, showInsights]);
+  // INSIGHTS GENERATION: Only manual generation via button click
+  // No automatic generation - insights will only be generated when user clicks "Generate Insights" button
 
   const handleGenerateInsights = async () => {
-    if (!filteredData) return;
+    console.log("🔍 handleGenerateInsights called - Manual generation triggered");
+    if (!filteredData) {
+      console.log("❌ No filtered data available, skipping generation");
+      return;
+    }
     
     // Convert filters to activeFilters format
     const activeFilters = Object.entries(filters)
@@ -255,6 +245,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
         value: value
       }));
     
+    console.log("🚀 Starting manual insight generation with filters:", activeFilters);
     await generateInsights(filteredData, activeFilters, 'consumer-analysis');
   };
 
@@ -451,7 +442,8 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
               </Box>
               
               {/* Mini AI Insights for Sentiment */}
-              {showInsights && filteredData && (
+              {/* Temporarily disabled to prevent flashing and multiple API calls */}
+              {/* {showInsights && filteredData && (
                 <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(76, 175, 80, 0.1)', borderRadius: 1 }}>
                   <MiniAIInsights 
                     data={filteredData}
@@ -461,7 +453,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       .map(([key, value]) => ({ type: key, value }))}
                   />
                 </Box>
-              )}
+              )} */}
             </CardContent>
           </Card>
         </Grid>
@@ -512,7 +504,8 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
               </Typography>
               
               {/* Mini AI Insights for Themes */}
-              {showInsights && filteredData && (
+              {/* Temporarily disabled to prevent flashing and multiple API calls */}
+              {/* {showInsights && filteredData && (
                 <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(25, 118, 210, 0.1)', borderRadius: 1 }}>
                   <MiniAIInsights 
                     data={filteredData}
@@ -522,7 +515,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       .map(([key, value]) => ({ type: key, value }))}
                   />
                 </Box>
-              )}
+              )} */}
             </CardContent>
           </Card>
         </Grid>
@@ -548,7 +541,8 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
               </ResponsiveContainer>
               
               {/* Mini AI Insights for Platform Distribution */}
-              {showInsights && filteredData && (
+              {/* Temporarily disabled to prevent flashing and multiple API calls */}
+              {/* {showInsights && filteredData && (
                 <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(156, 39, 176, 0.1)', borderRadius: 1 }}>
                   <MiniAIInsights 
                     data={filteredData}
@@ -558,7 +552,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       .map(([key, value]) => ({ type: key, value }))}
                   />
                 </Box>
-              )}
+              )} */}
             </CardContent>
           </Card>
         </Grid>
