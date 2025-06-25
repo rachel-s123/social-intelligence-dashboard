@@ -1,224 +1,30 @@
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-require("dotenv").config();
-
-// Import AI configuration
-const { getSystemMessage, getAIConfig } = require("./ai/system-prompt");
-
-const app = express();
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-
-// Serve static files from the React app build directory
-app.use(express.static(path.join(__dirname, "build")));
-
-// OpenAI setup
 const OpenAI = require("openai").default;
 
+// Initialize OpenAI client
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Prefer VS_STORE_ID but fall back to REACT_APP_VS_STORE_ID for client and server environments
-const VECTOR_STORE_ID =
-  process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
+module.exports = async (req, res) => {
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
 
-// Test chat endpoint (simple, no vector store)
-app.post("/api/test-chat", async (req, res) => {
-  try {
-    const { messages } = req.body;
-
-    if (!messages || !Array.isArray(messages)) {
-      return res.status(400).json({ error: "Messages array is required" });
-    }
-
-    // Simple test without vector store
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        {
-          role: "system",
-          content: "You are a helpful AI assistant for BMW Motorrad market analysis. Keep responses brief and focused."
-        },
-        ...messages
-      ],
-      stream: false,
-      temperature: 0.2,
-      max_tokens: 500,
-    });
-
-    const content = response.choices[0]?.message?.content || "No response generated";
-    
-    res.json({
-      choices: [{
-        message: {
-          content: content
-        }
-      }]
-    });
-
-  } catch (error) {
-    console.error("Test chat API error:", error);
-    res.status(500).json({
-      error: "Failed to get AI response",
-      details: error.message,
-    });
+  // Handle OPTIONS request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
   }
-});
 
-// Chat API endpoint using Chat Completions with vector store retrieval
-app.post("/api/chat", async (req, res) => {
-  try {
-    const { messages } = req.body;
-
-    console.log("Received chat request with messages:", messages);
-
-    if (!messages || !Array.isArray(messages)) {
-      return res.status(400).json({ error: "Messages array is required" });
-    }
-
-    if (!VECTOR_STORE_ID) {
-      throw new Error("VECTOR_STORE_ID is not configured");
-    }
-
-    // Set headers for streaming
-    res.setHeader("Content-Type", "text/plain");
-    res.setHeader("Transfer-Encoding", "chunked");
-    res.setHeader("Cache-Control", "no-cache");
-    res.setHeader("Connection", "keep-alive");
-
-    // Get the latest user message for vector store search
-    const latestUserMessage = messages[messages.length - 1];
-
-    console.log("Latest user message:", latestUserMessage.content);
-
-    // Search vector store for relevant context
-    let contextFromVectorStore = "";
-    try {
-      console.log("Starting vector store search with ID:", VECTOR_STORE_ID);
-      
-      // Add timeout to vector store search
-      const searchTimeout = setTimeout(() => {
-        console.log("Vector store search timed out, proceeding without context");
-        throw new Error("Vector store search timeout");
-      }, 15000); // 15 second timeout
-      
-      // Create a temporary assistant just for file search
-      const searchAssistant = await openai.beta.assistants.create({
-        name: "Search Assistant",
-        instructions:
-          "You are a search assistant. Extract relevant information from the files.",
-        model: "gpt-4o-mini",
-        tools: [{ type: "file_search" }],
-        tool_resources: {
-          file_search: {
-            vector_store_ids: [VECTOR_STORE_ID],
-          },
-        },
-      });
-
-      console.log("Created search assistant:", searchAssistant.id);
-
-      // Create thread and search
-      const thread = await openai.beta.threads.create();
-      await openai.beta.threads.messages.create(thread.id, {
-        role: "user",
-        content: `Search for information relevant to: ${latestUserMessage.content}`,
-      });
-
-      console.log("Created thread and message, starting run...");
-
-      const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
-        assistant_id: searchAssistant.id,
-        poll_interval_ms: 1000, // Poll every second
-      });
-
-      console.log("Run completed with status:", run.status);
-
-      if (run.status === "completed") {
-        const threadMessages = await openai.beta.threads.messages.list(
-          thread.id
-        );
-        const assistantMessage = threadMessages.data.find(
-          (msg) => msg.role === "assistant"
-        );
-        if (assistantMessage && assistantMessage.content[0]) {
-          contextFromVectorStore = assistantMessage.content[0].text.value;
-          console.log("Found context from vector store:", contextFromVectorStore.substring(0, 200) + "...");
-        }
-      } else {
-        console.log("Run failed or timed out with status:", run.status);
-      }
-
-      // Clean up
-      await openai.beta.assistants.del(searchAssistant.id);
-      console.log("Cleaned up search assistant");
-      
-      clearTimeout(searchTimeout);
-    } catch (searchError) {
-      console.log(
-        "Vector store search failed, proceeding without context:",
-        searchError.message
-      );
-    }
-
-    // Get AI configuration
-    const aiConfig = getAIConfig();
-
-    // Prepare messages with vector store context
-    const systemMessage = getSystemMessage();
-    if (contextFromVectorStore) {
-      systemMessage.content += `\n\nRelevant information from vector store ${VECTOR_STORE_ID}:\n${contextFromVectorStore}`;
-    }
-
-    // Create streaming response using Chat Completions
-    const stream = await openai.chat.completions.create({
-      model: aiConfig.model,
-      messages: [systemMessage, ...messages],
-      stream: aiConfig.stream,
-      temperature: aiConfig.temperature,
-      max_tokens: aiConfig.max_tokens,
-    });
-
-    // Stream the response
-    for await (const chunk of stream) {
-      const content = chunk.choices[0]?.delta?.content || "";
-      if (content) {
-        res.write(
-          `data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n`
-        );
-      }
-    }
-
-    res.write("data: [DONE]\n\n");
-    res.end();
-  } catch (error) {
-    console.error("Chat API error:", error);
-
-    if (!res.headersSent) {
-      res.status(500).json({
-        error: "Failed to get AI response",
-        details: error.message,
-      });
-    } else {
-      res.write(
-        `data: ${JSON.stringify({ error: "Stream error occurred" })}\n\n`
-      );
-      res.end();
-    }
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
   }
-});
 
-// Health check endpoint
-app.get("/api/health", (req, res) => {
-  res.json({ status: "OK", timestamp: new Date().toISOString() });
-});
-
-// AI Insights endpoint
-app.post("/api/insights", async (req, res) => {
   try {
     const { filteredData, activeFilters, section } = req.body;
 
@@ -253,41 +59,11 @@ app.post("/api/insights", async (req, res) => {
       insights: generateMockInsights(filteredData, activeFilters, section)
     });
   }
-});
+};
 
-// Catch all handler: send back React's index.html file for any non-API routes
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
-
-// For local development
-if (process.env.NODE_ENV !== 'production') {
-  const PORT = process.env.PORT || 3001;
-  app.listen(PORT, () => {
-    console.log(`🚀 Server is running on port ${PORT}`);
-    console.log(`📍 Server URL: http://localhost:${PORT}`);
-    console.log(
-      `🔑 OpenAI API Key configured: ${process.env.OPENAI_API_KEY ? "Yes" : "No"}`
-    );
-    console.log(
-      `📊 Vector Store ID configured: ${process.env.VS_STORE_ID ? "Yes" : "No"}`
-    );
-    console.log(
-      `🎯 Vector Store ID: ${process.env.VS_STORE_ID || "Not configured"}`
-    );
-    console.log(
-      `🤖 AI Model: ${require("./ai/system-prompt").getAIConfig().model}`
-    );
-    console.log(
-      `\n✅ Server ready! Visit http://localhost:${PORT} to use the application`
-    );
-  });
-}
-
-// Export the Express API
-module.exports = app;
-
-// Helper functions for insights generation
+/**
+ * Generate AI insights using OpenAI
+ */
 async function generateAIInsights(filteredData, activeFilters, section) {
   const prompt = buildInsightsPrompt(filteredData, activeFilters, section);
   
@@ -311,6 +87,9 @@ async function generateAIInsights(filteredData, activeFilters, section) {
   return parseInsightsResponse(content);
 }
 
+/**
+ * Generate mock insights for demo mode or API failures
+ */
 function generateMockInsights(filteredData, activeFilters, section) {
   const filterDescription = describeActiveFilters(activeFilters);
   const dataStats = generateDataStatistics(filteredData);
@@ -342,6 +121,9 @@ function generateMockInsights(filteredData, activeFilters, section) {
   };
 }
 
+/**
+ * Generate mock summary based on data
+ */
 function generateMockSummary(filteredData, activeFilters, section) {
   const totalQuotes = filteredData.totalQuotes || 0;
   const avgSentiment = filteredData.averageSentiment || 3.0;
@@ -355,6 +137,9 @@ function generateMockSummary(filteredData, activeFilters, section) {
   return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${avgSentiment}/5.0 average sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
 }
 
+/**
+ * Generate mock findings based on data
+ */
 function generateMockFindings(filteredData, activeFilters, section) {
   const findings = [];
   const totalQuotes = filteredData.totalQuotes || 0;
@@ -375,6 +160,9 @@ function generateMockFindings(filteredData, activeFilters, section) {
   return findings;
 }
 
+/**
+ * Generate mock recommendations based on data
+ */
 function generateMockRecommendations(filteredData, activeFilters, section) {
   const recommendations = [];
   const avgSentiment = filteredData.averageSentiment || 3.0;
@@ -396,6 +184,9 @@ function generateMockRecommendations(filteredData, activeFilters, section) {
   return recommendations;
 }
 
+/**
+ * Generate mock highlights based on data
+ */
 function generateMockHighlights(filteredData, activeFilters, section) {
   const topTheme = filteredData.topTheme?.name || "Performance";
   const avgSentiment = filteredData.averageSentiment || 3.0;
@@ -414,6 +205,9 @@ function generateMockHighlights(filteredData, activeFilters, section) {
   };
 }
 
+/**
+ * Get the system prompt for AI insights
+ */
 function getInsightsSystemPrompt() {
   return `You are an AI analyst specializing in BMW Motorrad market research and consumer insights. Your role is to analyze filtered consumer data and provide actionable insights.
 
@@ -441,6 +235,9 @@ Return a JSON object with this exact structure:
 IMPORTANT: Always explain any scores or statistics you reference. For example, if you mention "sentiment score of 3.8", explain that sentiment is scored from 1-5 where 1 is very negative and 5 is very positive.`;
 }
 
+/**
+ * Build the prompt for AI insights generation
+ */
 function buildInsightsPrompt(filteredData, activeFilters, section) {
   const filterDescription = describeActiveFilters(activeFilters);
   const dataStats = generateDataStatistics(filteredData);
@@ -464,6 +261,9 @@ Please provide insights based on this filtered data subset. Remember to:
 Return your response as a valid JSON object matching the required format.`;
 }
 
+/**
+ * Describe active filters in human-readable format
+ */
 function describeActiveFilters(filters) {
   if (!filters || filters.length === 0) {
     return "No filters applied - analyzing complete dataset";
@@ -483,6 +283,9 @@ function describeActiveFilters(filters) {
   return `Filters applied: ${filterDescriptions.join(', ')}`;
 }
 
+/**
+ * Generate data statistics for the prompt
+ */
 function generateDataStatistics(data) {
   const totalQuotes = data.totalQuotes || 0;
   const avgSentiment = data.averageSentiment || 0;
@@ -495,6 +298,9 @@ Top Theme: ${topTheme} (${topThemePercentage}% of mentions)
 Time Range: ${data.timeRange || 'N/A'}`;
 }
 
+/**
+ * Parse the AI response into structured insights
+ */
 function parseInsightsResponse(content) {
   try {
     // Try to extract JSON from the response
@@ -531,4 +337,4 @@ function parseInsightsResponse(content) {
       criticalQuote: "Unable to extract quote"
     }
   };
-}
+} 

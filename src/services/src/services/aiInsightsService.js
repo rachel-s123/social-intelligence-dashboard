@@ -1,45 +1,16 @@
 // src/services/aiInsightsService.js
 
-import OpenAI from "openai";
-
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_OPENAI_API_KEY || process.env.OPENAI_API_KEY,
-  dangerouslyAllowBrowser: true, // Allow browser usage for React app
-});
-
 /**
  * AI Insights Service for R 12 G/S Filtering
  * Generates contextual mini-reports based on filtered data
+ * Now uses server-side API endpoint for secure OpenAI calls
  */
 class AIInsightsService {
   constructor() {
-    this.model = "gpt-4o-mini";
-    this.temperature = 0.3; // Slightly higher for creative insights
-    this.maxTokens = 800; // Shorter responses for mini-reports
+    // Debug API endpoint detection
+    console.log("🔍 AI Insights Service - Using server-side API endpoint");
     
-    // Debug API key detection
-    const reactAppKey = process.env.REACT_APP_OPENAI_API_KEY;
-    const regularKey = process.env.OPENAI_API_KEY;
-    const hasApiKey = reactAppKey || regularKey;
-    
-    console.log("🔍 AI Insights Service - API Key Detection:", {
-      hasReactAppKey: !!reactAppKey,
-      hasRegularKey: !!regularKey,
-      hasAnyKey: !!hasApiKey,
-      reactAppKeyLength: reactAppKey ? reactAppKey.length : 0,
-      regularKeyLength: regularKey ? regularKey.length : 0,
-      reactAppKeyPrefix: reactAppKey ? reactAppKey.substring(0, 10) + "..." : "none",
-      regularKeyPrefix: regularKey ? regularKey.substring(0, 10) + "..." : "none"
-    });
-    
-    this.demoMode = !hasApiKey;
-    
-    if (this.demoMode) {
-      console.log("🎭 Running in DEMO MODE - no API key detected");
-    } else {
-      console.log("🤖 Running with REAL AI - API key detected");
-    }
+    this.demoMode = false; // We'll let the server handle demo mode
   }
 
   /**
@@ -51,43 +22,46 @@ class AIInsightsService {
    */
   async generateFilteredInsights(filteredData, activeFilters, section) {
     try {
-      // Check if we're in demo mode (no API key)
-      if (this.demoMode) {
-        console.log("Running in demo mode - generating mock insights");
-        return this.generateMockInsights(filteredData, activeFilters, section);
-      }
-
-      const prompt = this.buildInsightsPrompt(filteredData, activeFilters, section);
+      console.log("🚀 Calling server-side insights API...");
       
-      const response = await openai.chat.completions.create({
-        model: this.model,
-        messages: [
-          {
-            role: "system",
-            content: this.getInsightsSystemPrompt()
-          },
-          {
-            role: "user",
-            content: prompt
-          }
-        ],
-        temperature: this.temperature,
-        max_tokens: this.maxTokens,
+      const response = await fetch('/api/insights', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          filteredData,
+          activeFilters,
+          section
+        })
       });
 
-      const content = response.choices[0].message.content;
-      return this.parseInsightsResponse(content);
-    } catch (error) {
-      console.error("AI Insights generation error:", error);
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const result = await response.json();
       
-      // If API fails, fall back to mock insights
-      console.log("API failed, falling back to mock insights");
-      return this.generateMockInsights(filteredData, activeFilters, section);
+      if (result.success) {
+        console.log("✅ Insights generated successfully via server API");
+        return result;
+      } else {
+        throw new Error(result.error || "Failed to generate insights");
+      }
+    } catch (error) {
+      console.error("AI Insights API error:", error);
+      
+      // Fallback to mock insights if server call fails
+      console.log("Server API failed, falling back to mock insights");
+      return {
+        success: true,
+        insights: this.generateMockInsights(filteredData, activeFilters, section)
+      };
     }
   }
 
   /**
-   * Generate mock insights for demo mode or API failures
+   * Generate mock insights for fallback scenarios
    */
   generateMockInsights(filteredData, activeFilters, section) {
     const filterDescription = this.describeActiveFilters(activeFilters);
@@ -198,294 +172,108 @@ class AIInsightsService {
     if (avgSentiment > 3.5) sentimentTrend = "Positive";
     else if (avgSentiment < 2.5) sentimentTrend = "Negative";
     
-    const criticalQuote = quotes.length > 0 
-      ? quotes[0].text || "Sample consumer feedback unavailable"
-      : "No quotes available for analysis";
+    const criticalQuote = quotes.length > 0 ? quotes[0].text : "No quotes available";
     
     return {
       strongestTheme: topTheme,
       sentimentTrend: sentimentTrend,
-      criticalQuote: criticalQuote.length > 100 ? criticalQuote.substring(0, 100) + "..." : criticalQuote
+      criticalQuote: criticalQuote
     };
   }
 
   /**
-   * System prompt specifically for filtering insights
-   */
-  getInsightsSystemPrompt() {
-    return `You are an AI analyst specializing in BMW R 12 G/S consumer insights. Your role is to generate concise, actionable mini-reports based on FILTERED data.
-
-CRITICAL CONTEXT:
-- You are analyzing a FILTERED SUBSET of consumer data, not the entire dataset
-- ALWAYS begin your analysis by clearly stating what filters are applied
-- Make it clear that your insights are specific to this filtered view
-- Do not make general statements about "all consumers" unless analyzing unfiltered data
-- If sentiment appears skewed, acknowledge that this is due to the specific filters applied
-
-RESPONSE FORMAT (JSON):
-{
-  "filterContext": "Clear description of what filters are applied and their impact on the data",
-  "summary": "Brief overview of what this filtered data reveals",
-  "sentimentBreakdown": {
-    "positive": { "count": number, "percentage": number },
-    "neutral": { "count": number, "percentage": number },
-    "negative": { "count": number, "percentage": number },
-    "scoreExplanation": "Explain the sentiment score scale (e.g., 1=very negative, 3=neutral, 5=very positive) and how the average is calculated."
-  },
-  "keyFindings": [
-    "Finding 1 - specific to filtered data",
-    "Finding 2 - specific to filtered data",
-    "Finding 3 - specific to filtered data"
-  ],
-  "recommendations": [
-    "Actionable recommendation 1",
-    "Strategic suggestion 2", 
-    "Market opportunity 3"
-  ],
-  "dataHighlights": {
-    "strongestTheme": "Most prominent theme in filtered data",
-    "sentimentTrend": "Overall sentiment direction for this filtered subset",
-    "criticalQuote": "Most representative consumer quote from filtered data"
-  }
-}
-
-GUIDELINES:
-- ALWAYS start with filter context to set expectations
-- Focus on the specific filtered subset, not general insights
-- Highlight what makes this filtered view unique or significant
-- Include specific percentages, themes, or sentiment scores when available
-- Provide a clear breakdown of positive, neutral, and negative comments (counts and percentages)
-- Explain the sentiment score scale and calculation
-- Keep insights actionable and business-relevant
-- Maintain BMW Motorrad brand perspective
-- Use data-driven language, not speculation
-- If analyzing negative sentiment, acknowledge it's filtered data, not overall sentiment
-
-STRICT JSON OUTPUT INSTRUCTIONS:
-- You must return ONLY valid JSON, with no text, commentary, or explanation outside the JSON block.
-- Begin your response with three backticks and the word 'json' (\`\`\`json), then the JSON, then close with three backticks (\`\`\`).
-- If you do not return valid JSON in this format, your answer will not be used.`;
-  }
-
-  /**
-   * Build the insights prompt based on filtered data
-   */
-  buildInsightsPrompt(filteredData, activeFilters, section) {
-    const filterDescription = this.describeActiveFilters(activeFilters);
-    const dataStats = this.generateDataStatistics(filteredData);
-    
-    return `IMPORTANT: You are analyzing FILTERED consumer data, not the complete dataset.
-
-ACTIVE FILTERS APPLIED: ${filterDescription}
-DASHBOARD SECTION: ${section}
-
-CONTEXT: This analysis is based on a filtered subset of R 12 G/S consumer data. The insights you provide should be specific to this filtered view and should clearly acknowledge the filter context.
-
-FILTERED DATA SUMMARY:
-${dataStats}
-
-FILTERED CONSUMER QUOTES (sample from filtered data):
-${this.formatQuoteSample(filteredData.quotes?.slice(0, 5) || [])}
-
-SENTIMENT BREAKDOWN (for filtered data only):
-${this.formatSentimentData(filteredData.sentimentData || [])}
-
-THEME DISTRIBUTION (for filtered data only):
-${this.formatThemeData(filteredData.themeData || [])}
-
-ALSO INCLUDE:
-- A breakdown of the number and percentage of positive, neutral, and negative comments in the filtered data.
-- The calculation method for the average sentiment score (e.g., 1=very negative, 3=neutral, 5=very positive).
-
-Generate a focused mini-report that:
-1. Clearly states what filters are applied and their impact
-2. Explains what this specific filtered data reveals about R 12 G/S consumer sentiment
-3. Provides actionable recommendations based on this filtered view
-4. Acknowledges that insights are specific to the filtered subset, not overall consumer sentiment`;
-  }
-
-  /**
-   * Describe active filters in natural language
+   * Describe active filters in human-readable format
    */
   describeActiveFilters(filters) {
-    if (!filters || filters.length === 0) return "No filters applied - viewing all data";
+    if (!filters || filters.length === 0) {
+      return "No filters applied - analyzing complete dataset";
+    }
     
     const filterDescriptions = filters.map(filter => {
       switch (filter.type) {
-        case 'theme':
-          return `Theme: ${filter.value}`;
-        case 'sentiment':
-          return `Sentiment: ${filter.value}`;
-        case 'platform':
-          return `Platform: ${filter.value}`;
-        case 'week':
-          return `Week: ${filter.value}`;
-        case 'purchaseIntent':
-          return `Purchase Intent: ${filter.value}`;
-        case 'dateRange':
-          return `Date Range: ${filter.startDate} to ${filter.endDate}`;
-        default:
-          return `${filter.type}: ${filter.value}`;
+        case 'theme': return `Theme: ${filter.value}`;
+        case 'sentiment': return `Sentiment: ${filter.value}`;
+        case 'platform': return `Platform: ${filter.value}`;
+        case 'week': return `Week: ${filter.value}`;
+        case 'purchaseIntent': return `Purchase Intent: ${filter.value}`;
+        default: return `${filter.type}: ${filter.value}`;
       }
     });
     
-    return filterDescriptions.join(", ");
+    return `Filters applied: ${filterDescriptions.join(', ')}`;
   }
 
   /**
-   * Generate statistics from filtered data
+   * Generate data statistics for the prompt
    */
   generateDataStatistics(data) {
-    const stats = [];
+    const totalQuotes = data.totalQuotes || 0;
+    const avgSentiment = data.averageSentiment || 0;
+    const topTheme = data.topTheme?.name || "N/A";
+    const topThemePercentage = data.topTheme?.percentage || 0;
     
-    if (data.totalQuotes) {
-      stats.push(`Total Consumer Quotes: ${data.totalQuotes}`);
-    }
-    
-    if (data.averageSentiment) {
-      stats.push(`Average Sentiment Score: ${data.averageSentiment}/5.0`);
-    }
-    
-    if (data.topTheme) {
-      stats.push(`Most Discussed Theme: ${data.topTheme.name} (${data.topTheme.percentage}%)`);
-    }
-    
-    if (data.timeRange) {
-      stats.push(`Time Period: ${data.timeRange.start} to ${data.timeRange.end}`);
-    }
-    
-    return stats.join("\n");
+    return `Total Quotes: ${totalQuotes}
+Average Sentiment: ${avgSentiment}/5.0 (1=very negative, 5=very positive)
+Top Theme: ${topTheme} (${topThemePercentage}% of mentions)
+Time Range: ${data.timeRange || 'N/A'}`;
   }
 
   /**
-   * Format quote samples for the prompt
+   * Format quote sample for display
    */
   formatQuoteSample(quotes) {
     if (!quotes || quotes.length === 0) return "No quotes available";
     
-    return quotes.map((quote, index) => 
-      `${index + 1}. "${quote.text}" - ${quote.sentiment} sentiment, ${quote.theme} theme, ${quote.platform}`
-    ).join("\n");
+    return quotes.slice(0, 3).map(q => 
+      `"${q.text}" (${q.sentiment}, ${q.theme})`
+    ).join('\n');
   }
 
   /**
-   * Format sentiment data for the prompt
+   * Format sentiment data for display
    */
   formatSentimentData(sentimentData) {
     if (!sentimentData || sentimentData.length === 0) return "No sentiment data available";
     
     return sentimentData.map(item => 
-      `${item.name}: ${item.value} (${item.percentage || 'N/A'}%)`
-    ).join(", ");
+      `${item.name}: ${item.value}%`
+    ).join(', ');
   }
 
   /**
-   * Format theme data for the prompt
+   * Format theme data for display
    */
   formatThemeData(themeData) {
     if (!themeData || themeData.length === 0) return "No theme data available";
     
     return themeData.map(item => 
-      `${item.subject}: ${item.value} mentions (${item.percentage || 'N/A'}%)`
-    ).join(", ");
+      `${item.subject}: ${item.value}%`
+    ).join(', ');
   }
 
   /**
-   * Parse the AI response into structured format
-   */
-  parseInsightsResponse(content) {
-    // Debug: log the raw AI response
-    console.log("Raw AI response:", content);
-    // Remove Markdown code block if present
-    let jsonString = content.trim();
-    if (jsonString.startsWith('```json')) {
-      jsonString = jsonString.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (jsonString.startsWith('```')) {
-      jsonString = jsonString.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-    try {
-      // Try to parse as JSON first
-      const parsed = JSON.parse(jsonString);
-      // Ensure filterContext is present
-      if (!parsed.filterContext) {
-        parsed.filterContext = "Analysis based on filtered data subset. Results are specific to the applied filters.";
-      }
-      // Ensure sentimentBreakdown is present
-      if (!parsed.sentimentBreakdown) {
-        parsed.sentimentBreakdown = {
-          positive: { count: 0, percentage: 0 },
-          neutral: { count: 0, percentage: 0 },
-          negative: { count: 0, percentage: 0 },
-          scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
-        };
-      }
-      return {
-        success: true,
-        insights: parsed
-      };
-    } catch (error) {
-      // If JSON parsing fails, create structured response from text
-      return {
-        success: true,
-        insights: {
-          filterContext: "Analysis based on filtered data subset. Results are specific to the applied filters.",
-          sentimentBreakdown: {
-            positive: { count: 0, percentage: 0 },
-            neutral: { count: 0, percentage: 0 },
-            negative: { count: 0, percentage: 0 },
-            scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
-          },
-          summary: content.split('\n')[0] || "Analysis complete",
-          keyFindings: this.extractListItems(content, 'finding'),
-          recommendations: this.extractListItems(content, 'recommend'),
-          dataHighlights: {
-            strongestTheme: "Unable to parse from response",
-            sentimentTrend: "Unable to parse from response",
-            criticalQuote: "Unable to parse from response"
-          }
-        }
-      };
-    }
-  }
-
-  /**
-   * Extract list items from text response
-   */
-  extractListItems(text, keyword) {
-    const lines = text.split('\n');
-    const items = [];
-    
-    lines.forEach(line => {
-      if (line.toLowerCase().includes(keyword) && line.includes('-')) {
-        items.push(line.split('-').slice(1).join('-').trim());
-      }
-    });
-    
-    return items.length > 0 ? items : [`Analysis related to ${keyword} available in full response`];
-  }
-
-  /**
-   * Return error response structure
+   * Get error response structure
    */
   getErrorResponse() {
     return {
       success: false,
       insights: {
-        summary: "Unable to generate insights at this time. Please try again or check your filters.",
-        keyFindings: ["Analysis temporarily unavailable"],
-        recommendations: ["Please refresh and try again"],
+        filterContext: "Error occurred during analysis",
+        summary: "Unable to generate insights due to technical issues",
+        keyFindings: ["Analysis failed", "Please try again"],
+        recommendations: ["Check your connection", "Contact support if issue persists"],
         dataHighlights: {
-          strongestTheme: "Data unavailable",
-          sentimentTrend: "Data unavailable", 
-          criticalQuote: "Data unavailable"
+          strongestTheme: "Unknown",
+          sentimentTrend: "Unknown",
+          criticalQuote: "Unable to analyze"
         }
       }
     };
   }
 }
 
-// Export singleton instance
-export const aiInsightsService = new AIInsightsService();
+// Create and export singleton instance
+const aiInsightsService = new AIInsightsService();
 
-// Export the class as default for dynamic imports
-export default AIInsightsService;
+// Export both singleton and class for flexibility
+export { aiInsightsService as default, AIInsightsService };
