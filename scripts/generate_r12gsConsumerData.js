@@ -81,6 +81,10 @@ function parseConsumerMarkdown(content) {
   
   // Parse consumer quotes
   data.consumerQuotes = [];
+  data.purchaseIntentStats = { YES: 0, NO: 0, CONDITIONAL: 0, UNKNOWN: 0 };
+  data.competitorMentionCounts = {};
+  let engagementTotal = 0;
+  let engagementCount = 0;
   const quotesSection = content.match(/## Consumer Quotes by Theme\n([\s\S]*?)(?=\n---\n|\n## [^\n]+\n|$)/);
   if (quotesSection) {
     // Match all **Quote n:** blocks that come after theme subheadings
@@ -100,8 +104,22 @@ function parseConsumerMarkdown(content) {
         const purchaseIntentMatch = quoteMatch.match(/- \*\*Purchase_Intent:\*\* ([^\n]+)/);
         const competitorMatch = quoteMatch.match(/- \*\*Competitor_Mentioned:\*\* ([^\n]+)/);
         const engagementMatch = quoteMatch.match(/- \*\*Engagement:\*\* ([^\n]+)/);
-        
+
         if (idMatch && textMatch) {
+          const purchaseIntent = purchaseIntentMatch ? purchaseIntentMatch[1].toUpperCase() : 'UNKNOWN';
+          data.purchaseIntentStats[purchaseIntent] = (data.purchaseIntentStats[purchaseIntent] || 0) + 1;
+
+          if (competitorMatch && competitorMatch[1] && competitorMatch[1].toUpperCase() !== 'NONE') {
+            const comp = competitorMatch[1];
+            data.competitorMentionCounts[comp] = (data.competitorMentionCounts[comp] || 0) + 1;
+          }
+
+          let engagementValue = engagementMatch ? parseFloat(engagementMatch[1]) : NaN;
+          if (!isNaN(engagementValue)) {
+            engagementTotal += engagementValue;
+            engagementCount += 1;
+          }
+
           data.consumerQuotes.push({
             id: idMatch[1],
             text: textMatch[1],
@@ -121,10 +139,15 @@ function parseConsumerMarkdown(content) {
       });
     }
   }
+  data.engagementMetrics = {
+    totalEngagement: engagementTotal,
+    averageEngagement: engagementCount > 0 ? parseFloat((engagementTotal / engagementCount).toFixed(2)) : 0,
+    engagementCount
+  };
   
   // Parse purchase intent analysis
   data.purchaseIntentAnalysis = {};
-  const purchaseSection = content.match(/## Purchase Intent Analysis([\s\S]*?)(?=##|$)/);
+  const purchaseSection = content.match(/## Purchase Intent Analysis([\s\S]*?)(?=\n##[^#]|$)/);
   if (purchaseSection) {
     const totalMatch = purchaseSection[1].match(/\*\*Total Purchase Intent Mentions:\*\* \[([^\]]+)\]/);
     const positiveMatch = purchaseSection[1].match(/\*\*Positive Purchase Intent:\*\* \[([^\]]+)\]%/);
@@ -137,6 +160,21 @@ function parseConsumerMarkdown(content) {
       conditionalIntent: conditionalMatch ? parseFloat(conditionalMatch[1]) : '[NOT PROVIDED IN REPORT]',
       negativeIntent: negativeMatch ? parseFloat(negativeMatch[1]) : '[NOT PROVIDED IN REPORT]'
     };
+
+    const categoriesMatch = purchaseSection[1].match(/### Purchase Intent Categories([\s\S]*?)(?=\n---|\n##|$)/);
+    if (categoriesMatch) {
+      data.purchaseIntentCategories = {};
+      const catRegex = /\*\*([^*]+):\*\*\n- \*\*Count:\*\* ([^\n]+)\n- \*\*Percentage:\*\* ([^\n]+)/g;
+      let m;
+      while ((m = catRegex.exec(categoriesMatch[1])) !== null) {
+        const countVal = parseInt(m[2]);
+        const percVal = parseFloat(m[3]);
+        data.purchaseIntentCategories[m[1]] = {
+          count: isNaN(countVal) ? '[NOT PROVIDED IN REPORT]' : countVal,
+          percentage: isNaN(percVal) ? '[NOT PROVIDED IN REPORT]' : percVal
+        };
+      }
+    }
   }
   
   // Parse competitive mentions

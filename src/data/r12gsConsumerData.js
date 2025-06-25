@@ -600,11 +600,48 @@ export const r12gsConsumerData = {
         "engagement": "[NOT PROVIDED IN REPORT]"
       }
     ],
+    "purchaseIntentStats": {
+      "YES": 3,
+      "NO": 22,
+      "CONDITIONAL": 6,
+      "UNKNOWN": 0
+    },
+    "competitorMentionCounts": {
+      "BMW R12S": 1,
+      "BMW R1300GS": 1,
+      "BMW R80 G/S": 1,
+      "BMW GS Series": 1,
+      "BMW Urban G/S": 2,
+      "KTM 890 Adventure": 1
+    },
+    "engagementMetrics": {
+      "totalEngagement": 0,
+      "averageEngagement": 0,
+      "engagementCount": 0
+    },
     "purchaseIntentAnalysis": {
       "totalPurchaseIntentMentions": "NOT PROVIDED IN REPORT",
       "positiveIntent": "[NOT PROVIDED IN REPORT]",
       "conditionalIntent": "[NOT PROVIDED IN REPORT]",
       "negativeIntent": "[NOT PROVIDED IN REPORT]"
+    },
+    "purchaseIntentCategories": {
+      "Immediate Interest": {
+        "count": "[NOT PROVIDED IN REPORT]",
+        "percentage": "[NOT PROVIDED IN REPORT]"
+      },
+      "Waiting for Pricing": {
+        "count": "[NOT PROVIDED IN REPORT]",
+        "percentage": "[NOT PROVIDED IN REPORT]"
+      },
+      "Considering Alternatives": {
+        "count": "[NOT PROVIDED IN REPORT]",
+        "percentage": "[NOT PROVIDED IN REPORT]"
+      },
+      "Not Interested": {
+        "count": "[NOT PROVIDED IN REPORT]",
+        "percentage": "[NOT PROVIDED IN REPORT]"
+      }
     },
     "competitiveMentions": {
       "BMW GS Series": "[NOT PROVIDED IN REPORT]",
