@@ -722,39 +722,144 @@ const SegmentationSection = ({ segmentation }) => {
 };
 
 const RecommendationsSection = ({ recommendations }) => {
-  if (!recommendations) return null;
-  const categories = [
-    { key: 'strategypositioning', label: 'Strategy & Positioning' },
-    { key: 'contentandmessaging', label: 'Content & Messaging' },
-    { key: 'targeting', label: 'Targeting' },
-    { key: 'keyopportunities', label: 'Key Opportunities' }
-  ];
+  if (!recommendations || !recommendations.strategy || !recommendations.content || !recommendations.targeting) {
+    return null;
+  }
+
   return (
     <Paper sx={{ p: { xs: 3, md: 4 }, mb: 3, borderRadius: 2 }}>
       <Typography variant="h6" color="primary.main" gutterBottom>Recommendations</Typography>
-      <Typography color="text.secondary" sx={{ mb: 2 }}>
-        Strategic recommendations for the R 12 G/S based on consumer and market analysis:
+      
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={4}>
+          <Card sx={{ height: '100%', background: '#f8fafc' }}>
+            <CardContent>
+              <Typography variant="h6" color="primary.main" gutterBottom>Strategy Positioning</Typography>
+              <List dense>
+                {recommendations.strategy.map((item, index) => (
+                  <ListItem key={index} sx={{ px: 0 }}>
+                    <ListItemText 
+                      primary={item}
+                      primaryTypographyProps={{ fontSize: '0.9rem' }}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </CardContent>
+          </Card>
+        </Grid>
+        
+        <Grid item xs={12} md={4}>
+          <Card sx={{ height: '100%', background: '#f8fafc' }}>
+            <CardContent>
+              <Typography variant="h6" color="primary.main" gutterBottom>Content & Messaging</Typography>
+              <List dense>
+                {recommendations.content.map((item, index) => (
+                  <ListItem key={index} sx={{ px: 0 }}>
+                    <ListItemText 
+                      primary={item}
+                      primaryTypographyProps={{ fontSize: '0.9rem' }}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </CardContent>
+          </Card>
+        </Grid>
+        
+        <Grid item xs={12} md={4}>
+          <Card sx={{ height: '100%', background: '#f8fafc' }}>
+            <CardContent>
+              <Typography variant="h6" color="primary.main" gutterBottom>Targeting</Typography>
+              <List dense>
+                {recommendations.targeting.map((item, index) => (
+                  <ListItem key={index} sx={{ px: 0 }}>
+                    <ListItemText 
+                      primary={item}
+                      primaryTypographyProps={{ fontSize: '0.9rem' }}
+                    />
+                  </ListItem>
+                ))}
+              </List>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
+    </Paper>
+  );
+};
+
+const CompetitiveMentionsSection = ({ competitiveMentions }) => {
+  if (!competitiveMentions || competitiveMentions.length === 0) {
+    return null;
+  }
+
+  return (
+    <Paper sx={{ p: { xs: 3, md: 4 }, mb: 3, borderRadius: 2 }}>
+      <Typography variant="h6" color="primary.main" gutterBottom>Competitive Mentions in Consumer Discussions</Typography>
+      <Typography color="text.secondary" sx={{ mb: 3 }}>
+        How consumers compare the R 12 G/S to competing models in their discussions.
       </Typography>
-      <Grid container spacing={2}>
-        {categories.map(cat => (
-          recommendations[cat.key] && recommendations[cat.key].length > 0 && (
-            <Grid item xs={12} md={6} key={cat.key}>
-              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', border: '1px solid', borderColor: 'divider', '&:hover': { boxShadow: 4, borderColor: 'primary.main' }, transition: 'all 0.2s' }}>
-                <CardContent>
-                  <Typography variant="subtitle1" fontWeight={700} color="primary.main" gutterBottom>
-                    {cat.label}
-                  </Typography>
-                  <Box component="ul" sx={{ pl: 3, mb: 0 }}>
-                    {recommendations[cat.key].map((rec, idx) => (
-                      <li key={idx}>
-                        <Typography variant="body2">{rec}</Typography>
-                      </li>
-                    ))}
+      
+      <Grid container spacing={3}>
+        {competitiveMentions.map((competitor, index) => (
+          <Grid item xs={12} key={index}>
+            <Card sx={{ background: '#f8fafc' }}>
+              <CardContent>
+                <Typography variant="h6" color="primary.main" gutterBottom>
+                  {competitor.competitor}
+                </Typography>
+                
+                {competitor.quotes.map((quote, quoteIndex) => (
+                  <Box key={quoteIndex} sx={{ mb: 2, p: 2, background: 'white', borderRadius: 1 }}>
+                    <Typography variant="body2" sx={{ fontStyle: 'italic', mb: 1 }}>
+                      "{quote.quote}"
+                    </Typography>
+                    
+                    <Grid container spacing={1} sx={{ fontSize: '0.8rem', color: 'text.secondary' }}>
+                      <Grid item xs={12} sm={6}>
+                        <Typography variant="caption">
+                          <strong>User:</strong> {quote.username} | <strong>Platform:</strong> {quote.platform}
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={12} sm={6}>
+                        <Typography variant="caption">
+                          <strong>Date:</strong> {quote.date} | <strong>Sentiment:</strong> 
+                          <span style={{ 
+                            color: SENTIMENT_COLORS[quote.sentiment] || '#666',
+                            fontWeight: 'bold',
+                            marginLeft: '4px'
+                          }}>
+                            {quote.sentiment}
+                          </span>
+                        </Typography>
+                      </Grid>
+                      <Grid item xs={12}>
+                        <Typography variant="caption" sx={{ display: 'block', mt: 1 }}>
+                          <strong>Insight:</strong> {quote.insight}
+                        </Typography>
+                      </Grid>
+                      {quote.url && quote.url !== '[Referenced as forum-auto discussion]' && (
+                        <Grid item xs={12}>
+                          <Typography variant="caption">
+                            <strong>Source:</strong> 
+                            <a 
+                              href={quote.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              style={{ color: 'primary.main', textDecoration: 'none', marginLeft: '4px' }}
+                            >
+                              View discussion
+                            </a>
+                          </Typography>
+                        </Grid>
+                      )}
+                    </Grid>
                   </Box>
-                </CardContent>
-              </Card>
-            </Grid>
-          )
+                ))}
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
       </Grid>
     </Paper>
@@ -810,6 +915,7 @@ const ModelInsights = ({ selectedMarket, selectedModel }) => {
   const mostEngagedRef = useRef(null);
   const segmentationRef = useRef(null);
   const recommendationsRef = useRef(null);
+  const competitiveMentionsRef = useRef(null);
 
   // Navigation sections configuration
   const sections = [
@@ -849,6 +955,11 @@ const ModelInsights = ({ selectedMarket, selectedModel }) => {
       icon: <SentimentSatisfiedAltIcon color="primary" />
     },
     {
+      id: 'competitiveMentions',
+      title: 'Competitive Mentions',
+      icon: <ForumIcon color="primary" />
+    },
+    {
       id: 'recommendations',
       title: 'Recommendations',
       icon: <LightbulbIcon color="primary" />
@@ -864,6 +975,7 @@ const ModelInsights = ({ selectedMarket, selectedModel }) => {
     marketAnalysis: marketAnalysisRef,
     mostEngaged: mostEngagedRef,
     segmentation: segmentationRef,
+    competitiveMentions: competitiveMentionsRef,
     recommendations: recommendationsRef
   };
 
@@ -958,6 +1070,10 @@ const ModelInsights = ({ selectedMarket, selectedModel }) => {
         
         <div ref={segmentationRef}>
           <SegmentationSection segmentation={data.segmentation} />
+        </div>
+        
+        <div ref={competitiveMentionsRef}>
+          <CompetitiveMentionsSection competitiveMentions={data.competitiveMentions} />
         </div>
         
         <div ref={recommendationsRef}>
