@@ -148,6 +148,9 @@ REACT_APP_OPENAI_API_KEY=your_openai_api_key_here
 OPENAI_API_KEY=your_openai_api_key_here
 ```
 
+For steps to upload PDF reports to a vector store, see
+[REPORT_VECTOR_STORE_SETUP.md](REPORT_VECTOR_STORE_SETUP.md).
+
 ## Troubleshooting
 
 ### Common Issues
