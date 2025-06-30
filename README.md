@@ -101,6 +101,18 @@ npm run generate-r12gs-consumer-data
    - Zoom controls
    - Page navigation
 
+## Vector Store Setup
+
+To enable AI search of the PDF reports, upload the files in `vector_reports/` to
+a new OpenAI vector store:
+
+```bash
+node scripts/create_report_vector_store.js
+```
+
+Copy the printed ID and set it in your `.env` file as `VS_REPORTS_STORE_ID`.
+See [REPORT_VECTOR_STORE_SETUP.md](REPORT_VECTOR_STORE_SETUP.md) for details.
+
 ## Running the Dashboard
 
 1. Start the development server:
