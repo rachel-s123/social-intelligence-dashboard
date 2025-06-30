@@ -84,18 +84,21 @@ async function generateAIInsights(filteredData, activeFilters, section) {
     return generateEnhancedMockInsights(filteredData, activeFilters, section);
   }
 
-  let prompt = buildEnhancedInsightsPrompt(filteredData, activeFilters, section);
-
+  let reportContext = "";
   // Attempt to enrich prompt with context from market reports via vector store
   try {
     const query = buildReportQuery(filteredData, activeFilters);
-    const reportContext = await retrieveReportContext(query);
-    if (reportContext) {
-      prompt += `\n\nREPORT CONTEXT:\n${reportContext}`;
-    }
+    reportContext = await retrieveReportContext(query);
   } catch (ctxErr) {
     console.log("Report context retrieval failed:", ctxErr.message);
   }
+
+  const prompt = buildEnhancedInsightsPrompt(
+    filteredData,
+    activeFilters,
+    section,
+    reportContext
+  );
   
   const response = await openai.chat.completions.create({
     model: "gpt-4o-mini",
@@ -186,11 +189,15 @@ AVOID:
 /**
  * Enhanced prompt building with richer context
  */
-function buildEnhancedInsightsPrompt(filteredData, activeFilters, section) {
+function buildEnhancedInsightsPrompt(filteredData, activeFilters, section, reportContext = "") {
   const filterDescription = describeActiveFilters(activeFilters);
   const dataStats = generateDataStatistics(filteredData);
   const contextualInfo = generateContextualAnalysis(filteredData, activeFilters);
   
+  const additionalContextSection = reportContext
+    ? `\n\nADDITIONAL CONTEXT FROM MARKET REPORTS:\n${reportContext}`
+    : "";
+
   return `Analyze consumer conversations about the BMW R 12 G/S motorcycle:
 
 FILTER CONTEXT & DATA SUBSET:
@@ -220,7 +227,7 @@ Please provide strategic insights that go beyond surface-level observations. Foc
 - What competitive advantages or vulnerabilities are revealed?
 - What emerging trends or opportunities can be capitalized on?
 
-Return a detailed JSON analysis following the specified format.`;
+Return a detailed JSON analysis following the specified format.${additionalContextSection}`;
 }
 
 /**
