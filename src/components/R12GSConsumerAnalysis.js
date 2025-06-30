@@ -217,7 +217,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
 
   const calculateTimeRange = (quotes) => {
     if (!quotes || quotes.length === 0) return null;
-    
+
     const weeks = quotes.map(q => q.week).filter(Boolean);
     if (weeks.length === 0) return null;
     
@@ -225,6 +225,23 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
       start: Math.min(...weeks),
       end: Math.max(...weeks)
     };
+  };
+
+  // Return a representative sample of quotes spanning sentiments and themes
+  const getQuoteSample = (quotes, sampleSize = 50) => {
+    if (!quotes || quotes.length <= sampleSize) return quotes;
+    const sorted = [...quotes].sort((a, b) => {
+      if (a.sentiment === b.sentiment) {
+        return a.theme.localeCompare(b.theme);
+      }
+      return a.sentiment.localeCompare(b.sentiment);
+    });
+    const step = Math.max(Math.floor(sorted.length / sampleSize), 1);
+    const sample = [];
+    for (let i = 0; i < sorted.length && sample.length < sampleSize; i += step) {
+      sample.push(sorted[i]);
+    }
+    return sample;
   };
 
   // Prepare filtered data for AI insights
@@ -246,7 +263,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
       sentimentPercentages: sentimentPercentages,
       topTheme: calculateTopTheme(filteredQuotes),
       timeRange: calculateTimeRange(filteredQuotes),
-      quotes: filteredQuotes, // Send all filtered quotes, not just a sample
+      quotes: getQuoteSample(filteredQuotes),
       sentimentData: sentimentData,
       themeData: themeData,
       platformData: platformData
