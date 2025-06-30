@@ -7,11 +7,30 @@ import {
   TextField,
   MenuItem,
   Box,
-  Chip
+  Chip,
+  Button
 } from '@mui/material';
 import useDebounce from '../utils/useDebounce';
+import { AIInsightsPanel } from './AIInsightsHooks';
 
-const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, platforms, weeks, purchaseIntents, competitors }) => {
+const QuoteExplorer = ({ 
+  filters, 
+  onFilterChange, 
+  quotes, 
+  themes, 
+  sentiments, 
+  platforms, 
+  weeks, 
+  purchaseIntents, 
+  competitors,
+  showInsights,
+  onToggleInsights,
+  onGenerateInsights,
+  loading,
+  filteredData,
+  insights,
+  error
+}) => {
   const listRef = useRef(null);
   const [scrollTop, setScrollTop] = useState(0);
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -84,6 +103,59 @@ const QuoteExplorer = ({ filters, onFilterChange, quotes, themes, sentiments, pl
         <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
           Quote Explorer
         </Typography>
+        
+        {/* AI Insights Controls */}
+        <Box sx={{ mb: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
+            <Button
+              variant={showInsights ? "contained" : "outlined"}
+              onClick={() => {
+                console.log("🔍 AI Insights button clicked - showInsights:", showInsights);
+                console.log("🔍 onToggleInsights function:", typeof onToggleInsights);
+                onToggleInsights();
+              }}
+              sx={{
+                fontFamily: 'BMW Motorrad',
+                backgroundColor: showInsights ? '#1976d2' : 'transparent',
+                color: showInsights ? 'white' : '#1976d2',
+                borderColor: '#1976d2',
+                '&:hover': {
+                  backgroundColor: showInsights ? '#1565c0' : 'rgba(25, 118, 210, 0.04)',
+                }
+              }}
+            >
+              🤖 {showInsights ? 'Hide' : 'Show'} AI Insights
+            </Button>
+            
+            {showInsights && (
+              <Button
+                variant="contained"
+                onClick={onGenerateInsights}
+                disabled={loading || !filteredData || !Object.values(filters).some(f => f !== 'All')}
+                sx={{
+                  fontFamily: 'BMW Motorrad',
+                  backgroundColor: '#4caf50',
+                  '&:hover': {
+                    backgroundColor: '#388e3c',
+                  },
+                  '&:disabled': {
+                    backgroundColor: '#ccc',
+                  }
+                }}
+              >
+                {loading ? 'Generating...' : 'Generate Insights'}
+              </Button>
+            )}
+          </Box>
+        </Box>
+
+        {showInsights && (
+          <AIInsightsPanel
+            insights={insights}
+            error={error}
+          />
+        )}
+
         <Grid container spacing={2} sx={{ mb: 2 }}>
           <Grid item xs={6} md={2}>
             <TextField select label="Theme" fullWidth value={filters.theme} onChange={handleChange('theme')} size="small">

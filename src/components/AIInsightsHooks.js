@@ -19,6 +19,29 @@ const createMockService = () => ({
   })
 });
 
+/**
+ * Transform the new API response structure to match component expectations
+ */
+const transformInsightsResponse = (apiInsights) => {
+  // If the response already has the old format, return as is
+  if (apiInsights.summary && apiInsights.keyFindings) {
+    return apiInsights;
+  }
+  
+  // Transform new format to old format
+  return {
+    filterContext: apiInsights.filterContext || "Filter context not provided",
+    summary: apiInsights.executiveSummary || "Executive summary not provided",
+    keyFindings: apiInsights.keyInsights?.map(insight => insight.insight) || ["No insights provided"],
+    recommendations: apiInsights.actionableRecommendations?.map(rec => rec.recommendation) || ["No recommendations provided"],
+    dataHighlights: {
+      strongestTheme: apiInsights.dataHighlights?.emergingTheme || "Unknown",
+      sentimentTrend: apiInsights.dataHighlights?.sentimentDriver || "Unknown",
+      criticalQuote: apiInsights.dataHighlights?.criticalQuote || "No critical quote available"
+    }
+  };
+};
+
 // React Hook for using AI insights
 export const useAIInsights = () => {
   const [insights, setInsights] = useState(null);
@@ -46,7 +69,7 @@ export const useAIInsights = () => {
       let service;
       try {
         console.log("🔄 Attempting to load AI Insights Service...");
-        const module = await import('../services/src/services/aiInsightsService');
+        const module = await import('../services/src/services/aiInsightsService.js');
         service = module.default;
         console.log("✅ AI Insights Service loaded successfully");
       } catch (importError) {
@@ -62,7 +85,9 @@ export const useAIInsights = () => {
       );
       
       if (result.success) {
-        setInsights(result.insights);
+        // Transform the new API response structure to match component expectations
+        const transformedInsights = transformInsightsResponse(result.insights);
+        setInsights(transformedInsights);
         setHasGenerated(true);
         console.log("✅ Insights generated successfully");
       } else {
@@ -207,7 +232,7 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         <div className="findings-section">
           <h4>Key Findings</h4>
           <ul>
-            {insights.keyFindings.map((finding, index) => (
+            {insights.keyFindings && insights.keyFindings.map((finding, index) => (
               <li key={index}>{finding}</li>
             ))}
           </ul>  
@@ -216,7 +241,7 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         <div className="recommendations-section">
           <h4>Recommendations</h4>
           <ul>
-            {insights.recommendations.map((rec, index) => (
+            {insights.recommendations && insights.recommendations.map((rec, index) => (
               <li key={index}>{rec}</li>
             ))}
           </ul>
@@ -227,15 +252,15 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
           <div className="highlights-grid">
             <div className="highlight-item">
               <span className="label">Strongest Theme:</span>
-              <span className="value">{insights.dataHighlights.strongestTheme}</span>
+              <span className="value">{insights.dataHighlights?.strongestTheme || 'N/A'}</span>
             </div>
             <div className="highlight-item">
               <span className="label">Sentiment Trend:</span>
-              <span className="value">{insights.dataHighlights.sentimentTrend}</span>
+              <span className="value">{insights.dataHighlights?.sentimentTrend || 'N/A'}</span>
             </div>
             <div className="highlight-item">
               <span className="label">Critical Quote:</span>
-              <span className="value">"{insights.dataHighlights.criticalQuote}"</span>
+              <span className="value">"{insights.dataHighlights?.criticalQuote || 'N/A'}"</span>
             </div>
           </div>
         </div>

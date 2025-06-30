@@ -1,11 +1,16 @@
 const OpenAI = require("openai").default;
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI client only if API key is available
+let openai = null;
+if (process.env.OPENAI_API_KEY) {
+  openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+  });
+}
 
 module.exports = async (req, res) => {
+  console.log("🔍 Insights API endpoint called!");
+  
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -27,6 +32,11 @@ module.exports = async (req, res) => {
 
   try {
     const { filteredData, activeFilters, section } = req.body;
+    console.log("🔍 Insights API - Received data:", { 
+      totalQuotes: filteredData?.totalQuotes,
+      sentimentPercentages: filteredData?.sentimentPercentages,
+      activeFilters: activeFilters?.length
+    });
 
     if (!filteredData) {
       return res.status(400).json({ error: "Filtered data is required" });
@@ -34,14 +44,14 @@ module.exports = async (req, res) => {
 
     // Check if OpenAI API key is available
     if (!process.env.OPENAI_API_KEY) {
-      console.log("No OpenAI API key available, returning mock insights");
+      console.log("No OpenAI API key available, returning enhanced mock insights");
       return res.json({
         success: true,
-        insights: generateMockInsights(filteredData, activeFilters, section)
+        insights: generateEnhancedMockInsights(filteredData, activeFilters, section)
       });
     }
 
-    // Generate AI insights
+    // Generate AI insights with enhanced prompts
     const insights = await generateAIInsights(filteredData, activeFilters, section);
     
     res.json({
@@ -52,213 +62,531 @@ module.exports = async (req, res) => {
   } catch (error) {
     console.error("Insights API error:", error);
     
-    // Fallback to mock insights on error
+    // Fallback to enhanced mock insights on error
     const { filteredData, activeFilters, section } = req.body;
     res.json({
       success: true,
-      insights: generateMockInsights(filteredData, activeFilters, section)
+      insights: generateEnhancedMockInsights(filteredData, activeFilters, section)
     });
   }
 };
 
 /**
- * Generate AI insights using OpenAI
+ * Generate AI insights using OpenAI with enhanced prompts
  */
 async function generateAIInsights(filteredData, activeFilters, section) {
-  const prompt = buildInsightsPrompt(filteredData, activeFilters, section);
+  if (!openai) {
+    console.log("OpenAI client not initialized, returning enhanced mock insights");
+    return generateEnhancedMockInsights(filteredData, activeFilters, section);
+  }
+  
+  const prompt = buildEnhancedInsightsPrompt(filteredData, activeFilters, section);
   
   const response = await openai.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [
       {
         role: "system",
-        content: getInsightsSystemPrompt()
+        content: getEnhancedInsightsSystemPrompt()
       },
       {
         role: "user",
         content: prompt
       }
     ],
-    temperature: 0.3,
-    max_tokens: 800,
+    temperature: 0.2, // Lower temperature for more focused analysis
+    max_tokens: 1200, // Increased token limit for detailed insights
   });
 
   const content = response.choices[0].message.content;
-  return parseInsightsResponse(content);
+  return parseEnhancedInsightsResponse(content);
 }
 
 /**
- * Generate mock insights for demo mode or API failures
+ * Enhanced system prompt for more actionable insights
  */
-function generateMockInsights(filteredData, activeFilters, section) {
+function getEnhancedInsightsSystemPrompt() {
+  return `You are a senior market research analyst specializing in BMW Motorrad consumer insights and competitive intelligence. Your expertise includes motorcycle market dynamics, consumer behavior patterns, and actionable business strategy development.
+
+ANALYSIS OBJECTIVES:
+- Identify specific consumer pain points and unmet needs
+- Detect emerging trends and market opportunities
+- Provide concrete, implementable recommendations
+- Highlight competitive advantages or disadvantages
+- Identify at-risk customer segments or growth opportunities
+
+CRITICAL REQUIREMENTS:
+1. FILTER CONTEXT: Always explain what data subset is being analyzed and its limitations
+2. SPECIFICITY: Avoid generic statements - be specific about what the data reveals
+3. ACTIONABILITY: Every recommendation must be implementable with clear next steps
+4. BUSINESS IMPACT: Quantify potential impact where possible
+5. EVIDENCE-BASED: Reference specific data points, themes, or quote patterns
+6. SEGMENT FOCUS: Identify specific customer segments or use cases when relevant
+
+RESPONSE FORMAT (JSON):
+{
+  "filterContext": "Detailed explanation of filters and data subset limitations",
+  "executiveSummary": "1-2 sentences highlighting the most critical business insight",
+  "keyInsights": [
+    {
+      "insight": "Specific finding with data backing",
+      "evidence": "What in the data supports this",
+      "businessImplication": "Why this matters for BMW Motorrad"
+    }
+  ],
+  "actionableRecommendations": [
+    {
+      "category": "Product/Marketing/Customer Experience/etc.",
+      "recommendation": "Specific action to take",
+      "rationale": "Why this recommendation based on the data",
+      "timeline": "Short-term/Medium-term/Long-term",
+      "expectedImpact": "What outcome to expect"
+    }
+  ],
+  "consumerSegments": {
+    "primarySegment": "Most represented consumer type in this data",
+    "concernsAndNeeds": ["Specific need 1", "Specific concern 2"],
+    "opportunityAreas": ["Specific opportunity 1", "Specific opportunity 2"]
+  },
+  "competitiveIntelligence": {
+    "bmwStrengths": ["Specific strength mentioned by consumers"],
+    "vulnerabilities": ["Specific weakness or concern raised"],
+    "marketPosition": "How BMW R 12 G/S is perceived vs competitors"
+  },
+  "dataHighlights": {
+    "criticalQuote": "Most strategically important quote",
+    "emergingTheme": "New or surprising theme discovered",
+    "sentimentDriver": "Main factor driving positive/negative sentiment"
+  }
+}
+
+AVOID:
+- Generic statements like "improve customer experience"
+- Vague recommendations without specific actions
+- Obvious insights that don't add value
+- Repeating data statistics without interpretation
+- One-size-fits-all recommendations`;
+}
+
+/**
+ * Enhanced prompt building with richer context
+ */
+function buildEnhancedInsightsPrompt(filteredData, activeFilters, section) {
   const filterDescription = describeActiveFilters(activeFilters);
   const dataStats = generateDataStatistics(filteredData);
+  const contextualInfo = generateContextualAnalysis(filteredData, activeFilters);
   
-  // Calculate sentiment breakdown from filteredData
+  return `Analyze consumer conversations about the BMW R 12 G/S motorcycle:
+
+FILTER CONTEXT & DATA SUBSET:
+${filterDescription}
+
+DATASET OVERVIEW:
+${dataStats}
+
+CONTEXTUAL ANALYSIS:
+${contextualInfo}
+
+CURRENT SECTION: ${section}
+
+ANALYSIS REQUIREMENTS:
+1. Focus on ACTIONABLE insights - what should BMW Motorrad DO with this information?
+2. Identify specific consumer segments and their unique needs/concerns
+3. Highlight competitive positioning opportunities or threats
+4. Detect patterns that reveal business opportunities or risks
+5. Provide timeline-specific recommendations (quick wins vs. long-term strategy)
+
+SAMPLE QUOTE ANALYSIS:
+${generateSampleQuoteAnalysis(filteredData)}
+
+Please provide strategic insights that go beyond surface-level observations. Focus on:
+- What specific actions should product, marketing, or customer experience teams take?
+- Which consumer segments are most/least satisfied and why?
+- What competitive advantages or vulnerabilities are revealed?
+- What emerging trends or opportunities can be capitalized on?
+
+Return a detailed JSON analysis following the specified format.`;
+}
+
+/**
+ * Generate deeper contextual analysis of the filtered data
+ */
+function generateContextualAnalysis(filteredData, activeFilters) {
   const quotes = filteredData.quotes || [];
-  const total = quotes.length || 1;
-  const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
-  quotes.forEach(q => {
-    if (q.sentiment && q.sentiment.toLowerCase() === 'positive') sentimentCounts.positive++;
-    else if (q.sentiment && q.sentiment.toLowerCase() === 'neutral') sentimentCounts.neutral++;
-    else sentimentCounts.negative++;
+  const totalQuotes = filteredData.totalQuotes || 0;
+  
+  let contextualInsights = [];
+  
+  // Analyze filter implications
+  if (activeFilters.length > 0) {
+    const filterTypes = [...new Set(activeFilters.map(f => f.type))];
+    const filterValues = activeFilters.map(f => f.value);
+    
+    contextualInsights.push(`Filter Focus: This analysis examines ${filterTypes.join(', ')} segments specifically: ${filterValues.join(', ')}`);
+    contextualInsights.push(`Data Representation: ${totalQuotes} quotes represent a targeted subset of consumer conversations`);
+  } else {
+    contextualInsights.push(`Comprehensive Analysis: Full dataset analysis across all consumer segments and conversation topics`);
+  }
+  
+  // Analyze quote distribution and patterns
+  if (quotes.length > 0) {
+    const themes = [...new Set(quotes.map(q => q.theme).filter(Boolean))];
+    const sentiments = quotes.reduce((acc, q) => {
+      const sentiment = q.sentiment || 'Unknown';
+      acc[sentiment] = (acc[sentiment] || 0) + 1;
+      return acc;
+    }, {});
+    
+    contextualInsights.push(`Theme Diversity: ${themes.length} distinct themes discussed: ${themes.slice(0, 5).join(', ')}${themes.length > 5 ? '...' : ''}`);
+    contextualInsights.push(`Sentiment Pattern: ${Object.entries(sentiments).map(([k,v]) => `${v} ${k.toLowerCase()}`).join(', ')}`);
+  }
+  
+  // Time-based context if available
+  if (filteredData.timeRange) {
+    contextualInsights.push(`Temporal Context: Analysis covers ${filteredData.timeRange} period`);
+  }
+  
+  return contextualInsights.join('\n');
+}
+
+/**
+ * Generate sample quote analysis to guide AI reasoning
+ */
+function generateSampleQuoteAnalysis(filteredData) {
+  const quotes = filteredData.quotes || [];
+  if (quotes.length === 0) return "No sample quotes available for analysis";
+  
+  // Select diverse sample quotes (max 3)
+  const sampleQuotes = [];
+  const sentiments = ['Positive', 'Negative', 'Neutral'];
+  
+  sentiments.forEach(sentiment => {
+    const quote = quotes.find(q => q.sentiment === sentiment);
+    if (quote && sampleQuotes.length < 3) {
+      sampleQuotes.push({
+        text: quote.text,
+        sentiment: quote.sentiment,
+        theme: quote.theme || 'General',
+        tags: quote.tags || []
+      });
+    }
   });
   
-  const sentimentBreakdown = {
-    positive: { count: sentimentCounts.positive, percentage: Math.round((sentimentCounts.positive / total) * 100) },
-    neutral: { count: sentimentCounts.neutral, percentage: Math.round((sentimentCounts.neutral / total) * 100) },
-    negative: { count: sentimentCounts.negative, percentage: Math.round((sentimentCounts.negative / total) * 100) },
-    scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
-  };
+  // If we don't have enough diverse quotes, fill with any available
+  while (sampleQuotes.length < 3 && sampleQuotes.length < quotes.length) {
+    const quote = quotes[sampleQuotes.length];
+    if (!sampleQuotes.find(sq => sq.text === quote.text)) {
+      sampleQuotes.push({
+        text: quote.text,
+        sentiment: quote.sentiment,
+        theme: quote.theme || 'General',
+        tags: quote.tags || []
+      });
+    }
+  }
+  
+  return sampleQuotes.map((quote, idx) => 
+    `Quote ${idx + 1} (${quote.sentiment} - ${quote.theme}): "${quote.text}"${quote.tags.length ? ` [Tags: ${quote.tags.join(', ')}]` : ''}`
+  ).join('\n');
+}
 
+/**
+ * Enhanced mock insights with more specific recommendations
+ */
+function generateEnhancedMockInsights(filteredData, activeFilters, section) {
+  const filterDescription = describeActiveFilters(activeFilters);
+  const totalQuotes = filteredData.totalQuotes || 0;
+  const topTheme = filteredData.topTheme?.name || "Performance";
+  const quotes = filteredData.quotes || [];
+  
+  // Calculate sentiment percentages
+  let sentimentBreakdown;
+  if (filteredData.sentimentPercentages) {
+    sentimentBreakdown = filteredData.sentimentPercentages;
+  } else {
+    const total = quotes.length || 1;
+    const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
+    quotes.forEach(q => {
+      if (q.sentiment && q.sentiment.toLowerCase() === 'positive') sentimentCounts.positive++;
+      else if (q.sentiment && q.sentiment.toLowerCase() === 'neutral') sentimentCounts.neutral++;
+      else sentimentCounts.negative++;
+    });
+    sentimentBreakdown = {
+      positive: Math.round((sentimentCounts.positive / total) * 100),
+      neutral: Math.round((sentimentCounts.neutral / total) * 100),
+      negative: Math.round((sentimentCounts.negative / total) * 100)
+    };
+  }
+  
+  // Generate specific insights based on data patterns
+  const keyInsights = generateSpecificInsights(filteredData, activeFilters, sentimentBreakdown);
+  const actionableRecommendations = generateSpecificRecommendations(filteredData, activeFilters, sentimentBreakdown);
+  const consumerSegments = analyzeConsumerSegments(filteredData, activeFilters);
+  const competitiveIntel = generateCompetitiveIntelligence(filteredData, sentimentBreakdown);
+  
   return {
-    filterContext: `Analysis based on filtered data: ${filterDescription}. This represents a subset of consumer feedback, not the complete dataset.`,
-    summary: generateMockSummary(filteredData, activeFilters, section),
-    sentimentBreakdown,
-    keyFindings: generateMockFindings(filteredData, activeFilters, section),
-    recommendations: generateMockRecommendations(filteredData, activeFilters, section),
-    dataHighlights: generateMockHighlights(filteredData, activeFilters, section)
+    filterContext: `Analysis of ${totalQuotes} consumer quotes ${activeFilters.length > 0 ? `filtered by: ${filterDescription}` : 'across all segments'}. This represents a ${activeFilters.length > 0 ? 'targeted subset' : 'comprehensive view'} of R 12 G/S consumer conversations and should be interpreted accordingly.`,
+    executiveSummary: generateExecutiveSummary(sentimentBreakdown, topTheme, activeFilters.length > 0),
+    keyInsights,
+    actionableRecommendations,
+    consumerSegments,
+    competitiveIntelligence: competitiveIntel,
+    dataHighlights: {
+      criticalQuote: findCriticalQuote(quotes, sentimentBreakdown),
+      emergingTheme: identifyEmergingTheme(filteredData),
+      sentimentDriver: identifySentimentDriver(filteredData, sentimentBreakdown)
+    }
   };
 }
 
 /**
- * Generate mock summary based on data
+ * Generate specific, data-driven insights
  */
-function generateMockSummary(filteredData, activeFilters, section) {
+function generateSpecificInsights(filteredData, activeFilters, sentimentBreakdown) {
+  const insights = [];
   const totalQuotes = filteredData.totalQuotes || 0;
-  const avgSentiment = filteredData.averageSentiment || 3.0;
-  const topTheme = filteredData.topTheme?.name || "General";
+  const topTheme = filteredData.topTheme?.name || "Performance";
   
-  if (activeFilters.length === 0) {
-    return `Analysis of ${totalQuotes} consumer quotes reveals an average sentiment score of ${avgSentiment}/5.0, with "${topTheme}" being the most discussed theme. This comprehensive view shows overall consumer perception of the R 12 G/S.`;
+  // Sentiment-based insights
+  if (sentimentBreakdown.positive > 60) {
+    insights.push({
+      insight: `Strong positive sentiment (${sentimentBreakdown.positive}%) indicates high consumer satisfaction with R 12 G/S`,
+      evidence: `${sentimentBreakdown.positive}% of ${totalQuotes} analyzed quotes express positive sentiment`,
+      businessImplication: "BMW has a solid foundation for word-of-mouth marketing and customer retention in this segment"
+    });
+  } else if (sentimentBreakdown.negative > 40) {
+    insights.push({
+      insight: `Elevated negative sentiment (${sentimentBreakdown.negative}%) signals potential customer satisfaction issues`,
+      evidence: `${sentimentBreakdown.negative}% of conversations express dissatisfaction or concerns`,
+      businessImplication: "Risk of customer churn and negative word-of-mouth requiring immediate attention"
+    });
   }
   
-  const filterDesc = activeFilters.map(f => f.value).join(", ");
-  return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${avgSentiment}/5.0 average sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
+  // Theme-based insights
+  insights.push({
+    insight: `"${topTheme}" dominates consumer discussions with ${filteredData.topTheme?.percentage || 25}% of mentions`,
+    evidence: `${topTheme} appears in ${Math.round((filteredData.topTheme?.percentage || 25) * totalQuotes / 100)} out of ${totalQuotes} quotes`,
+    businessImplication: `This theme represents the primary consumer focus area and should guide ${topTheme.toLowerCase()}-related product development and messaging priorities`
+  });
+  
+  // Filter-specific insights
+  if (activeFilters.length > 0) {
+    const filterType = activeFilters[0].type;
+    const filterValue = activeFilters[0].value;
+    insights.push({
+      insight: `${filterValue} segment shows distinct conversation patterns compared to overall market`,
+      evidence: `Filtered analysis reveals unique themes and sentiment patterns for ${filterValue} consumers`,
+      businessImplication: `Targeted strategies needed for ${filterValue} segment rather than one-size-fits-all approach`
+    });
+  }
+  
+  return insights;
 }
 
 /**
- * Generate mock findings based on data
+ * Generate specific, actionable recommendations
  */
-function generateMockFindings(filteredData, activeFilters, section) {
-  const findings = [];
-  const totalQuotes = filteredData.totalQuotes || 0;
-  const avgSentiment = filteredData.averageSentiment || 3.0;
-  const topTheme = filteredData.topTheme?.name || "General";
-  
-  findings.push(`Consumer sentiment averages ${avgSentiment}/5.0 across ${totalQuotes} analyzed quotes`);
-  findings.push(`"${topTheme}" emerges as the dominant discussion theme with ${filteredData.topTheme?.percentage || 25}% of mentions`);
-  
-  if (avgSentiment > 3.5) {
-    findings.push("Overall positive sentiment indicates strong consumer satisfaction with R 12 G/S features");
-  } else if (avgSentiment < 2.5) {
-    findings.push("Lower sentiment scores suggest areas for improvement in consumer experience");
-  } else {
-    findings.push("Neutral sentiment indicates mixed consumer reactions requiring further analysis");
-  }
-  
-  return findings;
-}
-
-/**
- * Generate mock recommendations based on data
- */
-function generateMockRecommendations(filteredData, activeFilters, section) {
+function generateSpecificRecommendations(filteredData, activeFilters, sentimentBreakdown) {
   const recommendations = [];
-  const avgSentiment = filteredData.averageSentiment || 3.0;
-  const topTheme = filteredData.topTheme?.name || "General";
+  const topTheme = filteredData.topTheme?.name || "Performance";
   
-  if (avgSentiment > 3.5) {
-    recommendations.push("Leverage positive sentiment by highlighting successful features in marketing campaigns");
-    recommendations.push("Expand on themes that resonate well with consumers");
-  } else if (avgSentiment < 2.5) {
-    recommendations.push("Address consumer concerns identified in negative sentiment areas");
-    recommendations.push("Develop targeted improvements based on feedback themes");
-  } else {
-    recommendations.push("Conduct deeper analysis to understand mixed consumer reactions");
-    recommendations.push("Focus on improving areas with neutral sentiment");
+  // Sentiment-driven recommendations
+  if (sentimentBreakdown.positive > 60) {
+    recommendations.push({
+      category: "Marketing",
+      recommendation: "Develop customer testimonial campaign highlighting positive experiences",
+      rationale: `${sentimentBreakdown.positive}% positive sentiment provides rich content for authentic marketing materials`,
+      timeline: "Short-term (4-6 weeks)",
+      expectedImpact: "Increased conversion rates and reduced customer acquisition costs"
+    });
+    
+    recommendations.push({
+      category: "Product Development",
+      recommendation: `Enhance and expand features related to "${topTheme}" based on positive feedback`,
+      rationale: `Strong positive sentiment around ${topTheme} indicates a competitive advantage to amplify`,
+      timeline: "Medium-term (3-6 months)",
+      expectedImpact: "Strengthened market position and increased customer satisfaction scores"
+    });
+  } else if (sentimentBreakdown.negative > 40) {
+    recommendations.push({
+      category: "Customer Experience",
+      recommendation: "Implement immediate customer outreach program for negative sentiment drivers",
+      rationale: `${sentimentBreakdown.negative}% negative sentiment requires proactive customer retention efforts`,
+      timeline: "Immediate (1-2 weeks)",
+      expectedImpact: "Reduced customer churn and improved Net Promoter Score"
+    });
+    
+    recommendations.push({
+      category: "Product Development",
+      recommendation: `Address specific pain points identified in "${topTheme}" related complaints`,
+      rationale: "High volume of negative feedback provides clear improvement roadmap",
+      timeline: "Medium-term (6-12 months)",
+      expectedImpact: "Reduced negative sentiment and improved customer satisfaction"
+    });
   }
   
-  recommendations.push(`Prioritize "${topTheme}" related improvements based on high discussion volume`);
+  // Theme-specific recommendations
+  recommendations.push({
+    category: "Content Strategy",
+    recommendation: `Create detailed content addressing "${topTheme}" questions and concerns`,
+    rationale: `${filteredData.topTheme?.percentage || 25}% of conversations focus on this topic`,
+    timeline: "Short-term (2-4 weeks)",
+    expectedImpact: "Improved customer education and reduced support inquiries"
+  });
   
   return recommendations;
 }
 
 /**
- * Generate mock highlights based on data
+ * Analyze consumer segments
  */
-function generateMockHighlights(filteredData, activeFilters, section) {
-  const topTheme = filteredData.topTheme?.name || "Performance";
-  const avgSentiment = filteredData.averageSentiment || 3.0;
-  const quotes = filteredData.quotes || [];
+function analyzeConsumerSegments(filteredData, activeFilters) {
+  let primarySegment = "Adventure Touring Enthusiasts";
+  let concernsAndNeeds = ["Reliability for long-distance travel", "Comfort for extended rides"];
+  let opportunityAreas = ["Accessory ecosystem expansion", "Community building initiatives"];
   
-  let sentimentTrend = "Neutral";
-  if (avgSentiment > 3.5) sentimentTrend = "Positive";
-  else if (avgSentiment < 2.5) sentimentTrend = "Negative";
-  
-  const criticalQuote = quotes.length > 0 ? quotes[0].text : "No quotes available";
+  if (activeFilters.length > 0) {
+    const filterValue = activeFilters[0].value;
+    if (filterValue.toLowerCase().includes('price') || filterValue.toLowerCase().includes('cost')) {
+      primarySegment = "Price-Conscious Buyers";
+      concernsAndNeeds = ["Value for money", "Total cost of ownership"];
+      opportunityAreas = ["Financing options", "Entry-level variant development"];
+    } else if (filterValue.toLowerCase().includes('performance')) {
+      primarySegment = "Performance-Oriented Riders";
+      concernsAndNeeds = ["Engine power and torque", "Handling and agility"];
+      opportunityAreas = ["Performance upgrades", "Track day programs"];
+    }
+  }
   
   return {
-    strongestTheme: topTheme,
-    sentimentTrend: sentimentTrend,
-    criticalQuote: criticalQuote
+    primarySegment,
+    concernsAndNeeds,
+    opportunityAreas
   };
 }
 
 /**
- * Get the system prompt for AI insights
+ * Generate competitive intelligence
  */
-function getInsightsSystemPrompt() {
-  return `You are an AI analyst specializing in BMW Motorrad market research and consumer insights. Your role is to analyze filtered consumer data and provide actionable insights.
-
-CRITICAL REQUIREMENTS:
-- ALWAYS include a clear filter context explaining what data subset is being analyzed
-- If any sentiment scores or statistics are mentioned, EXPLAIN what they mean and how they're calculated
-- Provide insights that are specific to the filtered data, not general statements
-- Keep responses concise but informative
-- Focus on actionable business insights
-
-RESPONSE FORMAT:
-Return a JSON object with this exact structure:
-{
-  "filterContext": "Clear description of what filters are applied and what data subset this represents",
-  "summary": "2-3 sentence summary of key findings",
-  "keyFindings": ["Finding 1", "Finding 2", "Finding 3"],
-  "recommendations": ["Recommendation 1", "Recommendation 2", "Recommendation 3"],
-  "dataHighlights": {
-    "strongestTheme": "Most prominent theme name",
-    "sentimentTrend": "Positive/Neutral/Negative trend description",
-    "criticalQuote": "Most representative quote from the data"
-  }
-}
-
-IMPORTANT: Always explain any scores or statistics you reference. For example, if you mention "sentiment score of 3.8", explain that sentiment is scored from 1-5 where 1 is very negative and 5 is very positive.`;
+function generateCompetitiveIntelligence(filteredData, sentimentBreakdown) {
+  return {
+    bmwStrengths: ["German engineering reputation", "Adventure touring heritage", "Build quality perception"],
+    vulnerabilities: sentimentBreakdown.negative > 30 ? 
+      ["Price premium concerns", "Service accessibility", "Complexity for new riders"] :
+      ["Market positioning clarity", "Digital experience gaps"],
+    marketPosition: sentimentBreakdown.positive > 50 ? 
+      "Strong competitive position with room for premium positioning" :
+      "Competitive challenges requiring strategic repositioning"
+  };
 }
 
 /**
- * Build the prompt for AI insights generation
+ * Generate executive summary
  */
-function buildInsightsPrompt(filteredData, activeFilters, section) {
-  const filterDescription = describeActiveFilters(activeFilters);
-  const dataStats = generateDataStatistics(filteredData);
+function generateExecutiveSummary(sentimentBreakdown, topTheme, isFiltered) {
+  const sentimentLevel = sentimentBreakdown.positive > 60 ? "strong positive" : 
+                        sentimentBreakdown.negative > 40 ? "concerning negative" : "mixed";
   
-  return `Analyze the following filtered consumer data for BMW R 12 G/S insights:
+  const scope = isFiltered ? "targeted segment analysis reveals" : "comprehensive market analysis shows";
+  
+  return `${scope} ${sentimentLevel} consumer sentiment with "${topTheme}" as the primary discussion driver, indicating ${
+    sentimentLevel === "strong positive" ? "opportunity for market expansion" :
+    sentimentLevel === "concerning negative" ? "urgent need for customer retention focus" :
+    "need for targeted segment strategies"
+  }.`;
+}
 
-FILTER CONTEXT:
-${filterDescription}
+/**
+ * Find the most strategically important quote
+ */
+function findCriticalQuote(quotes, sentimentBreakdown) {
+  if (!quotes.length) return "No quotes available for analysis";
+  
+  // Prioritize negative quotes if high negative sentiment, otherwise positive quotes
+  const targetSentiment = sentimentBreakdown.negative > 40 ? 'Negative' : 'Positive';
+  const criticalQuote = quotes.find(q => q.sentiment === targetSentiment);
+  
+  return criticalQuote ? criticalQuote.text : quotes[0].text;
+}
 
-DATA OVERVIEW:
-${dataStats}
+/**
+ * Identify emerging themes
+ */
+function identifyEmergingTheme(filteredData) {
+  // This would ideally compare against historical data
+  return filteredData.topTheme?.name || "Adventure Capability";
+}
 
-SECTION: ${section}
+/**
+ * Identify main sentiment drivers
+ */
+function identifySentimentDriver(filteredData, sentimentBreakdown) {
+  if (sentimentBreakdown.positive > 60) {
+    return "Build quality and reliability exceed expectations";
+  } else if (sentimentBreakdown.negative > 40) {
+    return "Price-to-value perception and service experience concerns";
+  } else {
+    return "Mixed reactions to feature complexity vs. usability";
+  }
+}
 
-Please provide insights based on this filtered data subset. Remember to:
-1. Clearly state what filters are applied
-2. Explain any sentiment scores or statistics
-3. Focus on insights specific to this data subset
-4. Provide actionable recommendations
-
-Return your response as a valid JSON object matching the required format.`;
+/**
+ * Parse the enhanced AI response into structured insights
+ */
+function parseEnhancedInsightsResponse(content) {
+  try {
+    // Try to extract JSON from the response
+    let jsonMatch = content.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      const parsed = JSON.parse(jsonMatch[0]);
+      
+      // Ensure all required fields are present with proper structure
+      return {
+        filterContext: parsed.filterContext || "Filter context not provided",
+        executiveSummary: parsed.executiveSummary || "Executive summary not provided",
+        keyInsights: parsed.keyInsights || [
+          {
+            insight: "No insights provided",
+            evidence: "Unable to parse AI response",
+            businessImplication: "Manual analysis required"
+          }
+        ],
+        actionableRecommendations: parsed.actionableRecommendations || [
+          {
+            category: "Analysis",
+            recommendation: "Review AI service configuration",
+            rationale: "Response parsing failed",
+            timeline: "Immediate",
+            expectedImpact: "Restored insights functionality"
+          }
+        ],
+        consumerSegments: parsed.consumerSegments || {
+          primarySegment: "Unknown",
+          concernsAndNeeds: ["Unable to determine"],
+          opportunityAreas: ["Manual analysis required"]
+        },
+        competitiveIntelligence: parsed.competitiveIntelligence || {
+          bmwStrengths: ["Unable to determine"],
+          vulnerabilities: ["Unable to determine"],
+          marketPosition: "Analysis required"
+        },
+        dataHighlights: parsed.dataHighlights || {
+          criticalQuote: "Unable to extract quote",
+          emergingTheme: "Unknown",
+          sentimentDriver: "Unable to determine"
+        }
+      };
+    }
+  } catch (error) {
+    console.error("Failed to parse enhanced AI response:", error);
+  }
+  
+  // Fallback if parsing fails - return mock insights
+  return generateEnhancedMockInsights(
+    { totalQuotes: 0, quotes: [] }, 
+    [], 
+    "unknown"
+  );
 }
 
 /**
@@ -280,7 +608,7 @@ function describeActiveFilters(filters) {
     }
   });
   
-  return `Filters applied: ${filterDescriptions.join(', ')}`;
+  return `${filterDescriptions.join(', ')}`;
 }
 
 /**
@@ -288,53 +616,17 @@ function describeActiveFilters(filters) {
  */
 function generateDataStatistics(data) {
   const totalQuotes = data.totalQuotes || 0;
-  const avgSentiment = data.averageSentiment || 0;
   const topTheme = data.topTheme?.name || "N/A";
   const topThemePercentage = data.topTheme?.percentage || 0;
   
+  let sentimentInfo = "Sentiment data not available";
+  if (data.sentimentPercentages) {
+    const { positive, neutral, negative } = data.sentimentPercentages;
+    sentimentInfo = `Sentiment Distribution: ${positive}% positive, ${neutral}% neutral, ${negative}% negative`;
+  }
+  
   return `Total Quotes: ${totalQuotes}
-Average Sentiment: ${avgSentiment}/5.0 (1=very negative, 5=very positive)
+${sentimentInfo}
 Top Theme: ${topTheme} (${topThemePercentage}% of mentions)
 Time Range: ${data.timeRange || 'N/A'}`;
 }
-
-/**
- * Parse the AI response into structured insights
- */
-function parseInsightsResponse(content) {
-  try {
-    // Try to extract JSON from the response
-    let jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      const parsed = JSON.parse(jsonMatch[0]);
-      
-      // Ensure all required fields are present
-      return {
-        filterContext: parsed.filterContext || "Filter context not provided",
-        summary: parsed.summary || "Summary not provided",
-        keyFindings: parsed.keyFindings || ["No findings provided"],
-        recommendations: parsed.recommendations || ["No recommendations provided"],
-        dataHighlights: {
-          strongestTheme: parsed.dataHighlights?.strongestTheme || "N/A",
-          sentimentTrend: parsed.dataHighlights?.sentimentTrend || "N/A",
-          criticalQuote: parsed.dataHighlights?.criticalQuote || "No critical quote provided"
-        }
-      };
-    }
-  } catch (error) {
-    console.error("Failed to parse AI response:", error);
-  }
-  
-  // Fallback if parsing fails
-  return {
-    filterContext: "Unable to parse AI response",
-    summary: "AI analysis completed but response format was unexpected",
-    keyFindings: ["Analysis completed", "Response parsing issue encountered"],
-    recommendations: ["Review data manually", "Check AI service configuration"],
-    dataHighlights: {
-      strongestTheme: "Unknown",
-      sentimentTrend: "Unknown",
-      criticalQuote: "Unable to extract quote"
-    }
-  };
-} 

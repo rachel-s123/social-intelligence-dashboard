@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Box,
   Typography,
@@ -15,7 +15,9 @@ import {
   ListItem,
   ListItemText,
   IconButton,
-  Button
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
 } from '@mui/material';
 import { 
   PieChart, 
@@ -33,14 +35,18 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
+  LineChart,
+  Line
 } from 'recharts';
 import CloseIcon from '@mui/icons-material/Close';
 import TimelineIcon from '@mui/icons-material/Timeline';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import QuoteExplorer from './QuoteExplorer';
-import { useAIInsights, AIInsightsPanel } from './AIInsightsHooks';
+import { useAIInsights } from './AIInsightsHooks';
 import './src/components/AIInsights.css';
-import MiniAIInsights from './MiniAIInsights';
+
+console.log({ Accordion, AccordionSummary, AccordionDetails });
 
 const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   const marketKey = selectedMarket.toLowerCase();
@@ -51,12 +57,14 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   const [showQuotesDialog, setShowQuotesDialog] = useState(false);
   const [dialogQuotes, setDialogQuotes] = useState([]);
   const [showInsights, setShowInsights] = useState(false);
+  const [expandedWeek, setExpandedWeek] = useState(null);
+  const [timelineExpanded, setTimelineExpanded] = useState(false);
   
   // AI Insights hook
   const { insights, loading, error, generateInsights, clearInsights } = useAIInsights();
 
   // Debug environment variables
-  React.useEffect(() => {
+  useEffect(() => {
     console.log("🔍 R12GSConsumerAnalysis - Environment Check:");
     console.log("REACT_APP_OPENAI_API_KEY:", process.env.REACT_APP_OPENAI_API_KEY ? "✅ Found" : "❌ Not found");
     console.log("OPENAI_API_KEY:", process.env.OPENAI_API_KEY ? "✅ Found" : "❌ Not found");
@@ -166,17 +174,25 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   }));
 
   // Helper functions for data calculations
-  const calculateAverageSentiment = (quotes) => {
-    if (!quotes || quotes.length === 0) return 0;
-    const sentimentValues = quotes.map(q => {
+  const calculateSentimentPercentages = (quotes) => {
+    if (!quotes || quotes.length === 0) return { positive: 0, neutral: 0, negative: 0 };
+    
+    const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
+    quotes.forEach(q => {
       switch (q.sentiment) {
-        case 'Positive': return 5;
-        case 'Neutral': return 3;
-        case 'Negative': return 1;
-        default: return 3;
+        case 'POSITIVE': sentimentCounts.positive++; break;
+        case 'NEUTRAL': sentimentCounts.neutral++; break;
+        case 'NEGATIVE': sentimentCounts.negative++; break;
+        default: sentimentCounts.neutral++; break;
       }
     });
-    return (sentimentValues.reduce((a, b) => a + b, 0) / sentimentValues.length).toFixed(1);
+    
+    const total = quotes.length;
+    return {
+      positive: Math.round((sentimentCounts.positive / total) * 100),
+      neutral: Math.round((sentimentCounts.neutral / total) * 100),
+      negative: Math.round((sentimentCounts.negative / total) * 100)
+    };
   };
 
   const calculateTopTheme = (quotes) => {
@@ -215,17 +231,121 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   const filteredData = useMemo(() => {
     if (!filteredQuotes || filteredQuotes.length === 0) return null;
     
+    const sentimentPercentages = calculateSentimentPercentages(filteredQuotes);
+    console.log("🔍 Debug - Filtered Quotes:", filteredQuotes.length);
+    console.log("🔍 Debug - Sentiment Percentages:", sentimentPercentages);
+    console.log("🔍 Debug - Sample quotes:", filteredQuotes.slice(0, 3).map(q => ({ 
+      text: q.text.substring(0, 50) + "...", 
+      sentiment: q.sentiment,
+      theme: q.theme 
+    })));
+    console.log("🔍 Debug - All sentiment values:", filteredQuotes.map(q => q.sentiment));
+    
     return {
       totalQuotes: filteredQuotes.length,
-      averageSentiment: calculateAverageSentiment(filteredQuotes),
+      sentimentPercentages: sentimentPercentages,
       topTheme: calculateTopTheme(filteredQuotes),
       timeRange: calculateTimeRange(filteredQuotes),
-      quotes: filteredQuotes.slice(0, 10), // Sample of quotes
+      quotes: filteredQuotes, // Send all filtered quotes, not just a sample
       sentimentData: sentimentData,
       themeData: themeData,
       platformData: platformData
     };
   }, [filteredQuotes, sentimentData, themeData, platformData]);
+
+  // Helper function to extract numeric volume from timeline strings
+  const extractVolumeData = (timeline) => {
+    return timeline.map(week => {
+      let volume = 0;
+      const volumeStr = week.volume;
+      
+      // Skip if volume is not provided
+      if (volumeStr === '[NOT PROVIDED IN REPORT]' || !volumeStr) {
+        return {
+          week: week.week,
+          weekRange: week.weekRange,
+          volume: 0,
+          event: week.event,
+          sentiment: week.sentiment,
+          keyReactions: week.keyReactions
+        };
+      }
+      
+      // Pattern 1: "~320 discussions (~40% of total quarter volume)"
+      let match = volumeStr.match(/~(\d+)\s*discussions/);
+      if (match) {
+        volume = parseInt(match[1]);
+      }
+      
+      // Pattern 2: "Estimated 800-1000 comments across platforms by end of April"
+      if (!match) {
+        match = volumeStr.match(/Estimated\s+(\d+)-(\d+)\s*comments/);
+        if (match) {
+          // Take the average of the range
+          volume = Math.round((parseInt(match[1]) + parseInt(match[2])) / 2);
+        }
+      }
+      
+      // Pattern 3: "Steady moderate level (50-60% of peak)" - estimate based on context
+      if (!match) {
+        match = volumeStr.match(/\((\d+)-(\d+)%\s*of\s*peak\)/);
+        if (match) {
+          // Estimate as 50% of the France peak (320) for moderate level
+          const avgPercent = (parseInt(match[1]) + parseInt(match[2])) / 2;
+          volume = Math.round((320 * avgPercent) / 100);
+        }
+      }
+      
+      // Pattern 4: "Dipped to lowest (30% of March peak)" - estimate based on context
+      if (!match) {
+        match = volumeStr.match(/\((\d+)%\s*of\s*March\s*peak\)/);
+        if (match) {
+          // Estimate as percentage of France peak (320)
+          volume = Math.round((320 * parseInt(match[1])) / 100);
+        }
+      }
+      
+      // Pattern 5: "Exploded again, approaching or exceeding initial March spike"
+      if (!match && volumeStr.toLowerCase().includes('exploded') && volumeStr.toLowerCase().includes('march spike')) {
+        volume = 320; // Same as March peak
+      }
+      
+      // Pattern 6: "Remained high through second week of June"
+      if (!match && volumeStr.toLowerCase().includes('remained high')) {
+        volume = 120; // Estimate based on France week 10-11 levels
+      }
+      
+      // Pattern 7: "Above April/May lull but tapered from early-June high"
+      if (!match && volumeStr.toLowerCase().includes('above') && volumeStr.toLowerCase().includes('lull')) {
+        volume = 80; // Estimate based on France week 11-12 levels
+      }
+      
+      // Pattern 8: "Gradually slowing as pre-launch transitioned to sales phase"
+      if (!match && volumeStr.toLowerCase().includes('gradually slowing')) {
+        volume = 40; // Estimate based on France week 13 level
+      }
+      
+      return {
+        week: week.week,
+        weekRange: week.weekRange,
+        volume: volume,
+        event: week.event,
+        sentiment: week.sentiment,
+        keyReactions: week.keyReactions
+      };
+    });
+  };
+
+  // Prepare volume data for line chart
+  const volumeChartData = useMemo(() => {
+    if (!filteredConsumerTimeline.length) return [];
+    return extractVolumeData(filteredConsumerTimeline);
+  }, [filteredConsumerTimeline]);
+
+  // Check if we have valid volume data (not all zeros)
+  const hasValidVolumeData = useMemo(() => {
+    return volumeChartData.length > 0 && volumeChartData.some(week => week.volume > 0);
+  }, [volumeChartData]);
 
   // INSIGHTS GENERATION: Only manual generation via button click
   // No automatic generation - insights will only be generated when user clicks "Generate Insights" button
@@ -250,9 +370,12 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   };
 
   const handleToggleInsights = () => {
+    console.log("🔍 handleToggleInsights called - Current showInsights:", showInsights);
     if (showInsights) {
+      console.log("🔍 Clearing insights...");
       clearInsights();
     }
+    console.log("🔍 Setting showInsights to:", !showInsights);
     setShowInsights(!showInsights);
   };
 
@@ -324,6 +447,59 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     setDialogQuotes([]);
   };
 
+  // Handle line chart click to expand timeline and show specific week
+  const handleLineChartClick = (data, index) => {
+    console.log('Line chart clicked - data:', data, 'index:', index);
+    
+    // Recharts Line onClick can receive different data formats
+    // Try to extract the week from various possible data structures
+    let week = null;
+    
+    if (data && typeof data === 'object') {
+      // If data is the actual data point object (this is what we're getting)
+      if (data.week) {
+        week = data.week;
+      } else if (data.payload && data.payload.week) {
+        // If data has a payload property
+        week = data.payload.week;
+      } else if (data.activePayload && data.activePayload[0] && data.activePayload[0].payload) {
+        // If data has activePayload array
+        week = data.activePayload[0].payload.week;
+      } else if (data.activeLabel) {
+        // If data has activeLabel (this is what we're getting from LineChart onClick)
+        week = data.activeLabel;
+      }
+    }
+    
+    // If we still don't have a week, try to get it from the volumeChartData using the index
+    // But first check if index is actually a number (not an event object)
+    if (!week && typeof index === 'number' && volumeChartData[index]) {
+      week = volumeChartData[index].week;
+    }
+    
+    console.log('Extracted week:', week);
+    
+    if (week) {
+      setExpandedWeek(week);
+      setTimelineExpanded(true);
+      console.log('Timeline expanded for week:', week);
+    } else {
+      console.log('Could not extract week from click data');
+    }
+  };
+
+  // Add this before the return statement
+  const weekRefs = useRef([]);
+
+  useEffect(() => {
+    if (timelineExpanded && expandedWeek && weekRefs.current) {
+      const weekIndex = filteredConsumerTimeline.findIndex(w => w.week === expandedWeek);
+      if (weekIndex !== -1 && weekRefs.current[weekIndex]) {
+        weekRefs.current[weekIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  }, [expandedWeek, timelineExpanded, filteredConsumerTimeline]);
+
   if (noData) {
     return (
       <Typography sx={{ fontFamily: 'BMW Motorrad' }}>
@@ -338,58 +514,38 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
         R 12 G/S Consumer Analysis - {selectedMarket}
       </Typography>
 
-      {/* AI Insights Controls */}
-      <Box sx={{ mb: 3, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <Box sx={{ display: 'flex', gap: 2, alignItems: 'center' }}>
-          <Button
-            variant={showInsights ? "contained" : "outlined"}
-            onClick={handleToggleInsights}
-            sx={{
-              fontFamily: 'BMW Motorrad',
-              backgroundColor: showInsights ? '#1976d2' : 'transparent',
-              color: showInsights ? 'white' : '#1976d2',
-              borderColor: '#1976d2',
-              '&:hover': {
-                backgroundColor: showInsights ? '#1565c0' : 'rgba(25, 118, 210, 0.04)',
-              }
-            }}
-          >
-            🤖 {showInsights ? 'Hide' : 'Show'} AI Insights
-          </Button>
-          
-          {showInsights && (
-            <Button
-              variant="contained"
-              onClick={handleGenerateInsights}
-              disabled={loading || !filteredData || !Object.values(filters).some(f => f !== 'All')}
-              sx={{
-                fontFamily: 'BMW Motorrad',
-                backgroundColor: '#4caf50',
-                '&:hover': {
-                  backgroundColor: '#388e3c',
-                },
-                '&:disabled': {
-                  backgroundColor: '#ccc',
-                }
-              }}
-            >
-              {loading ? 'Generating...' : 'Generate Insights'}
-            </Button>
-          )}
-        </Box>
-      </Box>
-
-      {/* AI Insights Panel */}
-      {showInsights && (
-        <Box sx={{ mb: 3 }}>
-          <AIInsightsPanel
-            insights={insights}
-            loading={loading}
-            error={error}
-            onRefresh={handleGenerateInsights}
-            className="main-insights-panel"
-          />
-        </Box>
+      {/* Key Insights */}
+      {filteredKeyInsights.length > 0 && (
+        <Grid container spacing={3} sx={{ mb: 4 }}>
+          <Grid item xs={12}>
+            <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
+              Key Insights
+            </Typography>
+          </Grid>
+          {filteredKeyInsights.map(([insight, content], index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <Card elevation={3} sx={{ height: '100%', backgroundColor: '#f8f9fa' }}>
+                <CardContent>
+                  <Typography variant="h6" sx={{ 
+                    fontFamily: 'BMW Motorrad', 
+                    mb: 2, 
+                    color: '#1976d2',
+                    fontWeight: 'bold'
+                  }}>
+                    {insight}
+                  </Typography>
+                  <Divider sx={{ mb: 2 }} />
+                  <Typography variant="body2" sx={{ 
+                    lineHeight: 1.6,
+                    color: '#424242'
+                  }}>
+                    {content}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       )}
 
       {/* Quote Explorer */}
@@ -403,6 +559,13 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
         weeks={allWeeks}
         purchaseIntents={allPurchaseIntents}
         competitors={allCompetitors}
+        showInsights={showInsights}
+        onToggleInsights={handleToggleInsights}
+        onGenerateInsights={handleGenerateInsights}
+        loading={loading}
+        filteredData={filteredData}
+        insights={insights}
+        error={error}
       />
 
       {/* Sentiment Analysis Pie Chart */}
@@ -440,20 +603,6 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                   </Box>
                 ))}
               </Box>
-              
-              {/* Mini AI Insights for Sentiment */}
-              {/* Temporarily disabled to prevent flashing and multiple API calls */}
-              {/* {showInsights && filteredData && (
-                <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(76, 175, 80, 0.1)', borderRadius: 1 }}>
-                  <MiniAIInsights 
-                    data={filteredData}
-                    section="sentiment"
-                    filters={Object.entries(filters)
-                      .filter(([key, value]) => value !== 'All')
-                      .map(([key, value]) => ({ type: key, value }))}
-                  />
-                </Box>
-              )} */}
             </CardContent>
           </Card>
         </Grid>
@@ -502,20 +651,6 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
               <Typography variant="caption" sx={{ color: '#666', mt: 1, display: 'block' }}>
                 Click anywhere on the chart to view all quotes, or hover for theme details
               </Typography>
-              
-              {/* Mini AI Insights for Themes */}
-              {/* Temporarily disabled to prevent flashing and multiple API calls */}
-              {/* {showInsights && filteredData && (
-                <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(25, 118, 210, 0.1)', borderRadius: 1 }}>
-                  <MiniAIInsights 
-                    data={filteredData}
-                    section="themes"
-                    filters={Object.entries(filters)
-                      .filter(([key, value]) => value !== 'All')
-                      .map(([key, value]) => ({ type: key, value }))}
-                  />
-                </Box>
-              )} */}
             </CardContent>
           </Card>
         </Grid>
@@ -539,58 +674,10 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                   <Bar dataKey="value" fill="#1976d2" />
                 </BarChart>
               </ResponsiveContainer>
-              
-              {/* Mini AI Insights for Platform Distribution */}
-              {/* Temporarily disabled to prevent flashing and multiple API calls */}
-              {/* {showInsights && filteredData && (
-                <Box sx={{ mt: 2, p: 2, backgroundColor: 'rgba(156, 39, 176, 0.1)', borderRadius: 1 }}>
-                  <MiniAIInsights 
-                    data={filteredData}
-                    section="platforms"
-                    filters={Object.entries(filters)
-                      .filter(([key, value]) => value !== 'All')
-                      .map(([key, value]) => ({ type: key, value }))}
-                  />
-                </Box>
-              )} */}
             </CardContent>
           </Card>
         </Grid>
       </Grid>
-
-      {/* Key Insights */}
-      {filteredKeyInsights.length > 0 && (
-        <Grid container spacing={3} sx={{ mb: 4 }}>
-          <Grid item xs={12}>
-            <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
-              Key Insights
-            </Typography>
-          </Grid>
-          {filteredKeyInsights.map(([insight, content], index) => (
-            <Grid item xs={12} md={6} key={index}>
-              <Card elevation={3} sx={{ height: '100%', backgroundColor: '#f8f9fa' }}>
-                <CardContent>
-                  <Typography variant="h6" sx={{ 
-                    fontFamily: 'BMW Motorrad', 
-                    mb: 2, 
-                    color: '#1976d2',
-                    fontWeight: 'bold'
-                  }}>
-                    {insight}
-                  </Typography>
-                  <Divider sx={{ mb: 2 }} />
-                  <Typography variant="body2" sx={{ 
-                    lineHeight: 1.6,
-                    color: '#424242'
-                  }}>
-                    {content}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      )}
 
       {/* Consumer Concerns */}
       {filteredConsumerConcerns.length > 0 && (
@@ -633,69 +720,197 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
       {/* Consumer Timeline */}
       {filteredConsumerTimeline.length > 0 && (
         <Grid container spacing={3}>
+          {/* Conversation Volume Line Chart */}
+          {hasValidVolumeData && (
+            <Grid item xs={12}>
+              <Card elevation={3}>
+                <CardContent>
+                  <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
+                    Conversation Volume Over Time (Click on points to view timeline details)
+                  </Typography>
+                  <ResponsiveContainer width="100%" height={300}>
+                    <LineChart 
+                      data={volumeChartData.filter(week => week.volume > 0)}
+                      onClick={(data, index) => {
+                        console.log('LineChart clicked!', data, index);
+                        if (data && data.activeLabel) {
+                          // Pass the week data directly
+                          const weekData = volumeChartData.find(w => w.week === data.activeLabel);
+                          if (weekData) {
+                            handleLineChartClick(weekData, data.activeLabel);
+                          }
+                        }
+                      }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis 
+                        dataKey="week" 
+                        label={{ value: 'Week', position: 'insideBottom', offset: -5 }}
+                      />
+                      <YAxis 
+                        label={{ value: 'Discussion Volume', angle: -90, position: 'insideLeft' }}
+                      />
+                      <Tooltip 
+                        formatter={(value, name) => [value, 'Discussions']}
+                        labelFormatter={(label) => {
+                          const weekData = volumeChartData.find(w => w.week === label);
+                          return weekData ? `Week ${label} (${weekData.weekRange})` : `Week ${label}`;
+                        }}
+                        content={({ active, payload, label }) => {
+                          if (active && payload && payload.length) {
+                            const weekData = volumeChartData.find(w => w.week === label);
+                            return (
+                              <Box sx={{ 
+                                backgroundColor: 'white', 
+                                border: '1px solid #ccc', 
+                                p: 2, 
+                                borderRadius: 1,
+                                boxShadow: 2
+                              }}>
+                                <Typography variant="body2" sx={{ fontWeight: 'bold', mb: 1 }}>
+                                  Week {label} ({weekData?.weekRange})
+                                </Typography>
+                                <Typography variant="body2" sx={{ mb: 1 }}>
+                                  <strong>Volume:</strong> {payload[0].value} discussions
+                                </Typography>
+                                {weekData?.event && (
+                                  <Typography variant="body2" sx={{ fontSize: '0.875rem', color: '#666', mb: 1 }}>
+                                    <strong>Event:</strong> {weekData.event}
+                                  </Typography>
+                                )}
+                                <Typography variant="caption" sx={{ color: '#1976d2', fontStyle: 'italic' }}>
+                                  Click to view timeline details
+                                </Typography>
+                              </Box>
+                            );
+                          }
+                          return null;
+                        }}
+                      />
+                      <Legend />
+                      <Line 
+                        type="monotone" 
+                        dataKey="volume" 
+                        stroke="#1976d2" 
+                        strokeWidth={3}
+                        dot={{ 
+                          fill: '#1976d2', 
+                          strokeWidth: 2, 
+                          r: 6,
+                          onClick: (data, index) => {
+                            console.log('Dot clicked!', data, index);
+                            handleLineChartClick(data, index);
+                          }
+                        }}
+                        activeDot={{ 
+                          r: 8, 
+                          stroke: '#1976d2', 
+                          strokeWidth: 2,
+                          onClick: (data, index) => {
+                            console.log('Active dot clicked!', data, index);
+                            handleLineChartClick(data, index);
+                          }
+                        }}
+                        name="Discussion Volume"
+                        style={{ cursor: 'pointer' }}
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </CardContent>
+              </Card>
+            </Grid>
+          )}
+          
           <Grid item xs={12}>
-            <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
-              Consumer Timeline
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Card elevation={3}>
-              <CardContent>
-                <Box sx={{ position: 'relative' }}>
-                  {filteredConsumerTimeline.map((week, index) => (
-                    <Box key={index} sx={{ 
-                      display: 'flex', 
-                      mb: 3, 
-                      position: 'relative',
-                      '&:not(:last-child)::after': {
-                        content: '""',
-                        position: 'absolute',
-                        left: 20,
-                        top: 40,
-                        bottom: -20,
-                        width: 2,
-                        backgroundColor: '#e0e0e0'
-                      }
-                    }}>
-                      <Box sx={{ 
-                        width: 40, 
-                        height: 40, 
-                        borderRadius: '50%', 
-                        backgroundColor: '#1976d2', 
-                        display: 'flex', 
-                        alignItems: 'center', 
-                        justifyContent: 'center',
-                        mr: 2,
-                        flexShrink: 0
-                      }}>
-                        <TimelineIcon sx={{ color: 'white' }} />
-                      </Box>
-                      <Box sx={{ flex: 1 }}>
-                        <Typography variant="h6" sx={{ 
-                          fontFamily: 'BMW Motorrad', 
-                          color: '#1976d2',
-                          mb: 1
-                        }}>
-                          Week {week.week} ({week.weekRange})
-                        </Typography>
-                        <Typography variant="body2" sx={{ mb: 1, fontWeight: 'bold' }}>
-                          {week.event}
-                        </Typography>
-                        <Typography variant="body2" sx={{ color: '#666', mb: 1 }}>
-                          Volume: {week.volume}
-                        </Typography>
-                        <Typography variant="body2" sx={{ color: '#666', mb: 1 }}>
-                          Sentiment: {week.sentiment}
-                        </Typography>
-                        <Typography variant="body2" sx={{ color: '#666' }}>
-                          Key Reactions: {week.keyReactions}
-                        </Typography>
-                      </Box>
+            <Accordion 
+              expanded={timelineExpanded} 
+              onChange={() => setTimelineExpanded(!timelineExpanded)}
+              sx={{ 
+                '&:before': { display: 'none' },
+                boxShadow: timelineExpanded ? 3 : 1
+              }}
+            >
+              <AccordionSummary 
+                expandIcon={<ExpandMoreIcon />}
+                sx={{ 
+                  backgroundColor: timelineExpanded ? '#f5f5f5' : 'white',
+                  '&:hover': { backgroundColor: '#f0f0f0' }
+                }}
+              >
+                <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', color: '#1a1a1a' }}>
+                  Consumer Timeline {expandedWeek && `(Week ${expandedWeek} selected)`}
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ p: 0 }}>
+                <Card elevation={0}>
+                  <CardContent>
+                    <Box sx={{ position: 'relative' }}>
+                      {filteredConsumerTimeline.map((week, index) => (
+                        <Box 
+                          key={index} 
+                          ref={el => weekRefs.current[index] = el}
+                          sx={{ 
+                            display: 'flex', 
+                            mb: 3, 
+                            position: 'relative',
+                            backgroundColor: expandedWeek === week.week ? '#e3f2fd' : 'transparent',
+                            borderRadius: expandedWeek === week.week ? 2 : 0,
+                            p: expandedWeek === week.week ? 2 : 0,
+                            border: expandedWeek === week.week ? '2px solid #1976d2' : 'none',
+                            '&:not(:last-child)::after': {
+                              content: '""',
+                              position: 'absolute',
+                              left: 20,
+                              top: 40,
+                              bottom: -20,
+                              width: 2,
+                              backgroundColor: expandedWeek === week.week ? '#1976d2' : '#e0e0e0'
+                            }
+                          }}
+                        >
+                          <Box sx={{ 
+                            width: 40, 
+                            height: 40, 
+                            borderRadius: '50%', 
+                            backgroundColor: expandedWeek === week.week ? '#1976d2' : '#1976d2', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            justifyContent: 'center',
+                            mr: 2,
+                            flexShrink: 0,
+                            boxShadow: expandedWeek === week.week ? 2 : 0
+                          }}>
+                            <TimelineIcon sx={{ color: 'white' }} />
+                          </Box>
+                          <Box sx={{ flex: 1 }}>
+                            <Typography variant="h6" sx={{ 
+                              fontFamily: 'BMW Motorrad', 
+                              color: expandedWeek === week.week ? '#1976d2' : '#1976d2',
+                              mb: 1,
+                              fontWeight: expandedWeek === week.week ? 'bold' : 'normal'
+                            }}>
+                              Week {week.week} ({week.weekRange})
+                            </Typography>
+                            <Typography variant="body2" sx={{ mb: 1, fontWeight: 'bold' }}>
+                              {week.event}
+                            </Typography>
+                            <Typography variant="body2" sx={{ color: '#666', mb: 1 }}>
+                              Volume: {week.volume}
+                            </Typography>
+                            <Typography variant="body2" sx={{ color: '#666', mb: 1 }}>
+                              Sentiment: {week.sentiment}
+                            </Typography>
+                            <Typography variant="body2" sx={{ color: '#666' }}>
+                              Key Reactions: {week.keyReactions}
+                            </Typography>
+                          </Box>
+                        </Box>
+                      ))}
                     </Box>
-                  ))}
-                </Box>
-              </CardContent>
-            </Card>
+                  </CardContent>
+                </Card>
+              </AccordionDetails>
+            </Accordion>
           </Grid>
         </Grid>
       )}

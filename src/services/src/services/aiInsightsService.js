@@ -66,29 +66,42 @@ class AIInsightsService {
   generateMockInsights(filteredData, activeFilters, section) {
     const filterDescription = this.describeActiveFilters(activeFilters);
     const dataStats = this.generateDataStatistics(filteredData);
-    // Calculate sentiment breakdown from filteredData
-    const quotes = filteredData.quotes || [];
-    const total = quotes.length || 1;
-    const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
-    quotes.forEach(q => {
-      if (q.sentiment && q.sentiment.toLowerCase() === 'positive') sentimentCounts.positive++;
-      else if (q.sentiment && q.sentiment.toLowerCase() === 'neutral') sentimentCounts.neutral++;
-      else sentimentCounts.negative++;
-    });
-    const sentimentBreakdown = {
-      positive: { count: sentimentCounts.positive, percentage: Math.round((sentimentCounts.positive / total) * 100) },
-      neutral: { count: sentimentCounts.neutral, percentage: Math.round((sentimentCounts.neutral / total) * 100) },
-      negative: { count: sentimentCounts.negative, percentage: Math.round((sentimentCounts.negative / total) * 100) },
-      scoreExplanation: "Sentiment is scored from 1 (very negative) to 5 (very positive), with 3 being neutral. The average is calculated from all filtered quotes."
-    };
+    
+    // Use sentiment percentages from filteredData if available, otherwise calculate from quotes
+    let sentimentBreakdown;
+    if (filteredData.sentimentPercentages) {
+      sentimentBreakdown = {
+        positive: { count: 0, percentage: filteredData.sentimentPercentages.positive },
+        neutral: { count: 0, percentage: filteredData.sentimentPercentages.neutral },
+        negative: { count: 0, percentage: filteredData.sentimentPercentages.negative },
+        scoreExplanation: "Sentiment breakdown shows the percentage distribution of positive, neutral, and negative quotes in the filtered dataset."
+      };
+    } else {
+      // Fallback calculation from quotes
+      const quotes = filteredData.quotes || [];
+      const total = quotes.length || 1;
+      const sentimentCounts = { positive: 0, neutral: 0, negative: 0 };
+      quotes.forEach(q => {
+        if (q.sentiment && q.sentiment.toLowerCase() === 'positive') sentimentCounts.positive++;
+        else if (q.sentiment && q.sentiment.toLowerCase() === 'neutral') sentimentCounts.neutral++;
+        else sentimentCounts.negative++;
+      });
+      sentimentBreakdown = {
+        positive: { count: sentimentCounts.positive, percentage: Math.round((sentimentCounts.positive / total) * 100) },
+        neutral: { count: sentimentCounts.neutral, percentage: Math.round((sentimentCounts.neutral / total) * 100) },
+        negative: { count: sentimentCounts.negative, percentage: Math.round((sentimentCounts.negative / total) * 100) },
+        scoreExplanation: "Sentiment breakdown shows the percentage distribution of positive, neutral, and negative quotes in the filtered dataset."
+      };
+    }
+    
     // Generate contextual mock insights based on the data
     const mockInsights = {
       filterContext: `Analysis based on filtered data: ${filterDescription}. This represents a subset of consumer feedback, not the complete dataset.`,
-      summary: this.generateMockSummary(filteredData, activeFilters, section),
+      summary: this.generateMockSummary(filteredData, activeFilters, section, sentimentBreakdown),
       sentimentBreakdown,
-      keyFindings: this.generateMockFindings(filteredData, activeFilters, section),
-      recommendations: this.generateMockRecommendations(filteredData, activeFilters, section),
-      dataHighlights: this.generateMockHighlights(filteredData, activeFilters, section)
+      keyFindings: this.generateMockFindings(filteredData, activeFilters, section, sentimentBreakdown),
+      recommendations: this.generateMockRecommendations(filteredData, activeFilters, section, sentimentBreakdown),
+      dataHighlights: this.generateMockHighlights(filteredData, activeFilters, section, sentimentBreakdown)
     };
 
     return {
@@ -100,37 +113,43 @@ class AIInsightsService {
   /**
    * Generate mock summary based on data
    */
-  generateMockSummary(filteredData, activeFilters, section) {
+  generateMockSummary(filteredData, activeFilters, section, sentimentBreakdown) {
     const totalQuotes = filteredData.totalQuotes || 0;
-    const avgSentiment = filteredData.averageSentiment || 3.0;
     const topTheme = filteredData.topTheme?.name || "General";
+    const positivePct = sentimentBreakdown.positive.percentage;
+    const neutralPct = sentimentBreakdown.neutral.percentage;
+    const negativePct = sentimentBreakdown.negative.percentage;
     
     if (activeFilters.length === 0) {
-      return `Analysis of ${totalQuotes} consumer quotes reveals an average sentiment score of ${avgSentiment}/5.0, with "${topTheme}" being the most discussed theme. This comprehensive view shows overall consumer perception of the R 12 G/S.`;
+      return `Analysis of ${totalQuotes} consumer quotes reveals ${positivePct}% positive, ${neutralPct}% neutral, and ${negativePct}% negative sentiment, with "${topTheme}" being the most discussed theme. This comprehensive view shows overall consumer perception of the R 12 G/S.`;
     }
     
     const filterDesc = activeFilters.map(f => f.value).join(", ");
-    return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${avgSentiment}/5.0 average sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
+    return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${positivePct}% positive, ${neutralPct}% neutral, and ${negativePct}% negative sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
   }
 
   /**
    * Generate mock findings based on data
    */
-  generateMockFindings(filteredData, activeFilters, section) {
+  generateMockFindings(filteredData, activeFilters, section, sentimentBreakdown) {
     const findings = [];
     const totalQuotes = filteredData.totalQuotes || 0;
-    const avgSentiment = filteredData.averageSentiment || 3.0;
     const topTheme = filteredData.topTheme?.name || "General";
+    const positivePct = sentimentBreakdown.positive.percentage;
+    const neutralPct = sentimentBreakdown.neutral.percentage;
+    const negativePct = sentimentBreakdown.negative.percentage;
     
-    findings.push(`Consumer sentiment averages ${avgSentiment}/5.0 across ${totalQuotes} analyzed quotes`);
+    findings.push(`Sentiment distribution across ${totalQuotes} analyzed quotes: ${positivePct}% positive, ${neutralPct}% neutral, ${negativePct}% negative`);
     findings.push(`"${topTheme}" emerges as the dominant discussion theme with ${filteredData.topTheme?.percentage || 25}% of mentions`);
     
-    if (avgSentiment > 3.5) {
-      findings.push("Overall positive sentiment indicates strong consumer satisfaction with R 12 G/S features");
-    } else if (avgSentiment < 2.5) {
-      findings.push("Lower sentiment scores suggest areas for improvement in consumer experience");
+    if (positivePct > 50) {
+      findings.push("Strong positive sentiment indicates high consumer satisfaction with R 12 G/S features");
+    } else if (negativePct > 40) {
+      findings.push("Higher negative sentiment suggests areas for improvement in consumer experience");
+    } else if (neutralPct > 50) {
+      findings.push("High neutral sentiment indicates mixed consumer reactions requiring further analysis");
     } else {
-      findings.push("Neutral sentiment indicates mixed consumer reactions requiring further analysis");
+      findings.push("Balanced sentiment distribution shows varied consumer perspectives");
     }
     
     return findings;
@@ -139,20 +158,25 @@ class AIInsightsService {
   /**
    * Generate mock recommendations based on data
    */
-  generateMockRecommendations(filteredData, activeFilters, section) {
+  generateMockRecommendations(filteredData, activeFilters, section, sentimentBreakdown) {
     const recommendations = [];
-    const avgSentiment = filteredData.averageSentiment || 3.0;
     const topTheme = filteredData.topTheme?.name || "General";
+    const positivePct = sentimentBreakdown.positive.percentage;
+    const neutralPct = sentimentBreakdown.neutral.percentage;
+    const negativePct = sentimentBreakdown.negative.percentage;
     
-    if (avgSentiment > 3.5) {
-      recommendations.push("Leverage positive sentiment by highlighting successful features in marketing campaigns");
+    if (positivePct > 50) {
+      recommendations.push("Leverage strong positive sentiment by highlighting successful features in marketing campaigns");
       recommendations.push("Expand on themes that resonate well with consumers");
-    } else if (avgSentiment < 2.5) {
+    } else if (negativePct > 40) {
       recommendations.push("Address consumer concerns identified in negative sentiment areas");
       recommendations.push("Develop targeted improvements based on feedback themes");
-    } else {
+    } else if (neutralPct > 50) {
       recommendations.push("Conduct deeper analysis to understand mixed consumer reactions");
       recommendations.push("Focus on improving areas with neutral sentiment");
+    } else {
+      recommendations.push("Develop balanced strategies addressing both positive and negative feedback");
+      recommendations.push("Focus on converting neutral sentiment to positive through targeted improvements");
     }
     
     recommendations.push(`Prioritize "${topTheme}" related improvements based on high discussion volume`);
@@ -163,16 +187,31 @@ class AIInsightsService {
   /**
    * Generate mock highlights based on data
    */
-  generateMockHighlights(filteredData, activeFilters, section) {
+  generateMockHighlights(filteredData, activeFilters, section, sentimentBreakdown) {
     const topTheme = filteredData.topTheme?.name || "Performance";
-    const avgSentiment = filteredData.averageSentiment || 3.0;
     const quotes = filteredData.quotes || [];
+    const positivePct = sentimentBreakdown.positive.percentage;
+    const neutralPct = sentimentBreakdown.neutral.percentage;
+    const negativePct = sentimentBreakdown.negative.percentage;
     
     let sentimentTrend = "Neutral";
-    if (avgSentiment > 3.5) sentimentTrend = "Positive";
-    else if (avgSentiment < 2.5) sentimentTrend = "Negative";
+    if (positivePct > 50) sentimentTrend = "Positive";
+    else if (negativePct > 40) sentimentTrend = "Negative";
     
-    const criticalQuote = quotes.length > 0 ? quotes[0].text : "No quotes available";
+    // Find a meaningful sample quote - prefer positive quotes if available, otherwise use the first one
+    let criticalQuote = "No quotes available";
+    if (quotes.length > 0) {
+      if (positivePct > 0) {
+        const positiveQuote = quotes.find(q => q.sentiment === 'Positive');
+        if (positiveQuote) {
+          criticalQuote = positiveQuote.text;
+        } else {
+          criticalQuote = quotes[0].text;
+        }
+      } else {
+        criticalQuote = quotes[0].text;
+      }
+    }
     
     return {
       strongestTheme: topTheme,
@@ -208,12 +247,17 @@ class AIInsightsService {
    */
   generateDataStatistics(data) {
     const totalQuotes = data.totalQuotes || 0;
-    const avgSentiment = data.averageSentiment || 0;
     const topTheme = data.topTheme?.name || "N/A";
     const topThemePercentage = data.topTheme?.percentage || 0;
     
+    let sentimentInfo = "Sentiment data not available";
+    if (data.sentimentPercentages) {
+      const { positive, neutral, negative } = data.sentimentPercentages;
+      sentimentInfo = `Sentiment Distribution: ${positive}% positive, ${neutral}% neutral, ${negative}% negative`;
+    }
+    
     return `Total Quotes: ${totalQuotes}
-Average Sentiment: ${avgSentiment}/5.0 (1=very negative, 5=very positive)
+${sentimentInfo}
 Top Theme: ${topTheme} (${topThemePercentage}% of mentions)
 Time Range: ${data.timeRange || 'N/A'}`;
   }
