@@ -1,4 +1,5 @@
 const OpenAI = require("openai").default;
+const { getReportVectorStoreId } = require("../config/getReportVectorStoreId");
 
 // Initialize OpenAI client only if API key is available
 let openai = null;
@@ -7,6 +8,9 @@ if (process.env.OPENAI_API_KEY) {
     apiKey: process.env.OPENAI_API_KEY,
   });
 }
+
+// Prefer VS_REPORTS_STORE_ID but allow client-side fallback
+const REPORTS_VECTOR_STORE_ID = getReportVectorStoreId();
 
 module.exports = async (req, res) => {
   console.log("🔍 Insights API endpoint called!");
@@ -79,8 +83,19 @@ async function generateAIInsights(filteredData, activeFilters, section) {
     console.log("OpenAI client not initialized, returning enhanced mock insights");
     return generateEnhancedMockInsights(filteredData, activeFilters, section);
   }
-  
-  const prompt = buildEnhancedInsightsPrompt(filteredData, activeFilters, section);
+
+  let prompt = buildEnhancedInsightsPrompt(filteredData, activeFilters, section);
+
+  // Attempt to enrich prompt with context from market reports via vector store
+  try {
+    const query = buildReportQuery(filteredData, activeFilters);
+    const reportContext = await retrieveReportContext(query);
+    if (reportContext) {
+      prompt += `\n\nREPORT CONTEXT:\n${reportContext}`;
+    }
+  } catch (ctxErr) {
+    console.log("Report context retrieval failed:", ctxErr.message);
+  }
   
   const response = await openai.chat.completions.create({
     model: "gpt-4o-mini",
@@ -629,4 +644,67 @@ function generateDataStatistics(data) {
 ${sentimentInfo}
 Top Theme: ${topTheme} (${topThemePercentage}% of mentions)
 Time Range: ${data.timeRange || 'N/A'}`;
+}
+
+/**
+ * Build a search query for the reports vector store
+ */
+function buildReportQuery(filteredData, activeFilters) {
+  const filterDesc = describeActiveFilters(activeFilters);
+  const topTheme = filteredData.topTheme?.name;
+  const timeRange = filteredData.timeRange
+    ? `weeks ${filteredData.timeRange.start}-${filteredData.timeRange.end}`
+    : "";
+
+  let query = `Context for filters: ${filterDesc}`;
+  if (topTheme) query += ` focusing on theme ${topTheme}`;
+  if (timeRange) query += ` during ${timeRange}`;
+  return query;
+}
+
+/**
+ * Retrieve context from the reports vector store using file_search
+ */
+async function retrieveReportContext(query) {
+  if (!openai || !REPORTS_VECTOR_STORE_ID) return null;
+
+  try {
+    const assistant = await openai.beta.assistants.create({
+      name: "Report Search Assistant",
+      instructions:
+        "Search BMW market reports and return concise relevant passages.",
+      model: "gpt-4o-mini",
+      tools: [{ type: "file_search" }],
+      tool_resources: {
+        file_search: {
+          vector_store_ids: [REPORTS_VECTOR_STORE_ID],
+        },
+      },
+    });
+
+    const thread = await openai.beta.threads.create();
+    await openai.beta.threads.messages.create(thread.id, {
+      role: "user",
+      content: query,
+    });
+
+    const run = await openai.beta.threads.runs.createAndPoll(thread.id, {
+      assistant_id: assistant.id,
+    });
+
+    let result = null;
+    if (run.status === "completed") {
+      const messages = await openai.beta.threads.messages.list(thread.id);
+      const msg = messages.data.find((m) => m.role === "assistant");
+      if (msg && msg.content[0]) {
+        result = msg.content[0].text.value;
+      }
+    }
+
+    await openai.beta.assistants.del(assistant.id);
+    return result;
+  } catch (err) {
+    console.log("Vector store retrieval failed:", err.message);
+    return null;
+  }
 }
