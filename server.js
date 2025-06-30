@@ -18,6 +18,7 @@ app.use(express.static(path.join(__dirname, "build")));
 
 // OpenAI setup
 const OpenAI = require("openai").default;
+const { getReportVectorStoreId } = require("./config/getReportVectorStoreId");
 
 let openai = null;
 if (process.env.OPENAI_API_KEY) {
@@ -29,6 +30,9 @@ if (process.env.OPENAI_API_KEY) {
 // Prefer VS_STORE_ID but fall back to REACT_APP_VS_STORE_ID for client and server environments
 const VECTOR_STORE_ID =
   process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
+
+// Prefer VS_REPORTS_STORE_ID but fall back to client-side variable
+const REPORTS_VECTOR_STORE_ID = getReportVectorStoreId();
 
 // Test chat endpoint (simple, no vector store)
 app.post("/api/test-chat", async (req, res) => {
@@ -250,6 +254,14 @@ if (process.env.NODE_ENV !== 'production') {
     );
     console.log(
       `🎯 Vector Store ID: ${process.env.VS_STORE_ID || "Not configured"}`
+    );
+    console.log(
+      `📑 Reports Vector Store ID configured: ${
+        REPORTS_VECTOR_STORE_ID ? "Yes" : "No"
+      }`
+    );
+    console.log(
+      `📂 Reports Vector Store ID: ${REPORTS_VECTOR_STORE_ID || "Not configured"}`
     );
     console.log(
       `🤖 AI Model: ${require("./ai/system-prompt").getAIConfig().model}`
