@@ -88,7 +88,9 @@ async function generateAIInsights(filteredData, activeFilters, section) {
   // Attempt to enrich prompt with context from market reports via vector store
   try {
     const query = buildReportQuery(filteredData, activeFilters);
+    console.log("🔍 Vector Store Query:", query); // Debug log for the query
     reportContext = await retrieveReportContext(query);
+    console.log("🔍 Retrieved Report Context:", reportContext); // Debug log for the retrieved context
   } catch (ctxErr) {
     console.log("Report context retrieval failed:", ctxErr.message);
   }

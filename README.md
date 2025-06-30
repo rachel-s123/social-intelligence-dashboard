@@ -103,7 +103,7 @@ npm run generate-r12gs-consumer-data
 
 ## Vector Store Setup
 
-To enable AI search of the PDF reports, upload the files in `vector_reports/` to
+To enable AI search of the R 12 G/S PDF reports, upload the files in `vector_reports/r12gs/` to
 a new OpenAI vector store:
 
 ```bash

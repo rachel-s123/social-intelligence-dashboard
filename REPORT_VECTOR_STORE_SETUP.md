@@ -1,6 +1,6 @@
 # Report Vector Store Setup
 
-This project can search market PDF reports using an OpenAI vector store. The repository includes sample PDFs in `vector_reports/`.
+This project can search R 12 G/S market PDF reports using an OpenAI vector store. The repository includes sample PDFs in `vector_reports/r12gs/`.
 
 ## Creating the Vector Store
 
@@ -9,7 +9,7 @@ This project can search market PDF reports using an OpenAI vector store. The rep
    ```bash
    node scripts/create_report_vector_store.js
    ```
-3. The script uploads all PDFs from `vector_reports/` and prints the new store ID.
+3. The script uploads all PDFs from `vector_reports/r12gs/` and prints the new store ID.
 
 ## Configuring the Application
 
