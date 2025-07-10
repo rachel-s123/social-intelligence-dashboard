@@ -22,25 +22,11 @@ const createMockService = () => ({
 /**
  * Transform the new API response structure to match component expectations
  */
-const transformInsightsResponse = (apiInsights) => {
-  // If the response already has the old format, return as is
-  if (apiInsights.summary && apiInsights.keyFindings) {
-    return apiInsights;
-  }
-  
-  // Transform new format to old format
-  return {
-    filterContext: apiInsights.filterContext || "Filter context not provided",
-    summary: apiInsights.executiveSummary || "Executive summary not provided",
-    keyFindings: apiInsights.keyInsights?.map(insight => insight.insight) || ["No insights provided"],
-    recommendations: apiInsights.actionableRecommendations?.map(rec => rec.recommendation) || ["No recommendations provided"],
-    dataHighlights: {
-      strongestTheme: apiInsights.dataHighlights?.emergingTheme || "Unknown",
-      sentimentTrend: apiInsights.dataHighlights?.sentimentDriver || "Unknown",
-      criticalQuote: apiInsights.dataHighlights?.criticalQuote || "No critical quote available"
-    }
-  };
-};
+const transformInsightsResponse = (apiInsights) => ({
+  ...apiInsights,
+  keyInsights: apiInsights.keyInsights || apiInsights.keyFindings || [],
+  recommendations: apiInsights.recommendations || apiInsights.actionableRecommendations || [],
+});
 
 // React Hook for using AI insights
 export const useAIInsights = () => {
@@ -49,7 +35,7 @@ export const useAIInsights = () => {
   const [error, setError] = useState(null);
   const [hasGenerated, setHasGenerated] = useState(false);
 
-  const generateInsights = async (filteredData, activeFilters, section) => {
+  const generateInsights = async (filteredData, activeFilters, section, market) => {
     // Prevent multiple simultaneous generations
     if (loading) {
       console.log("🔄 Already generating insights, skipping...");
@@ -81,7 +67,8 @@ export const useAIInsights = () => {
       const result = await service.generateFilteredInsights(
         filteredData, 
         activeFilters, 
-        section
+        section,
+        market
       );
       
       if (result.success) {
@@ -178,7 +165,9 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         <div className="insights-header">
           <h3>🤖 AI Insights</h3>
         </div>
-        <p>Apply filters and click "Generate Insights" to see AI analysis</p>
+        <p style={{ color: '#1c2a5c', fontWeight: 600, fontSize: '1.1rem', textAlign: 'center', marginTop: 32 }}>
+          Filter by theme and/or sentiment to generate AI insights tailored to your selection.
+        </p>
       </div>
     );
   }
@@ -187,7 +176,6 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
     <div className={`ai-insights-panel ${className}`}>
       <div className="insights-header">
         <h3>🤖 AI Insights</h3>
-        <button onClick={onRefresh} className="refresh-btn">Refresh</button>
       </div>
       {/* Demo Mode Indicator */}
       {error && error.includes("Demo mode") && (
@@ -207,63 +195,137 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         {/* Filter Context Section */}
         {insights.filterContext && (
           <div className="filter-context-section" style={{
-            backgroundColor: '#e3f2fd',
-            border: '1px solid #2196f3',
-            borderRadius: '4px',
-            padding: '12px 16px',
-            marginBottom: '16px',
-            fontSize: '14px',
-            color: '#1565c0'
+            background: '#f5f7fa',
+            border: '1px solid #e5e5e5',
+            borderRadius: 8,
+            padding: '10px 18px',
+            margin: '0 0 24px 0',
+            fontStyle: 'italic',
+            color: '#1c2a5c',
+            fontSize: '1rem',
+            boxShadow: 'none'
           }}>
-            <h4 style={{ margin: '0 0 8px 0', fontSize: '16px', fontWeight: 'bold' }}>
-              🔍 Filter Context
-            </h4>
-            <p style={{ margin: 0, lineHeight: 1.4 }}>
-              {insights.filterContext}
-            </p>
+            {insights.filterContext}
           </div>
         )}
 
-        <div className="summary-section">
-          <h4>Summary</h4>
-          <p>{insights.summary}</p>
-        </div>
-
-        <div className="findings-section">
-          <h4>Key Findings</h4>
-          <ul>
-            {insights.keyFindings && insights.keyFindings.map((finding, index) => (
-              <li key={index}>{finding}</li>
-            ))}
-          </ul>  
-        </div>
-
-        <div className="recommendations-section">
-          <h4>Recommendations</h4>
-          <ul>
-            {insights.recommendations && insights.recommendations.map((rec, index) => (
-              <li key={index}>{rec}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="highlights-section">
-          <h4>Data Highlights</h4>
-          <div className="highlights-grid">
-            <div className="highlight-item">
-              <span className="label">Strongest Theme:</span>
-              <span className="value">{insights.dataHighlights?.strongestTheme || 'N/A'}</span>
+        {insights.executiveSummary && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Executive Summary</h4>
+            <div className="executive-summary-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
+                <h5 style={{ margin: '0 0 0 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+                  {insights.executiveSummary}
+                </h5>
+              </div>
             </div>
-            <div className="highlight-item">
-              <span className="label">Sentiment Trend:</span>
-              <span className="value">{insights.dataHighlights?.sentimentTrend || 'N/A'}</span>
+          </>
+        )}
+
+        {insights.keyInsights && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Key Insights</h4>
+            <div className="key-insights-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {insights.keyInsights.map((finding, index) => {
+                if (!finding) return null;
+                if (typeof finding === 'string') {
+                  return <div key={index} style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 8, padding: 24, marginBottom: 12, boxShadow: '0 2px 8px #e0e0e0' }}>{finding}</div>;
+                }
+                return (
+                  <div key={index} style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, marginBottom: 0, boxShadow: '0 2px 8px #e5e5e5' }}>
+                    <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>{finding.humanTruth || 'Human Truth'}</h5>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Explanation:</strong> {finding.explanation || 'N/A'}</div>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Evidence:</strong> {finding.evidence || 'N/A'}</div>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c' }}><strong>Business Implication:</strong> {finding.businessImplication || 'N/A'}</div>
+                  </div>
+                );
+              })}
             </div>
-            <div className="highlight-item">
-              <span className="label">Critical Quote:</span>
-              <span className="value">"{insights.dataHighlights?.criticalQuote || 'N/A'}"</span>
+          </>
+        )}
+
+        {insights.actionableRecommendations && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Actionable Recommendations</h4>
+            <div className="actionable-recommendations-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {insights.actionableRecommendations.map((rec, index) => {
+                if (!rec) return null;
+                if (typeof rec === 'string') {
+                  return <div key={index} style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 8, padding: 24, marginBottom: 12, boxShadow: '0 2px 8px #e0e0e0' }}>{rec}</div>;
+                }
+                return (
+                  <div key={index} style={{ background: '#fff', border: '2px solid #6fa3ef', borderRadius: 10, padding: 24, marginBottom: 0, boxShadow: '0 2px 8px #e5e5e5' }}>
+                    <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>{rec.category || 'Category'}</h5>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Recommendation:</strong> {rec.recommendation || 'N/A'}</div>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Rationale:</strong> {rec.rationale || 'N/A'}</div>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Timeline:</strong> {rec.timeline || 'N/A'}</div>
+                    <div style={{ fontSize: '1rem', color: '#1c2a5c' }}><strong>Expected Impact:</strong> {rec.expectedImpact || 'N/A'}</div>
+                  </div>
+                );
+              })}
             </div>
-          </div>
-        </div>
+          </>
+        )}
+
+        {insights.consumerSegments && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Consumer Segments</h4>
+            <div className="consumer-segments-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
+                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+                  {insights.consumerSegments.primarySegment || 'Primary Segment'}
+                </h5>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
+                  <strong>Concerns/Needs:</strong> {insights.consumerSegments.concernsAndNeeds?.join(', ') || 'N/A'}
+                </div>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
+                  <strong>Opportunity Areas:</strong> {insights.consumerSegments.opportunityAreas?.join(', ') || 'N/A'}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
+        {insights.competitiveIntelligence && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Competitive Intelligence</h4>
+            <div className="competitive-intelligence-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
+                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+                  {insights.competitiveIntelligence.strengths?.[0] || 'Strengths'}
+                </h5>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
+                  <strong>Strengths:</strong> {insights.competitiveIntelligence.strengths?.join(', ') || 'N/A'}
+                </div>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
+                  <strong>Vulnerabilities:</strong> {insights.competitiveIntelligence.vulnerabilities?.join(', ') || 'N/A'}
+                </div>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
+                  <strong>Market Position:</strong> {insights.competitiveIntelligence.marketPosition || 'N/A'}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
+
+        {insights.dataHighlights && (
+          <>
+            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Data Highlights</h4>
+            <div className="data-highlights-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
+                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+                  {insights.dataHighlights.criticalQuote ? `"${insights.dataHighlights.criticalQuote}"` : 'Critical Quote'}
+                </h5>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
+                  <strong>Emerging Theme:</strong> {insights.dataHighlights.emergingTheme || 'N/A'}
+                </div>
+                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
+                  <strong>Sentiment Driver:</strong> {insights.dataHighlights.sentimentDriver || 'N/A'}
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

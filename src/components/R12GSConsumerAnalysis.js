@@ -383,7 +383,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
       }));
     
     console.log("🚀 Starting manual insight generation with filters:", activeFilters);
-    await generateInsights(filteredData, activeFilters, 'consumer-analysis');
+    await generateInsights(filteredData, activeFilters, 'consumer-analysis', selectedMarket);
   };
 
   const handleToggleInsights = () => {

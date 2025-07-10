@@ -3,6 +3,9 @@ const cors = require("cors");
 const path = require("path");
 require("dotenv").config();
 
+console.log("DEBUG: OPENAI_API_KEY:", process.env.OPENAI_API_KEY ? "✅ Found" : "❌ Not found");
+
+
 // Import AI configuration
 const { getSystemMessage, getAIConfig } = require("./ai/system-prompt");
 

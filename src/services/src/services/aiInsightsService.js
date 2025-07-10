@@ -18,25 +18,50 @@ class AIInsightsService {
    * @param {Object} filteredData - The filtered data from the dashboard
    * @param {Array} activeFilters - Currently active filters
    * @param {string} section - Dashboard section (themes, sentiment, timeline, etc.)
+   * @param {string} market - The market for which insights are generated (e.g., "US", "EU")
    * @returns {Promise<Object>} - Structured insights object
    */
-  async generateFilteredInsights(filteredData, activeFilters, section) {
+  async generateFilteredInsights(filteredData, activeFilters, section, market) {
     try {
       console.log("🚀 Calling server-side insights API...");
       
-      const response = await fetch('/api/insights', {
+      // Send all filtered quotes without limiting for comprehensive insights
+      const optimizedData = {
+        totalQuotes: filteredData.totalQuotes,
+        sentimentPercentages: filteredData.sentimentPercentages,
+        topTheme: filteredData.topTheme?.name || "General",
+        timeRange: filteredData.timeRange || "All time",
+        // Include all filtered quotes for comprehensive analysis
+        quotes: filteredData.quotes || []
+      };
+
+      // Simplified filters - only essential info
+      const simplifiedFilters = (activeFilters || []).map(f => ({
+        type: f.type,
+        value: f.value
+      }));
+
+      const payload = {
+        filteredData: optimizedData,
+        activeFilters: simplifiedFilters,
+        section: section || "general",
+        market: market || null
+      };
+
+      const payloadString = JSON.stringify(payload);
+      console.log("🔍 Payload size:", Math.round(payloadString.length / 1024), "KB");
+      console.log("🔍 Quotes count:", optimizedData.quotes.length);
+      
+      const response = await fetch('http://localhost:3001/api/insights', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          filteredData,
-          activeFilters,
-          section
-        })
+        body: payloadString
       });
 
       if (!response.ok) {
+        console.error("❌ API Response error:", response.status, response.statusText);
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
