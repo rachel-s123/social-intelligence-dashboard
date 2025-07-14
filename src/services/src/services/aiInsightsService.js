@@ -52,7 +52,7 @@ class AIInsightsService {
       console.log("🔍 Payload size:", Math.round(payloadString.length / 1024), "KB");
       console.log("🔍 Quotes count:", optimizedData.quotes.length);
       
-      const response = await fetch('http://localhost:3001/api/insights', {
+      const response = await fetch('/api/insights', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

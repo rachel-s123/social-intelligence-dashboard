@@ -53,6 +53,11 @@ const sectionData = [
     description: "Comprehensive evaluation of competitor positioning, market share, and strategic implications for BMW's touring motorcycle portfolio.",
     icon: <GroupsIcon sx={{ fontSize: 40, color: 'info.main', mb: 1 }} />,
   },
+  {
+    title: 'R 12 G/S Consumer Analysis',
+    description: 'Specialized research into authentic consumer conversations about the R 12 G/S, focusing on sentiment, themes, and purchase intent from March to June 2025.',
+    icon: <AnalyticsIcon sx={{ fontSize: 40, color: 'primary.main', mb: 1 }} />,
+  },
 ];
 
 const methodologyData = [
@@ -65,13 +70,18 @@ const methodologyData = [
     title: 'Weighted Resonance Index',
     description: 'Evaluates 20 key market attributes, weights importance across sales data, social discussions, consumer reviews, and expert analysis, provides quantitative measure of attribute significance, and identifies critical market drivers and barriers.',
     icon: <TrendingUpIcon sx={{ fontSize: 40, color: 'secondary.main', mb: 1 }} />,
-  }
+  },
+  {
+    title: 'R 12 G/S Consumer Analysis',
+    description: 'R 12 G/S Consumer Analysis uses specialised research prompts to gather authentic consumer conversations specifically from social media and forums, focusing exclusively on genuine consumer discussions about the R 12 G/S from March to June 2025.',
+    icon: <GroupsIcon sx={{ fontSize: 40, color: 'info.main', mb: 1 }} />,
+  },
 ];
 
 const scopeData = [
   {
     title: 'Dashboard Scope',
-    description: 'This dashboard provides comprehensive insights into the entire touring motorcycle segment, with a specific focus on the R 1300 RT launch, but not just limited to BMW brands. All attribute scores and sentiment analysis are derived from conversations and data across the entire segment, offering a holistic view of market dynamics and consumer preferences.',
+    description: 'This dashboard provides comprehensive insights into the entire touring motorcycle segment, with a specific focus on the R 1300 RT launch and now the R 12 G/S consumer analysis. All attribute scores and sentiment analysis are derived from conversations and data across the entire segment, including dedicated R 12 G/S consumer insights from March to June 2025, offering a holistic view of market dynamics and consumer preferences.',
     icon: <InfoIcon sx={{ fontSize: 40, color: 'primary.main', mb: 1 }} />,
   }
 ];
@@ -195,7 +205,7 @@ const DashboardIntro = ({ selectedMarket }) => {
     }
   };
   return (
-    <Paper sx={{ p: 4, background: '#f8fafc' }}>
+    <Box sx={{ py: { xs: 2, md: 4 }, px: { xs: 2, md: 4 }, background: '#f8fafc' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tabValue} onChange={handleTabChange}>
           <Tab label="Understanding the Data" />
@@ -206,91 +216,85 @@ const DashboardIntro = ({ selectedMarket }) => {
 
       <TabPanel value={tabValue} index={0}>
         {/* Top: Dashboard Scope & Strategic Applications */}
-        <Grid container spacing={3} sx={{ mb: 4 }}>
-          <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                {scopeData[0].icon}
-                <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
-                  {scopeData[0].title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
-                  {marketData ? getScopeText(marketData.introduction) : scopeData[0].description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Card sx={{ height: '100%', boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-              <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                {usageData[0].icon}
-                <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
-                  {usageData[0].title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
-                  {usageData[0].description}
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        </Grid>
+        <Box sx={{ display: 'flex', gap: 3, mb: 4, flexWrap: 'wrap' }}>
+          <Card sx={{ flex: '1 1 0', minWidth: 300, maxWidth: 600, boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+            <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              {scopeData[0].icon}
+              <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
+                {scopeData[0].title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
+                {marketData ? getScopeText(marketData.introduction) : scopeData[0].description}
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card sx={{ flex: '1 1 0', minWidth: 300, maxWidth: 600, boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+            <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+              {usageData[0].icon}
+              <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
+                {usageData[0].title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
+                {usageData[0].description}
+              </Typography>
+            </CardContent>
+          </Card>
+        </Box>
         {/* Dashboard Sections */}
         <Typography 
           variant="h6" 
           sx={{ 
             fontSize: '1.1rem',
             fontWeight: 500,
-            mb: 3 
+            mb: 3,
+            px: { xs: 0, md: 0 }
           }}
         >
           Dashboard Sections
         </Typography>
-        <Grid container spacing={3} sx={{ mb: 4 }}>
+        <Box sx={{ display: 'flex', gap: 3, mb: 4, flexWrap: 'nowrap', overflowX: 'auto', justifyContent: 'space-between', alignItems: 'stretch', height: '100%' }}>
           {sectionData.map((section, idx) => (
-            <Grid item xs={12} sm={6} md={3} key={section.title}>
-              <Card sx={{ height: '100%', boxShadow: 3, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-                <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  {section.icon}
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
-                    {section.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
-                    {section.description}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            <Card key={section.title} sx={{ flex: '1 1 0', minWidth: 180, maxWidth: 240, minHeight: '100%', boxShadow: 3, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', py: 3, px: 2 }}>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                {section.icon}
+                <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
+                  {section.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
+                  {section.description}
+                </Typography>
+              </CardContent>
+            </Card>
           ))}
-        </Grid>
+        </Box>
         {/* Methodology Header */}
         <Typography 
           variant="h6" 
           sx={{ 
             fontSize: '1.1rem',
             fontWeight: 500,
-            mb: 3 
+            mb: 3,
+            px: { xs: 0, md: 0 }
           }}
         >
           Methodology
         </Typography>
         {/* Methodology Section in two boxes */}
-        <Grid container spacing={3} sx={{ mb: 4 }}>
+        <Box sx={{ display: 'flex', gap: 3, mb: 4, flexWrap: 'wrap', justifyContent: 'space-between' }}>
           {methodologyData.map((m, idx) => (
-            <Grid item xs={12} md={6} key={m.title}>
-              <Card sx={{ height: '100%', boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
-                <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                  {m.icon}
-                  <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
-                    {m.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
-                    {m.description}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+            <Card key={m.title} sx={{ flex: '1 1 30%', minWidth: 220, maxWidth: 1, boxShadow: 2, borderRadius: 2, display: 'flex', flexDirection: 'column', alignItems: 'center', p: 2 }}>
+              <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                {m.icon}
+                <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1, mt: 1, textAlign: 'center' }}>
+                  {m.title}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ textAlign: 'center' }}>
+                  {m.description}
+                </Typography>
+              </CardContent>
+            </Card>
           ))}
-        </Grid>
+        </Box>
       </TabPanel>
 
       <TabPanel value={tabValue} index={1}>
@@ -451,7 +455,7 @@ const DashboardIntro = ({ selectedMarket }) => {
           </Card>
         </Box>
       </TabPanel>
-    </Paper>
+    </Box>
   );
 };
 

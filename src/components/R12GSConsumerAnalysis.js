@@ -413,13 +413,12 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     return colorMap[tag] || '#757575';
   };
 
-  // Handle theme click
-  const handleThemeClick = (data, index) => {
-    if (data && themeData[index]) {
-      const theme = themeData[index];
-      const quotes = consumerQuotes.filter(quote => quote.theme === theme.fullTheme);
+  // Update handleThemeClick to accept a theme object
+  const handleThemeClick = (themeObj) => {
+    if (themeObj && themeObj.fullTheme) {
+      const quotes = consumerQuotes.filter(quote => quote.theme === themeObj.fullTheme);
       setDialogQuotes(quotes);
-      setSelectedTheme(theme.fullTheme);
+      setSelectedTheme(themeObj.fullTheme);
       setShowQuotesDialog(true);
     }
   };
@@ -637,17 +636,29 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                   cursor: 'pointer',
                   '&:hover': { opacity: 0.8 }
                 }}
-                onClick={() => {
-                  // For now, show all quotes until we fix the individual theme clicking
-                  setDialogQuotes(consumerQuotes);
-                  setSelectedTheme('All Themes');
-                  setShowQuotesDialog(true);
-                }}
+                // Removed onClick handler here
               >
                 <ResponsiveContainer width="100%" height={300}>
                   <RadarChart data={themeData}>
                     <PolarGrid />
-                    <PolarAngleAxis dataKey="subject" />
+                    <PolarAngleAxis 
+                      dataKey="subject"
+                      tick={({ payload, x, y, textAnchor, ...rest }) => (
+                        <text
+                          x={x}
+                          y={y}
+                          textAnchor={textAnchor}
+                          {...rest}
+                          style={{ cursor: 'pointer', fontWeight: 'bold', fill: '#333' }}
+                          onClick={() => {
+                            const themeObj = themeData[payload.index]; // Use index for correct mapping
+                            if (themeObj) handleThemeClick(themeObj);
+                          }}
+                        >
+                          {payload.value}
+                        </text>
+                      )}
+                    />
                     <PolarRadiusAxis angle={90} domain={[0, 25]} />
                     <Radar
                       name="Themes"
@@ -655,11 +666,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       stroke="#1976d2"
                       fill="#1976d2"
                       fillOpacity={0.3}
-                      onClick={(data, index) => {
-                        console.log('Theme clicked:', data, index);
-                        handleThemeClick(data, index);
-                      }}
-                      style={{ cursor: 'pointer' }}
+                      // Removed onClick from Radar
                     />
                     <Tooltip content={<CustomTooltip />} />
                   </RadarChart>
