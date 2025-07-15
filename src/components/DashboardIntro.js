@@ -22,6 +22,8 @@ import 'react-pdf/dist/esm/Page/TextLayer.css';
 import { getMarketIntroduction, marketIntroductions } from '../data/marketIntroductions';
 import { marketSources } from '../data/marketSources';
 import { getMarketDisplayName } from '../utils/marketDisplayName';
+import LandscapeIcon from '@mui/icons-material/Landscape';
+import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
 
 // Set up the worker for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -206,6 +208,28 @@ const DashboardIntro = ({ selectedMarket }) => {
   };
   return (
     <Box sx={{ py: { xs: 2, md: 4 }, px: { xs: 2, md: 4 }, background: '#f8fafc' }}>
+      {/* Icon Legend for Market Overview */}
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 3, mb: 2, mt: 1 }}>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <LandscapeIcon fontSize="small" sx={{ color: '#388e3c' }} />
+          <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#388e3c', fontWeight: 500 }}>
+            Segment-level data
+          </Typography>
+        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />
+          <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#1976d2', fontWeight: 500 }}>
+            Model-level data
+          </Typography>
+        </Box>
+        <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <LandscapeIcon fontSize="small" sx={{ color: '#388e3c' }} />
+          <TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />
+          <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#333', fontWeight: 500 }}>
+            Both segment & model-level data
+          </Typography>
+        </Box>
+      </Box>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={tabValue} onChange={handleTabChange}>
           <Tab label="Understanding the Data" />

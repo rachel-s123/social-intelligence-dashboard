@@ -8,7 +8,8 @@ import {
   MenuItem,
   Box,
   Chip,
-  Button
+  Button,
+  LinearProgress
 } from '@mui/material';
 import useDebounce from '../utils/useDebounce';
 import { AIInsightsPanel } from './AIInsightsHooks';
@@ -149,7 +150,15 @@ const QuoteExplorer = ({
           </Box>
         </Box>
 
-        {showInsights && (
+        {showInsights && loading && (
+          <Box sx={{ mb: 2 }}>
+            <LinearProgress color="primary" sx={{ height: 6, borderRadius: 2 }} />
+            <Typography variant="body2" sx={{ mt: 1, color: '#1976d2', fontFamily: 'BMW Motorrad', fontWeight: 500, textAlign: 'center' }}>
+              Generating insights, please wait...
+            </Typography>
+          </Box>
+        )}
+        {showInsights && !loading && (
           <AIInsightsPanel
             insights={insights}
             error={error}

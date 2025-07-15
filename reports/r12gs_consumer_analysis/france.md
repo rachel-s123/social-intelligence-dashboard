@@ -732,19 +732,19 @@
 
 ## Key Insights
 
-### Heritage Positioning Reception
+### Nostalgia Drives Excitement
 The retro styling and heritage positioning resonated strongly with consumers, generating 25% of all discussion. The connection to the legendary R80 G/S and "Paris-Dakar Airhead style" created significant emotional appeal, with many consumers expressing nostalgia and excitement about BMW's return to its roots.
 
-### Price Sensitivity Analysis
+### Price is a Barrier for Many
 Price concerns represented 20% of discussions, with consumers frequently comparing the R12 G/S to cheaper alternatives like the Yamaha T7 (~€10k) and questioning value proposition. Many felt the bike was expensive for what it offers, especially when factoring in necessary accessories.
 
-### Feature Expectations vs Reality
+### Missing Features Disappoint Some Riders
 Consumer expectations centered on practical features like luggage mounting, fuel capacity, and maintenance simplicity. The lack of standard bag mounts and smaller 14L tank disappointed some, while others appreciated the return to basics approach with features like fully defeatable ABS.
 
-### Adventure Community Acceptance
+### Not Everyone Sees the R 12 G/S as a True Adventure Bike
 The adventure community showed polarized reception - heritage buyers embraced the concept while pragmatic users compared it unfavorably to more capable/affordable alternatives. Forum discussions were notably more critical than social media reactions.
 
-### Purchase Decision Factors
+### Heart vs. Head: Emotional Appeal Battles Practical Concerns
 Key purchase drivers included emotional connection to heritage, desire for simpler GS alternative, and aesthetic appeal. Barriers included price sensitivity, practical limitations, and availability concerns (delivery timelines).
 
 ---

@@ -672,19 +672,19 @@
 
 ## Key Insights
 
-### Heritage Positioning Reception
+### Looks Matter Most: Retro Design Wins Hearts
 The retro design and homage to the R80 G/S resonated deeply with the target audience. Riders praised the looks more than any other aspect – visual appeal is the R 12 G/S's strongest selling point. The classic color scheme and minimalist, old-school aesthetic elicited an emotional response, especially from long-time BMW fans.
 
-### Price Sensitivity Analysis
+### BMW Pricing Divides the Crowd
 At ~€18k in Italy, the R 12 G/S is viewed as expensive, but not outrageously so for a BMW. There's a split: BMW loyalists feel the price is standard/premium but expected, whereas others feel it's too high for the specs. BMW has priced the R12 G/S at the upper limit of what many in the heritage segment are willing to pay.
 
-### Feature Expectations vs Reality
+### Simplicity is a Double-Edged Sword
 Given its heritage angle, the R 12 G/S has a deliberately simpler feature set than high-end GS models. The bike omits some modern conveniences – notably, it lacks a fuel level gauge on the basic dash. The small 15.5 L tank was widely criticized as limiting range and undermining its "adventure" mission.
 
-### Adventure Community Acceptance
+### Adventure Credentials Are Questioned
 Despite the "enduro" branding, many hardcore off-road adventurers remain unconvinced that the R 12 G/S is a true dirt machine. The sentiment "it's still a big pig" (in off-road context) was echoed in various forms. Riders comparing it to KTM/Husky midweights and the DesertX generally concluded the R12 G/S will be outperformed in rough terrain.
 
-### Purchase Decision Factors
+### Emotion Fuels Interest, Logic Holds Some Back
 A significant portion of interest comes from existing GS/GSA owners who see the R 12 G/S as a fun addition rather than a replacement. Many discussions essentially boiled down to heart vs head. The heart (emotional appeal) is driving interest, while the head (rational comparison) sometimes pumps the brakes.
 
 ---

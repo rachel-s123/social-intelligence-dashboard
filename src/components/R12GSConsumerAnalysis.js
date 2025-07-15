@@ -17,7 +17,10 @@ import {
   IconButton,
   Accordion,
   AccordionSummary,
-  AccordionDetails
+  AccordionDetails,
+  Alert,
+  AlertTitle,
+  Tooltip
 } from '@mui/material';
 import { 
   PieChart, 
@@ -34,7 +37,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
+  Tooltip as RechartsTooltip,
   Legend,
   LineChart,
   Line
@@ -42,9 +45,15 @@ import {
 import CloseIcon from '@mui/icons-material/Close';
 import TimelineIcon from '@mui/icons-material/Timeline';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import ModelTrainingIcon from '@mui/icons-material/ModelTraining';
 import QuoteExplorer from './QuoteExplorer';
 import { useAIInsights } from './AIInsightsHooks';
 import './src/components/AIInsights.css';
+import StarIcon from '@mui/icons-material/Star';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import ForumIcon from '@mui/icons-material/Forum';
 
 console.log({ Accordion, AccordionSummary, AccordionDetails });
 
@@ -525,43 +534,117 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   }
 
   return (
-    <Box sx={{ p: 3 }}>
-      <Typography variant="h4" sx={{ fontFamily: 'BMW Motorrad', mb: 4, color: '#1a1a1a' }}>
-        R 12 G/S Consumer Analysis - {selectedMarket}
-      </Typography>
+    <Box sx={{ 
+      p: 3,
+      backgroundColor: '#fafbfc',
+      borderRadius: 2,
+      border: '1px solid #e3f2fd'
+    }}>
+      {/* Model-Level Data Indicator */}
+      <Alert 
+        severity="info" 
+        icon={<ModelTrainingIcon />}
+        sx={{ 
+          mb: 3, 
+          backgroundColor: '#e3f2fd',
+          border: '1px solid #1976d2',
+          '& .MuiAlert-icon': {
+            color: '#1976d2'
+          }
+        }}
+      >
+        <AlertTitle sx={{ fontFamily: 'BMW Motorrad', fontWeight: 'bold' }}>
+          Model-Level Consumer Insights
+        </AlertTitle>
+        <Typography variant="body2" sx={{ mt: 1 }}>
+          This analysis contains <strong>model-specific data</strong> for the BMW R 12 G/S, based on consumer conversations 
+          and reactions specifically about this motorcycle model. This data is separate from the segment-level 
+          insights shown in other dashboard sections (Executive Summary through Market Recommendations).
+        </Typography>
+      </Alert>
+
+      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
+        <Typography variant="h4" sx={{ fontFamily: 'BMW Motorrad', color: '#1a1a1a' }}>
+          R 12 G/S Consumer Analysis - {selectedMarket}
+        </Typography>
+        <Tooltip title="This section analyzes consumer conversations specifically about the BMW R 12 G/S model, providing model-level insights distinct from segment-level data.">
+          <InfoOutlinedIcon sx={{ color: '#1976d2', cursor: 'help' }} />
+        </Tooltip>
+      </Box>
+
+      {/* Mini Executive Summary (Dynamic Bullets) */}
+      <Card elevation={4} sx={{ mb: 4, borderLeft: '6px solid #1976d2', background: 'linear-gradient(90deg, #e3f2fd 60%, #fff 100%)' }}>
+        <CardContent>
+          <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', color: '#1976d2', fontWeight: 'bold', mb: 1 }}>
+            Mini Executive Summary
+          </Typography>
+          <Box component="ul" sx={{ pl: 3, mb: 0, mt: 1 }}>
+            {/* Top Reaction Theme */}
+            <Box component="li" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
+              <StarIcon sx={{ color: '#1976d2', mr: 1 }} />
+              <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#222' }}>
+                Top theme: <b>{Object.keys(consumerReactionThemes)[0]}</b>
+              </Typography>
+            </Box>
+            {/* Top Concern */}
+            {filteredConsumerConcerns.length > 0 && (
+              <Box component="li" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
+                <WarningAmberIcon sx={{ color: '#f44336', mr: 1 }} />
+                <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#222' }}>
+                  Main concern: <b>{filteredConsumerConcerns[0].concern}</b>
+                </Typography>
+              </Box>
+            )}
+            {/* Sentiment Split */}
+            <Box component="li" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
+              <EmojiEmotionsIcon sx={{ color: '#4caf50', mr: 1 }} />
+              <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#222' }}>
+                Sentiment: <b>{sentimentAnalysis.positive}% positive</b>, <b>{sentimentAnalysis.neutral}% neutral</b>, <b>{sentimentAnalysis.negative}% negative</b>
+              </Typography>
+            </Box>
+            {/* Launch/Engagement Highlight */}
+            {consumerTimeline.length > 0 && (
+              <Box component="li" sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
+                <ForumIcon sx={{ color: '#1976d2', mr: 1 }} />
+                <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', color: '#222' }}>
+                  Launch highlight: <b>{consumerTimeline[0].event.replace(/\s*\([^)]*\)/, '')}</b> — Generated the highest engagement and excitement across forums and social media.
+                </Typography>
+              </Box>
+            )}
+          </Box>
+        </CardContent>
+      </Card>
 
       {/* Key Insights */}
       {filteredKeyInsights.length > 0 && (
-        <Grid container spacing={3} sx={{ mb: 4 }}>
-          <Grid item xs={12}>
-            <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
-              Key Insights
-            </Typography>
-          </Grid>
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h6" sx={{ fontFamily: 'BMW Motorrad', mb: 2, color: '#1a1a1a' }}>
+            Key Insights
+          </Typography>
           {filteredKeyInsights.map(([insight, content], index) => (
-            <Grid item xs={12} md={6} key={index}>
-              <Card elevation={3} sx={{ height: '100%', backgroundColor: '#f8f9fa' }}>
-                <CardContent>
-                  <Typography variant="h6" sx={{ 
-                    fontFamily: 'BMW Motorrad', 
-                    mb: 2, 
+            <Accordion key={index} sx={{ mb: 1, borderRadius: 2, boxShadow: 1, background: '#f8f9fa', '&:before': { display: 'none' } }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon sx={{ color: '#1976d2' }} />}
+                sx={{
+                  backgroundColor: '#e3f2fd',
+                  borderRadius: 2,
+                  '& .MuiAccordionSummary-content': {
+                    fontFamily: 'BMW Motorrad',
+                    fontWeight: 'bold',
                     color: '#1976d2',
-                    fontWeight: 'bold'
-                  }}>
-                    {insight}
-                  </Typography>
-                  <Divider sx={{ mb: 2 }} />
-                  <Typography variant="body2" sx={{ 
-                    lineHeight: 1.6,
-                    color: '#424242'
-                  }}>
-                    {content}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
+                  }
+                }}
+              >
+                {insight}
+              </AccordionSummary>
+              <AccordionDetails sx={{ background: '#fff', borderRadius: 2 }}>
+                <Typography variant="body2" sx={{ lineHeight: 1.6, color: '#424242', fontFamily: 'BMW Motorrad' }}>
+                  {content}
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
           ))}
-        </Grid>
+        </Box>
       )}
 
       {/* Quote Explorer */}
@@ -668,7 +751,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       fillOpacity={0.3}
                       // Removed onClick from Radar
                     />
-                    <Tooltip content={<CustomTooltip />} />
+                    <RechartsTooltip content={<CustomTooltip />} />
                   </RadarChart>
                 </ResponsiveContainer>
               </Box>
@@ -693,7 +776,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="platform" />
                   <YAxis />
-                  <Tooltip />
+                  <RechartsTooltip />
                   <Legend />
                   <Bar dataKey="value" fill="#1976d2" />
                 </BarChart>
@@ -774,7 +857,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
                       <YAxis 
                         label={{ value: 'Discussion Volume', angle: -90, position: 'insideLeft' }}
                       />
-                      <Tooltip 
+                      <RechartsTooltip 
                         formatter={(value, name) => [value, 'Discussions']}
                         labelFormatter={(label) => {
                           const weekData = volumeChartData.find(w => w.week === label);

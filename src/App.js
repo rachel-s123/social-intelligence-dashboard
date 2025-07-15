@@ -26,6 +26,8 @@ import AIFloatingButton from "./components/AIFloatingButton";
 import bmwLogo from "./assets/bmw-black.jpg";
 import Login from "./components/Login";
 import { r12gsConsumerData } from './data/r12gsConsumerData';
+import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
+import LandscapeIcon from '@mui/icons-material/Landscape';
 
 const R12GSConsumerAnalysis = lazy(() => import("./components/R12GSConsumerAnalysis"));
 
@@ -165,19 +167,27 @@ function App() {
                     fontWeight: 500,
                     color: "text.secondary",
                     "&.Mui-selected": {
-                      color: "primary.main",
+                      color: (theme) =>
+                        currentTab === 6
+                          ? theme.palette.primary.main
+                          : '#388e3c', // green accent for segment tabs
                       fontWeight: 700,
+                      backgroundColor: (theme) =>
+                        currentTab === 6
+                          ? 'rgba(25, 118, 210, 0.08)' // blue accent for model tab
+                          : 'rgba(56, 142, 60, 0.08)', // green accent for segment tabs
+                      borderRadius: 2,
                     },
                   },
                 }}
               >
-                <Tab label="Market Overview" />
-                <Tab label="Executive Summary" />
-                <Tab label="Attribute Resonance" />
-                <Tab label="Market Insights" />
-                <Tab label="Competitor Analysis" />
-                <Tab label="Recommendations" />
-                <Tab label="R 12 G/S Consumer Conversations" />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" /><TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />Market Overview</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Executive Summary</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Attribute Resonance</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Market Insights</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Competitor Analysis</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Recommendations</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />Model Specific Insights: R 12 G/S</Box>} />
               </Tabs>
             </Paper>
 
