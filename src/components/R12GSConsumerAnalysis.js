@@ -565,7 +565,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
 
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
         <Typography variant="h4" sx={{ fontFamily: 'BMW Motorrad', color: '#1a1a1a' }}>
-          R 12 G/S Consumer Analysis - {selectedMarket}
+          R 12 G/S Consumer Analysis
         </Typography>
         <Tooltip title="This section analyzes consumer conversations specifically about the BMW R 12 G/S model, providing model-level insights distinct from segment-level data.">
           <InfoOutlinedIcon sx={{ color: '#1976d2', cursor: 'help' }} />

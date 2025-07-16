@@ -8,6 +8,8 @@ import {
   Paper,
   Tabs,
   Tab,
+  Breadcrumbs,
+  Link,
 } from "@mui/material";
 import theme from "./theme";
 import "./styles/fonts.css";
@@ -184,12 +186,49 @@ function App() {
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" /><TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />Market Overview</Box>} />
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Executive Summary</Box>} />
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Attribute Resonance</Box>} />
-                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Market Insights</Box>} />
+                <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Conversation Insights</Box>} />
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Competitor Analysis</Box>} />
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><LandscapeIcon fontSize="small" />Recommendations</Box>} />
                 <Tab label={<Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}><TwoWheelerIcon fontSize="small" sx={{ color: '#1976d2' }} />Model Specific Insights: R 12 G/S</Box>} />
               </Tabs>
             </Paper>
+
+            {/* Breadcrumbs */}
+            <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 3, fontFamily: 'BMW Motorrad' }}>
+              <Link underline="hover" color="inherit" href="#" onClick={() => setCurrentTab(0)}>
+                Dashboard
+              </Link>
+              {currentTab === 0 ? (
+                <Typography color="text.primary" component="span" sx={{ fontWeight: 400, display: 'inline', fontFamily: 'BMW Motorrad' }} key="market-overview">
+                  Market Overview
+                </Typography>
+              ) : currentTab === 6 ? (
+                [
+                  <Link underline="hover" color="inherit" href="#" key="model">
+                    Model Specific Insights
+                  </Link>,
+                  <Typography color="text.primary" component="span" sx={{ fontWeight: 400, display: 'inline', fontFamily: 'BMW Motorrad' }} key="r12gs">
+                    R 12 G/S ({selectedMarket.charAt(0).toUpperCase() + selectedMarket.slice(1)})
+                  </Typography>
+                ]
+              ) : (
+                [
+                  <Link underline="hover" color="inherit" href="#" key="segment">
+                    Segment Overview
+                  </Link>,
+                  <Typography color="text.primary" component="span" sx={{ fontWeight: 400, display: 'inline', fontFamily: 'BMW Motorrad' }} key="section">
+                    {[
+                      'Market Overview',
+                      'Executive Summary',
+                      'Attribute Resonance',
+                      'Conversation Insights',
+                      'Competitor Analysis',
+                      'Recommendations',
+                    ][currentTab]}
+                  </Typography>
+                ]
+              )}
+            </Breadcrumbs>
 
             <TabPanel value={currentTab} index={0}>
               <DashboardIntro selectedMarket={selectedMarket} />

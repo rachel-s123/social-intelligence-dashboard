@@ -34,7 +34,7 @@ export const r12gsConsumerData = {
         "event": "BMW R 12 G/S Official Reveal (27 March 2025, 17:00 CET)",
         "volume": "~320 discussions (~40% of total quarter volume)",
         "sentiment": "Positive 75.0%",
-        "keyReactions": "Initial excitement about \"classic look, modern performance\" and retro styling. Immediate comments on BMW's French Facebook and Instagram. Enthusiasm about throwback to R80 G/S."
+        "keyReactions": "Initial excitement about \"classic look, modern performance\" and retro styling. Immediate comments on BMW's French Facebook and Instagram. Enthusiasm about throwback to R 80 G/S."
       },
       {
         "week": 2,
@@ -166,7 +166,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "HSR_003",
-        "text": "R80 vibe. Will certainly find its niche.",
+        "text": "R 80 vibe. Will certainly find its niche.",
         "citation": "3",
         "username": "bannedByTencent",
         "platform": "Reddit",
@@ -271,7 +271,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "PVC_002",
-        "text": "Yeah the R12S is a hefty 26K euro… This GS I could see myself riding daily. And at almost 20K euro (for the base trim I'm sure), while still being a lot of cash, seems reasonably priced. May have to go and test ride one of these babies.",
+        "text": "Yeah the R 12S is a hefty 26K euro… This GS I could see myself riding daily. And at almost 20K euro (for the base trim I'm sure), while still being a lot of cash, seems reasonably priced. May have to go and test ride one of these babies.",
         "citation": "19",
         "username": "noujochiewajij",
         "platform": "Reddit",
@@ -331,22 +331,22 @@ export const r12gsConsumerData = {
       },
       {
         "id": "PVC_007",
-        "text": "$9,000 below the [R1300GS]...so…more cost-effective",
+        "text": "$9,000 below the [R 1300GS]...so…more cost-effective",
         "citation": "5",
         "username": "[NOT PROVIDED IN REPORT]",
-        "platform": "R1200GS Forum",
+        "platform": "R 1200GS Forum",
         "date": "[NOT PROVIDED IN REPORT]",
         "url": "https://www.r1200gs.info/threads/2026-r12gs-new-camhead-for-17k.58269/",
         "theme": "Price/Value Concerns",
         "sentiment": "POSITIVE",
         "week": "[NOT PROVIDED IN REPORT]",
         "purchaseIntent": "CONDITIONAL",
-        "competitorMentioned": "R1300GS",
+        "competitorMentioned": "R 1300GS",
         "engagement": "[NOT PROVIDED IN REPORT]"
       },
       {
         "id": "CGS_001",
-        "text": "BMW has announced the new R12 GS… I'm very happy to see another boxer based off-road model in BMW's lineup again especially adjacent to the full fat 1300GS. I think they nailed it!",
+        "text": "BMW has announced the new R 12 GS… I'm very happy to see another boxer based off-road model in BMW's lineup again especially adjacent to the full fat 1300GS. I think they nailed it!",
         "citation": "23",
         "username": "majunior",
         "platform": "BMW MOA Forum",
@@ -361,7 +361,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "CGS_002",
-        "text": "Not sure what to do now but sell [my 2023 R nineT Urban G/S]… The R12 seems like the bike I always wished for.",
+        "text": "Not sure what to do now but sell [my 2023 R nineT Urban G/S]… The R 12 seems like the bike I always wished for.",
         "citation": "6",
         "username": "MC_HAMMSTER",
         "platform": "Reddit",
@@ -376,7 +376,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "CGS_003",
-        "text": "The R12 G/S is basically an actual GS but retro, while this [R nineT Urban G/S] is a streetbike that looks like an old GS but isn't actually offroad capable.",
+        "text": "The R 12 G/S is basically an actual GS but retro, while this [R nineT Urban G/S] is a streetbike that looks like an old GS but isn't actually offroad capable.",
         "citation": "36",
         "username": "zeJoghurt",
         "platform": "Reddit",
@@ -391,7 +391,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "CGS_004",
-        "text": "The tide is turning (slowly) back to sport touring. BMW is missing that trend...and this [R12G/S] proves it perfectly.",
+        "text": "The tide is turning (slowly) back to sport touring. BMW is missing that trend...and this [R 12G/S] proves it perfectly.",
         "citation": "37",
         "username": "kickstandsup",
         "platform": "BMW MOA Forum",
@@ -421,7 +421,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "EPE_001",
-        "text": "Honestly the R12 is the bike I want to get, but I'm worried it won't be capable enough as a traditional adventure bike for long distances and the occasional sticky off-road situation.",
+        "text": "Honestly the R 12 is the bike I want to get, but I'm worried it won't be capable enough as a traditional adventure bike for long distances and the occasional sticky off-road situation.",
         "citation": "40",
         "username": "super----trooper",
         "platform": "Reddit",
@@ -668,7 +668,7 @@ export const r12gsConsumerData = {
     },
     "competitorMentionCounts": {
       "KTM 890 Adventure R": 1,
-      "R1300GS": 1,
+      "R 1300GS": 1,
       "Tenere": 1,
       "Scrambler 1200XE": 1
     },
@@ -737,8 +737,8 @@ export const r12gsConsumerData = {
       }
     ],
     "keyInsights": {
-      "Nostalgia Drives Excitement": "The retro styling and heritage positioning resonated strongly with consumers, generating 25% of all discussion. The connection to the legendary R80 G/S and \"Paris-Dakar Airhead style\" created significant emotional appeal, with many consumers expressing nostalgia and excitement about BMW's return to its roots.",
-      "Price is a Barrier for Many": "Price concerns represented 20% of discussions, with consumers frequently comparing the R12 G/S to cheaper alternatives like the Yamaha T7 (~€10k) and questioning value proposition. Many felt the bike was expensive for what it offers, especially when factoring in necessary accessories.",
+      "Nostalgia Drives Excitement": "The retro styling and heritage positioning resonated strongly with consumers, generating 25% of all discussion. The connection to the legendary R 80 G/S and \"Paris-Dakar Airhead style\" created significant emotional appeal, with many consumers expressing nostalgia and excitement about BMW's return to its roots.",
+      "Price is a Barrier for Many": "Price concerns represented 20% of discussions, with consumers frequently comparing the R 12 G/S to cheaper alternatives like the Yamaha T7 (~€10k) and questioning value proposition. Many felt the bike was expensive for what it offers, especially when factoring in necessary accessories.",
       "Missing Features Disappoint Some Riders": "Consumer expectations centered on practical features like luggage mounting, fuel capacity, and maintenance simplicity. The lack of standard bag mounts and smaller 14L tank disappointed some, while others appreciated the return to basics approach with features like fully defeatable ABS.",
       "Not Everyone Sees the R 12 G/S as a True Adventure Bike": "The adventure community showed polarized reception - heritage buyers embraced the concept while pragmatic users compared it unfavorably to more capable/affordable alternatives. Forum discussions were notably more critical than social media reactions.",
       "Heart vs. Head: Emotional Appeal Battles Practical Concerns": "Key purchase drivers included emotional connection to heritage, desire for simpler GS alternative, and aesthetic appeal. Barriers included price sensitivity, practical limitations, and availability concerns (delivery timelines)."
@@ -776,7 +776,7 @@ export const r12gsConsumerData = {
         "event": "BMW Motorrad officially teased the R 12 G/S on March 27, 2025",
         "volume": "Hundreds of posts within days",
         "sentiment": "Highly positive ~80%",
-        "keyReactions": "Excitement about \"revival of the legendary R80 G/S\", rushed commenting on styling and concept"
+        "keyReactions": "Excitement about \"revival of the legendary R 80 G/S\", rushed commenting on styling and concept"
       },
       {
         "week": 2,
@@ -893,7 +893,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "HSR_002",
-        "text": "I fricking love the look of the R12 GS",
+        "text": "I fricking love the look of the R 12 GS",
         "citation": "2",
         "username": "[NOT PROVIDED IN REPORT]",
         "platform": "Reddit",
@@ -938,7 +938,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "HSR_005",
-        "text": "R80 vibe. Will certainly find its niche.",
+        "text": "R 80 vibe. Will certainly find its niche.",
         "citation": "54",
         "username": "bannedByTencent",
         "platform": "Reddit",
@@ -1013,7 +1013,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "PVC_003",
-        "text": "Yeah, the R12S is a hefty 26K euro... at almost 20K euro… while still a lot of cash, [it] seems reasonably priced",
+        "text": "Yeah, the R 12S is a hefty 26K euro... at almost 20K euro… while still a lot of cash, [it] seems reasonably priced",
         "citation": "9",
         "username": "[NOT PROVIDED IN REPORT]",
         "platform": "[NOT PROVIDED IN REPORT]",
@@ -1023,7 +1023,7 @@ export const r12gsConsumerData = {
         "sentiment": "POSITIVE",
         "week": "[NOT PROVIDED IN REPORT]",
         "purchaseIntent": "CONDITIONAL",
-        "competitorMentioned": "BMW R12S",
+        "competitorMentioned": "BMW R 12S",
         "engagement": "[NOT PROVIDED IN REPORT]"
       },
       {
@@ -1038,7 +1038,7 @@ export const r12gsConsumerData = {
         "sentiment": "POSITIVE",
         "week": "[NOT PROVIDED IN REPORT]",
         "purchaseIntent": "NO",
-        "competitorMentioned": "BMW R1300GS",
+        "competitorMentioned": "BMW R 1300GS",
         "engagement": "[NOT PROVIDED IN REPORT]"
       },
       {
@@ -1053,7 +1053,7 @@ export const r12gsConsumerData = {
         "sentiment": "NEGATIVE",
         "week": "[NOT PROVIDED IN REPORT]",
         "purchaseIntent": "NO",
-        "competitorMentioned": "BMW R80 G/S",
+        "competitorMentioned": "BMW R 80 G/S",
         "engagement": "[NOT PROVIDED IN REPORT]"
       },
       {
@@ -1078,7 +1078,7 @@ export const r12gsConsumerData = {
         "username": "[NOT PROVIDED IN REPORT]",
         "platform": "BMW Press",
         "date": "[NOT PROVIDED IN REPORT]",
-        "url": "https://www.press.bmwgroup.com/global/article/detail/T0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en",
+        "url": "https://www.press.bmwgroup.com/global/article/detail/T 0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en",
         "theme": "Engine/Performance Expectations",
         "sentiment": "POSITIVE",
         "week": "[NOT PROVIDED IN REPORT]",
@@ -1163,7 +1163,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "PIS_003",
-        "text": "Someday I'll test ride an R12… They look so cool to me",
+        "text": "Someday I'll test ride an R 12… They look so cool to me",
         "citation": "21",
         "username": "[NOT PROVIDED IN REPORT]",
         "platform": "Reddit",
@@ -1298,7 +1298,7 @@ export const r12gsConsumerData = {
       },
       {
         "id": "SC_005",
-        "text": "My 2023 UGS has been made obsolete by the R12GS…",
+        "text": "My 2023 UGS has been made obsolete by the R 12GS…",
         "citation": "30",
         "username": "[NOT PROVIDED IN REPORT]",
         "platform": "Reddit",
@@ -1349,9 +1349,9 @@ export const r12gsConsumerData = {
       "UNKNOWN": 0
     },
     "competitorMentionCounts": {
-      "BMW R12S": 1,
-      "BMW R1300GS": 1,
-      "BMW R80 G/S": 1,
+      "BMW R 12S": 1,
+      "BMW R 1300GS": 1,
+      "BMW R 80 G/S": 1,
       "BMW GS Series": 1,
       "BMW Urban G/S": 2,
       "KTM 890 Adventure": 1
@@ -1421,10 +1421,10 @@ export const r12gsConsumerData = {
       }
     ],
     "keyInsights": {
-      "Looks Matter Most: Retro Design Wins Hearts": "The retro design and homage to the R80 G/S resonated deeply with the target audience. Riders praised the looks more than any other aspect – visual appeal is the R 12 G/S's strongest selling point. The classic color scheme and minimalist, old-school aesthetic elicited an emotional response, especially from long-time BMW fans.",
-      "BMW Pricing Divides the Crowd": "At ~€18k in Italy, the R 12 G/S is viewed as expensive, but not outrageously so for a BMW. There's a split: BMW loyalists feel the price is standard/premium but expected, whereas others feel it's too high for the specs. BMW has priced the R12 G/S at the upper limit of what many in the heritage segment are willing to pay.",
+      "Looks Matter Most: Retro Design Wins Hearts": "The retro design and homage to the R 80 G/S resonated deeply with the target audience. Riders praised the looks more than any other aspect – visual appeal is the R 12 G/S's strongest selling point. The classic color scheme and minimalist, old-school aesthetic elicited an emotional response, especially from long-time BMW fans.",
+      "BMW Pricing Divides the Crowd": "At ~€18k in Italy, the R 12 G/S is viewed as expensive, but not outrageously so for a BMW. There's a split: BMW loyalists feel the price is standard/premium but expected, whereas others feel it's too high for the specs. BMW has priced the R 12 G/S at the upper limit of what many in the heritage segment are willing to pay.",
       "Simplicity is a Double-Edged Sword": "Given its heritage angle, the R 12 G/S has a deliberately simpler feature set than high-end GS models. The bike omits some modern conveniences – notably, it lacks a fuel level gauge on the basic dash. The small 15.5 L tank was widely criticized as limiting range and undermining its \"adventure\" mission.",
-      "Adventure Credentials Are Questioned": "Despite the \"enduro\" branding, many hardcore off-road adventurers remain unconvinced that the R 12 G/S is a true dirt machine. The sentiment \"it's still a big pig\" (in off-road context) was echoed in various forms. Riders comparing it to KTM/Husky midweights and the DesertX generally concluded the R12 G/S will be outperformed in rough terrain.",
+      "Adventure Credentials Are Questioned": "Despite the \"enduro\" branding, many hardcore off-road adventurers remain unconvinced that the R 12 G/S is a true dirt machine. The sentiment \"it's still a big pig\" (in off-road context) was echoed in various forms. Riders comparing it to KTM/Husky midweights and the DesertX generally concluded the R 12 G/S will be outperformed in rough terrain.",
       "Emotion Fuels Interest, Logic Holds Some Back": "A significant portion of interest comes from existing GS/GSA owners who see the R 12 G/S as a fun addition rather than a replacement. Many discussions essentially boiled down to heart vs head. The heart (emotional appeal) is driving interest, while the head (rational comparison) sometimes pumps the brakes."
     }
   }

@@ -9,7 +9,8 @@ import {
   Box,
   Chip,
   Button,
-  LinearProgress
+  LinearProgress,
+  Tooltip
 } from '@mui/material';
 import useDebounce from '../utils/useDebounce';
 import { AIInsightsPanel } from './AIInsightsHooks';
@@ -167,52 +168,64 @@ const QuoteExplorer = ({
 
         <Grid container spacing={2} sx={{ mb: 2 }}>
           <Grid item xs={6} md={2}>
-            <TextField select label="Theme" fullWidth value={filters.theme} onChange={handleChange('theme')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {themes.map((t) => (
-                <MenuItem key={t} value={t}>{t}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter quotes by discussion theme (e.g., price, design, performance)" arrow>
+              <TextField select label="Theme" fullWidth value={filters.theme} onChange={handleChange('theme')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {themes.map((t) => (
+                  <MenuItem key={t} value={t}>{t}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={6} md={2}>
-            <TextField select label="Sentiment" fullWidth value={filters.sentiment} onChange={handleChange('sentiment')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {sentiments.map((s) => (
-                <MenuItem key={s} value={s}>{s}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter by sentiment expressed in the quote (positive, neutral, negative)" arrow>
+              <TextField select label="Sentiment" fullWidth value={filters.sentiment} onChange={handleChange('sentiment')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {sentiments.map((s) => (
+                  <MenuItem key={s} value={s}>{s}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={6} md={2}>
-            <TextField select label="Platform" fullWidth value={filters.platform} onChange={handleChange('platform')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {platforms.map((p) => (
-                <MenuItem key={p} value={p}>{p}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter by the online platform where the quote was posted" arrow>
+              <TextField select label="Platform" fullWidth value={filters.platform} onChange={handleChange('platform')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {platforms.map((p) => (
+                  <MenuItem key={p} value={p}>{p}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={6} md={2}>
-            <TextField select label="Week" fullWidth value={filters.week} onChange={handleChange('week')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {weeks.map((w) => (
-                <MenuItem key={w} value={w}>{w}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter by the week of the conversation" arrow>
+              <TextField select label="Week" fullWidth value={filters.week} onChange={handleChange('week')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {weeks.map((w) => (
+                  <MenuItem key={w} value={w}>{w}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={6} md={2}>
-            <TextField select label="Intent" fullWidth value={filters.purchaseIntent} onChange={handleChange('purchaseIntent')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {purchaseIntents.map((pi) => (
-                <MenuItem key={pi} value={pi}>{pi}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter by the purchase intent expressed in the quote" arrow>
+              <TextField select label="Intent" fullWidth value={filters.purchaseIntent} onChange={handleChange('purchaseIntent')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {purchaseIntents.map((pi) => (
+                  <MenuItem key={pi} value={pi}>{pi}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={6} md={2}>
-            <TextField select label="Competitor" fullWidth value={filters.competitor} onChange={handleChange('competitor')} size="small">
-              <MenuItem value="All">All</MenuItem>
-              {competitors.map((c) => (
-                <MenuItem key={c} value={c}>{c}</MenuItem>
-              ))}
-            </TextField>
+            <Tooltip title="Filter by competitor brands or models mentioned" arrow>
+              <TextField select label="Competitor" fullWidth value={filters.competitor} onChange={handleChange('competitor')} size="small">
+                <MenuItem value="All">All</MenuItem>
+                {competitors.map((c) => (
+                  <MenuItem key={c} value={c}>{c}</MenuItem>
+                ))}
+              </TextField>
+            </Tooltip>
           </Grid>
           <Grid item xs={12} md={4}>
             <TextField

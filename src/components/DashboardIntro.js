@@ -24,6 +24,7 @@ import { marketSources } from '../data/marketSources';
 import { getMarketDisplayName } from '../utils/marketDisplayName';
 import LandscapeIcon from '@mui/icons-material/Landscape';
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
+import { r12gsConsumerData } from '../data/r12gsConsumerData';
 
 // Set up the worker for react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
@@ -46,8 +47,8 @@ const sectionData = [
     icon: <InsightsIcon sx={{ fontSize: 40, color: 'secondary.main', mb: 1 }} />,
   },
   {
-    title: 'Market Insights',
-    description: 'In-depth analysis of market dynamics, consumer behavior, and competitive landscape specific to each market.',
+    title: 'Conversation Insights',
+    description: 'In-depth analysis of consumer conversations, sentiment, and key discussion themes across platforms.',
     icon: <ShowChartIcon sx={{ fontSize: 40, color: 'success.main', mb: 1 }} />,
   },
   {
@@ -56,8 +57,13 @@ const sectionData = [
     icon: <GroupsIcon sx={{ fontSize: 40, color: 'info.main', mb: 1 }} />,
   },
   {
-    title: 'R 12 G/S Consumer Analysis',
-    description: 'Specialized research into authentic consumer conversations about the R 12 G/S, focusing on sentiment, themes, and purchase intent from March to June 2025.',
+    title: 'Recommendations',
+    description: 'Actionable marketing, strategy, and communications recommendations based on segment and model-level insights.',
+    icon: <LightbulbIcon sx={{ fontSize: 40, color: 'secondary.main', mb: 1 }} />,
+  },
+  {
+    title: 'Model Specific Insights: R 12 G/S',
+    description: 'Specialized research into authentic consumer conversations and model-level insights for the R 12 G/S, focusing on sentiment, themes, and purchase intent from March to June 2025.',
     icon: <AnalyticsIcon sx={{ fontSize: 40, color: 'primary.main', mb: 1 }} />,
   },
 ];
@@ -121,6 +127,7 @@ const getScopeText = (intro) => {
 
 const DashboardIntro = ({ selectedMarket }) => {
   const [tabValue, setTabValue] = useState(0);
+  const [subTabValue, setSubTabValue] = useState(0);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
   const [scale, setScale] = useState(1.0);
@@ -155,6 +162,8 @@ const DashboardIntro = ({ selectedMarket }) => {
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
   };
+
+  const handleSubTabChange = (event, newValue) => setSubTabValue(newValue);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -322,20 +331,54 @@ const DashboardIntro = ({ selectedMarket }) => {
       </TabPanel>
 
       <TabPanel value={tabValue} index={1}>
-        {selectedMarket && sources.length > 0 ? (
-          <Box>
-            <Typography variant="h6" sx={{ mb: 3 }}>
-              Data Sources for {getMarketDisplayName(selectedMarket)}
+        {/* New: Sub-tabs for Segment vs Model Data Sources */}
+        <Box sx={{ borderBottom: 1, borderColor: 'divider', mb: 2 }}>
+          <Tabs value={subTabValue} onChange={handleSubTabChange}>
+            <Tab label="Segment Data Sources" />
+            <Tab label="Model Data Sources" />
+          </Tabs>
+        </Box>
+        {/* Segment Data Sources */}
+        <TabPanel value={subTabValue} index={0}>
+          {selectedMarket && sources.length > 0 ? (
+            <Box>
+              <Typography variant="h6" sx={{ mb: 3 }}>
+                Segment Data Sources for {getMarketDisplayName(selectedMarket)}
+              </Typography>
+              {sources.map((source, index) => (
+                <SourceItem key={index} source={source} />
+              ))}
+            </Box>
+          ) : (
+            <Typography color="text.secondary">
+              Please select a market to view its segment data sources.
             </Typography>
-            {sources.map((source, index) => (
-              <SourceItem key={index} source={source} />
-            ))}
-          </Box>
-        ) : (
-          <Typography color="text.secondary">
-            Please select a market to view its data sources.
-          </Typography>
-        )}
+          )}
+        </TabPanel>
+        {/* Model Data Sources */}
+        <TabPanel value={subTabValue} index={1}>
+          {selectedMarket && r12gsConsumerData[selectedMarket.toLowerCase()] && r12gsConsumerData[selectedMarket.toLowerCase()].consumerQuotes.length > 0 ? (
+            <Box>
+              <Typography variant="h6" sx={{ mb: 3 }}>
+                Model Data Sources for {getMarketDisplayName(selectedMarket)}
+              </Typography>
+              {r12gsConsumerData[selectedMarket.toLowerCase()].consumerQuotes.map((quote, idx) => (
+                <Box key={idx} sx={{ mb: 2, p: 2, border: '1px solid #e3f2fd', borderRadius: 2, background: '#fafdff' }}>
+                  <Typography variant="body2" sx={{ fontFamily: 'BMW Motorrad', fontWeight: 500, mb: 0.5 }}>
+                    "{quote.text}"
+                  </Typography>
+                  <Typography variant="caption" color="text.secondary">
+                    Platform: {quote.platform}
+                  </Typography>
+                </Box>
+              ))}
+            </Box>
+          ) : (
+            <Typography color="text.secondary">
+              No model data sources available for this market.
+            </Typography>
+          )}
+        </TabPanel>
       </TabPanel>
 
       <TabPanel value={tabValue} index={2}>

@@ -45,7 +45,7 @@
 **Event:** BMW Motorrad officially teased the R 12 G/S on March 27, 2025
 **Volume:** Hundreds of posts within days
 **Sentiment:** Highly positive ~80%
-**Key Reactions:** Excitement about "revival of the legendary R80 G/S", rushed commenting on styling and concept
+**Key Reactions:** Excitement about "revival of the legendary R 80 G/S", rushed commenting on styling and concept
 
 ### Week 2 (3rd April - 9th April 2025)
 **Event:** BMW officially confirmed model name and presented more images (press release April 2)
@@ -142,7 +142,7 @@
 
 **Quote 2:**
 - **ID:** HSR_002
-- **Text:** "I fricking love the look of the R12 GS"
+- **Text:** "I fricking love the look of the R 12 GS"
 - **Citation:** [2]
 - **Username:** [NOT PROVIDED IN REPORT]
 - **Platform:** Reddit
@@ -187,7 +187,7 @@
 
 **Quote 5:**
 - **ID:** HSR_005
-- **Text:** "R80 vibe. Will certainly find its niche."
+- **Text:** "R 80 vibe. Will certainly find its niche."
 - **Citation:** [54]
 - **Username:** bannedByTencent
 - **Platform:** Reddit
@@ -264,7 +264,7 @@
 
 **Quote 3:**
 - **ID:** PVC_003
-- **Text:** "Yeah, the R12S is a hefty 26K euro... at almost 20K euro… while still a lot of cash, [it] seems reasonably priced"
+- **Text:** "Yeah, the R 12S is a hefty 26K euro... at almost 20K euro… while still a lot of cash, [it] seems reasonably priced"
 - **Citation:** [9]
 - **Username:** [NOT PROVIDED IN REPORT]
 - **Platform:** [NOT PROVIDED IN REPORT]
@@ -274,7 +274,7 @@
 - **Sentiment:** POSITIVE
 - **Week:** [NOT PROVIDED IN REPORT]
 - **Purchase_Intent:** CONDITIONAL
-- **Competitor_Mentioned:** BMW R12S
+- **Competitor_Mentioned:** BMW R 12S
 - **Engagement:** [NOT PROVIDED IN REPORT]
 
 ### Comparison to Modern GS Models
@@ -291,7 +291,7 @@
 - **Sentiment:** POSITIVE
 - **Week:** [NOT PROVIDED IN REPORT]
 - **Purchase_Intent:** NO
-- **Competitor_Mentioned:** BMW R1300GS
+- **Competitor_Mentioned:** BMW R 1300GS
 - **Engagement:** [NOT PROVIDED IN REPORT]
 
 **Quote 2:**
@@ -306,7 +306,7 @@
 - **Sentiment:** NEGATIVE
 - **Week:** [NOT PROVIDED IN REPORT]
 - **Purchase_Intent:** NO
-- **Competitor_Mentioned:** BMW R80 G/S
+- **Competitor_Mentioned:** BMW R 80 G/S
 - **Engagement:** [NOT PROVIDED IN REPORT]
 
 **Quote 3:**
@@ -333,7 +333,7 @@
 - **Username:** [NOT PROVIDED IN REPORT]
 - **Platform:** BMW Press
 - **Date:** [NOT PROVIDED IN REPORT]
-- **URL:** https://www.press.bmwgroup.com/global/article/detail/T0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en
+- **URL:** https://www.press.bmwgroup.com/global/article/detail/T 0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en
 - **Theme:** Engine/Performance Expectations
 - **Sentiment:** POSITIVE
 - **Week:** [NOT PROVIDED IN REPORT]
@@ -420,7 +420,7 @@
 
 **Quote 3:**
 - **ID:** PIS_003
-- **Text:** "Someday I'll test ride an R12… They look so cool to me"
+- **Text:** "Someday I'll test ride an R 12… They look so cool to me"
 - **Citation:** [21]
 - **Username:** [NOT PROVIDED IN REPORT]
 - **Platform:** Reddit
@@ -557,7 +557,7 @@
 
 **Quote 5:**
 - **ID:** SC_005
-- **Text:** "My 2023 UGS has been made obsolete by the R12GS…"
+- **Text:** "My 2023 UGS has been made obsolete by the R 12GS…"
 - **Citation:** [30]
 - **Username:** [NOT PROVIDED IN REPORT]
 - **Platform:** Reddit
@@ -673,16 +673,16 @@
 ## Key Insights
 
 ### Looks Matter Most: Retro Design Wins Hearts
-The retro design and homage to the R80 G/S resonated deeply with the target audience. Riders praised the looks more than any other aspect – visual appeal is the R 12 G/S's strongest selling point. The classic color scheme and minimalist, old-school aesthetic elicited an emotional response, especially from long-time BMW fans.
+The retro design and homage to the R 80 G/S resonated deeply with the target audience. Riders praised the looks more than any other aspect – visual appeal is the R 12 G/S's strongest selling point. The classic color scheme and minimalist, old-school aesthetic elicited an emotional response, especially from long-time BMW fans.
 
 ### BMW Pricing Divides the Crowd
-At ~€18k in Italy, the R 12 G/S is viewed as expensive, but not outrageously so for a BMW. There's a split: BMW loyalists feel the price is standard/premium but expected, whereas others feel it's too high for the specs. BMW has priced the R12 G/S at the upper limit of what many in the heritage segment are willing to pay.
+At ~€18k in Italy, the R 12 G/S is viewed as expensive, but not outrageously so for a BMW. There's a split: BMW loyalists feel the price is standard/premium but expected, whereas others feel it's too high for the specs. BMW has priced the R 12 G/S at the upper limit of what many in the heritage segment are willing to pay.
 
 ### Simplicity is a Double-Edged Sword
 Given its heritage angle, the R 12 G/S has a deliberately simpler feature set than high-end GS models. The bike omits some modern conveniences – notably, it lacks a fuel level gauge on the basic dash. The small 15.5 L tank was widely criticized as limiting range and undermining its "adventure" mission.
 
 ### Adventure Credentials Are Questioned
-Despite the "enduro" branding, many hardcore off-road adventurers remain unconvinced that the R 12 G/S is a true dirt machine. The sentiment "it's still a big pig" (in off-road context) was echoed in various forms. Riders comparing it to KTM/Husky midweights and the DesertX generally concluded the R12 G/S will be outperformed in rough terrain.
+Despite the "enduro" branding, many hardcore off-road adventurers remain unconvinced that the R 12 G/S is a true dirt machine. The sentiment "it's still a big pig" (in off-road context) was echoed in various forms. Riders comparing it to KTM/Husky midweights and the DesertX generally concluded the R 12 G/S will be outperformed in rough terrain.
 
 ### Emotion Fuels Interest, Logic Holds Some Back
 A significant portion of interest comes from existing GS/GSA owners who see the R 12 G/S as a fun addition rather than a replacement. Many discussions essentially boiled down to heart vs head. The heart (emotional appeal) is driving interest, while the head (rational comparison) sometimes pumps the brakes.
@@ -725,7 +725,7 @@ A significant portion of interest comes from existing GS/GSA owners who see the 
 **[11]** [NOT PROVIDED IN REPORT] - UKGSer Forum - [NOT PROVIDED IN REPORT] - https://www.ukgser.com/community/threads/is-this-the-new-2025-r1200-g-s.465549/ - [NOT PROVIDED IN REPORT]
 **[12]** [NOT PROVIDED IN REPORT] - UKGSer Forum - [NOT PROVIDED IN REPORT] - https://www.ukgser.com/community/threads/is-this-the-new-2025-r1200-g-s.465549/ - [NOT PROVIDED IN REPORT]
 **[13]** The_Last_Cast - Reddit - June 2025 - https://www.reddit.com/r/bmwmotorrad/comments/1kyjqma/r12_gs_test_ride/ - [NOT PROVIDED IN REPORT]
-**[14]** [NOT PROVIDED IN REPORT] - BMW Press - [NOT PROVIDED IN REPORT] - https://www.press.bmwgroup.com/global/article/detail/T0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en - [NOT PROVIDED IN REPORT]
+**[14]** [NOT PROVIDED IN REPORT] - BMW Press - [NOT PROVIDED IN REPORT] - https://www.press.bmwgroup.com/global/article/detail/T 0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en - [NOT PROVIDED IN REPORT]
 **[15]** [NOT PROVIDED IN REPORT] - Reddit - [NOT PROVIDED IN REPORT] - https://www.reddit.com/r/bmwmotorrad/comments/1kyjqma/r12_gs_test_ride/ - [NOT PROVIDED IN REPORT]
 **[16]** lorissuper - Quellidellelica - 08/06/2025 - https://www.motoclub-tingavert.it/t949668s.html - [NOT PROVIDED IN REPORT]
 **[17]** [NOT PROVIDED IN REPORT] - Reddit - [NOT PROVIDED IN REPORT] - https://www.reddit.com/r/bmwmotorrad/comments/1kyjqma/r12_gs_test_ride/ - [NOT PROVIDED IN REPORT]
@@ -764,7 +764,7 @@ A significant portion of interest comes from existing GS/GSA owners who see the 
 **[50]** [NOT PROVIDED IN REPORT] - Quellidellelica - [NOT PROVIDED IN REPORT] - https://quellidellelica.com/vbforums/showthread.php?p=11293183 - [NOT PROVIDED IN REPORT]
 **[51]** [NOT PROVIDED IN REPORT] - YouTube - [NOT PROVIDED IN REPORT] - https://www.youtube.com/watch?v=Ki0KXV2Wp4w - [NOT PROVIDED IN REPORT]
 **[52]** [NOT PROVIDED IN REPORT] - UKGSer Forum - [NOT PROVIDED IN REPORT] - https://www.ukgser.com/community/threads/is-this-the-new-2025-r1200-g-s.465549/ - [NOT PROVIDED IN REPORT]
-**[53]** [NOT PROVIDED IN REPORT] - BMW Press - [NOT PROVIDED IN REPORT] - https://www.press.bmwgroup.com/global/article/detail/T0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en - [NOT PROVIDED IN REPORT]
+**[53]** [NOT PROVIDED IN REPORT] - BMW Press - [NOT PROVIDED IN REPORT] - https://www.press.bmwgroup.com/global/article/detail/T 0448986EN/bmw-motorrad-presents-the-new-bmw-r-12-g/s?language=en - [NOT PROVIDED IN REPORT]
 **[54]** bannedByTencent - Reddit - Late March 2025 - https://www.reddit.com/r/motorcycles/comments/1jl8gf6/new_bmw_r_12_gs/ - [NOT PROVIDED IN REPORT]
 **[55]** GigiTre - Moto.it - April 2025 - https://www.moto.it/news/bmw-r12-g-s-la-nuova-enduro-classica-per-la-prima-volta-dal-vivo-video.html - [NOT PROVIDED IN REPORT]
 **[56]** [NOT PROVIDED IN REPORT] - UKGSer Forum - [NOT PROVIDED IN REPORT] - https://www.ukgser.com/community/threads/is-this-the-new-2025-r1200-g-s.465549/ - [NOT PROVIDED IN REPORT]

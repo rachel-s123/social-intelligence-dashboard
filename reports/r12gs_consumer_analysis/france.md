@@ -45,7 +45,7 @@
 **Event:** BMW R 12 G/S Official Reveal (27 March 2025, 17:00 CET)
 **Volume:** ~320 discussions (~40% of total quarter volume)
 **Sentiment:** Positive 75.0%
-**Key Reactions:** Initial excitement about "classic look, modern performance" and retro styling. Immediate comments on BMW's French Facebook and Instagram. Enthusiasm about throwback to R80 G/S.
+**Key Reactions:** Initial excitement about "classic look, modern performance" and retro styling. Immediate comments on BMW's French Facebook and Instagram. Enthusiasm about throwback to R 80 G/S.
 
 ### Week 2 (3rd April - 9th April 2025)
 **Event:** Detailed specs digestion and media coverage
@@ -157,7 +157,7 @@
 
 **Quote 3:**
 - **ID:** HSR_003
-- **Text:** "R80 vibe. Will certainly find its niche."
+- **Text:** "R 80 vibe. Will certainly find its niche."
 - **Citation:** [3]
 - **Username:** bannedByTencent
 - **Platform:** Reddit
@@ -264,7 +264,7 @@
 
 **Quote 2:**
 - **ID:** PVC_002
-- **Text:** "Yeah the R12S is a hefty 26K euro… This GS I could see myself riding daily. And at almost 20K euro (for the base trim I'm sure), while still being a lot of cash, seems reasonably priced. May have to go and test ride one of these babies."
+- **Text:** "Yeah the R 12S is a hefty 26K euro… This GS I could see myself riding daily. And at almost 20K euro (for the base trim I'm sure), while still being a lot of cash, seems reasonably priced. May have to go and test ride one of these babies."
 - **Citation:** [19]
 - **Username:** noujochiewajij
 - **Platform:** Reddit
@@ -324,24 +324,24 @@
 
 **Quote 7:**
 - **ID:** PVC_007
-- **Text:** "$9,000 below the [R1300GS]...so…more cost-effective"
+- **Text:** "$9,000 below the [R 1300GS]...so…more cost-effective"
 - **Citation:** [5]
 - **Username:** [NOT PROVIDED IN REPORT]
-- **Platform:** R1200GS Forum
+- **Platform:** R 1200GS Forum
 - **Date:** [NOT PROVIDED IN REPORT]
 - **URL:** https://www.r1200gs.info/threads/2026-r12gs-new-camhead-for-17k.58269/
 - **Theme:** Price/Value Concerns
 - **Sentiment:** POSITIVE
 - **Week:** [NOT PROVIDED IN REPORT]
 - **Purchase_Intent:** CONDITIONAL
-- **Competitor_Mentioned:** R1300GS
+- **Competitor_Mentioned:** R 1300GS
 - **Engagement:** [NOT PROVIDED IN REPORT]
 
 ### Comparison to Modern GS Models
 
 **Quote 1:**
 - **ID:** CGS_001
-- **Text:** "BMW has announced the new R12 GS… I'm very happy to see another boxer based off-road model in BMW's lineup again especially adjacent to the full fat 1300GS. I think they nailed it!"
+- **Text:** "BMW has announced the new R 12 GS… I'm very happy to see another boxer based off-road model in BMW's lineup again especially adjacent to the full fat 1300GS. I think they nailed it!"
 - **Citation:** [23]
 - **Username:** majunior
 - **Platform:** BMW MOA Forum
@@ -356,7 +356,7 @@
 
 **Quote 2:**
 - **ID:** CGS_002
-- **Text:** "Not sure what to do now but sell [my 2023 R nineT Urban G/S]… The R12 seems like the bike I always wished for."
+- **Text:** "Not sure what to do now but sell [my 2023 R nineT Urban G/S]… The R 12 seems like the bike I always wished for."
 - **Citation:** [6]
 - **Username:** MC_HAMMSTER
 - **Platform:** Reddit
@@ -371,7 +371,7 @@
 
 **Quote 3:**
 - **ID:** CGS_003
-- **Text:** "The R12 G/S is basically an actual GS but retro, while this [R nineT Urban G/S] is a streetbike that looks like an old GS but isn't actually offroad capable."
+- **Text:** "The R 12 G/S is basically an actual GS but retro, while this [R nineT Urban G/S] is a streetbike that looks like an old GS but isn't actually offroad capable."
 - **Citation:** [36]
 - **Username:** zeJoghurt
 - **Platform:** Reddit
@@ -386,7 +386,7 @@
 
 **Quote 4:**
 - **ID:** CGS_004
-- **Text:** "The tide is turning (slowly) back to sport touring. BMW is missing that trend...and this [R12G/S] proves it perfectly."
+- **Text:** "The tide is turning (slowly) back to sport touring. BMW is missing that trend...and this [R 12G/S] proves it perfectly."
 - **Citation:** [37]
 - **Username:** kickstandsup
 - **Platform:** BMW MOA Forum
@@ -418,7 +418,7 @@
 
 **Quote 1:**
 - **ID:** EPE_001
-- **Text:** "Honestly the R12 is the bike I want to get, but I'm worried it won't be capable enough as a traditional adventure bike for long distances and the occasional sticky off-road situation."
+- **Text:** "Honestly the R 12 is the bike I want to get, but I'm worried it won't be capable enough as a traditional adventure bike for long distances and the occasional sticky off-road situation."
 - **Citation:** [40]
 - **Username:** super----trooper
 - **Platform:** Reddit
@@ -684,7 +684,7 @@
 **Considering Alternatives:**
 - **Count:** [NOT PROVIDED IN REPORT]
 - **Percentage:** [NOT PROVIDED IN REPORT]
-- **Example Quote:** "I'm still thinking I'm gonna trade in my F850GSA for an R nineT Urban G/S this summer" - NECooley, Reddit
+- **Example Quote:** "I'm still thinking I'm gonna trade in my F 850GSA for an R nineT Urban G/S this summer" - NECooley, Reddit
 
 **Not Interested:**
 - **Count:** [NOT PROVIDED IN REPORT]
@@ -733,10 +733,10 @@
 ## Key Insights
 
 ### Nostalgia Drives Excitement
-The retro styling and heritage positioning resonated strongly with consumers, generating 25% of all discussion. The connection to the legendary R80 G/S and "Paris-Dakar Airhead style" created significant emotional appeal, with many consumers expressing nostalgia and excitement about BMW's return to its roots.
+The retro styling and heritage positioning resonated strongly with consumers, generating 25% of all discussion. The connection to the legendary R 80 G/S and "Paris-Dakar Airhead style" created significant emotional appeal, with many consumers expressing nostalgia and excitement about BMW's return to its roots.
 
 ### Price is a Barrier for Many
-Price concerns represented 20% of discussions, with consumers frequently comparing the R12 G/S to cheaper alternatives like the Yamaha T7 (~€10k) and questioning value proposition. Many felt the bike was expensive for what it offers, especially when factoring in necessary accessories.
+Price concerns represented 20% of discussions, with consumers frequently comparing the R 12 G/S to cheaper alternatives like the Yamaha T7 (~€10k) and questioning value proposition. Many felt the bike was expensive for what it offers, especially when factoring in necessary accessories.
 
 ### Missing Features Disappoint Some Riders
 Consumer expectations centered on practical features like luggage mounting, fuel capacity, and maintenance simplicity. The lack of standard bag mounts and smaller 14L tank disappointed some, while others appreciated the return to basics approach with features like fully defeatable ABS.
@@ -776,7 +776,7 @@ Key purchase drivers included emotional connection to heritage, desire for simpl
 **[2]** TookmyTénéré - Reddit - 30/05/2025 - https://www.reddit.com/r/bmwmotorrad/comments/1kyjqma/r12_gs_test_ride/ - 141 upvotes
 **[3]** Smokey (@smokey_smp) - Instagram - 01/06/2025 - https://www.instagram.com/reel/DKXSWyAI2yl/ - 34k likes, 181 comments
 **[4]** omega_man - BMW MOA Forum - 02/04/2025 - https://forums.bmwmoa.org/threads/the-new-r12-gs.106710/ - [NOT PROVIDED IN REPORT]
-**[5]** [NOT PROVIDED IN REPORT] - R1200GS Forum - [NOT PROVIDED IN REPORT] - https://www.r1200gs.info/threads/2026-r12gs-new-camhead-for-17k.58269/ - [NOT PROVIDED IN REPORT]
+**[5]** [NOT PROVIDED IN REPORT] - R 1200GS Forum - [NOT PROVIDED IN REPORT] - https://www.r1200gs.info/threads/2026-r12gs-new-camhead-for-17k.58269/ - [NOT PROVIDED IN REPORT]
 **[6]** MC_HAMMSTER - Reddit - 04/2025 - https://www.reddit.com/r/bmwmotorrad/comments/1jsisww/my_2023_ugs_has_been_made_obsolete_by_the_r12gs/ - 29 comments
 **[7]** [NOT PROVIDED IN REPORT] - BMW MOA Forum - [NOT PROVIDED IN REPORT] - https://forums.bmwmoa.org/threads/the-new-r12-gs.106710/ - [NOT PROVIDED IN REPORT]
 **[8]** [NOT PROVIDED IN REPORT] - Reddit - 05/2025 - https://www.reddit.com/r/motorcycles/comments/1bv52ae/bmw_f900_or_bmw_r12/ - [NOT PROVIDED IN REPORT]
