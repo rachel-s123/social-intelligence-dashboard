@@ -525,6 +525,8 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     }
   }, [expandedWeek, timelineExpanded, filteredConsumerTimeline]);
 
+  // Remove dynamic researchPeriod logic
+
   if (noData) {
     return (
       <Typography sx={{ fontFamily: 'BMW Motorrad' }}>
@@ -571,6 +573,10 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
           <InfoOutlinedIcon sx={{ color: '#1976d2', cursor: 'help' }} />
         </Tooltip>
       </Box>
+      {/* Research period date range under the title (static) */}
+      <Typography variant="subtitle1" sx={{ fontFamily: 'BMW Motorrad', color: '#1976d2', mb: 3, ml: 0.5 }}>
+        Research period: SOC 27 Mar 25 – Launch 25 Jun 25
+      </Typography>
 
       {/* Mini Executive Summary (Dynamic Bullets) */}
       <Card elevation={4} sx={{ mb: 4, borderLeft: '6px solid #1976d2', background: 'linear-gradient(90deg, #e3f2fd 60%, #fff 100%)' }}>
