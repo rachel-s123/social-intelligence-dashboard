@@ -1,9 +1,11 @@
 import React from 'react';
 import { FormControl, InputLabel, Select, MenuItem, Box } from '@mui/material';
-import { marketData } from '../data/wriData';
+import { r12gsConsumerData } from '../data/r12gsConsumerData';
 import { getMarketDisplayName } from '../utils/marketDisplayName';
 
 const MarketSelector = ({ selectedMarket, onMarketChange }) => {
+  const markets = Object.keys(r12gsConsumerData);
+
   return (
     <Box sx={{ mb: 4 }}>
       <FormControl fullWidth>
@@ -15,9 +17,9 @@ const MarketSelector = ({ selectedMarket, onMarketChange }) => {
           label="Select Market"
           onChange={(e) => onMarketChange(e.target.value)}
         >
-          {marketData.markets.map((market) => (
-            <MenuItem 
-              key={market} 
+          {markets.map((market) => (
+            <MenuItem
+              key={market}
               value={market}
               sx={{ fontFamily: 'BMW Motorrad', textTransform: 'none' }}
             >
@@ -30,4 +32,4 @@ const MarketSelector = ({ selectedMarket, onMarketChange }) => {
   );
 };
 
-export default MarketSelector; 
+export default MarketSelector;
