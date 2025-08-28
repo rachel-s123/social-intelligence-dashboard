@@ -27,13 +27,8 @@ This project contains a React dashboard that displays data generated from markdo
 
 ## Report Structure
 
-Place markdown reports in the following directories:
-- `reports/wri/` - WRI reports
-- `reports/wri_deviation/` - WRI deviation reports
-- `reports/market_analysis/` - Market analysis reports
-- `reports/executive_summaries/` - Executive summary reports
-- `reports/market_recommendations/` - Market recommendations
-- `reports/market_overviews/` - Market overview reports
+Place R 12 G/S consumer analysis markdown reports in:
+
 - `reports/r12gs_consumer_analysis/` - R 12 G/S consumer analysis reports
 
 When creating new R 12 G/S consumer analysis markdown files, copy `templates/model_insights_template.md`
@@ -81,25 +76,19 @@ npm run generate-r12gs-consumer-data
 
 ## PDF Reports
 
-1. Place your market PDF reports in the `public/reports/` directory with the following naming convention:
-   ```
-   public/reports/{country}_report.pdf
-   ```
-   Example: `public/reports/france_report.pdf`
+Store R 12 G/S market PDFs in the `vector_reports/r12gs/` directory with the following naming convention:
 
-2. Place model PDF reports in the `public/reports/models/` directory. Create the
-   `models` subfolder inside `public/reports/` if it does not exist. Name each
-   file after the model:
-   ```
-   public/reports/models/{model}.pdf
-   ```
-   Example: `public/reports/models/r12gs.pdf`
+```
+vector_reports/r12gs/{country}-r12gs.pdf
+```
 
-3. The PDF viewer supports:
-   - Continuous scrolling
-   - Fullscreen mode
-   - Zoom controls
-   - Page navigation
+Example: `vector_reports/r12gs/france-r12gs.pdf`
+
+The PDF viewer supports:
+- Continuous scrolling
+- Fullscreen mode
+- Zoom controls
+- Page navigation
 
 ## Vector Store Setup
 
@@ -158,7 +147,7 @@ See [REPORT_VECTOR_STORE_SETUP.md](REPORT_VECTOR_STORE_SETUP.md) for details.
 ## Troubleshooting
 
 1. If PDFs are not loading:
-   - Ensure PDF files are in the correct directory (`public/reports/`)
+   - Ensure PDF files are in the correct directory (`vector_reports/r12gs/`)
    - Check file naming convention
    - Verify PDF file permissions
 
