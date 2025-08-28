@@ -1,16 +1,26 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import MarketSelector from '../MarketSelector';
+import { r12gsConsumerData } from '../../data/r12gsConsumerData';
+import { getMarketDisplayName } from '../../utils/marketDisplayName';
 
 describe('MarketSelector', () => {
-  test('calls onMarketChange when selection changes', () => {
-    const handleChange = jest.fn();
-    render(<MarketSelector selectedMarket="france" onMarketChange={handleChange} />);
+    test('calls onMarketChange when selection changes', () => {
+      const handleChange = jest.fn();
+      const markets = Object.keys(r12gsConsumerData);
+      const [initialMarket, nextMarket] = markets;
 
-    const selectButton = screen.getByLabelText(/select market/i);
-    fireEvent.mouseDown(selectButton);
-    const option = screen.getByRole('option', { name: /italy/i });
-    fireEvent.click(option);
+      render(
+        <MarketSelector selectedMarket={initialMarket} onMarketChange={handleChange} />
+      );
 
-    expect(handleChange).toHaveBeenCalledWith('italy');
+      const selectButton = screen.getByLabelText(/select market/i);
+      fireEvent.mouseDown(selectButton);
+      const option = screen.getByRole('option', {
+        name: getMarketDisplayName(nextMarket),
+      });
+      fireEvent.click(option);
+
+      expect(handleChange).toHaveBeenCalledWith(nextMarket);
+    });
   });
-});
+
