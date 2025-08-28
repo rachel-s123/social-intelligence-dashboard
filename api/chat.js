@@ -5,9 +5,9 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Prefer VS_STORE_ID but allow fallback to the client-side variable
+// Prefer R12GS_VECTOR_STORE_ID but allow fallback to the client-side variable
 const VECTOR_STORE_ID =
-  process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
+  process.env.R12GS_VECTOR_STORE_ID || process.env.REACT_APP_R12GS_VECTOR_STORE_ID;
 
 module.exports = async (req, res) => {
   // Set CORS headers

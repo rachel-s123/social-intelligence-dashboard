@@ -36,7 +36,7 @@ async function main() {
   console.log('Vector store created successfully!');
   console.log('Store ID:', vectorStore.id);
   console.log('\nAdd this ID to your .env file as:');
-  console.log(`VS_REPORTS_STORE_ID=${vectorStore.id}`);
+  console.log(`R12GS_REPORTS_VECTOR_STORE_ID=${vectorStore.id}`);
 }
 
 main().catch((err) => {

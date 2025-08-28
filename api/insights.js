@@ -9,7 +9,7 @@ if (process.env.OPENAI_API_KEY) {
   });
 }
 
-// Prefer VS_REPORTS_STORE_ID but allow client-side fallback
+// Prefer R12GS_REPORTS_VECTOR_STORE_ID but allow client-side fallback
 const REPORTS_VECTOR_STORE_ID = getReportVectorStoreId();
 
 module.exports = async (req, res) => {

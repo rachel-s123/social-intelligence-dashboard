@@ -32,62 +32,12 @@ if (process.env.OPENAI_API_KEY) {
   });
 }
 
-// Prefer VS_STORE_ID but fall back to REACT_APP_VS_STORE_ID for client and server environments
+// Prefer R12GS_VECTOR_STORE_ID but fall back to REACT_APP_R12GS_VECTOR_STORE_ID for client and server environments
 const VECTOR_STORE_ID =
-  process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
+  process.env.R12GS_VECTOR_STORE_ID || process.env.REACT_APP_R12GS_VECTOR_STORE_ID;
 
-// Prefer VS_REPORTS_STORE_ID but fall back to client-side variable
+// Prefer R12GS_REPORTS_VECTOR_STORE_ID but fall back to client-side variable
 const REPORTS_VECTOR_STORE_ID = getReportVectorStoreId();
-
-// Test chat endpoint (simple, no vector store)
-app.post("/api/test-chat", async (req, res) => {
-  try {
-    const { messages } = req.body;
-
-    if (!messages || !Array.isArray(messages)) {
-      return res.status(400).json({ error: "Messages array is required" });
-    }
-
-    if (!openai) {
-      return res.status(500).json({ 
-        error: "OpenAI client not initialized", 
-        details: "OPENAI_API_KEY environment variable is not set" 
-      });
-    }
-
-    // Simple test without vector store
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
-      messages: [
-        {
-          role: "system",
-          content: "You are a helpful AI assistant for BMW Motorrad market analysis. Keep responses brief and focused."
-        },
-        ...messages
-      ],
-      stream: false,
-      temperature: 0.2,
-      max_tokens: 500,
-    });
-
-    const content = response.choices[0]?.message?.content || "No response generated";
-    
-    res.json({
-      choices: [{
-        message: {
-          content: content
-        }
-      }]
-    });
-
-  } catch (error) {
-    console.error("Test chat API error:", error);
-    res.status(500).json({
-      error: "Failed to get AI response",
-      details: error.message,
-    });
-  }
-});
 
 // Chat API endpoint using Chat Completions with vector store retrieval
 app.post("/api/chat", async (req, res) => {
@@ -232,11 +182,6 @@ app.post("/api/chat", async (req, res) => {
   }
 });
 
-// Health check endpoint
-app.get("/api/health", (req, res) => {
-  res.json({ status: "OK", timestamp: new Date().toISOString() });
-});
-
 // AI Insights endpoint
 app.post("/api/insights", require("./api/insights"));
 
@@ -255,10 +200,10 @@ if (process.env.NODE_ENV !== 'production') {
       `🔑 OpenAI API Key configured: ${process.env.OPENAI_API_KEY ? "Yes" : "No"}`
     );
     console.log(
-      `📊 Vector Store ID configured: ${process.env.VS_STORE_ID ? "Yes" : "No"}`
+      `📊 Vector Store ID configured: ${process.env.R12GS_VECTOR_STORE_ID ? "Yes" : "No"}`
     );
     console.log(
-      `🎯 Vector Store ID: ${process.env.VS_STORE_ID || "Not configured"}`
+      `🎯 Vector Store ID: ${process.env.R12GS_VECTOR_STORE_ID || "Not configured"}`
     );
     console.log(
       `📑 Reports Vector Store ID configured: ${

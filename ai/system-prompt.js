@@ -11,7 +11,7 @@
  */
 function getSystemPromptWithVectorStore() {
   const VECTOR_STORE_ID =
-    process.env.VS_STORE_ID || process.env.REACT_APP_VS_STORE_ID;
+    process.env.R12GS_VECTOR_STORE_ID || process.env.REACT_APP_R12GS_VECTOR_STORE_ID;
 
   return `You are a specialized AI assistant for BMW Motorrad market analysis and insights. You have access to a comprehensive vector store (ID: ${VECTOR_STORE_ID}) containing market data, competitor analysis, executive summaries, and strategic recommendations across European markets.
 
