@@ -68,6 +68,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   const [showInsights, setShowInsights] = useState(false);
   const [expandedWeek, setExpandedWeek] = useState(null);
   const [timelineExpanded, setTimelineExpanded] = useState(false);
+  const [shouldScrollToTimeline, setShouldScrollToTimeline] = useState(false);
   
   // AI Insights hook
   const { insights, loading, error, generateInsights, clearInsights } = useAIInsights();
@@ -507,7 +508,8 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
     if (week) {
       setExpandedWeek(week);
       setTimelineExpanded(true);
-      console.log('Timeline expanded for week:', week);
+      setShouldScrollToTimeline(true); // Set flag to indicate scroll is requested
+      console.log('🎯 Timeline expanded for week:', week, '- Scroll requested');
     } else {
       console.log('Could not extract week from click data');
     }
@@ -516,14 +518,27 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
   // Add this before the return statement
   const weekRefs = useRef([]);
 
+  // Only scroll to timeline when explicitly requested, not automatically
   useEffect(() => {
-    if (timelineExpanded && expandedWeek && weekRefs.current) {
+    // Only scroll if this is a user-initiated timeline expansion AND scroll is requested
+    if (shouldScrollToTimeline && timelineExpanded && expandedWeek && weekRefs.current) {
+      console.log('🔄 Scrolling to timeline week:', expandedWeek);
       const weekIndex = filteredConsumerTimeline.findIndex(w => w.week === expandedWeek);
       if (weekIndex !== -1 && weekRefs.current[weekIndex]) {
-        weekRefs.current[weekIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Add a small delay to ensure the timeline is fully rendered
+        setTimeout(() => {
+          weekRefs.current[weekIndex].scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+        // Reset the flag after scrolling
+        setShouldScrollToTimeline(false);
       }
     }
-  }, [expandedWeek, timelineExpanded, filteredConsumerTimeline]);
+  }, [shouldScrollToTimeline, expandedWeek, timelineExpanded]); // Only depend on scroll-related state
+
+  // Debug: Log when component re-renders and why
+  useEffect(() => {
+    console.log('🔄 R12GSConsumerAnalysis re-rendered - selectedMarket:', selectedMarket, 'expandedWeek:', expandedWeek, 'shouldScrollToTimeline:', shouldScrollToTimeline);
+  });
 
   // Remove dynamic researchPeriod logic
 
@@ -542,37 +557,7 @@ const R12GSConsumerAnalysis = ({ selectedMarket, data }) => {
       borderRadius: 2,
       border: '1px solid #e3f2fd'
     }}>
-      {/* Model-Level Data Indicator */}
-      <Alert 
-        severity="info" 
-        icon={<ModelTrainingIcon />}
-        sx={{ 
-          mb: 3, 
-          backgroundColor: '#e3f2fd',
-          border: '1px solid #1976d2',
-          '& .MuiAlert-icon': {
-            color: '#1976d2'
-          }
-        }}
-      >
-        <AlertTitle sx={{ fontFamily: 'BMW Motorrad', fontWeight: 'bold' }}>
-          Model-Level Consumer Insights
-        </AlertTitle>
-        <Typography variant="body2" sx={{ mt: 1 }}>
-          This analysis contains <strong>model-specific data</strong> for the BMW R 12 G/S, based on consumer conversations 
-          and reactions specifically about this motorcycle model. This data is separate from the segment-level 
-          insights shown in other dashboard sections (Executive Summary through Market Recommendations).
-        </Typography>
-      </Alert>
 
-      <Box sx={{ display: 'flex', alignItems: 'center', gap: 2, mb: 4 }}>
-        <Typography variant="h4" sx={{ fontFamily: 'BMW Motorrad', color: '#1a1a1a' }}>
-          R 12 G/S Consumer Analysis
-        </Typography>
-        <Tooltip title="This section analyzes consumer conversations specifically about the BMW R 12 G/S model, providing model-level insights distinct from segment-level data.">
-          <InfoOutlinedIcon sx={{ color: '#1976d2', cursor: 'help' }} />
-        </Tooltip>
-      </Box>
       {/* Research period date range under the title (static) */}
       <Typography variant="subtitle1" sx={{ fontFamily: 'BMW Motorrad', color: '#1976d2', mb: 3, ml: 0.5 }}>
         Research period: SOC 27 Mar 25 – Launch 25 Jun 25

@@ -2,7 +2,7 @@
   "name": "bmw-electric-segment-analysis",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+
   "engines": {
     "node": "20.x"
   },
@@ -29,17 +29,16 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run dev",
+    "dev": "npm run build && npm run server",
     "build": "CI=false react-scripts build",
+    "server": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "node server.js",
-    "dev-server": "npm run build && npm run server",
     "generate-all": "npm run generate-r12gs-consumer-data",
     "generate-r12gs-consumer-data": "node scripts/generate_r12gsConsumerData.js",
     "clean": "rm -rf build && rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
-    "dev": "npm run generate-all && npm start",
     "lint": "eslint src/**/*.{js,jsx}",
     "format": "prettier --write \"src/**/*.{js,jsx,css,md}\"",
     "vercel-build": "CI=false GENERATE_SOURCEMAP=false npm run build"

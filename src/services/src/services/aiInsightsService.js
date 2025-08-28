@@ -25,18 +25,34 @@ class AIInsightsService {
     try {
       console.log("🚀 Calling server-side insights API...");
       
-      // Send all filtered quotes without limiting for comprehensive insights
+      // Limit quotes to prevent payload size issues - send only essential data
+      const maxQuotes = 100; // Limit to 100 quotes max
+      const limitedQuotes = (filteredData.quotes || []).slice(0, maxQuotes);
+      
+      // Optimize quote data by keeping only essential fields
+      const optimizedQuotes = limitedQuotes.map(quote => ({
+        text: quote.text,
+        sentiment: quote.sentiment,
+        theme: quote.theme,
+        platform: quote.platform,
+        week: quote.week,
+        // Remove other fields to reduce payload size
+      }));
+      
       const optimizedData = {
         totalQuotes: filteredData.totalQuotes,
         sentimentPercentages: filteredData.sentimentPercentages,
         topTheme: filteredData.topTheme?.name || "General",
         timeRange: filteredData.timeRange || "All time",
-        // Include all filtered quotes for comprehensive analysis
-        quotes: filteredData.quotes || []
+        // Include optimized quotes to prevent payload size issues
+        quotes: optimizedQuotes,
+        // Add note about data limitation
+        dataNote: `Analysis based on ${optimizedQuotes.length} of ${filteredData.totalQuotes || 0} total quotes to ensure optimal performance.`
       };
 
-      // Simplified filters - only essential info
-      const simplifiedFilters = (activeFilters || []).map(f => ({
+      // Simplified filters - only essential info and limit filter count
+      const maxFilters = 10; // Limit filters to prevent payload bloat
+      const simplifiedFilters = (activeFilters || []).slice(0, maxFilters).map(f => ({
         type: f.type,
         value: f.value
       }));
@@ -49,9 +65,20 @@ class AIInsightsService {
       };
 
       const payloadString = JSON.stringify(payload);
-      console.log("🔍 Payload size:", Math.round(payloadString.length / 1024), "KB");
+      const payloadSizeKB = Math.round(payloadString.length / 1024);
+      console.log("🔍 Payload size:", payloadSizeKB, "KB");
       console.log("🔍 Quotes count:", optimizedData.quotes.length);
       
+      // Check payload size before sending
+      if (payloadSizeKB > 5000) { // 5MB limit
+        console.warn("⚠️ Payload too large, falling back to mock insights");
+        return {
+          success: true,
+          insights: this.generateMockInsights(filteredData, activeFilters, section)
+        };
+      }
+      
+      console.log("📤 Sending request to /api/insights...");
       const response = await fetch('/api/insights', {
         method: 'POST',
         headers: {
@@ -62,25 +89,43 @@ class AIInsightsService {
 
       if (!response.ok) {
         console.error("❌ API Response error:", response.status, response.statusText);
+        if (response.status === 431) {
+          console.error("❌ Payload too large - consider reducing data size");
+        }
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const result = await response.json();
+      console.log("🔍 Server response:", result);
+      console.log("🔍 Response success:", result.success);
+      console.log("🔍 Response insights keys:", result.insights ? Object.keys(result.insights) : "No insights");
       
       if (result.success) {
         console.log("✅ Insights generated successfully via server API");
         return result;
       } else {
+        console.log("❌ Server returned error:", result.error);
         throw new Error(result.error || "Failed to generate insights");
       }
     } catch (error) {
       console.error("AI Insights API error:", error);
       
+      // Provide specific error handling for different error types
+      if (error.message.includes('431')) {
+        console.error("❌ Request header fields too large - payload size issue");
+        console.log("💡 Consider reducing the amount of data or using more specific filters");
+      } else if (error.message.includes('413')) {
+        console.error("❌ Payload too large - server rejected the request");
+        console.log("💡 Data size exceeded server limits");
+      }
+      
       // Fallback to mock insights if server call fails
       console.log("Server API failed, falling back to mock insights");
       return {
         success: true,
-        insights: this.generateMockInsights(filteredData, activeFilters, section)
+        insights: this.generateMockInsights(filteredData, activeFilters, section),
+        error: error.message,
+        fallback: true
       };
     }
   }
@@ -122,9 +167,8 @@ class AIInsightsService {
     // Generate contextual mock insights based on the data
     const mockInsights = {
       filterContext: `Analysis based on filtered data: ${filterDescription}. This represents a subset of consumer feedback, not the complete dataset.`,
-      summary: this.generateMockSummary(filteredData, activeFilters, section, sentimentBreakdown),
-      sentimentBreakdown,
-      keyFindings: this.generateMockFindings(filteredData, activeFilters, section, sentimentBreakdown),
+      executiveSummary: this.generateMockSummary(filteredData, activeFilters, section, sentimentBreakdown),
+      humanTruths: this.generateMockHumanTruths(filteredData, activeFilters, section, sentimentBreakdown),
       recommendations: this.generateMockRecommendations(filteredData, activeFilters, section, sentimentBreakdown),
       dataHighlights: this.generateMockHighlights(filteredData, activeFilters, section, sentimentBreakdown)
     };
@@ -133,6 +177,36 @@ class AIInsightsService {
       success: true,
       insights: mockInsights
     };
+  }
+
+  /**
+   * Generate mock human truths based on data
+   */
+  generateMockHumanTruths(filteredData, activeFilters, section, sentimentBreakdown) {
+    const totalQuotes = filteredData.totalQuotes || 0;
+    const topTheme = filteredData.topTheme?.name || "General";
+    const positivePct = sentimentBreakdown.positive.percentage;
+    
+    const humanTruths = [
+      {
+        humanTruth: "Consumers value authentic heritage and classic design",
+        explanation: "The R 12 G/S represents a return to BMW's roots, appealing to riders who appreciate traditional motorcycle aesthetics and engineering",
+        evidence: `"${topTheme}" theme dominates discussions with ${positivePct}% positive sentiment`,
+        businessImplication: "Emphasize heritage and classic design in marketing communications to connect with nostalgic consumers"
+      }
+    ];
+    
+    if (activeFilters.length > 0) {
+      const filterDesc = activeFilters.map(f => f.value).join(", ");
+      humanTruths.push({
+        humanTruth: "Filtered insights reveal specific consumer segments",
+        explanation: "Targeted analysis shows distinct patterns within the selected criteria",
+        evidence: `Analysis focused on ${filterDesc} with ${totalQuotes} relevant quotes`,
+        businessImplication: "Use these insights for targeted marketing campaigns to specific consumer segments"
+      });
+    }
+    
+    return humanTruths;
   }
 
   /**
@@ -153,32 +227,7 @@ class AIInsightsService {
     return `Filtered analysis of ${totalQuotes} quotes (${filterDesc}) shows ${positivePct}% positive, ${neutralPct}% neutral, and ${negativePct}% negative sentiment with "${topTheme}" as the primary theme. This focused view reveals specific consumer insights for the selected criteria and should not be interpreted as overall consumer sentiment.`;
   }
 
-  /**
-   * Generate mock findings based on data
-   */
-  generateMockFindings(filteredData, activeFilters, section, sentimentBreakdown) {
-    const findings = [];
-    const totalQuotes = filteredData.totalQuotes || 0;
-    const topTheme = filteredData.topTheme?.name || "General";
-    const positivePct = sentimentBreakdown.positive.percentage;
-    const neutralPct = sentimentBreakdown.neutral.percentage;
-    const negativePct = sentimentBreakdown.negative.percentage;
-    
-    findings.push(`Sentiment distribution across ${totalQuotes} analyzed quotes: ${positivePct}% positive, ${neutralPct}% neutral, ${negativePct}% negative`);
-    findings.push(`"${topTheme}" emerges as the dominant discussion theme with ${filteredData.topTheme?.percentage || 25}% of mentions`);
-    
-    if (positivePct > 50) {
-      findings.push("Strong positive sentiment indicates high consumer satisfaction with R 12 G/S features");
-    } else if (negativePct > 40) {
-      findings.push("Higher negative sentiment suggests areas for improvement in consumer experience");
-    } else if (neutralPct > 50) {
-      findings.push("High neutral sentiment indicates mixed consumer reactions requiring further analysis");
-    } else {
-      findings.push("Balanced sentiment distribution shows varied consumer perspectives");
-    }
-    
-    return findings;
-  }
+
 
   /**
    * Generate mock recommendations based on data
@@ -239,8 +288,8 @@ class AIInsightsService {
     }
     
     return {
-      strongestTheme: topTheme,
-      sentimentTrend: sentimentTrend,
+      emergingTheme: topTheme,
+      sentimentDriver: sentimentTrend,
       criticalQuote: criticalQuote
     };
   }

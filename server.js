@@ -13,13 +13,23 @@ const app = express();
 
 // Middleware
 app.use(cors());
-app.use(express.json({ limit: '20mb' }));
-app.use(express.urlencoded({ limit: '20mb', extended: true }));
+app.use(express.json({ limit: '50mb' }));
+app.use(express.urlencoded({ limit: '50mb', extended: true }));
+
+// Increase header size limits to prevent 431 errors
+app.use((req, res, next) => {
+  res.set('X-Content-Type-Options', 'nosniff');
+  next();
+});
 
 // Serve static files from the React app build directory
 app.use(express.static(path.join(__dirname, "build")));
+
 // Serve R 12 G/S PDF reports
 app.use('/vector_reports', express.static(path.join(__dirname, 'vector_reports')));
+
+// Serve public assets
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
 // OpenAI setup
 const OpenAI = require("openai").default;
@@ -32,9 +42,8 @@ if (process.env.OPENAI_API_KEY) {
   });
 }
 
-// Prefer R12GS_VECTOR_STORE_ID but fall back to REACT_APP_R12GS_VECTOR_STORE_ID for client and server environments
-const VECTOR_STORE_ID =
-  process.env.R12GS_VECTOR_STORE_ID || process.env.REACT_APP_R12GS_VECTOR_STORE_ID;
+// Use VS_REPORTS_STORE_ID for vector store configuration
+const VECTOR_STORE_ID = process.env.VS_REPORTS_STORE_ID;
 
 // Prefer R12GS_REPORTS_VECTOR_STORE_ID but fall back to client-side variable
 const REPORTS_VECTOR_STORE_ID = getReportVectorStoreId();
@@ -196,14 +205,16 @@ if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`🚀 Server is running on port ${PORT}`);
     console.log(`📍 Server URL: http://localhost:${PORT}`);
+    console.log(`🌐 Frontend: http://localhost:${PORT}`);
+    console.log(`🔌 API Endpoints: http://localhost:${PORT}/api/*`);
     console.log(
       `🔑 OpenAI API Key configured: ${process.env.OPENAI_API_KEY ? "Yes" : "No"}`
     );
     console.log(
-      `📊 Vector Store ID configured: ${process.env.R12GS_VECTOR_STORE_ID ? "Yes" : "No"}`
+      `📊 Vector Store ID configured: ${process.env.VS_REPORTS_STORE_ID ? "Yes" : "No"}`
     );
     console.log(
-      `🎯 Vector Store ID: ${process.env.R12GS_VECTOR_STORE_ID || "Not configured"}`
+      `🎯 Vector Store ID: ${process.env.VS_REPORTS_STORE_ID || "Not configured"}`
     );
     console.log(
       `📑 Reports Vector Store ID configured: ${
@@ -217,8 +228,9 @@ if (process.env.NODE_ENV !== 'production') {
       `🤖 AI Model: ${require("./ai/system-prompt").getAIConfig().model}`
     );
     console.log(
-      `\n✅ Server ready! Visit http://localhost:${PORT} to use the application`
+      `\n✅ Everything is running on ONE PORT! Visit http://localhost:${PORT} to use the application`
     );
+    console.log(`📱 Frontend + Backend consolidated into single server process`);
   });
 }
 

@@ -1,5 +1,19 @@
 import React, { useState } from 'react';
-import { PieChart, Pie, Cell, Tooltip, Legend as RechartsLegend, ResponsiveContainer } from 'recharts';
+import { 
+  TrendingUp, 
+  Lightbulb, 
+  Assessment, 
+  Campaign, 
+  Group, 
+  FormatQuote,
+  Timeline,
+  CheckCircle,
+  Warning,
+  Info,
+  Star,
+  Business,
+  Analytics
+} from '@mui/icons-material';
 
 // Simple service loader to avoid circular dependencies
 const createMockService = () => ({
@@ -22,11 +36,38 @@ const createMockService = () => ({
 /**
  * Transform the new API response structure to match component expectations
  */
-const transformInsightsResponse = (apiInsights) => ({
-  ...apiInsights,
-  keyInsights: apiInsights.keyInsights || apiInsights.keyFindings || [],
-  recommendations: apiInsights.recommendations || apiInsights.actionableRecommendations || [],
-});
+const transformInsightsResponse = (apiInsights) => {
+  // Ensure we have a valid insights object
+  if (!apiInsights || typeof apiInsights !== 'object') {
+    console.error("❌ Invalid insights data received:", apiInsights);
+    return {
+      filterContext: "Invalid insights data received",
+      executiveSummary: "Data format error - please retry",
+      keyInsights: [],
+      recommendations: [],
+      consumerSegments: { primarySegment: "Error", concernsAndNeeds: [], opportunityAreas: [] },
+      competitiveIntelligence: { bmwStrengths: [], vulnerabilities: [], marketPosition: "Error" },
+      dataHighlights: { criticalQuote: "Error", emergingTheme: "Error", sentimentDriver: "Error" }
+    };
+  }
+  
+  // Transform and validate the response structure
+  const transformed = {
+    ...apiInsights,
+    // Handle both old and new insight structures
+    keyInsights: apiInsights.humanTruths || apiInsights.keyInsights || apiInsights.keyFindings || [],
+    recommendations: apiInsights.recommendations || apiInsights.actionableRecommendations || [],
+    // Ensure all required fields exist with fallbacks
+    filterContext: apiInsights.filterContext || "Analysis context not provided",
+    executiveSummary: apiInsights.executiveSummary || "Summary not available",
+    consumerSegments: apiInsights.consumerSegments || { primarySegment: "Unknown", concernsAndNeeds: [], opportunityAreas: [] },
+    competitiveIntelligence: apiInsights.competitiveIntelligence || { bmwStrengths: [], vulnerabilities: [], marketPosition: "Unknown" },
+    dataHighlights: apiInsights.dataHighlights || { criticalQuote: "Not available", emergingTheme: "Not available", sentimentDriver: "Not available" }
+  };
+  
+  console.log("✅ Insights transformed successfully:", transformed);
+  return transformed;
+};
 
 // React Hook for using AI insights
 export const useAIInsights = () => {
@@ -77,6 +118,11 @@ export const useAIInsights = () => {
         setInsights(transformedInsights);
         setHasGenerated(true);
         console.log("✅ Insights generated successfully");
+        
+        // Check if this was a fallback response
+        if (result.fallback) {
+          console.warn("⚠️ Insights generated from fallback due to:", result.error);
+        }
       } else {
         setError("Failed to generate insights");
         setInsights(result.insights); // Still show error response structure
@@ -89,11 +135,14 @@ export const useAIInsights = () => {
       // Provide fallback insights if service fails
       const fallbackInsights = {
         filterContext: "Demo mode - no API key configured. Insights are simulated based on your filtered data.",
-        summary: "AI analysis is running in demo mode. No OpenAI API key detected. Insights are generated based on your data patterns.",
-        keyFindings: [
-          "Demo mode active - insights are simulated",
-          "Configure OpenAI API key for real AI analysis",
-          "Current insights based on data patterns and statistics"
+        executiveSummary: "AI analysis is running in demo mode. No OpenAI API key detected. Insights are generated based on your data patterns.",
+        humanTruths: [
+          {
+            humanTruth: "Demo mode active - insights are simulated",
+            explanation: "System is running without AI capabilities",
+            evidence: "No OpenAI API key configured",
+            businessImplication: "Configure API key for real AI insights"
+          }
         ],
         recommendations: [
           "Add REACT_APP_OPENAI_API_KEY to environment variables",
@@ -101,8 +150,8 @@ export const useAIInsights = () => {
           "Contact administrator for API key configuration"
         ],
         dataHighlights: {
-          strongestTheme: "Demo Mode",
-          sentimentTrend: "Simulated Analysis",
+          emergingTheme: "Demo Mode",
+          sentimentDriver: "Simulated Analysis",
           criticalQuote: "API key required for real AI insights"
         }
       };
@@ -165,7 +214,7 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
         <div className="insights-header">
           <h3>🤖 AI Insights</h3>
         </div>
-        <p style={{ color: '#1c2a5c', fontWeight: 600, fontSize: '1.1rem', textAlign: 'center', marginTop: 32 }}>
+        <p style={{ color: '#1c2a5c', fontWeight: 600, fontSize: '1rem', textAlign: 'center', marginTop: 16 }}>
           Filter by theme and/or sentiment to generate AI insights tailored to your selection.
         </p>
       </div>
@@ -177,44 +226,221 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
       <div className="insights-header">
         <h3>🤖 AI Insights</h3>
       </div>
+      
       {/* Demo Mode Indicator */}
       {error && error.includes("Demo mode") && (
         <div style={{
           backgroundColor: '#fff3cd',
           border: '1px solid #ffeaa7',
-          borderRadius: '4px',
+          borderRadius: '8px',
           padding: '8px 12px',
           marginBottom: '16px',
-          fontSize: '14px',
-          color: '#856404'
+          fontSize: '12px',
+          color: '#856404',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '6px'
         }}>
-          🎭 <strong>Demo Mode:</strong> No OpenAI API key configured. Insights are simulated based on your data.
+          <Info fontSize="small" />
+          <strong>Demo Mode:</strong> No OpenAI API key configured. Insights are simulated based on your data.
         </div>
       )}
+
       <div className="insights-content">
         {/* Filter Context Section */}
         {insights.filterContext && (
           <div className="filter-context-section" style={{
-            background: '#f5f7fa',
-            border: '1px solid #e5e5e5',
-            borderRadius: 8,
-            padding: '10px 18px',
-            margin: '0 0 24px 0',
+            background: 'linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%)',
+            border: '1px solid #0ea5e9',
+            borderRadius: '8px',
+            padding: '12px 16px',
+            margin: '0 0 20px 0',
             fontStyle: 'italic',
-            color: '#1c2a5c',
-            fontSize: '1rem',
-            boxShadow: 'none'
+            color: '#0c4a6e',
+            fontSize: '0.9rem',
+            boxShadow: '0 2px 4px rgba(14, 165, 233, 0.1)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
           }}>
+            <Assessment fontSize="small" />
             {insights.filterContext}
           </div>
         )}
 
+        {/* DATA HIGHLIGHTS - MOVED TO TOP */}
+        {insights.dataHighlights && (
+          <>
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '0 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <TrendingUp style={{ color: '#10b981' }} />
+              Data Highlights
+            </h4>
+            
+            <div className="data-highlights-grid" style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
+              gap: '16px',
+              marginBottom: '24px'
+            }}>
+              {/* Critical Quote Box */}
+              {insights.dataHighlights.criticalQuote && (
+                <div style={{ 
+                  background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)',
+                  border: '2px solid #f59e0b',
+                  borderRadius: '12px',
+                  padding: '20px',
+                  boxShadow: '0 4px 12px rgba(245, 158, 11, 0.15)',
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                                      <div style={{
+                      position: 'absolute',
+                      top: '8px',
+                      right: '8px',
+                      fontSize: '24px',
+                      opacity: '0.3'
+                    }}>
+                      <FormatQuote />
+                    </div>
+                  <div style={{
+                    fontSize: '1.1rem',
+                    color: '#92400e',
+                    fontWeight: '600',
+                    fontStyle: 'italic',
+                    lineHeight: '1.4',
+                    marginBottom: '8px'
+                  }}>
+                    "{insights.dataHighlights.criticalQuote}"
+                  </div>
+                  <div style={{
+                    fontSize: '0.8rem',
+                    color: '#92400e',
+                    opacity: '0.8',
+                    textAlign: 'right'
+                  }}>
+                    Critical Quote
+                  </div>
+                </div>
+              )}
+
+              {/* Emerging Theme */}
+              {insights.dataHighlights.emergingTheme && (
+                <div style={{ 
+                  background: 'linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%)',
+                  border: '2px solid #10b981',
+                  borderRadius: '12px',
+                  padding: '20px',
+                  boxShadow: '0 4px 12px rgba(16, 185, 129, 0.15)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center'
+                }}>
+                  <TrendingUp style={{ fontSize: '32px', color: '#10b981', marginBottom: '8px' }} />
+                  <div style={{
+                    fontSize: '1.2rem',
+                    color: '#065f46',
+                    fontWeight: '700',
+                    marginBottom: '4px'
+                  }}>
+                    {insights.dataHighlights.emergingTheme}
+                  </div>
+                  <div style={{
+                    fontSize: '0.8rem',
+                    color: '#065f46',
+                    opacity: '0.8'
+                  }}>
+                    Emerging Theme
+                  </div>
+                </div>
+              )}
+
+              {/* Sentiment Driver */}
+              {insights.dataHighlights.sentimentDriver && (
+                <div style={{ 
+                  background: 'linear-gradient(135deg, #fef2f2 0%, #fecaca 100%)',
+                  border: '2px solid #ef4444',
+                  borderRadius: '12px',
+                  padding: '20px',
+                  boxShadow: '0 4px 12px rgba(239, 68, 68, 0.15)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  textAlign: 'center'
+                }}>
+                  <Analytics style={{ fontSize: '32px', color: '#ef4444', marginBottom: '8px' }} />
+                  <div style={{
+                    fontSize: '1.1rem',
+                    color: '#991b1b',
+                    fontWeight: '600',
+                    marginBottom: '4px',
+                    textAlign: 'center'
+                  }}>
+                    {insights.dataHighlights.sentimentDriver}
+                  </div>
+                  <div style={{
+                    fontSize: '0.8rem',
+                    color: '#991b1b',
+                    opacity: '0.8'
+                  }}>
+                    Sentiment Driver
+                  </div>
+                </div>
+              )}
+            </div>
+          </>
+        )}
+
+        {/* Executive Summary */}
         {insights.executiveSummary && (
           <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Executive Summary</h4>
-            <div className="executive-summary-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
-                <h5 style={{ margin: '0 0 0 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '24px 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <Lightbulb style={{ color: '#f59e0b' }} />
+              Executive Summary
+            </h4>
+            <div className="executive-summary-section" style={{ marginBottom: '24px' }}>
+              <div style={{ 
+                background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)',
+                border: '2px solid #f59e0b',
+                borderRadius: '12px',
+                padding: '20px',
+                boxShadow: '0 4px 12px rgba(245, 158, 11, 0.15)',
+                position: 'relative'
+              }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '12px',
+                  right: '12px',
+                  fontSize: '20px',
+                  opacity: '0.3'
+                }}>
+                  <Lightbulb />
+                </div>
+                <h5 style={{ 
+                  margin: '0 0 0 0', 
+                  color: '#92400e', 
+                  fontSize: '1.1rem', 
+                  fontWeight: '600',
+                  lineHeight: '1.5'
+                }}>
                   {insights.executiveSummary}
                 </h5>
               </div>
@@ -222,21 +448,104 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
           </>
         )}
 
+        {/* Key Insights */}
         {insights.keyInsights && (
           <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Key Insights</h4>
-            <div className="key-insights-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '24px 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <Analytics style={{ color: '#8b5cf6' }} />
+              Human Truths & Insights
+            </h4>
+            <div className="key-insights-section" style={{ 
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gap: '16px',
+              marginBottom: '24px'
+            }}>
               {insights.keyInsights.map((finding, index) => {
                 if (!finding) return null;
                 if (typeof finding === 'string') {
-                  return <div key={index} style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 8, padding: 24, marginBottom: 12, boxShadow: '0 2px 8px #e0e0e0' }}>{finding}</div>;
+                  return (
+                    <div key={index} style={{ 
+                      background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+                      border: '2px solid #8b5cf6',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      boxShadow: '0 4px 12px rgba(139, 92, 246, 0.15)',
+                      position: 'relative'
+                    }}>
+                      <div style={{
+                        position: 'absolute',
+                        top: '12px',
+                        right: '12px',
+                        fontSize: '20px',
+                        color: '#8b5cf6',
+                        opacity: '0.3'
+                      }}>
+                        <Analytics />
+                      </div>
+                      <div style={{ fontSize: '1rem', color: '#1c2a5c', lineHeight: '1.5' }}>{finding}</div>
+                    </div>
+                  );
                 }
                 return (
-                  <div key={index} style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, marginBottom: 0, boxShadow: '0 2px 8px #e5e5e5' }}>
-                    <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>{finding.humanTruth || 'Human Truth'}</h5>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Explanation:</strong> {finding.explanation || 'N/A'}</div>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Evidence:</strong> {finding.evidence || 'N/A'}</div>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c' }}><strong>Business Implication:</strong> {finding.businessImplication || 'N/A'}</div>
+                  <div key={index} style={{ 
+                    background: 'linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)',
+                    border: '2px solid #8b5cf6',
+                    borderRadius: '12px',
+                    padding: '20px',
+                    boxShadow: '0 4px 12px rgba(139, 92, 246, 0.15)',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      top: '12px',
+                      right: '12px',
+                      fontSize: '20px',
+                      color: '#8b5cf6',
+                      opacity: '0.3'
+                    }}>
+                      <Analytics />
+                    </div>
+                    <h5 style={{ 
+                      margin: '0 0 12px 0', 
+                      color: '#1c2a5c', 
+                      fontSize: '1.1rem', 
+                      fontWeight: '700',
+                      lineHeight: '1.4'
+                    }}>
+                      {finding.humanTruth || 'Human Truth'}
+                    </h5>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c', 
+                      marginBottom: '8px',
+                      lineHeight: '1.4'
+                    }}>
+                      <strong>Why it matters:</strong> {finding.explanation || 'N/A'}
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c', 
+                      marginBottom: '8px',
+                      lineHeight: '1.4'
+                    }}>
+                      <strong>Evidence:</strong> {finding.evidence || 'N/A'}
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      <strong>Marketing Impact:</strong> {finding.businessImplication || 'N/A'}
+                    </div>
                   </div>
                 );
               })}
@@ -244,22 +553,132 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
           </>
         )}
 
+        {/* Actionable Recommendations */}
         {insights.actionableRecommendations && (
           <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Actionable Recommendations</h4>
-            <div className="actionable-recommendations-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '24px 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <Campaign style={{ color: '#3b82f6' }} />
+              Actionable Recommendations
+            </h4>
+            <div className="actionable-recommendations-section" style={{ 
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+              gap: '16px',
+              marginBottom: '24px'
+            }}>
               {insights.actionableRecommendations.map((rec, index) => {
                 if (!rec) return null;
                 if (typeof rec === 'string') {
-                  return <div key={index} style={{ background: '#fff', border: '1px solid #e5e5e5', borderRadius: 8, padding: 24, marginBottom: 12, boxShadow: '0 2px 8px #e0e0e0' }}>{rec}</div>;
+                  return (
+                    <div key={index} style={{ 
+                      background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                      border: '2px solid #3b82f6',
+                      borderRadius: '12px',
+                      padding: '20px',
+                      boxShadow: '0 4px 12px rgba(59, 130, 246, 0.15)',
+                      position: 'relative'
+                    }}>
+                      <div style={{
+                        position: 'absolute',
+                        top: '12px',
+                        right: '12px',
+                        fontSize: '20px',
+                        color: '#3b82f6',
+                        opacity: '0.3'
+                      }}>
+                        <Campaign />
+                      </div>
+                      <div style={{ fontSize: '1rem', color: '#1c2a5c', lineHeight: '1.5' }}>{rec}</div>
+                    </div>
+                  );
                 }
+                
+                // Timeline badge color
+                const timelineColor = rec.timeline?.includes('Immediate') ? '#10b981' : 
+                                    rec.timeline?.includes('Short-term') ? '#f59e0b' : '#8b5cf6';
+                
                 return (
-                  <div key={index} style={{ background: '#fff', border: '2px solid #6fa3ef', borderRadius: 10, padding: 24, marginBottom: 0, boxShadow: '0 2px 8px #e5e5e5' }}>
-                    <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>{rec.category || 'Category'}</h5>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Recommendation:</strong> {rec.recommendation || 'N/A'}</div>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Rationale:</strong> {rec.rationale || 'N/A'}</div>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}><strong>Timeline:</strong> {rec.timeline || 'N/A'}</div>
-                    <div style={{ fontSize: '1rem', color: '#1c2a5c' }}><strong>Expected Impact:</strong> {rec.expectedImpact || 'N/A'}</div>
+                  <div key={index} style={{ 
+                    background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)',
+                    border: '2px solid #3b82f6',
+                    borderRadius: '12px',
+                    padding: '20px',
+                    boxShadow: '0 4px 12px rgba(59, 130, 246, 0.15)',
+                    position: 'relative'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      top: '12px',
+                      right: '12px',
+                      fontSize: '20px',
+                      color: '#3b82f6',
+                      opacity: '0.3'
+                    }}>
+                      <Campaign />
+                    </div>
+                    
+                    <h5 style={{ 
+                      margin: '0 0 12px 0', 
+                      color: '#1c2a5c', 
+                      fontSize: '1.1rem', 
+                      fontWeight: '700',
+                      lineHeight: '1.4'
+                    }}>
+                      {rec.recommendation || 'Recommendation'}
+                    </h5>
+                    
+                    {/* Timeline Badge */}
+                    <div style={{
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: '4px',
+                      backgroundColor: timelineColor,
+                      color: 'white',
+                      padding: '4px 8px',
+                      borderRadius: '12px',
+                      fontSize: '0.7rem',
+                      fontWeight: '600',
+                      marginBottom: '12px'
+                    }}>
+                      <Timeline fontSize="small" />
+                      {rec.timeline || 'N/A'}
+                    </div>
+                    
+                    <div style={{ 
+                      fontSize: '0.8rem', 
+                      color: '#64748b', 
+                      marginBottom: '8px', 
+                      fontStyle: 'italic',
+                      textTransform: 'uppercase',
+                      letterSpacing: '0.5px'
+                    }}>
+                      <strong>{rec.category || 'N/A'}</strong>
+                    </div>
+                    
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c', 
+                      marginBottom: '8px',
+                      lineHeight: '1.4'
+                    }}>
+                      <strong>Why this works:</strong> {rec.rationale || 'N/A'}
+                    </div>
+                    
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      <strong>Expected Outcome:</strong> {rec.expectedImpact || 'N/A'}
+                    </div>
                   </div>
                 );
               })}
@@ -267,60 +686,206 @@ export const AIInsightsPanel = ({ insights, loading, error, onRefresh, className
           </>
         )}
 
+        {/* Consumer Segments */}
         {insights.consumerSegments && (
           <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Consumer Segments</h4>
-            <div className="consumer-segments-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
-                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '24px 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <Group style={{ color: '#ec4899' }} />
+              Consumer Segments
+            </h4>
+            <div className="consumer-segments-section" style={{ marginBottom: '24px' }}>
+              <div style={{ 
+                background: 'linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%)',
+                border: '2px solid #ec4899',
+                borderRadius: '12px',
+                padding: '24px',
+                boxShadow: '0 4px 12px rgba(236, 72, 153, 0.15)',
+                position: 'relative'
+              }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '16px',
+                  right: '16px',
+                  fontSize: '24px',
+                  color: '#ec4899',
+                  opacity: '0.3'
+                }}>
+                  <Group />
+                </div>
+                
+                <h5 style={{ 
+                  margin: '0 0 16px 0', 
+                  color: '#1c2a5c', 
+                  fontSize: '1.2rem', 
+                  fontWeight: '700',
+                  lineHeight: '1.4'
+                }}>
                   {insights.consumerSegments.primarySegment || 'Primary Segment'}
                 </h5>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
-                  <strong>Concerns/Needs:</strong> {insights.consumerSegments.concernsAndNeeds?.join(', ') || 'N/A'}
-                </div>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
-                  <strong>Opportunity Areas:</strong> {insights.consumerSegments.opportunityAreas?.join(', ') || 'N/A'}
+                
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginBottom: '8px',
+                      color: '#be185d',
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      <Warning fontSize="small" />
+                      Concerns & Needs
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      {insights.consumerSegments.concernsAndNeeds?.join(', ') || 'N/A'}
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginBottom: '8px',
+                      color: '#be185d',
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      <CheckCircle fontSize="small" />
+                      Opportunity Areas
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      {insights.consumerSegments.opportunityAreas?.join(', ') || 'N/A'}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </>
         )}
 
+        {/* Competitive Intelligence */}
         {insights.competitiveIntelligence && (
           <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Competitive Intelligence</h4>
-            <div className="competitive-intelligence-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
-                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
-                  {insights.competitiveIntelligence.strengths?.[0] || 'Strengths'}
-                </h5>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
-                  <strong>Strengths:</strong> {insights.competitiveIntelligence.strengths?.join(', ') || 'N/A'}
+            <h4 style={{ 
+              fontSize: '1.3rem', 
+              fontWeight: 700, 
+              color: '#1c2a5c', 
+              margin: '24px 0 16px 0',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}>
+              <Star style={{ color: '#f59e0b' }} />
+              Competitive Intelligence
+            </h4>
+            <div className="competitive-intelligence-section" style={{ marginBottom: '24px' }}>
+              <div style={{ 
+                background: 'linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)',
+                border: '2px solid #f59e0b',
+                borderRadius: '12px',
+                padding: '24px',
+                boxShadow: '0 4px 12px rgba(245, 158, 11, 0.15)',
+                position: 'relative'
+              }}>
+                <div style={{
+                  position: 'absolute',
+                  top: '16px',
+                  right: '16px',
+                  fontSize: '24px',
+                  color: '#f59e0b',
+                  opacity: '0.3'
+                }}>
+                  <Star />
                 </div>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
-                  <strong>Vulnerabilities:</strong> {insights.competitiveIntelligence.vulnerabilities?.join(', ') || 'N/A'}
+                
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                  <div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginBottom: '8px',
+                      color: '#92400e',
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      <CheckCircle fontSize="small" />
+                      BMW Strengths
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      {insights.competitiveIntelligence.bmwStrengths?.join(', ') || 'N/A'}
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      marginBottom: '8px',
+                      color: '#92400e',
+                      fontWeight: '600',
+                      fontSize: '0.9rem'
+                    }}>
+                      <Warning fontSize="small" />
+                      Vulnerabilities
+                    </div>
+                    <div style={{ 
+                      fontSize: '0.9rem', 
+                      color: '#1c2a5c',
+                      lineHeight: '1.4'
+                    }}>
+                      {insights.competitiveIntelligence.vulnerabilities?.join(', ') || 'N/A'}
+                    </div>
+                  </div>
                 </div>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
-                  <strong>Market Position:</strong> {insights.competitiveIntelligence.marketPosition || 'N/A'}
-                </div>
-              </div>
-            </div>
-          </>
-        )}
-
-        {insights.dataHighlights && (
-          <>
-            <h4 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#1c2a5c', margin: '32px 0 20px 0' }}>Data Highlights</h4>
-            <div className="data-highlights-section" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-              <div style={{ background: '#fff', border: '2px solid #1c2a5c', borderRadius: 10, padding: 24, boxShadow: '0 2px 8px #e5e5e5' }}>
-                <h5 style={{ margin: '0 0 16px 0', color: '#1c2a5c', fontSize: '1.2rem', fontWeight: 700 }}>
-                  {insights.dataHighlights.criticalQuote ? `"${insights.dataHighlights.criticalQuote}"` : 'Critical Quote'}
-                </h5>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c', marginBottom: 8 }}>
-                  <strong>Emerging Theme:</strong> {insights.dataHighlights.emergingTheme || 'N/A'}
-                </div>
-                <div style={{ fontSize: '1rem', color: '#1c2a5c' }}>
-                  <strong>Sentiment Driver:</strong> {insights.dataHighlights.sentimentDriver || 'N/A'}
+                
+                <div style={{ 
+                  marginTop: '16px',
+                  paddingTop: '16px',
+                  borderTop: '1px solid rgba(245, 158, 11, 0.3)'
+                }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    marginBottom: '8px',
+                    color: '#92400e',
+                    fontWeight: '600',
+                    fontSize: '0.9rem'
+                  }}>
+                    <Business fontSize="small" />
+                    Market Position
+                  </div>
+                  <div style={{ 
+                    fontSize: '0.9rem', 
+                    color: '#1c2a5c',
+                    lineHeight: '1.4'
+                  }}>
+                    {insights.competitiveIntelligence.marketPosition || 'N/A'}
+                  </div>
                 </div>
               </div>
             </div>

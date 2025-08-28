@@ -9,7 +9,7 @@ const openai = new OpenAI({
 });
 
 const VECTOR_STORE_ID =
-  process.env.REACT_APP_R12GS_VECTOR_STORE_ID || process.env.R12GS_VECTOR_STORE_ID;
+  process.env.VS_REPORTS_STORE_ID || process.env.REACT_APP_R12GS_VECTOR_STORE_ID || process.env.R12GS_VECTOR_STORE_ID;
 
 export const handleChatRequest = async (messages) => {
   try {

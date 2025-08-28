@@ -36,15 +36,31 @@ module.exports = async (req, res) => {
 
   try {
     const { filteredData, activeFilters, section, market } = req.body;
+    
+    // Validate payload size
+    const payloadSize = JSON.stringify(req.body).length;
+    const payloadSizeKB = Math.round(payloadSize / 1024);
     console.log("🔍 Insights API - Received data:", { 
       totalQuotes: filteredData?.totalQuotes,
       sentimentPercentages: filteredData?.sentimentPercentages,
       activeFilters: activeFilters?.length,
-      market: market
+      market: market,
+      payloadSizeKB: payloadSizeKB
     });
 
     if (!filteredData) {
       return res.status(400).json({ error: "Filtered data is required" });
+    }
+
+    // Check payload size and provide helpful error
+    if (payloadSizeKB > 10000) { // 10MB limit
+      console.warn("⚠️ Payload too large:", payloadSizeKB, "KB");
+      return res.status(413).json({ 
+        error: "Payload too large", 
+        message: "Please reduce the amount of data being sent",
+        currentSize: payloadSizeKB,
+        maxSize: 10000
+      });
     }
 
     // Check if OpenAI API key is available
@@ -59,10 +75,31 @@ module.exports = async (req, res) => {
     // Generate AI insights with enhanced prompts
     const insights = await generateAIInsights(filteredData, activeFilters, section, market);
     
-    res.json({
-      success: true,
-      insights: insights
-    });
+    // Check if insights generation was successful
+    console.log("🔍 Generated insights:", insights);
+    console.log("🔍 Insights type:", typeof insights);
+    console.log("🔍 Insights keys:", Object.keys(insights || {}));
+    
+    // Check if we got valid insights or fallback error
+    const isFallbackError = insights && insights.filterContext && (
+      insights.filterContext.includes("Unable to parse AI response") || 
+      insights.filterContext.includes("AI response parsing failed")
+    );
+    
+    if (isFallbackError) {
+      console.warn("⚠️ AI insights generation failed, returning fallback");
+      res.json({
+        success: false,
+        error: "AI insights generation failed",
+        insights: insights
+      });
+    } else {
+      console.log("✅ AI insights generated successfully");
+      res.json({
+        success: true,
+        insights: insights
+      });
+    }
 
   } catch (error) {
     console.error("Insights API error:", error);
@@ -117,18 +154,94 @@ async function generateAIInsights(filteredData, activeFilters, section, market) 
       ? { max_completion_tokens: 1200 }
       : { max_tokens: 1200, temperature: 0.2 }),
   };
-  const response = await openai.chat.completions.create(completionParams);
-  // Debug log for full AI response
-  console.log("AI full response:", response);
-  console.log("AI message object:", response.choices[0].message);
-  const content = response.choices[0].message.content;
-  return parseInsightsResponse(content);
+  try {
+    console.log("🚀 Calling OpenAI API with model:", model);
+    const response = await openai.chat.completions.create(completionParams);
+    
+    // Debug log for full AI response
+    console.log("AI full response:", response);
+    console.log("AI message object:", response.choices[0].message);
+    const content = response.choices[0].message.content;
+    
+    // Validate that we got content
+    if (!content || typeof content !== 'string') {
+      console.error("❌ AI response content is invalid:", content);
+      throw new Error("Invalid AI response content");
+    }
+    
+    console.log("📝 AI response content length:", content.length);
+    console.log("📝 AI response content preview:", content.substring(0, 200) + "...");
+    
+    console.log("🔍 About to parse AI response...");
+    const parsedInsights = parseInsightsResponse(content);
+    console.log("🔍 Parsed insights result:", parsedInsights);
+    
+    return parsedInsights;
+  } catch (openaiError) {
+    console.error("❌ OpenAI API call failed:", openaiError);
+    throw openaiError;
+  }
 }
 
 /**
  * System prompt for marketing-focused insights
  */
 function getInsightsSystemPrompt() {
+  return `You are a senior market research analyst specializing in BMW Motorrad consumer insights.
+
+### ROLE & SCOPE:
+- Generate marketing-focused insights for BMW Motorrad marketing, strategy, and communications teams
+- Focus ONLY on marketing, brand strategy, communications, and audience targeting
+- Do NOT provide product development, product features, or pricing recommendations
+
+### OUTPUT REQUIREMENTS:
+Return ONLY a valid JSON object with this exact structure:
+
+{
+  "filterContext": "Brief description of the filtered data context",
+  "executiveSummary": "2-3 sentence summary of key marketing insights",
+  "humanTruths": [
+    {
+      "humanTruth": "The core human truth/psychological insight about consumer behavior",
+      "explanation": "Why this human truth matters - emotional, psychological, or behavioral drivers",
+      "evidence": "Specific quote or data supporting this insight",
+      "businessImplication": "What this means for marketing strategy and communications"
+    }
+  ],
+  "actionableRecommendations": [
+    {
+      "category": "Marketing Strategy",
+      "recommendation": "Specific actionable marketing recommendation",
+      "rationale": "Why this recommendation makes strategic sense",
+      "timeline": "Immediate (1-3 months), Short-term (3-6 months), or Strategic (6-12 months)",
+      "expectedImpact": "Expected marketing outcome and business impact"
+    }
+  ],
+  "consumerSegments": {
+    "primarySegment": "Description of the key consumer segment identified",
+    "concernsAndNeeds": ["Specific concern 1", "Specific need 2", "Specific concern 3"],
+    "opportunityAreas": ["Marketing opportunity 1", "Marketing opportunity 2", "Marketing opportunity 3"]
+  },
+  "competitiveIntelligence": {
+    "bmwStrengths": ["BMW competitive advantage 1", "BMW competitive advantage 2", "BMW competitive advantage 3"],
+    "vulnerabilities": ["Potential weakness or threat 1", "Potential weakness or threat 2"],
+    "marketPosition": "BMW's current market positioning based on consumer data"
+  },
+  "dataHighlights": {
+    "criticalQuote": "Most impactful quote for marketing strategy (max 25 words)",
+    "emergingTheme": "Emerging trend or theme for campaigns",
+    "sentimentDriver": "Key factor driving consumer sentiment"
+  }
+}
+
+### CRITICAL RULES:
+1. **Human Truths**: Identify 3-4 deep psychological insights about consumer behavior, emotions, or motivations
+2. **Explanations**: Provide rich context about why each human truth matters
+3. **Competitive Intelligence**: ALWAYS identify at least 3 BMW strengths and 2 vulnerabilities
+4. **Actionable Recommendations**: Use clear categories like "Marketing Strategy", "Brand Communications", "Campaign Development"
+5. **Evidence**: Use actual quotes and data points from consumer conversations
+6. **Format**: Return ONLY the JSON object - no markdown, no explanations, no additional text`;
+}
   return `You are a senior market research analyst specializing in BMW Motorrad consumer insights and competitive intelligence. Your expertise includes motorcycle market dynamics, consumer behavior patterns, and actionable marketing strategy development.
 
 TARGET AUDIENCE: Marketing professionals, marketing agencies, strategy consultants, and communications teams who need actionable insights for campaigns, positioning, messaging, and market strategy.
@@ -146,22 +259,43 @@ IMPORTANT: Only provide recommendations related to marketing, brand strategy, co
 * Strings ≤ 35 tokens each (use crisp phrases, no waffle).
 * No line-breaks inside the JSON; minify before emitting.
 
-##############################
-## Output contract – RETURN ONE *MINIFIED* JSON OBJECT ONLY
+### OUTPUT STRUCTURE - RETURN ONLY THIS JSON:
 
 {
-  "filterContext": String,
-  "executiveSummary": String,
-  "keyInsights": Array<{
-    humanTruth: String, // underlying human truth behind the finding
-    explanation: String, // explanation of the human truth in context
-    evidence: String,
-    businessImplication: String
-  }>,
-  "actionableRecommendations": Array<{ category, recommendation, rationale, timeline, expectedImpact }>,
-  "consumerSegments": { primarySegment, concernsAndNeeds: Array<String>, opportunityAreas: Array<String> },
-  "competitiveIntelligence": { strengths: Array<String>, vulnerabilities: Array<String>, marketPosition: String },
-  "dataHighlights": { criticalQuote, emergingTheme, sentimentDriver }
+  "filterContext": "Brief description of the filtered data context",
+  "executiveSummary": "2-3 sentence summary of key marketing insights",
+  "humanTruths": [
+    {
+      "humanTruth": "The core human truth/psychological insight (e.g., 'Consumers seek nostalgic connection to classic motorcycle heritage')",
+      "explanation": "Detailed explanation of why this human truth matters - the deeper psychological, emotional, or behavioral context",
+      "evidence": "Specific quote or data point supporting this human truth",
+      "businessImplication": "What this means for marketing strategy, communications, and brand positioning"
+    }
+  ],
+  "actionableRecommendations": [
+    {
+      "recommendation": "Specific actionable recommendation",
+      "category": "Marketing Strategy",
+      "rationale": "Why this recommendation makes strategic sense",
+      "timeline": "Immediate (1-3 months), Short-term (3-6 months), or Strategic (6-12 months)",
+      "expectedImpact": "Expected marketing outcome and business impact"
+    }
+  ],
+  "consumerSegments": {
+    "primarySegment": "Description of the key consumer segment identified",
+    "concernsAndNeeds": ["Specific concern 1", "Specific need 2", "Specific concern 3"],
+    "opportunityAreas": ["Marketing opportunity 1", "Marketing opportunity 2", "Marketing opportunity 3"]
+  },
+  "competitiveIntelligence": {
+    "bmwStrengths": ["BMW competitive advantage 1", "BMW competitive advantage 2", "BMW competitive advantage 3"],
+    "vulnerabilities": ["Potential weakness or threat 1", "Potential weakness or threat 2"],
+    "marketPosition": "BMW's current market positioning based on consumer data"
+  },
+  "dataHighlights": {
+    "criticalQuote": "Most impactful quote for marketing strategy (max 25 words)",
+    "emergingTheme": "Emerging trend or theme for campaigns",
+    "sentimentDriver": "Key factor driving consumer sentiment"
+  }
 }
 
 ##############################
@@ -184,7 +318,7 @@ IMPORTANT: Only provide recommendations related to marketing, brand strategy, co
 
 5. **Generate final sections**
    • executiveSummary – 2 sentences: headline insight + strategic angle.
-   • keyInsights – 3-4 items, each with humanTruth, explanation, evidence, and businessImplication.
+   • humanTruths – 3-4 items, each with humanTruth, explanation, evidence, and businessImplication.
    • actionableRecommendations – mirror each keyInsight with a clear action; set timeline to “Immediate”, “Next 3 months”, or “Strategic (12 months)”.
    • consumerSegments – identify main segment mentioned most; list their top concerns/needs & opportunityAreas.
    • competitiveIntelligence – focus on BMW vs competitors if present; else use “Segmentation-specific competitor(s)”.
@@ -211,7 +345,6 @@ If input text contains disallowed content, sanitise by redacting offensive terms
 ## Final instruction
 
 After reasoning, output only the minified JSON object described above – no markdown, no commentary.`;
-}
 
 /**
  * Build user prompt with filtered data and vector store context
@@ -254,7 +387,56 @@ Please provide strategic marketing insights that go beyond surface-level observa
 - How can this data inform messaging, content strategy, and brand communications?
 - **Do NOT provide recommendations about product or pricing.**
 
-Return a detailed JSON analysis following the specified format.${additionalContextSection}`;
+Return a detailed JSON analysis in the following exact format:
+
+{
+  "filterContext": "Brief description of the filtered data context",
+  "executiveSummary": "2-3 sentence summary of key marketing insights",
+  "humanTruths": [
+    {
+      "humanTruth": "The underlying human truth behind the finding (e.g., 'Consumers seek nostalgic connection to classic motorcycle heritage')",
+      "explanation": "Context and deeper meaning of this human truth - why it matters to consumers",
+      "evidence": "Specific quote or data supporting this human truth",
+      "businessImplication": "What this means for marketing strategy and communications"
+    }
+  ],
+  "actionableRecommendations": [
+    {
+      "category": "Marketing Strategy",
+      "recommendation": "Specific actionable recommendation",
+      "rationale": "Why this recommendation makes sense",
+      "timeline": "Immediate (1-3 months), Short-term (3-6 months), or Strategic (6-12 months)",
+      "expectedImpact": "Expected marketing outcome"
+    }
+  ],
+  "consumerSegments": {
+    "primarySegment": "Description of key consumer segment",
+    "concernsAndNeeds": ["List of specific concerns", "and needs identified"],
+    "opportunityAreas": ["List of marketing opportunities", "for this segment"]
+  },
+  "competitiveIntelligence": {
+    "bmwStrengths": ["List of BMW competitive advantages", "revealed in the data"],
+    "vulnerabilities": ["List of potential weaknesses", "or threats identified"],
+    "marketPosition": "BMW's current market positioning based on data"
+  },
+  "dataHighlights": {
+    "criticalQuote": "Most impactful quote for marketing strategy",
+    "emergingTheme": "Emerging trend or theme for campaigns",
+    "sentimentDriver": "Key factor driving consumer sentiment"
+  }
+}
+
+IMPORTANT: Return ONLY valid JSON. Do not include any text before or after the JSON object.
+
+### CRITICAL REQUIREMENTS:
+1. **Human Truths**: Each must reveal a deep psychological insight about consumer behavior, emotions, or motivations. Go beyond surface observations.
+2. **Explanations**: Provide rich context about why each human truth matters - the emotional, psychological, or behavioral drivers.
+3. **Competitive Intelligence**: ALWAYS identify at least 3 BMW strengths and 2 vulnerabilities. If data is limited, infer from consumer sentiment and themes.
+4. **Actionable Recommendations**: Use clear categories like "Marketing Strategy", "Brand Communications", "Campaign Development", "Content Strategy", etc.
+5. **Evidence**: Use actual quotes and data points from the consumer conversations.
+6. **Depth**: Provide psychological insights that reveal deeper consumer motivations.
+
+${additionalContextSection}`;
 }
 
 /**
@@ -302,47 +484,108 @@ function generateSampleQuotes(filteredData) {
 function parseInsightsResponse(content) {
   try {
     // Debug log for raw AI response
-    console.log("AI raw response:", content);
-    // Try to extract JSON from the response
-    let jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      const parsed = JSON.parse(jsonMatch[0]);
+    console.log("🔍 AI raw response:", content);
+    console.log("🔍 Content type:", typeof content);
+    console.log("🔍 Content length:", content ? content.length : "undefined");
+    
+    // Clean the content - remove markdown formatting and extra text
+    let cleanedContent = content.trim();
+    
+    // Remove markdown code blocks if present
+    cleanedContent = cleanedContent.replace(/```json\s*/g, '').replace(/```\s*$/g, '');
+    console.log("🔍 Cleaned content preview:", cleanedContent.substring(0, 300) + "...");
+    
+    // Try multiple parsing strategies
+    let parsed = null;
+    
+    // Strategy 1: Try to parse the entire content as JSON
+    try {
+      parsed = JSON.parse(cleanedContent);
+      console.log("✅ Direct JSON parsing successful");
+      console.log("✅ Parsed result keys:", Object.keys(parsed));
       return parsed;
+    } catch (directError) {
+      console.log("❌ Direct parsing failed:", directError.message);
     }
+    
+    // Strategy 2: Extract JSON using regex
+    const jsonMatch = cleanedContent.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      try {
+        parsed = JSON.parse(jsonMatch[0]);
+        console.log("✅ Regex JSON extraction successful");
+        console.log("✅ Regex parsed result keys:", Object.keys(parsed));
+        return parsed;
+      } catch (regexError) {
+        console.log("❌ Regex extraction parsing failed:", regexError.message);
+      }
+    } else {
+      console.log("❌ No JSON pattern found with regex");
+    }
+    
+    // Strategy 3: Try to find and fix common JSON issues
+    try {
+      // Remove any text before the first {
+      const firstBraceIndex = cleanedContent.indexOf('{');
+      if (firstBraceIndex !== -1) {
+        const jsonOnly = cleanedContent.substring(firstBraceIndex);
+        // Remove any text after the last }
+        const lastBraceIndex = jsonOnly.lastIndexOf('}');
+        if (lastBraceIndex !== -1) {
+          const finalJson = jsonOnly.substring(0, lastBraceIndex + 1);
+          console.log("🔍 Final JSON attempt:", finalJson.substring(0, 200) + "...");
+          parsed = JSON.parse(finalJson);
+          console.log("✅ Cleaned JSON parsing successful");
+          console.log("✅ Cleaned parsed result keys:", Object.keys(parsed));
+          return parsed;
+        } else {
+          console.log("❌ No closing brace found");
+        }
+      } else {
+        console.log("❌ No opening brace found");
+      }
+    } catch (cleanError) {
+      console.log("❌ Cleaned JSON parsing failed:", cleanError.message);
+    }
+    
+    console.error("❌ All parsing strategies failed");
+    
   } catch (error) {
-    console.error("Failed to parse AI response:", error);
+    console.error("❌ Failed to parse AI response:", error);
   }
   
-  // Fallback if parsing fails
+  // Fallback if parsing fails - provide more helpful error message
+  console.log("⚠️ Returning fallback insights due to parsing failure");
   return {
-    filterContext: "Unable to parse AI response",
-    executiveSummary: "Analysis failed - please try again",
-    keyInsights: [{ 
-      insight: "Response parsing failed", 
-      evidence: "Technical error occurred", 
-      businessImplication: "Manual analysis required" 
+    filterContext: "AI response parsing failed - technical issue detected",
+    executiveSummary: "The AI generated insights but the system couldn't parse them properly. This may be due to unexpected response format.",
+    humanTruths: [{ 
+      humanTruth: "Technical parsing error occurred", 
+      explanation: "AI response format was not as expected", 
+      evidence: "System needs adjustment to handle AI response format", 
+      businessImplication: "Retry the analysis to get proper insights" 
     }],
     actionableRecommendations: [{ 
       category: "Technical", 
-      recommendation: "Retry analysis", 
-      rationale: "Parsing error", 
+      recommendation: "Retry the analysis", 
+      rationale: "This may be a temporary formatting issue", 
       timeline: "Immediate", 
-      expectedImpact: "Restored functionality" 
+      expectedImpact: "Successful insights generation" 
     }],
     consumerSegments: { 
-      primarySegment: "Unknown", 
-      concernsAndNeeds: ["Unable to determine"], 
-      opportunityAreas: ["Retry analysis"] 
+      primarySegment: "Analysis pending", 
+      concernsAndNeeds: ["Retry required"], 
+      opportunityAreas: ["System adjustment needed"] 
     },
     competitiveIntelligence: { 
-      bmwStrengths: ["Unable to determine"], 
-      vulnerabilities: ["Unable to determine"], 
-      marketPosition: "Analysis required" 
+      bmwStrengths: ["Analysis pending", "System needs adjustment", "Retry required"], 
+      vulnerabilities: ["Parsing error", "Format issue"], 
+      marketPosition: "Retry required" 
     },
     dataHighlights: { 
-      criticalQuote: "Unable to extract", 
-      emergingTheme: "Unknown", 
-      sentimentDriver: "Unable to determine" 
+      criticalQuote: "Parsing error", 
+      emergingTheme: "Retry needed", 
+      sentimentDriver: "System issue" 
     }
   };
 }
@@ -357,9 +600,10 @@ function generateSimpleFallback(filteredData, activeFilters) {
   return {
     filterContext: `Analysis of ${totalQuotes} consumer quotes ${activeFilters.length > 0 ? `filtered by: ${filterDesc}` : 'across all segments'}. AI analysis unavailable - showing basic data summary.`,
     executiveSummary: `Demo mode active - ${totalQuotes} quotes analyzed. Full AI insights require API key configuration.`,
-    keyInsights: [{ 
-      insight: "AI analysis unavailable", 
-      evidence: "No OpenAI API key configured", 
+    humanTruths: [{ 
+      humanTruth: "AI analysis unavailable", 
+      explanation: "No OpenAI API key configured for AI-powered insights", 
+      evidence: "System is running in demo mode", 
       businessImplication: "Configure API key for detailed marketing insights" 
     }],
     actionableRecommendations: [{ 
@@ -375,8 +619,8 @@ function generateSimpleFallback(filteredData, activeFilters) {
       opportunityAreas: ["Enable AI analysis"] 
     },
     competitiveIntelligence: { 
-      bmwStrengths: ["Configure API key to analyze"], 
-      vulnerabilities: ["Configure API key to analyze"], 
+      bmwStrengths: ["Configure API key to analyze", "AI analysis required", "System in demo mode"], 
+      vulnerabilities: ["Configure API key to analyze", "Demo mode active"], 
       marketPosition: "AI analysis required" 
     },
     dataHighlights: { 

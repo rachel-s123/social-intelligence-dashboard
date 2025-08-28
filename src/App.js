@@ -89,7 +89,7 @@ function App() {
                       mb: 0.5,
                     }}
                   >
-                    Model Insights: R 12 G/S
+                    Social Intelligent Dashboard: R 12 G/S
                   </Typography>
                   <Typography
                     variant="subtitle1"
@@ -100,7 +100,7 @@ function App() {
                       fontWeight: 400,
                     }}
                   >
-                    Explore market insights for the R 12 G/S
+                    Explore social conversations for the launch of the R 12 G/S
                   </Typography>
                 </Box>
               </Box>
