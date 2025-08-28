@@ -10,7 +10,7 @@ The R12GSConsumerAnalysis component has been enhanced with AI-powered insights t
 - **Toggle Button**: "🤖 Show/Hide AI Insights" button in the header
 - **Generate Button**: "Generate Insights" button that appears when insights are shown
 - **Auto-generation**: Insights are automatically generated when filters change (with 1-second debounce)
-- **Real-time Analysis**: Analyzes filtered data and provides actionable recommendations
+- **Real-time Analysis**: Analyzes filtered data in real time
 
 ### 2. Mini AI Insights
 - **Contextual Insights**: Mini AI insights appear in specific dashboard sections
@@ -63,7 +63,7 @@ const handleToggleInsights = () => {
 ### Integration Points
 
 1. **Header Controls**: AI insights toggle and generate buttons
-2. **Main Panel**: Full AI insights panel with summary, findings, and recommendations
+2. **Main Panel**: Full AI insights panel with summary and findings
 3. **Chart Sections**: Mini insights in sentiment, theme, and platform charts
 4. **Filter Integration**: Automatic insights generation based on QuoteExplorer filters
 
@@ -94,7 +94,6 @@ const handleToggleInsights = () => {
 - System prompt tailored for BMW R 12 G/S consumer analysis
 - Context-aware prompts based on active filters
 - Data-driven insights with specific percentages and statistics
-- Actionable recommendations for business decisions
 
 ## Styling
 

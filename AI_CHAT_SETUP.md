@@ -1,8 +1,8 @@
-# BMW Motorrad AI Chat Assistant
+# AI Chat Assistant
 
 ## Overview
 
-The AI Chat Assistant is now integrated into the BMW Motorrad Segment Insights dashboard, providing intelligent analysis and insights based on your market data.
+The AI Chat Assistant is integrated into the Model Insights dashboard, providing intelligent analysis based on the selected market.
 
 ## Features
 
@@ -92,23 +92,19 @@ npm run dev-server
 
 ## AI Assistant Capabilities
 
-The AI assistant is specialized in BMW Motorrad market analysis and can help with:
+The AI assistant answers questions about R 12 G/S consumer conversations and reports:
 
-- **Market Insights**: Analysis of specific European markets
-- **Competitor Analysis**: Understanding competitive positioning
-- **Strategic Recommendations**: Actionable insights for market strategy
+- **Market Insights**: Analysis of specific markets
 - **Data Interpretation**: Explaining charts, metrics, and trends
-- **Executive Summaries**: Key takeaways and highlights
+- **Report References**: Locating details in the uploaded PDFs
 
 ## Example Questions
 
 Try asking the AI assistant questions like:
 
 - "What are the key insights for the French market?"
-- "How does BMW compare to competitors in Germany?"
-- "What are the strategic recommendations for Italy?"
-- "Explain the WRI scores for Nordic markets"
-- "What trends are emerging in the electric motorcycle segment?"
+- "How do riders in Italy feel about the R 12 G/S?"
+- "Where in the reports is suspension discussed?"
 
 ## Troubleshooting
 
