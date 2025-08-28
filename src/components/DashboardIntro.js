@@ -187,8 +187,9 @@ const DashboardIntro = ({ selectedMarket }) => {
 
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = `/reports/${selectedMarket.toLowerCase()}_report.pdf`;
-    link.download = `${getMarketDisplayName(selectedMarket)}_report.pdf`;
+    const market = selectedMarket.toLowerCase();
+    link.href = `/vector_reports/r12gs/${market}-r12gs.pdf`;
+    link.download = `${getMarketDisplayName(selectedMarket)}-r12gs.pdf`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -461,7 +462,7 @@ const DashboardIntro = ({ selectedMarket }) => {
                 position: 'relative'
               }}>
                 <Document
-                  file={`/reports/${selectedMarket.toLowerCase()}.pdf`}
+                  file={`/vector_reports/r12gs/${selectedMarket.toLowerCase()}-r12gs.pdf`}
                   onLoadSuccess={onDocumentLoadSuccess}
                   loading={
                     <Box sx={{ p: 4, textAlign: 'center' }}>

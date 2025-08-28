@@ -18,6 +18,8 @@ app.use(express.urlencoded({ limit: '20mb', extended: true }));
 
 // Serve static files from the React app build directory
 app.use(express.static(path.join(__dirname, "build")));
+// Serve R 12 G/S PDF reports
+app.use('/vector_reports', express.static(path.join(__dirname, 'vector_reports')));
 
 // OpenAI setup
 const OpenAI = require("openai").default;
