@@ -1,6 +1,6 @@
 # Report Vector Store Setup
 
-This project can search R 12 G/S market PDF reports using an OpenAI vector store. The repository includes sample PDFs in `vector_reports/r12gs/`.
+The Model Insights dashboard can search R 12 G/S market PDF reports using an OpenAI vector store. The repository includes sample PDFs in `vector_reports/r12gs/`.
 
 ## Creating the Vector Store
 
