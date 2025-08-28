@@ -15,7 +15,7 @@ This project can search R 12 G/S market PDF reports using an OpenAI vector store
 
 Add the returned ID to your `.env` file:
 ```bash
-VS_REPORTS_STORE_ID=your_new_store_id
+R12GS_REPORTS_VECTOR_STORE_ID=your_new_store_id
 ```
 
-The chat assistant continues to use `VS_STORE_ID` for the main market data vector store.
+The chat assistant continues to use `R12GS_VECTOR_STORE_ID` for the main market data vector store.

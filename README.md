@@ -99,7 +99,7 @@ a new OpenAI vector store:
 node scripts/create_report_vector_store.js
 ```
 
-Copy the printed ID and set it in your `.env` file as `VS_REPORTS_STORE_ID`.
+Copy the printed ID and set it in your `.env` file as `R12GS_REPORTS_VECTOR_STORE_ID`.
 See [REPORT_VECTOR_STORE_SETUP.md](REPORT_VECTOR_STORE_SETUP.md) for details.
 
 ## Running the Dashboard
