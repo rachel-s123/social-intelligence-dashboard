@@ -194,6 +194,96 @@ app.post("/api/chat", async (req, res) => {
 // AI Insights endpoint
 app.post("/api/insights", require("./api/insights"));
 
+// Data Refresh endpoint
+app.post("/api/refresh-data", async (req, res) => {
+  console.log("🔄 Data refresh endpoint called");
+
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
+
+  // Handle OPTIONS request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
+  try {
+    const { runWeeklyRefresh } = require("./scripts/weekly-refresh");
+
+    // Start the refresh process (async, don't wait)
+    runWeeklyRefresh()
+      .then(() => {
+        console.log("✅ Data refresh completed successfully");
+      })
+      .catch(error => {
+        console.error("❌ Data refresh failed:", error);
+      });
+
+    // Respond immediately with success
+    res.json({
+      success: true,
+      message: "Data refresh started. This may take several minutes to complete.",
+      status: "in_progress"
+    });
+
+  } catch (error) {
+    console.error("❌ Data refresh endpoint error:", error);
+    res.status(500).json({
+      success: false,
+      error: "Failed to start data refresh",
+      details: error.message
+    });
+  }
+});
+
+// Data Refresh Status endpoint
+app.get("/api/refresh-status", async (req, res) => {
+  console.log("📊 Refresh status endpoint called");
+
+  // Set CORS headers
+  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT');
+  res.setHeader(
+    'Access-Control-Allow-Headers',
+    'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+  );
+
+  // Handle OPTIONS request
+  if (req.method === 'OPTIONS') {
+    res.status(200).end();
+    return;
+  }
+
+  try {
+    const { getLastRefreshTime, shouldRunRefresh } = require("./scripts/weekly-refresh");
+
+    const lastRefresh = getLastRefreshTime();
+    const shouldRun = shouldRunRefresh();
+
+    res.json({
+      success: true,
+      lastRefresh: lastRefresh ? lastRefresh.toISOString() : null,
+      shouldRunRefresh: shouldRun,
+      nextRefreshDue: lastRefresh ? new Date(lastRefresh.getTime() + 7 * 24 * 60 * 60 * 1000).toISOString() : null
+    });
+
+  } catch (error) {
+    console.error("❌ Refresh status endpoint error:", error);
+    res.status(500).json({
+      success: false,
+      error: "Failed to get refresh status",
+      details: error.message
+    });
+  }
+});
+
 // Catch all handler: send back React's index.html file for any non-API routes
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "build", "index.html"));

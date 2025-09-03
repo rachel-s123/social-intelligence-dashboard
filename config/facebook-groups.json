@@ -1,0 +1,35 @@
+{
+  "groups": [
+    {
+      "group_id": "1172760359503836",
+      "name": "BMW Motorcycle Enthusiasts",
+      "keywords": ["BMW", "motorcycle", "GS", "adventure", "touring", "R1200GS", "R1250GS"],
+      "analysis_prompt": "Analyze discussions about BMW motorcycles, focusing on purchase intent, model preferences, user experiences, and technical discussions"
+    },
+    {
+      "group_id": "1234567890123456",
+      "name": "Adventure Motorcycle Riders",
+      "keywords": ["adventure", "motorcycle", "touring", "off-road", "GS", "KTM", "Ducati"],
+      "analysis_prompt": "Analyze discussions about adventure motorcycles, focusing on purchase intent, riding experiences, and equipment preferences"
+    },
+    {
+      "group_id": "9876543210987654",
+      "name": "Motorcycle Buyers & Sellers",
+      "keywords": ["buy", "sell", "motorcycle", "purchase", "price", "dealer", "used"],
+      "analysis_prompt": "Analyze discussions about motorcycle buying and selling, focusing on purchase intent, pricing discussions, and dealer experiences"
+    }
+  ],
+  "default_settings": {
+    "number_of_posts": 5,
+    "sorting_order": "CHRONOLOGICAL",
+    "model": "gpt-5-mini-2025-08-07",
+    "max_quote_length": 200
+  },
+  "analysis_prompts": {
+    "motorcycle_analysis": "Analyze discussions about motorcycles and purchase intent",
+    "bmw_specific": "Analyze discussions about BMW motorcycles, focusing on purchase intent, model preferences, and user experiences",
+    "general_vehicle": "Analyze discussions about vehicles, focusing on purchase intent and user preferences",
+    "adventure_focused": "Analyze discussions about adventure motorcycles, focusing on purchase intent, riding experiences, and equipment preferences",
+    "buying_selling": "Analyze discussions about motorcycle buying and selling, focusing on purchase intent, pricing discussions, and dealer experiences"
+  }
+}
