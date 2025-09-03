@@ -89,7 +89,7 @@ function App() {
                       mb: 0.5,
                     }}
                   >
-                    Social Intelligent Dashboard: R 12 G/S
+                    Social Intelligence Dashboard: R 12 G/S
                   </Typography>
                   <Typography
                     variant="subtitle1"

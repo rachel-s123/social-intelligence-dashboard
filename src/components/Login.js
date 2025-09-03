@@ -80,7 +80,7 @@ const Login = ({ onLogin }) => {
             color="primary.main"
             sx={{ mb: 2, textAlign: 'center', letterSpacing: -1 }}
           >
-            Adventure Segment Insights: Pre-Launch R 12 G/S
+            Social Intelligence Insights: Pre-Launch R 12 G/S
           </Typography>
 
           <Typography 
@@ -98,7 +98,7 @@ const Login = ({ onLogin }) => {
             variant="subtitle1"
             sx={{ mb: 3, color: 'text.secondary', textAlign: 'center' }}
           >
-            AI-powered segment analysis for V2 Region markets
+            AI-powered social intelligence analysis for V2 Region markets
           </Typography>
 
           {error && (
